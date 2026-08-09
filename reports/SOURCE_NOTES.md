@@ -1,22 +1,12 @@
-# Source notes — 2026-08-09 complete-playlist redesign
+# Source notes — 2026-08-09, карточный редизайн
 
-- Audience: игрок, которому нужна полная пошаговая сводка каждой карточки Festival Playlist, а не оптимизированный маршрут к порогам наград.
 - Scope: FH6 Series 3 «Italian Exotics», Spring, 2026-08-06 14:30 UTC — 2026-08-13 14:30 UTC.
-- Report surface: один portable HTML из канонического `reports/artifact.json`; публикация выполняется через GitHub Pages.
-- Evidence boundary: официальная Forza Festival Playlist подтверждает порядок карточек, названия, ограничения, трассы и награды; свежие Reddit-публикации текущей недели используются для очков, практических способов, машин, тюнингов и ловушек.
-- Official order: Spring-строки официальной таблицы идут Weekly → семь Daily → Photo → Treasure → два Championships → Drag Meet → Speed Trap → Speed Zone → Drift Zone → Trial → Spec Racing → Stunt Party. Monthly Rivals — Series-wide карточка и помещена после сезонной ленты. Этот порядок перенесён в отчёт без агрегирования отдельных карточек.
-- Completeness definition: одна игровая карточка = одна отдельная активность в сводке. Weekly 1 + Daily 7 + Photo 1 + Treasure 1 + Championships 2 + PR 4 + Trial 1 + Horizon Play 2 + Monthly Rivals 1 = 20.
-- Points definition: 5 + 7 + 2 + 3 + 10 + 9 + 10 + 6 + 1 = 53. Monthly Rivals показывает 4 PTS за Series, но в Spring учитывается один балл.
-- Current availability: 2026-08-09 13:25 UTC+7 доступны стартовые 47 + пятничная и субботняя Daily = 49. Воскресная Daily откроется в 21:30.
-- Vehicle/tune rule: каждая карточка с выбором автомобиля содержит основную рекомендацию. Если машина фиксирована, не влияет на условие или тюнинг не нужен, это указано явно; пустых полей нет.
-- Daily recommendations: Rainbow Run — Ferrari 458 `796 821 422`; Stadium photo — любая машина, практично переиспользовать Huracán `194 351 203`; Thunderbird — Ferrari Dino `518 222 242`; Wheelspin — машина не участвует; Dirt Air — Abarth `207 861 362`; Lamborghini Skill Chain — Huracán `194 351 203`; Road Circuit — Ferrari 488 `172 533 643` на Electric Town Circuit.
-- Treasure verification: сундук подтверждён двумя независимыми наборами карт/кадров на западном берегу реки в Takashiro у конца красной пунктирной грунтовки. Treasure Map может не показать красный значок.
-- Tune policy: все share codes взяты из свежих публикаций текущей недели и считаются советами сообщества, не протестированными проектом, кроме Range Rover Sport SVR `913 262 787`.
-- In-game verification: Range Rover `913 262 787` завершил Snow Problem первым с 54 очками; награда и 5 Playlist points получены.
-- Official conflicts: Playlist называет награду `2021 Pagani Huayra R`, Series 3 News — `2022`; средняя Daily официально требует любую Road Circuit Race, Reddit называет Electric Town Circuit. Рекомендация Electric Town удовлетворяет обеим формулировкам.
-- Collectibles: текущая официальная Spring-строка не содержит Collectibles; отсутствие отмечено в статусе, но не создаёт пустую карточку и не входит в сумму.
-- Official forum gap: Forza Forums закрыты; публикаций официального форума текущей недели нет. Support не дал отдельной индексируемой Spring-specific заметки.
-- Chart map: section `Все активности вместе дают 53 очка`; analytical question — как все сезонные очки распределены по типам карточек; family/type — Comparison / full-width vertical bar; fields — `playlist_order`, `activity_group`, `card_count`, `points`, `mode`; supported claim — 20 карточек исчерпывают полный максимум 53; palette — single blue root, direct labels, no legend; delivery — `reports/current-week.html`.
-- Chart sufficiency: 9 meaningful categories, above the 4-category minimum. Bar starts at zero; one quantitative axis, one categorical axis, no redundant color encoding. Порядок не сортируется по величине, потому что игровая последовательность семантически значима.
-- Executive structure mapping: Title → title block; Executive Summary → immediate summary; key findings/evidence → order index, points explanation and chart, then 20 activity cards; recommended next step role → practical instruction inside each card instead of one global route; further questions → unresolved code/icon/model-year checks; caveats → source and gameplay-testing boundary.
-- Portable artifact policy: the report uses one canonical `artifact.json`; no hand-written parallel HTML or chart runtime. Source SQL is a reproducible `UNION ALL` transcription of the reviewed activity-group rows.
+- Пользовательская поверхность: заголовок, оставшееся время и ровно 14 карточек. Семь Daily объединены в одну карточку; остальные игровые карточки сохранены раздельно и в официальном порядке.
+- Удалены Executive Summary, индекс, метрики, диаграмма очков, проверка полноты, общие ловушки, список неопределённостей и ограничения источников.
+- `Unknown` в верхней панели был не статусом активности, а пустой датой свежести portable-reader. Исправление: `snapshot.generatedAt` теперь заполняется вместе с `manifest.generatedAt`.
+- Официальная Festival Playlist подтверждает названия, ограничения, трассы, очки и награды. Свежие Reddit-публикации текущей недели используются для решений, направлений разгона, автомобилей, авторов и share codes.
+- Пользовательский отчёт не показывает статус проверки автомобилей и тюнингов проектом. Автор каждого приведённого share code сохранён рядом с кодом.
+- В каждой карточке есть квадратный официальный Spring-визуал и пиктограмма типа активности. Исходник: официальный Forza CDN, встроен в portable HTML как data URI; внешняя загрузка изображения не требуется.
+- Точные игровые плитки не снимались во время этой итерации: Forza была открыта внутри активного командного заезда, который не прерывался. Ежедневный workflow теперь требует снимать плитки только из безопасного состояния меню.
+- Из-за явного требования убрать диаграмму канонический артефакт использует portable surface `dashboard`: валидатор поверхности `report` принудительно требует chart-блок и нарушил бы лимит 14 карточек. Это влияет только на оболочку; пользовательский файл остаётся автономной сезонной сводкой.
+- Визуальная QA через in-app Browser не выполнена: политика браузера блокирует локальные `file://` URL. Штатная сборка и portable-валидация выполняются отдельно.

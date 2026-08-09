@@ -48,6 +48,8 @@ try {
         "reports/SOURCE_NOTES.md",
         "reports/artifact.json",
         "reports/current-week.html",
+        "reports/build_artifact.ps1",
+        "reports/assets/fh6-s03-spring-playlist-small.png",
         "README.md",
         "index.html",
         "docs/WORKFLOW.md",
