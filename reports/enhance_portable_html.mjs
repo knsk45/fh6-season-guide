@@ -22,6 +22,11 @@ if (oldStart >= 0) {
   html = html.slice(0, oldStart) + html.slice(oldEnd + endMarker.length);
 }
 
+html = html.replaceAll(
+  '<iframe sandbox="" loading="lazy"',
+  '<iframe sandbox="allow-same-origin" scrolling="no" loading="lazy"'
+);
+
 const enhancement = `${beginMarker}
 <style id="fh6-live-meta-style">
   .fh6-live-countdown{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid color-mix(in srgb,currentColor 22%,transparent);border-radius:999px;padding:6px 11px;font-size:12px;font-weight:750;letter-spacing:.01em}
@@ -29,6 +34,8 @@ const enhancement = `${beginMarker}
   .analytics-top-bar-actions .fh6-live-countdown{margin-right:8px}
   .portable-page-meta{display:flex;align-items:flex-end;gap:8px;flex-direction:column}
   .portable-updated-label{font-size:12px;white-space:nowrap}
+  .portable-custom-html{overflow:visible!important}
+  .portable-custom-html iframe,.report-html-frame{display:block;width:100%;height:auto;min-height:0!important;overflow:hidden!important;border:0;scrollbar-width:none}
   @media(max-width:760px){.analytics-top-bar-actions .fh6-live-countdown{font-size:10px;padding:5px 8px}.analytics-reader-freshness .top-bar-refresh-text{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.portable-page-header{gap:12px}.portable-page-meta{align-items:flex-start}}
 </style>
 <script id="fh6-live-meta-script">
@@ -73,6 +80,51 @@ const enhancement = `${beginMarker}
     return node;
   }
 
+  function resizeFrame(frame) {
+    try {
+      const doc = frame.contentDocument;
+      if (!doc?.documentElement || !doc.body) return;
+      doc.documentElement.style.overflow = 'hidden';
+      doc.body.style.overflow = 'hidden';
+      frame.style.height = '1px';
+      const height = Math.ceil(Math.max(
+        doc.documentElement.scrollHeight,
+        doc.documentElement.offsetHeight,
+        doc.body.scrollHeight,
+        doc.body.offsetHeight
+      ));
+      if (height > 0) frame.style.height = (height + 2) + 'px';
+    } catch {
+      // The frame will be retried after its sandboxed srcdoc reloads as same-origin.
+    }
+  }
+
+  function scheduleFrameResize(frame) {
+    requestAnimationFrame(() => resizeFrame(frame));
+    window.setTimeout(() => resizeFrame(frame), 100);
+    window.setTimeout(() => resizeFrame(frame), 500);
+  }
+
+  function prepareFrame(frame) {
+    frame.setAttribute('scrolling', 'no');
+    if (!frame.dataset.fh6ResizeBound) {
+      frame.dataset.fh6ResizeBound = 'true';
+      frame.addEventListener('load', () => scheduleFrameResize(frame));
+    }
+    if (!frame.sandbox.contains('allow-same-origin')) {
+      frame.sandbox.add('allow-same-origin');
+      if (!frame.dataset.fh6ResizeReloaded) {
+        frame.dataset.fh6ResizeReloaded = 'true';
+        frame.srcdoc = frame.srcdoc;
+      }
+    }
+    scheduleFrameResize(frame);
+  }
+
+  function resizeReportFrames() {
+    document.querySelectorAll('.portable-custom-html iframe').forEach(prepareFrame);
+  }
+
   function decorate() {
     const fallbackMeta = document.querySelector('.portable-page-meta');
     if (fallbackMeta && !fallbackMeta.querySelector('.portable-updated-label')) {
@@ -92,6 +144,7 @@ const enhancement = `${beginMarker}
     if (actions && !document.getElementById('fh6-live-countdown-reader')) {
       actions.prepend(createCountdown('fh6-live-countdown-reader'));
     }
+    resizeReportFrames();
   }
 
   function tick() {
@@ -103,6 +156,7 @@ const enhancement = `${beginMarker}
   tick();
   const observer = new MutationObserver(() => { decorate(); tick(); });
   observer.observe(document.documentElement, { childList: true, subtree: true });
+  window.addEventListener('resize', resizeReportFrames, { passive: true });
   window.setInterval(tick, 1000);
 })();
 </script>
