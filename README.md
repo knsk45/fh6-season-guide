@@ -4,6 +4,8 @@
 
 ## Быстрый вход
 
+- [Публичная сводка для телефона](https://knsk45.github.io/fh6-season-guide/)
+- [Ветка ежедневных обновлений на GitHub](https://github.com/knsk45/fh6-season-guide/tree/daily-season)
 - [Текущая неделя](CURRENT_WEEK.md)
 - [Архив сезонов](seasons/)
 - [Как готовится сводка](docs/WORKFLOW.md)
