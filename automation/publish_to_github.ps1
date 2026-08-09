@@ -50,6 +50,8 @@ try {
         "reports/current-week.html",
         "README.md",
         "index.html",
+        "docs/WORKFLOW.md",
+        "docs/WEEKLY_TEMPLATE.md",
         "automation/publish_to_github.ps1"
     )
 

@@ -3,104 +3,198 @@
   "manifest": {
     "version": 1,
     "surface": "report",
-    "title": "FH6: быстрый маршрут Spring",
-    "description": "Series 3 Italian Exotics, Spring — 6–13 августа 2026",
-    "generatedAt": "2026-08-09T12:51:00+07:00",
+    "title": "FH6: все активности Spring",
+    "description": "Series 3 Italian Exotics, Spring — полный Festival Playlist в игровом порядке, 6–13 августа 2026",
+    "generatedAt": "2026-08-09T13:25:00+07:00",
     "blocks": [
       {
         "id": "title",
         "type": "markdown",
         "layout": "full",
-        "body": "# FH6: быстрый маршрут Spring"
+        "body": "# FH6: все активности Spring"
       },
       {
         "id": "executive_summary",
         "type": "markdown",
         "layout": "full",
-        "body": "## Executive Summary\n\n- **20 очков соло доступны сразу:** Monthly Rivals (1) + Weekly (5) + фото (2) + сундук (3) + четыре PR Stunts (9).\n- **40 очков:** добавьте The Trial (10) и два сезонных чемпионата (10). Основной маршрут даёт ровно 40.\n- **Treasure Hunt подтверждён:** сундук стоит на западном берегу реки в Takashiro, у конца красной пунктирной грунтовки; точная карта и кадр добавлены ниже.\n- **Дедлайн:** 13 августа, 21:30 по Красноярску. Награды — Lamborghini Huracán EVO Spyder за 20 и Pagani Huayra R за 40; официальный год Pagani расходится между Playlist (2021) и News (2022)."
+        "body": "## Executive Summary\n\n- **В сводке перечислены все 20 активностей:** порядок повторяет официальную Festival Playlist — от Weekly и семи Daily до Monthly Rivals. Ни одна Daily или онлайн-карточка не спрятана в общем списке.\n- **У каждой карточки есть способ выполнения и рекомендация машины:** если автомобиль фиксирован, не влияет на результат или тюнинг не нужен, это указано явно.\n- **Полный сезон даёт 53 очка:** диаграмма ниже показывает распределение всех очков, а не маршрут к отдельному порогу.\n- **Дедлайн — 13 августа, 21:30 по Красноярску.** Награды шкалы — Lamborghini Huracán EVO Spyder за 20 и Pagani Huayra R за 40; Collectibles на этой неделе нет."
       },
       {
-        "id": "season_facts",
+        "id": "playlist_index",
         "type": "markdown",
         "layout": "full",
-        "body": "## В Spring доступно 53 очка; сейчас открыты 49\n\nСезон действует с 6 августа, 21:30 до **13 августа 2026, 21:30** (Asia/Krasnoyarsk). В сумме активностей — **53 сезонных очка**. Monthly Rivals показывает 4 очка за Series, но распределяет их по одному в каждую неделю; в шкалу Spring идёт **1**. В день запуска были доступны **47** очков. На 9 августа, 12:51 открыты ещё пятничная и субботняя Daily: максимум **49**; после 21:30 откроется воскресная и станет 50."
+        "body": "## Порядок карточек совпадает с Festival Playlist\n\n1. Weekly: Racing Spirit\n2. Daily: All the Colors\n3. Daily: Stadium Scenery\n4. Daily: Thunderbird 2\n5. Daily: What’s It Gonna Be?\n6. Daily: Flinging Mud\n7. Daily: Taking the Reins\n8. Daily: Shopping Trip\n9. Photo Challenge: #SkiHoliday\n10. Treasure Hunt: Takashiro Region\n11. Championship: Out of the Loop!\n12. Championship: It’s Snow Problem At All\n13. Drag Meet: Festival Kilometer\n14. Speed Trap: Takashiro Bridge\n15. Speed Zone: Kōzokudōro\n16. Drift Zone: Nukabira Turn\n17. The Trial: Daily Commute\n18. Horizon Play / Spec Racing: Up to Spec?\n19. Horizon Stunt Party: Mini Games\n20. Monthly Rivals: Electric Town Circuit"
       },
       {
-        "id": "route_20",
+        "id": "points_explanation",
         "type": "markdown",
         "layout": "full",
-        "sourceId": "spring_breakdown",
-        "body": "## 20 очков без обязательного онлайна\n\n1. Monthly Rivals: чистый круг Electric Town Circuit — **1**.\n2. Weekly Racing Spirit на 1980 Abarth Fiat 131 — **+5 = 6**.\n3. На Lamborghini: #SkiHoliday у Sotoyama Ski Resort и Festival Kilometer быстрее 18,000 с — **+2 +3 = 11**.\n4. На Ferrari S1 800: Takashiro Bridge, Kōzokudōro и Nukabira Turn — **+2 +2 +2 = 17**.\n5. Treasure Hunt на западном берегу реки в Takashiro — **+3 = 20**.\n\nЕсли красная иконка не появилась, всё равно езжайте к точке по карте ниже: сообщество подтверждает, что физический сундук доступен и засчитывается."
+        "body": "## Все активности вместе дают 53 очка\n\nДиаграмма показывает вклад каждого типа карточек в общий сезонный максимум. Самые крупные блоки — два чемпионата и The Trial по 10 очков; это не рекомендация маршрута, а проверка полноты сводки. Сумма девяти групп равна **53**, а число карточек в исходных данных — **20**."
       },
       {
-        "id": "route_40",
-        "type": "markdown",
-        "layout": "full",
-        "sourceId": "spring_breakdown",
-        "body": "## 40 очков: только один обязательный онлайн-блок\n\nК соло-маршруту на 20 добавьте **The Trial: Daily Commute** (10), **Out of the Loop!** (5) и **It’s Snow Problem At All** (5): `20 + 10 + 5 + 5 = 40`. Все события доступны сразу после сезонного сброса.\n\nДиаграмма ниже показывает вклад каждого блока. Trial и два чемпионата вместе дают половину цели; остальная половина собирается короткими соло-активностями."
-      },
-      {
-        "id": "route_40_chart",
+        "id": "points_chart",
         "type": "chart",
         "layout": "full",
-        "chartId": "points_by_activity"
+        "chartId": "points_by_activity_group"
       },
       {
-        "id": "locations",
+        "id": "activity_01_weekly",
         "type": "markdown",
         "layout": "full",
-        "body": "## Карты: обе обязательные точки подтверждены\n\n**#SkiHoliday:** любая Lamborghini у [Sotoyama Ski Resort](https://forzahorizonhub.com/map?cat=landmark&loc=568818), сразу к юго-западу от значка Snow Forest Cross Country Circuit.\n\n**Treasure Hunt:** крайний запад Takashiro, каменистый берег реки у конца красной пунктирной грунтовки. Через воду видна небольшая красная пагода. Используйте [точную карту и вид на месте](https://preview.redd.it/q4bgddulsrhh1.jpeg?width=3840&format=pjpg&auto=webp&s=db86d1695d2cd1c06b7791673588495893e3d5a1); независимая публикация даёт ещё одну [карту крупным планом](https://preview.redd.it/4enbzoyomrhh1.jpg?width=4032&format=pjpg&auto=webp&s=c7dfe005e53b6c26c07b0100cfa94b16d4ad43f1) и [кадр сундука](https://preview.redd.it/wj0n2oyomrhh1.jpg?width=4032&format=pjpg&auto=webp&s=1b90b3585099f10506700f38b8e39d7fe31f6b3f). Значок Treasure Map может не появиться.\n\n**Collectibles:** на этой неделе активности нет."
+        "body": "## 01. Weekly Challenge — Racing Spirit · 5 очков\n\n**Условие:** 1980 Abarth Fiat 131; 4 звезды суммарно на Trailblazers, 2 победы в Dirt Races и 3 Ultimate Wreckage Skills.\n\n**Как выполнить:** повторяйте Coastal Descent, стартуя примерно за 704 м по северо-восточной дороге. Если Abarth не допускается в доступную Dirt Race, откройте пройденную гонку → Custom Race → Use My Car или Anything Goes.\n\n**Автомобиль и тюнинг:** обязательный Abarth Fiat 131; Awes0me Beau `207 861 362`, запасной XIII90 `996 668 231`. Оба кода — советы сообщества, не протестированные проектом."
       },
       {
-        "id": "tunes",
+        "id": "activity_02_daily_thu",
         "type": "markdown",
         "layout": "full",
-        "body": "## Машины и share codes текущей недели\n\n| Активность | Основной вариант | Код | Запасной вариант |\n|---|---|---:|---|\n| Weekly | Abarth Fiat 131 — Awes0me Beau | `207 861 362` | Abarth — `996 668 231`, XIII90 |\n| The Trial | Giulia Quadrifoglio — Awes0me Beau | `141 394 828` | Alfa 155 Q4 — `172 625 950`, XIII90 |\n| Out of the Loop | Toyota 4Runner TRD Pro — Awes0me Beau | `171 532 374` | Montero Evolution — `973 413 685`, XIII90 |\n| Snow Problem | Range Rover Sport SVR — **проверено в игре** | `913 262 787` | Urus — `101 588 982`, Awes0me Beau; Cayenne — `496 172 094`, XIII90 |\n| Festival Kilometer | Huracán EVO — Awes0me Beau | `194 351 203` | Temerario — `126 461 876`, Awes0me Beau |\n| Takashiro Bridge | Ferrari 458 Italia — Awes0me Beau | `796 821 422` | Ferrari 488 GTB — `172 533 643` |\n| Kōzokudōro | Ferrari 488 GTB — Awes0me Beau | `172 533 643` | Ferrari 458 Italia — `796 821 422` |\n| Nukabira Turn | Ferrari Dino — Awes0me Beau | `518 222 242` | Ferrari Roma — `612 265 990`, DCxReason |\n\nRange Rover `913 262 787` успешно прошёл чемпионат в игре 9 августа: итог 1-е место и 54 очка, награда и 5 Playlist points получены. Остальные коды остаются советами сообщества, не протестированными проектом."
+        "body": "## 02. Daily — All the Colors · четверг · 1 очко\n\n**Условие:** 3 звезды за один проезд Rainbow Run Speed Trap — 140 mph / 225,3 км/ч.\n\n**Как выполнить:** сделайте длинный прямой разгон; суммарные звёзды нескольких попыток не засчитываются.\n\n**Автомобиль и тюнинг:** 2009 Ferrari 458 Italia S1 800, Awes0me Beau `796 821 422`. Свежая рекомендация сообщества, не протестирована проектом."
       },
       {
-        "id": "all_activities",
+        "id": "activity_03_daily_fri",
         "type": "markdown",
         "layout": "full",
-        "body": "## Что ещё есть в Playlist\n\n- **Weekly (5):** 1980 Abarth Fiat 131; 4 звезды суммарно на Trailblazers; 2 победы Dirt; 3 Ultimate Wreckage. Быстрее всего повторять Coastal Descent, стартуя примерно за 704 м по северо-восточной дороге.\n- **Daily (по 1):** к 9 августа, 12:51 доступны четверг–суббота; воскресная откроется в 21:30. Далее: Wheelspin, 5 Air в Dirt, Great Skill Chain на Lamborghini и победа в кольцевой Road Race. Для среды берите Electric Town Circuit: это удовлетворяет и официальной общей формулировке, и Reddit-подсказке.\n- **Онлайн:** Trial (10), Spec Racing (3), Stunt Party (3).\n- **PR (9):** Lamborghini Drag (3), три Ferrari-события по 2.\n- **Чемпионаты (10):** Out of the Loop и It’s Snow Problem At All, по 5.\n- **Monthly Rivals:** 1 очко в шкалу Spring."
+        "body": "## 03. Daily — Stadium Scenery · пятница · 1 очко\n\n**Условие:** сфотографировать свою машину у Horizon Stadium.\n\n**Как выполнить:** подъедьте вплотную к стадиону и убедитесь, что сооружение попало в кадр.\n\n**Автомобиль и тюнинг:** подойдёт любой. Практичный выбор — 2020 Lamborghini Huracán EVO, чтобы затем использовать её в фото и Drag Meet; для этой Daily тюнинг не нужен, при объединении задач можно поставить Awes0me Beau `194 351 203`."
+      },
+      {
+        "id": "activity_04_daily_sat",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 04. Daily — Thunderbird 2 · суббота · 1 очко\n\n**Условие:** 2 звезды на Thunderbird Drift Zone на любой итальянской машине.\n\n**Как выполнить:** держите стабильные передачу и угол; скорость финиша менее важна, чем непрерывный набор очков.\n\n**Автомобиль и тюнинг:** 1969 Ferrari Dino 246 GT S1 800, Awes0me Beau `518 222 242`. Свежая рекомендация сообщества, не протестирована проектом."
+      },
+      {
+        "id": "activity_05_daily_sun",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 05. Daily — What’s It Gonna Be? · воскресенье · 1 очко\n\n**Условие:** использовать Wheelspin или Super Wheelspin.\n\n**Как выполнить:** после открытия Daily запустите любой накопленный спин; выигранный предмет не важен.\n\n**Автомобиль и тюнинг:** автомобиль не участвует, тюнинг не требуется. Откроется 9 августа в 21:30."
+      },
+      {
+        "id": "activity_06_daily_mon",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 06. Daily — Flinging Mud · понедельник · 1 очко\n\n**Условие:** 5 Air Skills любого уровня во время Dirt Races.\n\n**Как выполнить:** запустите неровную Dirt Race и повторяйте небольшие трамплины; результат гонки не важен.\n\n**Автомобиль и тюнинг:** 1980 Abarth Fiat 131, Awes0me Beau `207 861 362` — можно совместить с Weekly. Совет сообщества, не протестирован проектом."
+      },
+      {
+        "id": "activity_07_daily_tue",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 07. Daily — Taking the Reins · вторник · 1 очко\n\n**Условие:** Great Skill Chain на любой Lamborghini.\n\n**Как выполнить:** на широкой дороге соединяйте скорость, заносы и разрушение мелких объектов, затем безопасно зафиксируйте цепочку.\n\n**Автомобиль и тюнинг:** 2020 Lamborghini Huracán EVO S1 800, Awes0me Beau `194 351 203`. Совет сообщества, не протестирован проектом."
+      },
+      {
+        "id": "activity_08_daily_wed",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 08. Daily — Shopping Trip · среда · 1 очко\n\n**Условие:** официальный Playlist требует победить в кольцевой Road Race; Reddit называет Electric Town Circuit.\n\n**Как выполнить:** выиграйте Electric Town Circuit — трасса удовлетворяет обеим формулировкам.\n\n**Автомобиль и тюнинг:** 2015 Ferrari 488 GTB S1 800, Awes0me Beau `172 533 643`; при необходимости снизьте сложность Drivatar. Совет сообщества, не протестирован проектом."
+      },
+      {
+        "id": "activity_09_photo",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 09. Photo Challenge — #SkiHoliday · 2 очка\n\n**Условие:** сфотографировать любую Lamborghini у Sotoyama Ski Resort; награда — эмоция Take Off.\n\n**Как выполнить:** телепортируйтесь к Snow Forest Cross Country Circuit. Курорт расположен непосредственно к юго-западу от значка гонки; используйте [точную метку](https://forzahorizonhub.com/map?cat=landmark&loc=568818) или [скриншот карты](https://image.u4n.com/article/202605/sLpXhAaaDi8GbZNxbghE0fZPgmksBv8SXttgcWM8.webp).\n\n**Автомобиль и тюнинг:** 2020 Lamborghini Huracán EVO S1 800, Awes0me Beau `194 351 203`. Для фото тюнинг не обязателен; код можно использовать затем в Festival Kilometer."
+      },
+      {
+        "id": "activity_10_treasure",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 10. Treasure Hunt — Takashiro Region · 3 очка\n\n**Условие:** Follow the Photo Clue to Discover the Treasure; награда — 100 000 CR.\n\n**Как выполнить:** крайний запад Takashiro, каменистый берег реки у конца красной пунктирной грунтовки; через воду видна небольшая красная пагода. Откройте [общую карту и вид](https://preview.redd.it/q4bgddulsrhh1.jpeg?width=3840&format=pjpg&auto=webp&s=db86d1695d2cd1c06b7791673588495893e3d5a1), независимую [карту крупным планом](https://preview.redd.it/4enbzoyomrhh1.jpg?width=4032&format=pjpg&auto=webp&s=c7dfe005e53b6c26c07b0100cfa94b16d4ad43f1) и [кадр сундука](https://preview.redd.it/wj0n2oyomrhh1.jpg?width=4032&format=pjpg&auto=webp&s=1b90b3585099f10506700f38b8e39d7fe31f6b3f). Красная иконка может не появиться.\n\n**Автомобиль и тюнинг:** любой автомобиль; тюнинг не требуется."
+      },
+      {
+        "id": "activity_11_championship_loop",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 11. Championship — Out of the Loop! · 5 очков\n\n**Условие:** B600 Total Buggies & Offroad, Dirt; Kawazu Nanadaru Scramble, Cherry Field Trail, Chiheisen Scramble. Награда — 2022 Maserati MC20.\n\n**Как выполнить:** выиграйте чемпионат по сумме трёх гонок. Для поиска допустимых машин включите Buggies, Pickups & 4x4s, Unlimited Buggies и Unlimited Offroad.\n\n**Автомобиль и тюнинг:** 2019 Toyota 4Runner TRD Pro, Awes0me Beau `171 532 374`; запасной 1997 Mitsubishi Montero Evolution, XIII90 `973 413 685`. Советы сообщества, не протестированы проектом."
+      },
+      {
+        "id": "activity_12_championship_snow",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 12. Championship — It’s Snow Problem At All · 5 очков\n\n**Условие:** A700 Sports Utility Heroes, Cross Country; Snow Forest Cross Country Circuit, Tateyama Alpine Cross Country, Soni Highlands Cross Country. Награда — 2014 Lamborghini Huracán LP 610-4.\n\n**Как выполнить:** держите стабильный темп на снегу и берегите очки чемпионата; победа в каждом отдельном заезде не обязательна.\n\n**Автомобиль и тюнинг:** 2015 Range Rover Sport SVR, Awes0me Beau `913 262 787` — **проверено проектом в игре: 1-е место, 54 очка и награда получены**. Запасные: Lamborghini Urus `101 588 982`, Awes0me Beau; Porsche Cayenne `496 172 094`, XIII90 — не протестированы проектом."
+      },
+      {
+        "id": "activity_13_drag",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 13. Drag Meet — Festival Kilometer · 3 очка\n\n**Условие:** Lamborghini S1 800, не хуже 18,000 с; награда — Wheelspin.\n\n**Как выполнить:** нужен открытый Drag Meet со значком стартовой «ёлки», не обычная Festival Drag Race. Займите слот и дождитесь зелёного.\n\n**Автомобиль и тюнинг:** 2020 Lamborghini Huracán EVO, Awes0me Beau `194 351 203` — заявлено 17,150 с; запасной 2024 Lamborghini Temerario `126 461 876` — 17,217 с. Результаты автора, проектом не тестировались."
+      },
+      {
+        "id": "activity_14_speed_trap",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 14. Speed Trap — Takashiro Bridge · 2 очка\n\n**Условие:** Ferrari S1 800, 165 mph / 265,5 км/ч; награда — Wheelspin.\n\n**Как выполнить:** разгоняйтесь с востока; автор тюнинга получил 183 mph / 294,5 км/ч с первой попытки.\n\n**Автомобиль и тюнинг:** 2009 Ferrari 458 Italia, Awes0me Beau `796 821 422`; запасной 2015 Ferrari 488 GTB `172 533 643`. Советы сообщества, не протестированы проектом."
+      },
+      {
+        "id": "activity_15_speed_zone",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 15. Speed Zone — Kōzokudōro · 2 очка\n\n**Условие:** Ferrari S1 800, средняя скорость 200 mph / 321,9 км/ч; награда — Wheelspin.\n\n**Как выполнить:** начните примерно за 2,1 км с юго-запада и держите плавную траекторию.\n\n**Автомобиль и тюнинг:** 2015 Ferrari 488 GTB, Awes0me Beau `172 533 643`; запасной 2009 Ferrari 458 Italia `796 821 422`. Советы сообщества, не протестированы проектом."
+      },
+      {
+        "id": "activity_16_drift_zone",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 16. Drift Zone — Nukabira Turn · 2 очка\n\n**Условие:** Ferrari S1 800, 64 000 очков; награда — Wheelspin.\n\n**Как выполнить:** входите с востока и используйте мощный дрифт-тюнинг с низким сцеплением.\n\n**Автомобиль и тюнинг:** 1969 Ferrari Dino 246 GT, Awes0me Beau `518 222 242`; запасной 2020 Ferrari Roma, DCxReason `612 265 990`. Советы сообщества, не протестированы проектом."
+      },
+      {
+        "id": "activity_17_trial",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 17. The Trial — Daily Commute · 10 очков\n\n**Условие:** Alfa Romeo A700, Road; Ito Sprint, Tokyo Railway Sprint, Highway Circuit. Награда — 2020 Ferrari SF90 Stradale.\n\n**Как выполнить:** не выталкивайте союзников, пропускайте более быстрых игроков и безопасно блокируйте Drivatar. Обычно достаточно выиграть две гонки из трёх.\n\n**Автомобиль и тюнинг:** 2017 Alfa Romeo Giulia Quadrifoglio, Awes0me Beau `141 394 828`; запасной 1992 Alfa Romeo 155 Q4, XIII90 `172 625 950`. Свежие рекомендации сообщества, проектом не тестировались."
+      },
+      {
+        "id": "activity_18_spec_racing",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 18. Horizon Play / Spec Racing — Up to Spec? · 3 очка\n\n**Условие:** завершить чемпионат Spec Racing; награда — 2007 Alfa Romeo 8C Competizione.\n\n**Как выполнить:** войдите в доступный Spec Racing Championship и завершите все требуемые этапы.\n\n**Автомобиль и тюнинг:** машина и спецификация фиксируются событием; пользовательский share code не применяется."
+      },
+      {
+        "id": "activity_19_stunt_party",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 19. Horizon Stunt Party — Mini Games · 3 очка\n\n**Условие:** завершить любую Stunt Party; награда — клаксон Wah Wah Wah Wahhh.\n\n**Как выполнить:** регистрация открывается в начале каждого часа примерно на 10 минут. Примите приглашение в свободной езде и доберитесь до старта.\n\n**Автомобиль и тюнинг:** подойдёт любой; универсальный вариант — 2020 Lamborghini Huracán EVO S1 800, Awes0me Beau `194 351 203`. Для участия тюнинг не обязателен, рекомендация проектом не тестировалась."
+      },
+      {
+        "id": "activity_20_rivals",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## 20. Monthly Rivals — Electric Town Circuit · 1 очко в Spring\n\n**Условие:** чистый круг на выданном 2024 Lamborghini Temerario; карточка показывает 4 очка Series и Super Wheelspin.\n\n**Как выполнить:** проедьте медленно, не касаясь стен и не используя перемотку. В Spring зачисляется 1 очко, остальные три распределены по другим сезонам Series 3.\n\n**Автомобиль и тюнинг:** фиксированный 2024 Lamborghini Temerario; пользовательский тюнинг не требуется."
+      },
+      {
+        "id": "completeness",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## Проверка полноты\n\n- Карточек: **20**.\n- Очки: `5 + 7 + 2 + 3 + 10 + 9 + 10 + 6 + 1 = 53`.\n- У каждой активности с выбором машины есть рекомендация и статус тюнинга.\n- Collectibles отсутствует и не учитывается в числе карточек."
       },
       {
         "id": "traps",
         "type": "markdown",
         "layout": "full",
-        "body": "## Что может не засчитаться\n\n- Festival Kilometer требует открытый **Drag Meet**, а не обычную Festival Drag Race.\n- Rainbow Run требует 3 звезды **за один проезд** (140 mph / 225,3 км/ч).\n- Total Buggies & Offroad — специальная категория без удобного фильтра; проверьте Buggies, Pickups & 4x4s, Unlimited Buggies и Unlimited Offroad.\n- Для Takashiro Bridge разгоняйтесь с востока; 458 Italia `796 821 422` показала 183 mph. Для Kōzokudōro начните примерно за 2,1 км с юго-запада; Nukabira Turn удобнее входить с востока.\n- Stunt Party открывает 10-минутную регистрацию в начале каждого часа.\n- Если PI после загрузки неверен, примените тюнинг повторно."
+        "body": "## Общие ловушки\n\n- Если скачанный тюнинг показывает неверный PI, примените его повторно.\n- Total Buggies & Offroad не имеет удобного одноимённого фильтра.\n- Treasure Map может не показать красную иконку физически доступного сундука.\n- Stunt Party использует короткое окно регистрации в начале часа.\n- Все share codes, кроме Range Rover `913 262 787`, остаются советами сообщества, не протестированными проектом."
       },
       {
-        "id": "next_steps",
+        "id": "further_questions",
         "type": "markdown",
         "layout": "full",
-        "body": "## Что делать сейчас\n\n1. Сначала закройте Monthly Rivals и Weekly.\n2. Совместите фото и Drag Meet на одной Lamborghini, затем три Ferrari PR.\n3. Заберите сундук на западном берегу реки в Takashiro по прямой карте; отсутствие красной иконки не означает, что сундука нет.\n4. Для 40 запустите Trial, затем доберите оба чемпионата."
-      },
-      {
-        "id": "questions",
-        "type": "markdown",
-        "layout": "full",
-        "body": "## Что нужно перепроверить\n\n- Наличие и корректный PI всех share codes, кроме проверенного Range Rover `913 262 787`.\n- Исправление отсутствующей иконки Treasure Hunt в официальных Known Issues или release notes.\n- Какой модельный год Pagani Huayra R считается каноническим: официальный Playlist пишет 2021, статья Series 3 — 2022.\n- Официальное объяснение состава Total Buggies & Offroad; допустимость Pickups & 4x4s уже подтверждена свежим общественным разбором."
+        "body": "## Что ещё требует проверки\n\n- Наличие и корректный PI кодов в игре, кроме проверенного Range Rover.\n- Официальное исправление отсутствующей иконки Treasure Hunt.\n- Канонический год Pagani Huayra R: Playlist пишет 2021, статья Series 3 — 2022.\n- Официальное объяснение состава Total Buggies & Offroad."
       },
       {
         "id": "caveats",
         "type": "markdown",
         "layout": "full",
-        "body": "## Ограничения источников\n\nОфициальная Festival Playlist и статья Series 3 подтверждают даты, награды и ограничения, но расходятся по году Pagani Huayra R. Forza Forums закрыты, а Forza Support при повторной проверке вернул HTTP 403. Точка сундука подтверждена двумя свежими публикациями с картами и кадрами; предупреждение о пропадающей иконке Treasure Map остаётся сообщением сообщества. В игре проверен только Range Rover `913 262 787`; остальные share codes и PI проектом не тестировались."
+        "body": "## Ограничения источников\n\nОфициальная Festival Playlist подтверждает порядок, ограничения и награды. Forza Forums закрыты, а Support при последней проверке не дал отдельной Spring-specific заметки. Практические направления, машины и share codes взяты из свежих публикаций текущей недели и помечены как не протестированные проектом, кроме подтверждённого Range Rover."
       }
     ],
     "charts": [
       {
-        "id": "points_by_activity",
-        "title": "Очки в основном маршруте на 40",
-        "subtitle": "Series 3 Spring; сумма выбранных блоков = 40 сезонных очков",
+        "id": "points_by_activity_group",
+        "title": "Очки по типам активностей",
+        "subtitle": "Series 3 Spring: все 53 очка и 20 карточек, группы сохранены в порядке Festival Playlist",
         "type": "bar",
-        "dataset": "route_40_points",
-        "sourceId": "spring_breakdown",
+        "dataset": "activity_group_points",
+        "sourceId": "activity_catalog",
         "encodings": {
           "x": {
-            "field": "activity",
+            "field": "activity_group",
             "type": "nominal",
-            "label": "Блок активности"
+            "label": "Тип активности"
           },
           "y": {
             "field": "points",
@@ -109,11 +203,11 @@
             "label": "Очки"
           }
         },
-        "xAxisTitle": "Блок активности",
+        "xAxisTitle": "Тип активности",
         "yAxisTitle": "Очки",
         "valueFormat": "number",
         "unit": "очков",
-        "maxRows": 7,
+        "maxRows": 9,
         "surface": {
           "palette": {
             "kind": "single-root",
@@ -130,23 +224,24 @@
     ],
     "sources": [
       {
-        "id": "spring_breakdown",
-        "label": "FH6 Series 3 Spring Breakdown and Rewards",
+        "id": "activity_catalog",
+        "label": "FH6 Series 3 Spring Breakdown — каталог очков и карточек",
         "href": "https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/",
         "query": {
           "engine": "SQLite",
           "language": "sql",
-          "executed_at": "2026-08-09T12:51:00+07:00",
-          "description": "Ручная транскрипция сезонных очков из свежего Spring Breakdown с поправкой Monthly Rivals: один балл в сезон.",
-          "sql": "SELECT 'The Trial' AS activity, 10 AS points, 'ровно 40' AS route, 'launch day' AS availability, 'online' AS online UNION ALL SELECT 'Два чемпионата', 10, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Три Ferrari PR', 6, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Weekly Challenge', 5, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Lamborghini: фото + Drag', 5, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Treasure Hunt', 3, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Monthly Rivals', 1, 'ровно 40', 'series-wide completion', 'solo'",
+          "executed_at": "2026-08-09T13:25:00+07:00",
+          "description": "Ручная транскрипция всех Spring-карточек и их очков с сохранением официального порядка; Monthly Rivals распределён по одному очку на сезон.",
+          "sql": "SELECT 1 AS playlist_order, 'Weekly Challenge' AS activity_group, 1 AS card_count, 5 AS points, 'solo' AS mode UNION ALL SELECT 2, 'Daily Challenges', 7, 7, 'solo/time-gated' UNION ALL SELECT 3, 'Photo Challenge', 1, 2, 'solo' UNION ALL SELECT 4, 'Treasure Hunt', 1, 3, 'solo' UNION ALL SELECT 5, 'Championships', 2, 10, 'solo' UNION ALL SELECT 6, 'PR Stunts', 4, 9, 'solo/open-world' UNION ALL SELECT 7, 'The Trial', 1, 10, 'online' UNION ALL SELECT 8, 'Horizon Play', 2, 6, 'online' UNION ALL SELECT 9, 'Monthly Rivals', 1, 1, 'solo/series-wide'",
           "filters": [
             "Series 3 Italian Exotics Spring only",
-            "Activities selected for an exact 40-point route",
-            "Monthly Rivals counted as one point in the Spring season"
+            "All Festival Playlist activity cards",
+            "Monthly Rivals counted as one point in Spring"
           ],
           "metric_definitions": [
+            "card_count is the number of separately displayed activity cards in the current Spring playlist",
             "points is the contribution to the Spring seasonal reward bar",
-            "Monthly Rivals displays four Series points but contributes one to Spring"
+            "Monthly Rivals displays four Series points and contributes one point to Spring"
           ]
         }
       },
@@ -168,7 +263,12 @@
       {
         "id": "spring_tunes_xiii90",
         "label": "Series 3 Spring Seasonals Weekly Tunes by XIII90",
-        "href": "https://www.reddit.com/r/ForzaHorizon/comments/1vh5x3c/series_3_spring_seasonals_weekly_tunes_by_xiii90/"
+        "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/"
+      },
+      {
+        "id": "treasure_location",
+        "label": "FH6 Series 3 Spring Treasure Hunt maps and screenshots",
+        "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5z0b/100k_box_location/"
       },
       {
         "id": "project_gameplay_verification",
@@ -178,11 +278,6 @@
         "id": "official_forums_retired",
         "label": "Official notice: Forza Forums retired",
         "href": "https://forza.net/forums"
-      },
-      {
-        "id": "treasure_location",
-        "label": "FH6 Series 3 Spring Treasure Hunt maps and screenshots",
-        "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5z0b/100k_box_location/"
       }
     ]
   },
@@ -190,37 +285,40 @@
     "version": 1,
     "status": "ready",
     "datasets": {
-      "route_40_points": [
-        { "activity": "The Trial", "points": 10, "route": "ровно 40", "availability": "launch day", "online": "online" },
-        { "activity": "Два чемпионата", "points": 10, "route": "ровно 40", "availability": "launch day", "online": "solo" },
-        { "activity": "Три Ferrari PR", "points": 6, "route": "ровно 40", "availability": "launch day", "online": "solo" },
-        { "activity": "Weekly Challenge", "points": 5, "route": "ровно 40", "availability": "launch day", "online": "solo" },
-        { "activity": "Lamborghini: фото + Drag", "points": 5, "route": "ровно 40", "availability": "launch day", "online": "solo" },
-        { "activity": "Treasure Hunt", "points": 3, "route": "ровно 40", "availability": "launch day", "online": "solo" },
-        { "activity": "Monthly Rivals", "points": 1, "route": "ровно 40", "availability": "series-wide completion", "online": "solo" }
+      "activity_group_points": [
+        { "playlist_order": 1, "activity_group": "Weekly Challenge", "card_count": 1, "points": 5, "mode": "solo" },
+        { "playlist_order": 2, "activity_group": "Daily Challenges", "card_count": 7, "points": 7, "mode": "solo/time-gated" },
+        { "playlist_order": 3, "activity_group": "Photo Challenge", "card_count": 1, "points": 2, "mode": "solo" },
+        { "playlist_order": 4, "activity_group": "Treasure Hunt", "card_count": 1, "points": 3, "mode": "solo" },
+        { "playlist_order": 5, "activity_group": "Championships", "card_count": 2, "points": 10, "mode": "solo" },
+        { "playlist_order": 6, "activity_group": "PR Stunts", "card_count": 4, "points": 9, "mode": "solo/open-world" },
+        { "playlist_order": 7, "activity_group": "The Trial", "card_count": 1, "points": 10, "mode": "online" },
+        { "playlist_order": 8, "activity_group": "Horizon Play", "card_count": 2, "points": 6, "mode": "online" },
+        { "playlist_order": 9, "activity_group": "Monthly Rivals", "card_count": 1, "points": 1, "mode": "solo/series-wide" }
       ]
     },
     "accessIssues": []
   },
   "sources": [
     {
-      "id": "spring_breakdown",
-      "label": "FH6 Series 3 Spring Breakdown and Rewards",
+      "id": "activity_catalog",
+      "label": "FH6 Series 3 Spring Breakdown — каталог очков и карточек",
       "href": "https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/",
       "query": {
         "engine": "SQLite",
         "language": "sql",
-        "executed_at": "2026-08-09T12:51:00+07:00",
-        "description": "Ручная транскрипция сезонных очков из свежего Spring Breakdown с поправкой Monthly Rivals: один балл в сезон.",
-        "sql": "SELECT 'The Trial' AS activity, 10 AS points, 'ровно 40' AS route, 'launch day' AS availability, 'online' AS online UNION ALL SELECT 'Два чемпионата', 10, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Три Ferrari PR', 6, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Weekly Challenge', 5, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Lamborghini: фото + Drag', 5, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Treasure Hunt', 3, 'ровно 40', 'launch day', 'solo' UNION ALL SELECT 'Monthly Rivals', 1, 'ровно 40', 'series-wide completion', 'solo'",
+        "executed_at": "2026-08-09T13:25:00+07:00",
+        "description": "Ручная транскрипция всех Spring-карточек и их очков с сохранением официального порядка; Monthly Rivals распределён по одному очку на сезон.",
+        "sql": "SELECT 1 AS playlist_order, 'Weekly Challenge' AS activity_group, 1 AS card_count, 5 AS points, 'solo' AS mode UNION ALL SELECT 2, 'Daily Challenges', 7, 7, 'solo/time-gated' UNION ALL SELECT 3, 'Photo Challenge', 1, 2, 'solo' UNION ALL SELECT 4, 'Treasure Hunt', 1, 3, 'solo' UNION ALL SELECT 5, 'Championships', 2, 10, 'solo' UNION ALL SELECT 6, 'PR Stunts', 4, 9, 'solo/open-world' UNION ALL SELECT 7, 'The Trial', 1, 10, 'online' UNION ALL SELECT 8, 'Horizon Play', 2, 6, 'online' UNION ALL SELECT 9, 'Monthly Rivals', 1, 1, 'solo/series-wide'",
         "filters": [
           "Series 3 Italian Exotics Spring only",
-          "Activities selected for an exact 40-point route",
-          "Monthly Rivals counted as one point in the Spring season"
+          "All Festival Playlist activity cards",
+          "Monthly Rivals counted as one point in Spring"
         ],
         "metric_definitions": [
+          "card_count is the number of separately displayed activity cards in the current Spring playlist",
           "points is the contribution to the Spring seasonal reward bar",
-          "Monthly Rivals displays four Series points but contributes one to Spring"
+          "Monthly Rivals displays four Series points and contributes one point to Spring"
         ]
       }
     },
@@ -242,7 +340,12 @@
     {
       "id": "spring_tunes_xiii90",
       "label": "Series 3 Spring Seasonals Weekly Tunes by XIII90",
-      "href": "https://www.reddit.com/r/ForzaHorizon/comments/1vh5x3c/series_3_spring_seasonals_weekly_tunes_by_xiii90/"
+      "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/"
+    },
+    {
+      "id": "treasure_location",
+      "label": "FH6 Series 3 Spring Treasure Hunt maps and screenshots",
+      "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5z0b/100k_box_location/"
     },
     {
       "id": "project_gameplay_verification",
@@ -252,15 +355,10 @@
       "id": "official_forums_retired",
       "label": "Official notice: Forza Forums retired",
       "href": "https://forza.net/forums"
-    },
-    {
-      "id": "treasure_location",
-      "label": "FH6 Series 3 Spring Treasure Hunt maps and screenshots",
-      "href": "https://www.reddit.com/r/ForzaHorizon6/comments/1vh5z0b/100k_box_location/"
     }
   ],
   "package_info": {
-    "generated_at": "2026-08-09T12:51:00+07:00",
-    "workflow": "weekly-fh6-season-guide"
+    "generated_at": "2026-08-09T13:25:00+07:00",
+    "workflow": "weekly-fh6-complete-playlist-guide"
   }
 }
