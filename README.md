@@ -27,7 +27,7 @@
 ```text
 CURRENT_WEEK.md             — ссылка на актуальную сводку
 seasons/YYYY-MM-DD-*.md     — архив недель
-reports/current-week.html   — автономный HTML-отчёт текущей недели
+reports/current-week.html   — лёгкий публичный HTML-отчёт текущей недели
 reports/artifact.json       — исходные данные HTML-отчёта
 docs/WORKFLOW.md            — порядок еженедельного исследования
 docs/SOURCES.md             — приоритет источников и верификация

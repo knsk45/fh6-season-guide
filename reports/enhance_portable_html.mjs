@@ -3,170 +3,143 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const reportDir = path.dirname(fileURLToPath(import.meta.url));
-const htmlPath = path.join(reportDir, 'current-week.html');
 const artifactPath = path.join(reportDir, 'artifact.json');
-const beginMarker = '<!-- FH6_LIVE_META_BEGIN -->';
-const endMarker = '<!-- FH6_LIVE_META_END -->';
-
+const htmlPath = path.join(reportDir, 'current-week.html');
 const artifact = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
+const blocks = artifact?.manifest?.blocks ?? [];
+const title = artifact?.manifest?.title;
 const generatedAt = artifact?.snapshot?.generatedAt ?? artifact?.manifest?.generatedAt;
-if (!generatedAt || Number.isNaN(Date.parse(generatedAt))) {
-  throw new Error('artifact.json does not contain a valid generatedAt timestamp');
+
+if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt))) {
+  throw new Error('artifact.json must contain a title and a valid generatedAt timestamp');
+}
+if (blocks.length !== 14 || blocks.some((block) => block.type !== 'html' || !block.body)) {
+  throw new Error(`Expected exactly 14 HTML activity blocks, received ${blocks.length}`);
 }
 
-let html = fs.readFileSync(htmlPath, 'utf8');
-const oldStart = html.indexOf(beginMarker);
-if (oldStart >= 0) {
-  const oldEnd = html.indexOf(endMarker, oldStart);
-  if (oldEnd < 0) throw new Error('Found an incomplete FH6 live metadata block');
-  html = html.slice(0, oldStart) + html.slice(oldEnd + endMarker.length);
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
 }
 
-html = html.replaceAll(
-  '<iframe sandbox="" loading="lazy"',
-  '<iframe sandbox="allow-same-origin" scrolling="no" loading="lazy"'
-);
+function staticCard(block, index) {
+  let body = block.body.replace(/<style>[\s\S]*?<\/style>/i, '').trim();
+  body = body.replace(
+    /src="data:image\/[^\"]+"\s+data-local-src="([^"]+)"/g,
+    'src="$1"'
+  );
+  if (index === 0) {
+    body = body.replace('loading="lazy"', 'loading="eager" fetchpriority="high"');
+  }
+  if (body.includes('data:image/') || body.includes('data-local-src=')) {
+    throw new Error(`Failed to externalize images in block ${block.id}`);
+  }
+  for (const match of body.matchAll(/src="(assets\/[^"]+)"/g)) {
+    const assetPath = path.join(reportDir, ...match[1].split('/'));
+    if (!fs.existsSync(assetPath)) throw new Error(`Missing referenced asset: ${match[1]}`);
+  }
+  return `<section class="activity-block" id="${escapeHtml(block.id)}" data-activity-block>${body}</section>`;
+}
 
-const enhancement = `${beginMarker}
-<style id="fh6-live-meta-style">
-  .fh6-live-countdown{display:inline-flex;align-items:center;white-space:nowrap;border:1px solid color-mix(in srgb,currentColor 22%,transparent);border-radius:999px;padding:6px 11px;font-size:12px;font-weight:750;letter-spacing:.01em}
-  .fh6-live-countdown strong{margin-left:5px;color:#86a900;font-variant-numeric:tabular-nums}
-  .analytics-top-bar-actions .fh6-live-countdown{margin-right:8px}
-  .portable-page-meta{display:flex;align-items:flex-end;gap:8px;flex-direction:column}
-  .portable-updated-label{font-size:12px;white-space:nowrap}
-  .portable-custom-html{overflow:visible!important}
-  .portable-custom-html iframe,.report-html-frame{display:block;width:100%;height:auto;min-height:0!important;overflow:hidden!important;border:0;scrollbar-width:none}
-  @media(max-width:760px){.analytics-top-bar-actions .fh6-live-countdown{font-size:10px;padding:5px 8px}.analytics-reader-freshness .top-bar-refresh-text{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.portable-page-header{gap:12px}.portable-page-meta{align-items:flex-start}}
-</style>
-<script id="fh6-live-meta-script">
-(() => {
-  const generatedAt = ${JSON.stringify(generatedAt)};
-  const updatedText = 'Обновлено: ' + new Intl.DateTimeFormat('ru-RU', {
-    timeZone: 'Asia/Krasnoyarsk', day: '2-digit', month: '2-digit', year: 'numeric',
-    hour: '2-digit', minute: '2-digit'
-  }).format(new Date(generatedAt));
-  const krasnoyarskOffsetMs = 7 * 60 * 60 * 1000;
+const sharedStyleMatch = blocks[0].body.match(/<style>([\s\S]*?)<\/style>/i);
+if (!sharedStyleMatch) throw new Error('The first activity block has no shared card styles');
+const sharedCardCss = sharedStyleMatch[1];
+const cardsHtml = blocks.map(staticCard).join('\n');
+const updatedText = new Intl.DateTimeFormat('ru-RU', {
+  timeZone: 'Asia/Krasnoyarsk',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  hourCycle: 'h23'
+}).format(new Date(generatedAt));
 
-  function nextThursdayDeadline(nowMs) {
-    const local = new Date(nowMs + krasnoyarskOffsetMs);
-    const weekday = local.getUTCDay();
-    let daysAhead = (4 - weekday + 7) % 7;
-    let targetLocal = Date.UTC(
-      local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + daysAhead, 21, 30, 0
-    );
-    if (targetLocal <= local.getTime()) {
-      daysAhead += 7;
-      targetLocal = Date.UTC(
-        local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + daysAhead, 21, 30, 0
-      );
+const html = `<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#071014">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>${escapeHtml(title)}</title>
+  <style>
+${sharedCardCss}
+    html{scroll-behavior:smooth;background:#071014}
+    body{min-width:0;overflow-x:hidden}
+    .page-header{position:sticky;top:0;z-index:100;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;padding:12px max(20px,calc((100vw - 1360px)/2 + 24px));border-bottom:1px solid #29434b;background:#071014f2;backdrop-filter:blur(12px)}
+    .page-header h1{min-width:0;margin:0;overflow:hidden;color:#fff;font-size:16px;line-height:1.35;font-weight:750;text-overflow:ellipsis;white-space:nowrap}
+    .page-meta{display:flex;align-items:center;justify-content:flex-end;gap:12px;color:#b8ccd1;font-size:12px;white-space:nowrap}
+    .countdown{display:inline-flex;align-items:center;padding:6px 11px;border:1px solid #36515a;border-radius:999px;background:#0e2025}
+    .countdown strong{margin-left:5px;color:#d9ff00;font-variant-numeric:tabular-nums}
+    .updated{color:#8ea8ae}
+    .report{width:min(1360px,100%);margin:0 auto;padding:28px 32px 64px}
+    .activity-list{display:grid;gap:28px}
+    .activity-block{min-width:0;content-visibility:auto;contain-intrinsic-size:auto 360px}
+    .activity-block .card{width:100%}
+    @media(max-width:760px){
+      .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
+      .page-header h1{font-size:20px;white-space:normal}
+      .page-meta{justify-content:flex-start;flex-wrap:wrap;gap:8px;font-size:11px}
+      .report{padding:18px 14px 44px}
+      .activity-list{gap:18px}
+      .activity-block{contain-intrinsic-size:auto 620px}
     }
-    return targetLocal - krasnoyarskOffsetMs;
-  }
-
-  function countdownText(nowMs) {
-    let seconds = Math.max(0, Math.floor((nextThursdayDeadline(nowMs) - nowMs) / 1000));
-    const days = Math.floor(seconds / 86400); seconds %= 86400;
-    const hours = Math.floor(seconds / 3600); seconds %= 3600;
-    const minutes = Math.floor(seconds / 60); seconds %= 60;
-    return days + 'д ' + String(hours).padStart(2, '0') + 'ч ' +
-      String(minutes).padStart(2, '0') + 'м ' + String(seconds).padStart(2, '0') + 'с';
-  }
-
-  function createCountdown(id) {
-    const node = document.createElement('span');
-    node.id = id;
-    node.className = 'fh6-live-countdown';
-    node.innerHTML = 'Заканчивается через <strong data-fh6-countdown></strong>';
-    return node;
-  }
-
-  function resizeFrame(frame) {
-    try {
-      const doc = frame.contentDocument;
-      if (!doc?.documentElement || !doc.body) return;
-      doc.documentElement.style.overflow = 'hidden';
-      doc.body.style.overflow = 'hidden';
-      frame.style.height = '1px';
-      const height = Math.ceil(Math.max(
-        doc.documentElement.scrollHeight,
-        doc.documentElement.offsetHeight,
-        doc.body.scrollHeight,
-        doc.body.offsetHeight
-      ));
-      if (height > 0) frame.style.height = (height + 2) + 'px';
-    } catch {
-      // The frame will be retried after its sandboxed srcdoc reloads as same-origin.
-    }
-  }
-
-  function scheduleFrameResize(frame) {
-    requestAnimationFrame(() => resizeFrame(frame));
-    window.setTimeout(() => resizeFrame(frame), 100);
-    window.setTimeout(() => resizeFrame(frame), 500);
-  }
-
-  function prepareFrame(frame) {
-    frame.setAttribute('scrolling', 'no');
-    if (!frame.dataset.fh6ResizeBound) {
-      frame.dataset.fh6ResizeBound = 'true';
-      frame.addEventListener('load', () => scheduleFrameResize(frame));
-    }
-    if (!frame.sandbox.contains('allow-same-origin')) {
-      frame.sandbox.add('allow-same-origin');
-      if (!frame.dataset.fh6ResizeReloaded) {
-        frame.dataset.fh6ResizeReloaded = 'true';
-        frame.srcdoc = frame.srcdoc;
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>${escapeHtml(title)}</h1>
+    <div class="page-meta">
+      <span class="countdown">Заканчивается через <strong id="season-countdown">—</strong></span>
+      <time class="updated" datetime="${escapeHtml(generatedAt)}">Обновлено: ${escapeHtml(updatedText)}</time>
+    </div>
+  </header>
+  <main class="report">
+    <div class="activity-list">
+${cardsHtml}
+    </div>
+  </main>
+  <script>
+  (() => {
+    const output = document.getElementById('season-countdown');
+    const offset = 7 * 60 * 60 * 1000;
+    function nextDeadline(now) {
+      const local = new Date(now + offset);
+      let days = (4 - local.getUTCDay() + 7) % 7;
+      let target = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + days, 21, 30);
+      if (target <= local.getTime()) {
+        days += 7;
+        target = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + days, 21, 30);
       }
+      return target - offset;
     }
-    scheduleFrameResize(frame);
-  }
-
-  function resizeReportFrames() {
-    document.querySelectorAll('.portable-custom-html iframe').forEach(prepareFrame);
-  }
-
-  function decorate() {
-    const fallbackMeta = document.querySelector('.portable-page-meta');
-    if (fallbackMeta && !fallbackMeta.querySelector('.portable-updated-label')) {
-      const time = fallbackMeta.querySelector('time');
-      if (time) {
-        time.textContent = updatedText;
-        time.classList.add('portable-updated-label');
-      }
-      fallbackMeta.prepend(createCountdown('fh6-live-countdown-fallback'));
+    function tick() {
+      let seconds = Math.max(0, Math.floor((nextDeadline(Date.now()) - Date.now()) / 1000));
+      const days = Math.floor(seconds / 86400); seconds %= 86400;
+      const hours = Math.floor(seconds / 3600); seconds %= 3600;
+      const minutes = Math.floor(seconds / 60); seconds %= 60;
+      output.textContent = days + 'д ' + String(hours).padStart(2,'0') + 'ч ' + String(minutes).padStart(2,'0') + 'м ' + String(seconds).padStart(2,'0') + 'с';
     }
+    tick();
+    window.setInterval(tick, 1000);
+  })();
+  </script>
+</body>
+</html>`;
 
-    const readerFreshness = document.querySelector('.analytics-reader-freshness .top-bar-refresh-text');
-    if (readerFreshness && readerFreshness.textContent !== updatedText) {
-      readerFreshness.textContent = updatedText;
-    }
-    const actions = document.querySelector('.analytics-top-bar-actions');
-    if (actions && !document.getElementById('fh6-live-countdown-reader')) {
-      actions.prepend(createCountdown('fh6-live-countdown-reader'));
-    }
-    resizeReportFrames();
-  }
-
-  function tick() {
-    const value = countdownText(Date.now());
-    document.querySelectorAll('[data-fh6-countdown]').forEach((node) => { node.textContent = value; });
-  }
-
-  decorate();
-  tick();
-  const observer = new MutationObserver(() => { decorate(); tick(); });
-  observer.observe(document.documentElement, { childList: true, subtree: true });
-  window.addEventListener('resize', resizeReportFrames, { passive: true });
-  window.setInterval(tick, 1000);
-})();
-</script>
-${endMarker}`;
-
-if (!html.includes('</body>')) throw new Error('Portable HTML has no closing body tag');
-html = html.replace('</body>', `${enhancement}\n</body>`);
 fs.writeFileSync(htmlPath, html, 'utf8');
 
-if (!html.includes('Заканчивается через') || !html.includes('Обновлено: ')) {
-  throw new Error('Live metadata enhancement verification failed');
+const outputBytes = fs.statSync(htmlPath).size;
+if (outputBytes > 200_000) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
+if ((html.match(/data-activity-block/g) ?? []).length !== 14) throw new Error('Lightweight report lost activity blocks');
+if (html.includes('<iframe') || html.includes('data:image/') || html.includes('data-analytics-portable-reader')) {
+  throw new Error('Lightweight report still contains a heavy portable runtime or embedded images');
 }
-console.log(`Enhanced ${htmlPath} with a live Thursday 21:30 Asia/Krasnoyarsk countdown`);
+
+console.log(`Built lightweight ${htmlPath}: ${outputBytes} bytes, 14 cards, 0 iframes`);
