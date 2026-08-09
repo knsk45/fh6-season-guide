@@ -89,22 +89,24 @@ try {
     }
 
     $Deadline = (Get-Date).AddMinutes(3)
-    $PagesBuild = $null
+    $PagesRun = $null
     do {
-        $BuildJson = & $GitHubCli api "repos/$Repository/pages/builds/latest"
-        Assert-NativeSuccess "Read latest GitHub Pages build"
-        $PagesBuild = $BuildJson | ConvertFrom-Json
-        if ($PagesBuild.commit -eq $LocalSha -and $PagesBuild.status -eq "built") {
+        $RunsJson = & $GitHubCli api "repos/$Repository/actions/runs?head_sha=$LocalSha&per_page=20"
+        Assert-NativeSuccess "Read GitHub Actions runs"
+        $PagesRun = (($RunsJson | ConvertFrom-Json).workflow_runs | Where-Object {
+            $_.path -eq "dynamic/pages/pages-build-deployment" -and $_.head_sha -eq $LocalSha
+        } | Select-Object -First 1)
+        if ($PagesRun -and $PagesRun.status -eq "completed" -and $PagesRun.conclusion -eq "success") {
             break
         }
-        if ($PagesBuild.commit -eq $LocalSha -and $PagesBuild.status -eq "errored") {
-            throw "GitHub Pages build failed for commit $LocalSha."
+        if ($PagesRun -and $PagesRun.status -eq "completed" -and $PagesRun.conclusion -ne "success") {
+            throw "GitHub Pages deployment failed for commit $LocalSha with conclusion '$($PagesRun.conclusion)'."
         }
         Start-Sleep -Seconds 5
     } while ((Get-Date) -lt $Deadline)
 
-    if ($PagesBuild.commit -ne $LocalSha -or $PagesBuild.status -ne "built") {
-        throw "GitHub Pages did not confirm commit $LocalSha within three minutes."
+    if (-not $PagesRun -or $PagesRun.status -ne "completed" -or $PagesRun.conclusion -ne "success") {
+        throw "GitHub Pages did not confirm deployment of commit $LocalSha within three minutes."
     }
 
     $Response = Invoke-WebRequest -UseBasicParsing -Uri $PagesUrl -TimeoutSec 30
