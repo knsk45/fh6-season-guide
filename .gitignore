@@ -1,0 +1,9 @@
+# Personal gameplay/autopilot state is local-only.
+automation/current_run.json
+automation/runs/
+
+# Common local/editor artifacts.
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

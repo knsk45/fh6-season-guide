@@ -1,0 +1,21 @@
+# Source notes — 2026-08-07 refresh
+
+- Audience: игрок, который хочет получить сезонные машины за 20/40 очков с минимумом лишних заездов.
+- Scope: FH6 Series 3 «Italian Exotics», Spring, 2026-08-06 14:30 UTC — 2026-08-13 14:30 UTC.
+- Report surface: один portable HTML из канонического `reports/artifact.json`; публикация в Sites не запрошена.
+- Evidence boundary: официальные Forza Playlist/News подтверждают Series, сезон, даты, награды, ограничения и трассы; Reddit текущей недели используется для очков, маршрутов, машин, кодов и замеченных ловушек.
+- Official forum gap: Forza Forums закрыты и перенаправляют на `forza.net/forums`; публикаций официального форума за текущую неделю физически нет. Это ограничение источника, а не пропуск поиска.
+- Support check: последняя найденная официальная заметка Series 3 — Release Notes 2026-07-20; отдельной Spring-specific заметки к 2026-08-06 21:50 UTC+7 не найдено.
+- Points definition: Reddit-карточка Monthly Rivals показывает 4 PTS за Series. По официальному форумному объяснению событие даёт по 1 очку в каждый из четырёх сезонов, поэтому в расчётах Spring используется 1. Всего в сезонной шкале 53; в день запуска доступно 47, потому что шесть Daily ещё закрыты.
+- Route arithmetic: 20 = Monthly 1 + Weekly 5 + Photo 2 + Treasure 3 + Lamborghini Drag 3 + три Ferrari PR по 2 (6). 40 = предыдущие 20 + Trial 10 + два Championships по 5 (10).
+- Treasure refresh: 2026-08-07 найдены и визуально сверены два независимых набора кадров. Сундук находится на крайнем западе Takashiro, на каменистом берегу реки у конца красной пунктирной грунтовки; через воду видна небольшая красная пагода. Сохранены прямые ссылки на объединённую карту/сцену, независимую карту и отдельный кадр сундука.
+- Treasure Map caveat: автор основного недельного разбора сообщает, что красная иконка сундука не появилась даже при купленной Treasure Map, хотя физический сундук был найден и разбит. Это предупреждение сообщества, не официальная запись Known Issues.
+- Snapshot readiness: обязательный пробел по Treasure Hunt закрыт, поэтому snapshot переведён из `partial` в `ready`, а access issue удалён.
+- Photo verification: Sotoyama Ski Resort подтверждён свежим разбором и независимой интерактивной картой; прямой marker URL сохранён в отчёте.
+- Collectibles: текущая официальная строка Spring не содержит Collectibles; активность отсутствует.
+- Tune policy: все 9-значные коды взяты из публикаций 2026-08-06. Awes0me Beau заявляет повторные тесты; XIII90 и ollumi дают текущие альтернативы. Ни один код не проверен в игре в рамках проекта, поэтому это помечено в отчёте. При повторной проверке Awes0me Beau обновил Out of the Loop на фактически использованный 2019 Toyota 4Runner TRD Pro `171 532 374`; прежний Bronco удалён из рекомендаций проекта.
+- Filter evidence: свежий Spring Information Thread подтверждает, что Pickups & 4x4s допустимы в Total Buggies & Offroad. Причина необычного набора категорий официально не объяснена, поэтому формулировка об ошибке Playground Games остаётся предположением сообщества.
+- Chart map: section `Из чего складываются ровно 40 очков`; analytical question — какие блоки дают точный порог 40; family/type — Comparison & Ranking / vertical bar; fields — `activity`, `points`, `route`, `availability`, `online`; supported claim — основной маршрут даёт ровно 40, а половина набирается Trial и чемпионатами; palette — single blue root, direct labels, no legend; delivery — `reports/current-week.html`.
+- Chart sufficiency: 7 meaningful categories, above the 4-category minimum. Bar starts at zero; one quantitative axis, no redundant color encoding.
+- Executive structure mapping: Title → title block; Executive Summary → immediate summary block; key findings/evidence → point definitions, routes, chart, locations and tunes; recommended next steps → play order; further questions → code and filter checks; caveats → source gaps and project testing boundary.
+- No separate visible sources appendix was added to the report body; canonical source affordances carry provenance. The season Markdown retains a human-readable source list because the weekly template explicitly requires it.
