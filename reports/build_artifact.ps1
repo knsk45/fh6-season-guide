@@ -4,20 +4,28 @@
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
-$assetPath = Join-Path $PSScriptRoot 'assets\fh6-s03-spring-playlist-small.png'
+$assetRoot = Join-Path $PSScriptRoot 'assets\fandom-spring'
 $artifactPath = Join-Path $PSScriptRoot 'artifact.json'
-$deadline = [DateTimeOffset]::Parse('2026-08-13T21:30:00+07:00')
 $generatedAt = [DateTimeOffset]::Now
-$remaining = $deadline - $generatedAt
-if ($remaining.TotalSeconds -lt 0) { $remaining = [TimeSpan]::Zero }
-$countdown = if ($CountdownOverride) {
-    $CountdownOverride
-} else {
-    '{0}d {1}h {2}m' -f [Math]::Floor($remaining.TotalDays), $remaining.Hours, $remaining.Minutes
+
+function Get-AssetDataUri([string]$FileName) {
+    $path = Join-Path $assetRoot $FileName
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Missing report asset: $path"
+    }
+    $extension = [IO.Path]::GetExtension($path).TrimStart('.').ToLowerInvariant()
+    $mime = switch ($extension) {
+        'jpg' { 'image/jpeg' }
+        'jpeg' { 'image/jpeg' }
+        'png' { 'image/png' }
+        default { throw "Unsupported image type: $path" }
+    }
+    $base64 = [Convert]::ToBase64String([IO.File]::ReadAllBytes($path))
+    return "data:$mime;base64,$base64"
 }
 
-$imageBase64 = [Convert]::ToBase64String([IO.File]::ReadAllBytes($assetPath))
 $official = 'https://forza.net/fh6playlists'
+$fandom = 'https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season'
 $reddit = 'https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/'
 $awes0me = 'https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/'
 $xiii90 = 'https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/'
@@ -133,23 +141,43 @@ $cards = @(
     }
 )
 
-function New-CardHtml([hashtable]$card, [bool]$ShowCountdown) {
-    $countdownHtml = if ($ShowCountdown) { "<div class='countdown'>Заканчивается через <b>$countdown</b></div>" } else { '' }
+$visuals = @{
+    activity_01_weekly     = @{ image = 'FH6_Series3Spring.jpg';             icon = 'FH6_EventSeasonal_Drive_Icon.png';       position = '50% 18%' }
+    activity_02_daily      = @{ image = 'FH6_Series3Spring.jpg';             icon = 'FH6_EventSeasonal_Stunt_Icon.png';       position = '50% 18%' }
+    activity_03_photo      = @{ image = 'FH6_S3Spring_PhotoChallenge.jpg';   icon = 'FH6_EventFP_PhotoChallenge_Icon.png';    position = '50% 31%' }
+    activity_04_treasure   = @{ image = 'FH6_S3Spring_TreasureHunt.jpg';     icon = 'FH6_EventFP_TreasureHunt_Icon.png';      position = '50% 28%' }
+    activity_05_loop       = @{ image = 'FH6_S3Spring_Champ1.jpg';           icon = 'FH6_EventFP_DirtScramble_Icon.png';      position = '50% 50%' }
+    activity_06_snow       = @{ image = 'FH6_S3Spring_Champ2.jpg';           icon = 'FH6_EventFP_CrossCountryCircuit_Icon.png'; position = '50% 50%' }
+    activity_07_drag       = @{ image = 'FH6_S3Spring_HorizonLife.jpg';      icon = 'FH6_EventFP_DragMeet_Icon.png';          position = '50% 50%' }
+    activity_08_speed_trap = @{ image = 'FH6_S3Spring_SpeedTrap.jpg';        icon = 'FH6_EventFP_SpeedTrap_Icon.png';         position = '50% 50%' }
+    activity_09_speed_zone = @{ image = 'FH6_S3Spring_SpeedZone.jpg';        icon = 'FH6_EventFP_SpeedZone_Icon.png';         position = '50% 50%' }
+    activity_10_drift      = @{ image = 'FH6_S3Spring_DriftZone.jpg';        icon = 'FH6_EventFP_DriftZone_Icon.png';         position = '50% 50%' }
+    activity_11_trial      = @{ image = 'FH6_S3Spring_Trial.jpg';            icon = 'FH6_EventFP_Trial_Icon.png';             position = '50% 28%' }
+    activity_12_spec       = @{ image = 'FH6_S3Spring_HorizonPlay.jpg';      icon = 'FH6_EventFP_HorizonPlay_Icon.png';       position = '50% 50%' }
+    activity_13_stunt      = @{ image = 'FH6_S3Spring_HorizonLife.jpg';      icon = 'FH6_EventFP_StuntParty_Icon.png';        position = '50% 50%' }
+    activity_14_rivals     = @{ image = 'FH6_S3_MonthlyRivals.jpg';          icon = 'FH6_EventFP_MonthlyRivals_Icon.png';     position = '50% 50%' }
+}
+
+function New-CardHtml([hashtable]$card) {
+    $visual = $visuals[$card.id]
+    if (-not $visual) { throw "No visual mapping for $($card.id)" }
+    $cardImage = Get-AssetDataUri $visual.image
+    $cardIcon = Get-AssetDataUri $visual.icon
+    $imagePosition = $visual.position
     @"
 <style>
-  :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.countdown{padding:12px 18px;background:linear-gradient(90deg,#d9ff00,#8fdc00);color:#071014;font-size:15px}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual img{display:block;width:190px;height:190px;object-fit:cover;object-position:52% 15%;filter:saturate(.92) contrast(1.04) brightness(.72)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;left:16px;top:16px;display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#d9ff00;color:#071014;font-size:30px;box-shadow:0 8px 24px #0008}.number{position:absolute;z-index:2;left:16px;bottom:14px;font-weight:900;font-size:36px;letter-spacing:-1px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
+  :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual>img{display:block;width:190px;height:190px;object-fit:cover;object-position:$imagePosition;filter:saturate(.96) contrast(1.04) brightness(.78)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;left:16px;top:16px;display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#d9ff00;box-shadow:0 8px 24px #0008}.activity-icon img{width:42px;height:42px;object-fit:contain}.number{position:absolute;z-index:2;left:16px;bottom:14px;font-weight:900;font-size:36px;letter-spacing:-1px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual>img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
 </style>
 <article class="card">
-  $countdownHtml
   <div class="wrap">
-    <div class="visual"><img src="data:image/png;base64,$imageBase64" alt="Официальный визуал Forza Horizon 6 Series 3 Spring"><span class="activity-icon" aria-hidden="true">$($card.icon)</span><span class="number">$($card.number)</span></div>
+    <div class="visual"><img src="$cardImage" alt="Игровая карточка $($card.title) из Series 3 Spring"><span class="activity-icon"><img src="$cardIcon" alt="Иконка $($card.kind)"></span><span class="number">$($card.number)</span></div>
     <div class="content">
       <div class="eyebrow"><span>$($card.kind)</span><span class="points">$($card.points)</span></div>
       <h2>$($card.title)</h2>
       <p><span class="label">Условие:</span> $($card.condition)</p>
       <p><span class="label">Как выполнить:</span> $($card.how)</p>
       <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $($card.tune)</p>
-      <div class="sources">$($card.source)</div>
+      <div class="sources">$($card.source) · <a href='$fandom'>изображение и иконка: Forza Wiki</a></div>
     </div>
   </div>
 </article>
@@ -161,7 +189,7 @@ $blocks = for ($i = 0; $i -lt $cards.Count; $i++) {
         id = $cards[$i].id
         type = 'html'
         layout = 'full'
-        body = New-CardHtml -card $cards[$i] -ShowCountdown ($i -eq 0)
+        body = New-CardHtml -card $cards[$i]
     }
 }
 
@@ -171,7 +199,7 @@ $artifact = [ordered]@{
         version = 1
         surface = 'dashboard'
         title = 'Forza Horizon 6: Как пройти Series 3 "Italian Exotics" - Весна'
-        description = "Заканчивается через $countdown"
+        description = "Сезон действует до четверга 21:30 по Красноярску"
         generatedAt = $generatedAt.ToString('o')
         blocks = $blocks
         charts = @()
@@ -193,4 +221,4 @@ $artifact = [ordered]@{
 
 $json = $artifact | ConvertTo-Json -Depth 100
 [IO.File]::WriteAllText($artifactPath, $json, [Text.UTF8Encoding]::new($false))
-Write-Output "Wrote $artifactPath with $($blocks.Count) activity blocks; countdown $countdown"
+Write-Output "Wrote $artifactPath with $($blocks.Count) activity blocks and per-activity Fandom visuals"
