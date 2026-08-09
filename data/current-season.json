@@ -1,0 +1,404 @@
+{
+    "schemaVersion":  1,
+    "season":  {
+                   "seriesNumber":  3,
+                   "seriesSlug":  "03",
+                   "seriesName":  "Italian Exotics",
+                   "season":  "spring",
+                   "seasonDisplay":  "Весна",
+                   "startAt":  "2026-08-06T21:30:00+07:00",
+                   "endAt":  "2026-08-13T21:30:00+07:00",
+                   "reportTitle":  "Forza Horizon 6: Как пройти Series 3 \"Italian Exotics\" - Весна",
+                   "archiveFile":  "seasons/2026-08-06-series-03-spring.md",
+                   "assetsDirectory":  "reports/assets/fandom-spring",
+                   "fandomUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                   "officialPlaylistUrl":  "https://forza.net/fh6playlists",
+                   "expectedCardCount":  14,
+                   "expectedDailyItems":  7,
+                   "maxPublicHtmlBytes":  200000
+               },
+    "lastContentUpdate":  "2026-08-09T15:58:00+07:00",
+    "activities":  [
+                       {
+                           "id":  "activity_01_weekly",
+                           "number":  "01",
+                           "kind":  "Weekly Challenge",
+                           "title":  "Racing Spirit",
+                           "points":  "5 очков",
+                           "conditionHtml":  "1980 Abarth Fiat 131; суммарно 4 звезды на Trailblazers, 2 победы в Dirt Races и 3 Ultimate Wreckage Skills.",
+                           "howHtml":  "Повторяйте Coastal Descent, начиная примерно за 704 м по северо-восточной дороге. Если Abarth не допускается в обычную Dirt Race: пройденная гонка → Custom Race → Use My Car или Anything Goes.",
+                           "tuneHtml":  "1980 Abarth Fiat 131 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e207 861 362\u003c/code\u003e; запасной — \u003cb\u003eXIII90\u003c/b\u003e, \u003ccode\u003e996 668 231\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eтюнинг Awes0me Beau\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eтюнинг XIII90\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_Weekly.jpg",
+                                          "icon":  "FH6_EventSeasonal_Drive_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Abarth_Fiat_131",
+                                          "sourceLabel":  "изображение Abarth: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_02_daily",
+                           "number":  "02",
+                           "kind":  "Daily Challenges",
+                           "title":  "Все 7 дней",
+                           "points":  "7 × 1 очко",
+                           "conditionHtml":  "\u003col class=\"days\"\u003e\n  \u003cli\u003e\u003cb\u003eЧт — All the Colors:\u003c/b\u003e 3 звезды за один проезд Rainbow Run Speed Trap, 140 mph / 225,3 км/ч. Ferrari 458 Italia S1 800 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e796 821 422\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eПт — Stadium Scenery:\u003c/b\u003e сфотографировать свою машину у Horizon Stadium. Подойдёт любой автомобиль; удобно взять Lamborghini Huracán EVO.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eСб — Thunderbird 2:\u003c/b\u003e 2 звезды на Thunderbird Drift Zone на итальянской машине. Ferrari Dino 246 GT S1 800 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e518 222 242\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eВс — What’s It Gonna Be?:\u003c/b\u003e использовать Wheelspin или Super Wheelspin; машина не нужна.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eПн — Flinging Mud:\u003c/b\u003e 5 Air Skills во время Dirt Races. Abarth Fiat 131 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e207 861 362\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eВт — Taking the Reins:\u003c/b\u003e Great Skill Chain на Lamborghini. Huracán EVO S1 800 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e194 351 203\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003cb\u003eСр — Shopping Trip:\u003c/b\u003e победить в Electric Town Circuit. Ferrari 488 GTB S1 800 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e172 533 643\u003c/code\u003e.\u003c/li\u003e\n\u003c/ol\u003e",
+                           "howHtml":  "Daily открываются по одному в 21:30 (Красноярск). Для Rainbow Run нужен один результат на 3 звезды; для Electric Town Circuit можно снизить сложность Drivatar.",
+                           "tuneHtml":  "Авторы и коды указаны возле каждого дня; где автомобиль не влияет на зачёт, лишний тюнинг не предлагается.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eусловия по дням\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eтюнинги\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_Daily.jpg",
+                                          "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.net/news/forza-horizon-6-series-3",
+                                          "sourceLabel":  "изображение Italian Exotics: Forza"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_03_photo",
+                           "number":  "03",
+                           "kind":  "Photo Challenge",
+                           "title":  "#SkiHoliday",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Сфотографировать любую Lamborghini у Sotoyama Ski Resort; награда — эмоция Take Off.",
+                           "howHtml":  "Телепортируйтесь к Snow Forest Cross Country Circuit. Курорт находится непосредственно к юго-западу от значка гонки: \u003ca href=\"https://forzahorizonhub.com/map?cat=landmark\u0026amp;loc=568818\"\u003eточная метка\u003c/a\u003e · \u003ca href=\"https://image.u4n.com/article/202605/sLpXhAaaDi8GbZNxbghE0fZPgmksBv8SXttgcWM8.webp\"\u003eскриншот карты\u003c/a\u003e.",
+                           "tuneHtml":  "2020 Lamborghini Huracán EVO S1 800 — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e194 351 203\u003c/code\u003e. Для самого снимка тюнинг не обязателен.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eориентир сообщества\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_PhotoChallenge.jpg",
+                                          "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
+                                          "position":  "50% 31%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_04_treasure",
+                           "number":  "04",
+                           "kind":  "Treasure Hunt",
+                           "title":  "Takashiro Region",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Follow the Photo Clue to Discover the Treasure; награда — 100 000 CR.",
+                           "howHtml":  "Крайний запад Takashiro: каменистый берег реки у конца красной пунктирной грунтовки, напротив небольшой красной пагоды. \u003ca href=\"https://preview.redd.it/q4bgddulsrhh1.jpeg?width=3840\u0026amp;format=pjpg\u0026amp;auto=webp\u0026amp;s=db86d1695d2cd1c06b7791673588495893e3d5a1\"\u003eобщая карта\u003c/a\u003e · \u003ca href=\"https://preview.redd.it/4enbzoyomrhh1.jpg?width=4032\u0026amp;format=pjpg\u0026amp;auto=webp\u0026amp;s=c7dfe005e53b6c26c07b0100cfa94b16d4ad43f1\"\u003eточка крупно\u003c/a\u003e · \u003ca href=\"https://preview.redd.it/wj0n2oyomrhh1.jpg?width=4032\u0026amp;format=pjpg\u0026amp;auto=webp\u0026amp;s=1b90b3585099f10506700f38b8e39d7fe31f6b3f\"\u003eвид сундука\u003c/a\u003e. Красная иконка иногда не появляется.",
+                           "tuneHtml":  "Любой автомобиль; тюнинг не требуется.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5z0b/100k_box_location/\u0027\u003eкарта и сундук\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_TreasureHunt.jpg",
+                                          "icon":  "FH6_EventFP_TreasureHunt_Icon.png",
+                                          "position":  "50% 28%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_05_loop",
+                           "number":  "05",
+                           "kind":  "Seasonal Championship",
+                           "title":  "Out of the Loop!",
+                           "points":  "5 очков",
+                           "conditionHtml":  "B600 Total Buggies \u0026amp; Offroad, Dirt: Kawazu Nanadaru Scramble, Cherry Field Trail, Chiheisen Scramble. Награда — 2022 Maserati MC20.",
+                           "howHtml":  "Выиграйте чемпионат по сумме трёх гонок. Для поиска допустимых машин включите фильтры Buggies, Pickups \u0026amp; 4x4s, Unlimited Buggies и Unlimited Offroad.",
+                           "tuneHtml":  "2019 Toyota 4Runner TRD Pro — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e171 532 374\u003c/code\u003e; запасной 1997 Mitsubishi Montero Evolution — \u003cb\u003eXIII90\u003c/b\u003e, \u003ccode\u003e973 413 685\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eосновной тюнинг\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eзапасной тюнинг\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_Champ1.jpg",
+                                          "icon":  "FH6_EventFP_DirtScramble_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_06_snow",
+                           "number":  "06",
+                           "kind":  "Seasonal Championship",
+                           "title":  "It\u0027s Snow Problem At All",
+                           "points":  "5 очков",
+                           "conditionHtml":  "A700 Sports Utility Heroes, Cross Country: Snow Forest Circuit, Tateyama Alpine, Soni Highlands. Награда — 2014 Lamborghini Huracán LP 610-4.",
+                           "howHtml":  "Держите ровный темп на снегу и берегите очки чемпионата; победа в каждом отдельном заезде не обязательна.",
+                           "tuneHtml":  "2015 Range Rover Sport SVR — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e913 262 787\u003c/code\u003e. Запасные: Lamborghini Urus — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e101 588 982\u003c/code\u003e; Porsche Cayenne — \u003cb\u003eXIII90\u003c/b\u003e, \u003ccode\u003e496 172 094\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eAwes0me Beau\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eXIII90\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_Champ2.jpg",
+                                          "icon":  "FH6_EventFP_CrossCountryCircuit_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_07_drag",
+                           "number":  "07",
+                           "kind":  "Drag Meet",
+                           "title":  "Festival Kilometer",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Lamborghini S1 800, время не хуже 18,000 с; награда — Wheelspin.",
+                           "howHtml":  "Используйте открытый Drag Meet со значком стартовой «ёлки», а не обычную Festival Drag Race. Займите слот и дождитесь зелёного сигнала.",
+                           "tuneHtml":  "2020 Lamborghini Huracán EVO — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e194 351 203\u003c/code\u003e (заявлено 17,150 с); запасной 2024 Temerario — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e126 461 876\u003c/code\u003e (17,217 с).",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eавтор и результаты\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_HorizonLife.jpg",
+                                          "icon":  "FH6_EventFP_DragMeet_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_08_speed_trap",
+                           "number":  "08",
+                           "kind":  "Speed Trap",
+                           "title":  "Takashiro Bridge",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Ferrari S1 800, 165 mph / 265,5 км/ч; награда — Wheelspin.",
+                           "howHtml":  "Разгоняйтесь с востока; у основного тюнинга есть запас до заявленных автором 183 mph / 294,5 км/ч.",
+                           "tuneHtml":  "2009 Ferrari 458 Italia — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e796 821 422\u003c/code\u003e; запасной 2015 Ferrari 488 GTB — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e172 533 643\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eавтор тюнингов\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_SpeedTrap.jpg",
+                                          "icon":  "FH6_EventFP_SpeedTrap_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_09_speed_zone",
+                           "number":  "09",
+                           "kind":  "Speed Zone",
+                           "title":  "Kōzokudōro",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Ferrari S1 800, средняя скорость 200 mph / 321,9 км/ч; награда — Wheelspin.",
+                           "howHtml":  "Начинайте примерно за 2,1 км с юго-запада и держите максимально плавную траекторию.",
+                           "tuneHtml":  "2015 Ferrari 488 GTB — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e172 533 643\u003c/code\u003e; запасной Ferrari 458 Italia — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e796 821 422\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eавтор тюнингов\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_SpeedZone.jpg",
+                                          "icon":  "FH6_EventFP_SpeedZone_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_10_drift",
+                           "number":  "10",
+                           "kind":  "Drift Zone",
+                           "title":  "Nukabira Turn",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Ferrari S1 800, 64 000 очков; награда — Wheelspin.",
+                           "howHtml":  "Входите с востока, удерживайте одну передачу и широкий угол. Отключите TCS/STM, если они режут пробуксовку.",
+                           "tuneHtml":  "1969 Ferrari Dino 246 GT — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e518 222 242\u003c/code\u003e; запасной 2020 Ferrari Roma — \u003cb\u003eDCxReason\u003c/b\u003e, \u003ccode\u003e612 265 990\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eосновной тюнинг\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_DriftZone.jpg",
+                                          "icon":  "FH6_EventFP_DriftZone_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_11_trial",
+                           "number":  "11",
+                           "kind":  "The Trial",
+                           "title":  "Daily Commute",
+                           "points":  "10 очков",
+                           "conditionHtml":  "Alfa Romeo A700, Road: Ito Sprint, Tokyo Railway Sprint, Highway Circuit. Награда — 2020 Ferrari SF90 Stradale.",
+                           "howHtml":  "Не выталкивайте союзников, пропускайте более быстрых игроков и безопасно блокируйте Drivatar. Обычно достаточно выиграть две гонки из трёх.",
+                           "tuneHtml":  "2017 Alfa Romeo Giulia Quadrifoglio — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e141 394 828\u003c/code\u003e; запасной 1992 Alfa Romeo 155 Q4 — \u003cb\u003eXIII90\u003c/b\u003e, \u003ccode\u003e172 625 950\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eAwes0me Beau\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eXIII90\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_Trial.jpg",
+                                          "icon":  "FH6_EventFP_Trial_Icon.png",
+                                          "position":  "50% 28%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_12_spec",
+                           "number":  "12",
+                           "kind":  "Horizon Play / Spec Racing",
+                           "title":  "Up to Spec?",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Завершить чемпионат Spec Racing; награда — 2007 Alfa Romeo 8C Competizione.",
+                           "howHtml":  "Войдите в доступный Spec Racing Championship и завершите все требуемые этапы.",
+                           "tuneHtml":  "Машина и спецификация фиксируются событием; пользовательский share code не применяется.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eсостав недели\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_HorizonPlay.jpg",
+                                          "icon":  "FH6_EventFP_HorizonPlay_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_13_stunt",
+                           "number":  "13",
+                           "kind":  "Horizon Stunt Party",
+                           "title":  "Mini Games",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Завершить любую Stunt Party; награда — клаксон Wah Wah Wah Wahhh.",
+                           "howHtml":  "Регистрация открывается в начале каждого часа примерно на 10 минут. Примите приглашение в свободной езде и доберитесь до старта.",
+                           "tuneHtml":  "Подойдёт любой автомобиль. Универсальный вариант — 2020 Lamborghini Huracán EVO S1 800, \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e194 351 203\u003c/code\u003e.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eрасписание Stunt Party\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3Spring_HorizonLife.jpg",
+                                          "icon":  "FH6_EventFP_StuntParty_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_14_rivals",
+                           "number":  "14",
+                           "kind":  "Monthly Rivals",
+                           "title":  "Electric Town Circuit",
+                           "points":  "1 очко в Spring",
+                           "conditionHtml":  "Чистый круг на выданном 2024 Lamborghini Temerario; карточка показывает 4 очка Series и Super Wheelspin.",
+                           "howHtml":  "Проедьте спокойно, не касаясь стен и не используя перемотку. В Spring зачисляется 1 очко, остальные три распределены по другим сезонам Series 3.",
+                           "tuneHtml":  "Фиксированный 2024 Lamborghini Temerario; пользовательский тюнинг не применяется.",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eусловие Rivals\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "FH6_S3_MonthlyRivals.jpg",
+                                          "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
+                                          "position":  "50% 50%",
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season",
+                                          "sourceLabel":  "изображение и иконка: Forza Wiki"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       }
+                   ],
+    "openItems":  [
+
+                  ]
+}

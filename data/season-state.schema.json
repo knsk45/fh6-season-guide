@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knsk45.github.io/fh6-season-guide/data/season-state.schema.json",
+  "title": "FH6 current season state",
+  "type": "object",
+  "required": ["schemaVersion", "season", "lastContentUpdate", "activities", "openItems"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "season": {
+      "type": "object",
+      "required": ["seriesNumber", "seriesSlug", "seriesName", "season", "seasonDisplay", "startAt", "endAt", "reportTitle", "archiveFile", "assetsDirectory", "fandomUrl", "officialPlaylistUrl", "expectedCardCount", "expectedDailyItems", "maxPublicHtmlBytes"],
+      "properties": {
+        "seriesNumber": { "type": "integer", "minimum": 1 },
+        "seriesSlug": { "type": "string", "pattern": "^[0-9]{2,}$" },
+        "seriesName": { "type": "string", "minLength": 1 },
+        "season": { "enum": ["summer", "autumn", "winter", "spring"] },
+        "seasonDisplay": { "type": "string", "minLength": 1 },
+        "startAt": { "type": "string", "format": "date-time" },
+        "endAt": { "type": "string", "format": "date-time" },
+        "reportTitle": { "type": "string", "minLength": 1 },
+        "archiveFile": { "type": "string", "pattern": "^seasons/[0-9]{4}-[0-9]{2}-[0-9]{2}-series-[0-9]+-[a-z]+\\.md$" },
+        "assetsDirectory": { "type": "string", "pattern": "^reports/assets/[A-Za-z0-9._/-]+$" },
+        "fandomUrl": { "type": "string", "format": "uri" },
+        "officialPlaylistUrl": { "type": "string", "format": "uri" },
+        "expectedCardCount": { "type": "integer", "minimum": 1 },
+        "expectedDailyItems": { "type": "integer", "minimum": 1 },
+        "maxPublicHtmlBytes": { "type": "integer", "minimum": 20000 }
+      },
+      "additionalProperties": false
+    },
+    "lastContentUpdate": { "type": "string", "format": "date-time" },
+    "activities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "number", "kind", "title", "points", "conditionHtml", "howHtml", "tuneHtml", "sourceHtml", "visual", "completeness", "missingFields"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^activity_[0-9]{2}_[a-z0-9_]+$" },
+          "number": { "type": "string", "pattern": "^[0-9]{2}$" },
+          "kind": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "points": { "type": "string", "minLength": 1 },
+          "conditionHtml": { "type": "string" },
+          "howHtml": { "type": "string" },
+          "tuneHtml": { "type": "string" },
+          "sourceHtml": { "type": "string" },
+          "visual": {
+            "type": "object",
+            "required": ["image", "icon", "position", "sourceUrl", "sourceLabel"],
+            "properties": {
+              "image": { "type": "string" },
+              "icon": { "type": "string" },
+              "position": { "type": "string" },
+              "sourceUrl": { "type": "string" },
+              "sourceLabel": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "completeness": {
+            "type": "object",
+            "required": ["condition", "solution", "vehicleTune", "visual"],
+            "additionalProperties": { "enum": ["confirmed", "community", "preliminary", "missing", "not_applicable"] }
+          },
+          "missingFields": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "enum": ["condition", "solution", "vehicleTune", "visual"] }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "openItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["activityId", "field", "reason", "nextCheck", "status"],
+        "properties": {
+          "activityId": { "type": "string" },
+          "field": { "enum": ["condition", "solution", "vehicleTune", "visual"] },
+          "reason": { "type": "string", "minLength": 1 },
+          "nextCheck": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["missing", "preliminary", "conflict"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

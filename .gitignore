@@ -1,6 +1,7 @@
 # Personal gameplay/autopilot state is local-only.
 automation/current_run.json
 automation/runs/
+automation/new-season-input.json
 
 # Common local/editor artifacts.
 .DS_Store

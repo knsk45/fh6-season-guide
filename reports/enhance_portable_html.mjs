@@ -5,16 +5,24 @@ import { fileURLToPath } from 'node:url';
 const reportDir = path.dirname(fileURLToPath(import.meta.url));
 const artifactPath = path.join(reportDir, 'artifact.json');
 const htmlPath = path.join(reportDir, 'current-week.html');
+const statePath = path.join(reportDir, '..', 'data', 'current-season.json');
 const artifact = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
+const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
 const blocks = artifact?.manifest?.blocks ?? [];
 const title = artifact?.manifest?.title;
 const generatedAt = artifact?.snapshot?.generatedAt ?? artifact?.manifest?.generatedAt;
+const deadlineAt = state?.season?.endAt;
+const expectedCardCount = Number(state?.season?.expectedCardCount);
+const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
 
-if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt))) {
-  throw new Error('artifact.json must contain a title and a valid generatedAt timestamp');
+if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
+  throw new Error('artifact.json and current-season.json must contain valid title, generatedAt and endAt values');
 }
-if (blocks.length !== 14 || blocks.some((block) => block.type !== 'html' || !block.body)) {
-  throw new Error(`Expected exactly 14 HTML activity blocks, received ${blocks.length}`);
+if (!Number.isInteger(expectedCardCount) || expectedCardCount < 1) {
+  throw new Error(`Invalid expectedCardCount: ${state?.season?.expectedCardCount}`);
+}
+if (blocks.length !== expectedCardCount || blocks.some((block) => block.type !== 'html' || !block.body)) {
+  throw new Error(`Expected exactly ${expectedCardCount} HTML activity blocks, received ${blocks.length}`);
 }
 
 function escapeHtml(value) {
@@ -108,19 +116,9 @@ ${cardsHtml}
   <script>
   (() => {
     const output = document.getElementById('season-countdown');
-    const offset = 7 * 60 * 60 * 1000;
-    function nextDeadline(now) {
-      const local = new Date(now + offset);
-      let days = (4 - local.getUTCDay() + 7) % 7;
-      let target = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + days, 21, 30);
-      if (target <= local.getTime()) {
-        days += 7;
-        target = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + days, 21, 30);
-      }
-      return target - offset;
-    }
+    const deadline = Date.parse(${JSON.stringify(deadlineAt)});
     function tick() {
-      let seconds = Math.max(0, Math.floor((nextDeadline(Date.now()) - Date.now()) / 1000));
+      let seconds = Math.max(0, Math.floor((deadline - Date.now()) / 1000));
       const days = Math.floor(seconds / 86400); seconds %= 86400;
       const hours = Math.floor(seconds / 3600); seconds %= 3600;
       const minutes = Math.floor(seconds / 60); seconds %= 60;
@@ -133,13 +131,28 @@ ${cardsHtml}
 </body>
 </html>`;
 
-fs.writeFileSync(htmlPath, html, 'utf8');
+function writeFileWithRetry(filePath, content, attempts = 8) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      fs.writeFileSync(filePath, content, 'utf8');
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!['EBUSY', 'EPERM', 'EACCES', 'UNKNOWN'].includes(error?.code) || attempt === attempts) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, attempt * 150);
+    }
+  }
+  throw lastError;
+}
+
+writeFileWithRetry(htmlPath, html);
 
 const outputBytes = fs.statSync(htmlPath).size;
-if (outputBytes > 200_000) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
-if ((html.match(/data-activity-block/g) ?? []).length !== 14) throw new Error('Lightweight report lost activity blocks');
+if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
+if ((html.match(/data-activity-block/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
 if (html.includes('<iframe') || html.includes('data:image/') || html.includes('data-analytics-portable-reader')) {
   throw new Error('Lightweight report still contains a heavy portable runtime or embedded images');
 }
 
-console.log(`Built lightweight ${htmlPath}: ${outputBytes} bytes, 14 cards, 0 iframes`);
+console.log(`Built lightweight ${htmlPath}: ${outputBytes} bytes, ${expectedCardCount} cards, 0 iframes`);

@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [string]$CommitMessage = "Update FH6 current season"
 )
@@ -11,6 +11,8 @@ $Repository = "knsk45/fh6-season-guide"
 $PagesUrl = "https://knsk45.github.io/fh6-season-guide/reports/current-week.html"
 $GitHubCli = "C:\Program Files\GitHub CLI\gh.exe"
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$Validator = Join-Path $PSScriptRoot "validate_season.ps1"
+$StatePath = Join-Path $RepoRoot "data\current-season.json"
 
 function Assert-NativeSuccess {
     param([string]$Operation)
@@ -34,6 +36,13 @@ try {
         throw "Expected branch '$ExpectedBranch', current branch is '$CurrentBranch'."
     }
 
+    $ValidationOutput = & $Validator -StatePath $StatePath
+    $ValidationSucceeded = $?
+    $ValidationOutput | Write-Host
+    if (-not $ValidationSucceeded) {
+        throw "Validate FH6 season structure failed."
+    }
+
     git fetch origin $ExpectedBranch --quiet
     Assert-NativeSuccess "Fetch origin/$ExpectedBranch"
 
@@ -43,8 +52,12 @@ try {
     }
 
     $PublishPaths = @(
+        ".gitignore",
+        "AGENTS.md",
+        ".agents/skills",
         "CURRENT_WEEK.md",
         "seasons",
+        "data",
         "reports/SOURCE_NOTES.md",
         "reports/artifact.json",
         "reports/current-week.html",
@@ -53,9 +66,11 @@ try {
         "reports/assets",
         "README.md",
         "index.html",
-        "docs/WORKFLOW.md",
-        "docs/WEEKLY_TEMPLATE.md",
-        "automation/publish_to_github.ps1"
+        "docs",
+        "automation/publish_to_github.ps1",
+        "automation/render_season_markdown.ps1",
+        "automation/start_new_season.ps1",
+        "automation/validate_season.ps1"
     )
 
     git add -- @PublishPaths
@@ -117,6 +132,21 @@ try {
     $Response = Invoke-WebRequest -UseBasicParsing -Uri $PagesUrl -TimeoutSec 30
     if ($Response.StatusCode -ne 200 -or $Response.RawContentLength -le 0) {
         throw "Published report check failed for $PagesUrl."
+    }
+
+    $PublishedHtml = [string]$Response.Content
+    $State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $PublishedCards = ([regex]::Matches($PublishedHtml, 'data-activity-block')).Count
+    if ($PublishedCards -ne [int]$State.season.expectedCardCount) {
+        throw "Published report contains $PublishedCards cards; expected $($State.season.expectedCardCount)."
+    }
+    $AssetPaths = @([regex]::Matches($PublishedHtml, 'src="(assets/[^"]+)"') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+    foreach ($AssetPath in $AssetPaths) {
+        $AssetUrl = [Uri]::new([Uri]$PagesUrl, $AssetPath).AbsoluteUri
+        $AssetResponse = Invoke-WebRequest -UseBasicParsing -Uri $AssetUrl -Method Head -TimeoutSec 30
+        if ($AssetResponse.StatusCode -ne 200) {
+            throw "Published asset check failed: $AssetUrl"
+        }
     }
 
     Write-Host "PUBLISHED_SHA=$LocalSha"

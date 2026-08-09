@@ -1,0 +1,6 @@
+interface:
+  display_name: "FH6 Season Maintainer"
+  short_description: "Обновление и проверка сезонной сводки FH6"
+  default_prompt: "Используй $fh6-season-maintainer, чтобы обновить текущий сезон FH6 и безопасно опубликовать сводку."
+policy:
+  allow_implicit_invocation: true
