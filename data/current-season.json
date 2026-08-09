@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-09T15:58:00+07:00",
+    "lastContentUpdate":  "2026-08-09T21:49:00+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -134,9 +134,9 @@
                            "title":  "Out of the Loop!",
                            "points":  "5 очков",
                            "conditionHtml":  "B600 Total Buggies \u0026amp; Offroad, Dirt: Kawazu Nanadaru Scramble, Cherry Field Trail, Chiheisen Scramble. Награда — 2022 Maserati MC20.",
-                           "howHtml":  "Выиграйте чемпионат по сумме трёх гонок. Для поиска допустимых машин включите фильтры Buggies, Pickups \u0026amp; 4x4s, Unlimited Buggies и Unlimited Offroad.",
+                           "howHtml":  "Выиграйте чемпионат по сумме трёх гонок. Сначала установите B600-тюнинг на 4Runner, иначе машина может не появиться среди допустимых. Для поиска включите фильтры Buggies, Pickups \u0026amp; 4x4s, Unlimited Buggies и Unlimited Offroad. Ford Bronco R лучше не брать: из-за ошибочно узкого фильтра события игра может его отклонить.",
                            "tuneHtml":  "2019 Toyota 4Runner TRD Pro — \u003cb\u003eAwes0me Beau\u003c/b\u003e, \u003ccode\u003e171 532 374\u003c/code\u003e; запасной 1997 Mitsubishi Montero Evolution — \u003cb\u003eXIII90\u003c/b\u003e, \u003ccode\u003e973 413 685\u003c/code\u003e.",
-                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eосновной тюнинг\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eзапасной тюнинг\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\u0027https://forza.net/fh6playlists\u0027\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/\u0027\u003eфильтр допустимых машин\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/\u0027\u003eосновной тюнинг\u003c/a\u003e · \u003ca href=\u0027https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/\u0027\u003eзапасной тюнинг\u003c/a\u003e",
                            "visual":  {
                                           "image":  "FH6_S3Spring_Champ1.jpg",
                                           "icon":  "FH6_EventFP_DirtScramble_Icon.png",

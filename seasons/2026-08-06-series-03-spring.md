@@ -2,7 +2,7 @@
 
 > Статус: подтверждено
 > Период: 06.08.2026 21:30 — 13.08.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 09.08.2026 15:58
+> Обновлено: 09.08.2026 21:49
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Racing Spirit · 5 очков
@@ -44,9 +44,9 @@
 ## 05. Seasonal Championship — Out of the Loop! · 5 очков
 
 - **Условие:** B600 Total Buggies &amp; Offroad, Dirt: Kawazu Nanadaru Scramble, Cherry Field Trail, Chiheisen Scramble. Награда — 2022 Maserati MC20.
-- **Как выполнить:** Выиграйте чемпионат по сумме трёх гонок. Для поиска допустимых машин включите фильтры Buggies, Pickups &amp; 4x4s, Unlimited Buggies и Unlimited Offroad.
+- **Как выполнить:** Выиграйте чемпионат по сумме трёх гонок. Сначала установите B600-тюнинг на 4Runner, иначе машина может не появиться среди допустимых. Для поиска включите фильтры Buggies, Pickups &amp; 4x4s, Unlimited Buggies и Unlimited Offroad. Ford Bronco R лучше не брать: из-за ошибочно узкого фильтра события игра может его отклонить.
 - **Автомобиль и тюнинг:** 2019 Toyota 4Runner TRD Pro — <b>Awes0me Beau</b>, <code>171 532 374</code>; запасной 1997 Mitsubishi Montero Evolution — <b>XIII90</b>, <code>973 413 685</code>.
-- **Источники:** <a href='https://forza.net/fh6playlists'>официальная Playlist</a> · <a href='https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/'>основной тюнинг</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/'>запасной тюнинг</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season'>изображение и иконка: Forza Wiki</a>
+- **Источники:** <a href='https://forza.net/fh6playlists'>официальная Playlist</a> · <a href='https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/'>фильтр допустимых машин</a> · <a href='https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/'>основной тюнинг</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/'>запасной тюнинг</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season'>изображение и иконка: Forza Wiki</a>
 
 ## 06. Seasonal Championship — It's Snow Problem At All · 5 очков
 
