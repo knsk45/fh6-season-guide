@@ -93,6 +93,13 @@ if ($state) {
     if (-not $assetRoot.StartsWith($reportsAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError 'assetsDirectory must stay under reports/assets/' }
 
     $expectedCount = [int]$season.expectedCardCount
+    $piPattern = '(?<![A-Za-z0-9])(?:S1|S2|[DCBARX])\s*[0-9]{3}(?![0-9])'
+    $expectedPiBadges = 0
+    foreach ($activity in $activities) {
+        foreach ($fieldName in @('conditionHtml','howHtml','tuneHtml')) {
+            $expectedPiBadges += ([regex]::Matches([string]$activity.$fieldName, $piPattern, 'IgnoreCase')).Count
+        }
+    }
     if ($activities.Count -ne $expectedCount) { Add-ValidationError "Expected $expectedCount activities, found $($activities.Count)" }
     $ids = @($activities | ForEach-Object { $_.id })
     if (@($ids | Sort-Object -Unique).Count -ne $ids.Count) { Add-ValidationError 'Activity ids must be unique' }
@@ -184,6 +191,8 @@ if ($state) {
             if ($html -match '<iframe|data:image/|data-analytics-portable-reader') { Add-ValidationError 'Public HTML contains a heavy or embedded runtime' }
             $htmlIds = @([regex]::Matches($html, '<section class="activity-block" id="([^"]+)" data-activity-block>') | ForEach-Object { $_.Groups[1].Value })
             if (($htmlIds -join '|') -ne ($ids -join '|')) { Add-ValidationError 'Public HTML card order differs from season state' }
+            $actualPiBadges = ([regex]::Matches($html, 'class="pi-badge pi-(?:d|c|b|a|s1|s2|r|x)"')).Count
+            if ($actualPiBadges -ne $expectedPiBadges) { Add-ValidationError "Public HTML contains $actualPiBadges PI badges, expected $expectedPiBadges from season state" }
             foreach ($forbidden in @('Проверка полноты','Общие ловушки','Что ещё требует проверки','Ограничения источников')) {
                 if ($html.Contains($forbidden)) { Add-ValidationError "Public HTML contains forbidden section: $forbidden" }
             }

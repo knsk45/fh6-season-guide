@@ -55,6 +55,23 @@ function Get-AssetDataUri([string]$FileName) {
     return "data:$mime;base64,$base64"
 }
 
+function Add-PerformanceIndexBadges([string]$Html) {
+    if ([string]::IsNullOrWhiteSpace($Html)) { return $Html }
+    $parts = [regex]::Split($Html, '(<[^>]+>)')
+    $pattern = '(?<![A-Za-z0-9])(?<class>S1|S2|[DCBARX])\s*(?<score>[0-9]{3})(?![0-9])'
+    for ($i = 0; $i -lt $parts.Count; $i++) {
+        if ($parts[$i].StartsWith('<')) { continue }
+        $parts[$i] = [regex]::Replace($parts[$i], $pattern, {
+            param($match)
+            $classLabel = $match.Groups['class'].Value.ToUpperInvariant()
+            $classKey = $classLabel.ToLowerInvariant()
+            $score = $match.Groups['score'].Value
+            return "<span class=`"pi-badge pi-$classKey`" title=`"Класс $classLabel, PI $score`"><span class=`"pi-class`">$classLabel</span><span class=`"pi-score`">$score</span></span>"
+        }, [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    }
+    return ($parts -join '')
+}
+
 function New-CardHtml($card) {
     $visual = $card.visual
     if (-not $visual -or -not $visual.image -or -not $visual.icon) {
@@ -66,9 +83,13 @@ function New-CardHtml($card) {
     $imageSourceUrl = if ($visual.sourceUrl) { $visual.sourceUrl } else { $season.fandomUrl }
     $imageSourceLabel = if ($visual.sourceLabel) { $visual.sourceLabel } else { 'изображение и иконка: Forza Wiki' }
     $seasonAlt = "Series $($season.seriesNumber) $($season.seasonDisplay)"
+    $conditionHtml = Add-PerformanceIndexBadges ([string]$card.conditionHtml)
+    $howHtml = Add-PerformanceIndexBadges ([string]$card.howHtml)
+    $tuneHtml = Add-PerformanceIndexBadges ([string]$card.tuneHtml)
     @"
 <style>
   :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual>img{display:block;width:190px;height:190px;object-fit:cover;object-position:center;filter:saturate(.96) contrast(1.04) brightness(.78)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;left:16px;top:16px;display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#d9ff00;box-shadow:0 8px 24px #0008}.activity-icon img{width:42px;height:42px;object-fit:contain}.number{position:absolute;z-index:2;left:16px;bottom:14px;font-weight:900;font-size:36px;letter-spacing:-1px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual>img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
+  .pi-badge{--pi-color:#5d6871;display:inline-grid;grid-template-columns:auto auto;align-items:stretch;min-width:70px;height:1.55em;margin:0 .16em;overflow:hidden;border:1px solid #ffffff40;border-radius:4px;background:#f3f6f7;color:#0a1013;font-size:.88em;font-weight:950;line-height:1;vertical-align:-.22em;box-shadow:0 2px 7px #0008;transform:skew(-7deg)}.pi-badge>span{display:grid;place-items:center;transform:skew(7deg)}.pi-class{min-width:29px;padding:0 6px;background:var(--pi-color);color:#fff;text-shadow:0 1px 2px #0009}.pi-score{min-width:38px;padding:0 7px;font-variant-numeric:tabular-nums}.pi-d{--pi-color:#626b72}.pi-c{--pi-color:#b49b25}.pi-b{--pi-color:#df6b20}.pi-a{--pi-color:#d52e59}.pi-s1{--pi-color:#ad2ea9}.pi-s2{--pi-color:#3b65d9}.pi-r{--pi-color:#009c9b}.pi-x{--pi-color:#171c20}@media(max-width:650px){.pi-badge{min-width:64px;font-size:.84em}.pi-class{min-width:27px}.pi-score{min-width:35px}}
 </style>
 <article class="card">
   <div class="wrap">
@@ -76,9 +97,9 @@ function New-CardHtml($card) {
     <div class="content">
       <div class="eyebrow"><span>$($card.kind)</span><span class="points">$($card.points)</span></div>
       <h2>$($card.title)</h2>
-      <p><span class="label">Условие:</span> $($card.conditionHtml)</p>
-      <p><span class="label">Как выполнить:</span> $($card.howHtml)</p>
-      <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $($card.tuneHtml)</p>
+      <p><span class="label">Условие:</span> $conditionHtml</p>
+      <p><span class="label">Как выполнить:</span> $howHtml</p>
+      <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $tuneHtml</p>
       <div class="sources">$($card.sourceHtml) · <a href='$imageSourceUrl'>$imageSourceLabel</a></div>
     </div>
   </div>

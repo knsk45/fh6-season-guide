@@ -48,7 +48,7 @@ Run in this order:
 4. `reports/enhance_portable_html.mjs`
 5. `automation/validate_season.ps1`
 
-The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. Validation must confirm the configured favicon assets in the public HTML. When project support is enabled, it must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report.
+The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. Keep PI restrictions as plain text in season state; the builder must decorate every D/C/B/A/S1/S2/R/X plus three-digit PI token and the validator must compare badge count with state. Validation must confirm the configured favicon assets in the public HTML. When project support is enabled, it must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report.
 
 ## Publish
 
