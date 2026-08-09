@@ -8,7 +8,7 @@ $ErrorActionPreference = "Stop"
 
 $ExpectedBranch = "daily-season"
 $Repository = "knsk45/fh6-season-guide"
-$PagesUrl = "https://knsk45.github.io/fh6-season-guide/current-week.html"
+$PagesUrl = "https://knsk45.github.io/fh6-season-guide/reports/current-week.html"
 $GitHubCli = "C:\Program Files\GitHub CLI\gh.exe"
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 
