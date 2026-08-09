@@ -26,6 +26,8 @@ function Get-AssetDataUri([string]$FileName) {
 
 $official = 'https://forza.net/fh6playlists'
 $fandom = 'https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season'
+$abarthWiki = 'https://forza.fandom.com/wiki/Abarth_Fiat_131'
+$seriesNews = 'https://forza.net/news/forza-horizon-6-series-3'
 $reddit = 'https://www.reddit.com/r/ForzaHorizon/comments/1vh4bio/fh6_series_3_spring_breakdown_and_rewards/'
 $awes0me = 'https://www.reddit.com/r/ForzaHorizon/comments/1vh5knw/fh6_seasonal_tunes_by_awes0me_beau/'
 $xiii90 = 'https://www.reddit.com/r/ForzaHorizon6/comments/1vh5x51/series_3_spring_seasonals_weekly_tunes_by_xiii90/'
@@ -142,8 +144,8 @@ $cards = @(
 )
 
 $visuals = @{
-    activity_01_weekly     = @{ image = 'FH6_Series3Spring.jpg';             icon = 'FH6_EventSeasonal_Drive_Icon.png';       position = '50% 18%' }
-    activity_02_daily      = @{ image = 'FH6_Series3Spring.jpg';             icon = 'FH6_EventSeasonal_Stunt_Icon.png';       position = '50% 18%' }
+    activity_01_weekly     = @{ image = 'FH6_S3Spring_Weekly.jpg';           icon = 'FH6_EventSeasonal_Drive_Icon.png';       position = '50% 50%'; sourceUrl = $abarthWiki; sourceLabel = 'изображение Abarth: Forza Wiki' }
+    activity_02_daily      = @{ image = 'FH6_S3Spring_Daily.jpg';            icon = 'FH6_EventSeasonal_Stunt_Icon.png';       position = '50% 50%'; sourceUrl = $seriesNews; sourceLabel = 'изображение Italian Exotics: Forza' }
     activity_03_photo      = @{ image = 'FH6_S3Spring_PhotoChallenge.jpg';   icon = 'FH6_EventFP_PhotoChallenge_Icon.png';    position = '50% 31%' }
     activity_04_treasure   = @{ image = 'FH6_S3Spring_TreasureHunt.jpg';     icon = 'FH6_EventFP_TreasureHunt_Icon.png';      position = '50% 28%' }
     activity_05_loop       = @{ image = 'FH6_S3Spring_Champ1.jpg';           icon = 'FH6_EventFP_DirtScramble_Icon.png';      position = '50% 50%' }
@@ -164,6 +166,8 @@ function New-CardHtml([hashtable]$card) {
     $cardImage = Get-AssetDataUri $visual.image
     $cardIcon = Get-AssetDataUri $visual.icon
     $imagePosition = $visual.position
+    $imageSourceUrl = if ($visual.sourceUrl) { $visual.sourceUrl } else { $fandom }
+    $imageSourceLabel = if ($visual.sourceLabel) { $visual.sourceLabel } else { 'изображение и иконка: Forza Wiki' }
     @"
 <style>
   :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual>img{display:block;width:190px;height:190px;object-fit:cover;object-position:center;filter:saturate(.96) contrast(1.04) brightness(.78)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;left:16px;top:16px;display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#d9ff00;box-shadow:0 8px 24px #0008}.activity-icon img{width:42px;height:42px;object-fit:contain}.number{position:absolute;z-index:2;left:16px;bottom:14px;font-weight:900;font-size:36px;letter-spacing:-1px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual>img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
@@ -177,7 +181,7 @@ function New-CardHtml([hashtable]$card) {
       <p><span class="label">Условие:</span> $($card.condition)</p>
       <p><span class="label">Как выполнить:</span> $($card.how)</p>
       <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $($card.tune)</p>
-      <div class="sources">$($card.source) · <a href='$fandom'>изображение и иконка: Forza Wiki</a></div>
+      <div class="sources">$($card.source) · <a href='$imageSourceUrl'>$imageSourceLabel</a></div>
     </div>
   </div>
 </article>
