@@ -10,6 +10,7 @@ $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
+$ProjectConfigPath = Join-Path $RepoRoot 'data\project.json'
 $errors = [Collections.Generic.List[string]]::new()
 $warnings = [Collections.Generic.List[string]]::new()
 
@@ -23,6 +24,33 @@ try {
 catch {
     Add-ValidationError "Cannot parse season state: $($_.Exception.Message)"
     $state = $null
+}
+
+try {
+    $project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+}
+catch {
+    Add-ValidationError "Cannot parse project config: $($_.Exception.Message)"
+    $project = $null
+}
+
+$support = $null
+if ($project) {
+    if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
+    $support = $project.support
+    if ($support.enabled -ne $true) { Add-ValidationError 'project support block must remain enabled' }
+    foreach ($name in @('title','description','url','buttonLabel','qrAsset','buttonAsset')) {
+        if ($null -eq $support.$name -or [string]::IsNullOrWhiteSpace([string]$support.$name)) { Add-ValidationError "project.support.$name is required" }
+    }
+    if ([string]$support.url -notmatch '^https://www\.sberbank\.com/') { Add-ValidationError 'project.support.url must use the configured Sberbank HTTPS host' }
+    $projectAssetsRoot = Get-FullProjectPath 'reports/assets/project'
+    foreach ($assetName in @('qrAsset','buttonAsset')) {
+        if (-not [string]::IsNullOrWhiteSpace([string]$support.$assetName)) {
+            $supportAssetPath = Get-FullProjectPath ([string]$support.$assetName)
+            if (-not $supportAssetPath.StartsWith($projectAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError "project.support.$assetName must stay under reports/assets/project/" }
+            elseif (-not (Test-Path -LiteralPath $supportAssetPath)) { Add-ValidationError "project.support.$assetName is missing: $supportAssetPath" }
+        }
+    }
 }
 
 if ($state) {
@@ -121,7 +149,8 @@ if ($state) {
         $artifactPath = Join-Path $RepoRoot 'reports\artifact.json'
         $htmlPath = Join-Path $RepoRoot 'reports\current-week.html'
         $currentWeekPath = Join-Path $RepoRoot 'CURRENT_WEEK.md'
-        foreach ($path in @($archivePath, $artifactPath, $htmlPath, $currentWeekPath)) {
+        $readmePath = Join-Path $RepoRoot 'README.md'
+        foreach ($path in @($archivePath, $artifactPath, $htmlPath, $currentWeekPath, $readmePath)) {
             if (-not (Test-Path -LiteralPath $path)) { Add-ValidationError "Generated output is missing: $path" }
         }
 
@@ -148,11 +177,30 @@ if ($state) {
                 $assetPath = Join-Path (Join-Path $RepoRoot 'reports') ($match.Groups[1].Value -replace '/', '\')
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }
             }
+            if ($support) {
+                $supportQrSrc = ([string]$support.qrAsset) -replace '^reports/', ''
+                if (([regex]::Matches($html, 'data-support-block')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one support block' }
+                if (-not $html.Contains([string]$support.title)) { Add-ValidationError 'Public HTML support title differs from project config' }
+                if (-not $html.Contains([string]$support.url)) { Add-ValidationError 'Public HTML support URL differs from project config' }
+                if (-not $html.Contains($supportQrSrc)) { Add-ValidationError 'Public HTML support QR differs from project config' }
+                $supportIndex = $html.IndexOf('data-support-block', [StringComparison]::Ordinal)
+                $lastCardIndex = $html.LastIndexOf('data-activity-block', [StringComparison]::Ordinal)
+                if ($supportIndex -lt $lastCardIndex) { Add-ValidationError 'Public HTML support block must follow all activity cards' }
+            }
         }
 
         if (Test-Path -LiteralPath $currentWeekPath) {
             $currentWeek = Get-Content -LiteralPath $currentWeekPath -Raw -Encoding UTF8
             if (-not $currentWeek.Contains(($season.archiveFile -replace '\\','/'))) { Add-ValidationError 'CURRENT_WEEK.md does not point to archiveFile' }
+        }
+
+        if ($support -and (Test-Path -LiteralPath $readmePath)) {
+            $readme = Get-Content -LiteralPath $readmePath -Raw -Encoding UTF8
+            $headingPattern = '(?m)^## ' + [regex]::Escape([string]$support.title) + '\s*$'
+            if (([regex]::Matches($readme, $headingPattern)).Count -ne 1) { Add-ValidationError 'README must contain exactly one configured support heading' }
+            foreach ($expected in @([string]$support.url, [string]$support.qrAsset, [string]$support.buttonAsset)) {
+                if (-not $readme.Contains($expected)) { Add-ValidationError "README support block is missing: $expected" }
+            }
         }
     }
 }
@@ -181,4 +229,3 @@ else {
 }
 
 if ($errors.Count -gt 0) { exit 1 }
-

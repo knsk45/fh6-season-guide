@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FH6 project configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "support"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "support": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "title", "description", "url", "buttonLabel", "qrAsset", "buttonAsset"],
+      "properties": {
+        "enabled": { "const": true },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://www\\.sberbank\\.com/" },
+        "buttonLabel": { "type": "string", "minLength": 1 },
+        "qrAsset": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.png$" },
+        "buttonAsset": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.svg$" }
+      }
+    }
+  }
+}

@@ -23,6 +23,14 @@
     .activity-list{display:grid;gap:28px}
     .activity-block{min-width:0;content-visibility:auto;contain-intrinsic-size:auto 360px}
     .activity-block .card{width:100%}
+    .support-section{display:flex;flex-direction:column;align-items:center;margin-top:34px;padding:30px 22px;border:1px solid #29434b;border-radius:22px;background:linear-gradient(145deg,#0b191e,#10242a);text-align:center}
+    .support-section h2{margin:0;color:#fff;font-size:clamp(22px,3vw,32px);line-height:1.2}
+    .support-section p{max-width:650px;margin:12px 0 20px;color:#b8ccd1;font-size:15px;line-height:1.55}
+    .support-qr-link{display:block;border-radius:18px;background:#fff;line-height:0;box-shadow:0 12px 32px #0007}
+    .support-qr{display:block;width:min(240px,70vw);height:auto;border-radius:18px}
+    .support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:20px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}
+    .support-button:hover{background:#27b743;transform:translateY(-1px)}
+    .support-button:focus-visible,.support-qr-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
       .page-header h1{font-size:20px;white-space:normal}
@@ -30,6 +38,8 @@
       .report{padding:18px 14px 44px}
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
+      .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
+      .support-button{width:100%;padding:0 14px;font-size:15px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
@@ -235,6 +245,15 @@
   </div>
 </article></section>
     </div>
+
+    <section class="support-section" id="support-project" data-support-block>
+      <h2>Сказать Спасибо (поддержать проект)</h2>
+      <p>Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.</p>
+      <a class="support-qr-link" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer" aria-label="Поддержать проект через Сбербанк">
+        <img class="support-qr" src="assets/project/support-qr.png" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
+      </a>
+      <a class="support-button" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer">Поддержать проект через Сбербанк</a>
+    </section>
   </main>
   <script>
   (() => {

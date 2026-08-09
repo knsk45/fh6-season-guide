@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="96" viewBox="0 0 620 96" role="img" aria-labelledby="title desc">
+  <title id="title">Поддержать проект через Сбербанк</title>
+  <desc id="desc">Зелёная кнопка перехода на страницу перевода</desc>
+  <rect width="620" height="96" rx="22" fill="#21a038"/>
+  <path d="M47 28a20 20 0 1 0 14.4 33.9l-7.1-5.2A11.2 11.2 0 1 1 58 39l6.9-5.5A20 20 0 0 0 47 28Z" fill="#fff"/>
+  <path d="m34.8 46.5 9 6.5 16.3-13.1 5.7 7-21.7 17.4-14.5-10.5 5.2-7.3Z" fill="#fff"/>
+  <text x="90" y="58" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Поддержать проект через Сбербанк</text>
+</svg>

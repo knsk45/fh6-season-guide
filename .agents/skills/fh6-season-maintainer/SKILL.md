@@ -9,7 +9,7 @@ Keep the public guide complete without inventing missing facts or breaking its c
 
 ## Start every run
 
-1. Read `AGENTS.md`, `data/current-season.json`, `docs/WORKFLOW.md`, `docs/SOURCES.md`, and `reports/SOURCE_NOTES.md`.
+1. Read `AGENTS.md`, `data/current-season.json`, `data/project.json`, `docs/WORKFLOW.md`, `docs/SOURCES.md`, and `reports/SOURCE_NOTES.md`.
 2. Read [references/season-state.md](references/season-state.md) before changing the state schema, performing a rollover, or adding an unresolved item.
 3. Check the current time in `Asia/Krasnoyarsk` and verify the active season from live official Forza sources before trusting local dates.
 4. Inspect Git status. Preserve unrelated user changes.
@@ -36,6 +36,7 @@ Keep the public guide complete without inventing missing facts or breaking its c
 4. Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File automation/start_new_season.ps1 -InputPath automation/new-season-input.json`.
 5. Confirm that the old state was copied into `data/history/`, a new archive file was created, and no older season was deleted.
 6. Remove the local input after success; it is ignored by Git.
+7. Do not modify `data/project.json` during rollover. Preserve the enabled support block after all activities in both `README.md` and the public report; it is not a Playlist card.
 
 ## Build and validate
 
@@ -47,7 +48,7 @@ Run in this order:
 4. `reports/enhance_portable_html.mjs`
 5. `automation/validate_season.ps1`
 
-The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`.
+The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. When project support is enabled, validation must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report.
 
 ## Publish
 

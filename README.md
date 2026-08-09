@@ -31,6 +31,7 @@
 CURRENT_WEEK.md             — ссылка на актуальную сводку
 seasons/YYYY-MM-DD-*.md     — архив недель
 data/current-season.json    — единственный источник текущих карточек и пропусков
+data/project.json           — постоянные настройки проекта, включая блок поддержки
 data/history/               — архив машинных состояний прошлых сезонов
 reports/current-week.html   — лёгкий публичный HTML-отчёт текущей недели
 reports/artifact.json       — исходные данные HTML-отчёта
@@ -43,3 +44,15 @@ docs/WEEKLY_TEMPLATE.md     — обязательная структура св
 ```
 
 Коды тюнинга из сообщества всегда помечаются как внешние рекомендации. Автоматизация не должна выдавать их за лично протестированные, если проверки в игре не было.
+
+## Сказать Спасибо (поддержать проект)
+
+Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.
+
+<p align="center">
+  <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195"><img src="reports/assets/project/support-qr.png" width="260" alt="QR-код для поддержки проекта через Сбербанк"></a>
+</p>
+
+<p align="center">
+  <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195"><img src="reports/assets/project/support-button.svg" width="360" alt="Поддержать проект через Сбербанк"></a>
+</p>

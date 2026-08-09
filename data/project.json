@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "support": {
+    "enabled": true,
+    "title": "Сказать Спасибо (поддержать проект)",
+    "description": "Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.",
+    "url": "https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195",
+    "buttonLabel": "Поддержать проект через Сбербанк",
+    "qrAsset": "reports/assets/project/support-qr.png",
+    "buttonAsset": "reports/assets/project/support-button.svg"
+  }
+}
