@@ -3,9 +3,20 @@
   "title": "FH6 project configuration",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "support"],
+  "required": ["schemaVersion", "branding", "support"],
   "properties": {
     "schemaVersion": { "const": 1 },
+    "branding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["faviconSvg", "faviconPng", "appleTouchIcon", "themeColor"],
+      "properties": {
+        "faviconSvg": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.svg$" },
+        "faviconPng": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.png$" },
+        "appleTouchIcon": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.png$" },
+        "themeColor": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+      }
+    },
     "support": {
       "type": "object",
       "additionalProperties": false,

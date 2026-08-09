@@ -16,6 +16,7 @@ const generatedAt = artifact?.snapshot?.generatedAt ?? artifact?.manifest?.gener
 const deadlineAt = state?.season?.endAt;
 const expectedCardCount = Number(state?.season?.expectedCardCount);
 const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
+const branding = project?.branding;
 const support = project?.support;
 
 if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
@@ -26,6 +27,14 @@ if (!Number.isInteger(expectedCardCount) || expectedCardCount < 1) {
 }
 if (blocks.length !== expectedCardCount || blocks.some((block) => block.type !== 'html' || !block.body)) {
   throw new Error(`Expected exactly ${expectedCardCount} HTML activity blocks, received ${blocks.length}`);
+}
+if (!branding?.faviconSvg || !branding.faviconPng || !branding.appleTouchIcon || !/^#[0-9a-f]{6}$/i.test(branding.themeColor ?? '')) {
+  throw new Error('data/project.json must contain complete branding assets and a valid themeColor');
+}
+for (const [name, value] of Object.entries({ faviconSvg: branding.faviconSvg, faviconPng: branding.faviconPng, appleTouchIcon: branding.appleTouchIcon })) {
+  if (!value.startsWith('reports/assets/project/')) throw new Error(`${name} must stay under reports/assets/project/: ${value}`);
+  const assetPath = path.join(reportDir, ...value.slice('reports/'.length).split('/'));
+  if (!fs.existsSync(assetPath)) throw new Error(`Missing branding asset: ${value}`);
 }
 if (!support?.enabled || !support.title || !support.description || !support.url || !support.buttonLabel || !support.qrAsset) {
   throw new Error('data/project.json must contain an enabled and complete support block');
@@ -39,6 +48,9 @@ if (!support.qrAsset.startsWith('reports/assets/project/')) {
 const supportQrSrc = support.qrAsset.slice('reports/'.length);
 const supportQrPath = path.join(reportDir, ...supportQrSrc.split('/'));
 if (!fs.existsSync(supportQrPath)) throw new Error(`Missing support QR: ${support.qrAsset}`);
+const faviconSvgSrc = branding.faviconSvg.slice('reports/'.length);
+const faviconPngSrc = branding.faviconPng.slice('reports/'.length);
+const appleTouchIconSrc = branding.appleTouchIcon.slice('reports/'.length);
 
 function escapeHtml(value) {
   return String(value)
@@ -96,7 +108,10 @@ const html = `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#071014">
+  <meta name="theme-color" content="${escapeHtml(branding.themeColor)}">
+  <link rel="icon" href="${escapeHtml(faviconSvgSrc)}" type="image/svg+xml">
+  <link rel="icon" href="${escapeHtml(faviconPngSrc)}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="${escapeHtml(appleTouchIconSrc)}" sizes="180x180">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>${escapeHtml(title)}</title>
   <style>
@@ -188,6 +203,9 @@ if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is une
 if ((html.match(/data-activity-block/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
 if ((html.match(/data-support-block/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
   throw new Error('Lightweight report lost the configured support block');
+}
+for (const asset of [faviconSvgSrc, faviconPngSrc, appleTouchIconSrc]) {
+  if (!html.includes(asset)) throw new Error(`Lightweight report lost branding asset: ${asset}`);
 }
 if (html.includes('<iframe') || html.includes('data:image/') || html.includes('data-analytics-portable-reader')) {
   throw new Error('Lightweight report still contains a heavy portable runtime or embedded images');

@@ -34,16 +34,30 @@ catch {
     $project = $null
 }
 
+$branding = $null
 $support = $null
 if ($project) {
     if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
+    $branding = $project.branding
+    foreach ($name in @('faviconSvg','faviconPng','appleTouchIcon','themeColor')) {
+        if ($null -eq $branding.$name -or [string]::IsNullOrWhiteSpace([string]$branding.$name)) { Add-ValidationError "project.branding.$name is required" }
+    }
+    if ([string]$branding.themeColor -notmatch '^#[0-9A-Fa-f]{6}$') { Add-ValidationError 'project.branding.themeColor must be a six-digit hex color' }
+    $projectAssetsRoot = Get-FullProjectPath 'reports/assets/project'
+    foreach ($assetName in @('faviconSvg','faviconPng','appleTouchIcon')) {
+        if (-not [string]::IsNullOrWhiteSpace([string]$branding.$assetName)) {
+            if ([string]$branding.$assetName -notmatch '^reports/assets/project/[^/]+\.(svg|png)$') { Add-ValidationError "project.branding.$assetName must be a direct SVG or PNG file under reports/assets/project/" }
+            $brandingAssetPath = Get-FullProjectPath ([string]$branding.$assetName)
+            if (-not $brandingAssetPath.StartsWith($projectAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError "project.branding.$assetName must stay under reports/assets/project/" }
+            elseif (-not (Test-Path -LiteralPath $brandingAssetPath)) { Add-ValidationError "project.branding.$assetName is missing: $brandingAssetPath" }
+        }
+    }
     $support = $project.support
     if ($support.enabled -ne $true) { Add-ValidationError 'project support block must remain enabled' }
     foreach ($name in @('title','description','url','buttonLabel','qrAsset','buttonAsset')) {
         if ($null -eq $support.$name -or [string]::IsNullOrWhiteSpace([string]$support.$name)) { Add-ValidationError "project.support.$name is required" }
     }
     if ([string]$support.url -notmatch '^https://www\.sberbank\.com/') { Add-ValidationError 'project.support.url must use the configured Sberbank HTTPS host' }
-    $projectAssetsRoot = Get-FullProjectPath 'reports/assets/project'
     foreach ($assetName in @('qrAsset','buttonAsset')) {
         if (-not [string]::IsNullOrWhiteSpace([string]$support.$assetName)) {
             $supportAssetPath = Get-FullProjectPath ([string]$support.$assetName)
@@ -176,6 +190,17 @@ if ($state) {
             foreach ($match in [regex]::Matches($html, 'src="(assets/[^"]+)"')) {
                 $assetPath = Join-Path (Join-Path $RepoRoot 'reports') ($match.Groups[1].Value -replace '/', '\')
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }
+            }
+            if ($project -and $branding) {
+                $faviconSvgSrc = ([string]$branding.faviconSvg) -replace '^reports/', ''
+                $faviconPngSrc = ([string]$branding.faviconPng) -replace '^reports/', ''
+                $appleTouchIconSrc = ([string]$branding.appleTouchIcon) -replace '^reports/', ''
+                foreach ($expectedAsset in @($faviconSvgSrc,$faviconPngSrc,$appleTouchIconSrc)) {
+                    if (-not $html.Contains($expectedAsset)) { Add-ValidationError "Public HTML is missing branding asset: $expectedAsset" }
+                }
+                if (([regex]::Matches($html, '<link rel="icon"')).Count -ne 2) { Add-ValidationError 'Public HTML must contain SVG and PNG favicon links' }
+                if (([regex]::Matches($html, '<link rel="apple-touch-icon"')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one Apple Touch Icon link' }
+                if (-not $html.Contains("<meta name=`"theme-color`" content=`"$($branding.themeColor)`">")) { Add-ValidationError 'Public HTML theme-color differs from project config' }
             }
             if ($support) {
                 $supportQrSrc = ([string]$support.qrAsset) -replace '^reports/', ''

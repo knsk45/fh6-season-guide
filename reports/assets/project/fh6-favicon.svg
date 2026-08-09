@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Forza Horizon 6</title>
+  <desc id="desc">Ярлык FH6 в розово-оранжевой гамме Horizon</desc>
+  <defs>
+    <linearGradient id="horizon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff008c"/>
+      <stop offset="0.55" stop-color="#f2308b"/>
+      <stop offset="1" stop-color="#ff7a00"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#202b33"/>
+      <stop offset="1" stop-color="#071014"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#shine)"/>
+  <path d="M0 147h256v61c0 26.5-21.5 48-48 48H48C21.5 256 0 234.5 0 208Z" fill="url(#horizon)"/>
+  <path d="M31 49h105l-16 18H69l-12 14h53L94 99H28l39-45H31Z" fill="#fff"/>
+  <path d="M139 49h84l-16 18h-67l-11-9 10-9Z" fill="#fff" opacity=".92"/>
+  <text x="128" y="139" fill="#fff" font-family="Arial Black,Arial,sans-serif" font-size="76" font-weight="900" text-anchor="middle" letter-spacing="-7">FH</text>
+  <text x="128" y="234" fill="#fff" font-family="Arial Black,Arial,sans-serif" font-size="104" font-weight="900" text-anchor="middle">6</text>
+  <rect x="3" y="3" width="250" height="250" rx="45" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="6"/>
+</svg>
