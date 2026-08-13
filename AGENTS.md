@@ -6,6 +6,7 @@
 - Treat the current file in `seasons/`, `CURRENT_WEEK.md`, `reports/artifact.json`, and `reports/current-week.html` as generated outputs. Regenerate them; do not hand-edit their duplicated content.
 - Never hardcode a universal card count. Read `season.expectedCardCount` and `season.expectedDailyItems` from the current state.
 - Keep performance class and PI restrictions as plain text in season state. The report builder decorates D/C/B/A/S1/S2/R/X plus three digits as game-style badges; validation must reject missing badge conversions.
+- Every specifically recommended vehicle must include its four-digit model year. Show tune share codes without tuner names. Keep all hyperlinks in `sourceHtml`, never inside `conditionHtml`, `howHtml`, or `tuneHtml`.
 - On season rollover, preserve all files in `seasons/` and `data/history/`. Never reuse a prior-week tune code or solution without fresh current-week evidence.
 - Unknown facts stay empty in the activity field and are listed in both `missingFields` and top-level `openItems`. Missing evidence is allowed; structural drift is not.
 - Before publication run `automation/validate_season.ps1`. Publish only when it prints `STRUCTURE_OK` and the portable build has passed validation/package.

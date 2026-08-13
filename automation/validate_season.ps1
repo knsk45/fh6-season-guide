@@ -39,12 +39,12 @@ $support = $null
 if ($project) {
     if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
     $branding = $project.branding
-    foreach ($name in @('faviconSvg','faviconPng','appleTouchIcon','themeColor')) {
+    foreach ($name in @('faviconPng','appleTouchIcon','themeColor')) {
         if ($null -eq $branding.$name -or [string]::IsNullOrWhiteSpace([string]$branding.$name)) { Add-ValidationError "project.branding.$name is required" }
     }
     if ([string]$branding.themeColor -notmatch '^#[0-9A-Fa-f]{6}$') { Add-ValidationError 'project.branding.themeColor must be a six-digit hex color' }
     $projectAssetsRoot = Get-FullProjectPath 'reports/assets/project'
-    foreach ($assetName in @('faviconSvg','faviconPng','appleTouchIcon')) {
+    foreach ($assetName in @('faviconPng','appleTouchIcon')) {
         if (-not [string]::IsNullOrWhiteSpace([string]$branding.$assetName)) {
             if ([string]$branding.$assetName -notmatch '^reports/assets/project/[^/]+\.(svg|png)$') { Add-ValidationError "project.branding.$assetName must be a direct SVG or PNG file under reports/assets/project/" }
             $brandingAssetPath = Get-FullProjectPath ([string]$branding.$assetName)
@@ -122,6 +122,17 @@ if ($state) {
         if ($card.id -notmatch '^activity_[0-9]{2}_[a-z0-9_]+$') { Add-ValidationError "Invalid activity id: $($card.id)" }
         foreach ($required in @('kind','title','points','sourceHtml')) {
             if ([string]::IsNullOrWhiteSpace([string]$card.$required)) { Add-ValidationError "$($card.id).$required is empty" }
+        }
+        foreach ($contentField in @('conditionHtml','howHtml','tuneHtml')) {
+            if ([string]$card.$contentField -match '<a\b') { Add-ValidationError "$($card.id).$contentField contains a link; move it to sourceHtml" }
+        }
+        if ([string]$card.tuneHtml -match '<b\b') { Add-ValidationError "$($card.id).tuneHtml contains bold attribution; publish codes without tuner names" }
+        $vehicleAndTuneHtml = ([string]$card.conditionHtml) + ' ' + ([string]$card.tuneHtml)
+        foreach ($codeMatch in [regex]::Matches($vehicleAndTuneHtml, '<code>[0-9]{3} [0-9]{3} [0-9]{3}</code>')) {
+            $prefixStart = [Math]::Max(0, $codeMatch.Index - 140)
+            $codePrefix = $vehicleAndTuneHtml.Substring($prefixStart, $codeMatch.Index - $prefixStart)
+            if ($codePrefix -notmatch '(?:19|20)[0-9]{2}') { Add-ValidationError "$($card.id) has a tune code without a nearby four-digit vehicle year: $($codeMatch.Value)" }
+            if ($codePrefix -match '<b>[^<]+</b>\s*,?\s*$') { Add-ValidationError "$($card.id) exposes a tuner name before $($codeMatch.Value)" }
         }
 
         $missing = @($card.missingFields)
@@ -201,13 +212,12 @@ if ($state) {
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }
             }
             if ($project -and $branding) {
-                $faviconSvgSrc = ([string]$branding.faviconSvg) -replace '^reports/', ''
                 $faviconPngSrc = ([string]$branding.faviconPng) -replace '^reports/', ''
                 $appleTouchIconSrc = ([string]$branding.appleTouchIcon) -replace '^reports/', ''
-                foreach ($expectedAsset in @($faviconSvgSrc,$faviconPngSrc,$appleTouchIconSrc)) {
+                foreach ($expectedAsset in @($faviconPngSrc,$appleTouchIconSrc)) {
                     if (-not $html.Contains($expectedAsset)) { Add-ValidationError "Public HTML is missing branding asset: $expectedAsset" }
                 }
-                if (([regex]::Matches($html, '<link rel="icon"')).Count -ne 2) { Add-ValidationError 'Public HTML must contain SVG and PNG favicon links' }
+                if (([regex]::Matches($html, '<link rel="icon"')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one PNG favicon link' }
                 if (([regex]::Matches($html, '<link rel="apple-touch-icon"')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one Apple Touch Icon link' }
                 if (-not $html.Contains("<meta name=`"theme-color`" content=`"$($branding.themeColor)`">")) { Add-ValidationError 'Public HTML theme-color differs from project config' }
             }
