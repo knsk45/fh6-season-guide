@@ -36,6 +36,7 @@ catch {
 
 $branding = $null
 $support = $null
+$requiredSources = @()
 if ($project) {
     if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
     $branding = $project.branding
@@ -64,6 +65,20 @@ if ($project) {
             if (-not $supportAssetPath.StartsWith($projectAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError "project.support.$assetName must stay under reports/assets/project/" }
             elseif (-not (Test-Path -LiteralPath $supportAssetPath)) { Add-ValidationError "project.support.$assetName is missing: $supportAssetPath" }
         }
+    }
+    $requiredSources = @($project.requiredSources)
+    $mandatorySourceIds = @('fandom_series_category','fandom_current','forza_playlist','forza_news','forza_support_release_notes','forza_support_known_issues','forza_forums_official','reddit_forzahorizon','reddit_forzahorizon6','reddit_forza','reddit_forzatune','forza_horizon_hub','forza_labs_collector','forza_labs_map','escorenews_fh6','dungg_playlist')
+    $configuredSourceIds = @($requiredSources | ForEach-Object { [string]$_.id })
+    if ($requiredSources.Count -lt $mandatorySourceIds.Count) { Add-ValidationError "project.requiredSources must contain at least $($mandatorySourceIds.Count) entries" }
+    if (@($configuredSourceIds | Sort-Object -Unique).Count -ne $configuredSourceIds.Count) { Add-ValidationError 'project.requiredSources ids must be unique' }
+    foreach ($sourceId in $mandatorySourceIds) {
+        if ($configuredSourceIds -notcontains $sourceId) { Add-ValidationError "project.requiredSources is missing mandatory source: $sourceId" }
+    }
+    foreach ($source in $requiredSources) {
+        foreach ($name in @('id','label','url','purpose')) {
+            if ([string]::IsNullOrWhiteSpace([string]$source.$name)) { Add-ValidationError "project.requiredSources contains an empty $name" }
+        }
+        if ([string]$source.url -notmatch '^https://') { Add-ValidationError "project.requiredSources URL must use HTTPS: $($source.id)" }
     }
 }
 
@@ -125,6 +140,10 @@ if ($state) {
         }
         foreach ($contentField in @('conditionHtml','howHtml','tuneHtml')) {
             if ([string]$card.$contentField -match '<a\b') { Add-ValidationError "$($card.id).$contentField contains a link; move it to sourceHtml" }
+        }
+        foreach ($linkMatch in [regex]::Matches([string]$card.sourceHtml, '<a\b[^>]*>', 'IgnoreCase')) {
+            if ($linkMatch.Value -notmatch 'target\s*=\s*["'']_blank["'']') { Add-ValidationError "$($card.id).sourceHtml has a link without target=_blank" }
+            if ($linkMatch.Value -notmatch 'rel\s*=\s*["''][^"'']*noopener[^"'']*noreferrer[^"'']*["'']') { Add-ValidationError "$($card.id).sourceHtml has a link without rel=noopener noreferrer" }
         }
         if ([string]$card.tuneHtml -match '<b\b') { Add-ValidationError "$($card.id).tuneHtml contains bold attribution; publish codes without tuner names" }
         $vehicleAndTuneHtml = ([string]$card.conditionHtml) + ' ' + ([string]$card.tuneHtml)
@@ -202,6 +221,12 @@ if ($state) {
             if ($html -match '<iframe|data:image/|data-analytics-portable-reader') { Add-ValidationError 'Public HTML contains a heavy or embedded runtime' }
             $htmlIds = @([regex]::Matches($html, '<section class="activity-block" id="([^"]+)" data-activity-block>') | ForEach-Object { $_.Groups[1].Value })
             if (($htmlIds -join '|') -ne ($ids -join '|')) { Add-ValidationError 'Public HTML card order differs from season state' }
+            foreach ($cardBlock in [regex]::Matches($html, '<section class="activity-block"[\s\S]*?</section>', 'IgnoreCase')) {
+                foreach ($linkMatch in [regex]::Matches($cardBlock.Value, '<a\b[^>]*>', 'IgnoreCase')) {
+                    if ($linkMatch.Value -notmatch 'target\s*=\s*["'']_blank["'']') { Add-ValidationError 'Public HTML contains an activity-card link that does not open in a new tab' }
+                    if ($linkMatch.Value -notmatch 'rel\s*=\s*["''][^"'']*noopener[^"'']*noreferrer[^"'']*["'']') { Add-ValidationError 'Public HTML contains an unsafe activity-card external link' }
+                }
+            }
             $actualPiBadges = ([regex]::Matches($html, 'class="pi-badge pi-(?:d|c|b|a|s1|s2|r|x)"')).Count
             if ($actualPiBadges -ne $expectedPiBadges) { Add-ValidationError "Public HTML contains $actualPiBadges PI badges, expected $expectedPiBadges from season state" }
             foreach ($forbidden in @('Проверка полноты','Общие ловушки','Что ещё требует проверки','Ограничения источников')) {

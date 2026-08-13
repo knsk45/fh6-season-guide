@@ -13,5 +13,23 @@
     "buttonLabel": "Поддержать проект через Сбербанк",
     "qrAsset": "reports/assets/project/support-qr.png",
     "buttonAsset": "reports/assets/project/support-button.svg"
-  }
+  },
+  "requiredSources": [
+    { "id": "fandom_series_category", "label": "Forza Wiki — FH6 Series category", "url": "https://forza.fandom.com/wiki/Category:Series_(FH6)", "purpose": "Список серий и переход к актуальной Series/Season" },
+    { "id": "fandom_current", "label": "Forza Wiki / Fandom", "url": "https://forza.fandom.com/", "purpose": "Текущая сезонная страница, игровые плитки и иконки; при отсутствии — актуальная страница Series" },
+    { "id": "forza_playlist", "label": "Official Forza Festival Playlist", "url": "https://forza.net/fh6playlists", "purpose": "Порядок, условия, награды и ограничения активностей" },
+    { "id": "forza_news", "label": "Official Forza News", "url": "https://forza.net/news", "purpose": "Новость актуальной Series, даты и новые возможности" },
+    { "id": "forza_support_release_notes", "label": "Forza Support — Release Notes", "url": "https://support.forza.net/hc/en-us/sections/360000121153-Release-Notes-and-Known-Issues", "purpose": "Свежий патч и изменения текущей Series" },
+    { "id": "forza_support_known_issues", "label": "Forza Support — Known Issues", "url": "https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues", "purpose": "Официально известные ошибки и ограничения" },
+    { "id": "forza_forums_official", "label": "Official Forza Forums", "url": "https://forums.forza.net/tag/official-info/1731", "purpose": "Свежие официальные объявления и подтверждения недели" },
+    { "id": "reddit_forzahorizon", "label": "Reddit r/ForzaHorizon", "url": "https://www.reddit.com/r/ForzaHorizon/", "purpose": "Свежие breakdown, решения, баги и тюнинги" },
+    { "id": "reddit_forzahorizon6", "label": "Reddit r/ForzaHorizon6", "url": "https://www.reddit.com/r/ForzaHorizon6/", "purpose": "FH6-специфичные обсуждения и уточнения текущей недели" },
+    { "id": "reddit_forza", "label": "Reddit r/forza", "url": "https://www.reddit.com/r/forza/", "purpose": "Information Thread и репосты официальных новостей" },
+    { "id": "reddit_forzatune", "label": "Reddit r/ForzaTune", "url": "https://www.reddit.com/r/ForzaTune/", "purpose": "Текущие тюнинги; отсутствие свежего поста фиксируется в аудите" },
+    { "id": "forza_horizon_hub", "label": "Forza Horizon Hub", "url": "https://forzahorizonhub.com/", "purpose": "Прямые ссылки на карту, локации и реестр автомобилей" },
+    { "id": "forza_labs_collector", "label": "ForzaLabs Collector Tool", "url": "https://forza.labsgg.com/collector-tool", "purpose": "Проверка коллекционных объектов" },
+    { "id": "forza_labs_map", "label": "ForzaLabs Interactive Map", "url": "https://forza.labsgg.com/interactive-map", "purpose": "Альтернативная интерактивная карта" },
+    { "id": "escorenews_fh6", "label": "Escorenews FH6 guides", "url": "https://escorenews.com/en/games/forza-horizon-6", "purpose": "Свежий независимый недельный гайд, если опубликован" },
+    { "id": "dungg_playlist", "label": "DungG Seasonal Playlist", "url": "https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF", "purpose": "Видео-подтверждение решений и маршрутов, если выпуск уже опубликован" }
+  ]
 }

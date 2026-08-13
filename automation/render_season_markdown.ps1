@@ -37,7 +37,7 @@ foreach ($card in @($state.activities)) {
     $lines.Add("- **Условие:** $($card.conditionHtml)")
     $lines.Add("- **Как выполнить:** $($card.howHtml)")
     $lines.Add("- **Автомобиль и тюнинг:** $($card.tuneHtml)")
-    $lines.Add("- **Источники:** $($card.sourceHtml) · <a href='$($card.visual.sourceUrl)'>$($card.visual.sourceLabel)</a>")
+    $lines.Add("- **Источники:** $($card.sourceHtml) · <a href='$($card.visual.sourceUrl)' target='_blank' rel='noopener noreferrer'>$($card.visual.sourceLabel)</a>")
     $lines.Add('')
 }
 

@@ -100,7 +100,7 @@ function New-CardHtml($card) {
       <p><span class="label">Условие:</span> $conditionHtml</p>
       <p><span class="label">Как выполнить:</span> $howHtml</p>
       <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $tuneHtml</p>
-      <div class="sources">$($card.sourceHtml) · <a href='$imageSourceUrl'>$imageSourceLabel</a></div>
+      <div class="sources">$($card.sourceHtml) · <a href='$imageSourceUrl' target='_blank' rel='noopener noreferrer'>$imageSourceLabel</a></div>
     </div>
   </div>
 </article>

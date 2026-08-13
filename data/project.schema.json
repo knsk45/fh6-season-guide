@@ -3,7 +3,7 @@
   "title": "FH6 project configuration",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "branding", "support"],
+  "required": ["schemaVersion", "branding", "support", "requiredSources"],
   "properties": {
     "schemaVersion": { "const": 1 },
     "branding": {
@@ -28,6 +28,22 @@
         "buttonLabel": { "type": "string", "minLength": 1 },
         "qrAsset": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.png$" },
         "buttonAsset": { "type": "string", "pattern": "^reports/assets/project/[^/]+\\.svg$" }
+      }
+    },
+    "requiredSources": {
+      "type": "array",
+      "minItems": 16,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "url", "purpose"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "label": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "purpose": { "type": "string", "minLength": 1 }
+        }
       }
     }
   }

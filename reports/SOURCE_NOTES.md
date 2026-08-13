@@ -1,4 +1,42 @@
-# Source notes — 2026-08-09, карточный редизайн
+# Source notes — 2026-08-13, Series 4 Summer
+
+## Rollover — 2026-08-13 22:03 +07:00
+
+- Live Forza Festival Playlist и свежая публикация сообщества подтвердили Series 4 `Horizon Mascot Party`, Summer, 13–20 августа 2026, 21:30 Asia/Krasnoyarsk, 53 очка и 14 игровых карточек: Weekly, один Daily из 7 дней, Photo, Treasure, 2 Championships, Time Attack, 3 PR Stunts, Trial, Seasonal Job, Stunt Party и Monthly Rivals.
+- Официальные ограничения и награды взяты из Playlist. Свежий Series 4 tune-post от 13 августа дал 6 текущенедельных кодов для обоих чемпионатов, Time Attack, Trial и трёх PR Stunts; имена авторов в публичной сводке не выводятся.
+- Treasure: единственный свежий точный комментарий указывает гараж Shimanoyama Circuit и сообщает о неработающем Treasure Map. Прямого скриншота пока нет, поэтому решение остаётся `preliminary` и открытым пунктом.
+- Photo: Hokuryu Sunflower Farm подтверждена свежим описанием и прямой точкой Forza Horizon Hub `loc=568823`.
+- Точная Fandom-страница `Forza Horizon 6/Series 4/Summer Season` на момент сборки отсутствует. Страница Series 4 существует (revision 169227), подтверждает даты Series и 53 очка каждой недели. Weekly и Daily используют реальные плитки из свежего игрового скриншота; 12 остальных карточек временно используют компактные официальные изображения Series 4 и остаются открытыми на замену точными плитками.
+- Арифметика: `5 + 7 + 2 + 3 + 5 + 5 + 3 + 2 + 2 + 2 + 10 + 3 + 3 + 1 = 53`.
+
+## Аудит обязательных источников — 2026-08-13
+
+| Источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | Series 4 уже в категории; сезонной подстраницы Summer пока нет. |
+| Forza Wiki / Fandom | Series 4 revision 169227 подтверждает `Horizon Mascot Party`, 13.08–10.09 и 53 очка Summer; получены официальные Series 4 assets. |
+| Official Forza Festival Playlist | Подтверждены все 14 карточек, порядок, ограничения, трассы и награды Summer. |
+| Official Forza News | Актуальная статья Series 4 найдена; её URL и описание подтверждены Series 4 Fandom revision и официальным репостом r/forza. |
+| Forza Support Release Notes | Проверен материал обновления от 10 августа; прямой запрос из PowerShell вернул 403, поэтому факты карточек из него не брались. |
+| Forza Support Known Issues | Страница доступна веб-поиску; свежая проблема исчезающих discovered roads сопоставлена с сообщением сообщества, но в карточки не добавлялась. |
+| Official Forza Forums | Тег official-info проверен; отдельного недельного Festival Playlist thread в индексе не найдено. |
+| Reddit r/ForzaHorizon | Найдены свежие breakdown, точка Treasure, подсказки и текущенедельные коды. |
+| Reddit r/ForzaHorizon6 | Проверен свежий поток Series 4; отдельного полного Summer guide на момент запуска нет. |
+| Reddit r/forza | Найден свежий официальный репост `Join the Horizon Mascot Party`, подтверждающий старт 13 августа 14:30 UTC. |
+| Reddit r/ForzaTune | Свежего Series 4 Summer FH6-поста в поисковом индексе не найдено; старые коды не использовались. |
+| Forza Horizon Hub | Использованы прямые ссылки на Hokuryu Sunflower Farm и Shimanoyama Circuit. |
+| ForzaLabs Collector Tool | Проверен; текущенедельного текстового решения сундука не предоставляет. |
+| ForzaLabs Interactive Map | Проверен как альтернативная карта; карточки используют более точные deep links Horizon Hub. |
+| Escorenews FH6 | Свежего гайда Series 4 Summer в индексе на момент запуска нет. |
+| DungG Seasonal Playlist | Плейлист проверен; отдельный индексируемый выпуск Series 4 Summer на момент запуска не найден. |
+
+## Постоянные правила источников — 2026-08-13
+
+- Канонический обязательный перечень теперь хранится в `data/project.json.requiredSources`, а валидатор требует все 16 записей.
+- `docs/SOURCES.md`, `docs/WORKFLOW.md`, repo skill и automation `fh6` требуют датированный аудит каждого источника при каждом запуске. Отсутствие свежего материала фиксируется явно и не разрешает перенос прошлой недели.
+- Все ссылки карточек обязаны иметь `target="_blank" rel="noopener noreferrer"`; это проверяется в state и в финальном публичном HTML.
+
+# Предыдущие source notes — 2026-08-09, карточный редизайн
 
 ## Ежедневное уточнение — 2026-08-09 21:49 +07:00
 
