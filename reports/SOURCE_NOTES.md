@@ -1,4 +1,34 @@
-# Source notes — 2026-08-13, Series 4 Summer
+# Source notes — 2026-08-14, Series 4 Summer
+
+## Ежедневное уточнение — 2026-08-14 06:22 +07:00
+
+- Живая официальная Playlist, статья Series 4 и свежие недельные треды по-прежнему подтверждают активный `Series 4 — Horizon Mascot Party / Summer` до 20 августа 2026, 14:30 UTC (21:30 Asia/Krasnoyarsk), 53 очка и 14 карточек.
+- Treasure Hunt подтверждён вторым независимым свежим гайдом и прямым скриншотом карты: сундук отмечен в южной части `Shimanoyama Drift Circuit`, у въезда на трассу. Карточка получила точный локальный визуал; поля `solution` и `visual` переведены в `confirmed`.
+- Weekly Challenge уточнён: финальное фото 2017 Toyota JPN Taxi требуется у `Tokyo Central Railway Station`. Добавлена подсказка сообщества по повторному разрушению одного автомата через Rewind в Horizon Solo с паузой 3–5 секунд.
+- Trial уточнён: требуется браслет Horizon Legend; в категорию Total Buggies & Offroad входят также некоторые Pickups & 4x4s.
+- Исправлен год награды `Dango Dashes`: `1957 BMW Isetta 300 Export`, подтверждено свежим Information Thread r/forza. Из публичных рекомендаций удалены формулировки о внутреннем тестировании проекта; статус источника остаётся в полях completeness.
+- Fandom-страница `Forza Horizon 6/Series 4/Summer Season` всё ещё отсутствует по MediaWiki API. После добавления точной карты Treasure остаются 11 открытых визуалов с официальным Series 4 fallback.
+
+## Аудит обязательных источников — 2026-08-14
+
+| Источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | Категория и Series 4 проверены; отдельная Summer Season всё ещё отсутствует. |
+| Forza Wiki / Fandom | MediaWiki API: Series 4 существует и не менялась после 12 августа; запрошенная Summer Season возвращает missing. |
+| Official Forza Festival Playlist | Series 4 Summer остаётся активной; порядок, ограничения, награды и 53 очка не изменились. |
+| Official Forza News | Статья `Join the Horizon Mascot Party` доступна; новых недельных поправок после старта сезона не опубликовано. |
+| Forza Support Release Notes | Release Notes от 10 августа обновлены 13 августа 15:05; подтверждены версии патча и награды Summer, новых изменений 14 августа нет. |
+| Forza Support Known Issues | Официальная страница проверена; обновление датировано 20 июля и направляет в Feedback Portal, отдельного пункта про Treasure Map в списке нет. |
+| Official Forza Forums | Индекс official-info проверен; форум закрыт 30 июня 2026, поэтому свежего Series 4 недельного треда здесь нет. |
+| Reddit r/ForzaHorizon | Breakdown, Treasure-комментарий и текущенедельный tune-post проверены; коды и ограничения остаются актуальными. |
+| Reddit r/ForzaHorizon6 | Найден свежий полный Summer guide со вторым подтверждением Treasure, прямой картой и уточнениями Weekly Challenge. |
+| Reddit r/forza | Свежий Summer Information Thread подтвердил дедлайн, условия, Trial и правильный год BMW Isetta. |
+| Reddit r/ForzaTune | Свежего индексируемого FH6 Series 4 Summer tune-post не найдено; старые коды не использовались. |
+| Forza Horizon Hub | Главная и карта проверены; недельная витрина на главной всё ещё показывает устаревшую Series 1, поэтому факты сезона из неё не брались. |
+| ForzaLabs Collector Tool | Проверен текущий каталог коллекции; сезонного Treasure Hunt решения инструмент не публикует. |
+| ForzaLabs Interactive Map | Карта доступна, но отдельного актуального маркера сезонного сундука не найдено; используется прямой скриншот сообщества. |
+| Escorenews FH6 | Прямой запрос вернул 403, а свежий индексируемый гайд Series 4 Summer не найден. |
+| DungG Seasonal Playlist | Плейлист проверен через поиск; свежий индексируемый выпуск Series 4 Summer не найден, прямое открытие YouTube было ограничено сервисом. |
 
 ## Rollover — 2026-08-13 22:03 +07:00
 
