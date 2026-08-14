@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "branding": {
-    "faviconPng": "reports/assets/project/fh6-season-guide-favicon-32.png",
-    "appleTouchIcon": "reports/assets/project/fh6-season-guide-icon-180.png",
+    "faviconPng": "reports/assets/project/fh6-season-guide-favicon-v2-32.png",
+    "appleTouchIcon": "reports/assets/project/fh6-season-guide-icon-v2-180.png",
     "themeColor": "#071014"
   },
   "support": {
