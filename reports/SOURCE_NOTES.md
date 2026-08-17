@@ -1,4 +1,30 @@
-# Source notes — 2026-08-17, Series 4 Summer
+# Source notes — 2026-08-18, Series 4 Summer
+
+## Ежедневное уточнение — 2026-08-18 06:05 +07:00
+
+- Живая официальная Playlist подтверждает прежний активный сезон: `Series 4 — Horizon Mascot Party / Summer`, 13–20 августа 2026 года, дедлайн 20 августа в 21:30 Asia/Krasnoyarsk. Rollover не требуется; порядок 14 карточек, условия и награды не изменились.
+- Fandom опубликовал точную страницу `Forza Horizon 6/Series 4/Summer Season`: revision 169631 от 17 августа 18:50 UTC. В её галерее появились актуальные визуалы Photo Challenge, обоих чемпионатов, Time Attack, трёх PR Stunts, Trial и Monthly Rivals.
+- Девять новых Fandom-изображений скачаны, обрезаны в квадрат 640×640 и оптимизированы до 38–73 КБ. Эти карточки переведены в `visual: confirmed`; открытыми остаются только Seasonal Job и Stunt Party, для которых точных изображений в сезонной галерее нет. `openItems` уменьшен с 11 до 2.
+- Новых подтверждённых решений, багов или более надёжных share codes нет. Единичное сообщение о незасчитанных Air/Time Attack Daily по-прежнему не имеет второго источника или записи в Known Issues.
+
+| Обязательный источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | MediaWiki API: Series 4 и её категория доступны; точная Summer Season теперь опубликована. |
+| Forza Wiki / Fandom | Series 4 обновлена до revision 169617, Summer Season — revision 169631; получены девять точных текущенедельных визуалов. |
+| Official Forza Festival Playlist | Активна `Horizon Mascot Party — Summer` 13–20 августа; 14 карточек, ограничения и награды без изменений. |
+| Official Forza News | Раздел News и материал Series 4 проверены; новых поправок к текущей Summer-неделе не опубликовано. |
+| Forza Support Release Notes | Последними остаются notes от 10 августа, обновлённые 13 августа: версии 3.420.696.0 / 1.420.696.0; новых изменений карточек нет. |
+| Forza Support Known Issues | Страница по-прежнему датирована 20 июля и направляет в Feedback Portal; отдельной записи про Summer Playlist или Daily нет. |
+| Official Forza Forums | Тег official-info перенаправляет на официальное сообщение о закрытии форумов; свежего недельного треда нет. |
+| Reddit r/ForzaHorizon | Текущие Summer breakdown и tune-post остаются последними; новых исправлений или более надёжных кодов не найдено. |
+| Reddit r/ForzaHorizon6 | Полный Summer guide проверен; единичное сообщение о Daily остаётся неподтверждённым. |
+| Reddit r/forza | Summer Information Thread по-прежнему подтверждает дедлайн, 53 очка и текущие условия; новых содержательных поправок нет. |
+| Reddit r/ForzaTune | Свежего отдельного FH6 Series 4 Summer tune-post в поисковом индексе нет; старые коды не использовались. |
+| Forza Horizon Hub | Сайт доступен, но недельная витрина всё ещё показывает Series 1; текущие сезонные факты из неё не брались. |
+| ForzaLabs Collector Tool | Инструмент доступен и показывает каталог машин; текущенедельных решений или визуалов Playlist не публикует. |
+| ForzaLabs Interactive Map | Карта доступна; нового точного маркера текущего Treasure Hunt или сезонных визуалов нет. |
+| Escorenews FH6 | Свежего индексируемого гайда Series 4 Summer не найдено; последние найденные недельные материалы относятся к прежним Series. |
+| DungG Seasonal Playlist | Свежего индексируемого выпуска Series 4 Summer не найдено; прямой YouTube-плейлист остаётся ограничен сервисом. |
 
 ## Статистика посещений и повторный аудит — 2026-08-17 22:36 +07:00
 

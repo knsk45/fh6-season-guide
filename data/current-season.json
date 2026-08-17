@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-14T06:22:45+07:00",
+    "lastContentUpdate":  "2026-08-18T06:05:45+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -84,20 +84,20 @@
                            "tuneHtml":  "Нужен стандартный 2013 Wuling Sunshine S; тюнинг для фото не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://forzahorizonhub.com/map?cat=landmark\u0026amp;loc=568823\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eточка на карте\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vnas55/fh6_series_4_summer_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eориентир сообщества\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "03-photo.jpg",
+                                          "image":  "03-photo-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал #SunnySnap из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -138,20 +138,20 @@
                            "tuneHtml":  "1993 Autozam AZ-1 D400 — \u003ccode\u003e102 721 492\u003c/code\u003e (свежий текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "05-small-but-mighty.jpg",
+                                          "image":  "05-small-fandom-20260817.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный обзор Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Small But Mighty из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -165,20 +165,20 @@
                            "tuneHtml":  "2023 Porsche 911 Turbo S S1 800 AWD — \u003ccode\u003e142 114 951\u003c/code\u003e (свежий текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "06-dango-dashes.jpg",
+                                          "image":  "06-dango-fandom-20260817.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Dango Dashes из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -192,20 +192,20 @@
                            "tuneHtml":  "1993 Autozam AZ-1 D400 — \u003ccode\u003e102 721 492\u003c/code\u003e (текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vnas55/fh6_series_4_summer_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eрасположение трассы\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "07-edamame-time-attack.jpg",
+                                          "image":  "07-time-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Edamame Time Attack из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -219,20 +219,20 @@
                            "tuneHtml":  "1997 Mitsubishi GTO B599 AWD — \u003ccode\u003e154 734 117\u003c/code\u003e (свежий текущенедельный код сообщества; в списке выбора отображается как допустимый B-класс).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "08-tanbo-launch.jpg",
+                                          "image":  "08-danger-fandom-20260817.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Tanbo Launch из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -246,20 +246,20 @@
                            "tuneHtml":  "1993 Porsche 968 Turbo S B600 RWD — \u003ccode\u003e180 799 437\u003c/code\u003e (свежий текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "09-hakone-turns.jpg",
+                                          "image":  "09-speed-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Hakone Turns из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -273,20 +273,20 @@
                            "tuneHtml":  "1993 Porsche 968 Turbo S B600 RWD — \u003ccode\u003e842 269 919\u003c/code\u003e (свежий текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "10-kawazu-drift.jpg",
+                                          "image":  "10-drift-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_DriftZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Kawazu Nanadaru Loop Bridge из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -300,20 +300,20 @@
                            "tuneHtml":  "2022 Subaru BRZ Forza Edition A700 AWD — \u003ccode\u003e299 362 910\u003c/code\u003e (свежий текущенедельный код сообщества).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/forza/comments/1vnfrtd/fh6_summer_information_thread_series_4/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eдопуск и требование Horizon Legend\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "11-trial.jpg",
+                                          "image":  "11-trial-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_Trial_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Offroad Scramble из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -381,99 +381,36 @@
                            "tuneHtml":  "Используется заданный 1970 Honda N600; собственный тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eSeries 4 и сумма 53\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "14-monthly-rivals.jpg",
+                                          "image":  "14-rivals-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
-                                          "sourceLabel":  "официальный арт Series 4 (временный fallback)"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season",
+                                          "sourceLabel":  "точный визуал Edamame Circuit Monthly Rivals из галереи Series 4 Summer"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        }
                    ],
     "openItems":  [
                       {
-                          "activityId":  "activity_03_photo",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная страница Fandom Series 4 Summer ещё не опубликована; используется официальный Series 4 fallback.",
-                          "nextCheck":  "Проверить Fandom MediaWiki API на следующем ежедневном запуске и заменить точной плиткой.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_05_small_but_mighty",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка чемпионата пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_06_dango_dashes",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка чемпионата пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_07_edamame_time_attack",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка Time Attack пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_08_tanbo_launch",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка Danger Sign пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_09_hakone_turns",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка Speed Zone пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_10_kawazu_drift",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка Drift Zone пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_11_trial",
-                          "field":  "visual",
-                          "reason":  "Точная сезонная плитка Trial пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
                           "activityId":  "activity_12_delivery",
                           "field":  "visual",
-                          "reason":  "Точная сезонная плитка Seasonal Job пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
+                          "reason":  "Точная сезонная плитка Seasonal Job отсутствует в галерее Fandom Series 4 Summer; используется официальный Series 4 fallback.",
+                          "nextCheck":  "Проверить галерею сезонной страницы на следующем ежедневном запуске.",
                           "status":  "preliminary"
                       },
                       {
                           "activityId":  "activity_13_stunt_party",
                           "field":  "visual",
-                          "reason":  "Точная сезонная плитка Stunt Party пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_14_monthly_rivals",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Edamame Monthly Rivals пока отсутствует на Fandom.",
-                          "nextCheck":  "Проверить сезонную страницу и заменить fallback.",
+                          "reason":  "Точная сезонная плитка Stunt Party отсутствует в галерее Fandom Series 4 Summer; используется официальный Series 4 fallback.",
+                          "nextCheck":  "Проверить галерею сезонной страницы на следующем ежедневном запуске.",
                           "status":  "preliminary"
                       }
                   ]
