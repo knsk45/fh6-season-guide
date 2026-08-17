@@ -31,7 +31,7 @@
 CURRENT_WEEK.md             — ссылка на актуальную сводку
 seasons/YYYY-MM-DD-*.md     — архив недель
 data/current-season.json    — единственный источник текущих карточек и пропусков
-data/project.json           — постоянные настройки проекта, включая блок поддержки
+data/project.json           — постоянные настройки проекта, включая поддержку и статистику посещений
 data/history/               — архив машинных состояний прошлых сезонов
 reports/current-week.html   — лёгкий публичный HTML-отчёт текущей недели
 reports/artifact.json       — исходные данные HTML-отчёта

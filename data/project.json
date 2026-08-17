@@ -14,6 +14,14 @@
     "qrAsset": "reports/assets/project/support-qr.png",
     "buttonAsset": "reports/assets/project/support-button.svg"
   },
+  "analytics": {
+    "enabled": true,
+    "provider": "hits.sh",
+    "title": "Статистика посещений",
+    "description": "Просмотры страницы: сегодня и всего. Повторные загрузки и обращения ботов могут увеличивать счётчик.",
+    "counterImageUrl": "https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html.svg?view=today-total&style=flat-square&label=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8B&color=ff2f92&labelColor=071014",
+    "dashboardUrl": "https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html/"
+  },
   "requiredSources": [
     { "id": "fandom_series_category", "label": "Forza Wiki — FH6 Series category", "url": "https://forza.fandom.com/wiki/Category:Series_(FH6)", "purpose": "Список серий и переход к актуальной Series/Season" },
     { "id": "fandom_current", "label": "Forza Wiki / Fandom", "url": "https://forza.fandom.com/", "purpose": "Текущая сезонная страница, игровые плитки и иконки; при отсутствии — актуальная страница Series" },

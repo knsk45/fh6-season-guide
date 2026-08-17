@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#071014">
   <link rel="icon" href="assets/project/fh6-season-guide-favicon-v2-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/project/fh6-season-guide-icon-v2-180.png" sizes="180x180">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://hits.sh; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>Forza Horizon 6: Как пройти Series 4 &quot;Horizon Mascot Party&quot; - Лето</title>
   <style>
 
@@ -33,7 +33,12 @@
     .support-qr{display:block;width:min(240px,70vw);height:auto;border-radius:18px}
     .support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:20px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}
     .support-button:hover{background:#27b743;transform:translateY(-1px)}
-    .support-button:focus-visible,.support-qr-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
+    .visit-stats{width:min(100%,650px);margin-top:28px;padding-top:22px;border-top:1px solid #29434b}
+    .visit-stats h3{margin:0 0 12px;color:#fff;font-size:17px;line-height:1.3}
+    .visit-stats-link{display:inline-flex;min-height:28px;align-items:center;justify-content:center}
+    .visit-stats-badge{display:block;width:auto;max-width:100%;height:28px}
+    .support-section .visit-stats-note{margin:10px auto 0;color:#7f9aa1;font-size:12px;line-height:1.45}
+    .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
       .page-header h1{font-size:20px;white-space:normal}
@@ -43,6 +48,8 @@
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
       .support-button{width:100%;padding:0 14px;font-size:15px}
+      .visit-stats{margin-top:24px;padding-top:20px}
+      .visit-stats-badge{height:26px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
@@ -248,6 +255,13 @@
         <img class="support-qr" src="assets/project/support-qr.png" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
       </a>
       <a class="support-button" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer">Поддержать проект через Сбербанк</a>
+      <div class="visit-stats" data-visit-stats>
+        <h3>Статистика посещений</h3>
+        <a class="visit-stats-link" href="https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html/" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
+          <img class="visit-stats-badge" src="https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html.svg?view=today-total&amp;style=flat-square&amp;label=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8B&amp;color=ff2f92&amp;labelColor=071014" height="28" alt="Просмотры страницы: сегодня и всего" referrerpolicy="no-referrer">
+        </a>
+        <p class="visit-stats-note">Просмотры страницы: сегодня и всего. Повторные загрузки и обращения ботов могут увеличивать счётчик.</p>
+      </div>
     </section>
   </main>
   <script>

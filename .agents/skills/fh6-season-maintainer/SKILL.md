@@ -37,7 +37,7 @@ Keep the public guide complete without inventing missing facts or breaking its c
 4. Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File automation/start_new_season.ps1 -InputPath automation/new-season-input.json`.
 5. Confirm that the old state was copied into `data/history/`, a new archive file was created, and no older season was deleted.
 6. Remove the local input after success; it is ignored by Git.
-7. Do not modify `data/project.json` during rollover. Preserve its branding icons in the public HTML and the enabled support block after all activities in both `README.md` and the public report; the support block is not a Playlist card.
+7. Do not modify `data/project.json` during rollover. Preserve its branding icons and enabled visit analytics in the public HTML. Keep the visit counter inside the enabled support block after all activities in both `README.md` and the public report; the support block is not a Playlist card.
 
 ## Build and validate
 
@@ -49,7 +49,7 @@ Run in this order:
 4. `reports/enhance_portable_html.mjs`
 5. `automation/validate_season.ps1`
 
-The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. Every specifically recommended vehicle must have its four-digit model year. Publish tune share codes without tuner names. Put every hyperlink in `sourceHtml`, never in condition, solution, or tune fields, and give every card link `target="_blank" rel="noopener noreferrer"`. Keep PI restrictions as plain text in season state; the builder must decorate every D/C/B/A/S1/S2/R/X plus three-digit PI token and the validator must compare badge count with state. Validation must confirm the configured favicon assets in the public HTML. When project support is enabled, it must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report.
+The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. Every specifically recommended vehicle must have its four-digit model year. Publish tune share codes without tuner names. Put every hyperlink in `sourceHtml`, never in condition, solution, or tune fields, and give every card link `target="_blank" rel="noopener noreferrer"`. Keep PI restrictions as plain text in season state; the builder must decorate every D/C/B/A/S1/S2/R/X plus three-digit PI token and the validator must compare badge count with state. Validation must confirm the configured favicon assets in the public HTML. When project support is enabled, it must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report. When project analytics is enabled, validation must confirm exactly one counter inside that final support block, the configured hits.sh image/dashboard URLs, and the restricted CSP allowance.
 
 ## Publish
 

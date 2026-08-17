@@ -2,7 +2,7 @@
 
 - For every Festival Playlist refresh, season rollover, report repair, or scheduled run, use the repo skill `$fh6-season-maintainer` from `.agents/skills/fh6-season-maintainer/`.
 - Treat `data/current-season.json` as the only editable source of current-season card content, ordering, deadline, visuals, completeness, and missing fields.
-- Treat `data/project.json` as the persistent source for project-wide content. Its branding assets must remain linked from the public HTML. The enabled support block must remain at the end of `README.md` and `reports/current-week.html`, and must never be counted as a Festival Playlist card.
+- Treat `data/project.json` as the persistent source for project-wide content. Its branding assets and enabled visit analytics must remain linked from the public HTML. The visit counter stays inside the final support block. The enabled support block must remain at the end of `README.md` and `reports/current-week.html`, and must never be counted as a Festival Playlist card.
 - Check every entry in `data/project.json.requiredSources` on every refresh. Record the result in `reports/SOURCE_NOTES.md`; a source with no current-week publication is a checked absence, not permission to reuse old data.
 - Treat the current file in `seasons/`, `CURRENT_WEEK.md`, `reports/artifact.json`, and `reports/current-week.html` as generated outputs. Regenerate them; do not hand-edit their duplicated content.
 - Never hardcode a universal card count. Read `season.expectedCardCount` and `season.expectedDailyItems` from the current state.

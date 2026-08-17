@@ -18,6 +18,7 @@ const expectedCardCount = Number(state?.season?.expectedCardCount);
 const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
 const branding = project?.branding;
 const support = project?.support;
+const analytics = project?.analytics;
 
 if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
   throw new Error('artifact.json and current-season.json must contain valid title, generatedAt and endAt values');
@@ -48,6 +49,15 @@ if (!support.qrAsset.startsWith('reports/assets/project/')) {
 const supportQrSrc = support.qrAsset.slice('reports/'.length);
 const supportQrPath = path.join(reportDir, ...supportQrSrc.split('/'));
 if (!fs.existsSync(supportQrPath)) throw new Error(`Missing support QR: ${support.qrAsset}`);
+if (!analytics?.enabled || analytics.provider !== 'hits.sh' || !analytics.title || !analytics.description || !analytics.counterImageUrl || !analytics.dashboardUrl) {
+  throw new Error('data/project.json must contain an enabled and complete hits.sh analytics block');
+}
+if (!/^https:\/\/hits\.sh\/.+\.svg(?:\?.*)?$/.test(analytics.counterImageUrl)) {
+  throw new Error(`Invalid hits.sh counter image URL: ${analytics.counterImageUrl}`);
+}
+if (!/^https:\/\/hits\.sh\/.+\/$/.test(analytics.dashboardUrl)) {
+  throw new Error(`Invalid hits.sh dashboard URL: ${analytics.dashboardUrl}`);
+}
 const faviconPngSrc = branding.faviconPng.slice('reports/'.length);
 const appleTouchIconSrc = branding.appleTouchIcon.slice('reports/'.length);
 
@@ -90,6 +100,13 @@ const supportHtml = `
         <img class="support-qr" src="${escapeHtml(supportQrSrc)}" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
       </a>
       <a class="support-button" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.buttonLabel)}</a>
+      <div class="visit-stats" data-visit-stats>
+        <h3>${escapeHtml(analytics.title)}</h3>
+        <a class="visit-stats-link" href="${escapeHtml(analytics.dashboardUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
+          <img class="visit-stats-badge" src="${escapeHtml(analytics.counterImageUrl)}" height="28" alt="Просмотры страницы: сегодня и всего" referrerpolicy="no-referrer">
+        </a>
+        <p class="visit-stats-note">${escapeHtml(analytics.description)}</p>
+      </div>
     </section>`;
 const updatedText = new Intl.DateTimeFormat('ru-RU', {
   timeZone: 'Asia/Krasnoyarsk',
@@ -110,7 +127,7 @@ const html = `<!doctype html>
   <meta name="theme-color" content="${escapeHtml(branding.themeColor)}">
   <link rel="icon" href="${escapeHtml(faviconPngSrc)}" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="${escapeHtml(appleTouchIconSrc)}" sizes="180x180">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://hits.sh; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>${escapeHtml(title)}</title>
   <style>
 ${sharedCardCss}
@@ -133,7 +150,12 @@ ${sharedCardCss}
     .support-qr{display:block;width:min(240px,70vw);height:auto;border-radius:18px}
     .support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:20px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}
     .support-button:hover{background:#27b743;transform:translateY(-1px)}
-    .support-button:focus-visible,.support-qr-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
+    .visit-stats{width:min(100%,650px);margin-top:28px;padding-top:22px;border-top:1px solid #29434b}
+    .visit-stats h3{margin:0 0 12px;color:#fff;font-size:17px;line-height:1.3}
+    .visit-stats-link{display:inline-flex;min-height:28px;align-items:center;justify-content:center}
+    .visit-stats-badge{display:block;width:auto;max-width:100%;height:28px}
+    .support-section .visit-stats-note{margin:10px auto 0;color:#7f9aa1;font-size:12px;line-height:1.45}
+    .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
       .page-header h1{font-size:20px;white-space:normal}
@@ -143,6 +165,8 @@ ${sharedCardCss}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
       .support-button{width:100%;padding:0 14px;font-size:15px}
+      .visit-stats{margin-top:24px;padding-top:20px}
+      .visit-stats-badge{height:26px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
@@ -201,6 +225,9 @@ if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is une
 if ((html.match(/data-activity-block/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
 if ((html.match(/data-support-block/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
   throw new Error('Lightweight report lost the configured support block');
+}
+if ((html.match(/data-visit-stats/g) ?? []).length !== 1 || !html.includes(escapeHtml(analytics.counterImageUrl)) || !html.includes(escapeHtml(analytics.dashboardUrl))) {
+  throw new Error('Lightweight report lost the configured visit statistics');
 }
 for (const asset of [faviconPngSrc, appleTouchIconSrc]) {
   if (!html.includes(asset)) throw new Error(`Lightweight report lost branding asset: ${asset}`);

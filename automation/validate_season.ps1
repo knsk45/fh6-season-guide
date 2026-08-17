@@ -36,6 +36,7 @@ catch {
 
 $branding = $null
 $support = $null
+$analytics = $null
 $requiredSources = @()
 if ($project) {
     if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
@@ -66,6 +67,14 @@ if ($project) {
             elseif (-not (Test-Path -LiteralPath $supportAssetPath)) { Add-ValidationError "project.support.$assetName is missing: $supportAssetPath" }
         }
     }
+    $analytics = $project.analytics
+    if ($analytics.enabled -ne $true) { Add-ValidationError 'project analytics must remain enabled' }
+    foreach ($name in @('provider','title','description','counterImageUrl','dashboardUrl')) {
+        if ($null -eq $analytics.$name -or [string]::IsNullOrWhiteSpace([string]$analytics.$name)) { Add-ValidationError "project.analytics.$name is required" }
+    }
+    if ([string]$analytics.provider -ne 'hits.sh') { Add-ValidationError 'project.analytics.provider must be hits.sh' }
+    if ([string]$analytics.counterImageUrl -notmatch '^https://hits\.sh/.+\.svg(?:\?.*)?$') { Add-ValidationError 'project.analytics.counterImageUrl must be a hits.sh HTTPS SVG URL' }
+    if ([string]$analytics.dashboardUrl -notmatch '^https://hits\.sh/.+/$') { Add-ValidationError 'project.analytics.dashboardUrl must be a hits.sh HTTPS dashboard URL' }
     $requiredSources = @($project.requiredSources)
     $mandatorySourceIds = @('fandom_series_category','fandom_current','forza_playlist','forza_news','forza_support_release_notes','forza_support_known_issues','forza_forums_official','reddit_forzahorizon','reddit_forzahorizon6','reddit_forza','reddit_forzatune','forza_horizon_hub','forza_labs_collector','forza_labs_map','escorenews_fh6','dungg_playlist')
     $configuredSourceIds = @($requiredSources | ForEach-Object { [string]$_.id })
@@ -255,6 +264,18 @@ if ($state) {
                 $supportIndex = $html.IndexOf('data-support-block', [StringComparison]::Ordinal)
                 $lastCardIndex = $html.LastIndexOf('data-activity-block', [StringComparison]::Ordinal)
                 if ($supportIndex -lt $lastCardIndex) { Add-ValidationError 'Public HTML support block must follow all activity cards' }
+            }
+            if ($analytics) {
+                if (([regex]::Matches($html, 'data-visit-stats')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one visit statistics block' }
+                if (-not $html.Contains([string]$analytics.title)) { Add-ValidationError 'Public HTML visit statistics title differs from project config' }
+                $counterImageUrlHtml = [Net.WebUtility]::HtmlEncode([string]$analytics.counterImageUrl)
+                $dashboardUrlHtml = [Net.WebUtility]::HtmlEncode([string]$analytics.dashboardUrl)
+                if (-not $html.Contains($counterImageUrlHtml)) { Add-ValidationError 'Public HTML visit counter URL differs from project config' }
+                if (-not $html.Contains($dashboardUrlHtml)) { Add-ValidationError 'Public HTML visit dashboard URL differs from project config' }
+                if (-not $html.Contains("img-src 'self' https://hits.sh")) { Add-ValidationError 'Public HTML CSP must allow only the configured external counter image host' }
+                $analyticsIndex = $html.IndexOf('data-visit-stats', [StringComparison]::Ordinal)
+                $supportIndex = $html.IndexOf('data-support-block', [StringComparison]::Ordinal)
+                if ($analyticsIndex -lt $supportIndex) { Add-ValidationError 'Public HTML visit statistics must stay inside the final support block' }
             }
         }
 
