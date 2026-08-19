@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 2
 > Период: 13.08.2026 21:30 — 20.08.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 19.08.2026 06:05
+> Обновлено: 20.08.2026 06:39
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Delightful Drop Off · 5 очков
@@ -64,16 +64,16 @@
 ## 09. Speed Zone — Hakone Turns · 2 очка
 
 - **Условие:** Retro Sports Cars B600; средняя скорость не ниже 128,75 км/ч (80 mph). Награда: Wheelspin.
-- **Как выполнить:** Начните с более прямой стороны зоны, разгонитесь до входа и пройдите повороты плавно, без ручника. Не цепляйте ограждения: потеря импульса в B600 стоит дороже позднего торможения.
+- **Как выполнить:** Заезжайте с северной стороны и проходите зону вниз по склону: так B600 проще сохранить нужную среднюю скорость. Разгонитесь до входа, ведите машину плавно без ручника и не цепляйте ограждения — потеря импульса здесь дороже позднего торможения.
 - **Автомобиль и тюнинг:** 1993 Porsche 968 Turbo S B600 RWD — <code>180 799 437</code> (свежий текущенедельный код сообщества).
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/" target="_blank" rel="noopener noreferrer">свежий тюнинг</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season' target='_blank' rel='noopener noreferrer'>точный визуал Hakone Turns из галереи Series 4 Summer</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/" target="_blank" rel="noopener noreferrer">свежий тюнинг</a> · <a href="https://escorenews.com/en/article/80283-summer-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6" target="_blank" rel="noopener noreferrer">направление разгона</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season' target='_blank' rel='noopener noreferrer'>точный визуал Hakone Turns из галереи Series 4 Summer</a>
 
 ## 10. Drift Zone — Kawazu Nanadaru Loop Bridge · 2 очка
 
 - **Условие:** Retro Sports Cars B600; набрать 65 000 очков дрифта. Награда: Wheelspin.
-- **Как выполнить:** Отключите контроль тяги и стабильности, используйте 2–3 передачу и перекладывайте автомобиль до центра каждой дуги. Важнее непрерывная серия, чем максимальный угол в одном повороте.
+- **Как выполнить:** Удобнее начать с востока на верхнем уровне шоссе. Отключите контроль тяги и стабильности, используйте 2–3 передачу, коротко помогайте ручником и перекладывайте автомобиль до центра каждой дуги. Важнее непрерывная серия, чем максимальный угол в одном повороте.
 - **Автомобиль и тюнинг:** 1993 Porsche 968 Turbo S B600 RWD — <code>842 269 919</code> (свежий текущенедельный код сообщества).
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/" target="_blank" rel="noopener noreferrer">свежий тюнинг</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season' target='_blank' rel='noopener noreferrer'>точный визуал Kawazu Nanadaru Loop Bridge из галереи Series 4 Summer</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/" target="_blank" rel="noopener noreferrer">свежий тюнинг</a> · <a href="https://escorenews.com/en/article/80283-summer-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6" target="_blank" rel="noopener noreferrer">направление заезда</a> · <a href='https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Summer_Season' target='_blank' rel='noopener noreferrer'>точный визуал Kawazu Nanadaru Loop Bridge из галереи Series 4 Summer</a>
 
 ## 11. The Trial — Offroad Scramble · 10 очков
 

@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-19T06:05:00+07:00",
+    "lastContentUpdate":  "2026-08-20T06:39:03+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -242,9 +242,9 @@
                            "title":  "Hakone Turns",
                            "points":  "2 очка",
                            "conditionHtml":  "Retro Sports Cars B600; средняя скорость не ниже 128,75 км/ч (80 mph). Награда: Wheelspin.",
-                           "howHtml":  "Начните с более прямой стороны зоны, разгонитесь до входа и пройдите повороты плавно, без ручника. Не цепляйте ограждения: потеря импульса в B600 стоит дороже позднего торможения.",
+                           "howHtml":  "Заезжайте с северной стороны и проходите зону вниз по склону: так B600 проще сохранить нужную среднюю скорость. Разгонитесь до входа, ведите машину плавно без ручника и не цепляйте ограждения — потеря импульса здесь дороже позднего торможения.",
                            "tuneHtml":  "1993 Porsche 968 Turbo S B600 RWD — \u003ccode\u003e180 799 437\u003c/code\u003e (свежий текущенедельный код сообщества).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/article/80283-summer-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eнаправление разгона\u003c/a\u003e",
                            "visual":  {
                                           "image":  "09-speed-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
@@ -269,9 +269,9 @@
                            "title":  "Kawazu Nanadaru Loop Bridge",
                            "points":  "2 очка",
                            "conditionHtml":  "Retro Sports Cars B600; набрать 65 000 очков дрифта. Награда: Wheelspin.",
-                           "howHtml":  "Отключите контроль тяги и стабильности, используйте 2–3 передачу и перекладывайте автомобиль до центра каждой дуги. Важнее непрерывная серия, чем максимальный угол в одном повороте.",
+                           "howHtml":  "Удобнее начать с востока на верхнем уровне шоссе. Отключите контроль тяги и стабильности, используйте 2–3 передачу, коротко помогайте ручником и перекладывайте автомобиль до центра каждой дуги. Важнее непрерывная серия, чем максимальный угол в одном повороте.",
                            "tuneHtml":  "1993 Porsche 968 Turbo S B600 RWD — \u003ccode\u003e842 269 919\u003c/code\u003e (свежий текущенедельный код сообщества).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eОфициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vn7s9o/fh6_series_4_summer_tunes_trial_seasonal/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/article/80283-summer-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eнаправление заезда\u003c/a\u003e",
                            "visual":  {
                                           "image":  "10-drift-fandom-20260817.jpg",
                                           "icon":  "FH6_EventFP_DriftZone_Icon.png",
