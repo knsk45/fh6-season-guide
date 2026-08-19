@@ -111,6 +111,7 @@ try {
         "index.html",
         "docs",
         "automation/publish_to_github.ps1",
+        "automation/refresh_last_content_update.ps1",
         "automation/render_season_markdown.ps1",
         "automation/start_new_season.ps1",
         "automation/validate_season.ps1"

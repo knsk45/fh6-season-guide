@@ -26,8 +26,8 @@ Keep the public guide complete without inventing missing facts or breaking its c
 1. Search `openItems`, every activity's `missingFields`, empty content fields, `TODO`, and conflicting evidence.
 2. Research only those gaps plus fresh corrections for the active week.
 3. Update `data/current-season.json`. Keep unknown values empty and update both `missingFields` and `openItems` together.
-4. Set `lastContentUpdate` only when facts, evidence, visuals, or recommendations materially changed.
-5. Run the build sequence below. On a true no-op, skip regeneration and commits, but still verify the existing public URL.
+4. After the complete required-source audit has succeeded and live evidence confirms the stored active season, run `automation/refresh_last_content_update.ps1`. `lastContentUpdate` is the time of the latest successful full audit, so refresh it even when facts, evidence, visuals, and recommendations did not change. If live confirmation or the required-source audit is incomplete, do not refresh it.
+5. Run the full build, validation, and publication sequence below on every successful daily audit. A no-card-change run still publishes the refreshed verification time; it is not an empty commit.
 
 ## Thursday rollover
 

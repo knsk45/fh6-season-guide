@@ -39,9 +39,8 @@ An unknown value stays empty. Never insert a prior-week solution, guessed share 
 
 ## Update invariants
 
-- Change `lastContentUpdate` only for a material content, evidence, or visual change.
+- Treat `lastContentUpdate` as the time of the latest successful complete audit. Refresh it after all required sources have been checked and the live active season has been confirmed, even if no card content changed. Leave it unchanged when that verification is incomplete.
 - Keep one Daily activity card and all daily items inside it.
 - Store exact current-week source links, not search URLs.
 - Use fresh confirmation before carrying a tune into another season.
 - Preserve prior states in `data/history/` and prior Markdown in `seasons/`.
-

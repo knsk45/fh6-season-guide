@@ -7,7 +7,7 @@
 - `seriesNumber`, `seriesSlug`, `seriesName`;
 - `season`: `summer`, `autumn`, `winter` или `spring`;
 - `seasonDisplay`: русское название;
-- `startAt`, `endAt`, `lastContentUpdate`: ISO 8601 с `+07:00`;
+- `startAt`, `endAt`, `lastContentUpdate`: ISO 8601 с `+07:00`; `lastContentUpdate` — время последней успешно завершённой полной проверки обязательных источников, а не только изменения карточек;
 - `reportTitle`;
 - новый `archiveFile` вида `seasons/YYYY-MM-DD-series-NN-season.md`;
 - новая папка `assetsDirectory` внутри `reports/assets/`;
