@@ -1,4 +1,32 @@
-# Source notes — 2026-08-20, Series 4 Summer
+# Source notes — 2026-08-21, Series 4 Autumn
+
+## Thursday rollover — 2026-08-21 06:08 +07:00
+
+- Живая официальная Playlist подтверждает новый сезон `Series 4 — Horizon Mascot Party / Autumn`: старт 20 августа 2026 года в 14:30 UTC (21:30 Asia/Krasnoyarsk), дедлайн 27 августа в то же время. Перенесены все 14 фактических карточек в игровом порядке: один общий Daily содержит 7 дней. Сумма доступных очков проверена как 52.
+- Сезонные награды: 2024 Chevrolet Camaro ZL1 за 20 очков и 2016 Abarth 695 Biposto за 40. Официальный HTML подтверждает для Trial награду `1969 Datsun 2000 Roadster`; официальная обзорная инфографика и один гайд сообщества показывают Fairlady Z '69 — в публичной карточке оставлен первичный HTML-источник. Та же инфографика печатает 3 очка за Hide & Seek и 4 за Monthly Rivals, что противоречит собственному максимуму 52; живые недельные треды подтверждают 2 и 1 очко сезона соответственно.
+- Найдены свежие текущенедельные решения для `#DeliciousDango` и `Homerun`, а также 9-значные коды для Weekly, обоих чемпионатов, трёх PR Stunts и Trial. Все советы сообщества явно помечены как не проверенные проектом в игре; старые коды не переносились.
+- Fandom ещё не создал страницу `Forza Horizon 6/Series 4/Autumn Season` и не опубликовал точные плитки карточек. Поэтому используется один компактный официальный текущенедельный fallback-визуал, а 14 точных плиток синхронно оставлены в `missingFields` и `openItems`.
+
+| Обязательный источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | Категория и Series 4 проверены через MediaWiki/API; Autumn Season в категории пока отсутствует. |
+| Forza Wiki / Fandom | Страница Series 4 доступна, но точный URL Series 4/Autumn Season возвращает отсутствующую страницу; текущенедельных плиток нет. |
+| Official Forza Festival Playlist | Живой HTML подтверждает Autumn 20–27 августа, порядок 14 карточек, условия, ограничения, трассы и награды; скачана официальная Autumn-инфографика. |
+| Official Forza News | Материал `Join the Horizon Mascot Party` и раздел News проверены; Autumn заявлена на 20–27 августа, более свежей поправки к карточкам нет. |
+| Forza Support Release Notes | Help Center API проверен: последними остаются `FH6 Release Notes: August 10, 2026`, обновлённые 13 августа; нового патча после старта Autumn нет. |
+| Forza Support Known Issues | Статья `Forza Horizon 6 Known Issues` проверена; она по-прежнему обновлена 20 июля, отдельной записи про Autumn-карточки, туман Trial или Photo Challenge нет. |
+| Official Forza Forums | Старый official-info URL перенаправляет на закрытую/общую страницу Forza Forums; свежего официального недельного треда не опубликовано. |
+| Reddit r/ForzaHorizon | Свежий `Series 4 Autumn Breakdown and Rewards` проверен; найдены текущенедельные Trial/PR/Weekly коды и сообщения о тумане/невидимых коллизиях в первой гонке Trial. |
+| Reddit r/ForzaHorizon6 | Свежий полный Autumn guide проверен; подтверждены фото, collectibles, трассы, коды и практические подсказки. Расхождение награды Trial уступает официальному HTML. |
+| Reddit r/forza | Свежий `Autumn Information Thread — Series 4` подтверждает дедлайн, максимум 52, 2 очка Hide & Seek и 1 очко Monthly Rivals за сезон. |
+| Reddit r/ForzaTune | Свежего отдельного поста Series 4 Autumn в поисковом индексе не найдено; отсутствие материала не использовалось для переноса прошлых кодов. |
+| Forza Horizon Hub | Главная, Festival Playlist и карты доступны; отдельного подтверждённого Autumn-набора плиток или более свежего решения не найдено. |
+| ForzaLabs Collector Tool | Инструмент доступен; отдельной текущенедельной публикации по Shimanoyama Heat нет. |
+| ForzaLabs Interactive Map | Интерактивная карта доступна; специального Autumn-маркера, превосходящего свежие скриншоты стадиона, не найдено. |
+| Escorenews FH6 | Найдены и прочитаны свежий Autumn Series 4 guide и отдельные текущенедельные материалы по `#DeliciousDango`, `Homerun`, Weekly и Trial; ссылки добавлены к соответствующим карточкам. |
+| DungG Seasonal Playlist | Плейлист отвечает HTTP 200; индексируемого выпуска DungG по Series 4 Autumn на момент аудита не найдено. Старый Summer-выпуск не использовался. |
+
+## Предыдущие аудиты — Series 4 Summer
 
 ## Ежедневное уточнение — 2026-08-20 06:38 +07:00
 
