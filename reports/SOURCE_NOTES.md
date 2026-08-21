@@ -1,4 +1,30 @@
-# Source notes — 2026-08-21, Series 4 Autumn
+# Source notes — 2026-08-22, Series 4 Autumn
+
+## Ежедневное уточнение — 2026-08-22 06:00 +07:00
+
+- Живая официальная Playlist по-прежнему подтверждает `Series 4 — Horizon Mascot Party / Autumn` до 27 августа 2026 года, 14:30 UTC (21:30 Asia/Krasnoyarsk). Порядок 14 карточек, 7 Daily, ограничения, награды и максимум 52 очка не изменились.
+- MediaWiki API: Series 4 остаётся на revision 169617, а `Forza Horizon 6/Series 4/Autumn Season` всё ещё возвращает `missing`. Точные Autumn-плитки не появились, поэтому 14 `openItems` и компактный официальный текущенедельный fallback сохранены.
+- В свежих комментариях r/ForzaHorizon6 подтверждено, что Horizon Solo освобождает стадион от других игроков во время `Homerun`, а перезапуск обновляет талисманы. Опубликованный способ с Horizon Solo и перемоткой уже покрывает более быстрый вариант, поэтому текст карточки не менялся. Отдельные новые жалобы на незасчитывающееся Photo Challenge пока не получили официального Known Issue или устойчивого нового решения.
+- Появился свежий Autumn tuning guide в r/ForzaHorizon с альтернативными текущенедельными кодами и заявленной проверкой против Unbeatable AI. Уже опубликованные коды имеют свежие положительные отзывы, включая Trial Supra, поэтому замена без преимущества не выполнялась. Новых подтверждённых исправлений условий, решений или точных визуалов нет; карточки не менялись, но время полной проверки обновляется по ежедневному правилу.
+
+| Обязательный источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | MediaWiki API доступен; категория Series остаётся без новой Autumn-подстраницы Series 4. |
+| Forza Wiki / Fandom | Series 4 revision 169617 от 17 августа; точный Autumn Season URL по-прежнему `missing`, сезонных плиток нет. |
+| Official Forza Festival Playlist | Живой HTML подтверждает Autumn, дедлайн 27 августа 14:30 UTC, 14 карточек и прежние условия/награды. |
+| Official Forza News | Раздел News и статья `Join the Horizon Mascot Party` проверены; новых поправок после материала от 10 августа нет. |
+| Forza Support Release Notes | Help Center API: последними остаются `FH6 Release Notes: August 10, 2026`, обновлённые 13 августа; нового патча нет. |
+| Forza Support Known Issues | Страница доступна; нового официального пункта про Autumn, туман Trial или незасчитывающееся Photo Challenge нет. |
+| Official Forza Forums | URL official-info снова перенаправляет на `forza.net/forums`; свежего официального недельного треда в индексе нет. |
+| Reddit r/ForzaHorizon | Проверены Autumn breakdown, свежие комментарии и новый tuning guide от 21 августа; новых обязательных исправлений карточек нет. |
+| Reddit r/ForzaHorizon6 | Полный Autumn guide и новые комментарии проверены; подтверждены Horizon Solo/перезапуск для Homerun, но опубликованный быстрый способ уже достаточен. |
+| Reddit r/forza | Autumn Information Thread по-прежнему подтверждает дедлайн, 52 очка, 2 очка Hide & Seek и 1 очко Monthly Rivals за сезон; новых поправок нет. |
+| Reddit r/ForzaTune | Отдельного свежего FH6 Series 4 Autumn поста в индексе subreddit не найдено; старые коды не использовались. |
+| Forza Horizon Hub | Главная и недельные инструменты доступны с HTTP 200; новых точных Autumn-плиток или более свежего решения нет. |
+| ForzaLabs Collector Tool | HTTP 200; отдельной текущенедельной публикации по Shimanoyama Heat нет. |
+| ForzaLabs Interactive Map | HTTP 200; нового специального Autumn-маркера, меняющего решение, не найдено. |
+| Escorenews FH6 | Раздел напрямую возвращает 403, но индексируемые Autumn guide, Weekly, Trial, Photo и Collectibles материалы остаются доступными и подтверждают опубликованные данные. |
+| DungG Seasonal Playlist | Прямой плейлист уводит на YouTube consent; свежего индексируемого выпуска Series 4 Autumn по-прежнему не найдено, Summer-видео не переносилось. |
 
 ## Thursday rollover — 2026-08-21 06:08 +07:00
 
