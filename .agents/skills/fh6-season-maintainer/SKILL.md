@@ -24,16 +24,18 @@ Keep the public guide complete without inventing missing facts or breaking its c
 ## Daily gap-fill
 
 1. Search `openItems`, every activity's `missingFields`, empty content fields, `TODO`, and conflicting evidence.
-2. Research only those gaps plus fresh corrections for the active week.
-3. Update `data/current-season.json`. Keep unknown values empty and update both `missingFields` and `openItems` together.
-4. After the complete required-source audit has succeeded and live evidence confirms the stored active season, run `automation/refresh_last_content_update.ps1`. `lastContentUpdate` is the time of the latest successful full audit, so refresh it even when facts, evidence, visuals, and recommendations did not change. If live confirmation or the required-source audit is incomplete, do not refresh it.
-5. Run the full build, validation, and publication sequence below on every successful daily audit. A no-card-change run still publishes the refreshed verification time; it is not an empty commit.
+2. Independently audit the `visual` of every activity on every run, including visuals not listed in `openItems`. Check the current Season page, official Playlist/News, fresh current-week Reddit guides, and current-week guide sites for a more exact image.
+3. Prefer an exact current-week game tile. If it is unavailable, use a distinct activity-specific current-week screenshot or a clearly labelled derivative from the current season overview. Never reuse a prior-week image. Do not accept one shared fallback as completed while distinct current-week visuals are available; keep any temporary fallback `preliminary` and open for replacement.
+4. Research the remaining gaps plus fresh corrections for the active week.
+5. Update `data/current-season.json`. Keep unknown values empty and update both `missingFields` and `openItems` together. Record the visual audit summary and counts by completeness status in `reports/SOURCE_NOTES.md`.
+6. After the complete required-source audit has succeeded and live evidence confirms the stored active season, run `automation/refresh_last_content_update.ps1`. `lastContentUpdate` is the time of the latest successful full audit, so refresh it even when facts, evidence, visuals, and recommendations did not change. If live confirmation or the required-source audit is incomplete, do not refresh it.
+7. Run the full build, validation, and publication sequence below on every successful daily audit. A no-card-change run still publishes the refreshed verification time; it is not an empty commit.
 
 ## Thursday rollover
 
 1. Confirm Series, season, start/end timestamps, rewards, and exact card order from live sources.
 2. Create `automation/new-season-input.json` from `data/season-state.schema.json`. Include every confirmed card; use empty fields plus missing-state entries for unknown details.
-3. Download compact current-season visuals into a new directory under `reports/assets/`. Use a season-specific fallback visual rather than a broken image; keep the exact tile in `openItems` if still missing.
+3. Download compact current-season visuals into a new directory under `reports/assets/`. Try to give every card a distinct current-week visual immediately. Use a season-specific fallback rather than a broken image only when no activity-specific current-week visual exists; keep that visual `preliminary` and in `openItems` until replaced.
 4. Run `powershell.exe -NoProfile -ExecutionPolicy Bypass -File automation/start_new_season.ps1 -InputPath automation/new-season-input.json`.
 5. Confirm that the old state was copied into `data/history/`, a new archive file was created, and no older season was deleted.
 6. Remove the local input after success; it is ignored by Git.

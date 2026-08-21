@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-22T06:03:05+07:00",
+    "lastContentUpdate":  "2026-08-22T06:35:38+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -30,21 +30,19 @@
                            "tuneHtml":  "2021 Hyundai i20 N B600 — \u003ccode\u003e752 562 454\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/article/80470-autumn-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий недельный гайд и код\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-weekly.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный скриншот Weekly Challenge"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_02_daily",
@@ -57,21 +55,19 @@
                            "tuneHtml":  "Специальный автомобиль или тюнинг не нужен.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/forza/comments/1vtmzy4/fh6_autumn_information_thread_series_4/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eточный список и срок доступности Daily\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-daily.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/",
+                                          "sourceLabel":  "визуал из актуальной инфографики Series 4 Autumn"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_03_photo",
@@ -84,21 +80,19 @@
                            "tuneHtml":  "Подойдёт любой автомобиль; тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80488-gayd-na-ejenedelnoe-fotoispytanie-vkusnyatskiydango-osennego-sezona-serii-4-v-forza-horizon-6-gde-nahodyatsya-dango-na-vecherinke-talismanov\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eскриншот и ориентир\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежие уточнения засчитывания\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-photo.jpg",
                                           "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный скриншот решения #DeliciousDango"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_04_collectibles",
@@ -111,21 +105,19 @@
                            "tuneHtml":  "Подойдёт любой автомобиль; тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/article/80473-where-are-shimanoyama-heat-mascots-at-the-stadium-for-homerun-collectibles-challenge-in-forza-horizon-6\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eкарта/скриншот стадиона\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий способ с перемоткой\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-collectibles.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежая текущенедельная карта талисманов Homerun"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_05_all_wheel_domination",
@@ -138,21 +130,19 @@
                            "tuneHtml":  "2018 Mercedes-Benz X-Class B600 — \u003ccode\u003e113 564 804\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-all-wheel-domination.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал All Wheel Domination"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_06_scenic_nights",
@@ -165,21 +155,19 @@
                            "tuneHtml":  "2010 Mazda Mazdaspeed 3 B600 — \u003ccode\u003e787 386 854\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен). Альтернатива, если i20 N уже есть: 2021 Hyundai i20 N B600 — \u003ccode\u003e752 562 454\u003c/code\u003e.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код Mazda\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/article/80470-autumn-series-4-weekly-festival-playlist-guide-in-forza-horizon-6-best-tunes-to-complete-challenges-in-fh6\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код Hyundai\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-scenic-nights.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал Scenic Nights"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_07_arashiyama_run",
@@ -192,21 +180,19 @@
                            "tuneHtml":  "2021 SIERRA Cars 700R C500 — \u003ccode\u003e353 906 082\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код для трёх PR Stunts\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-arashiyama-run.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал Arashiyama Run"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_08_festival_loop",
@@ -219,21 +205,19 @@
                            "tuneHtml":  "2021 SIERRA Cars 700R C500 — \u003ccode\u003e353 906 082\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен).",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код для трёх PR Stunts\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-festival-loop.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал Festival Loop"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_09_on_par",
@@ -246,21 +230,19 @@
                            "tuneHtml":  "2021 SIERRA Cars 700R C500 — \u003ccode\u003e353 906 082\u003c/code\u003e (актуальный совет сообщества; в игре проектом не проверен). Альтернатива: 2021 Polaris RZR Pro XP FE C500 — \u003ccode\u003e677 291 650\u003c/code\u003e.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eкод SIERRA\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eрезультат и код Polaris\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-on-par.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал On Par"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_10_trial",
@@ -273,21 +255,19 @@
                            "tuneHtml":  "2020 Toyota GR Supra A700 — \u003ccode\u003e756 148 786\u003c/code\u003e (актуальный текущенедельный код сообщества; в игре проектом не проверен). Альтернатива: 2019 Nissan 370Z Nismo A700 — \u003ccode\u003e822 364 224\u003c/code\u003e.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы, награда и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код Supra и обсуждение тумана\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eальтернативный код\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-trial-fun-fair.jpg",
                                           "icon":  "FH6_EventFP_Trial_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал Trial Fun Fair"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_11_spec_racing",
@@ -300,21 +280,19 @@
                            "tuneHtml":  "Машина выдаётся режимом; собственный тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eпрактическая подсказка\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-squeaky-clean.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
+                                          "sourceLabel":  "свежий текущенедельный визуал Squeaky Clean"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_12_hide_and_seek",
@@ -327,21 +305,19 @@
                            "tuneHtml":  "Автомобиль выбирает режим; тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/forza/comments/1vtmzy4/fh6_autumn_information_thread_series_4/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eтекущенедельное значение 2 очка\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-hide-and-seek.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/",
+                                          "sourceLabel":  "визуал из актуальной инфографики Series 4 Autumn"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_13_stunt_party",
@@ -354,21 +330,19 @@
                            "tuneHtml":  "Выберите универсальную машину из гаража; специальный тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие и награда\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/forza/comments/1vtmzy4/fh6_autumn_information_thread_series_4/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eподтверждение текущей недели\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-stunt-party.jpg",
                                           "icon":  "FH6_EventFP_StuntParty_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.gamesradar.com/games/forza-horizon/forza-horizon-6-review/",
+                                          "sourceLabel":  "актуальный игровой скриншот Horizon Stunt Party"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        },
                        {
                            "id":  "activity_14_monthly_rivals",
@@ -381,121 +355,20 @@
                            "tuneHtml":  "Используется предоставленный 1970 Honda N600; тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eограничения чистого круга\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/forza/comments/1vtmzy4/fh6_autumn_information_thread_series_4/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003e1 очко за сезон / 4 за Series\u003c/a\u003e",
                            "visual":  {
-                                          "image":  "season-fallback.jpg",
+                                          "image":  "visual-monthly-rivals.jpg",
                                           "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://forza.net/fh6playlists",
-                                          "sourceLabel":  "официальный визуал Series 4 Autumn"
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/",
+                                          "sourceLabel":  "визуал из актуальной инфографики Series 4 Autumn"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                "visual":  "community"
                                             },
-                           "missingFields":  [
-                                                 "visual"
-                                             ]
+                           "missingFields":  []
                        }
                    ],
-    "openItems":  [
-                      {
-                          "activityId":  "activity_01_weekly",
-                          "field":  "visual",
-                          "reason":  "Fandom ещё не опубликовал точную плитку Autumn; используется текущий официальный fallback Series 4 Autumn.",
-                          "nextCheck":  "Проверить страницу Series 4/Autumn Season и свежие игровые скриншоты.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_02_daily",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Daily Autumn пока недоступна; используется текущий официальный fallback.",
-                          "nextCheck":  "Проверить Fandom и свежие скриншоты Playlist.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_03_photo",
-                          "field":  "visual",
-                          "reason":  "Точная игровая плитка #DeliciousDango пока недоступна; ссылка на скриншот решения уже дана.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_04_collectibles",
-                          "field":  "visual",
-                          "reason":  "Точная игровая плитка Homerun пока недоступна; ссылка на карту/скриншот решения уже дана.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_05_all_wheel_domination",
-                          "field":  "visual",
-                          "reason":  "Точная плитка чемпионата пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_06_scenic_nights",
-                          "field":  "visual",
-                          "reason":  "Точная плитка чемпионата пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_07_arashiyama_run",
-                          "field":  "visual",
-                          "reason":  "Точная плитка PR Stunt пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_08_festival_loop",
-                          "field":  "visual",
-                          "reason":  "Точная плитка PR Stunt пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_09_on_par",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Trailblazer пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_10_trial",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Trial пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_11_spec_racing",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Spec Racing пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_12_hide_and_seek",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Hide \u0026 Seek пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_13_stunt_party",
-                          "field":  "visual",
-                          "reason":  "Точная плитка Stunt Party пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      },
-                      {
-                          "activityId":  "activity_14_monthly_rivals",
-                          "field":  "visual",
-                          "reason":  "Точная Autumn-плитка Monthly Rivals пока недоступна.",
-                          "nextCheck":  "Проверить Fandom Autumn Season.",
-                          "status":  "preliminary"
-                      }
-                  ]
+    "openItems":  []
 }
