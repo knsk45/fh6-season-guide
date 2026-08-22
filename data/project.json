@@ -26,9 +26,12 @@
     "enabled": true,
     "id": "3787739730",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730",
-    "title": "Ежедневно обновляемая русскоязычная сводка Festival Playlist Forza Horizon 6",
+    "title": "Forza Horizon 6 — русская сводка Festival Playlist (обновляется ежедневно)",
     "sectionTitle": "Актуальная неделя",
-    "publicGuideUrl": "https://knsk45.github.io/fh6-season-guide/reports/current-week.html"
+    "publicGuideUrl": "https://knsk45.github.io/fh6-season-guide/reports/current-week.html",
+    "coverAsset": "reports/assets/project/steam-guide-cover-v1.png",
+    "language": "russian",
+    "tags": ["Gameplay Basics", "Loot", "Maps or Levels", "Multiplayer", "Secrets", "Walkthroughs"]
   },
   "requiredSources": [
     { "id": "fandom_series_category", "label": "Forza Wiki — FH6 Series category", "url": "https://forza.fandom.com/wiki/Category:Series_(FH6)", "purpose": "Список серий и переход к актуальной Series/Season" },
