@@ -104,6 +104,7 @@ try {
         "reports/SOURCE_NOTES.md",
         "reports/artifact.json",
         "reports/current-week.html",
+        "reports/steam-guide-current.txt",
         "reports/build_artifact.ps1",
         "reports/enhance_portable_html.mjs",
         "reports/assets",
@@ -113,6 +114,7 @@ try {
         "automation/publish_to_github.ps1",
         "automation/refresh_last_content_update.ps1",
         "automation/render_season_markdown.ps1",
+        "automation/render_steam_guide.ps1",
         "automation/start_new_season.ps1",
         "automation/validate_season.ps1"
     )

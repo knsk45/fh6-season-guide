@@ -7,6 +7,7 @@
 - текущий файл в `seasons/` и `CURRENT_WEEK.md`;
 - `reports/artifact.json`;
 - лёгкий `reports/current-week.html`.
+- компактное Steam-зеркало `reports/steam-guide-current.txt`, если оно включено в `data/project.json`.
 
 Не редактировать дублированный текст в этих файлах вручную. Количество карточек, Daily, дедлайн, папка визуалов и лимит HTML брать из `season.*`, а не из прошлого сезона.
 
@@ -63,6 +64,7 @@
 4. `reports/enhance_portable_html.mjs`.
 5. `automation/validate_season.ps1`; обязательный результат — `STRUCTURE_OK`.
 6. `automation/publish_to_github.ps1`.
+7. `automation/render_steam_guide.ps1` и обновление единственной секции текущей недели в существующем Steam-руководстве. Не создавать новую секцию при каждом запуске; при недоступной авторизации оставить готовый BBCode и явно сообщить о блокировке публикации.
 
 Валидатор проверяет состояние, порядок и число карточек, единый Daily, архивную ссылку, timestamp, assets, размер HTML, отсутствие iframe/base64/portable-reader и запрещённых секций. Незакрытые факты дают предупреждения, но структурные расхождения блокируют публикацию.
 
