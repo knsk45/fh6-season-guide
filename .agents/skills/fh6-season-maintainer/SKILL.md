@@ -51,6 +51,7 @@ Run in this order:
 4. `reports/enhance_portable_html.mjs`
 5. `automation/validate_season.ps1`
 6. `automation/render_steam_guide.ps1` when `data/project.json.steamGuide.enabled=true`
+7. `automation/check_steam_guide.ps1` when Steam mirroring is enabled
 
 The validator, not a remembered number, decides the required card count. Treat any structural error as blocking. Treat unresolved evidence as a warning that remains in `openItems`. Every specifically recommended vehicle must have its four-digit model year. Publish tune share codes without tuner names. Put every hyperlink in `sourceHtml`, never in condition, solution, or tune fields, and give every card link `target="_blank" rel="noopener noreferrer"`. Keep PI restrictions as plain text in season state; the builder must decorate every D/C/B/A/S1/S2/R/X plus three-digit PI token and the validator must compare badge count with state. Validation must confirm the configured favicon assets in the public HTML. When project support is enabled, it must also confirm exactly one final support block, its local QR asset, and its configured link in README and the public report. When project analytics is enabled, validation must confirm exactly one counter inside that final support block, the configured hits.sh image/dashboard URLs, and the restricted CSP allowance.
 
@@ -63,3 +64,5 @@ Publish only after the portable validation/package and `STRUCTURE_OK` succeed:
 Require `PUBLISHED_SHA` and `PAGES_URL`, then verify the public HTML and referenced image URLs. Never force-push and never delete season archives.
 
 When Steam mirroring is enabled, update the existing guide from `reports/steam-guide-current.txt` after the GitHub Pages version is verified. Replace the content of its single current-week section instead of adding another section. Confirm that the public Steam page says the guide is Russian and regularly updated, lists the actual current activities, and prominently links to the configured public guide URL. If Steam authentication is unavailable, preserve the generated BBCode and report that external publication is pending.
+
+Run the Steam checker before editing. Publish only when it reports `STEAM_STATUS=UPDATE_REQUIRED`, then run it again and require `STEAM_STATUS=UP_TO_DATE`. A changed `lastContentUpdate` is a real Steam update because it communicates the latest successful daily verification. Finish every run with one of `UPDATED`, `UP_TO_DATE`, or `BLOCKED` for Steam; never omit the Steam result.

@@ -112,6 +112,7 @@ try {
         "index.html",
         "docs",
         "automation/publish_to_github.ps1",
+        "automation/check_steam_guide.ps1",
         "automation/refresh_last_content_update.ps1",
         "automation/render_season_markdown.ps1",
         "automation/render_steam_guide.ps1",
