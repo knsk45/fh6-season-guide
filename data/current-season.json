@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-23T06:06:58+07:00",
+    "lastContentUpdate":  "2026-08-24T06:03:01+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -76,7 +76,7 @@
                            "title":  "#DeliciousDango",
                            "points":  "2 очка",
                            "conditionHtml":  "Сфотографировать своего персонажа вне машины в зоне Tokyo City Dango фестиваля Mascot Party. Награда: костюм Dango.",
-                           "howHtml":  "Въезжайте в Horizon Stadium через южный вход и найдите розовые щиты Tokyo City с тремя данго на палочке. Полностью остановитесь всеми колёсами на земле, откройте Photo Mode → Effects, включите Driver и выберите позу персонажа вне автомобиля. Если не засчитывает у входа, проедьте глубже на центральную парковку.",
+                           "howHtml":  "Въезжайте в Horizon Stadium через южный вход и проедьте к центральной парковке. Нужны картонные фигуры трёх данго на палочке рядом с розовыми щитами Tokyo City: снимок только у щитов может не засчитаться. Полностью остановитесь всеми колёсами на земле, откройте Photo Mode → Effects, включите Driver и выберите позу персонажа вне автомобиля.",
                            "tuneHtml":  "Подойдёт любой автомобиль; тюнинг не требуется.",
                            "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80488-gayd-na-ejenedelnoe-fotoispytanie-vkusnyatskiydango-osennego-sezona-serii-4-v-forza-horizon-6-gde-nahodyatsya-dango-na-vecherinke-talismanov\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eскриншот и ориентир\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежие уточнения засчитывания\u003c/a\u003e",
                            "visual":  {

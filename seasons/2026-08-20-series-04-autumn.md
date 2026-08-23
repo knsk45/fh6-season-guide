@@ -2,7 +2,7 @@
 
 > Статус: подтверждено
 > Период: 20.08.2026 21:30 — 27.08.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 23.08.2026 06:06
+> Обновлено: 24.08.2026 06:03
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Hot Hatch-a Tea · 5 очков
@@ -22,7 +22,7 @@
 ## 03. Photo Challenge — #DeliciousDango · 2 очка
 
 - **Условие:** Сфотографировать своего персонажа вне машины в зоне Tokyo City Dango фестиваля Mascot Party. Награда: костюм Dango.
-- **Как выполнить:** Въезжайте в Horizon Stadium через южный вход и найдите розовые щиты Tokyo City с тремя данго на палочке. Полностью остановитесь всеми колёсами на земле, откройте Photo Mode → Effects, включите Driver и выберите позу персонажа вне автомобиля. Если не засчитывает у входа, проедьте глубже на центральную парковку.
+- **Как выполнить:** Въезжайте в Horizon Stadium через южный вход и проедьте к центральной парковке. Нужны картонные фигуры трёх данго на палочке рядом с розовыми щитами Tokyo City: снимок только у щитов может не засчитаться. Полностью остановитесь всеми колёсами на земле, откройте Photo Mode → Effects, включите Driver и выберите позу персонажа вне автомобиля.
 - **Автомобиль и тюнинг:** Подойдёт любой автомобиль; тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальная Playlist</a> · <a href="https://escorenews.com/ru/article/80488-gayd-na-ejenedelnoe-fotoispytanie-vkusnyatskiydango-osennego-sezona-serii-4-v-forza-horizon-6-gde-nahodyatsya-dango-na-vecherinke-talismanov" target="_blank" rel="noopener noreferrer">скриншот и ориентир</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">свежие уточнения засчитывания</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>свежий текущенедельный скриншот решения #DeliciousDango</a>
 
