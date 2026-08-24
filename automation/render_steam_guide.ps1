@@ -45,7 +45,6 @@ if ($State.activities.Count -ne [int]$Season.expectedCardCount) {
     throw "Steam output card count mismatch: $($State.activities.Count), expected $($Season.expectedCardCount)."
 }
 $Deadline = [DateTimeOffset]::Parse([string]$Season.endAt).ToString('dd.MM.yyyy HH:mm')
-$CheckedAt = [DateTimeOffset]::Parse([string]$State.lastContentUpdate).ToString('dd.MM.yyyy HH:mm')
 $Lines = [Collections.Generic.List[string]]::new()
 
 $Lines.Add('[h1]РУССКОЯЗЫЧНАЯ ЕЖЕНЕДЕЛЬНАЯ СВОДКА FH6[/h1]')
@@ -56,7 +55,7 @@ $Lines.Add("[url=$GuideUrl][b]ОТКРЫТЬ АКТУАЛЬНУЮ СВОДКУ F
 $Lines.Add('')
 $Lines.Add("[h1]Series $($Season.seriesNumber) «$($Season.seriesName)» — $($Season.seasonDisplay)[/h1]")
 $Lines.Add("[b]Сезон активен до:[/b] $Deadline (Красноярск)")
-$Lines.Add("[b]Последняя проверка данных:[/b] $CheckedAt (Красноярск)")
+$Lines.Add("[b]$($Project.steamGuide.freshnessNote)[/b]")
 $Lines.Add("[b]Активностей в текущей неделе:[/b] $($Season.expectedCardCount)")
 
 foreach ($Activity in $State.activities) {

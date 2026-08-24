@@ -29,9 +29,29 @@
     "title": "Forza Horizon 6 — русская сводка Festival Playlist (обновляется ежедневно)",
     "sectionTitle": "Актуальная неделя",
     "publicGuideUrl": "https://knsk45.github.io/fh6-season-guide/reports/current-week.html",
+    "freshnessNote": "Основная сводка проверяется ежедневно; точное время последней проверки всегда указано по ссылке выше.",
     "coverAsset": "reports/assets/project/steam-guide-cover-v1.png",
     "language": "russian",
     "tags": ["Gameplay Basics", "Loot", "Maps or Levels", "Multiplayer", "Secrets", "Walkthroughs"]
+  },
+  "notifications": {
+    "enabled": true,
+    "provider": "home-assistant",
+    "localConfigPath": "automation/runs/home-assistant-notification.local.json",
+    "messages": {
+      "updateRequired": {
+        "title": "FH6 — требуется подтверждение",
+        "message": "В сводке найдены содержательные изменения. Откройте чат «Сводка сезона» в Codex и подтвердите обновление существующего руководства Steam."
+      },
+      "upToDate": {
+        "title": "FH6 — сводка актуальна",
+        "message": "Ежедневная проверка завершена: содержательных изменений нет, текст Steam остаётся актуальным. Подтверждение не требуется."
+      },
+      "checkBlocked": {
+        "title": "FH6 — проверка требует внимания",
+        "message": "Ежедневную проверку или сверку публикации завершить не удалось. Откройте чат «Сводка сезона» в Codex и посмотрите причину."
+      }
+    }
   },
   "requiredSources": [
     { "id": "fandom_series_category", "label": "Forza Wiki — FH6 Series category", "url": "https://forza.fandom.com/wiki/Category:Series_(FH6)", "purpose": "Список серий и переход к актуальной Series/Season" },
