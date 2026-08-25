@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [string]$StatePath,
     [string]$ProjectPath,
@@ -32,11 +32,24 @@ function ConvertFrom-CardHtml {
     param([AllowEmptyString()][string]$Value)
 
     if ([string]::IsNullOrWhiteSpace($Value)) { return '' }
-    $Text = [regex]::Replace($Value, '(?i)<li[^>]*>', ' ')
-    $Text = [regex]::Replace($Text, '(?i)</?(ol|ul|li|strong|em|code)[^>]*>', ' ')
-    $Text = [regex]::Replace($Text, '(?i)<br\s*/?>', ' ')
-    $Text = [regex]::Replace($Text, '<[^>]+>', ' ')
-    return [Net.WebUtility]::HtmlDecode($Text)
+
+    # Keep this conversion in lockstep with render_steam_guide.ps1. The Steam
+    # mirror intentionally replaces the internal game-verification disclaimer
+    # with the public-facing community-advice label, so the public checker must
+    # validate the rendered wording rather than the raw state wording.
+    $Text = $Value
+    $Text = [regex]::Replace($Text, '(?i)<li[^>]*>', "`n• ")
+    $Text = [regex]::Replace($Text, '(?i)</li>', '')
+    $Text = [regex]::Replace($Text, '(?i)</(ol|ul)>', "`n")
+    $Text = [regex]::Replace($Text, '(?i)<br\s*/?>', "`n")
+    $Text = [regex]::Replace($Text, '(?i)<(ol|ul)[^>]*>', '')
+    $Text = [regex]::Replace($Text, '(?i)</?(strong|em|code)[^>]*>', '')
+    $Text = [regex]::Replace($Text, '<[^>]+>', '')
+    $Text = [Net.WebUtility]::HtmlDecode($Text)
+    $Text = $Text -replace '\s*\([^)]*в игре проектом не проверен[^)]*\)', ' (совет сообщества)'
+    $Text = [regex]::Replace($Text, '[ \t]+', ' ')
+    $Text = [regex]::Replace($Text, "(`r?`n){3,}", "`r`n`r`n")
+    return $Text.Trim()
 }
 
 function Normalize-Text {
