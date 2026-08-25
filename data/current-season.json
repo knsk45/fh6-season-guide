@@ -11,13 +11,13 @@
                    "reportTitle":  "Forza Horizon 6: Как пройти Series 4 \"Horizon Mascot Party\" - Осень",
                    "archiveFile":  "seasons/2026-08-20-series-04-autumn.md",
                    "assetsDirectory":  "reports/assets/series-04-autumn",
-                   "fandomUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4",
+                   "fandomUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
                    "officialPlaylistUrl":  "https://forza.net/fh6playlists",
                    "expectedCardCount":  14,
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-25T06:05:57+07:00",
+    "lastContentUpdate":  "2026-08-26T06:11:12+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -83,14 +83,14 @@
                                           "image":  "visual-photo.jpg",
                                           "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный скриншот решения #DeliciousDango"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал #DeliciousDango из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -108,14 +108,14 @@
                                           "image":  "visual-collectibles.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежая текущенедельная карта талисманов Homerun"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Homerun из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -133,14 +133,14 @@
                                           "image":  "visual-all-wheel-domination.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал All Wheel Domination"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал All Wheel Domination из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -158,14 +158,14 @@
                                           "image":  "visual-scenic-nights.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал Scenic Nights"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Scenic Nights из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -183,14 +183,14 @@
                                           "image":  "visual-arashiyama-run.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал Arashiyama Run"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Arashiyama Run из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -208,14 +208,14 @@
                                           "image":  "visual-festival-loop.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал Festival Loop"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Festival Loop из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -233,14 +233,14 @@
                                           "image":  "visual-on-par.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал On Par"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал On Par из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -258,14 +258,14 @@
                                           "image":  "visual-trial-fun-fair.jpg",
                                           "icon":  "FH6_EventFP_Trial_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал Trial Fun Fair"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Trial Fun Fair из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -283,14 +283,14 @@
                                           "image":  "visual-squeaky-clean.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vtka5c/fh6_series_4_autumn_festival_playlist_guide/",
-                                          "sourceLabel":  "свежий текущенедельный визуал Squeaky Clean"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Squeaky Clean из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        },
@@ -358,14 +358,14 @@
                                           "image":  "visual-monthly-rivals.jpg",
                                           "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon/comments/1vtjkrc/fh6_series_4_autumn_breakdown_and_rewards/",
-                                          "sourceLabel":  "визуал из актуальной инфографики Series 4 Autumn"
+                                          "sourceUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Autumn_Season",
+                                          "sourceLabel":  "точный текущенедельный визуал Edamame Circuit из галереи Fandom"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  []
                        }
