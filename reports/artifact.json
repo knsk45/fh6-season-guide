@@ -5,7 +5,7 @@
                      "surface":  "dashboard",
                      "title":  "Forza Horizon 6: Как пройти Series 4 \"Horizon Mascot Party\" - Осень",
                      "description":  "Сезон действует до 2026-08-27T21:30:00+07:00",
-                     "generatedAt":  "2026-08-26T06:11:12.0000000+07:00",
+                     "generatedAt":  "2026-08-27T06:05:39.0000000+07:00",
                      "blocks":  [
                                     {
                                         "id":  "activity_01_weekly",
@@ -102,7 +102,7 @@
     "snapshot":  {
                      "version":  1,
                      "status":  "ready",
-                     "generatedAt":  "2026-08-26T06:11:12.0000000+07:00",
+                     "generatedAt":  "2026-08-27T06:05:39.0000000+07:00",
                      "datasets":  {
 
                                   },
@@ -114,7 +114,7 @@
 
                 ],
     "package_info":  {
-                         "generated_at":  "2026-08-26T06:11:12.0000000+07:00",
+                         "generated_at":  "2026-08-27T06:05:39.0000000+07:00",
                          "workflow":  "fh6-season-maintainer",
                          "state_file":  "data/current-season.json"
                      }
