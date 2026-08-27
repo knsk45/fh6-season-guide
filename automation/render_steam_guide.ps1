@@ -98,7 +98,15 @@ $OutputDirectory = Split-Path -Parent $OutputPath
 if (-not (Test-Path -LiteralPath $OutputDirectory)) {
     New-Item -ItemType Directory -Path $OutputDirectory | Out-Null
 }
-[IO.File]::WriteAllText($OutputPath, ($Lines -join "`r`n") + "`r`n", [Text.UTF8Encoding]::new($false))
+$RenderedText = ($Lines -join "`r`n") + "`r`n"
+$SteamCharacterCount = ($RenderedText -replace "`r`n", "`n").Length
+$SteamSafeCharacterLimit = 4800
+if ($SteamCharacterCount -gt $SteamSafeCharacterLimit) {
+    throw "Steam subsection is too long: $SteamCharacterCount characters; project safe limit is $SteamSafeCharacterLimit. Compact the generated mirror before publication."
+}
+[IO.File]::WriteAllText($OutputPath, $RenderedText, [Text.UTF8Encoding]::new($false))
 
 Write-Host "STEAM_GUIDE_OUTPUT=$OutputPath"
 Write-Host "STEAM_GUIDE_CARDS=$($State.activities.Count)"
+Write-Host "STEAM_GUIDE_CHARACTERS=$SteamCharacterCount"
+Write-Host "STEAM_GUIDE_MAX_CHARACTERS=$SteamSafeCharacterLimit"

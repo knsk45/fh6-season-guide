@@ -52,6 +52,26 @@ function ConvertFrom-CardHtml {
     return $Text.Trim()
 }
 
+function ConvertTo-CompactSteamText {
+    param([AllowEmptyString()][string]$Text)
+
+    if ([string]::IsNullOrWhiteSpace($Text)) { return '' }
+
+    # Keep this list in lockstep with render_steam_guide.ps1. Generic advice
+    # is intentionally omitted from the compact Steam mirror so it remains
+    # below Steam's subsection length limit.
+    $Compact = $Text
+    $Compact = $Compact -replace '\s*\(свежий код сообщества; не подтверждён в игре\)', ''
+    $Compact = $Compact -replace '\s*\(один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре\)', ''
+    $Compact = $Compact -replace '^Специальный автомобиль или тюнинг не нужен\.$', ''
+    $Compact = $Compact -replace '^Подойдёт любой Cult Car; тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^Подойдёт любой автомобиль; тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^Используйте удобный дрифт-кар; специального сезонного кода не требуется\.$', ''
+    $Compact = $Compact -replace '^Выберите универсальную машину из гаража; специальный тюнинг не требуется\.$', ''
+    $Compact = [regex]::Replace($Compact, '[ \t]+', ' ')
+    return $Compact.Trim()
+}
+
 function Normalize-Text {
     param([AllowEmptyString()][string]$Value)
 
@@ -128,7 +148,7 @@ $Reasons = [Collections.Generic.List[string]]::new()
 function Require-PublicText {
     param(
         [Parameter(Mandatory = $true)][string]$Label,
-        [Parameter(Mandatory = $true)][string]$Value
+        [Parameter(Mandatory = $true)][AllowEmptyString()][string]$Value
     )
     $Expected = Normalize-Text $Value
     if ($Expected -and -not $VisibleText.Contains($Expected)) { $Reasons.Add("missing $Label") }
@@ -143,7 +163,7 @@ Require-PublicText 'daily freshness link note' ([string]$Steam.freshnessNote)
 foreach ($Activity in $State.activities) {
     Require-PublicText "activity $($Activity.number) title" ([string]$Activity.title)
     Require-PublicText "activity $($Activity.number) condition" (ConvertFrom-CardHtml ([string]$Activity.conditionHtml))
-    Require-PublicText "activity $($Activity.number) tune" (ConvertFrom-CardHtml ([string]$Activity.tuneHtml))
+    Require-PublicText "activity $($Activity.number) tune" (ConvertTo-CompactSteamText (ConvertFrom-CardHtml ([string]$Activity.tuneHtml)))
 }
 
 $RenderedCardCount = ([regex]::Matches($Html, '<div class="bb_h2">')).Count
