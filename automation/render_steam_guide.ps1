@@ -32,6 +32,23 @@ function ConvertFrom-CardHtml {
     return $Text.Trim()
 }
 
+function ConvertTo-CompactSteamText {
+    param([AllowEmptyString()][string]$Text)
+
+    if ([string]::IsNullOrWhiteSpace($Text)) { return '' }
+
+    $Compact = $Text
+    $Compact = $Compact -replace '\s*\(свежий код сообщества; не подтверждён в игре\)', ''
+    $Compact = $Compact -replace '\s*\(один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре\)', ''
+    $Compact = $Compact -replace '^Специальный автомобиль или тюнинг не нужен\.$', ''
+    $Compact = $Compact -replace '^Подойдёт любой Cult Car; тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^Подойдёт любой автомобиль; тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^Используйте удобный дрифт-кар; специального сезонного кода не требуется\.$', ''
+    $Compact = $Compact -replace '^Выберите универсальную машину из гаража; специальный тюнинг не требуется\.$', ''
+    $Compact = [regex]::Replace($Compact, '[ \t]+', ' ')
+    return $Compact.Trim()
+}
+
 $State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
 $Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json
 
@@ -47,40 +64,35 @@ if ($State.activities.Count -ne [int]$Season.expectedCardCount) {
 $Deadline = [DateTimeOffset]::Parse([string]$Season.endAt).ToString('dd.MM.yyyy HH:mm')
 $Lines = [Collections.Generic.List[string]]::new()
 
-$Lines.Add('[h1]РУССКОЯЗЫЧНАЯ ЕЖЕНЕДЕЛЬНАЯ СВОДКА FH6[/h1]')
-$Lines.Add('[b]Руководство обновляется регулярно: после смены сезона и затем ежедневно по мере появления решений, карт и актуальных кодов тюнингов.[/b]')
+$Lines.Add('[h1]РУССКАЯ ЕЖЕНЕДЕЛЬНАЯ СВОДКА FH6[/h1]')
+$Lines.Add('[b]Регулярно обновляется после смены сезона и по мере появления новых решений.[/b]')
 $Lines.Add('')
-$Lines.Add('[quote]Полная версия с изображениями карточек, прямыми ссылками на карты и источники, живым таймером и всеми уточнениями:')
-$Lines.Add("[url=$GuideUrl][b]ОТКРЫТЬ АКТУАЛЬНУЮ СВОДКУ FESTIVAL PLAYLIST[/b][/url][/quote]")
+$Lines.Add("[quote][url=$GuideUrl][b]ОТКРЫТЬ ПОЛНУЮ АКТУАЛЬНУЮ СВОДКУ С КАРТАМИ И ИЗОБРАЖЕНИЯМИ[/b][/url][/quote]")
 $Lines.Add('')
 $Lines.Add("[h1]Series $($Season.seriesNumber) «$($Season.seriesName)» — $($Season.seasonDisplay)[/h1]")
-$Lines.Add("[b]Сезон активен до:[/b] $Deadline (Красноярск)")
+$Lines.Add("[b]До:[/b] $Deadline (Красноярск) · [b]Активностей:[/b] $($Season.expectedCardCount)")
 $Lines.Add("[b]$($Project.steamGuide.freshnessNote)[/b]")
-$Lines.Add("[b]Активностей в текущей неделе:[/b] $($Season.expectedCardCount)")
+$Lines.Add('[i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]')
 
 foreach ($Activity in $State.activities) {
     $Lines.Add('')
     $Lines.Add("[h2]$($Activity.number). $($Activity.kind) — $($Activity.title) · $($Activity.points)[/h2]")
 
-    $Condition = ConvertFrom-CardHtml ([string]$Activity.conditionHtml)
-    $Tune = ConvertFrom-CardHtml ([string]$Activity.tuneHtml)
+    $Condition = ConvertTo-CompactSteamText (ConvertFrom-CardHtml ([string]$Activity.conditionHtml))
+    $Tune = ConvertTo-CompactSteamText (ConvertFrom-CardHtml ([string]$Activity.tuneHtml))
 
     if ($Condition) {
-        $Lines.Add('[b]Условие:[/b]')
         $Lines.Add($Condition)
     }
     if ($Tune) {
-        $Lines.Add('[b]Автомобиль / тюнинг:[/b]')
-        $Lines.Add($Tune)
+        $Lines.Add("[b]Авто:[/b] $Tune")
     }
 }
 
 $Lines.Add('')
-$Lines.Add('[h1]Всегда актуальная версия[/h1]')
-$Lines.Add('Steam-страница содержит компактный список всех активностей недели. Пошаговые способы прохождения, карты, скриншоты, изображения карточек, источники и последующие исправления публикуются в основной русскоязычной сводке:')
-$Lines.Add("[url=$GuideUrl][b]ОТКРЫТЬ ЕЖЕНЕДЕЛЬНУЮ СВОДКУ FH6[/b][/url]")
-$Lines.Add('')
-$Lines.Add('[b]Добавьте это руководство Steam в избранное:[/b] оно обновляется вместе со сменой Festival Playlist.')
+$Lines.Add('[h1]Карты, скриншоты и уточнения[/h1]')
+$Lines.Add("[url=$GuideUrl][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]")
+$Lines.Add('[b]Добавьте руководство Steam в избранное:[/b] оно регулярно обновляется вместе с Festival Playlist.')
 
 $OutputDirectory = Split-Path -Parent $OutputPath
 if (-not (Test-Path -LiteralPath $OutputDirectory)) {
