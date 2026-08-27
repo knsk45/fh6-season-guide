@@ -19,7 +19,7 @@ function Add-ValidationWarning([string]$Message) { $warnings.Add($Message) }
 function Get-FullProjectPath([string]$RelativePath) { [IO.Path]::GetFullPath((Join-Path $RepoRoot $RelativePath)) }
 
 try {
-    $state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 }
 catch {
     Add-ValidationError "Cannot parse season state: $($_.Exception.Message)"
@@ -27,7 +27,7 @@ catch {
 }
 
 try {
-    $project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 }
 catch {
     Add-ValidationError "Cannot parse project config: $($_.Exception.Message)"
@@ -235,7 +235,7 @@ if ($state) {
         }
 
         if (Test-Path -LiteralPath $artifactPath) {
-            $artifact = Get-Content -LiteralPath $artifactPath -Raw -Encoding UTF8 | ConvertFrom-Json
+            $artifact = Get-Content -LiteralPath $artifactPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
             $artifactBlocks = @($artifact.manifest.blocks)
             if ($artifact.manifest.title -ne $season.reportTitle) { Add-ValidationError 'artifact title does not match season state' }
             if ($artifactBlocks.Count -ne $expectedCount) { Add-ValidationError "artifact contains $($artifactBlocks.Count) blocks, expected $expectedCount" }

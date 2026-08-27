@@ -49,8 +49,8 @@ function ConvertTo-CompactSteamText {
     return $Compact.Trim()
 }
 
-$State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
-$Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 
 if (-not $Project.steamGuide.enabled) {
     throw 'Steam guide output is disabled in data/project.json.'

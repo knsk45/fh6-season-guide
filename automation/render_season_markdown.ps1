@@ -8,7 +8,7 @@ $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
-$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $season = $state.season
 
 $archivePath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $season.archiveFile))

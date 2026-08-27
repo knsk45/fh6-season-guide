@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-27T22:17:35+07:00",
+    "lastContentUpdate":  "2026-08-28T06:09:09+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -107,9 +107,9 @@
                            "title":  "Ohtani Region",
                            "points":  "3 очка",
                            "conditionHtml":  "Найти сундук по фотоподсказке в регионе Ohtani. Награда: 100 000 CR.",
-                           "howHtml":  "Сундук стоит в снегу у каменной опоры эстакады рядом с красным железнодорожным мостом. Подъезжайте со стороны заснеженной дороги под путями; на скриншоте внизу карточки показан точный ориентир.",
+                           "howHtml":  "Сундук стоит в южной части региона Ohtani рядом с ориентиром Matsumi Great Bridge — на грунтовой дороге под мостом, у каменной опоры. Подъезжайте по заснеженной дороге под путями; на скриншоте внизу карточки показан точный ориентир.",
                            "tuneHtml":  "Подойдёт любой автомобиль; тюнинг не требуется.",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://imgur.com/CxCAp1B\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eпрямая карта/скриншот сундука\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий недельный гайд\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://imgur.com/CxCAp1B\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eпрямая карта/скриншот сундука\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий недельный гайд\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/dota-2/article/80572-ohtani-region-treasure-hunt-in-forza-horizon-6-winter-series-4-treasure-chest-location\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eнезависимая карта Matsumi Great Bridge\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-treasure.jpg",
                                           "icon":  "FH6_EventFP_TreasureHunt_Icon.png",
@@ -215,9 +215,9 @@
                            "title":  "Shirakawa-go",
                            "points":  "2 очка",
                            "conditionHtml":  "Eclectic Domestics D400, дальность не меньше 492.1 ft (150 м). Награда: Wheelspin.",
-                           "howHtml":  "Разгоняйтесь по прямой с максимально длинного доступного участка. Перед рампой держите машину ровно; перемотка помогает сохранить удачный подход без повторного полного разгона.",
+                           "howHtml":  "Разгоняйтесь к рампе с северо-запада: этот подход даёт самый длинный прямой участок. Перед прыжком держите машину ровно; перемотка помогает сохранить удачный разгон без полного повтора.",
                            "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eподтверждение направления разгона\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-shirakawa-go.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
@@ -242,9 +242,9 @@
                            "title":  "Highland Road",
                            "points":  "2 очка",
                            "conditionHtml":  "Eclectic Domestics D400, скорость не ниже 90 mph (144,8 км/ч). Награда: Wheelspin.",
-                           "howHtml":  "Начинайте разгон далеко от камеры и старайтесь проходить створ без коррекции руля. Если трафик мешает, смените направление или перезапустите попытку через перемотку.",
+                           "howHtml":  "Начинайте разгон с северо-востока — там длиннее подход к камере. Проходите створ без коррекции руля; если трафик мешает, перезапустите попытку через перемотку.",
                            "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eподтверждение северо-восточного подхода\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-highland-road.jpg",
                                           "icon":  "FH6_EventFP_SpeedTrap_Icon.png",
@@ -269,9 +269,9 @@
                            "title":  "Matsumi Curve",
                            "points":  "2 очка",
                            "conditionHtml":  "Eclectic Domestics D400. Официальная Playlist показывает 70 mph (112,7 км/ч), а два свежих текущенедельных гайда — 75 mph (120,7 км/ч). Для надёжного зачёта ориентируйтесь на 75 mph. Награда: Wheelspin.",
-                           "howHtml":  "Заезжайте со стороны более длинной прямой и входите в первый поворот уже на стабильной скорости. Не допускайте сильного заноса: при D400 потерянные 5–10 км/ч почти невозможно вернуть внутри зоны.",
+                           "howHtml":  "Заезжайте в зону слева, используя более длинную прямую, и входите в первый поворот уже на стабильной скорости. Не допускайте сильного заноса: при D400 потерянные 5–10 км/ч почти невозможно вернуть внутри зоны.",
                            "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная таблица: 70 mph\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий игровой гайд: 75 mph и код\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vzu2vc/fh6_series_4_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eвторое подтверждение 75 mph\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная таблица: 70 mph\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий игровой гайд: 75 mph и код\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vzu2vc/fh6_series_4_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eвторое подтверждение 75 mph\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eнезависимый гайд: 70 mph и левый вход\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-matsumi-curve.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
@@ -296,9 +296,9 @@
                            "title":  "Vision Chaser",
                            "points":  "10 очков",
                            "conditionHtml":  "Кооператив против Unbeatable Drivatars: Festival Chase, Cedar Run и Matsumi Climb. Ограничение: Modern Super Saloons A700. Награда: 2022 Hyundai N Vision 74.",
-                           "howHtml":  "Это обязательный онлайн. Не толкайте союзников на узких участках, пропускайте более быстрых игроков и после обгона Drivatar удерживайте его, чтобы команда набрала больше очков.",
+                           "howHtml":  "Это обязательный онлайн. Первая гонка проще, поэтому старайтесь выиграть первые две и не доводить серию до сложной третьей. На второй трассе заранее тормозите перед 90-градусными поворотами; после правого поворота в середине дистанции берегитесь скрытого деревьями узкого моста. Не толкайте союзников и после обгона удерживайте Drivatar, чтобы команда набрала больше очков.",
                            "tuneHtml":  "2021 BMW M4 Competition Coupé A700 — \u003ccode\u003e665 682 998\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80710-gayd-po-trialu-v-pogone-za-vidami-v-forza-horizon-6-luchshie-sovremennye-supersedany-a-klassa-dlya-zimnego-sezona-serii-4\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eдетальный разбор опасных поворотов\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-trial.jpg",
                                           "icon":  "FH6_EventFP_Trial_Icon.png",

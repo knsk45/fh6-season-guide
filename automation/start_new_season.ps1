@@ -19,7 +19,7 @@ $validationSucceeded = $?
 $validationOutput | Write-Output
 if (-not $validationSucceeded) { throw 'New-season input failed validation' }
 
-$newState = Get-Content -LiteralPath $InputPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$newState = Get-Content -LiteralPath $InputPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $newArchivePath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $newState.season.archiveFile))
 $assetsPath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $newState.season.assetsDirectory))
 
@@ -29,7 +29,7 @@ if ($ValidateOnly) {
 }
 
 if (Test-Path -LiteralPath $CurrentStatePath) {
-    $oldState = Get-Content -LiteralPath $CurrentStatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $oldState = Get-Content -LiteralPath $CurrentStatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
     if ($oldState.season.archiveFile -eq $newState.season.archiveFile) {
         throw "Refusing rollover to the same archive: $($newState.season.archiveFile)"
     }

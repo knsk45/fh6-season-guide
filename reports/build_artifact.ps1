@@ -14,7 +14,7 @@ if (-not (Test-Path -LiteralPath $StatePath)) {
     throw "Season state was not found: $StatePath"
 }
 
-$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $season = $state.season
 $activities = @($state.activities)
 $expectedCardCount = [int]$season.expectedCardCount
