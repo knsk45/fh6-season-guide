@@ -1,5 +1,31 @@
 # Source notes — 2026-08-27, Series 4 Winter
 
+## Ежедневное уточнение — 2026-08-29 06:01 +07:00
+
+- Живая официальная Playlist и Series 4 News подтверждают прежний активный сезон `Series 4 — Horizon Mascot Party / Winter` до 3 сентября 2026 года, 14:30 UTC (21:30 Asia/Krasnoyarsk). Фактическая структура не изменилась: 14 карточек, один Daily с семью днями и максимум 53 очка; rollover не выполнялся.
+- В новых текущенедельных обсуждениях найден более устойчивый вариант для `Micro Circuits`: 1991 Honda Beat A700, код `120 569 217`. Honda Beat отдельно подтверждён как допустимый Microcar Madness. Для `Edamame Time Attack` добавлен 1971 Nissan Skyline 2000GT-R C500, код `560 632 810`, с описанной автором предсказуемой управляемостью. Оба совета сообщества в проекте помечены как не подтверждённые в игре.
+- ForzaLabs опубликовал точную игровую плитку Winter `Mini Games`: она скачана локально, приведена к квадрату 720×720 и заменила временный reward-визуал. Независимо проверены все 14 файлов: все существуют, квадратные и имеют разные SHA-256. Итог: `confirmed: 1`, `community: 12`, `preliminary: 1`, `missing: 0`; открыты только отдельный Daily-визуал и конфликт порога Matsumi Curve (`openItems: 2`).
+- Конфликт Matsumi Curve не закрыт: официальная Playlist по-прежнему показывает 70 mph, два свежих Reddit-гайда — 75 mph. Публичная карточка сохраняет оба значения и безопасную цель 75 mph.
+
+| Обязательный источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | MediaWiki API проверен: Series 4 остаётся текущей; Category:Series 5 не содержит подтверждения новой Series или смены активного сезона. |
+| Forza Wiki / Fandom | Точная страница `Forza Horizon 6/Series 4/Winter Season` через API всё ещё возвращает `missing`; нового отдельного Daily-визуала нет. |
+| Official Forza Festival Playlist | Живой HTML подтверждает S04 Winter, 14 карточек, семь Daily, все ограничения и награды; официальный Matsumi Curve остаётся 70 mph. |
+| Official Forza News | `Join the Horizon Mascot Party` подтверждает Winter 27.08–03.09 и награды 20/40 очков; свежая новость про Toyota Celica не меняет условия Playlist. |
+| Forza Support Release Notes | Последним остаётся Series 4 Hotfix 1 от 24 августа; исправления Road Discovery и Creative Hub не затрагивают Winter Playlist. |
+| Forza Support Known Issues | Нового официального пункта о Winter-карточках или Matsumi Curve не опубликовано; прямой Help Center остаётся ограничен, проверен доступный индекс. |
+| Official Forza Forums | Свежего официального Winter-треда нет; архивный форум не содержит поправки к активной неделе. |
+| Reddit r/ForzaHorizon | Свежие Winter breakdown и дубли текущенедельных tune-подборок проверены; новых официально подтверждённых исправлений условий нет. |
+| Reddit r/ForzaHorizon6 | Проверены полный Winter guide, новые комментарии, подборка Awes0me Beau и список Microcar Madness; на их основе заменены две рекомендации и коды. |
+| Reddit r/forza | Winter Information Thread подтверждает 53 очка, дедлайн и порядок; свежие альтернативные тюнинги сверены без переноса старых кодов. |
+| Reddit r/ForzaTune | Отдельного свежего материала FH6 Series 4 Winter в поисковом индексе не найдено; старые коды не использовались. |
+| Forza Horizon Hub | Сайт доступен, но недельный блок всё ещё показывает Series 1; текущие Winter-факты и коды оттуда не брались. |
+| ForzaLabs Collector Tool | Инструмент доступен и содержит общий каталог 628 машин, но не даёт отдельного текущенедельного решения или тюнинга. |
+| ForzaLabs Interactive Map | Карта доступна с категориями Photography, Treasure, PR Stunts и трасс; отдельного Winter-маркера Ohtani, превосходящего текущий прямой скриншот, нет. |
+| Escorenews FH6 | Свежие Winter-гайды AutoZOOM, Treasure, Trial и полный сезонный разбор остаются актуальными; новых поправок после 27 августа не найдено. |
+| DungG Seasonal Playlist | Прямое чтение YouTube ограничено, а индексируемого выпуска Series 4 Winter/Horizon Mascot Party не найдено; прошлосезонное видео не использовалось. |
+
 ## Ежедневное уточнение — 2026-08-28 06:07 +07:00
 
 - Живая официальная Playlist, официальная статья Series 4 и свежий Winter Information Thread подтверждают прежний активный сезон `Series 4 — Horizon Mascot Party / Winter` до 3 сентября 2026 года, 14:30 UTC (21:30 Asia/Krasnoyarsk). Порядок 14 карточек, семь Daily, ограничения, награды и максимум 53 очка не изменились; rollover не выполнялся.

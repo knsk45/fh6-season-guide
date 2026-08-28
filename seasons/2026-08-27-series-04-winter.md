@@ -1,8 +1,8 @@
 # Forza Horizon 6: Как пройти Series 4 "Horizon Mascot Party" - Зима
 
-> Статус: предварительно; открытых полей: 3
+> Статус: предварительно; открытых полей: 2
 > Период: 27.08.2026 21:30 — 03.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 28.08.2026 06:09
+> Обновлено: 29.08.2026 06:10
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — AutoZOOM · 5 очков
@@ -36,9 +36,9 @@
 ## 05. Seasonal Championship — Micro Circuits · 5 очков
 
 - **Условие:** Road Racing: Soni Circuit, Hokubu Circuit и Edamame Circuit. Ограничение: Microcar Madness A700. Награда: 2014 Mercedes-Benz Unimog U5023.
-- **Как выполнить:** В игровом фильтре нет отдельной категории Microcar Madness. 1984 Honda City E II подтверждён свежим списком допустимых машин; на коротких ночных кругах тормозите до поворота и рано открывайте газ на выходе.
-- **Автомобиль и тюнинг:** 1984 Honda City E II A700 — <code>124 380 195</code> (свежий код сообщества; не подтверждён в игре).
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальные трассы и ограничение</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежий код</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vzto53/there_is_no_car_type_filter_for_microcar_madness/" target="_blank" rel="noopener noreferrer">список допустимых микрокаров</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>текущенедельный скриншот награды Micro Circuits</a>
+- **Как выполнить:** В игровом фильтре нет отдельной категории Microcar Madness. 1991 Honda Beat подтверждён свежим списком допустимых машин; этот вариант выбран за более предсказуемую управляемость на коротких ночных кругах. Тормозите до поворота и рано открывайте газ на выходе.
+- **Автомобиль и тюнинг:** 1991 Honda Beat A700 — <code>120 569 217</code> (свежий код сообщества; не подтверждён в игре).
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальные трассы и ограничение</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/" target="_blank" rel="noopener noreferrer">свежий тюнинг Honda Beat</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w0d76q/microcar_madness_car_type/" target="_blank" rel="noopener noreferrer">актуальный список допустимых микрокаров</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>текущенедельный скриншот награды Micro Circuits</a>
 
 ## 06. Seasonal Championship — Modern Marvels · 5 очков
 
@@ -51,8 +51,8 @@
 
 - **Условие:** Показать время 00:44.000 или быстрее на автомобиле 1970-х годов класса C500. Награда: Wheelspin.
 - **Как выполнить:** Для зачёта нужен быстрый чистый круг. Не используйте Anna Autopilot, не касайтесь стен и не перематывайте; перед последним поворотом пожертвуйте скоростью входа ради раннего разгона к финишу.
-- **Автомобиль и тюнинг:** 1971 Meyers Manx C500 — <code>143 289 036</code> (свежий код сообщества; не подтверждён в игре).
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальная цель</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежий код</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>текущенедельный скриншот Edamame Time Attack</a>
+- **Автомобиль и тюнинг:** 1971 Nissan Skyline 2000GT-R C500 — <code>560 632 810</code> (свежий код сообщества; не подтверждён в игре).
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальная цель</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/" target="_blank" rel="noopener noreferrer">свежий стабильный C500-тюнинг</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>текущенедельный скриншот Edamame Time Attack</a>
 
 ## 08. Danger Sign — Shirakawa-go · 2 очка
 
@@ -94,7 +94,7 @@
 - **Условие:** Завершить любое событие Horizon Stunt Party. Награда: фраза Forza LINK «Evasive maneuvres».
 - **Как выполнить:** Это онлайн-событие. Зарегистрируйтесь в окне набора, выполняйте командные цели и оставайтесь до итогового экрана; конкретное место или победа не требуются.
 - **Автомобиль и тюнинг:** Выберите универсальную машину из гаража; специальный тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальное условие и награда</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежая недельная проверка</a> · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>временный текущесезонный визуал награды Winter</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальное условие и награда</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежая недельная проверка</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>точная игровая плитка Mini Games текущей Winter</a>
 
 ## 14. Monthly Rivals — Edamame Circuit · 1 очко сезона (4 за Series)
 

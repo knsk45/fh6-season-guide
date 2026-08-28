@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-28T06:09:09+07:00",
+    "lastContentUpdate":  "2026-08-29T06:10:15+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -134,9 +134,9 @@
                            "title":  "Micro Circuits",
                            "points":  "5 очков",
                            "conditionHtml":  "Road Racing: Soni Circuit, Hokubu Circuit и Edamame Circuit. Ограничение: Microcar Madness A700. Награда: 2014 Mercedes-Benz Unimog U5023.",
-                           "howHtml":  "В игровом фильтре нет отдельной категории Microcar Madness. 1984 Honda City E II подтверждён свежим списком допустимых машин; на коротких ночных кругах тормозите до поворота и рано открывайте газ на выходе.",
-                           "tuneHtml":  "1984 Honda City E II A700 — \u003ccode\u003e124 380 195\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon/comments/1vzto53/there_is_no_car_type_filter_for_microcar_madness/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсписок допустимых микрокаров\u003c/a\u003e",
+                           "howHtml":  "В игровом фильтре нет отдельной категории Microcar Madness. 1991 Honda Beat подтверждён свежим списком допустимых машин; этот вариант выбран за более предсказуемую управляемость на коротких ночных кругах. Тормозите до поворота и рано открывайте газ на выходе.",
+                           "tuneHtml":  "1991 Honda Beat A700 — \u003ccode\u003e120 569 217\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг Honda Beat\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w0d76q/microcar_madness_car_type/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eактуальный список допустимых микрокаров\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-micro-circuits.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
@@ -189,8 +189,8 @@
                            "points":  "3 очка",
                            "conditionHtml":  "Показать время 00:44.000 или быстрее на автомобиле 1970-х годов класса C500. Награда: Wheelspin.",
                            "howHtml":  "Для зачёта нужен быстрый чистый круг. Не используйте Anna Autopilot, не касайтесь стен и не перематывайте; перед последним поворотом пожертвуйте скоростью входа ради раннего разгона к финишу.",
-                           "tuneHtml":  "1971 Meyers Manx C500 — \u003ccode\u003e143 289 036\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
-                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
+                           "tuneHtml":  "1971 Nissan Skyline 2000GT-R C500 — \u003ccode\u003e560 632 810\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий стабильный C500-тюнинг\u003c/a\u003e",
                            "visual":  {
                                           "image":  "visual-time-attack.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
@@ -357,17 +357,17 @@
                                           "image":  "visual-stunt-party.jpg",
                                           "icon":  "FH6_EventFP_StuntParty_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "временный текущесезонный визуал награды Winter"
+                                           "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                           "sourceLabel":  "точная игровая плитка Mini Games текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "preliminary"
+                                                 "visual":  "confirmed"
                                             },
                            "missingFields":  [
-                                                 "visual"
+
                                              ]
                        },
                        {
@@ -403,7 +403,7 @@
                           "activityId":  "activity_02_daily",
                           "field":  "visual",
                           "reason":  "На старте сезона нет отдельной игровой плитки Daily; стоит текущесезонный визуал награды Winter.",
-                          "nextCheck":  "Проверить Fandom Winter и новые недельные скриншоты 28 августа.",
+                           "nextCheck":  "Проверить Fandom Winter и новые недельные скриншоты при следующем ежедневном аудите.",
                           "status":  "preliminary"
                       },
                       {
@@ -412,13 +412,6 @@
                           "reason":  "Официальная Playlist показывает 70 mph, а два свежих текущенедельных гайда — 75 mph.",
                           "nextCheck":  "Сверить с игровой карточкой или точным скриншотом цели Matsumi Curve.",
                           "status":  "conflict"
-                      },
-                      {
-                          "activityId":  "activity_13_stunt_party",
-                          "field":  "visual",
-                          "reason":  "На старте сезона нет отдельной игровой плитки Mini Games; стоит текущесезонный визуал награды Winter.",
-                          "nextCheck":  "Проверить Fandom Winter и новые недельные скриншоты 28 августа.",
-                          "status":  "preliminary"
                       }
                   ]
 }
