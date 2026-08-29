@@ -17,7 +17,7 @@
                    "expectedDailyItems":  7,
                    "maxPublicHtmlBytes":  200000
                },
-    "lastContentUpdate":  "2026-08-29T06:10:15+07:00",
+    "lastContentUpdate":  "2026-08-30T06:07:38+07:00",
     "activities":  [
                        {
                            "id":  "activity_01_weekly",
@@ -33,14 +33,14 @@
                                           "image":  "visual-weekly.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот 1993 Autozam AZ-1"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка AutoZOOM текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -87,14 +87,14 @@
                                           "image":  "visual-photo.jpg",
                                           "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Photo Challenge"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка #CultClassic текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -114,14 +114,14 @@
                                           "image":  "visual-treasure.jpg",
                                           "icon":  "FH6_EventFP_TreasureHunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот сундука Ohtani"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Ohtani Region текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -141,14 +141,14 @@
                                           "image":  "visual-micro-circuits.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот награды Micro Circuits"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Micro Circuits текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -168,14 +168,14 @@
                                           "image":  "visual-modern-marvels.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Modern Marvels"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Modern Marvels текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -195,14 +195,14 @@
                                           "image":  "visual-time-attack.jpg",
                                           "icon":  "FH6_EventSeasonal_Drive_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Edamame Time Attack"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Edamame Time Attack текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -222,14 +222,14 @@
                                           "image":  "visual-shirakawa-go.jpg",
                                           "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Shirakawa-go"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Shirakawa-go текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -249,14 +249,14 @@
                                           "image":  "visual-highland-road.jpg",
                                           "icon":  "FH6_EventFP_SpeedTrap_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Highland Road"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Highland Road текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -276,14 +276,14 @@
                                           "image":  "visual-matsumi-curve.jpg",
                                           "icon":  "FH6_EventFP_SpeedZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Matsumi Curve"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Matsumi Curve текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "preliminary",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
                                                  "condition"
@@ -303,14 +303,14 @@
                                           "image":  "visual-trial.jpg",
                                           "icon":  "FH6_EventFP_Trial_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот награды Trial"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Vision Chaser текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "community",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -330,14 +330,14 @@
                                           "image":  "visual-horizon-drift.jpg",
                                           "icon":  "FH6_EventFP_DriftZone_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот Drift Tandem"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Drift Tandem текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "community",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
@@ -384,14 +384,14 @@
                                           "image":  "visual-monthly-rivals.jpg",
                                           "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
                                           "position":  "center",
-                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
-                                          "sourceLabel":  "текущенедельный скриншот 1970 Honda N600"
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Edamame Circuit текущей Winter"
                                       },
                            "completeness":  {
                                                 "condition":  "confirmed",
                                                 "solution":  "confirmed",
                                                 "vehicleTune":  "not_applicable",
-                                                "visual":  "community"
+                                                "visual":  "confirmed"
                                             },
                            "missingFields":  [
 
