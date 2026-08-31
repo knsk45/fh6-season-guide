@@ -1,8 +1,8 @@
 # Forza Horizon 6: Как пройти Series 4 "Horizon Mascot Party" - Зима
 
-> Статус: предварительно; открытых полей: 2
+> Статус: предварительно; открытых полей: 1
 > Период: 27.08.2026 21:30 — 03.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 30.08.2026 06:07
+> Обновлено: 31.08.2026 07:17
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — AutoZOOM · 5 очков
@@ -70,10 +70,10 @@
 
 ## 10. Speed Zone — Matsumi Curve · 2 очка
 
-- **Условие:** Eclectic Domestics D400. Официальная Playlist показывает 70 mph (112,7 км/ч), а два свежих текущенедельных гайда — 75 mph (120,7 км/ч). Для надёжного зачёта ориентируйтесь на 75 mph. Награда: Wheelspin.
+- **Условие:** Eclectic Domestics D400. Точная игровая карточка текущей недели и актуальная Fandom-страница Winter указывают цель 75 mph (120,7 км/ч); официальная веб-таблица Forza всё ещё показывает ошибочные 70 mph. Награда: Wheelspin.
 - **Как выполнить:** Заезжайте в зону слева, используя более длинную прямую, и входите в первый поворот уже на стабильной скорости. Не допускайте сильного заноса: при D400 потерянные 5–10 км/ч почти невозможно вернуть внутри зоны.
 - **Автомобиль и тюнинг:** 1991 Honda Beat D400 — <code>860 360 277</code> (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальная таблица: 70 mph</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежий игровой гайд: 75 mph и код</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1vzu2vc/fh6_series_4_winter_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">второе подтверждение 75 mph</a> · <a href="https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning" target="_blank" rel="noopener noreferrer">независимый гайд: 70 mph и левый вход</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>точная игровая плитка Matsumi Curve текущей Winter</a>
+- **Источники:** <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">точная игровая карточка: 75 mph</a> · <a href="https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Winter_Season" target="_blank" rel="noopener noreferrer">Fandom Winter: 75 mph</a> · <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">официальная веб-таблица: 70 mph</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">свежий гайд и код</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>точная игровая карточка Matsumi Curve с целью 75 mph текущей Winter</a>
 
 ## 11. The Trial — Vision Chaser · 10 очков
 

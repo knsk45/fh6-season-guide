@@ -1,5 +1,32 @@
 # Source notes — 2026-08-27, Series 4 Winter
 
+## Внеплановое ежедневное уточнение — 2026-08-31 07:18 +07:00
+
+- Живая официальная Playlist подтверждает прежний активный сезон `Series 4 — Horizon Mascot Party / Winter` до 3 сентября 2026 года, 14:30 UTC (21:30 Asia/Krasnoyarsk). Сохраняются 14 карточек, один Daily из семи дней и максимум 53 очка; rollover не выполнялся.
+- Закрыт конфликт `Matsumi Curve`: точная игровая карточка текущей недели в ForzaLabs показывает `75.0 mph`, а актуальная Fandom-страница Winter revision `170723` независимо содержит ту же цель `75.0 mph`. Официальная веб-таблица Forza всё ещё показывает 70 mph, поэтому она явно отмечена как ошибочная веб-запись, а публичное условие теперь подтверждено по фактической игровой карточке.
+- Визуал Matsumi Curve заменён на точный игровой экран с целью 75 mph и ограничением Eclectic Domestics D400; файл приведён к 720×720. Аудит всех карточек: `confirmed: 13`, `community: 0`, `preliminary: 1`, `missing: 0`. Только объединённый Daily остаётся временным визуалом: среди 53 файлов текущей Fandom Winter отдельной Daily-плитки нет.
+- Свежие текущенедельные tune-подборки от 29 августа проверены. Они дают дополнительные варианты, но не доказывают ошибку или превосходство над уже опубликованными свежими кодами, поэтому рекомендации машин и share codes не менялись. После уточнения Matsumi Curve остаётся `openItems: 1`.
+
+| Обязательный источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki Category:Series (FH6) | MediaWiki API доступен: в категории есть Series 1–4 и пустая категория Series 5; смена активной Series не подтверждена. |
+| Forza Wiki / Fandom | Точная страница `Forza Horizon 6/Series 4/Winter Season` доступна, revision `170723`; в wikitext Matsumi Curve указан как 75.0 mph. Из 53 файлов отдельной Daily-плитки нет. |
+| Official Forza Festival Playlist | Живой HTML подтверждает S04 Winter, все семь Daily, 14 карточек, ограничения и награды; веб-строка Matsumi Curve по-прежнему ошибочно показывает 70 mph. |
+| Official Forza News | `Join the Horizon Mascot Party` подтверждает Winter 27.08–03.09 и награды 20/40 очков; более свежая новость Drift Attack не меняет текущую Playlist. |
+| Forza Support Release Notes | Прямая секция/API в этом запуске недоступна; свежего индексируемого патча после Series 4 Hotfix 1 от 24 августа, меняющего Winter Playlist, не найдено. |
+| Forza Support Known Issues | Страница доступна; отдельной официальной проблемы Winter Playlist или Matsumi Curve в списке нет. |
+| Official Forza Forums | URL перенаправляет на общую страницу Forza Forums; свежего официального Winter-треда или поправки к неделе нет. |
+| Reddit r/ForzaHorizon | Проверены текущий Winter breakdown и свежая tuning guide от 29 августа; breakdown подтверждает безопасную цель 75 mph. |
+| Reddit r/ForzaHorizon6 | Проверены полный Winter guide и свежая tuning guide; новых ошибок карточек или отдельной Daily-плитки не опубликовано. |
+| Reddit r/forza | Winter Information Thread подтверждает дедлайн, 53 очка и Matsumi Curve 75 mph; свежая tuning guide проверена как набор альтернатив. |
+| Reddit r/ForzaTune | Отдельного свежего FH6 Series 4 Winter-поста в поисковом индексе не найдено; старые коды не использовались. |
+| Forza Horizon Hub | Сайт доступен и показывает 632 машины, но недельный блок остаётся на Series 1; текущие Winter-факты оттуда не брались. |
+| ForzaLabs Collector Tool | HTTP 200; общий каталог доступен, отдельного текущенедельного решения или тюнинга нет. |
+| ForzaLabs Interactive Map | HTTP 200; карта доступна, нового Winter-маркера Ohtani точнее опубликованного скриншота нет. |
+| ForzaLabs Series Details | Живая страница подтверждает Winter и содержит точный detail-экран Matsumi Curve: 75 mph, D400 Eclectic Domestics, Wheelspin. |
+| Escorenews FH6 | Проверены актуальные Winter-гайды от 27 августа; сундук, Trial и маршруты остаются актуальными, веб-гайд повторяет устаревшие 70 mph. |
+| DungG Seasonal Playlist | Плейлист отвечает HTTP 200, но индексируемого выпуска Series 4 Winter не найдено; данные прошлых недель не переносились. |
+
 ## Ежедневное уточнение — 2026-08-30 06:07 +07:00
 
 - Живая официальная Playlist подтверждает прежний активный сезон `Series 4 — Horizon Mascot Party / Winter` до 3 сентября 2026 года, 14:30 UTC (21:30 Asia/Krasnoyarsk). Структура не изменилась: 14 карточек, один Daily с семью днями и максимум 53 очка; rollover не выполнялся.
