@@ -6,7 +6,8 @@ param(
     [string]$RunId,
     [string]$ProjectPath,
     [string]$LocalConfigPath,
-    [string]$DeliveryStatePath
+    [string]$DeliveryStatePath,
+    [string]$MetricsStatePath
 )
 
 Set-StrictMode -Version Latest
@@ -24,6 +25,7 @@ if (-not $Notifications.enabled) {
 if ([string]$Notifications.provider -ne 'home-assistant') { throw "Unsupported notification provider: $($Notifications.provider)" }
 if (-not $LocalConfigPath) { $LocalConfigPath = Join-Path $RepoRoot ([string]$Notifications.localConfigPath) }
 if (-not $DeliveryStatePath) { $DeliveryStatePath = Join-Path $RepoRoot 'automation\runs\home-assistant-notification-state.json' }
+if (-not $MetricsStatePath) { $MetricsStatePath = Join-Path $RepoRoot 'automation\runs\publication-metrics-state.json' }
 if (-not $RunId) { $RunId = [DateTimeOffset]::Now.ToString('yyyyMMdd-HHmmsszzz') }
 
 if (-not (Test-Path -LiteralPath $LocalConfigPath)) {
@@ -73,9 +75,28 @@ if (-not $Content -or [string]::IsNullOrWhiteSpace([string]$Content.title) -or [
     throw "Notification text is not configured for status $Status."
 }
 
+$MetricsMessage = 'Статистика публикаций недоступна для этого запуска.'
+if (Test-Path -LiteralPath $MetricsStatePath) {
+    try {
+        $Metrics = Get-Content -LiteralPath $MetricsStatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ([string]$Metrics.runId -eq $RunId) {
+            if ($Metrics.baselineCreated -eq $true) {
+                $MetricsMessage = "Статистика: создан начальный снимок. Steam — $($Metrics.steam.views) просмотров, $($Metrics.steam.favorites) в избранном; GitHub-сводка — $($Metrics.github.viewsTotal) просмотров."
+            }
+            else {
+                $SteamViewsAdded = '{0:+0;-0;0}' -f [long]$Metrics.steam.viewsAdded
+                $SteamFavoritesAdded = '{0:+0;-0;0}' -f [long]$Metrics.steam.favoritesAdded
+                $GitHubViewsAdded = '{0:+0;-0;0}' -f [long]$Metrics.github.viewsAdded
+                $MetricsMessage = "С прошлого успешного запуска: Steam — просмотры $SteamViewsAdded (всего $($Metrics.steam.views)), избранное $SteamFavoritesAdded (всего $($Metrics.steam.favorites)); GitHub-сводка — просмотры $GitHubViewsAdded (всего $($Metrics.github.viewsTotal))."
+            }
+        }
+    }
+    catch { Write-Verbose "Ignoring unreadable publication metrics state: $($_.Exception.Message)" }
+}
+
 $Body = [ordered]@{
     title = $Content.title
-    message = $Content.message
+    message = "$($Content.message)`n`n$MetricsMessage"
     data = [ordered]@{
         tag = 'fh6-season-status'
         group = 'fh6-season-guide'

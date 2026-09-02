@@ -69,12 +69,13 @@ if ($project) {
     }
     $analytics = $project.analytics
     if ($analytics.enabled -ne $true) { Add-ValidationError 'project analytics must remain enabled' }
-    foreach ($name in @('provider','title','description','counterImageUrl','dashboardUrl')) {
+    foreach ($name in @('provider','title','description','counterImageUrl','dashboardUrl','statsApiUrl')) {
         if ($null -eq $analytics.$name -or [string]::IsNullOrWhiteSpace([string]$analytics.$name)) { Add-ValidationError "project.analytics.$name is required" }
     }
     if ([string]$analytics.provider -ne 'hits.sh') { Add-ValidationError 'project.analytics.provider must be hits.sh' }
     if ([string]$analytics.counterImageUrl -notmatch '^https://hits\.sh/.+\.svg(?:\?.*)?$') { Add-ValidationError 'project.analytics.counterImageUrl must be a hits.sh HTTPS SVG URL' }
     if ([string]$analytics.dashboardUrl -notmatch '^https://hits\.sh/.+/$') { Add-ValidationError 'project.analytics.dashboardUrl must be a hits.sh HTTPS dashboard URL' }
+    if ([string]$analytics.statsApiUrl -notmatch '^https://hits\.sh/api/urns/.+') { Add-ValidationError 'project.analytics.statsApiUrl must be a hits.sh HTTPS stats API URL' }
     $notifications = $project.notifications
     if ($notifications.enabled -ne $true) { Add-ValidationError 'project notifications must remain enabled' }
     if ([string]$notifications.provider -ne 'home-assistant') { Add-ValidationError 'project.notifications.provider must be home-assistant' }
@@ -90,7 +91,7 @@ if ($project) {
             if ([string]::IsNullOrWhiteSpace([string]$notifications.messages.$messageName.$fieldName)) { Add-ValidationError "project.notifications.messages.$messageName.$fieldName is required" }
         }
     }
-    foreach ($scriptName in @('send_home_assistant_notification.ps1','mark_steam_guide_published.ps1','check_steam_guide.ps1')) {
+    foreach ($scriptName in @('send_home_assistant_notification.ps1','collect_publication_metrics.ps1','mark_steam_guide_published.ps1','check_steam_guide.ps1')) {
         if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot $scriptName))) { Add-ValidationError "Notification/publication script is missing: $scriptName" }
     }
     $publicationStatePath = Get-FullProjectPath 'automation/runs/steam-publication-state.json'
