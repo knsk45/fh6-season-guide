@@ -79,7 +79,9 @@ if ($Action -eq 'Receipt') {
     if ($result.runId -ne $active.runId -or $active.notification -notin @('SENT','ALREADY_SENT')) {throw 'Run result is not associated with a sent final notification.'}
     if ((Get-FileHash -LiteralPath $ResultPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $active.resultSha256) {throw 'Result fingerprint mismatch'}
     if ($result.status -notin @('COMPLETED','BLOCKED','PENDING_CONFIRMATION')) {throw 'Invalid final status'}
-    $before=[DateTimeOffset]::UtcNow.AddSeconds(-1)
+    # Compare HA timestamps on HA's clock. A small Windows/HA clock skew
+    # otherwise rejects a real receipt even though last_triggered advanced.
+    $before=TimePoint (Request POST 'template' @{template='{{ utcnow().isoformat() }}'})
     $payload=@{schemaVersion=1;project='fh6';runId=$result.runId;runDate=$result.runDate;status=$result.status;notification=$active.notification;completedAt=[DateTimeOffset]::Now.ToString('o')}
     $null=Request POST 'events/fh6_refresh_finished' $payload
     for($i=0;$i -lt 8;$i++) {

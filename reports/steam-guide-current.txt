@@ -3,68 +3,70 @@
 
 [quote][url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ АКТУАЛЬНУЮ СВОДКУ С КАРТАМИ И ИЗОБРАЖЕНИЯМИ[/b][/url][/quote]
 
-[h1]Series 4 «Horizon Mascot Party» — Зима[/h1]
-[b]До:[/b] 03.09.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
+[h1]Series 4 «Horizon Mascot Party» — Весна[/h1]
+[b]До:[/b] 10.09.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
 [b]Основная сводка проверяется ежедневно; точное время последней проверки всегда указано по ссылке выше.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Weekly Challenge — AutoZOOM · 5 очков[/h2]
-Последовательно на 1993 Autozam AZ-1: сесть за руль, потратить 25 000 CR на улучшения, удерживать скорость не ниже 120 mph (193 км/ч) в течение 10 секунд и выиграть любую Touge Race. Награда: 25 000 CR.
-[b]Авто:[/b] 1993 Autozam AZ-1 A700 — 828 279 003.
+[h2]01. Weekly Challenge — Cuti-e · 5 очков[/h2]
+2022 Honda e: поездка → покраска → фото на Edamame Circuit → парковка на Daikoku Car Meet.
+[b]Авто:[/b] 2022 Honda e — заводская настройка, специальный тюнинг не требуется.
 
-[h2]02. Daily Challenges — Все 7 дней · 7 × 1 очко[/h2]
-• Чт: Test Drive на любом автомобиле Aftermarket или Upsell.
-• Пт: получить навык Feed Me, разбив торговый автомат.
-• Сб: завершить 3 круга любого Time Attack.
-• Вс: завершить Dirt Race.
-• Пн: завершить любой Drag Meet.
-• Вт: припарковаться на любом Car Meet.
-• Ср: получить минимум 1 звезду в любой Horizon Story.
-Каждый день: 5 000 CR.
+[h2]02. Daily Challenges — 7 ежедневных заданий · 7 × 1 очко[/h2]
+• 03.09: 3 навыка Drift или E-Drift.
+• 04.09: потратить 15 000 CR на улучшения.
+• 05.09: получить минимум 1 звезду в Speed Zone.
+• 06.09: открыть Wheelspin или Super Wheelspin.
+• 07.09: купить Aftermarket Car.
+• 08.09: проехать 16,1 км.
+• 09.09: завершить третий раунд Horizon Stunt Party.
+[b]Авто:[/b] Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.
 
-[h2]03. Photo Challenge — #CultClassic · 2 очка[/h2]
-Сфотографировать любой автомобиль категории Cult Cars на Edamame Circuit. Награда: гудок Pinball Machine.
+[h2]03. Photo Challenge — #PeasInAPod · 2 очка[/h2]
+Сделать фото в зоне Edamame на Horizon Mascot Party.
 
-[h2]04. Treasure Hunt — Ohtani Region · 3 очка[/h2]
-Найти сундук по фотоподсказке в регионе Ohtani. Награда: 100 000 CR.
+[h2]04. Treasure Hunt — Tokyo City Region · 3 очка[/h2]
+Найти сокровище по фотоподсказке в Tokyo City. Награда: 100 000 CR.
 
-[h2]05. Seasonal Championship — Micro Circuits · 5 очков[/h2]
-Road Racing: Soni Circuit, Hokubu Circuit и Edamame Circuit. Ограничение: Microcar Madness A700. Награда: 2014 Mercedes-Benz Unimog U5023.
-[b]Авто:[/b] 1991 Honda Beat A700 — 120 569 217.
+[h2]05. Seasonal Championship — Unlimited Buddies · 5 очков[/h2]
+Unlimited Buggies · A700. Награда: 1973 Mazda RX-3.
+[b]Авто:[/b] 2020 Jimco #179 Hammerhead Class 1 · A700 · 140 205 851.
 
-[h2]06. Seasonal Championship — Modern Marvels · 5 очков[/h2]
-Dirt Racing: Taiyaki Scramble, Kawazu Nanadaru Scramble и Kinkaku-ji Trail. Ограничение: Modern Rally B600. Награда: 1993 Autozam AZ-1, необходимый для Weekly Challenge.
-[b]Авто:[/b] 2011 Subaru WRX STI B600 — 599 539 660.
+[h2]06. Seasonal Championship — Hot Hatch Chasers · 5 очков[/h2]
+Super Hot Hatch · B600. Награда: 2022 Honda e.
+[b]Авто:[/b] 2013 Mercedes-Benz A 45 AMG · B600 · 947 984 645.
 
 [h2]07. Time Attack — Edamame Time Attack · 3 очка[/h2]
-Показать время 00:44.000 или быстрее на автомобиле 1970-х годов класса C500. Награда: Wheelspin.
-[b]Авто:[/b] 1971 Nissan Skyline 2000GT-R C500 — 560 632 810.
+Super Hot Hatch · B600. Круг за 39,000 с или быстрее.
+[b]Авто:[/b] 2013 Mercedes-Benz A 45 AMG · B600 · 947 984 645.
 
-[h2]08. Danger Sign — Shirakawa-go · 2 очка[/h2]
-Eclectic Domestics D400, дальность не меньше 492.1 ft (150 м). Награда: Wheelspin.
-[b]Авто:[/b] 1991 Honda Beat D400 — 860 360 277.
+[h2]08. Speed Trap — Ito Straight · 2 очка[/h2]
+Япония · S1 800. Скорость: 160 mph — 257,5 км/ч.
+[b]Авто:[/b] 2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
 
-[h2]09. Speed Trap — Highland Road · 2 очка[/h2]
-Eclectic Domestics D400, скорость не ниже 90 mph (144,8 км/ч). Награда: Wheelspin.
-[b]Авто:[/b] 1991 Honda Beat D400 — 860 360 277.
+[h2]09. Drift Zone — Seaside Trail · 2 очка[/h2]
+Япония · S1 800. Набрать 50 000 очков.
+[b]Авто:[/b] 2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
 
-[h2]10. Speed Zone — Matsumi Curve · 2 очка[/h2]
-Eclectic Domestics D400. Точная игровая карточка текущей недели и актуальная Fandom-страница Winter указывают цель 75 mph (120,7 км/ч); официальная веб-таблица Forza всё ещё показывает ошибочные 70 mph. Награда: Wheelspin.
-[b]Авто:[/b] 1991 Honda Beat D400 — 860 360 277.
+[h2]10. The Trial — Spring Cleaning · 10 очков[/h2]
+Total Rally · S1 800. Командные Dirt-гонки; нужен онлайн.
+[b]Авто:[/b] 1986 Audi #2 Audi Sport quattro S1 — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
 
-[h2]11. The Trial — Vision Chaser · 10 очков[/h2]
-Кооператив против Unbeatable Drivatars: Festival Chase, Cedar Run и Matsumi Climb. Ограничение: Modern Super Saloons A700. Награда: 2022 Hyundai N Vision 74.
-[b]Авто:[/b] 2021 BMW M4 Competition Coupé A700 — 665 682 998.
+[h2]11. Horizon Racing — Dragonborn · 3 очка[/h2]
+Завершить чемпионат Horizon Racing. Награда: гудок Fus-Roh-Dah.
+[b]Авто:[/b] Выберите автомобиль под ограничения выбранного чемпионата; универсального сезонного кода нет.
 
-[h2]12. Horizon Drift — Drift Tandem · 3 очка[/h2]
-Получить 3 LINK-навыка Drift в событии Horizon Drift. Награда: Meyers Manx 2.0.
+[h2]12. The Eliminator — Battle Royale · 2 очка[/h2]
+Финишировать 30-м или выше. Награда: 1965 Austin-Healey 3000 MkIII.
+[b]Авто:[/b] Автомобили выбираются внутри Eliminator; гаражный тюнинг не применяется.
 
 [h2]13. Horizon Stunt Party — Mini Games · 3 очка[/h2]
-Завершить любое событие Horizon Stunt Party. Награда: фраза Forza LINK «Evasive maneuvres».
+Завершить любую Horizon Stunt Party.
+[b]Авто:[/b] Используйте автомобиль по правилам выбранного мероприятия; специальный тюнинг не требуется.
 
-[h2]14. Monthly Rivals — Edamame Circuit · 1 очко сезона (4 за Series)[/h2]
-Показать чистый круг на предоставленном 1970 Honda N600. Награда: Super Wheelspin.
-[b]Авто:[/b] Используется предоставленный 1970 Honda N600; тюнинг не требуется.
+[h2]14. Monthly Rivals — Edamame Circuit · 1 очко за сезон[/h2]
+Чистый круг на выданной 1970 Honda N600; 4 очка распределяются по сезонам Series.
+[b]Авто:[/b] 1970 Honda N600 — выдаётся событием, тюнинг фиксирован.
 
 [h1]Карты, скриншоты и уточнения[/h1]
 [url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]

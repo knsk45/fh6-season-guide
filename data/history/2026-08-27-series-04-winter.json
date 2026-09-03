@@ -1,0 +1,410 @@
+{
+    "schemaVersion":  1,
+    "season":  {
+                   "seriesNumber":  4,
+                   "seriesSlug":  "04",
+                   "seriesName":  "Horizon Mascot Party",
+                   "season":  "winter",
+                   "seasonDisplay":  "Зима",
+                   "startAt":  "2026-08-27T21:30:00+07:00",
+                   "endAt":  "2026-09-03T21:30:00+07:00",
+                   "reportTitle":  "Forza Horizon 6: Как пройти Series 4 \"Horizon Mascot Party\" - Зима",
+                   "archiveFile":  "seasons/2026-08-27-series-04-winter.md",
+                   "assetsDirectory":  "reports/assets/series-04-winter",
+                   "fandomUrl":  "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Winter_Season",
+                   "officialPlaylistUrl":  "https://forza.net/fh6playlists",
+                   "expectedCardCount":  14,
+                   "expectedDailyItems":  7,
+                   "maxPublicHtmlBytes":  200000
+               },
+    "lastContentUpdate":  "2026-09-03T07:25:33+07:00",
+    "activities":  [
+                       {
+                           "id":  "activity_01_weekly",
+                           "number":  "01",
+                           "kind":  "Weekly Challenge",
+                           "title":  "AutoZOOM",
+                           "points":  "5 очков",
+                           "conditionHtml":  "Последовательно на 1993 Autozam AZ-1: сесть за руль, потратить 25 000 CR на улучшения, удерживать скорость не ниже 120 mph (193 км/ч) в течение 10 секунд и выиграть любую Touge Race. Награда: 25 000 CR.",
+                           "howHtml":  "Для второго этапа поставьте замену двигателя 1.6L I4 Turbo Rally — она стоит ровно 25 000 CR. Скорость проще удерживать на автомагистрали. Для финала подойдут Bandai Azuma в A-классе или Arashiyama Takao в S2-классе; сначала завершите Modern Marvels, если машины ещё нет.",
+                           "tuneHtml":  "1993 Autozam AZ-1 A700 — \u003ccode\u003e828 279 003\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eтекущенедельный гайд и код\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-weekly.jpg",
+                                          "icon":  "FH6_EventSeasonal_Drive_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка AutoZOOM текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_02_daily",
+                           "number":  "02",
+                           "kind":  "Daily Challenges",
+                           "title":  "Все 7 дней",
+                           "points":  "7 × 1 очко",
+                           "conditionHtml":  "\u003col class=\"days\"\u003e\u003cli\u003e\u003cstrong\u003eЧт:\u003c/strong\u003e Test Drive на любом автомобиле Aftermarket или Upsell.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eПт:\u003c/strong\u003e получить навык Feed Me, разбив торговый автомат.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eСб:\u003c/strong\u003e завершить 3 круга любого Time Attack.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eВс:\u003c/strong\u003e завершить Dirt Race.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eПн:\u003c/strong\u003e завершить любой Drag Meet.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eВт:\u003c/strong\u003e припарковаться на любом Car Meet.\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eСр:\u003c/strong\u003e получить минимум 1 звезду в любой Horizon Story.\u003c/li\u003e\u003c/ol\u003eКаждый день: 5 000 CR.",
+                           "howHtml":  "Четверговая задача доступна сразу после смены сезона; остальные открываются по одному ежедневно и сохраняются ещё три дня. Для Feed Me ищите ряд торговых автоматов у заправок и городских площадок. В Time Attack достаточно финишировать три круга без требования ко времени.",
+                           "tuneHtml":  "Специальный автомобиль или тюнинг не нужен.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальный список Daily\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежая недельная проверка\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-daily.jpg",
+                                          "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/",
+                                          "sourceLabel":  "временный текущесезонный визуал награды Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "preliminary"
+                                            },
+                           "missingFields":  [
+                                                 "visual"
+                                             ]
+                       },
+                       {
+                           "id":  "activity_03_photo",
+                           "number":  "03",
+                           "kind":  "Photo Challenge",
+                           "title":  "#CultClassic",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Сфотографировать любой автомобиль категории Cult Cars на Edamame Circuit. Награда: гудок Pinball Machine.",
+                           "howHtml":  "В гараже включите фильтр Car Type → Cult Cars, выберите любую подходящую машину и приезжайте на трассу Edamame Circuit. Запускать Time Attack не требуется — снимок засчитывается в любой точке внутри зоны трассы.",
+                           "tuneHtml":  "Подойдёт любой Cult Car; тюнинг не требуется.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eточка съёмки и скриншот\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-photo.jpg",
+                                          "icon":  "FH6_EventFP_PhotoChallenge_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка #CultClassic текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_04_treasure",
+                           "number":  "04",
+                           "kind":  "Treasure Hunt",
+                           "title":  "Ohtani Region",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Найти сундук по фотоподсказке в регионе Ohtani. Награда: 100 000 CR.",
+                           "howHtml":  "Сундук стоит в южной части региона Ohtani рядом с ориентиром Matsumi Great Bridge — на грунтовой дороге под мостом, у каменной опоры. Подъезжайте по заснеженной дороге под путями; на скриншоте внизу карточки показан точный ориентир.",
+                           "tuneHtml":  "Подойдёт любой автомобиль; тюнинг не требуется.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://imgur.com/CxCAp1B\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eпрямая карта/скриншот сундука\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий недельный гайд\u003c/a\u003e · \u003ca href=\"https://escorenews.com/en/dota-2/article/80572-ohtani-region-treasure-hunt-in-forza-horizon-6-winter-series-4-treasure-chest-location\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eнезависимая карта Matsumi Great Bridge\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-treasure.jpg",
+                                          "icon":  "FH6_EventFP_TreasureHunt_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Ohtani Region текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_05_micro_circuits",
+                           "number":  "05",
+                           "kind":  "Seasonal Championship",
+                           "title":  "Micro Circuits",
+                           "points":  "5 очков",
+                           "conditionHtml":  "Road Racing: Soni Circuit, Hokubu Circuit и Edamame Circuit. Ограничение: Microcar Madness A700. Награда: 2014 Mercedes-Benz Unimog U5023.",
+                           "howHtml":  "В игровом фильтре нет отдельной категории Microcar Madness. 1991 Honda Beat подтверждён свежим списком допустимых машин; этот вариант выбран за более предсказуемую управляемость на коротких ночных кругах. Тормозите до поворота и рано открывайте газ на выходе.",
+                           "tuneHtml":  "1991 Honda Beat A700 — \u003ccode\u003e120 569 217\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий тюнинг Honda Beat\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w0d76q/microcar_madness_car_type/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eактуальный список допустимых микрокаров\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-micro-circuits.jpg",
+                                          "icon":  "FH6_EventSeasonal_Drive_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Micro Circuits текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_06_modern_marvels",
+                           "number":  "06",
+                           "kind":  "Seasonal Championship",
+                           "title":  "Modern Marvels",
+                           "points":  "5 очков",
+                           "conditionHtml":  "Dirt Racing: Taiyaki Scramble, Kawazu Nanadaru Scramble и Kinkaku-ji Trail. Ограничение: Modern Rally B600. Награда: 1993 Autozam AZ-1, необходимый для Weekly Challenge.",
+                           "howHtml":  "Пройдите этот чемпионат до Weekly, если Autozam AZ-1 ещё нет. На грунте не перегревайте вход: плавное торможение до поворота и ранний полный газ сохраняют скорость лучше позднего заноса.",
+                           "tuneHtml":  "2011 Subaru WRX STI B600 — \u003ccode\u003e599 539 660\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и награда\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-modern-marvels.jpg",
+                                          "icon":  "FH6_EventSeasonal_Drive_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Modern Marvels текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_07_time_attack",
+                           "number":  "07",
+                           "kind":  "Time Attack",
+                           "title":  "Edamame Time Attack",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Показать время 00:44.000 или быстрее на автомобиле 1970-х годов класса C500. Награда: Wheelspin.",
+                           "howHtml":  "Для зачёта нужен быстрый чистый круг. Не используйте Anna Autopilot, не касайтесь стен и не перематывайте; перед последним поворотом пожертвуйте скоростью входа ради раннего разгона к финишу.",
+                           "tuneHtml":  "1971 Nissan Skyline 2000GT-R C500 — \u003ccode\u003e560 632 810\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий стабильный C500-тюнинг\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-time-attack.jpg",
+                                          "icon":  "FH6_EventSeasonal_Drive_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Edamame Time Attack текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_08_danger_sign",
+                           "number":  "08",
+                           "kind":  "Danger Sign",
+                           "title":  "Shirakawa-go",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Eclectic Domestics D400, дальность не меньше 492.1 ft (150 м). Награда: Wheelspin.",
+                           "howHtml":  "Разгоняйтесь к рампе с северо-запада: этот подход даёт самый длинный прямой участок. Перед прыжком держите машину ровно; перемотка помогает сохранить удачный разгон без полного повтора.",
+                           "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eподтверждение направления разгона\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-shirakawa-go.jpg",
+                                          "icon":  "FH6_EventSeasonal_Stunt_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Shirakawa-go текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_09_speed_trap",
+                           "number":  "09",
+                           "kind":  "Speed Trap",
+                           "title":  "Highland Road",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Eclectic Domestics D400, скорость не ниже 90 mph (144,8 км/ч). Награда: Wheelspin.",
+                           "howHtml":  "Начинайте разгон с северо-востока — там длиннее подход к камере. Проходите створ без коррекции руля; если трафик мешает, перезапустите попытку через перемотку.",
+                           "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная цель\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80714-polnyj-gayd-na-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eподтверждение северо-восточного подхода\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-highland-road.jpg",
+                                          "icon":  "FH6_EventFP_SpeedTrap_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Highland Road текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_10_speed_zone",
+                           "number":  "10",
+                           "kind":  "Speed Zone",
+                           "title":  "Matsumi Curve",
+                           "points":  "2 очка",
+                           "conditionHtml":  "Eclectic Domestics D400. Точная игровая карточка текущей недели и актуальная Fandom-страница Winter указывают цель 75 mph (120,7 км/ч); официальная веб-таблица Forza всё ещё показывает ошибочные 70 mph. Награда: Wheelspin.",
+                           "howHtml":  "Заезжайте в зону слева, используя более длинную прямую, и входите в первый поворот уже на стабильной скорости. Не допускайте сильного заноса: при D400 потерянные 5–10 км/ч почти невозможно вернуть внутри зоны.",
+                           "tuneHtml":  "1991 Honda Beat D400 — \u003ccode\u003e860 360 277\u003c/code\u003e (один свежий код сообщества для всех трёх PR Stunts; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eточная игровая карточка: 75 mph\u003c/a\u003e · \u003ca href=\"https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Winter_Season\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eFandom Winter: 75 mph\u003c/a\u003e · \u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная веб-таблица: 70 mph\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий гайд и код\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-matsumi-curve.jpg",
+                                          "icon":  "FH6_EventFP_SpeedZone_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая карточка Matsumi Curve с целью 75 mph текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_11_trial",
+                           "number":  "11",
+                           "kind":  "The Trial",
+                           "title":  "Vision Chaser",
+                           "points":  "10 очков",
+                           "conditionHtml":  "Кооператив против Unbeatable Drivatars: Festival Chase, Cedar Run и Matsumi Climb. Ограничение: Modern Super Saloons A700. Награда: 2022 Hyundai N Vision 74.",
+                           "howHtml":  "Это обязательный онлайн. Первая гонка проще, поэтому старайтесь выиграть первые две и не доводить серию до сложной третьей. На второй трассе заранее тормозите перед 90-градусными поворотами; после правого поворота в середине дистанции берегитесь скрытого деревьями узкого моста. Не толкайте союзников и после обгона удерживайте Drivatar, чтобы команда набрала больше очков.",
+                           "tuneHtml":  "2021 BMW M4 Competition Coupé A700 — \u003ccode\u003e665 682 998\u003c/code\u003e (свежий код сообщества; не подтверждён в игре).",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальные трассы и ограничение\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежий код\u003c/a\u003e · \u003ca href=\"https://escorenews.com/ru/article/80710-gayd-po-trialu-v-pogone-za-vidami-v-forza-horizon-6-luchshie-sovremennye-supersedany-a-klassa-dlya-zimnego-sezona-serii-4\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eдетальный разбор опасных поворотов\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-trial.jpg",
+                                          "icon":  "FH6_EventFP_Trial_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Vision Chaser текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "community",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_12_horizon_drift",
+                           "number":  "12",
+                           "kind":  "Horizon Drift",
+                           "title":  "Drift Tandem",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Получить 3 LINK-навыка Drift в событии Horizon Drift. Награда: Meyers Manx 2.0.",
+                           "howHtml":  "Нужны другие игроки поблизости: держитесь рядом и начинайте занос одновременно, не отрываясь от группы до появления LINK-навыка. Победа или высокий личный счёт не требуются.",
+                           "tuneHtml":  "Используйте удобный дрифт-кар; специального сезонного кода не требуется.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eтекущенедельная проверка награды\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-horizon-drift.jpg",
+                                          "icon":  "FH6_EventFP_DriftZone_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Drift Tandem текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "community",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_13_stunt_party",
+                           "number":  "13",
+                           "kind":  "Horizon Stunt Party",
+                           "title":  "Mini Games",
+                           "points":  "3 очка",
+                           "conditionHtml":  "Завершить любое событие Horizon Stunt Party. Награда: фраза Forza LINK «Evasive maneuvres».",
+                           "howHtml":  "Это онлайн-событие. Зарегистрируйтесь в окне набора, выполняйте командные цели и оставайтесь до итогового экрана; конкретное место или победа не требуются.",
+                           "tuneHtml":  "Выберите универсальную машину из гаража; специальный тюнинг не требуется.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальное условие и награда\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eсвежая недельная проверка\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-stunt-party.jpg",
+                                          "icon":  "FH6_EventFP_StuntParty_Icon.png",
+                                          "position":  "center",
+                                           "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                           "sourceLabel":  "точная игровая плитка Mini Games текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "not_applicable",
+                                                 "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       },
+                       {
+                           "id":  "activity_14_monthly_rivals",
+                           "number":  "14",
+                           "kind":  "Monthly Rivals",
+                           "title":  "Edamame Circuit",
+                           "points":  "1 очко сезона (4 за Series)",
+                           "conditionHtml":  "Показать чистый круг на предоставленном 1970 Honda N600. Награда: Super Wheelspin.",
+                           "howHtml":  "Не касайтесь стен, не пропускайте чекпойнты, не используйте Rewind и Anna Autopilot — они делают круг грязным. Одного чистого результата достаточно на всю Series, после чего по 1 очку учитывается в каждом сезоне.",
+                           "tuneHtml":  "Используется предоставленный 1970 Honda N600; тюнинг не требуется.",
+                           "sourceHtml":  "\u003ca href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eофициальная Playlist\u003c/a\u003e · \u003ca href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eограничения чистого круга\u003c/a\u003e",
+                           "visual":  {
+                                          "image":  "visual-monthly-rivals.jpg",
+                                          "icon":  "FH6_EventFP_MonthlyRivals_Icon.png",
+                                          "position":  "center",
+                                          "sourceUrl":  "https://forza.labsgg.com/series/details",
+                                          "sourceLabel":  "точная игровая плитка Edamame Circuit текущей Winter"
+                                      },
+                           "completeness":  {
+                                                "condition":  "confirmed",
+                                                "solution":  "confirmed",
+                                                "vehicleTune":  "not_applicable",
+                                                "visual":  "confirmed"
+                                            },
+                           "missingFields":  [
+
+                                             ]
+                       }
+                   ],
+    "openItems":  [
+                      {
+                          "activityId":  "activity_02_daily",
+                          "field":  "visual",
+                          "reason":  "На старте сезона нет отдельной игровой плитки Daily; стоит текущесезонный визуал награды Winter.",
+                           "nextCheck":  "Проверить Fandom Winter и новые недельные скриншоты при следующем ежедневном аудите.",
+                          "status":  "preliminary"
+                      }
+                  ]
+}
