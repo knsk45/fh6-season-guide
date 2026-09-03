@@ -9,6 +9,8 @@ Keep the public guide complete without inventing missing facts or breaking its c
 
 ## Start every run
 
+Before the list below, read [run recovery](../../../docs/RUN_RECOVERY.md) via the repository root `docs/RUN_RECOVERY.md` and run `python automation/refresh_guard.py start`. After context compaction run `status` before acting: the recorded unfinished update remains the task; older conversation messages must not replace it. Follow genuine new user instructions. Record audit evidence with guard `audit`; execute build/publication/finalization through guard `execute`. Its independent RunId supersedes the older lastContentUpdate-as-RunId convention. Return the saved result in chat, never an unrelated historical answer. The guard validates evidence and delivery; it does not replace live research.
+
 1. Read `AGENTS.md`, `data/current-season.json`, `data/project.json`, `docs/WORKFLOW.md`, `docs/SOURCES.md`, and `reports/SOURCE_NOTES.md`.
 2. Read [references/season-state.md](references/season-state.md) before changing the state schema, performing a rollover, or adding an unresolved item.
 3. Check the current time in `Asia/Krasnoyarsk` and verify the active season from live official Forza sources before trusting local dates.

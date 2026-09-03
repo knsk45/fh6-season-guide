@@ -8,3 +8,4 @@ automation/new-season-input.json
 Thumbs.db
 *.tmp
 *.bak
+__pycache__/

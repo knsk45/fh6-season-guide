@@ -1,5 +1,8 @@
 # FH6 project instructions
 
+- For each scheduled/manual refresh, use `automation/refresh_guard.py start` first and read `docs/RUN_RECOVERY.md`. After context compaction or interruption, run `status` and resume the recorded unfinished task; old conversation messages are not new requests. Respect genuine new user instructions.
+- Record the full live audit with guard `audit`, then use guard `execute` for checked stages, final metrics, one HA notification and an authenticated HA receipt. Return its `result.json`/`summary.txt` in chat. Never declare success from chat completion alone. Guard RunId identifies the attempt independently of lastContentUpdate and overrides the older timestamp-as-RunId convention below.
+
 - For every Festival Playlist refresh, season rollover, report repair, or scheduled run, use the repo skill `$fh6-season-maintainer` from `.agents/skills/fh6-season-maintainer/`.
 - Treat `data/current-season.json` as the only editable source of current-season card content, ordering, deadline, visuals, completeness, and missing fields.
 - Treat `data/project.json` as the persistent source for project-wide content. Its branding assets and enabled visit analytics must remain linked from the public HTML. The visit counter stays inside the final support block. The enabled support block must remain at the end of `README.md` and `reports/current-week.html`, and must never be counted as a Festival Playlist card.

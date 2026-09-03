@@ -7,7 +7,8 @@ param(
     [string]$ProjectPath,
     [string]$LocalConfigPath,
     [string]$DeliveryStatePath,
-    [string]$MetricsStatePath
+    [string]$MetricsStatePath,
+    [string]$ResultPath
 )
 
 Set-StrictMode -Version Latest
@@ -102,6 +103,14 @@ $Body = [ordered]@{
         group = 'fh6-season-guide'
         url = [string]$Project.steamGuide.publicGuideUrl
     }
+}
+if ($ResultPath) {
+    $CheckedResult = Get-Content -LiteralPath $ResultPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ($CheckedResult.schemaVersion -ne 1 -or $CheckedResult.runId -ne $RunId -or $CheckedResult.notificationType -ne $Status -or [string]::IsNullOrWhiteSpace($CheckedResult.message)) {
+        throw 'Guarded result does not match notification RunId/status.'
+    }
+    # Use exactly the same substantive result in HA and in the chat summary.
+    $Body.message = [string]$CheckedResult.message
 }
 $Headers = @{ Authorization = "Bearer $Token" }
 $Uri = "$ApiBase/services/notify/$ServiceName"
