@@ -3,6 +3,7 @@ import copy
 import contextlib
 import io
 import json
+import re
 from pathlib import Path
 import shutil
 import tempfile
@@ -60,7 +61,12 @@ class PortableTests(unittest.TestCase):
     def test_forged_card_text_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('<h2>','<h2>FORGED ')))
     def test_embedded_image_different_from_disk_rejected(self):
-        self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('data:image/jpeg;base64,','data:image/jpeg;base64,AAAA',1)))
+        def corrupt_image(artifact):
+            block = artifact['manifest']['blocks'][0]
+            body, changed = re.subn(r'(data:image/(?:jpeg|png|webp);base64,)', r'\1AAAA', block['body'], count=1)
+            self.assertEqual(changed, 1, 'The negative test must actually corrupt an image, regardless of season format')
+            block['body'] = body
+        self.bad_artifact(corrupt_image)
     def test_javascript_link_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('https://forza.net/fh6playlists','javascript:alert(1)')))
     def test_script_injection_rejected(self):
