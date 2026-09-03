@@ -23,6 +23,13 @@ function Entity([string]$Id) {
     if ($matches.Count -ne 1) {throw "Expected exactly one HA automation with id $Id"}
     return $matches[0]
 }
+function TimePoint($Value) {
+    # Invoke-RestMethod may already deserialize an ISO date into DateTime.
+    # Converting it to a culture-dependent string can swap month/day in ru-RU.
+    if ($Value -is [DateTimeOffset]) { return $Value }
+    if ($Value -is [DateTime]) { return [DateTimeOffset]$Value }
+    return [DateTimeOffset]::Parse([string]$Value,[Globalization.CultureInfo]::InvariantCulture)
+}
 $config = Request GET 'config'
 if ($config.time_zone -ne 'Asia/Krasnoyarsk') {throw 'HA timezone differs from agreed Asia/Krasnoyarsk; install aborted.'}
 
@@ -77,7 +84,7 @@ if ($Action -eq 'Receipt') {
     $null=Request POST 'events/fh6_refresh_finished' $payload
     for($i=0;$i -lt 8;$i++) {
         $entity=Entity $receiptId
-        if ($entity.attributes.last_triggered -and [DateTimeOffset]::Parse([string]$entity.attributes.last_triggered) -ge $before) {
+        if ($entity.attributes.last_triggered -and (TimePoint $entity.attributes.last_triggered) -ge $before) {
             Write-Host 'HA_RECEIPT_STATUS=CONFIRMED'
             Write-Host "HA_RECEIPT_ENTITY=$($entity.entity_id)"
             exit 0
@@ -88,6 +95,11 @@ if ($Action -eq 'Receipt') {
 }
 
 if ($Action -eq 'Test') {
+    $sample=[DateTimeOffset]::Parse('2026-09-03T07:04:11.401021+07:00',[Globalization.CultureInfo]::InvariantCulture)
+    foreach($value in @($sample,$sample.LocalDateTime,$sample.ToString('o'))) {
+        if ((TimePoint $value) -ne $sample) {throw 'HA receipt date conversion regression'}
+    }
+    Write-Host 'HA_RECEIPT_DATE_TEST=PASS'
     # Exercise HA's real Jinja evaluator without triggering notifications or altering receipt state.
     $saved=Request GET "config/automation/config/$watchId"
     $expr=$saved.conditions[0].value_template
