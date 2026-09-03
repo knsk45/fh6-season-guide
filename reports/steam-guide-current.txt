@@ -9,7 +9,7 @@
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
 [h2]01. Weekly Challenge — Cuti-e · 5 очков[/h2]
-2022 Honda e: поездка → покраска → фото на Edamame Circuit → парковка на Daikoku Car Meet.
+2022 Honda e: поездка → покраска → фото на Edamame Circuit → парковка на Daikoku Car Meet. Награда: 25 000 CR.
 [b]Авто:[/b] 2022 Honda e — заводская настройка, специальный тюнинг не требуется.
 
 [h2]02. Daily Challenges — 7 ежедневных заданий · 7 × 1 очко[/h2]
@@ -20,10 +20,11 @@
 • 07.09: купить Aftermarket Car.
 • 08.09: проехать 16,1 км.
 • 09.09: завершить третий раунд Horizon Stunt Party.
+ Награда за каждый день: 5 000 CR.
 [b]Авто:[/b] Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.
 
 [h2]03. Photo Challenge — #PeasInAPod · 2 очка[/h2]
-Сделать фото в зоне Edamame на Horizon Mascot Party.
+Сделать фото в зоне Edamame на Horizon Mascot Party. Награда: эмоция So Cute.
 
 [h2]04. Treasure Hunt — Tokyo City Region · 3 очка[/h2]
 Найти сокровище по фотоподсказке в Tokyo City. Награда: 100 000 CR.
@@ -37,20 +38,20 @@ Super Hot Hatch · B600. Награда: 2022 Honda e.
 [b]Авто:[/b] 2013 Mercedes-Benz A 45 AMG · B600 · 947 984 645.
 
 [h2]07. Time Attack — Edamame Time Attack · 3 очка[/h2]
-Super Hot Hatch · B600. Круг за 39,000 с или быстрее.
+Super Hot Hatch · B600. Круг за 39,000 с или быстрее. Награда: Wheelspin.
 [b]Авто:[/b] 2013 Mercedes-Benz A 45 AMG · B600 · 947 984 645.
 
 [h2]08. Speed Trap — Ito Straight · 2 очка[/h2]
-Япония · S1 800. Скорость: 160 mph — 257,5 км/ч.
-[b]Авто:[/b] 2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
+Япония · S1 800. Скорость: 160 mph — 257,5 км/ч. Награда: Wheelspin.
+[b]Авто:[/b] 2020 Toyota GR Supra · S1 800 · 584 324 652.
 
 [h2]09. Drift Zone — Seaside Trail · 2 очка[/h2]
-Япония · S1 800. Набрать 50 000 очков.
-[b]Авто:[/b] 2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
+Япония · S1 800. Набрать 50 000 очков. Награда: Wheelspin.
+[b]Авто:[/b] 1991 Honda Beat · S1 800 · 867 935 515.
 
 [h2]10. The Trial — Spring Cleaning · 10 очков[/h2]
-Total Rally · S1 800. Командные Dirt-гонки; нужен онлайн.
-[b]Авто:[/b] 1986 Audi #2 Audi Sport quattro S1 — рекомендация свежего гайда. Код тюнинга пока не подтверждён.
+Total Rally · S1 800. Командные Dirt-гонки; нужен онлайн. Награда: 2013 MINI X-Raid All4 Racing Countryman.
+[b]Авто:[/b] 1986 Audi #2 Audi Sport quattro S1 · S1 800 · 267 461 712.
 
 [h2]11. Horizon Racing — Dragonborn · 3 очка[/h2]
 Завершить чемпионат Horizon Racing. Награда: гудок Fus-Roh-Dah.
@@ -61,11 +62,11 @@ Total Rally · S1 800. Командные Dirt-гонки; нужен онлай
 [b]Авто:[/b] Автомобили выбираются внутри Eliminator; гаражный тюнинг не применяется.
 
 [h2]13. Horizon Stunt Party — Mini Games · 3 очка[/h2]
-Завершить любую Horizon Stunt Party.
+Завершить любую Horizon Stunt Party. Награда: Blue Baseball Jersey.
 [b]Авто:[/b] Используйте автомобиль по правилам выбранного мероприятия; специальный тюнинг не требуется.
 
 [h2]14. Monthly Rivals — Edamame Circuit · 1 очко за сезон[/h2]
-Чистый круг на выданной 1970 Honda N600; 4 очка распределяются по сезонам Series.
+Чистый круг на выданной 1970 Honda N600; 4 очка распределяются по сезонам Series. Награда: Super Wheelspin.
 [b]Авто:[/b] 1970 Honda N600 — выдаётся событием, тюнинг фиксирован.
 
 [h1]Карты, скриншоты и уточнения[/h1]

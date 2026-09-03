@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-03T21:54:26+07:00",
+  "lastContentUpdate": "2026-09-04T06:16:33+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,26 +25,24 @@
       "kind": "Weekly Challenge",
       "title": "Cuti-e",
       "points": "5 очков",
-      "conditionHtml": "2022 Honda e: поездка → покраска → фото на Edamame Circuit → парковка на Daikoku Car Meet.",
+      "conditionHtml": "2022 Honda e: поездка → покраска → фото на Edamame Circuit → парковка на Daikoku Car Meet. Награда: 25 000 CR.",
       "howHtml": "Выполняйте главы по порядку. Сохраните новый цвет кузова; для фото достаточно Quick Shot на трассе. В Daikoku заезжайте на размеченное парковочное место. Машину можно получить за Hot Hatch Chasers.",
       "tuneHtml": "2022 Honda e — заводская настройка, специальный тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "visual-hot-hatch.webp",
+        "image": "tile-weekly.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Временно: 2022 Honda e с плитки Hot Hatch Chasers этой недели"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "preliminary"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -52,7 +50,7 @@
       "kind": "Daily Challenges",
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
-      "conditionHtml": "<ol><li><strong>03.09:</strong> 3 навыка Drift или E-Drift.</li><li><strong>04.09:</strong> потратить 15 000 CR на улучшения.</li><li><strong>05.09:</strong> получить минимум 1 звезду в Speed Zone.</li><li><strong>06.09:</strong> открыть Wheelspin или Super Wheelspin.</li><li><strong>07.09:</strong> купить Aftermarket Car.</li><li><strong>08.09:</strong> проехать 16,1 км.</li><li><strong>09.09:</strong> завершить третий раунд Horizon Stunt Party.</li></ol>",
+      "conditionHtml": "<ol><li><strong>03.09:</strong> 3 навыка Drift или E-Drift.</li><li><strong>04.09:</strong> потратить 15 000 CR на улучшения.</li><li><strong>05.09:</strong> получить минимум 1 звезду в Speed Zone.</li><li><strong>06.09:</strong> открыть Wheelspin или Super Wheelspin.</li><li><strong>07.09:</strong> купить Aftermarket Car.</li><li><strong>08.09:</strong> проехать 16,1 км.</li><li><strong>09.09:</strong> завершить третий раунд Horizon Stunt Party.</li></ol> Награда за каждый день: 5 000 CR.",
       "howHtml": "Задания открываются по одному в указанные дни в 21:30 по Красноярску. На старте доступно только задание 03.09. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.",
       "tuneHtml": "Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
@@ -79,22 +77,22 @@
       "kind": "Photo Challenge",
       "title": "#PeasInAPod",
       "points": "2 очка",
-      "conditionHtml": "Сделать фото в зоне Edamame на Horizon Mascot Party.",
-      "howHtml": "На стадионе в Minamino найдите зелёную зону Edamame по карте ниже. Откройте фоторежим и сделайте снимок в этой зоне.",
+      "conditionHtml": "Сделать фото в зоне Edamame на Horizon Mascot Party. Награда: эмоция So Cute.",
+      "howHtml": "На стадионе в Minamino найдите зелёную зону Edamame по карте ниже: ориентиры — зелёные щиты Minamino Region и фигуры стручков. Сделайте снимок в фоторежиме; если он не засчитался, переместитесь внутри этой зоны и повторите.",
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/photo-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта зоны Edamame</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/photo-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта зоны Edamame</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w67gtq/fh6_series_4_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Ориентиры для фото</a>",
       "visual": {
-        "image": "visual-photo.webp",
+        "image": "tile-photo.webp",
         "icon": "FH6_EventFP_PhotoChallenge_Icon.png",
-        "position": "center 75%",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "position": "center",
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "confirmed"
       },
       "missingFields": []
     },
@@ -107,19 +105,19 @@
       "conditionHtml": "Найти сокровище по фотоподсказке в Tokyo City. Награда: 100 000 CR.",
       "howHtml": "Откройте карту ниже: красным кругом отмечен квартал, значком сундука — точная точка. Подъезжайте по соседним улицам и разбейте сундук.",
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/treasure-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука — спойлер</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/treasure-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука — спойлер</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "visual-treasure.webp",
+        "image": "tile-treasure.webp",
         "icon": "FH6_EventFP_TreasureHunt_Icon.png",
         "position": "center",
-        "sourceUrl": "https://i.postimg.cc/SKvqZtxx/tes.png",
-        "sourceLabel": "Карта сокровища Spring, 03.09"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "confirmed"
       },
       "missingFields": []
     },
@@ -132,19 +130,19 @@
       "conditionHtml": "Unlimited Buggies · A700. Награда: 1973 Mazda RX-3.",
       "howHtml": "Три Cross Country: Oka → Shimanoyama → Stadium. Завершите весь чемпионат; на прыжках держите машину прямо и не срезайте контрольные точки.",
       "tuneHtml": "2020 Jimco #179 Hammerhead Class 1 · A700 · <code>140 205 851</code>.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "visual-unlimited-buddies.webp",
+        "image": "tile-unlimited-buddies.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "confirmed"
       },
       "missingFields": []
     },
@@ -157,19 +155,19 @@
       "conditionHtml": "Super Hot Hatch · B600. Награда: 2022 Honda e.",
       "howHtml": "Три уличных этапа: Minami Chase → Daikoku Chase → Tokyo City Docks Charge. Тормозите перед поворотами и учитывайте встречный трафик. Призовая машина нужна для Cuti-e.",
       "tuneHtml": "2013 Mercedes-Benz A 45 AMG · B600 · <code>947 984 645</code>.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "visual-hot-hatch.webp",
+        "image": "tile-hot-hatch.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "confirmed"
       },
       "missingFields": []
     },
@@ -179,22 +177,22 @@
       "kind": "Time Attack",
       "title": "Edamame Time Attack",
       "points": "3 очка",
-      "conditionHtml": "Super Hot Hatch · B600. Круг за 39,000 с или быстрее.",
+      "conditionHtml": "Super Hot Hatch · B600. Круг за 39,000 с или быстрее. Награда: Wheelspin.",
       "howHtml": "Сначала изучите повороты, затем пройдите круг без контактов с ограждениями. После ошибки начните новую попытку; берегите скорость на выходе на прямую.",
       "tuneHtml": "2013 Mercedes-Benz A 45 AMG · B600 · <code>947 984 645</code>.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "visual-time-attack.webp",
+        "image": "tile-time-attack.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "confirmed"
       },
       "missingFields": []
     },
@@ -204,26 +202,24 @@
       "kind": "Speed Trap",
       "title": "Ito Straight",
       "points": "2 очка",
-      "conditionHtml": "Япония · S1 800. Скорость: 160 mph — 257,5 км/ч.",
-      "howHtml": "Разгоняйтесь заранее по прямой, пересекайте камеру без торможения. Если мешает трафик, повторите заезд с большим разгоном.",
-      "tuneHtml": "2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "conditionHtml": "Япония · S1 800. Скорость: 160 mph — 257,5 км/ч. Награда: Wheelspin.",
+      "howHtml": "Начните разгон примерно за 830 м к северо-востоку от камеры, возле дорожного XP-стенда. Двигайтесь к камере без торможения; если помешал трафик, повторите заезд.",
+      "tuneHtml": "2020 Toyota GR Supra · S1 800 · <code>584 324 652</code>.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6hnou/series_04_week_4_spring_seasonal_tunes_mascot/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a>",
       "visual": {
-        "image": "visual-speed-trap.webp",
+        "image": "tile-speed-trap.webp",
         "icon": "FH6_EventFP_SpeedTrap_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_drift_zone",
@@ -231,26 +227,24 @@
       "kind": "Drift Zone",
       "title": "Seaside Trail",
       "points": "2 очка",
-      "conditionHtml": "Япония · S1 800. Набрать 50 000 очков.",
+      "conditionHtml": "Япония · S1 800. Набрать 50 000 очков. Награда: Wheelspin.",
       "howHtml": "Войдите в зону с запасом скорости, удерживайте скольжение между поворотами и завершите заезд внутри коридора. Отключение стабилизации может облегчить дрифт.",
-      "tuneHtml": "2002 Nissan Silvia Spec-R — рекомендация свежего гайда. Код тюнинга пока не подтверждён.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "tuneHtml": "1991 Honda Beat · S1 800 · <code>867 935 515</code>.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6hnou/series_04_week_4_spring_seasonal_tunes_mascot/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w6am49/series_4_playlist_4_spring_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Второе подтверждение тюнинга</a>",
       "visual": {
-        "image": "visual-drift-zone.webp",
+        "image": "tile-drift-zone.webp",
         "icon": "FH6_EventFP_DriftZone_Icon.png",
         "position": "center",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_trial",
@@ -258,26 +252,24 @@
       "kind": "The Trial",
       "title": "Spring Cleaning",
       "points": "10 очков",
-      "conditionHtml": "Total Rally · S1 800. Командные Dirt-гонки; нужен онлайн.",
+      "conditionHtml": "Total Rally · S1 800. Командные Dirt-гонки; нужен онлайн. Награда: 2013 MINI X-Raid All4 Racing Countryman.",
       "howHtml": "Маршруты: Legend Island Trail → Airfield Trail → Sekibe Scramble. Помогайте команде опережать Drivatar, не выталкивайте союзников на торможениях.",
-      "tuneHtml": "1986 Audi #2 Audi Sport quattro S1 — рекомендация свежего гайда. Код тюнинга пока не подтверждён.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "tuneHtml": "1986 Audi #2 Audi Sport quattro S1 · S1 800 · <code>267 461 712</code>.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w6am49/series_4_playlist_4_spring_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a>",
       "visual": {
-        "image": "visual-trial.webp",
+        "image": "tile-trial.webp",
         "icon": "FH6_EventFP_Trial_Icon.png",
-        "position": "center 65%",
-        "sourceUrl": "https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/",
-        "sourceLabel": "Изображение активности из свежего Spring-гайда"
+        "position": "center",
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_horizon_racing",
@@ -288,23 +280,21 @@
       "conditionHtml": "Завершить чемпионат Horizon Racing. Награда: гудок Fus-Roh-Dah.",
       "howHtml": "Откройте Horizon Play → Horizon Racing и завершите чемпионат целиком, оставаясь до итогов последнего этапа.",
       "tuneHtml": "Выберите автомобиль под ограничения выбранного чемпионата; универсального сезонного кода нет.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "season-banner.webp",
+        "image": "tile-horizon-racing.webp",
         "icon": "FH6_EventFP_HorizonPlay_Icon.png",
         "position": "center",
-        "sourceUrl": "https://cdn.forza.net/strapi-uploads/assets/small_FH_6_S04_Festival_Playlist_Spring_1920x1080_df22e1ee64.png",
-        "sourceLabel": "Временно: баннер из официального обзора Spring (не плитка активности)"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "preliminary"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_eliminator",
@@ -315,23 +305,21 @@
       "conditionHtml": "Финишировать 30-м или выше. Награда: 1965 Austin-Healey 3000 MkIII.",
       "howHtml": "Избегайте ранних дуэлей, следите за уменьшающейся ареной и продержитесь до нужного места.",
       "tuneHtml": "Автомобили выбираются внутри Eliminator; гаражный тюнинг не применяется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "season-banner.webp",
+        "image": "tile-eliminator.webp",
         "icon": "FH6_EventFP_HorizonPlay_Icon.png",
         "position": "center",
-        "sourceUrl": "https://cdn.forza.net/strapi-uploads/assets/small_FH_6_S04_Festival_Playlist_Spring_1920x1080_df22e1ee64.png",
-        "sourceLabel": "Временно: баннер из официального обзора Spring (не плитка активности)"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "preliminary"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_stunt_party",
@@ -339,26 +327,24 @@
       "kind": "Horizon Stunt Party",
       "title": "Mini Games",
       "points": "3 очка",
-      "conditionHtml": "Завершить любую Horizon Stunt Party.",
+      "conditionHtml": "Завершить любую Horizon Stunt Party. Награда: Blue Baseball Jersey.",
       "howHtml": "Войдите в Horizon Stunt Party и доиграйте мероприятие. После открытия Daily от 09.09 можно одновременно выполнить его третий раунд.",
       "tuneHtml": "Используйте автомобиль по правилам выбранного мероприятия; специальный тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "season-banner.webp",
+        "image": "tile-stunt-party.webp",
         "icon": "FH6_EventFP_StuntParty_Icon.png",
         "position": "center",
-        "sourceUrl": "https://cdn.forza.net/strapi-uploads/assets/small_FH_6_S04_Festival_Playlist_Spring_1920x1080_df22e1ee64.png",
-        "sourceLabel": "Временно: баннер из официального обзора Spring (не плитка активности)"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "preliminary"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -366,89 +352,31 @@
       "kind": "Monthly Rivals",
       "title": "Edamame Circuit",
       "points": "1 очко за сезон",
-      "conditionHtml": "Чистый круг на выданной 1970 Honda N600; 4 очка распределяются по сезонам Series.",
+      "conditionHtml": "Чистый круг на выданной 1970 Honda N600; 4 очка распределяются по сезонам Series. Награда: Super Wheelspin.",
       "howHtml": "Проедьте круг без столкновений, перемотки и автопилота. Если чистый круг уже был зарегистрирован в этой Series, повторять задание не нужно.",
       "tuneHtml": "1970 Honda N600 — выдаётся событием, тюнинг фиксирован.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "season-banner.webp",
+        "image": "tile-monthly-rivals.webp",
         "icon": "FH6_EventFP_MonthlyRivals_Icon.png",
         "position": "center",
-        "sourceUrl": "https://cdn.forza.net/strapi-uploads/assets/small_FH_6_S04_Festival_Playlist_Spring_1920x1080_df22e1ee64.png",
-        "sourceLabel": "Временно: баннер из официального обзора Spring (не плитка активности)"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "preliminary"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     }
   ],
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Отдельная плитка Cuti-e не опубликована. Временно показана нужная 2022 Honda e из текущего Hot Hatch Chasers; это не точная Weekly-плитка.",
-      "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
-      "status": "preliminary"
-    },
-    {
       "activityId": "activity_02_daily",
       "field": "visual",
       "reason": "В Spring-гайде нет отдельной Daily-плитки. Использован текущий значок серии Party Time, не игровая Daily-карточка.",
-      "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "vehicleTune",
-      "reason": "Код 136 098 590 в новом гайде одновременно привязан к 2002 Nissan Silvia Spec-R и 1986 Audi #2 Audi Sport quattro S1. Спорный код не опубликован.",
-      "nextCheck": "Проверить исправления в Spring-гайде и независимые тюнинги текущей недели.",
-      "status": "conflict"
-    },
-    {
-      "activityId": "activity_09_drift_zone",
-      "field": "vehicleTune",
-      "reason": "Код 136 098 590 конфликтует между Silvia и Audi в свежем источнике; до исправления не переносить его в карточку.",
-      "nextCheck": "Проверить исправления в Spring-гайде и независимые тюнинги текущей недели.",
-      "status": "conflict"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "vehicleTune",
-      "reason": "В Spring-гайде для Audi указан тот же 136 098 590, что для Silvia: вероятная ошибка копирования, нужен отдельный подтверждённый код.",
-      "nextCheck": "Проверить исправления в Spring-гайде и независимые тюнинги текущей недели.",
-      "status": "conflict"
-    },
-    {
-      "activityId": "activity_11_horizon_racing",
-      "field": "visual",
-      "reason": "Отдельная текущая плитка Dragonborn не найдена; временно показана официальная Spring-инфографика.",
-      "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_12_eliminator",
-      "field": "visual",
-      "reason": "Отдельная текущая плитка Battle Royale не найдена; временный общий Spring-visual не считается завершённым.",
-      "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_13_stunt_party",
-      "field": "visual",
-      "reason": "Отдельная Spring-плитка Mini Games не опубликована в доступных источниках; старое изображение не переносилось.",
-      "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Monthly подтверждено заново в Spring-источниках, но отдельная текущенедельная плитка не найдена. Изображение Winter не переносилось.",
       "nextCheck": "Проверить Fandom Spring, официальную Playlist и свежие Spring-гайды на отдельную точную плитку.",
       "status": "preliminary"
     }

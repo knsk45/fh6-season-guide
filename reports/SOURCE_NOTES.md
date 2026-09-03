@@ -1,4 +1,33 @@
-# Source notes — 2026-09-03, Series 4 Spring
+# Source notes — 2026-09-04, Series 4 Spring
+
+## Ежедневное уточнение — 2026-09-04, 06:02–06:15 +07:00
+
+- RunId: `fh6-20260904-060229-107804`. Активен прежний сезон: Series 4 «Horizon Mascot Party», Весна, 03.09–10.09.2026, смена в 21:30 по Красноярску. Проверены все 16 обязательных источников; ограничения доступа отдельно перечислены ниже.
+- Состав: 14 карточек, один Daily из 7 заданий, 53 очка. В момент проверки открыт Daily 03.09; задание 04.09 откроется только в 21:30. Не создавался новый сезон по локальной дате.
+- Устранены три пробела тюнинга: **2020 Toyota GR Supra — 584 324 652** (Ito Straight), **1991 Honda Beat — 867 935 515** (Seaside Trail), **1986 Audi #2 Audi Sport quattro S1 — 267 461 712** (Trial), все S1 800. Первый и второй — свежая подборка BigHedDjango, второй независимо повторён у ollumi, третий — текущенедельная competitive-подборка ollumi. Авторы сохраняются только в аудите; публично выводятся машины и коды. В игре рекомендации не тестировались.
+- Конфликтующий 136 098 590 из первоначального гайда по-прежнему не используется. Существующие 140 205 851 и 947 984 645 заново сверены с гайдом Spring 03.09, не перенесены из Winter. Добавлены официальные награды, ориентиры Photo и разгон примерно 830 м с северо-востока для Ito.
+- **Визуальный аудит каждой карточки:** 01 Cuti-e, 03 Photo, 04 Treasure, 05 Unlimited Buddies, 06 Hot Hatch Chasers, 07 Edamame Time Attack, 08 Ito Straight, 09 Seaside Trail, 10 Spring Cleaning, 11 Dragonborn, 12 Battle Royale, 13 Mini Games и 14 Edamame Circuit сверены по названию, машине/условию и награде с текущими плитками [ForzaLabs Spring](https://forza.labsgg.com/series/details). Все 13 скачаны заново в `tile-*.webp`, просмотрены контактным листом; исходное изображение целиком вписано в квадрат без обрезки текста. Размер каждого 36–81 КБ. Для 02 Daily отдельно проверены Fandom, Playlist и свежие Spring-гайды — точной плитки нет, текущий временный значок остаётся preliminary.
+- Итог визуалов: **confirmed=13, community=0, preliminary=1, missing=0**. **openItems=1**: точная игровая Daily-плитка. Карты Photo/Treasure доступны в нижних ссылках; замена картинки Treasure на игровую плитку карту не удаляет. Архивы и постоянные branding/support/analytics сохранены.
+- Обнаруженные ограничения: заголовок официальной Playlist ещё Winter, отдельная Fandom Spring отсутствует; ForzaTune JSON403, Escorenews и DungG не прочитаны полностью. Даты и условия Spring подтверждены доступными официальными таблицей/новостью и свежими независимыми публикациями. Недоступные страницы не заменялись старыми сведениями.
+
+| Источник | Статус и результат текущей проверки |
+|---|---|
+| fandom_series_category | checked: [источник](https://forza.fandom.com/wiki/Category:Series_(FH6)) — MediaWiki API: Series 1–4 и категория Series 5; дату активного сезона определяет официальная таблица, не перечень категорий. |
+| fandom_current | checked: [источник](https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season) — API Spring_Season: missingtitle. API Series_4 revision 169617 подтверждает Spring 03–10.09 и 53 очка. Точной Daily-плитки нет. |
+| forza_playlist | checked: [источник](https://forza.net/fh6playlists) — Таблица Spring подтверждает все 14 карточек, 7 Daily, пороги, маршруты и награды. Верхний заголовок ещё Winter; инструкция страницы прямо называет Spring с 03.09. |
+| forza_news | checked: [источник](https://forza.net/news/forza-horizon-6-series-4) — News и Series 4 подтверждают Spring 03–10.09; новость Drift Attack от 26.08 анонсирует патч 07.09 и следующую Series 10.09, не текущую смену сезона. |
+| forza_support_release_notes | checked: [источник](https://support.forza.net/hc/en-us/articles/54674846729875-FH6-Release-Notes-August-24-2026) — Раздел недоступен, прямая последняя связанная статья August 24 прочитана: Hotfix 1, исправления Road Discovery и vinyl; новых изменений Spring в ней нет. |
+| forza_support_known_issues | checked: [источник](https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues) — Доступна публичная страница с переходом на Feedback Portal; закрытый портал не проверен. Нового подтверждённого ограничения Spring нет. |
+| forza_forums_official | no_current_item: [источник](https://forums.forza.net/tag/official-info/1731) — Редирект на forza.net/forums о закрытии старого форума; текущенедельного официального треда нет. |
+| reddit_forzahorizon | checked: [источник](https://www.reddit.com/r/ForzaHorizon/comments/1w6am49/series_4_playlist_4_spring_competitive_tunes/) — Прочитаны свежие competitive tunes и breakdown 1w67gtq от 03.09. Trial Audi 267461712, Honda Beat 867935515; уточнены ориентиры фото. |
+| reddit_forzahorizon6 | checked: [источник](https://www.reddit.com/r/ForzaHorizon6/comments/1w6hnou/series_04_week_4_spring_seasonal_tunes_mascot/) — Прочитаны Spring-гайды 1w6914y, 1w6hnou, 1w68z4z от 03.09. Supra 584324652 для Ito, Beat 867935515 для Seaside. Старый конфликт 136098590 исключён; карты и два прежних кода подтверждены свежим повторным чтением той же текущенедельной публикации. |
+| reddit_forza | checked: [источник](https://www.reddit.com/r/forza/comments/1w6a0c8/fh6_spring_information_thread_series_4/) — Свежий Spring Information Thread от 03.09: конец 10.09 14:30 UTC, 53 очка; Total Rally включает разные эпохи. |
+| reddit_forzatune | unavailable: [источник](https://www.reddit.com/r/ForzaTune/) — Лента web устарела, live new.json HTTP403; адресный поиск не дал проверяемой текущенедельной публикации. Отсутствие не объявляется исчерпывающим. |
+| forza_horizon_hub | no_current_item: [источник](https://forzahorizonhub.com/) — Сайт доступен, weekly-блок всё ещё Series 1; текущего Spring-материала не найдено. |
+| forza_labs_collector | checked: [источник](https://forza.labsgg.com/collector-tool) — Каталог автомобилей доступен. В текущей официальной Playlist отдельного Collectibles нет, карточка не добавляется искусственно. |
+| forza_labs_map | checked: [источник](https://forza.labsgg.com/interactive-map) — Карта доступна. Дополнительно /series/details уже показывает активный Spring 03.09: скачаны и просмотрены 13 отдельных точных игровых плиток; Daily отсутствует. |
+| escorenews_fh6 | unavailable: [источник](https://escorenews.com/en/games/forza-horizon-6) — Категория и тело свежей статьи 80888 Tokyo City Region недоступны. Поиск нашёл текущую статью, но недоступное содержимое не использовано как доказательство решения. |
+| dungg_playlist | unavailable: [источник](https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF) — Web throttled; HTTP200 оболочки при прямом запросе не даёт читаемый перечень видео. Адресный поиск не дал подтверждённого свежего выпуска; старые видео не переносились. |
 
 ## Внеплановый rollover — 2026-09-03, после 21:30 +07:00
 
