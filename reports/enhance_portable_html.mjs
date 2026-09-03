@@ -2,9 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const reportDir = path.dirname(fileURLToPath(import.meta.url));
+const cliArgs = process.argv.slice(2);
+for (let i = 0; i < cliArgs.length; i += 2) {
+  if (!['--root', '--output'].includes(cliArgs[i]) || !cliArgs[i + 1]) throw new Error('Usage: enhance_portable_html.mjs [--root project] [--output file]');
+}
+const option = (key) => cliArgs.includes(key) ? cliArgs[cliArgs.indexOf(key) + 1] : undefined;
+const reportDir = option('--root') ? path.join(path.resolve(option('--root')), 'reports') : path.dirname(fileURLToPath(import.meta.url));
 const artifactPath = path.join(reportDir, 'artifact.json');
-const htmlPath = path.join(reportDir, 'current-week.html');
+const htmlPath = option('--output') ? path.resolve(option('--output')) : path.join(reportDir, 'current-week.html');
 const statePath = path.join(reportDir, '..', 'data', 'current-season.json');
 const projectPath = path.join(reportDir, '..', 'data', 'project.json');
 const artifact = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
@@ -218,9 +223,7 @@ function writeFileWithRetry(filePath, content, attempts = 8) {
   throw lastError;
 }
 
-writeFileWithRetry(htmlPath, html);
-
-const outputBytes = fs.statSync(htmlPath).size;
+const outputBytes = Buffer.byteLength(html, 'utf8');
 if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
 if ((html.match(/data-activity-block/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
 if ((html.match(/data-support-block/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
@@ -236,4 +239,5 @@ if (html.includes('<iframe') || html.includes('data:image/') || html.includes('d
   throw new Error('Lightweight report still contains a heavy portable runtime or embedded images');
 }
 
+writeFileWithRetry(htmlPath, html);
 console.log(`Built lightweight ${htmlPath}: ${outputBytes} bytes, ${expectedCardCount} cards, 0 iframes`);

@@ -49,7 +49,7 @@ Run in this order:
 
 1. `automation/render_season_markdown.ps1`
 2. `reports/build_artifact.ps1`
-3. the build-report `deliver_portable_artifact.mjs`
+3. `python automation/build_portable_report.py build` — repository-owned compatible provider `fh6-portable/1.0.0`, authorized 2026-09-03 in place of the unavailable legacy plugin file. Require validation/package passed and a verified SHA-bound receipt/ZIP; never call this the original plugin validator. See `docs/RUN_RECOVERY.md` for the contract. Guard supplies a per-run receipt; publisher verifies the current receipt again.
 4. `reports/enhance_portable_html.mjs`
 5. `automation/validate_season.ps1`
 6. `automation/render_steam_guide.ps1` when `data/project.json.steamGuide.enabled=true`

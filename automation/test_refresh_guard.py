@@ -92,6 +92,15 @@ class GuardTests(unittest.TestCase):
             self.run['steps'][name]={'status':'passed'}
         self.run['steamStatus']='UP_TO_DATE'
         self.run['builtFiles']={str(self.guard.state_path):g.digest(self.guard.state_path)}
+        self.run['portableReceipt']='isolated-test-receipt'
+        # Real receipt/package rejection cases run in test_portable_report.py.
+        mock=patch.object(g.portable,'verify_receipt',return_value={'validation':'passed','package':'passed'})
+        self.addCleanup(mock.stop);mock.start()
+
+    def test_receipt_verification_failure_blocks(self):
+        self.complete_fixture()
+        with patch.object(g.portable,'verify_receipt',side_effect=ValueError('tampered package')):
+            self.assertEqual(self.guard.outcome(self.run)[0],'BLOCKED')
 
     def test_all_gates_can_complete(self):
         self.complete_fixture()

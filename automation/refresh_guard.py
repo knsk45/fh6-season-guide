@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import sys
 import time
+import build_portable_report as portable
 from datetime import datetime, timedelta, timezone
 
 ZONE = timezone(timedelta(hours=7))
@@ -209,6 +210,10 @@ class Guard:
         for file, sha in run.get('builtFiles', {}).items():
             if not Path(file).exists() or digest(file) != sha:
                 missing.append('changed built file: ' + file)
+        try:
+            portable.verify_receipt(self.root, Path(run['portableReceipt']))
+        except (KeyError, OSError, ValueError) as error:
+            missing.append('portable receipt: ' + str(error))
         if run.get('steamStatus') not in {'UP_TO_DATE', 'PENDING_CONFIRMATION'}:
             missing.append('Steam not verified')
         if missing or run['blockers']:
@@ -230,13 +235,11 @@ class Guard:
         pwsh = shutil.which('pwsh') or str(dep / 'native/powershell/pwsh.exe')
         node = shutil.which('node') or str(dep / 'node/bin/node.exe')
         ps = lambda file, *args: [pwsh, '-NoProfile', '-File', self.root / file, *args]
-        plugins = Path.home() / '.codex/plugins/cache'
-        deliverers = sorted(plugins.glob('**/skills/build-report/scripts/deliver_portable_artifact.mjs'))
-        preflight = bool(deliverers) and Path(pwsh).exists() and Path(node).exists()
-        run['steps']['preflight'] = {'status': 'passed' if preflight else 'failed', 'at': now(),
-                                    'detail': str(deliverers[-1]) if deliverers else 'Missing trusted deliver_portable_artifact.mjs'}
+        builder = [sys.executable, self.root / 'automation/build_portable_report.py']
+        preflight, _ = self.command(run, 'preflight', builder + ['preflight'], ['PORTABLE_PREFLIGHT=OK'])
+        run['portableReceipt'] = str(self.base / run['runId'] / 'portable-receipt.json')
         if not preflight:
-            run['blockers'].append('Обязательный штатный сборщик deliver_portable_artifact.mjs недоступен; дата отчёта не обновлена.')
+            run['blockers'].append('Совместимый сборщик FH6 не прошёл preflight; дата отчёта не обновлена.')
         if not self.audit_valid(run):
             run['blockers'].append('Полный актуальный аудит не подтверждён.')
         self.save(run)
@@ -245,17 +248,20 @@ class Guard:
             build = [('timestamp', ps('automation/refresh_last_content_update.ps1'), ['LAST_CONTENT_UPDATE=']),
                      ('markdown', ps('automation/render_season_markdown.ps1'), []),
                      ('artifact', ps('reports/build_artifact.ps1'), []),
-                     ('portable', [node, deliverers[-1], '--input', self.root / 'reports/artifact.json', '--output', self.root / 'reports/current-week.html'], []),
+                     ('portable', builder + ['build', '--receipt', run['portableReceipt']], ['PORTABLE_VALIDATION=passed', 'PORTABLE_PACKAGE=passed']),
                      ('html', [node, self.root / 'reports/enhance_portable_html.mjs'], []),
                      ('structure', ps('automation/validate_season.ps1'), ['STRUCTURE_OK'])]
             for name, argv, markers in build:
                 ok, output = self.command(run, name, argv, markers)
                 if not ok:
                     break
-                if name == 'portable' and not ('validation' in output and 'package' in output and 'passed' in output):
-                    run['steps'][name]['status'] = 'failed'
-                    run['blockers'].append('Portable receipt must explicitly confirm validation and package passed.')
-                    self.save(run); break
+                if name in {'portable', 'html', 'structure'}:
+                    try:
+                        portable.verify_receipt(self.root, Path(run['portableReceipt']))
+                    except (KeyError, OSError, ValueError) as error:
+                        run['steps'][name]['status'] = 'failed'
+                        run['blockers'].append('Portable receipt verification failed: ' + str(error))
+                        self.save(run); break
             rebuilt = run['steps'].get('structure', {}).get('status') == 'passed'
             if rebuilt:
                 state = read(self.state_path)

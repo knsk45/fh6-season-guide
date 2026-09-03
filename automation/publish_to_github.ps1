@@ -96,6 +96,18 @@ try {
         throw "Validate FH6 season structure failed."
     }
 
+    # A changed report requires a byte-bound receipt, not success words in a log.
+    git diff --quiet HEAD -- data/current-season.json reports/artifact.json reports/current-week.html reports/assets data/project.json
+    $ReportChanged = $LASTEXITCODE -eq 1
+    if ($LASTEXITCODE -notin @(0, 1)) { throw 'Cannot inspect changed report inputs.' }
+    $PortableReceipt = Join-Path $RepoRoot 'automation/runs/current-portable-receipt.json'
+    if ($ReportChanged -or (Test-Path -LiteralPath $PortableReceipt)) {
+        $PortablePython = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
+        if (-not (Test-Path -LiteralPath $PortablePython)) { $PortablePython = (Get-Command python -ErrorAction Stop).Source }
+        & $PortablePython -X utf8 (Join-Path $PSScriptRoot 'build_portable_report.py') verify
+        Assert-NativeSuccess 'Verify compatible portable package receipt'
+    }
+
     git fetch origin $ExpectedBranch --quiet
     Assert-NativeSuccess "Fetch origin/$ExpectedBranch"
 
@@ -124,6 +136,8 @@ try {
         ":(exclude)docs/steam-review-fh6.txt",
         "automation/refresh_guard.py",
         "automation/test_refresh_guard.py",
+        "automation/build_portable_report.py",
+        "automation/test_portable_report.py",
         "automation/ha_refresh_watchdog.ps1",
         "automation/publish_to_github.ps1",
         "automation/check_steam_guide.ps1",

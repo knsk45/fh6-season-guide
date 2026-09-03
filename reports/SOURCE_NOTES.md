@@ -1,5 +1,30 @@
 # Source notes — 2026-08-27, Series 4 Winter
 
+## Совместимый сборщик и полный повторный аудит — 2026-09-03 07:25 +07:00
+
+- RunId: `fh6-20260903-070936-588374`. По разрешению пользователя введён поддерживаемый проектный сборщик `fh6-portable/1.0.0` вместо отсутствующего legacy-файла плагина. Проверяются artifact/state, HTML, локальные assets, состав/CRC/SHA ZIP и receipt. Это не исходный валидатор плагина. 18 изолированных тестов сборщика и 25 тестов guard прошли; на прежних входных данных HTML сохранён точно, без редизайна.
+- Сводка актуальна — содержательных изменений не требуется. Официальная живая Playlist подтверждает Winter 27.08–03.09, а Spring опубликована заранее. Дедлайн 03.09.2026 21:30 Красноярск; 14 карточек, Daily из 7 заданий, 53 очка. Все семь Daily уже открыты. Новые коды или прошлые сезонные решения не переносились; советы сообщества в игре не тестировались. Расхождения веб-таблицы по Matsumi 70/75 mph и Treasure остаются документированными, данные карточек не меняются.
+- Аудит каждого визуала: AutoZOOM, CultClassic, Ohtani, Micro Circuits, Modern Marvels, Edamame Time Attack, Shirakawa-go, Highland Road, Matsumi Curve, Vision Chaser, Drift Tandem, Mini Games и Edamame Circuit сопоставлены с текущими отдельными плитками ForzaLabs. Для Daily отдельно проверены Fandom (53 изображения, revision 170723), официальный сезон, Reddit и адресный поиск: точного нового кадра нет. Локальные SHA всех 14 файлов закреплены в audit.json. Итог: `confirmed=13`, `community=0`, `preliminary=1`, `missing=0`; `openItems=1` — точная Daily-плитка.
+
+| Источник | Проверка этого запуска |
+|---|---|
+| fandom_series_category | [Категория FH6](https://forza.fandom.com/wiki/Category:Series_(FH6)): HTML недоступен, MediaWiki API доступен; страницы Series 1–4, категория Series 5. |
+| fandom_current | [Winter](https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Winter_Season): HTML недоступен, API revision 170723, 53 изображения; нового Daily нет. |
+| forza_playlist | [Живая Playlist](https://forza.net/fh6playlists): активная Winter; заголовок 27 августа — 3 сентября, Spring как предстоящая. |
+| forza_news | [Новости](https://forza.net/news), [Series 4](https://forza.net/news/forza-horizon-6-series-4), [Drift Attack](https://forza.net/news/forza-horizon-6-drift-attack): сентябрьские анонсы не меняют текущую неделю. |
+| forza_support_release_notes | [Раздел](https://support.forza.net/hc/en-us/sections/360000121153-Release-Notes-and-Known-Issues) и [прямая статья 24.08](https://support.forza.net/hc/en-us/articles/54674846729875-FH6-Release-Notes-August-24-2026) в этой попытке недоступны; прежнее успешное чтение не выдано за новое. |
+| forza_support_known_issues | [Known Issues](https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues) доступна, новых условий текущей недели нет; Feedback Portal за авторизацией не проверен. |
+| forza_forums_official | [Official-info](https://forums.forza.net/tag/official-info/1731) перенаправляет на страницу закрытых форумов; свежего треда нет. |
+| reddit_forzahorizon | [Текущенедельный tuning guide](https://www.reddit.com/r/ForzaHorizon/comments/1w1q972/fh6_series_4_winter_tuning_guide/) доступен; альтернативы не требуют заменять подтверждённые рекомендации. |
+| reddit_forzahorizon6 | [Winter guide](https://www.reddit.com/r/ForzaHorizon6/comments/1vzu6tb/fh6_series_4_winter_festival_playlist_guide/) и [Seasonal Tunes](https://www.reddit.com/r/ForzaHorizon6/comments/1vzvho1/seasonal_tunes_by_awes0me_beau/) доступны; текущие ограничения и коды подтверждаются. |
+| reddit_forza | [Winter Information Thread](https://www.reddit.com/r/forza/comments/1vzy764/fh6_winter_information_thread_series_4/) подтверждает 53 очка, семь Daily и смену 03.09 14:30 UTC. |
+| reddit_forzatune | [Лента](https://www.reddit.com/r/ForzaTune/new/) доступна в индексе, но снимок старый; адресный поиск текущей Winter не нашёл свежей подходящей публикации. Не использована для новых кодов. |
+| forza_horizon_hub | [Hub](https://forzahorizonhub.com/) доступен; сезонный блок Series 1 непригоден как подтверждение текущей недели. |
+| forza_labs_collector | [Collector Tool](https://forza.labsgg.com/collector-tool): веб-извлечение недоступно, прямой HTTP 200, каталог 628; нового материала для пробелов нет. |
+| forza_labs_map | [Карта](https://forza.labsgg.com/interactive-map) и [Series Details](https://forza.labsgg.com/series/details) доступны; Winter и 13 отдельных плиток, без Daily. |
+| escorenews_fh6 | Категория недоступна; [недельный гайд](https://escorenews.com/ru/article/80714-polnyj-gayd-na-ispytaniya-festivalya-v-zimniy-sezon-seriya-4-v-forza-horizon-6-luchshie-mashiny-i-tyuning) открыт; оснований менять карточки не установлено. |
+| dungg_playlist | [Плейлист](https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF) недоступен; адресный поиск не подтвердил выпуск текущей недели. Старые видео не переносились. |
+
 ## Защищённый внеплановый запуск — 2026-09-03 06:58 +07:00
 
 - RunId: `fh6-20260903-065612-941360`. После внедрения трёх уровней защиты повторно проверены все 16 обязательных источников и каждый из 14 визуалов. Данные активной Winter подтверждены официальной Playlist; Spring в таблице — предстоящий сезон. Дедлайн: 03.09.2026 21:30 Красноярск, 53 очка. Сводка актуальна по доступным источникам — содержательных изменений не требуется; успешная пересборка ещё не заявляется.

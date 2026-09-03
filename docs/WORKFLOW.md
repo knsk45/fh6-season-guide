@@ -64,7 +64,7 @@
 
 1. `automation/render_season_markdown.ps1`.
 2. `reports/build_artifact.ps1`.
-3. Штатный `deliver_portable_artifact.mjs` из навыка build-report; validation и package должны пройти.
+3. `python automation/build_portable_report.py build` — совместимый проектный сборщик, provider `fh6-portable/1.0.0`; требуются `PORTABLE_VALIDATION=passed`, `PORTABLE_PACKAGE=passed` и проверенный receipt/ZIP. Он заменяет удалённый из кэша legacy `deliver_portable_artifact.mjs`, не выдавая себя за валидатор плагина. Контракт — в `docs/RUN_RECOVERY.md`.
 4. `reports/enhance_portable_html.mjs`.
 5. `automation/validate_season.ps1`; обязательный результат — `STRUCTURE_OK`.
 6. `automation/publish_to_github.ps1`.
