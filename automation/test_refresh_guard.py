@@ -156,4 +156,28 @@ class GuardTests(unittest.TestCase):
         Path(self.run['resultPath']).write_text('{}')
         with self.assertRaises(RuntimeError):self.guard.deliver(self.run)
 
+    def test_transient_windows_rename_lock_is_retried(self):
+        path=self.root/'retry.json'
+        original=g.os.replace
+        calls=[]
+        def locked_once(src,dest):
+            calls.append(1)
+            if len(calls)==1:raise PermissionError('temporary Windows sharing lock')
+            return original(src,dest)
+        with patch.object(g.os,'replace',side_effect=locked_once),patch.object(g.time,'sleep'):
+            g.atomic(path,{'saved':True})
+        self.assertEqual(g.read(path),{'saved':True})
+        self.assertEqual(len(calls),2)
+
+    def test_permanent_rename_failure_preserves_previous_checkpoint(self):
+        path=self.root/'retry.json';g.atomic(path,{'previous':True})
+        with patch.object(g.os,'replace',side_effect=PermissionError('permanent lock')),patch.object(g.time,'sleep'):
+            with self.assertRaises(PermissionError):g.atomic(path,{'new':True})
+        self.assertEqual(g.read(path),{'previous':True})
+
+    def test_status_is_readable_while_executor_holds_lock(self):
+        with g.exclusive(self.guard.base/'process.lock'):
+            p=g.subprocess.run([g.sys.executable,str(Path(g.__file__)),'status','--root',str(self.root)],capture_output=True)
+        self.assertEqual(p.returncode,0,p.stderr)
+
 if __name__=='__main__':unittest.main()

@@ -9,6 +9,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 
 ZONE = timezone(timedelta(hours=7))
@@ -30,7 +31,16 @@ def atomic(path, value):
         stream.write('\n')
         stream.flush()
         os.fsync(stream.fileno())
-    os.replace(temp, path)
+    # OneDrive/AV or a concurrent read may briefly deny Windows rename sharing.
+    # Keep the previous valid checkpoint until replacement succeeds; never truncate it.
+    for attempt in range(12):
+        try:
+            os.replace(temp, path)
+            break
+        except PermissionError:
+            if attempt == 11:
+                raise
+            time.sleep(min(0.1 * (attempt + 1), 0.5))
 
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -350,7 +360,8 @@ def main():
     parser.add_argument('--input')
     args = parser.parse_args()
     guard = Guard(args.root)
-    with exclusive(guard.base / 'process.lock'):
+    # Atomic replacement permits observers during an active executor; only mutations lock.
+    with (contextlib.nullcontext() if args.action == 'status' else exclusive(guard.base / 'process.lock')):
         run = guard.start() if args.action == 'start' else guard.load()
         if args.action == 'audit':
             guard.audit(run, args.input)
