@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 03.09.2026 21:30 — 10.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 04.09.2026 06:16
+> Обновлено: 05.09.2026 06:05
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Cuti-e · 5 очков
@@ -15,23 +15,23 @@
 ## 02. Daily Challenges — 7 ежедневных заданий · 7 × 1 очко
 
 - **Условие:** <ol><li><strong>03.09:</strong> 3 навыка Drift или E-Drift.</li><li><strong>04.09:</strong> потратить 15 000 CR на улучшения.</li><li><strong>05.09:</strong> получить минимум 1 звезду в Speed Zone.</li><li><strong>06.09:</strong> открыть Wheelspin или Super Wheelspin.</li><li><strong>07.09:</strong> купить Aftermarket Car.</li><li><strong>08.09:</strong> проехать 16,1 км.</li><li><strong>09.09:</strong> завершить третий раунд Horizon Stunt Party.</li></ol> Награда за каждый день: 5 000 CR.
-- **Как выполнить:** Задания открываются по одному в указанные дни в 21:30 по Красноярску. На старте доступно только задание 03.09. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.
+- **Как выполнить:** Задания открываются по одному в указанные дни в 21:30 по Красноярску. На момент проверки 05.09 доступны задания 03–04.09; задание 05.09 откроется вечером. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.
 - **Автомобиль и тюнинг:** Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>Временно: значок Party Time из Spring-гайда</a>
 
 ## 03. Photo Challenge — #PeasInAPod · 2 очка
 
 - **Условие:** Сделать фото в зоне Edamame на Horizon Mascot Party. Награда: эмоция So Cute.
-- **Как выполнить:** На стадионе в Minamino найдите зелёную зону Edamame по карте ниже: ориентиры — зелёные щиты Minamino Region и фигуры стручков. Сделайте снимок в фоторежиме; если он не засчитался, переместитесь внутри этой зоны и повторите.
+- **Как выполнить:** На стадионе в Minamino найдите зелёную зону Edamame по карте ниже: ориентиры — зелёные щиты Minamino Region и фигуры стручков. Встаньте под фиолетовым значком на мини-карте, в свободном месте между двумя группами фигур, и сделайте снимок. Если он не засчитался, полностью перезапустите игру и повторите фото в той же точке.
 - **Автомобиль и тюнинг:** Подойдёт любой автомобиль; тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href="https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/photo-map.webp" target="_blank" rel="noopener noreferrer">Карта зоны Edamame</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">Игровая плитка Spring</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1w67gtq/fh6_series_4_spring_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Ориентиры для фото</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>Точная игровая плитка Spring 03–10.09 из ForzaLabs</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href="https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/photo-map.webp" target="_blank" rel="noopener noreferrer">Карта зоны Edamame</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">Игровая плитка Spring</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1w67gtq/fh6_series_4_spring_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Ориентиры и подтверждения игроков</a> · <a href="https://escorenews.com/en/article/80887-peasinapod-photo-challenge-in-spring-series-4-of-forza-horizon-6-festival-playlist-where-is-edamame-area-at-the-mascot-party" target="_blank" rel="noopener noreferrer">Независимый гайд Photo</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>Точная игровая плитка Spring 03–10.09 из ForzaLabs</a>
 
 ## 04. Treasure Hunt — Tokyo City Region · 3 очка
 
 - **Условие:** Найти сокровище по фотоподсказке в Tokyo City. Награда: 100 000 CR.
-- **Как выполнить:** Откройте карту ниже: красным кругом отмечен квартал, значком сундука — точная точка. Подъезжайте по соседним улицам и разбейте сундук.
+- **Как выполнить:** Откройте карту ниже: сундук находится возле задания Delivery Job, на второстепенной дороге, обозначенной бирюзовым пунктиром. Красным кругом отмечен квартал, значком сундука — точная точка; подъезжайте по соседним улицам и разбейте сундук.
 - **Автомобиль и тюнинг:** Подойдёт любой автомобиль; тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href="https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/treasure-map.webp" target="_blank" rel="noopener noreferrer">Карта сундука — спойлер</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">Игровая плитка Spring</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>Точная игровая плитка Spring 03–10.09 из ForzaLabs</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href="https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/treasure-map.webp" target="_blank" rel="noopener noreferrer">Карта сундука — спойлер</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">Игровая плитка Spring</a> · <a href="https://escorenews.com/en/article/80888-tokyo-city-region-treasure-hunt-in-forza-horizon-6-spring-series-4-treasure-chest-location" target="_blank" rel="noopener noreferrer">Независимое подтверждение точки</a> · <a href='https://forza.labsgg.com/series/details' target='_blank' rel='noopener noreferrer'>Точная игровая плитка Spring 03–10.09 из ForzaLabs</a>
 
 ## 05. Seasonal Championship — Unlimited Buddies · 5 очков
 
