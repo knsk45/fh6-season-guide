@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 03.09.2026 21:30 — 10.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 05.09.2026 06:05
+> Обновлено: 06.09.2026 06:04
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Cuti-e · 5 очков
@@ -15,7 +15,7 @@
 ## 02. Daily Challenges — 7 ежедневных заданий · 7 × 1 очко
 
 - **Условие:** <ol><li><strong>03.09:</strong> 3 навыка Drift или E-Drift.</li><li><strong>04.09:</strong> потратить 15 000 CR на улучшения.</li><li><strong>05.09:</strong> получить минимум 1 звезду в Speed Zone.</li><li><strong>06.09:</strong> открыть Wheelspin или Super Wheelspin.</li><li><strong>07.09:</strong> купить Aftermarket Car.</li><li><strong>08.09:</strong> проехать 16,1 км.</li><li><strong>09.09:</strong> завершить третий раунд Horizon Stunt Party.</li></ol> Награда за каждый день: 5 000 CR.
-- **Как выполнить:** Задания открываются по одному в указанные дни в 21:30 по Красноярску. На момент проверки 05.09 доступны задания 03–04.09; задание 05.09 откроется вечером. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.
+- **Как выполнить:** Задания открываются по одному в указанные дни в 21:30 по Красноярску. На момент проверки 06.09 доступны задания 03–05.09; задание 06.09 откроется вечером. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.
 - **Автомобиль и тюнинг:** Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальные условия</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href='https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/' target='_blank' rel='noopener noreferrer'>Временно: значок Party Time из Spring-гайда</a>
 
