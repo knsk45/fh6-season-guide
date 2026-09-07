@@ -6,6 +6,7 @@ import json
 import re
 from pathlib import Path
 import shutil
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -26,6 +27,10 @@ class PortableTests(unittest.TestCase):
             'automation/mark_steam_guide_published.ps1','automation/check_steam_guide.ps1']:
             target=cls.root/name;target.parent.mkdir(parents=True,exist_ok=True)
             shutil.copyfile(source/name,target)
+        # Recreate generated files inside the isolated fixture so a source-schema
+        # change is tested without relying on a previously published report.
+        subprocess.run([b.runtime('pwsh'), '-NoProfile', '-File', str(cls.root/'reports/build_artifact.ps1')], cwd=cls.root, check=True)
+        subprocess.run([b.runtime('node'), str(cls.root/'reports/enhance_portable_html.mjs')], cwd=cls.root, check=True)
         cls.state=b.read(cls.root/'data/current-season.json')
         cls.artifact=b.read(cls.root/'reports/artifact.json')
         cls.project=b.read(cls.root/'data/project.json')
@@ -51,7 +56,7 @@ class PortableTests(unittest.TestCase):
 
     def bad_artifact(self,modify):
         artifact=copy.deepcopy(self.artifact);modify(artifact)
-        with self.assertRaises(ValueError):b.validate_artifact(self.root,self.state,artifact)
+        with self.assertRaises(ValueError):b.validate_artifact(self.root,self.state,artifact,self.project)
 
     def test_missing_card_rejected(self):self.bad_artifact(lambda a:a['manifest']['blocks'].pop())
     def test_reordered_cards_rejected(self):self.bad_artifact(lambda a:a['manifest']['blocks'].reverse())
@@ -73,6 +78,13 @@ class PortableTests(unittest.TestCase):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<script>alert(1)</script>'))
     def test_event_handler_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('<img ','<img onerror="alert(1)" ',1)))
+    def test_overlay_key_mismatch_rejected(self):
+        def mismatch(artifact):
+            block=next(b for b in artifact['manifest']['blocks'] if b['id']=='activity_03_photo')
+            body, changed=re.subn('data-overlay-icon="photo-challenge"','data-overlay-icon="treasure-hunt"',block['body'])
+            self.assertEqual(changed,1)
+            block['body']=body
+        self.bad_artifact(mismatch)
     def test_traversal_rejected(self):
         with self.assertRaises(ValueError):b.safe_path(self.root,'../outside.txt')
     def test_missing_favicon_rejected(self):

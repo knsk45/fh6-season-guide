@@ -131,7 +131,7 @@ def links(nodes):
         result.append((a.attrs['href'], ' '.join(a.text().split())))
     return result
 
-def validate_artifact(root, state, artifact):
+def validate_artifact(root, state, artifact, project):
     season, manifest, snapshot = state['season'], artifact['manifest'], artifact['snapshot']
     require(artifact['surface'] == manifest['surface'] == 'dashboard', 'Unsupported portable surface')
     require(manifest['version'] == snapshot['version'] == 1, 'Unsupported manifest/snapshot version')
@@ -163,10 +163,19 @@ def validate_artifact(root, state, artifact):
         expected_links = links(Document(card['sourceHtml']).root.all('a'))
         expected_links.append((card['visual'].get('sourceUrl') or season['fandomUrl'], card['visual'].get('sourceLabel') or 'изображение и иконка: Forza Wiki'))
         require(links(doc.all('a')) == expected_links, 'Artifact source links differ from state')
+        names = [season['assetsDirectory'] + '/' + card['visual']['image']]
+        overlay_key = card['visual'].get('overlayIconKey')
+        overlays = [node for node in doc.all('span', 'activity-icon')]
+        if overlay_key:
+            library = project.get('activityIconLibrary', {})
+            require(overlay_key in library, 'Unknown overlay icon key: ' + str(overlay_key))
+            names.append(library[overlay_key])
+            require(len(overlays) == 1 and overlays[0].attrs.get('data-overlay-icon') == overlay_key, 'Card overlay icon differs from state')
+        else:
+            require(not overlays, 'Card must not render an overlay icon without a source-tile icon')
         images = doc.all('img')
-        require(len(images) == 2, 'Each card needs image and icon')
-        for image, key in zip(images, ['image','icon']):
-            name = season['assetsDirectory'] + '/' + card['visual'][key]
+        require(len(images) == len(names), 'Card image/overlay count differs from state')
+        for image, name in zip(images, names):
             asset = safe_path(root, name)
             require(name.startswith('reports/assets/'), 'Asset outside reports/assets')
             require(image.attrs.get('data-local-src') == name.removeprefix('reports/'), 'Image references wrong season asset')
@@ -225,7 +234,7 @@ def verify_receipt(root, path):
     required = set(CHAIN + ['data/current-season.json','data/project.json','reports/artifact.json'])
     require(set(receipt['inputs']) == required, 'Receipt input coverage incomplete')
     state, project, artifact = read(root/'data/current-season.json'), read(root/'data/project.json'), read(root/'reports/artifact.json')
-    validate_artifact(root, state, artifact)
+    validate_artifact(root, state, artifact, project)
     current = validate_html(root, (root/'reports/current-week.html').read_text(encoding='utf-8'), state, artifact, project)
     current['current-week.html'] = sha(root/'reports/current-week.html')
     require(current == receipt['files'], 'Published package file set changed')
@@ -239,7 +248,7 @@ def verify_receipt(root, path):
 def build(root, receipt_path):
     preflight(root)
     state, project, artifact = read(root/'data/current-season.json'), read(root/'data/project.json'), read(root/'reports/artifact.json')
-    validate_artifact(root, state, artifact)
+    validate_artifact(root, state, artifact, project)
     checked = subprocess.run([runtime('pwsh'), '-NoProfile', '-File', str(root/'automation/validate_season.ps1'), '-SkipOutputs'], capture_output=True, text=True, encoding='utf-8', timeout=60)
     require(checked.returncode == 0 and 'STRUCTURE_OK' in checked.stdout, 'State validation failed: ' + checked.stdout + checked.stderr)
     inputs = {name: sha(root/name) for name in CHAIN + ['data/current-season.json','data/project.json','reports/artifact.json']}

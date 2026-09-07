@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-07T22:05:41+07:00",
+  "lastContentUpdate": "2026-09-07T22:31:17+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -32,6 +32,7 @@
       "visual": {
         "image": "tile-weekly.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
+        "overlayIconKey": null,
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -57,6 +58,7 @@
       "visual": {
         "image": "tile-daily.jpg",
         "icon": "FH6_EventSeasonal_Stunt_Icon.png",
+        "overlayIconKey": null,
         "position": "center",
         "sourceUrl": "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season",
         "sourceLabel": "Производный визуал из семи точных иконок Daily текущей Spring-недели на Fandom"
@@ -82,6 +84,7 @@
       "visual": {
         "image": "tile-photo.webp",
         "icon": "FH6_EventFP_PhotoChallenge_Icon.png",
+        "overlayIconKey": "photo-challenge",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -107,6 +110,7 @@
       "visual": {
         "image": "tile-treasure.webp",
         "icon": "FH6_EventFP_TreasureHunt_Icon.png",
+        "overlayIconKey": "treasure-hunt",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -132,6 +136,7 @@
       "visual": {
         "image": "tile-unlimited-buddies.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
+        "overlayIconKey": "championship-cross-country",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -157,6 +162,7 @@
       "visual": {
         "image": "tile-hot-hatch.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
+        "overlayIconKey": "championship-street",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -182,6 +188,7 @@
       "visual": {
         "image": "tile-time-attack.webp",
         "icon": "FH6_EventSeasonal_Drive_Icon.png",
+        "overlayIconKey": "time-attack",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -207,6 +214,7 @@
       "visual": {
         "image": "tile-speed-trap.webp",
         "icon": "FH6_EventFP_SpeedTrap_Icon.png",
+        "overlayIconKey": "speed-trap",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -232,6 +240,7 @@
       "visual": {
         "image": "tile-drift-zone.webp",
         "icon": "FH6_EventFP_DriftZone_Icon.png",
+        "overlayIconKey": "drift-zone",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -257,6 +266,7 @@
       "visual": {
         "image": "tile-trial.webp",
         "icon": "FH6_EventFP_Trial_Icon.png",
+        "overlayIconKey": "trial",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -282,6 +292,7 @@
       "visual": {
         "image": "tile-horizon-racing.webp",
         "icon": "FH6_EventFP_HorizonPlay_Icon.png",
+        "overlayIconKey": "horizon-play",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -307,6 +318,7 @@
       "visual": {
         "image": "tile-eliminator.webp",
         "icon": "FH6_EventFP_HorizonPlay_Icon.png",
+        "overlayIconKey": null,
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -332,6 +344,7 @@
       "visual": {
         "image": "tile-stunt-party.webp",
         "icon": "FH6_EventFP_StuntParty_Icon.png",
+        "overlayIconKey": null,
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
@@ -357,6 +370,7 @@
       "visual": {
         "image": "tile-monthly-rivals.webp",
         "icon": "FH6_EventFP_MonthlyRivals_Icon.png",
+        "overlayIconKey": "monthly-rivals",
         "position": "center",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"

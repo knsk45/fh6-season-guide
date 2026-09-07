@@ -19,7 +19,7 @@ Keep activities in game order. Every activity has:
 - stable sequential `id` and two-digit `number`;
 - `kind`, `title`, `points`;
 - `conditionHtml`, `howHtml`, `tuneHtml`, `sourceHtml`;
-- `visual.image`, `visual.icon`, `visual.position`, source URL and label;
+- `visual.image`, `visual.icon`, `visual.overlayIconKey`, `visual.position`, source URL and label. `overlayIconKey` is `null` when the source tile has no upper-right activity icon; otherwise it names the matching reusable icon from `data/project.json.activityIconLibrary`. Horizon Play deliberately uses `horizon-play` even without a tile-corner icon;
 - `completeness` states for `condition`, `solution`, `vehicleTune`, and `visual`;
 - `missingFields` containing every intentionally empty or provisional field.
 

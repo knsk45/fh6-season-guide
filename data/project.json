@@ -5,6 +5,18 @@
     "appleTouchIcon": "reports/assets/project/fh6-season-guide-icon-v2-180.png",
     "themeColor": "#071014"
   },
+  "activityIconLibrary": {
+    "photo-challenge": "reports/assets/activity-icons/photo-challenge.png",
+    "treasure-hunt": "reports/assets/activity-icons/treasure-hunt.png",
+    "championship-cross-country": "reports/assets/activity-icons/championship-cross-country.png",
+    "championship-street": "reports/assets/activity-icons/championship-street.png",
+    "time-attack": "reports/assets/activity-icons/time-attack.png",
+    "speed-trap": "reports/assets/activity-icons/speed-trap.png",
+    "drift-zone": "reports/assets/activity-icons/drift-zone.png",
+    "trial": "reports/assets/activity-icons/trial.png",
+    "horizon-play": "reports/assets/activity-icons/horizon-play.png",
+    "monthly-rivals": "reports/assets/activity-icons/monthly-rivals.png"
+  },
   "support": {
     "enabled": true,
     "title": "Сказать Спасибо (поддержать проект)",

@@ -37,6 +37,7 @@ catch {
 $branding = $null
 $support = $null
 $analytics = $null
+$activityIconLibrary = $null
 $requiredSources = @()
 if ($project) {
     if ($project.schemaVersion -ne 1) { Add-ValidationError 'project schemaVersion must be 1' }
@@ -52,6 +53,19 @@ if ($project) {
             $brandingAssetPath = Get-FullProjectPath ([string]$branding.$assetName)
             if (-not $brandingAssetPath.StartsWith($projectAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError "project.branding.$assetName must stay under reports/assets/project/" }
             elseif (-not (Test-Path -LiteralPath $brandingAssetPath)) { Add-ValidationError "project.branding.$assetName is missing: $brandingAssetPath" }
+        }
+    }
+    $activityIconLibrary = $project.activityIconLibrary
+    if ($null -eq $activityIconLibrary -or @($activityIconLibrary.PSObject.Properties).Count -eq 0) { Add-ValidationError 'project.activityIconLibrary must contain reusable overlay icons' }
+    else {
+        $iconLibraryRoot = Get-FullProjectPath 'reports/assets/activity-icons'
+        foreach ($entry in $activityIconLibrary.PSObject.Properties) {
+            if ($entry.Name -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') { Add-ValidationError "project.activityIconLibrary has invalid key: $($entry.Name)" }
+            $iconPath = [string]$entry.Value
+            if ($iconPath -notmatch '^reports/assets/activity-icons/[A-Za-z0-9._-]+\.png$') { Add-ValidationError "project.activityIconLibrary.$($entry.Name) must be a direct PNG in reports/assets/activity-icons/"; continue }
+            $fullIconPath = Get-FullProjectPath $iconPath
+            if (-not $fullIconPath.StartsWith($iconLibraryRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError "project.activityIconLibrary.$($entry.Name) escapes reports/assets/activity-icons/" }
+            elseif (-not (Test-Path -LiteralPath $fullIconPath)) { Add-ValidationError "project.activityIconLibrary.$($entry.Name) is missing: $fullIconPath" }
         }
     }
     $support = $project.support
@@ -211,6 +225,12 @@ if ($state) {
                 $assetPath = Join-Path $assetRoot $asset
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "$($card.id) references missing asset: $assetPath" }
             }
+        }
+        if ($null -eq $card.visual.PSObject.Properties['overlayIconKey']) { Add-ValidationError "$($card.id).visual.overlayIconKey is required (use null when the tile has no upper-right icon)" }
+        $overlayKey = $card.visual.overlayIconKey
+        if ($null -ne $overlayKey -and -not [string]::IsNullOrWhiteSpace([string]$overlayKey)) {
+            if ([string]$overlayKey -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') { Add-ValidationError "$($card.id).visual.overlayIconKey is invalid" }
+            elseif ($null -eq $activityIconLibrary.PSObject.Properties[[string]$overlayKey]) { Add-ValidationError "$($card.id).visual.overlayIconKey is not in project.activityIconLibrary: $overlayKey" }
         }
     }
 

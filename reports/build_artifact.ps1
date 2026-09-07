@@ -9,12 +9,14 @@ if (-not $StatePath) {
 }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
 $artifactPath = Join-Path $PSScriptRoot 'artifact.json'
+$ProjectConfigPath = Join-Path $projectRoot 'data\project.json'
 
 if (-not (Test-Path -LiteralPath $StatePath)) {
     throw "Season state was not found: $StatePath"
 }
 
 $state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
 $season = $state.season
 $activities = @($state.activities)
 $expectedCardCount = [int]$season.expectedCardCount
@@ -37,9 +39,10 @@ if (-not $assetRoot.StartsWith($reportsAssetsRoot, [StringComparison]::OrdinalIg
     throw "assetsDirectory must stay inside reports/assets: $assetRoot"
 }
 $assetWebRoot = (($season.assetsDirectory -replace '\\', '/') -replace '^reports/', '').TrimEnd('/')
+$activityIconLibrary = $project.activityIconLibrary
+if ($null -eq $activityIconLibrary) { throw 'data/project.json must contain activityIconLibrary' }
 
-function Get-AssetDataUri([string]$FileName) {
-    $path = Join-Path $assetRoot $FileName
+function Get-ImageDataUri([string]$Path) {
     if (-not (Test-Path -LiteralPath $path)) {
         throw "Missing report asset: $path"
     }
@@ -53,6 +56,28 @@ function Get-AssetDataUri([string]$FileName) {
     }
     $base64 = [Convert]::ToBase64String([IO.File]::ReadAllBytes($path))
     return "data:$mime;base64,$base64"
+}
+
+function Get-AssetDataUri([string]$FileName) {
+    $path = Join-Path $assetRoot $FileName
+    return Get-ImageDataUri $path
+}
+
+function Get-LibraryIconDataUri([string]$OverlayKey) {
+    $property = $activityIconLibrary.PSObject.Properties[$OverlayKey]
+    if ($null -eq $property -or [string]::IsNullOrWhiteSpace([string]$property.Value)) {
+        throw "Unknown activity overlay icon key: $OverlayKey"
+    }
+    $relativePath = ([string]$property.Value) -replace '\\', '/'
+    if ($relativePath -notmatch '^reports/assets/activity-icons/[A-Za-z0-9._-]+\.png$') {
+        throw "Activity overlay icon must be a direct PNG in reports/assets/activity-icons/: $relativePath"
+    }
+    $path = [IO.Path]::GetFullPath((Join-Path $projectRoot $relativePath))
+    $libraryRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot 'assets\activity-icons'))
+    if (-not $path.StartsWith($libraryRoot, [StringComparison]::OrdinalIgnoreCase)) {
+        throw "Activity overlay icon escapes the local library: $relativePath"
+    }
+    return [ordered]@{ dataUri = (Get-ImageDataUri $path); webPath = ($relativePath -replace '^reports/', '') }
 }
 
 function Add-PerformanceIndexBadges([string]$Html) {
@@ -78,7 +103,11 @@ function New-CardHtml($card) {
         throw "No visual mapping for $($card.id)"
     }
     $cardImage = Get-AssetDataUri $visual.image
-    $cardIcon = Get-AssetDataUri $visual.icon
+    $overlayMarkup = ''
+    if ($null -ne $visual.overlayIconKey -and -not [string]::IsNullOrWhiteSpace([string]$visual.overlayIconKey)) {
+        $overlay = Get-LibraryIconDataUri ([string]$visual.overlayIconKey)
+        $overlayMarkup = "<span class=`"activity-icon`" data-overlay-icon=`"$($visual.overlayIconKey)`"><img src=`"$($overlay.dataUri)`" data-local-src=`"$($overlay.webPath)`" loading=`"lazy`" decoding=`"async`" alt=`"Иконка $($card.kind)`"></span>"
+    }
     $imagePosition = if ($visual.position) { $visual.position } else { '50% 50%' }
     $imageSourceUrl = if ($visual.sourceUrl) { $visual.sourceUrl } else { $season.fandomUrl }
     $imageSourceLabel = if ($visual.sourceLabel) { $visual.sourceLabel } else { 'изображение и иконка: Forza Wiki' }
@@ -88,12 +117,12 @@ function New-CardHtml($card) {
     $tuneHtml = Add-PerformanceIndexBadges ([string]$card.tuneHtml)
     @"
 <style>
-  :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual>img{display:block;width:190px;height:190px;object-fit:cover;object-position:center;filter:saturate(.96) contrast(1.04) brightness(.78)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;top:10px;right:10px;display:grid;place-items:center;width:66px;height:66px;filter:drop-shadow(0 5px 8px #000b)}.activity-icon img{position:relative;z-index:1;width:66px;height:66px;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 1px 2px #000)}.number{position:absolute;z-index:2;left:12px;bottom:12px;display:flex;align-items:center;min-width:58px;height:42px;padding:0 11px 0 10px;border:1px solid #effff44a;border-left:4px solid #d9ff00;border-radius:7px;background:#071014e6;box-shadow:0 6px 18px #0009;color:#fff;font-variant-numeric:tabular-nums;font-weight:950;font-size:28px;line-height:1;letter-spacing:-.5px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual>img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
+  :root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071014;color:#eef6f5;font-family:Inter,Segoe UI,Arial,sans-serif}.card{overflow:hidden;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#111c21,#081014);box-shadow:0 18px 40px #0008}.wrap{display:grid;grid-template-columns:230px 1fr;gap:0}.visual{position:relative;width:190px;height:190px;align-self:start;margin:20px;background:#111;overflow:hidden;border-radius:14px}.visual>img{display:block;width:190px;height:190px;object-fit:cover;object-position:center;filter:saturate(.96) contrast(1.04) brightness(.78)}.visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,#061014dd)}.activity-icon{position:absolute;z-index:2;top:10px;right:10px;display:grid;place-items:center;width:66px;height:66px;filter:drop-shadow(0 5px 8px #000b)}.activity-icon img{position:relative;z-index:1;width:66px;height:66px;object-fit:contain;filter:drop-shadow(0 1px 2px #000)}.number{position:absolute;z-index:2;left:12px;bottom:12px;display:flex;align-items:center;min-width:58px;height:42px;padding:0 11px 0 10px;border:1px solid #effff44a;border-left:4px solid #d9ff00;border-radius:7px;background:#071014e6;box-shadow:0 6px 18px #0009;color:#fff;font-variant-numeric:tabular-nums;font-weight:950;font-size:28px;line-height:1;letter-spacing:-.5px}.content{padding:20px 24px 20px 0}.eyebrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#b8ccd1;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.points{border-radius:999px;background:#e4007f;color:white;padding:5px 9px;letter-spacing:0;text-transform:none}h2{margin:7px 0 13px;font-size:26px;line-height:1.05;color:#fff}p{margin:9px 0;line-height:1.48}.label{color:#d9ff00;font-weight:800}.tune{padding:10px 12px;border-left:3px solid #d9ff00;background:#0e2025;border-radius:0 9px 9px 0}code{white-space:nowrap;background:#1d3238;border:1px solid #36515a;border-radius:6px;padding:2px 6px;color:#fff}.sources{margin-top:14px;padding-top:10px;border-top:1px solid #29434b;color:#8ea8ae;font-size:12px}.sources a{color:#9fd7ff}.days{margin:8px 0;padding-left:20px}.days li{margin:7px 0;line-height:1.42}@media(max-width:650px){.wrap{grid-template-columns:1fr}.visual{width:170px;height:170px;margin:18px auto 0}.visual>img{width:170px;height:170px}.content{padding:18px}h2{font-size:23px}}
   .pi-badge{--pi-color:#5d6871;display:inline-grid;grid-template-columns:auto auto;align-items:stretch;min-width:62px;height:1.2em;margin:0 .12em;overflow:hidden;border:1px solid #ffffff40;border-radius:3px;background:#f3f6f7;color:#0a1013;font-size:.82em;font-weight:950;line-height:1;vertical-align:.02em;box-shadow:0 2px 6px #0007;transform:skew(-7deg)}.pi-badge>span{display:grid;place-items:center;transform:skew(7deg)}.pi-class{min-width:26px;padding:0 5px;background:var(--pi-color);color:#fff;text-shadow:0 1px 2px #0009}.pi-score{min-width:34px;padding:0 6px;font-variant-numeric:tabular-nums}.pi-d{--pi-color:#626b72}.pi-c{--pi-color:#b49b25}.pi-b{--pi-color:#df6b20}.pi-a{--pi-color:#d52e59}.pi-s1{--pi-color:#ad2ea9}.pi-s2{--pi-color:#3b65d9}.pi-r{--pi-color:#009c9b}.pi-x{--pi-color:#171c20}
 </style>
 <article class="card">
   <div class="wrap">
-    <div class="visual"><img src="$cardImage" data-local-src="$assetWebRoot/$($visual.image)" loading="lazy" decoding="async" style="object-position:$imagePosition" alt="Игровая карточка $($card.title) из $seasonAlt"><span class="activity-icon"><img src="$cardIcon" data-local-src="$assetWebRoot/$($visual.icon)" loading="lazy" decoding="async" alt="Иконка $($card.kind)"></span><span class="number">$($card.number)</span></div>
+    <div class="visual"><img src="$cardImage" data-local-src="$assetWebRoot/$($visual.image)" loading="lazy" decoding="async" style="object-position:$imagePosition" alt="Игровая карточка $($card.title) из $seasonAlt">$overlayMarkup<span class="number">$($card.number)</span></div>
     <div class="content">
       <div class="eyebrow"><span>$($card.kind)</span><span class="points">$($card.points)</span></div>
       <h2>$($card.title)</h2>
