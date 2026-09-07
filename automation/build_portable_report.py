@@ -148,7 +148,7 @@ def validate_artifact(root, state, artifact, project):
         require(block['type'] == 'html' and block['layout'] == 'full', 'Unsupported block type/layout')
         doc = Document(block['body']).root
         require(len(doc.all('article', 'card')) == 1 and len(doc.all('style')) == 1, 'Invalid card envelope')
-        require(len(doc.all('h2')) == 1 and normalized(doc.all('h2')[0].text()) == normalized(card['title']), 'Card title mismatch')
+        require(len(doc.all('h2')) == 1 and normalized(doc.all('h2')[0].text()) == normalized(str(card['number']) + card['title']), 'Card title mismatch')
         require(len(doc.all('span','number')) == 1 and doc.all('span','number')[0].text() == str(card['number']), 'Card number mismatch')
         require(len(doc.all('span','points')) == 1 and doc.all('span','points')[0].text() == str(card['points']), 'Card points mismatch')
         require(len(doc.all('div','eyebrow')) == 1 and normalized(doc.all('div','eyebrow')[0].text()) == normalized(str(card['kind']) + str(card['points'])), 'Card kind mismatch')
@@ -163,18 +163,23 @@ def validate_artifact(root, state, artifact, project):
         expected_links = links(Document(card['sourceHtml']).root.all('a'))
         expected_links.append((card['visual'].get('sourceUrl') or season['fandomUrl'], card['visual'].get('sourceLabel') or 'изображение и иконка: Forza Wiki'))
         require(links(doc.all('a')) == expected_links, 'Artifact source links differ from state')
+        orientation = card['visual'].get('orientation')
+        require(orientation in {'horizontal', 'vertical'}, 'Unknown tile orientation: ' + str(orientation))
+        tiles = [node for node in doc.all('div') if 'game-tile' in node.attrs.get('class', '').split()]
+        require(len(tiles) == 1 and f'game-tile-{orientation}' in tiles[0].attrs.get('class', '').split(), 'Card tile layout differs from state')
+        require(not doc.all('span', 'activity-icon'), 'Tile must not render a decorative overlay icon')
         names = [season['assetsDirectory'] + '/' + card['visual']['image']]
-        overlay_key = card['visual'].get('overlayIconKey')
-        overlays = [node for node in doc.all('span', 'activity-icon')]
-        if overlay_key:
+        type_icon_key = card['visual'].get('typeIconKey')
+        type_icons = [node for node in doc.all('span', 'type-icon')]
+        if type_icon_key:
             library = project.get('activityIconLibrary', {})
-            require(overlay_key in library, 'Unknown overlay icon key: ' + str(overlay_key))
-            names.append(library[overlay_key])
-            require(len(overlays) == 1 and overlays[0].attrs.get('data-overlay-icon') == overlay_key, 'Card overlay icon differs from state')
+            require(type_icon_key in library, 'Unknown activity type icon key: ' + str(type_icon_key))
+            names.append(library[type_icon_key])
+            require(len(type_icons) == 1 and type_icons[0].attrs.get('data-type-icon') == type_icon_key, 'Card type icon differs from state')
         else:
-            require(not overlays, 'Card must not render an overlay icon without a source-tile icon')
+            require(not type_icons, 'Card must not render a type icon without a source-tile icon')
         images = doc.all('img')
-        require(len(images) == len(names), 'Card image/overlay count differs from state')
+        require(len(images) == len(names), 'Card image/type-icon count differs from state')
         for image, name in zip(images, names):
             asset = safe_path(root, name)
             require(name.startswith('reports/assets/'), 'Asset outside reports/assets')

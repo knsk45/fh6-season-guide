@@ -56,7 +56,7 @@ if ($project) {
         }
     }
     $activityIconLibrary = $project.activityIconLibrary
-    if ($null -eq $activityIconLibrary -or @($activityIconLibrary.PSObject.Properties).Count -eq 0) { Add-ValidationError 'project.activityIconLibrary must contain reusable overlay icons' }
+    if ($null -eq $activityIconLibrary -or @($activityIconLibrary.PSObject.Properties).Count -eq 0) { Add-ValidationError 'project.activityIconLibrary must contain reusable activity type icons' }
     else {
         $iconLibraryRoot = Get-FullProjectPath 'reports/assets/activity-icons'
         foreach ($entry in $activityIconLibrary.PSObject.Properties) {
@@ -217,20 +217,21 @@ if ($state) {
         foreach ($field in $fieldValues.Keys) {
             if ([string]::IsNullOrWhiteSpace($fieldValues[$field]) -and $missing -notcontains $field) { Add-ValidationError "$($card.id).$field is empty without missingFields" }
         }
-        if ([string]::IsNullOrWhiteSpace([string]$card.visual.image) -or [string]::IsNullOrWhiteSpace([string]$card.visual.icon)) {
+        if ([string]::IsNullOrWhiteSpace([string]$card.visual.image) -or [string]::IsNullOrWhiteSpace([string]$card.visual.sourceImage)) {
             if ($missing -notcontains 'visual') { Add-ValidationError "$($card.id).visual is empty without missingFields" }
         }
         else {
-            foreach ($asset in @($card.visual.image, $card.visual.icon)) {
+            foreach ($asset in @($card.visual.image, $card.visual.sourceImage)) {
                 $assetPath = Join-Path $assetRoot $asset
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "$($card.id) references missing asset: $assetPath" }
             }
         }
-        if ($null -eq $card.visual.PSObject.Properties['overlayIconKey']) { Add-ValidationError "$($card.id).visual.overlayIconKey is required (use null when the tile has no upper-right icon)" }
-        $overlayKey = $card.visual.overlayIconKey
-        if ($null -ne $overlayKey -and -not [string]::IsNullOrWhiteSpace([string]$overlayKey)) {
-            if ([string]$overlayKey -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') { Add-ValidationError "$($card.id).visual.overlayIconKey is invalid" }
-            elseif ($null -eq $activityIconLibrary.PSObject.Properties[[string]$overlayKey]) { Add-ValidationError "$($card.id).visual.overlayIconKey is not in project.activityIconLibrary: $overlayKey" }
+        if ([string]$card.visual.orientation -notin @('horizontal','vertical')) { Add-ValidationError "$($card.id).visual.orientation must be horizontal or vertical" }
+        if ($null -eq $card.visual.PSObject.Properties['typeIconKey']) { Add-ValidationError "$($card.id).visual.typeIconKey is required (use null when the tile has no activity icon)" }
+        $typeIconKey = $card.visual.typeIconKey
+        if ($null -ne $typeIconKey -and -not [string]::IsNullOrWhiteSpace([string]$typeIconKey)) {
+            if ([string]$typeIconKey -notmatch '^[a-z0-9]+(?:-[a-z0-9]+)*$') { Add-ValidationError "$($card.id).visual.typeIconKey is invalid" }
+            elseif ($null -eq $activityIconLibrary.PSObject.Properties[[string]$typeIconKey]) { Add-ValidationError "$($card.id).visual.typeIconKey is not in project.activityIconLibrary: $typeIconKey" }
         }
     }
 
@@ -282,6 +283,12 @@ if ($state) {
             foreach ($forbidden in @('Проверка полноты','Общие ловушки','Что ещё требует проверки','Ограничения источников')) {
                 if ($html.Contains($forbidden)) { Add-ValidationError "Public HTML contains forbidden section: $forbidden" }
             }
+            foreach ($forbiddenVisual in @('class="visual"','class="activity-icon"','data-overlay-icon','visual:after','object-fit:cover','brightness(.78)')) {
+                if ($html.Contains($forbiddenVisual)) { Add-ValidationError "Public HTML contains retired tile overlay treatment: $forbiddenVisual" }
+            }
+            if (([regex]::Matches($html, 'class="game-tile game-tile-(?:horizontal|vertical)"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must render every card in a two-format game-tile layout' }
+            if (([regex]::Matches($html, 'class="number"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must place one number beside every activity title' }
+            if (-not $html.Contains('.type-icon{display:inline-flex;flex:0 0 24px;width:24px;height:24px')) { Add-ValidationError 'Public HTML must use fixed-size activity type icons' }
             foreach ($match in [regex]::Matches($html, 'src="(assets/[^"]+)"')) {
                 $assetPath = Join-Path (Join-Path $RepoRoot 'reports') ($match.Groups[1].Value -replace '/', '\')
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }

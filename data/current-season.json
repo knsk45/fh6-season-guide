@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-07T22:31:17+07:00",
+  "lastContentUpdate": "2026-09-08T06:52:06+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,10 +30,10 @@
       "tuneHtml": "2022 Honda e — заводская настройка, специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-weekly.webp",
-        "icon": "FH6_EventSeasonal_Drive_Icon.png",
-        "overlayIconKey": null,
-        "position": "center",
+        "image": "card-vertical-weekly.webp",
+        "sourceImage": "tile-weekly.webp",
+        "orientation": "vertical",
+        "typeIconKey": null,
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -56,10 +56,10 @@
       "tuneHtml": "Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a> · <a href=\"https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season\" target=\"_blank\" rel=\"noopener noreferrer\">Иконки Daily на Fandom</a><br>Советы сообщества — без проверки в игре.",
       "visual": {
-        "image": "tile-daily.jpg",
-        "icon": "FH6_EventSeasonal_Stunt_Icon.png",
-        "overlayIconKey": null,
-        "position": "center",
+        "image": "card-vertical-daily.webp",
+        "sourceImage": "tile-daily.jpg",
+        "orientation": "vertical",
+        "typeIconKey": null,
         "sourceUrl": "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season",
         "sourceLabel": "Производный визуал из семи точных иконок Daily текущей Spring-недели на Fandom"
       },
@@ -82,10 +82,10 @@
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/photo-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта зоны Edamame</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w67gtq/fh6_series_4_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Ориентиры и подтверждения игроков</a> · <a href=\"https://escorenews.com/en/article/80887-peasinapod-photo-challenge-in-spring-series-4-of-forza-horizon-6-festival-playlist-where-is-edamame-area-at-the-mascot-party\" target=\"_blank\" rel=\"noopener noreferrer\">Независимый гайд Photo</a>",
       "visual": {
-        "image": "tile-photo.webp",
-        "icon": "FH6_EventFP_PhotoChallenge_Icon.png",
-        "overlayIconKey": "photo-challenge",
-        "position": "center",
+        "image": "card-vertical-photo.webp",
+        "sourceImage": "tile-photo.webp",
+        "orientation": "vertical",
+        "typeIconKey": "photo-challenge",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -108,10 +108,10 @@
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/treasure-map.webp\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука — спойлер</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://escorenews.com/en/article/80888-tokyo-city-region-treasure-hunt-in-forza-horizon-6-spring-series-4-treasure-chest-location\" target=\"_blank\" rel=\"noopener noreferrer\">Независимое подтверждение точки</a>",
       "visual": {
-        "image": "tile-treasure.webp",
-        "icon": "FH6_EventFP_TreasureHunt_Icon.png",
-        "overlayIconKey": "treasure-hunt",
-        "position": "center",
+        "image": "card-vertical-treasure.webp",
+        "sourceImage": "tile-treasure.webp",
+        "orientation": "vertical",
+        "typeIconKey": "treasure-hunt",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -134,10 +134,10 @@
       "tuneHtml": "2020 Jimco #179 Hammerhead Class 1 · A700 · <code>140 205 851</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-unlimited-buddies.webp",
-        "icon": "FH6_EventSeasonal_Drive_Icon.png",
-        "overlayIconKey": "championship-cross-country",
-        "position": "center",
+        "image": "card-horizontal-unlimited-buddies.webp",
+        "sourceImage": "tile-unlimited-buddies.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-cross-country",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -160,10 +160,10 @@
       "tuneHtml": "2013 Mercedes-Benz A 45 AMG · B600 · <code>947 984 645</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-hot-hatch.webp",
-        "icon": "FH6_EventSeasonal_Drive_Icon.png",
-        "overlayIconKey": "championship-street",
-        "position": "center",
+        "image": "card-horizontal-hot-hatch.webp",
+        "sourceImage": "tile-hot-hatch.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-street",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -186,10 +186,10 @@
       "tuneHtml": "2013 Mercedes-Benz A 45 AMG · B600 · <code>947 984 645</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-time-attack.webp",
-        "icon": "FH6_EventSeasonal_Drive_Icon.png",
-        "overlayIconKey": "time-attack",
-        "position": "center",
+        "image": "card-horizontal-time-attack.webp",
+        "sourceImage": "tile-time-attack.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "time-attack",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -212,10 +212,10 @@
       "tuneHtml": "2020 Toyota GR Supra · S1 800 · <code>584 324 652</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6hnou/series_04_week_4_spring_seasonal_tunes_mascot/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a>",
       "visual": {
-        "image": "tile-speed-trap.webp",
-        "icon": "FH6_EventFP_SpeedTrap_Icon.png",
-        "overlayIconKey": "speed-trap",
-        "position": "center",
+        "image": "card-horizontal-speed-trap.webp",
+        "sourceImage": "tile-speed-trap.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "speed-trap",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -238,10 +238,10 @@
       "tuneHtml": "1991 Honda Beat · S1 800 · <code>867 935 515</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6hnou/series_04_week_4_spring_seasonal_tunes_mascot/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w6am49/series_4_playlist_4_spring_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Второе подтверждение тюнинга</a>",
       "visual": {
-        "image": "tile-drift-zone.webp",
-        "icon": "FH6_EventFP_DriftZone_Icon.png",
-        "overlayIconKey": "drift-zone",
-        "position": "center",
+        "image": "card-horizontal-drift-zone.webp",
+        "sourceImage": "tile-drift-zone.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "drift-zone",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -264,10 +264,10 @@
       "tuneHtml": "1986 Audi #2 Audi Sport quattro S1 · S1 800 · <code>267 461 712</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1w6am49/series_4_playlist_4_spring_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Тюнинг Spring, 03.09</a>",
       "visual": {
-        "image": "tile-trial.webp",
-        "icon": "FH6_EventFP_Trial_Icon.png",
-        "overlayIconKey": "trial",
-        "position": "center",
+        "image": "card-vertical-trial.webp",
+        "sourceImage": "tile-trial.webp",
+        "orientation": "vertical",
+        "typeIconKey": "trial",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -290,10 +290,10 @@
       "tuneHtml": "Выберите автомобиль под ограничения выбранного чемпионата; универсального сезонного кода нет.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-horizon-racing.webp",
-        "icon": "FH6_EventFP_HorizonPlay_Icon.png",
-        "overlayIconKey": "horizon-play",
-        "position": "center",
+        "image": "card-horizontal-horizon-racing.webp",
+        "sourceImage": "tile-horizon-racing.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -316,10 +316,10 @@
       "tuneHtml": "Автомобили выбираются внутри Eliminator; гаражный тюнинг не применяется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-eliminator.webp",
-        "icon": "FH6_EventFP_HorizonPlay_Icon.png",
-        "overlayIconKey": null,
-        "position": "center",
+        "image": "card-horizontal-eliminator.webp",
+        "sourceImage": "tile-eliminator.webp",
+        "orientation": "horizontal",
+        "typeIconKey": null,
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -342,10 +342,10 @@
       "tuneHtml": "Используйте автомобиль по правилам выбранного мероприятия; специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-stunt-party.webp",
-        "icon": "FH6_EventFP_StuntParty_Icon.png",
-        "overlayIconKey": null,
-        "position": "center",
+        "image": "card-horizontal-stunt-party.webp",
+        "sourceImage": "tile-stunt-party.webp",
+        "orientation": "horizontal",
+        "typeIconKey": null,
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },
@@ -368,10 +368,10 @@
       "tuneHtml": "1970 Honda N600 — выдаётся событием, тюнинг фиксирован.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a><br>Советы сообщества — без проверки в игре. · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">Игровая плитка Spring</a>",
       "visual": {
-        "image": "tile-monthly-rivals.webp",
-        "icon": "FH6_EventFP_MonthlyRivals_Icon.png",
-        "overlayIconKey": "monthly-rivals",
-        "position": "center",
+        "image": "card-horizontal-monthly-rivals.webp",
+        "sourceImage": "tile-monthly-rivals.webp",
+        "orientation": "horizontal",
+        "typeIconKey": "monthly-rivals",
         "sourceUrl": "https://forza.labsgg.com/series/details",
         "sourceLabel": "Точная игровая плитка Spring 03–10.09 из ForzaLabs"
       },

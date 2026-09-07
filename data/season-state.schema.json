@@ -47,15 +47,15 @@
           "sourceHtml": { "type": "string" },
           "visual": {
             "type": "object",
-            "required": ["image", "icon", "overlayIconKey", "position", "sourceUrl", "sourceLabel"],
+            "required": ["image", "sourceImage", "orientation", "typeIconKey", "sourceUrl", "sourceLabel"],
             "properties": {
               "image": { "type": "string" },
-              "icon": { "type": "string" },
-              "overlayIconKey": {
+              "sourceImage": { "type": "string" },
+              "orientation": { "enum": ["horizontal", "vertical"] },
+              "typeIconKey": {
                 "type": ["string", "null"],
                 "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
               },
-              "position": { "type": "string" },
               "sourceUrl": { "type": "string" },
               "sourceLabel": { "type": "string" }
             },

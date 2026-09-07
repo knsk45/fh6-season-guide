@@ -1,14 +1,12 @@
-"""Seed the permanent FH6 activity-overlay icon library from local, verified assets.
+"""Seed the permanent FH6 activity-type icon library from local, verified assets.
 
 The current-season tiles are the evidence for the three activity variants that
-do not have a standalone icon file.  This tool is intentionally run only when
-the reusable library changes; weekly renders merely reference the resulting
-files through data/project.json.activityIconLibrary.
+do not have a standalone icon file. This tool is intentionally run only when
+the reusable library changes; weekly renders show these fixed-size symbols in
+the type-and-points line, never over a tile.
 """
 from pathlib import Path
-import shutil
-
-from PIL import Image, ImageChops
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]

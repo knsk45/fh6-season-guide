@@ -138,6 +138,7 @@ try {
         "automation/test_refresh_guard.py",
         "automation/build_portable_report.py",
         "automation/build_activity_icon_library.py",
+        "automation/prepare_game_tiles.py",
         "automation/test_portable_report.py",
         "automation/ha_refresh_watchdog.ps1",
         "automation/publish_to_github.ps1",

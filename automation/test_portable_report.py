@@ -78,10 +78,10 @@ class PortableTests(unittest.TestCase):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<script>alert(1)</script>'))
     def test_event_handler_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('<img ','<img onerror="alert(1)" ',1)))
-    def test_overlay_key_mismatch_rejected(self):
+    def test_type_icon_key_mismatch_rejected(self):
         def mismatch(artifact):
             block=next(b for b in artifact['manifest']['blocks'] if b['id']=='activity_03_photo')
-            body, changed=re.subn('data-overlay-icon="photo-challenge"','data-overlay-icon="treasure-hunt"',block['body'])
+            body, changed=re.subn('data-type-icon="photo-challenge"','data-type-icon="treasure-hunt"',block['body'])
             self.assertEqual(changed,1)
             block['body']=body
         self.bad_artifact(mismatch)

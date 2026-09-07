@@ -21,7 +21,7 @@
 - последовательные `id` и `number`;
 - `kind`, `title`, `points`;
 - `conditionHtml`, `howHtml`, `tuneHtml`, `sourceHtml`;
-- `visual.image`, `visual.icon`, позицию и источник;
+- `visual.sourceImage`, подготовленный `visual.image`, `visual.orientation` (`horizontal`/`vertical`), опциональный `visual.typeIconKey` и источник. Плитку не накладывать на чёрный квадрат, не затемнять и не перекрывать; номер выводится у названия, значок — рядом с типом и очками;
 - `completeness.condition`, `solution`, `vehicleTune`, `visual`;
 - `missingFields`.
 
