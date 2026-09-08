@@ -127,6 +127,7 @@ try {
         "reports/artifact.json",
         "reports/current-week.html",
         "reports/steam-guide-current.txt",
+        "reports/steam-guide-description.txt",
         "reports/build_artifact.ps1",
         "reports/enhance_portable_html.mjs",
         "reports/assets",
@@ -150,6 +151,9 @@ try {
         "automation/refresh_last_content_update.ps1",
         "automation/render_season_markdown.ps1",
         "automation/render_steam_guide.ps1",
+        "automation/render_steam_main_description.ps1",
+        "automation/season_rollover_preflight.ps1",
+        "automation/audit_visual_evidence.ps1",
         "automation/start_new_season.ps1",
         "automation/validate_season.ps1"
     )
@@ -217,7 +221,9 @@ try {
 
     $PublishedHtml = [string]$Response.Content
     $State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
-    $PublishedCards = ([regex]::Matches($PublishedHtml, 'data-activity-block')).Count
+    # Count only rendered activity sections. The token also occurs once in the
+    # client-side filter selector and must not be mistaken for a fifteenth card.
+    $PublishedCards = ([regex]::Matches($PublishedHtml, '<section\s+class="activity-block"[^>]*\bdata-activity-block\b', [Text.RegularExpressions.RegexOptions]::IgnoreCase)).Count
     if ($PublishedCards -ne [int]$State.season.expectedCardCount) {
         throw "Published report contains $PublishedCards cards; expected $($State.season.expectedCardCount)."
     }
