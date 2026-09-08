@@ -53,6 +53,7 @@ class PortableTests(unittest.TestCase):
         self.assertIn('<article class="card card-vertical" data-activity-id=', self.html)
         self.assertIn('.card-vertical .wrap{grid-template-columns:minmax(210px,280px) minmax(0,1fr)}', self.html)
         self.assertIn('.card-vertical .content{padding-left:12px}', self.html)
+        self.assertIn('.wrap,.card-vertical .wrap{grid-template-columns:minmax(0,1fr)}', self.html)
 
     def test_real_zip_contains_html_and_all_local_assets(self):
         r=b.read(self.receipt)
