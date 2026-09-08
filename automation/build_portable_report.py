@@ -21,7 +21,7 @@ from urllib.parse import urlsplit, parse_qsl
 import zipfile
 
 PROVIDER = 'fh6-portable/1.0.0'
-CHAIN = ['automation/build_portable_report.py', 'reports/build_artifact.ps1',
+CHAIN = ['automation/build_portable_report.py', 'automation/json_compat.ps1', 'reports/build_artifact.ps1',
          'reports/enhance_portable_html.mjs', 'automation/validate_season.ps1']
 
 def require(condition, message):

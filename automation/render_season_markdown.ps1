@@ -6,9 +6,10 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+. (Join-Path $PSScriptRoot 'json_compat.ps1')
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
-$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$state = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8)
 $season = $state.season
 
 $archivePath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $season.archiveFile))

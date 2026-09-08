@@ -19,7 +19,7 @@ Keep activities in game order. Every activity has:
 - stable sequential `id` and two-digit `number`;
 - `kind`, `title`, `points`;
 - `conditionHtml`, `howHtml`, `tuneHtml`, `sourceHtml`;
-- `visual.sourceImage`, `visual.image`, `visual.orientation`, `visual.typeIconKey`, source URL and label. `sourceImage` retains the exact downloaded proof and `image` is the prepared local tile; `orientation` is only `horizontal` or `vertical`. The renderer never puts text or symbols over the tile. `typeIconKey` is `null` when the source tile has no activity icon; otherwise it names the matching reusable icon from `data/project.json.activityIconLibrary` that appears beside the type and points. Horizon Play deliberately uses `horizon-play` even without a tile-corner icon;
+- `visual.sourceImage`, `visual.image`, `visual.orientation`, `visual.typeIconKey`, source URL and label. `sourceImage` retains the exact downloaded proof or an unedited user-supplied full screenshot when a live source has no tile; `image` is the prepared local tile cropped only to its exact bounds. Never replace a missing current-season tile with a generic, prior-week, AI-generated, or season-overview asset. `orientation` is only `horizontal` or `vertical`. The renderer never puts text or symbols over the tile. `typeIconKey` is `null` when the source tile has no activity icon; otherwise it names the matching reusable icon from `data/project.json.activityIconLibrary` that appears beside the type and points. Horizon Play deliberately uses `horizon-play` even without a tile-corner icon;
 - `completeness` states for `condition`, `solution`, `vehicleTune`, and `visual`;
 - `missingFields` containing every intentionally empty or provisional field.
 

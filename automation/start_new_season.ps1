@@ -8,6 +8,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+. (Join-Path $PSScriptRoot 'json_compat.ps1')
 $InputPath = [IO.Path]::GetFullPath($InputPath)
 $CurrentStatePath = Join-Path $RepoRoot 'data\current-season.json'
 $Validator = Join-Path $PSScriptRoot 'validate_season.ps1'
@@ -19,7 +20,7 @@ $validationSucceeded = $?
 $validationOutput | Write-Output
 if (-not $validationSucceeded) { throw 'New-season input failed validation' }
 
-$newState = Get-Content -LiteralPath $InputPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$newState = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $InputPath -Raw -Encoding UTF8)
 $newArchivePath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $newState.season.archiveFile))
 $assetsPath = [IO.Path]::GetFullPath((Join-Path $RepoRoot $newState.season.assetsDirectory))
 
@@ -29,7 +30,7 @@ if ($ValidateOnly) {
 }
 
 if (Test-Path -LiteralPath $CurrentStatePath) {
-    $oldState = Get-Content -LiteralPath $CurrentStatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+    $oldState = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $CurrentStatePath -Raw -Encoding UTF8)
     if ($oldState.season.archiveFile -eq $newState.season.archiveFile) {
         throw "Refusing rollover to the same archive: $($newState.season.archiveFile)"
     }

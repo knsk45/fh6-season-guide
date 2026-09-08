@@ -4,6 +4,7 @@
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
+. (Join-Path $projectRoot 'automation\json_compat.ps1')
 if (-not $StatePath) {
     $StatePath = Join-Path $projectRoot 'data\current-season.json'
 }
@@ -15,8 +16,8 @@ if (-not (Test-Path -LiteralPath $StatePath)) {
     throw "Season state was not found: $StatePath"
 }
 
-$state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
-$project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$state = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8)
+$project = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8)
 $season = $state.season
 $activities = @($state.activities)
 $expectedCardCount = [int]$season.expectedCardCount

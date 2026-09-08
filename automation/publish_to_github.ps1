@@ -137,6 +137,7 @@ try {
         "automation/refresh_guard.py",
         "automation/test_refresh_guard.py",
         "automation/build_portable_report.py",
+        "automation/json_compat.ps1",
         "automation/build_activity_icon_library.py",
         "automation/prepare_game_tiles.py",
         "automation/test_portable_report.py",

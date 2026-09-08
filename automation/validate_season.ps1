@@ -8,6 +8,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
+. (Join-Path $PSScriptRoot 'json_compat.ps1')
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
 $ProjectConfigPath = Join-Path $RepoRoot 'data\project.json'
@@ -19,7 +20,7 @@ function Add-ValidationWarning([string]$Message) { $warnings.Add($Message) }
 function Get-FullProjectPath([string]$RelativePath) { [IO.Path]::GetFullPath((Join-Path $RepoRoot $RelativePath)) }
 
 try {
-    $state = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+    $state = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8)
 }
 catch {
     Add-ValidationError "Cannot parse season state: $($_.Exception.Message)"
@@ -27,7 +28,7 @@ catch {
 }
 
 try {
-    $project = Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+    $project = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $ProjectConfigPath -Raw -Encoding UTF8)
 }
 catch {
     Add-ValidationError "Cannot parse project config: $($_.Exception.Message)"
@@ -257,7 +258,7 @@ if ($state) {
         }
 
         if (Test-Path -LiteralPath $artifactPath) {
-            $artifact = Get-Content -LiteralPath $artifactPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+            $artifact = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $artifactPath -Raw -Encoding UTF8)
             $artifactBlocks = @($artifact.manifest.blocks)
             if ($artifact.manifest.title -ne $season.reportTitle) { Add-ValidationError 'artifact title does not match season state' }
             if ($artifactBlocks.Count -ne $expectedCount) { Add-ValidationError "artifact contains $($artifactBlocks.Count) blocks, expected $expectedCount" }

@@ -7,6 +7,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+. (Join-Path $PSScriptRoot 'json_compat.ps1')
 
 if (-not $StatePath) { $StatePath = Join-Path $PSScriptRoot '..\data\current-season.json' }
 if (-not $ProjectPath) { $ProjectPath = Join-Path $PSScriptRoot '..\data\project.json' }
@@ -49,8 +50,8 @@ function ConvertTo-CompactSteamText {
     return $Compact.Trim()
 }
 
-$State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
-$Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
+$State = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8)
+$Project = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8)
 
 if (-not $Project.steamGuide.enabled) {
     throw 'Steam guide output is disabled in data/project.json.'
