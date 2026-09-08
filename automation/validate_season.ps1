@@ -91,6 +91,31 @@ if ($project) {
     if ([string]$analytics.counterImageUrl -notmatch '^https://hits\.sh/.+\.svg(?:\?.*)?$') { Add-ValidationError 'project.analytics.counterImageUrl must be a hits.sh HTTPS SVG URL' }
     if ([string]$analytics.dashboardUrl -notmatch '^https://hits\.sh/.+/$') { Add-ValidationError 'project.analytics.dashboardUrl must be a hits.sh HTTPS dashboard URL' }
     if ([string]$analytics.statsApiUrl -notmatch '^https://hits\.sh/api/urns/.+') { Add-ValidationError 'project.analytics.statsApiUrl must be a hits.sh HTTPS stats API URL' }
+    $steamGuide = $project.steamGuide
+    if ($steamGuide.enabled -ne $true) { Add-ValidationError 'project steamGuide must remain enabled' }
+    foreach ($steamField in @('id','url','title','sectionTitle','publicGuideUrl','freshnessNote','safeDescription','language')) {
+        if ([string]::IsNullOrWhiteSpace([string]$steamGuide.$steamField)) { Add-ValidationError "project.steamGuide.$steamField is required" }
+    }
+    if ([string]$steamGuide.safeDescription -match 'https?://|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') { Add-ValidationError 'project.steamGuide.safeDescription contains a moderation-risk link or marker' }
+    if ([string]$steamGuide.safeDescription -notmatch 'русск|обновля') { Add-ValidationError 'project.steamGuide.safeDescription must state Russian language and ongoing updates' }
+    $metricsHistoryPath = Get-FullProjectPath 'data/publication-metrics-history.json'
+    if (-not (Test-Path -LiteralPath $metricsHistoryPath)) { Add-ValidationError 'Public publication metrics history is missing' }
+    else {
+        try {
+            $metricsHistory = ConvertFrom-Fh6Json -Json (Get-Content -LiteralPath $metricsHistoryPath -Raw -Encoding UTF8)
+            if ($metricsHistory.schemaVersion -ne 1 -or @($metricsHistory.snapshots).Count -lt 2 -or @($metricsHistory.snapshots).Count -gt 60) { Add-ValidationError 'Public publication metrics history must contain 2-60 snapshots' }
+            $previousMetricStamp = $null
+            foreach ($snapshot in @($metricsHistory.snapshots)) {
+                $metricStamp = [DateTimeOffset]::Parse([string]$snapshot.collectedAt)
+                if ($previousMetricStamp -and $metricStamp -le $previousMetricStamp) { Add-ValidationError 'Public publication metrics history timestamps must be strictly ordered' }
+                $previousMetricStamp = $metricStamp
+                foreach ($field in @('runId','steamViews','steamFavorites','githubViews')) {
+                    if ([string]::IsNullOrWhiteSpace([string]$snapshot.$field)) { Add-ValidationError "Public publication metrics history has empty $field" }
+                }
+            }
+        }
+        catch { Add-ValidationError "Cannot validate public publication metrics history: $($_.Exception.Message)" }
+    }
     $notifications = $project.notifications
     if ($notifications.enabled -ne $true) { Add-ValidationError 'project notifications must remain enabled' }
     if ([string]$notifications.provider -ne 'home-assistant') { Add-ValidationError 'project.notifications.provider must be home-assistant' }
@@ -106,7 +131,7 @@ if ($project) {
             if ([string]::IsNullOrWhiteSpace([string]$notifications.messages.$messageName.$fieldName)) { Add-ValidationError "project.notifications.messages.$messageName.$fieldName is required" }
         }
     }
-    foreach ($scriptName in @('send_home_assistant_notification.ps1','collect_publication_metrics.ps1','mark_steam_guide_published.ps1','check_steam_guide.ps1')) {
+    foreach ($scriptName in @('send_home_assistant_notification.ps1','collect_publication_metrics.ps1','mark_steam_guide_published.ps1','check_steam_guide.ps1','render_steam_main_description.ps1','season_rollover_preflight.ps1','audit_visual_evidence.ps1')) {
         if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot $scriptName))) { Add-ValidationError "Notification/publication script is missing: $scriptName" }
     }
     $publicationStatePath = Get-FullProjectPath 'automation/runs/steam-publication-state.json'
@@ -264,6 +289,10 @@ if ($state) {
             if ($artifactBlocks.Count -ne $expectedCount) { Add-ValidationError "artifact contains $($artifactBlocks.Count) blocks, expected $expectedCount" }
             if (($artifactBlocks.id -join '|') -ne ($ids -join '|')) { Add-ValidationError 'artifact block order differs from season state' }
             if ([DateTimeOffset]::Parse($artifact.snapshot.generatedAt) -ne $contentAt) { Add-ValidationError 'artifact generatedAt differs from lastContentUpdate' }
+            $chart = @($artifact.manifest.charts)
+            $metricDataset = $artifact.snapshot.datasets.publicationMetrics
+            if ($chart.Count -ne 1 -or [string]$chart[0].id -ne 'publication-history' -or [string]$chart[0].type -ne 'line') { Add-ValidationError 'artifact must contain one native publication-history line chart' }
+            if ($null -eq $metricDataset -or @($metricDataset.rows).Count -lt 2) { Add-ValidationError 'artifact publication-history dataset is missing or too short' }
         }
 
         if (Test-Path -LiteralPath $htmlPath) {
@@ -287,9 +316,15 @@ if ($state) {
             foreach ($forbiddenVisual in @('class="visual"','class="activity-icon"','data-overlay-icon','visual:after','object-fit:cover','brightness(.78)')) {
                 if ($html.Contains($forbiddenVisual)) { Add-ValidationError "Public HTML contains retired tile overlay treatment: $forbiddenVisual" }
             }
-            if (([regex]::Matches($html, 'class="game-tile game-tile-(?:horizontal|vertical)"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must render every card in a two-format game-tile layout' }
+            $missingVisualCount = @($activities | Where-Object { [string]$_.completeness.visual -in @('missing','preliminary') -and ([string]::IsNullOrWhiteSpace([string]$_.visual.image) -or [string]::IsNullOrWhiteSpace([string]$_.visual.sourceImage)) }).Count
+            if (([regex]::Matches($html, 'class="game-tile game-tile-(?:horizontal|vertical)"')).Count -ne ($expectedCount - $missingVisualCount)) { Add-ValidationError 'Public HTML game-tile count differs from confirmed visual mappings' }
+            if (([regex]::Matches($html, 'class="card card-no-tile"')).Count -ne $missingVisualCount) { Add-ValidationError 'Public HTML must omit, not replace, unresolved game tiles' }
             if (([regex]::Matches($html, 'class="number"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must place one number beside every activity title' }
             if (-not $html.Contains('.type-icon{display:inline-flex;flex:0 0 24px;width:24px;height:24px')) { Add-ValidationError 'Public HTML must use fixed-size activity type icons' }
+            if (([regex]::Matches($html, '<button\s+class="completion-toggle"[^>]*\bdata-completion-toggle\b', 'IgnoreCase')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must contain one local completion control per card' }
+            $expectedShareCodeControls = 0
+            foreach ($activity in $activities) { $expectedShareCodeControls += ([regex]::Matches([string]$activity.tuneHtml, '<code>[0-9]{3} [0-9]{3} [0-9]{3}</code>')).Count }
+            if (([regex]::Matches($html, 'data-copy-code="[0-9]{3} [0-9]{3} [0-9]{3}"')).Count -ne $expectedShareCodeControls) { Add-ValidationError 'Public HTML share-code copy controls differ from state' }
             foreach ($match in [regex]::Matches($html, 'src="(assets/[^"]+)"')) {
                 $assetPath = Join-Path (Join-Path $RepoRoot 'reports') ($match.Groups[1].Value -replace '/', '\')
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }
@@ -306,25 +341,26 @@ if ($state) {
             }
             if ($support) {
                 $supportQrSrc = ([string]$support.qrAsset) -replace '^reports/', ''
-                if (([regex]::Matches($html, 'data-support-block')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one support block' }
+                if (([regex]::Matches($html, '<section\s+class="support-section"[^>]*\bdata-support-block\b', 'IgnoreCase')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one support block' }
                 if (-not $html.Contains([string]$support.title)) { Add-ValidationError 'Public HTML support title differs from project config' }
                 if (-not $html.Contains([string]$support.url)) { Add-ValidationError 'Public HTML support URL differs from project config' }
                 if (-not $html.Contains($supportQrSrc)) { Add-ValidationError 'Public HTML support QR differs from project config' }
-                $supportIndex = $html.IndexOf('data-support-block', [StringComparison]::Ordinal)
-                $lastCardIndex = $html.LastIndexOf('data-activity-block', [StringComparison]::Ordinal)
-                if ($supportIndex -lt $lastCardIndex) { Add-ValidationError 'Public HTML support block must follow all activity cards' }
+                $supportMatch = [regex]::Match($html, '<section\s+class="support-section"[^>]*\bdata-support-block\b', 'IgnoreCase')
+                $cardMatches = [regex]::Matches($html, '<section\s+class="activity-block"[^>]*\bdata-activity-block\b', 'IgnoreCase')
+                if (-not $supportMatch.Success -or $cardMatches.Count -eq 0 -or $supportMatch.Index -lt $cardMatches[$cardMatches.Count - 1].Index) { Add-ValidationError 'Public HTML support block must follow all activity cards' }
             }
             if ($analytics) {
-                if (([regex]::Matches($html, 'data-visit-stats')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one visit statistics block' }
+                if (([regex]::Matches($html, '<div\s+class="visit-stats"[^>]*\bdata-visit-stats\b', 'IgnoreCase')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one visit statistics block' }
                 if (-not $html.Contains([string]$analytics.title)) { Add-ValidationError 'Public HTML visit statistics title differs from project config' }
                 $counterImageUrlHtml = [Net.WebUtility]::HtmlEncode([string]$analytics.counterImageUrl)
                 $dashboardUrlHtml = [Net.WebUtility]::HtmlEncode([string]$analytics.dashboardUrl)
                 if (-not $html.Contains($counterImageUrlHtml)) { Add-ValidationError 'Public HTML visit counter URL differs from project config' }
                 if (-not $html.Contains($dashboardUrlHtml)) { Add-ValidationError 'Public HTML visit dashboard URL differs from project config' }
                 if (-not $html.Contains("img-src 'self' https://hits.sh")) { Add-ValidationError 'Public HTML CSP must allow only the configured external counter image host' }
-                $analyticsIndex = $html.IndexOf('data-visit-stats', [StringComparison]::Ordinal)
-                $supportIndex = $html.IndexOf('data-support-block', [StringComparison]::Ordinal)
-                if ($analyticsIndex -lt $supportIndex) { Add-ValidationError 'Public HTML visit statistics must stay inside the final support block' }
+                $analyticsMatch = [regex]::Match($html, '<div\s+class="visit-stats"[^>]*\bdata-visit-stats\b', 'IgnoreCase')
+                if (-not $analyticsMatch.Success -or -not $supportMatch.Success -or $analyticsMatch.Index -lt $supportMatch.Index) { Add-ValidationError 'Public HTML visit statistics must stay inside the final support block' }
+                if (([regex]::Matches($html, '<section\s+class="publication-chart"[^>]*\bdata-publication-chart\b', 'IgnoreCase')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one publication-history chart' }
+                if (-not $html.Contains('Динамика аудитории')) { Add-ValidationError 'Public HTML publication-history chart title is missing' }
             }
         }
 

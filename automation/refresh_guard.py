@@ -13,6 +13,15 @@ import time
 import build_portable_report as portable
 from datetime import datetime, timedelta, timezone
 
+# Windows may otherwise encode the Russian final result with the active legacy
+# console code page, turning a successfully receipted guarded run into a false
+# CLI error after the work has completed.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding='utf-8', errors='backslashreplace')
+    except (AttributeError, OSError):
+        pass
+
 ZONE = timezone(timedelta(hours=7))
 TASK = 'Update FH6 Festival Playlist; audit sources and visuals, publish, check Steam, collect metrics, notify HA.'
 TERMINAL = {'COMPLETED', 'PENDING_CONFIRMATION', 'BLOCKED'}
@@ -136,6 +145,13 @@ class Guard:
             raise RuntimeError('Every activity visual must be audited exactly once.')
         for visual in visuals:
             activity = activities[visual['id']]
+            activity_visual = activity.get('visual', {})
+            unresolved = (activity.get('completeness', {}).get('visual') in {'missing', 'preliminary'}
+                          and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
+            if unresolved:
+                if visual.get('sha256') is not None or not visual.get('note'):
+                    raise RuntimeError('Unresolved visual audit must record its evidence gap without an asset digest.')
+                continue
             file = self.root / state['season']['assetsDirectory'] / activity['visual']['image']
             if visual.get('sha256') != digest(file) or not visual.get('note'):
                 raise RuntimeError('Visual audit does not match current asset bytes.')
@@ -163,6 +179,13 @@ class Guard:
         state = read(self.state_path)
         visuals = {v['id']: v for v in audit['visuals']}
         for activity in state['activities']:
+            activity_visual = activity.get('visual', {})
+            unresolved = (activity.get('completeness', {}).get('visual') in {'missing', 'preliminary'}
+                          and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
+            if unresolved:
+                if visuals[activity['id']].get('sha256') is not None:
+                    return False
+                continue
             asset = self.root / state['season']['assetsDirectory'] / activity['visual']['image']
             if digest(asset) != visuals[activity['id']]['sha256']:
                 return False
@@ -197,7 +220,7 @@ class Guard:
         return passed, output
 
     def outcome(self, run):
-        required = ['audit', 'preflight', 'timestamp', 'markdown', 'artifact', 'portable', 'html',
+        required = ['audit', 'preflight', 'rollover_preflight', 'visual_queue', 'timestamp', 'markdown', 'artifact', 'portable', 'html',
                     'structure', 'publish', 'steam_render', 'steam_check', 'metrics']
         missing = [x for x in required if run['steps'].get(x, {}).get('status') != 'passed']
         for name, step in run['steps'].items():
@@ -237,14 +260,18 @@ class Guard:
         ps = lambda file, *args: [pwsh, '-NoProfile', '-File', self.root / file, *args]
         builder = [sys.executable, self.root / 'automation/build_portable_report.py']
         preflight, _ = self.command(run, 'preflight', builder + ['preflight'], ['PORTABLE_PREFLIGHT=OK'])
+        rollover_preflight, _ = self.command(run, 'rollover_preflight', ps('automation/season_rollover_preflight.ps1'), ['SEASON_PREFLIGHT=READY'])
+        self.command(run, 'visual_queue', ps('automation/audit_visual_evidence.ps1'), ['VISUAL_QUEUE_STATUS='])
         run['portableReceipt'] = str(self.base / run['runId'] / 'portable-receipt.json')
         if not preflight:
             run['blockers'].append('Совместимый сборщик FH6 не прошёл preflight; дата отчёта не обновлена.')
+        if not rollover_preflight:
+            run['blockers'].append('Предсезонная проверка не прошла; публикация не выполняется.')
         if not self.audit_valid(run):
             run['blockers'].append('Полный актуальный аудит не подтверждён.')
         self.save(run)
         rebuilt = False
-        if preflight and self.audit_valid(run):
+        if preflight and rollover_preflight and self.audit_valid(run):
             build = [('timestamp', ps('automation/refresh_last_content_update.ps1'), ['LAST_CONTENT_UPDATE=']),
                      ('markdown', ps('automation/render_season_markdown.ps1'), []),
                      ('artifact', ps('reports/build_artifact.ps1'), []),
@@ -325,7 +352,10 @@ class Guard:
                 lines.append('Создан начальный снимок статистики; прирост пока не измерен.')
         else:
             lines.append('Статистика этого запуска недоступна; старые значения не подставлены.')
-        result = {'schemaVersion': 1, 'runId': run['runId'], 'runDate': run['runDate'], 'status': outcome,
+        # A run may start shortly before midnight and finish after it. The HA
+        # receipt is a daily final-result event, so its date is the result date,
+        # while runId remains the immutable identity of the attempt.
+        result = {'schemaVersion': 1, 'runId': run['runId'], 'runDate': now()[:10], 'status': outcome,
                   'notificationType': {'COMPLETED': 'UpToDate', 'PENDING_CONFIRMATION': 'UpdateRequired', 'BLOCKED': 'CheckBlocked'}[outcome],
                   'message': '\n'.join(lines), 'metrics': metrics, 'reasons': reasons, 'createdAt': now()}
         path = self.base / run['runId'] / 'result.json'

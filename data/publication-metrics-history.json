@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "title": "Динамика аудитории",
+  "description": "Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.",
+  "source": {
+    "steam": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730",
+    "github": "https://hits.sh/api/urns/knsk45.github.io/fh6-season-guide/reports/current-week.html"
+  },
+  "snapshots": [
+    {
+      "runId": "fh6-20260903-065612-941360",
+      "collectedAt": "2026-09-03T07:04:09+07:00",
+      "steamViews": 565,
+      "steamFavorites": 29,
+      "githubViews": 555
+    },
+    {
+      "runId": "fh6-20260903-070936-588374",
+      "collectedAt": "2026-09-03T07:27:01+07:00",
+      "steamViews": 565,
+      "steamFavorites": 29,
+      "githubViews": 556
+    },
+    {
+      "runId": "fh6-20260903-213252-423237",
+      "collectedAt": "2026-09-03T21:51:16+07:00",
+      "steamViews": 595,
+      "steamFavorites": 30,
+      "githubViews": 613
+    },
+    {
+      "runId": "fh6-20260903-215325-279505",
+      "collectedAt": "2026-09-03T21:56:01+07:00",
+      "steamViews": 596,
+      "steamFavorites": 31,
+      "githubViews": 614
+    },
+    {
+      "runId": "fh6-20260904-060229-107804",
+      "collectedAt": "2026-09-04T06:18:08+07:00",
+      "steamViews": 634,
+      "steamFavorites": 36,
+      "githubViews": 669
+    },
+    {
+      "runId": "fh6-20260905-060139-164378",
+      "collectedAt": "2026-09-05T06:06:39+07:00",
+      "steamViews": 691,
+      "steamFavorites": 43,
+      "githubViews": 737
+    },
+    {
+      "runId": "fh6-20260906-060115-092021",
+      "collectedAt": "2026-09-06T06:06:24+07:00",
+      "steamViews": 738,
+      "steamFavorites": 47,
+      "githubViews": 801
+    },
+    {
+      "runId": "fh6-20260907-060225-541935",
+      "collectedAt": "2026-09-07T06:12:24+07:00",
+      "steamViews": 785,
+      "steamFavorites": 50,
+      "githubViews": 868
+    },
+    {
+      "runId": "fh6-20260907-205055-385612",
+      "collectedAt": "2026-09-07T21:23:52+07:00",
+      "steamViews": 799,
+      "steamFavorites": 51,
+      "githubViews": 891
+    },
+    {
+      "runId": "fh6-20260907-220209-698244",
+      "collectedAt": "2026-09-07T22:07:02+07:00",
+      "steamViews": 800,
+      "steamFavorites": 51,
+      "githubViews": 898
+    },
+    {
+      "runId": "fh6-20260907-221420-259358",
+      "collectedAt": "2026-09-07T22:32:40+07:00",
+      "steamViews": 800,
+      "steamFavorites": 51,
+      "githubViews": 900
+    },
+    {
+      "runId": "fh6-20260908-063942-377834",
+      "collectedAt": "2026-09-08T06:53:30+07:00",
+      "steamViews": 830,
+      "steamFavorites": 53,
+      "githubViews": 919
+    },
+    {
+      "runId": "fh6-20260908-070818-254995",
+      "collectedAt": "2026-09-08T07:22:42+07:00",
+      "steamViews": 831,
+      "steamFavorites": 53,
+      "githubViews": 923
+    },
+    {
+      "runId": "fh6-20260908-072533-175429",
+      "collectedAt": "2026-09-08T07:28:07+07:00",
+      "steamViews": 831,
+      "steamFavorites": 53,
+      "githubViews": 924
+    },
+    {
+      "runId": "steam-confirmed-20260908-0733",
+      "collectedAt": "2026-09-08T11:52:59+07:00",
+      "steamViews": 838,
+      "steamFavorites": 53,
+      "githubViews": 932
+    },
+    {
+      "runId": "fh6-20260908-235816-169874",
+      "collectedAt": "2026-09-09T00:25:43.1731849+07:00",
+      "steamViews": 857,
+      "steamFavorites": 53,
+      "githubViews": 968
+    },
+    {
+      "runId": "fh6-20260909-003021-232774",
+      "collectedAt": "2026-09-09T00:31:00.2272844+07:00",
+      "steamViews": 858,
+      "steamFavorites": 53,
+      "githubViews": 968
+    }
+  ],
+  "updatedAt": "2026-09-09T00:31:00.3337341+07:00"
+}

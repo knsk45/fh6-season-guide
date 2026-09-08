@@ -3,7 +3,8 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$RunId,
     [string]$ProjectPath,
-    [string]$MetricsStatePath
+    [string]$MetricsStatePath,
+    [string]$HistoryPath
 )
 
 Set-StrictMode -Version Latest
@@ -12,6 +13,7 @@ $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $ProjectPath) { $ProjectPath = Join-Path $RepoRoot 'data\project.json' }
 if (-not $MetricsStatePath) { $MetricsStatePath = Join-Path $RepoRoot 'automation\runs\publication-metrics-state.json' }
+if (-not $HistoryPath) { $HistoryPath = Join-Path $RepoRoot 'data\publication-metrics-history.json' }
 
 function ConvertTo-MetricInteger {
     param(
@@ -52,6 +54,38 @@ function Write-MetricOutput {
     Write-Host "GITHUB_VIEWS_TOTAL=$($Snapshot.github.viewsTotal)"
     Write-Host "GITHUB_VIEWS_TODAY=$($Snapshot.github.viewsToday)"
     Write-Host "GITHUB_VIEWS_ADDED=$($Snapshot.github.viewsAdded)"
+}
+
+function Update-PublicHistory {
+    param(
+        [Parameter(Mandatory = $true)]$Snapshot,
+        [Parameter(Mandatory = $true)][string]$Path
+    )
+
+    if (-not (Test-Path -LiteralPath $Path)) { throw "Publication metrics history is missing: $Path" }
+    $History = Get-Content -LiteralPath $Path -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ($History.schemaVersion -ne 1 -or $null -eq $History.snapshots -or $null -eq $History.source) {
+        throw 'Publication metrics history has an unsupported schema.'
+    }
+
+    $Entry = [ordered]@{
+        runId = [string]$Snapshot.runId
+        collectedAt = [string]$Snapshot.collectedAt
+        steamViews = [long]$Snapshot.steam.views
+        steamFavorites = [long]$Snapshot.steam.favorites
+        githubViews = [long]$Snapshot.github.viewsTotal
+    }
+    $Existing = @($History.snapshots | Where-Object { [string]$_.runId -ne [string]$Snapshot.runId })
+    $History.snapshots = @($Existing + [pscustomobject]$Entry | Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt) } | Select-Object -Last 60)
+    $History | Add-Member -NotePropertyName updatedAt -NotePropertyValue ([DateTimeOffset]::Now.ToString('o')) -Force
+
+    $Directory = Split-Path -Parent $Path
+    if (-not (Test-Path -LiteralPath $Directory)) { New-Item -ItemType Directory -Path $Directory | Out-Null }
+    $TemporaryPath = "$Path.tmp"
+    [IO.File]::WriteAllText($TemporaryPath, ($History | ConvertTo-Json -Depth 12) + "`r`n", [Text.UTF8Encoding]::new($false))
+    Move-Item -LiteralPath $TemporaryPath -Destination $Path -Force
+    Write-Host "PUBLIC_METRICS_HISTORY=UPDATED"
+    Write-Host "PUBLIC_METRICS_HISTORY_POINTS=$(@($History.snapshots).Count)"
 }
 
 if ([string]::IsNullOrWhiteSpace($RunId)) { throw 'RunId cannot be empty.' }
@@ -114,5 +148,7 @@ if (-not (Test-Path -LiteralPath $StateDirectory)) { New-Item -ItemType Director
 $TemporaryPath = "$MetricsStatePath.tmp"
 [IO.File]::WriteAllText($TemporaryPath, ($Snapshot | ConvertTo-Json -Depth 8) + "`r`n", [Text.UTF8Encoding]::new($false))
 Move-Item -LiteralPath $TemporaryPath -Destination $MetricsStatePath -Force
+
+Update-PublicHistory -Snapshot $Snapshot -Path $HistoryPath
 
 Write-MetricOutput -Snapshot $Snapshot

@@ -47,7 +47,9 @@ if ($Action -eq 'Install') {
     $receipt = @{
         id=$receiptId; alias='FH6: получение итогового статуса'; description='Подтверждение итогового результата FH6 после проверенного уведомления. Событие приходит через авторизованный REST API. last_triggered сохраняет дату получения для независимого контроля.'
         triggers=@(@{trigger='event';event_type='fh6_refresh_finished'})
-        conditions=@(@{condition='template';value_template="{{ trigger.event.data.get('project') == 'fh6' and trigger.event.data.get('schemaVersion') == 1 and trigger.event.data.get('runDate') == now().strftime('%Y-%m-%d') and trigger.event.data.get('status') in ['COMPLETED','BLOCKED','PENDING_CONFIRMATION'] and trigger.event.data.get('notification') in ['SENT','ALREADY_SENT'] and (trigger.event.data.get('runId','') | length) > 5 and as_timestamp(trigger.event.data.get('completedAt'), 0) >= as_timestamp(today_at('06:00')) and as_timestamp(trigger.event.data.get('completedAt'), 0) <= as_timestamp(now()) + 30 }}"})
+        # Accept only a fresh final event.  The former 06:00 lower bound made a
+        # legitimate run finishing just after midnight impossible to receipt.
+        conditions=@(@{condition='template';value_template="{{ trigger.event.data.get('project') == 'fh6' and trigger.event.data.get('schemaVersion') == 1 and trigger.event.data.get('runDate') == now().strftime('%Y-%m-%d') and trigger.event.data.get('status') in ['COMPLETED','BLOCKED','PENDING_CONFIRMATION'] and trigger.event.data.get('notification') in ['SENT','ALREADY_SENT'] and (trigger.event.data.get('runId','') | length) > 5 and as_timestamp(trigger.event.data.get('completedAt'), 0) >= as_timestamp(now()) - 900 and as_timestamp(trigger.event.data.get('completedAt'), 0) <= as_timestamp(now()) + 30 }}"})
         actions=@(@{variables=@{received_run_id='{{ trigger.event.data.runId }}';received_status='{{ trigger.event.data.status }}'}})
         mode='queued';max=5
     }
@@ -82,7 +84,11 @@ if ($Action -eq 'Receipt') {
     # Compare HA timestamps on HA's clock. A small Windows/HA clock skew
     # otherwise rejects a real receipt even though last_triggered advanced.
     $before=TimePoint (Request POST 'template' @{template='{{ utcnow().isoformat() }}'})
-    $payload=@{schemaVersion=1;project='fh6';runId=$result.runId;runDate=$result.runDate;status=$result.status;notification=$active.notification;completedAt=[DateTimeOffset]::Now.ToString('o')}
+    # A guarded attempt can cross midnight. The receipt belongs to the day the
+    # final result was created, not the date recorded when the attempt started.
+    $resultStamp = if ($result.createdAt) { TimePoint $result.createdAt } else { [DateTimeOffset]::Now }
+    $receiptRunDate = $resultStamp.ToOffset([TimeSpan]::FromHours(7)).ToString('yyyy-MM-dd')
+    $payload=@{schemaVersion=1;project='fh6';runId=$result.runId;runDate=$receiptRunDate;status=$result.status;notification=$active.notification;completedAt=[DateTimeOffset]::Now.ToString('o')}
     $null=Request POST 'events/fh6_refresh_finished' $payload
     for($i=0;$i -lt 8;$i++) {
         $entity=Entity $receiptId

@@ -24,6 +24,7 @@ const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
 const branding = project?.branding;
 const support = project?.support;
 const analytics = project?.analytics;
+const publicationMetrics = artifact?.snapshot?.datasets?.publicationMetrics;
 
 if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
   throw new Error('artifact.json and current-season.json must contain valid title, generatedAt and endAt values');
@@ -63,6 +64,12 @@ if (!/^https:\/\/hits\.sh\/.+\.svg(?:\?.*)?$/.test(analytics.counterImageUrl)) {
 if (!/^https:\/\/hits\.sh\/.+\/$/.test(analytics.dashboardUrl)) {
   throw new Error(`Invalid hits.sh dashboard URL: ${analytics.dashboardUrl}`);
 }
+if (!publicationMetrics || !Array.isArray(publicationMetrics.rows) || publicationMetrics.rows.length < 2 || publicationMetrics.rows.length > 30) {
+  throw new Error('artifact.json must contain 2-30 publication-metrics rows');
+}
+if (!publicationMetrics.source?.steam || !publicationMetrics.source?.github || !publicationMetrics.title || !publicationMetrics.description) {
+  throw new Error('Publication metrics chart is missing source metadata');
+}
 const faviconPngSrc = branding.faviconPng.slice('reports/'.length);
 const appleTouchIconSrc = branding.appleTouchIcon.slice('reports/'.length);
 
@@ -72,6 +79,44 @@ function escapeHtml(value) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
+}
+
+function publicationChartHtml(dataset) {
+  const rows = dataset.rows;
+  const width = 660;
+  const height = 244;
+  const pad = { left: 44, right: 18, top: 24, bottom: 42 };
+  const plotWidth = width - pad.left - pad.right;
+  const plotHeight = height - pad.top - pad.bottom;
+  const values = rows.flatMap((row) => [Number(row.steamViews), Number(row.githubViews)]);
+  const max = Math.max(...values);
+  const scaleMax = Math.max(10, Math.ceil(max / 100) * 100);
+  const x = (index) => pad.left + (rows.length === 1 ? plotWidth / 2 : (plotWidth * index) / (rows.length - 1));
+  const y = (value) => pad.top + plotHeight - (Number(value) / scaleMax) * plotHeight;
+  const path = (key) => rows.map((row, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(row[key]).toFixed(1)}`).join(' ');
+  const last = rows.at(-1);
+  const formatLabel = (value) => new Intl.DateTimeFormat('ru-RU', { timeZone: 'Asia/Krasnoyarsk', day: '2-digit', month: '2-digit' }).format(new Date(value));
+  const labelIndexes = [...new Set([0, Math.floor((rows.length - 1) / 2), rows.length - 1])];
+  const labels = labelIndexes.map((index) => `<text class="trend-axis-label" x="${x(index).toFixed(1)}" y="${height - 14}" text-anchor="middle">${escapeHtml(formatLabel(rows[index].collectedAt))}</text>`).join('');
+  const gridValues = [0, Math.round(scaleMax / 2), scaleMax];
+  const grid = gridValues.map((value) => `<line class="trend-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${y(value).toFixed(1)}" y2="${y(value).toFixed(1)}"></line><text class="trend-axis-label" x="${pad.left - 8}" y="${(y(value) + 4).toFixed(1)}" text-anchor="end">${value}</text>`).join('');
+  const latestDate = new Intl.DateTimeFormat('ru-RU', { timeZone: 'Asia/Krasnoyarsk', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(last.collectedAt));
+  return `
+      <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
+        <h3 id="publication-chart-title">${escapeHtml(dataset.title)}</h3>
+        <p class="publication-chart-subtitle">${escapeHtml(dataset.description)}</p>
+        <svg class="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Посещения: Steam ${last.steamViews}, GitHub ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
+          ${grid}
+          <path class="trend-line trend-steam" d="${path('steamViews')}"></path>
+          <path class="trend-line trend-github" d="${path('githubViews')}"></path>
+          <circle class="trend-point trend-steam" cx="${x(rows.length - 1).toFixed(1)}" cy="${y(last.steamViews).toFixed(1)}" r="4"></circle>
+          <circle class="trend-point trend-github" cx="${x(rows.length - 1).toFixed(1)}" cy="${y(last.githubViews).toFixed(1)}" r="4"></circle>
+          <text class="trend-direct-label trend-steam-label" x="${(x(rows.length - 1) - 8).toFixed(1)}" y="${(y(last.steamViews) - 9).toFixed(1)}" text-anchor="end">Steam ${last.steamViews}</text>
+          <text class="trend-direct-label trend-github-label" x="${(x(rows.length - 1) - 8).toFixed(1)}" y="${(y(last.githubViews) + 17).toFixed(1)}" text-anchor="end">GitHub ${last.githubViews}</text>
+          ${labels}
+        </svg>
+        <p class="publication-chart-note">Последний замер: ${escapeHtml(latestDate)} · Steam в избранном: ${last.steamFavorites}. Значения фиксируются после успешной публичной проверки.</p>
+      </section>`;
 }
 
 function staticCard(block, index) {
@@ -97,6 +142,7 @@ const sharedStyleMatch = blocks[0].body.match(/<style>([\s\S]*?)<\/style>/i);
 if (!sharedStyleMatch) throw new Error('The first activity block has no shared card styles');
 const sharedCardCss = sharedStyleMatch[1];
 const cardsHtml = blocks.map(staticCard).join('\n');
+const publicationChart = publicationChartHtml(publicationMetrics);
 const supportHtml = `
     <section class="support-section" id="support-project" data-support-block>
       <h2>${escapeHtml(support.title)}</h2>
@@ -112,6 +158,7 @@ const supportHtml = `
         </a>
         <p class="visit-stats-note">${escapeHtml(analytics.description)}</p>
       </div>
+${publicationChart}
     </section>`;
 const updatedText = new Intl.DateTimeFormat('ru-RU', {
   timeZone: 'Asia/Krasnoyarsk',
@@ -144,6 +191,7 @@ ${sharedCardCss}
     .countdown{display:inline-flex;align-items:center;padding:6px 11px;border:1px solid #36515a;border-radius:999px;background:#0e2025}
     .countdown strong{margin-left:5px;color:#d9ff00;font-variant-numeric:tabular-nums}
     .updated{color:#8ea8ae}
+    .completion-progress{color:#d9ff00;font-variant-numeric:tabular-nums}.completion-filter{display:inline-flex;align-items:center;gap:5px;color:#b8ccd1;cursor:pointer}.completion-filter input{accent-color:#d9ff00}.hide-completed .activity-block.is-complete{display:none}.copy-code.copied:after{content:'Скопировано'}
     .report{width:min(1360px,100%);margin:0 auto;padding:28px 32px 64px}
     .activity-list{display:grid;gap:28px}
     .activity-block{min-width:0;content-visibility:auto;contain-intrinsic-size:auto 360px}
@@ -160,6 +208,11 @@ ${sharedCardCss}
     .visit-stats-link{display:inline-flex;min-height:28px;align-items:center;justify-content:center}
     .visit-stats-badge{display:block;width:auto;max-width:100%;height:28px}
     .support-section .visit-stats-note{margin:10px auto 0;color:#7f9aa1;font-size:12px;line-height:1.45}
+    .publication-chart{width:min(100%,700px);margin-top:26px;padding-top:22px;border-top:1px solid #29434b;text-align:left}
+    .publication-chart h3{margin:0;color:#fff;font-size:17px;line-height:1.3}
+    .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
+    .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
+    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-direct-label{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-steam-label{fill:#ff7bb8}.trend-github-label{fill:#d9ff00}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
@@ -172,6 +225,7 @@ ${sharedCardCss}
       .support-button{width:100%;padding:0 14px;font-size:15px}
       .visit-stats{margin-top:24px;padding-top:20px}
       .visit-stats-badge{height:26px}
+      .publication-chart{margin-top:22px;padding-top:20px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
@@ -182,6 +236,8 @@ ${sharedCardCss}
     <div class="page-meta">
       <span class="countdown">Заканчивается через <strong id="season-countdown">—</strong></span>
       <time class="updated" datetime="${escapeHtml(generatedAt)}">Обновлено: ${escapeHtml(updatedText)}</time>
+      <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/${expectedCardCount}</span>
+      <label class="completion-filter"><input id="completion-filter" type="checkbox"> Только невыполненные</label>
     </div>
   </header>
   <main class="report">
@@ -203,6 +259,43 @@ ${supportHtml}
     }
     tick();
     window.setInterval(tick, 1000);
+
+    const storageKey = ${JSON.stringify(`fh6-season-progress:${state.season.seriesSlug}:${state.season.season}:${state.season.startAt}`)};
+    const cards = [...document.querySelectorAll('[data-activity-block]')];
+    const progress = document.getElementById('completion-progress');
+    const filter = document.getElementById('completion-filter');
+    let complete = new Set();
+    try { complete = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); } catch { complete = new Set(); }
+    const save = () => localStorage.setItem(storageKey, JSON.stringify([...complete]));
+    const renderProgress = () => {
+      for (const section of cards) {
+        const id = section.id;
+        const done = complete.has(id);
+        section.classList.toggle('is-complete', done);
+        const button = section.querySelector('[data-completion-toggle]');
+        if (button) button.setAttribute('aria-pressed', String(done));
+      }
+      progress.textContent = 'Готово: ' + complete.size + '/${expectedCardCount}';
+      document.documentElement.classList.toggle('hide-completed', Boolean(filter.checked));
+    };
+    for (const section of cards) {
+      section.querySelector('[data-completion-toggle]')?.addEventListener('click', () => {
+        const id = section.id;
+        if (complete.has(id)) complete.delete(id); else complete.add(id);
+        save(); renderProgress();
+      });
+    }
+    filter.addEventListener('change', renderProgress);
+    for (const button of document.querySelectorAll('[data-copy-code]')) {
+      button.addEventListener('click', async () => {
+        const code = button.dataset.copyCode;
+        try { await navigator.clipboard.writeText(code); }
+        catch { const input = document.createElement('textarea'); input.value = code; document.body.append(input); input.select(); document.execCommand('copy'); input.remove(); }
+        button.classList.add('copied'); button.setAttribute('aria-label', 'Код ' + code + ' скопирован');
+        window.setTimeout(() => { button.classList.remove('copied'); button.setAttribute('aria-label', 'Копировать код ' + code); }, 1400);
+      });
+    }
+    renderProgress();
   })();
   </script>
 </body>
@@ -225,12 +318,15 @@ function writeFileWithRetry(filePath, content, attempts = 8) {
 
 const outputBytes = Buffer.byteLength(html, 'utf8');
 if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
-if ((html.match(/data-activity-block/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
-if ((html.match(/data-support-block/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
+if ((html.match(/<section class="activity-block"[^>]*\bdata-activity-block\b/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
+if ((html.match(/<section class="support-section"[^>]*\bdata-support-block\b/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
   throw new Error('Lightweight report lost the configured support block');
 }
-if ((html.match(/data-visit-stats/g) ?? []).length !== 1 || !html.includes(escapeHtml(analytics.counterImageUrl)) || !html.includes(escapeHtml(analytics.dashboardUrl))) {
+if ((html.match(/<div class="visit-stats"[^>]*\bdata-visit-stats\b/g) ?? []).length !== 1 || !html.includes(escapeHtml(analytics.counterImageUrl)) || !html.includes(escapeHtml(analytics.dashboardUrl))) {
   throw new Error('Lightweight report lost the configured visit statistics');
+}
+if ((html.match(/<section class="publication-chart"[^>]*\bdata-publication-chart\b/g) ?? []).length !== 1 || !html.includes('Динамика аудитории')) {
+  throw new Error('Lightweight report lost the native publication-history chart');
 }
 for (const asset of [faviconPngSrc, appleTouchIconSrc]) {
   if (!html.includes(asset)) throw new Error(`Lightweight report lost branding asset: ${asset}`);

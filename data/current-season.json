@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-08T07:26:29+07:00",
+  "lastContentUpdate": "2026-09-09T00:32:17+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -52,24 +52,26 @@
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
       "conditionHtml": "<ol><li><strong>03.09:</strong> 3 навыка Drift или E-Drift.</li><li><strong>04.09:</strong> потратить 15 000 CR на улучшения.</li><li><strong>05.09:</strong> получить минимум 1 звезду в Speed Zone.</li><li><strong>06.09:</strong> открыть Wheelspin или Super Wheelspin.</li><li><strong>07.09:</strong> купить Aftermarket Car.</li><li><strong>08.09:</strong> проехать 16,1 км.</li><li><strong>09.09:</strong> завершить третий раунд Horizon Stunt Party.</li></ol> Награда за каждый день: 5 000 CR.",
-      "howHtml": "Задания открываются по одному в указанные дни в 21:30 по Красноярску. На момент проверки 08.09 доступны задания 03–07.09; задание 08.09 откроется в 21:30. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.",
+      "howHtml": "Задания открываются по одному в указанные дни в 21:30 по Красноярску. На момент проверки 09.09 доступны задания 03–08.09; задание 09.09 откроется в 21:30. Дрифт засчитывайте отдельными навыками; покупки и Wheelspin выполняйте после открытия нужного дня.",
       "tuneHtml": "Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a> · <a href=\"https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season\" target=\"_blank\" rel=\"noopener noreferrer\">Иконки Daily на Fandom</a><br>Советы сообщества — без проверки в игре.",
       "visual": {
-        "image": "card-vertical-daily.webp",
-        "sourceImage": "tile-daily.jpg",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season",
-        "sourceLabel": "Производный визуал из семи точных иконок Daily текущей Spring-недели на Fandom"
+        "sourceUrl": "https://forza.labsgg.com/series/details",
+        "sourceLabel": "Точная игровая плитка Daily текущей Spring-недели не опубликована; нужен скриншот"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_03_photo",
@@ -384,5 +386,13 @@
       "missingFields": []
     }
   ],
-  "openItems": []
+  "openItems": [
+    {
+      "activityId": "activity_02_daily",
+      "field": "visual",
+      "reason": "После полного аудита доступен только производный композит Daily, а не отдельная точная игровая плитка текущей Spring-недели.",
+      "nextCheck": "Fandom Series 4 Spring, официальная Playlist/News, свежие Reddit-гайды и ForzaLabs; если отдельная плитка не появится — запросить неизменённый игровой скриншот с полной карточкой Daily.",
+      "status": "missing"
+    }
+  ]
 }

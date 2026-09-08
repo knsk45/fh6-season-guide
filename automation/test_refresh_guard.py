@@ -88,7 +88,7 @@ class GuardTests(unittest.TestCase):
 
     def complete_fixture(self):
         self.accept()
-        for name in ['preflight','timestamp','markdown','artifact','portable','html','structure','publish','steam_render','steam_check','metrics']:
+        for name in ['preflight','rollover_preflight','visual_queue','timestamp','markdown','artifact','portable','html','structure','publish','steam_render','steam_check','metrics']:
             self.run['steps'][name]={'status':'passed'}
         self.run['steamStatus']='UP_TO_DATE'
         self.run['builtFiles']={str(self.guard.state_path):g.digest(self.guard.state_path)}

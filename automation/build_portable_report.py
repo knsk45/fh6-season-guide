@@ -141,18 +141,43 @@ def validate_artifact(root, state, artifact, project):
     require(all(datetime.fromisoformat(s) == datetime.fromisoformat(state['lastContentUpdate']) for s in stamps), 'Artifact timestamp mismatch')
     require(snapshot['accessIssues'] == state['openItems'], 'Lost unresolved evidence')
     require(snapshot['status'] == ('partial' if state['openItems'] else 'ready'), 'Incorrect evidence status')
-    require(snapshot['datasets'] == {} and manifest['charts'] == [] and manifest['sources'] == [] and artifact['sources'] == [], 'Unsupported legacy artifact extension; add explicit support before use')
+    require(manifest['sources'] == [] and artifact['sources'] == [], 'Unsupported artifact source extension')
+    datasets, charts = snapshot['datasets'], manifest['charts']
+    require(set(datasets) == {'publicationMetrics'} and len(charts) == 1, 'Expected exactly one supported publication-metrics chart')
+    metric_data, chart = datasets['publicationMetrics'], charts[0]
+    require(set(metric_data) == {'title','source','description','rows'}, 'Publication metrics dataset fields mismatch')
+    require(chart == {
+        'id': 'publication-history', 'type': 'line', 'title': metric_data['title'],
+        'subtitle': 'Последние успешные публичные замеры: Steam — уникальные посетители, GitHub — просмотры сводки.',
+        'dataset': 'publicationMetrics', 'x': 'collectedAt', 'series': ['steamViews','githubViews'],
+        'palette': {'steamViews': '#ff2f92', 'githubViews': '#d9ff00'}
+    }, 'Unsupported publication-metrics chart contract')
+    require(isinstance(metric_data.get('source'), dict) and isinstance(metric_data.get('description'), str), 'Publication metrics source metadata missing')
+    require(set(metric_data['source']) == {'steam','github'}, 'Publication metrics source keys mismatch')
+    safe_link(metric_data['source']['steam']); safe_link(metric_data['source']['github'])
+    rows = metric_data.get('rows')
+    require(isinstance(rows, list) and len(rows) >= 2 and len(rows) <= 30, 'Publication metrics chart needs 2-30 rows')
+    previous = None
+    for row in rows:
+        require(set(row) == {'runId','collectedAt','steamViews','steamFavorites','githubViews'}, 'Publication metric row fields mismatch')
+        stamp = datetime.fromisoformat(row['collectedAt'])
+        require(isinstance(row['runId'], str) and row['runId'] and all(isinstance(row[name], int) and row[name] >= 0 for name in ('steamViews','steamFavorites','githubViews')), 'Invalid publication metric row')
+        require(previous is None or stamp > previous, 'Publication metric timestamps must be strictly ordered')
+        previous = stamp
     cards = state['activities']; blocks = manifest['blocks']
     require(len(cards) == season['expectedCardCount'] and [c['id'] for c in cards] == [b['id'] for b in blocks], 'Artifact activity count/order mismatch')
     for card, block in zip(cards, blocks):
         require(block['type'] == 'html' and block['layout'] == 'full', 'Unsupported block type/layout')
         doc = Document(block['body']).root
         require(len(doc.all('article', 'card')) == 1 and len(doc.all('style')) == 1, 'Invalid card envelope')
+        require(doc.all('article', 'card')[0].attrs.get('data-activity-id') == card['id'], 'Card completion identity mismatch')
         require(len(doc.all('h2')) == 1 and normalized(doc.all('h2')[0].text()) == normalized(str(card['number']) + card['title']), 'Card title mismatch')
+        toggles = doc.all('button', 'completion-toggle')
+        require(len(toggles) == 1 and 'data-completion-toggle' in toggles[0].attrs and toggles[0].attrs.get('aria-pressed') == 'false', 'Card completion control mismatch')
         require(len(doc.all('span','number')) == 1 and doc.all('span','number')[0].text() == str(card['number']), 'Card number mismatch')
         require(len(doc.all('span','points')) == 1 and doc.all('span','points')[0].text() == str(card['points']), 'Card points mismatch')
         require(len(doc.all('div','eyebrow')) == 1 and normalized(doc.all('div','eyebrow')[0].text()) == normalized(str(card['kind']) + str(card['points'])), 'Card kind mismatch')
-        allowed = {'style','article','div','img','span','h2','p','ol','ul','li','strong','code','a','em','b','br'}
+        allowed = {'style','article','div','img','span','h2','p','ol','ul','li','strong','code','a','em','b','br','button'}
         for node in doc.all():
             require(node.tag in allowed and not any(k.lower().startswith('on') for k in node.attrs), 'Active/unsupported HTML in card')
         require(not re.search(r'@import|url\s*\(|expression\s*\(', block['body'], re.I), 'External/active CSS in card')
@@ -160,15 +185,24 @@ def validate_artifact(root, state, artifact, project):
         require(len(paragraphs) == 3, 'Expected condition, how-to and tune paragraphs')
         for node, key, label in zip(paragraphs, ['conditionHtml','howHtml','tuneHtml'], ['Условие:', 'Как выполнить:', 'Автомобиль и тюнинг:']):
             require(normalized(node.text()) == normalized(label + ' ' + card[key]), 'Artifact content differs from state: ' + key)
+        expected_codes = re.findall(r'<code>([0-9]{3} [0-9]{3} [0-9]{3})</code>', card['tuneHtml'])
+        copy_buttons = doc.all('button', 'copy-code')
+        require([b.attrs.get('data-copy-code') for b in copy_buttons] == expected_codes, 'Share-code copy controls differ from state')
+        require(len(doc.all('div', 'provenance')) <= 1, 'Card provenance must be compact')
         expected_links = links(Document(card['sourceHtml']).root.all('a'))
         expected_links.append((card['visual'].get('sourceUrl') or season['fandomUrl'], card['visual'].get('sourceLabel') or 'изображение и иконка: Forza Wiki'))
         require(links(doc.all('a')) == expected_links, 'Artifact source links differ from state')
         orientation = card['visual'].get('orientation')
         require(orientation in {'horizontal', 'vertical'}, 'Unknown tile orientation: ' + str(orientation))
         tiles = [node for node in doc.all('div') if 'game-tile' in node.attrs.get('class', '').split()]
-        require(len(tiles) == 1 and f'game-tile-{orientation}' in tiles[0].attrs.get('class', '').split(), 'Card tile layout differs from state')
+        has_tile = bool(card['visual'].get('image') and card['visual'].get('sourceImage'))
+        if has_tile:
+            require(len(tiles) == 1 and f'game-tile-{orientation}' in tiles[0].attrs.get('class', '').split(), 'Card tile layout differs from state')
+        else:
+            require(card['completeness']['visual'] in {'missing','preliminary'} and 'visual' in card['missingFields'], 'Missing tile lacks unresolved evidence state')
+            require(not tiles and len(doc.all('article','card-no-tile')) == 1, 'Missing tile must not render a fallback visual')
         require(not doc.all('span', 'activity-icon'), 'Tile must not render a decorative overlay icon')
-        names = [season['assetsDirectory'] + '/' + card['visual']['image']]
+        names = [season['assetsDirectory'] + '/' + card['visual']['image']] if has_tile else []
         type_icon_key = card['visual'].get('typeIconKey')
         type_icons = [node for node in doc.all('span', 'type-icon')]
         if type_icon_key:
@@ -203,7 +237,10 @@ def validate_html(root, html, state, artifact, project):
     require(len(scripts) == 1 and 'src' not in scripts[0].attrs and state['season']['endAt'] in html, 'Unexpected script or deadline')
     support = [n for n in doc.all('section') if 'data-support-block' in n.attrs]
     require(len(support) == 1 and len(support[0].all('div','visit-stats')) == 1, 'Support/analytics block missing')
-    require(html.index('data-support-block') > html.rindex('data-activity-block'), 'Support must follow all activities')
+    require(len(support[0].all('section','publication-chart')) == 1, 'Publication history chart missing')
+    support_match = re.search(r'<section\s+class="support-section"[^>]*\bdata-support-block\b', html, re.I)
+    card_matches = list(re.finditer(r'<section\s+class="activity-block"[^>]*\bdata-activity-block\b', html, re.I))
+    require(support_match is not None and card_matches and support_match.start() > card_matches[-1].start(), 'Support must follow all activities')
     require(project['support']['title'] in support[0].text(), 'Support title mismatch')
     require(sum(a.attrs.get('href') == project['support']['url'] for a in support[0].all('a')) == 2, 'Support links mismatch')
     for rel, key in [('icon','faviconPng'),('apple-touch-icon','appleTouchIcon')]:

@@ -1,5 +1,32 @@
 # Source notes — 2026-09-07, Series 4 Spring
 
+## Внеплановый полный аудит и улучшения отчёта — 2026-09-09, 00:18 +07:00
+
+- Живая [официальная Playlist](https://forza.net/fh6playlists), [новость Series 4](https://forza.net/news/forza-horizon-6-series-4) и [Series Details](https://forza.labsgg.com/series/details) подтверждают активную **Series 4 «Horizon Mascot Party» / Весна** до **10.09.2026 21:30 Asia/Krasnoyarsk**: 14 карточек, один Daily из 7 пунктов и 53 очка. Официальная [новость Series 5](https://forza.net/news/forza-horizon-6-series-5) и Release Notes указывают, что следующий Series стартует 10.09; переключение по одной только дате не выполнялось.
+- Для Daily обновлена оперативная подсказка: в 00:18 09.09 доступны пункты 03–08.09, последний открывается в 21:30. Новых условий, наград, кодов или порядка карточек не найдено.
+- [Release Notes 07.09](https://support.forza.net/hc/en-us/articles/55121247584915-FH6-Release-Notes-September-7-2026) ретроактивно засчитывают **Winter** Daily из-за Horizon Story. Это не заменяет и не отменяет текущие Spring Daily; текущие карточки не менялись по этому исправлению.
+- Визуальный аудит выполнен для всех 14 карточек: **confirmed=13, community=0, preliminary=0, missing=1**. У `activity_02_daily` источники показывают семь заданий, но не отдельную точную игровую плитку: старый производный композит удалён из state и не будет опубликован. Требуется неизменённый скриншот с полностью видимой Daily-плиткой; оригинал будет сохранён, а затем из него без ретуши вырежется только граница плитки. Локальная очередь: `automation/runs/visual-evidence-queue.json`.
+- В отчёт добавлены компактные статусы происхождения, локальные отметки выполнения/фильтр и копирование 9-значных кодов; они работают в браузере пользователя и не отправляют игровую статистику. В финальном блоке поддержки добавлена нативная SVG-диаграмма последних публичных метрик из versioned истории, без iframe и внешней библиотеки.
+
+| Источник | Статус и результат текущей проверки |
+|---|---|
+| fandom_series_category | unavailable: [категория Series](https://forza.fandom.com/wiki/Category:Series_(FH6)) блокируется robots.txt в доступном reader; отсутствие не стало причиной переносить старые решения, коды или визуалы. |
+| fandom_current | unavailable: [страница Series 4 Spring](https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season) недоступна reader; из неё не взяты новые данные и не получена отдельная плитка Daily. |
+| forza_playlist | checked: [живая Playlist](https://forza.net/fh6playlists) подтверждает S04 Spring, все 14 карточек, 7 Daily, порядок, условия, награды и окно 03–10.09. |
+| forza_news | checked: [Series 4 News](https://forza.net/news/forza-horizon-6-series-4) подтверждает Spring до 10.09; [анонс Series 5](https://forza.net/news/forza-horizon-6-series-5) подтверждает ближайший rollover, но ещё не новую активную Playlist. |
+| forza_support_release_notes | checked: [Release Notes 07.09](https://support.forza.net/hc/en-us/articles/55121247584915-FH6-Release-Notes-September-7-2026) доступны; текущий Spring-порядок не изменён, Winter Daily исправлены ретроактивно. |
+| forza_support_known_issues | checked: [Known Issues](https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues) доступны; свежего отдельного ограничения Spring там нет. |
+| forza_forums_official | no_current_item: [официальный тег](https://forums.forza.net/tag/official-info/1731) не дал свежего недельного Spring-треда; отдельная страница Playlist Hub остаётся единственным официальным источником условий. |
+| reddit_forzahorizon | checked: [Spring breakdown](https://www.reddit.com/r/ForzaHorizon/comments/1w67gtq/fh6_series_4_spring_breakdown_and_rewards/) текущей недели подтверждает порядок и community-рекомендации; новых замен кодов не найдено. |
+| reddit_forzahorizon6 | checked: [Spring guide](https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/) подтверждает Series 4 Spring, 7 Daily и дедлайн; отдельной точной Daily-плитки не опубликовано. |
+| reddit_forza | checked: [Information Thread](https://www.reddit.com/r/forza/comments/1w6a0c8/fh6_spring_information_thread_series_4/) подтверждает текущую неделю; [репост Release Notes](https://www.reddit.com/r/forza/comments/1w9yh7c/fh6_release_notes_september_7_2026/) подтверждает Winter-only исправление. |
+| reddit_forzatune | no_current_item: в [r/ForzaTune](https://www.reddit.com/r/ForzaTune/) не найден отдельный свежий FH6 Series 4 Spring-пост; старые коды по этой причине не добавлялись. |
+| forza_horizon_hub | no_current_item: [Forza Horizon Hub](https://forzahorizonhub.com/) доступен, но его витрина всё ещё показывает Series 1; факты текущей Spring оттуда не брались. |
+| forza_labs_collector | no_current_item: [Collector Tool](https://forza.labsgg.com/collector-tool) проверен; отдельного Spring Treasure/Collectibles-решения не публикует. |
+| forza_labs_map | checked: [Interactive Map](https://forza.labsgg.com/interactive-map) и [Series Details](https://forza.labsgg.com/series/details) проверены; Series Details показывает отдельные точные плитки 13 activity, но не отдельную плитку Daily. |
+| escorenews_fh6 | unavailable: [индекс FH6](https://escorenews.com/en/games/forza-horizon-6) не открылся в доступном reader; свежего индексируемого Spring-материала не использовано. |
+| dungg_playlist | unavailable: [DungG Seasonal Playlist](https://www.youtube.com/@DungG) не отдал доступный текущенедельный выпуск в reader; решения, коды и визуалы из прошлых видео не переносились. |
+
 ## Контроль Daily после публикации — 2026-09-08, 07:26 +07:00
 
 - При cache-busted просмотре опубликованной сводки обнаружена устаревшая динамическая фраза Daily: она описывала 07.09, хотя сегодня 08.09. Исправлено состояние: доступны 03–07.09, задача 08.09 откроется в 21:30 по Красноярску. Список семи Daily, условия Playlist, порядок, карты, коды, активный сезон и визуалы не менялись.

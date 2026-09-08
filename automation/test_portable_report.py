@@ -24,7 +24,9 @@ class PortableTests(unittest.TestCase):
             shutil.copytree(source/directory, cls.root/directory)
         for name in b.CHAIN + ['reports/artifact.json','reports/current-week.html',
             'automation/send_home_assistant_notification.ps1','automation/collect_publication_metrics.ps1',
-            'automation/mark_steam_guide_published.ps1','automation/check_steam_guide.ps1']:
+            'automation/mark_steam_guide_published.ps1','automation/check_steam_guide.ps1',
+            'automation/render_steam_main_description.ps1','automation/season_rollover_preflight.ps1',
+            'automation/audit_visual_evidence.ps1']:
             target=cls.root/name;target.parent.mkdir(parents=True,exist_ok=True)
             shutil.copyfile(source/name,target)
         # Recreate generated files inside the isolated fixture so a source-schema
@@ -48,7 +50,7 @@ class PortableTests(unittest.TestCase):
         self.assertEqual(b.verify_receipt(self.root,self.receipt)['cards'],len(self.state['activities']))
 
     def test_vertical_tiles_keep_a_compact_text_column(self):
-        self.assertIn('<article class="card card-vertical">', self.html)
+        self.assertIn('<article class="card card-vertical" data-activity-id=', self.html)
         self.assertIn('.card-vertical .wrap{grid-template-columns:minmax(210px,280px) minmax(0,1fr)}', self.html)
         self.assertIn('.card-vertical .content{padding-left:12px}', self.html)
 
