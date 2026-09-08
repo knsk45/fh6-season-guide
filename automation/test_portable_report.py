@@ -47,6 +47,11 @@ class PortableTests(unittest.TestCase):
         self.assertEqual((self.root/'reports/current-week.html').read_text(encoding='utf-8'),self.html)
         self.assertEqual(b.verify_receipt(self.root,self.receipt)['cards'],len(self.state['activities']))
 
+    def test_vertical_tiles_keep_a_compact_text_column(self):
+        self.assertIn('<article class="card card-vertical">', self.html)
+        self.assertIn('.card-vertical .wrap{grid-template-columns:minmax(210px,280px) minmax(0,1fr)}', self.html)
+        self.assertIn('.card-vertical .content{padding-left:12px}', self.html)
+
     def test_real_zip_contains_html_and_all_local_assets(self):
         r=b.read(self.receipt)
         with zipfile.ZipFile(self.root/r['zipPath']) as z:
