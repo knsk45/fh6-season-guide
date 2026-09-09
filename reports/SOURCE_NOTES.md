@@ -1,5 +1,29 @@
 # Source notes — 2026-09-07, Series 4 Spring
 
+## Ежедневный аудит перед rollover — 2026-09-10, 06:18 +07:00
+
+- Живая [Festival Playlist](https://forza.net/fh6playlists) уже анонсирует следующий Series `British Automotive` с 10.09, но на момент аудита в Красноярске активная Series 4 Spring ещё не завершилась: сохранённый дедлайн — **10.09.2026 21:30 +07:00**. Поэтому rollover не запускается из предположения по календарной дате.
+- Сводка актуальна — содержательных изменений карточек, решений, тюнингов, изображений или `openItems` не требуется. Визуалы проверены: **confirmed=13, community=1, preliminary=0, missing=0**; все 14 подготовленных плиток и их исходники доступны локально.
+
+| Источник | Результат проверки 06:18 +07:00 |
+|---|---|
+| fandom_series_category | unavailable: HTTP 403; новые данные и визуалы не переносились. |
+| fandom_current | unavailable: HTTP 403; сезонные факты из недоступной страницы не добавлялись. |
+| forza_playlist | checked: HTTP 200; виден будущий Series, но без основания менять ещё активную Spring до её времени окончания. |
+| forza_news | checked: HTTP 200; доступна новость Series 4, новой корректировки Spring нет. |
+| forza_support_release_notes | unavailable: configured section HTTP 404; новые факты не добавлялись. |
+| forza_support_known_issues | checked: HTTP 200; нового ограничения Spring не найдено. |
+| forza_forums_official | no_current_item: HTTP 200, свежей темы Spring нет. |
+| reddit_forzahorizon | checked: HTTP 200, конфликтующих коррекций условий/кодов не найдено. |
+| reddit_forzahorizon6 | checked: HTTP 200, Spring guide остаётся актуальным; новой отдельной плитки нет. |
+| reddit_forza | checked: HTTP 200, конфликтующих недельных данных не найдено. |
+| reddit_forzatune | no_current_item: HTTP 200, нового отдельного Spring-поста нет. |
+| forza_horizon_hub | no_current_item: HTTP 200, новой публикации Spring-недели нет. |
+| forza_labs_collector | no_current_item: HTTP 200, нового решения/визуала нет. |
+| forza_labs_map | checked: HTTP 200, карта доступна; текущие плитки проверены локально по sourceImage/image. |
+| escorenews_fh6 | unavailable: HTTP 403; материал не использовался. |
+| dungg_playlist | no_current_item: HTTP 200, нового индексируемого выпуска Spring нет. |
+
 ## Пользовательская плитка Daily и внеплановый аудит — 2026-09-09, 08:10 +07:00
 
 - Пользователь передал игровой скриншот Daily. Оригинал сохранён как `daily-user-screenshot-2026-09-09.png` (612×975, SHA-256 `A81EC6CDD75EB543BDAC83448DB7FD1923CAA745C4D368DEFC4EE16ECA27A96A`); из него без ретуши вырезана только граница активной плитки **«За руль»** — `tile-daily-user-crop.webp` (528×294). Соседние задания, полоса прокрутки и красная пользовательская разметка не попали в подготовленный файл.
