@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-09T06:41:24+07:00",
+  "lastContentUpdate": "2026-09-09T08:12:37+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -56,22 +56,20 @@
       "tuneHtml": "Для поездки и звезды подойдёт любая удобная машина; для дрифта — управляемая заднеприводная. Специальный тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальные условия</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1w6914y/fh6_series_4_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд Spring, 03.09</a> · <a href=\"https://forza.fandom.com/wiki/Forza_Horizon_6/Series_4/Spring_Season\" target=\"_blank\" rel=\"noopener noreferrer\">Иконки Daily на Fandom</a><br>Советы сообщества — без проверки в игре.",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "tile-daily-user-crop.webp",
+        "sourceImage": "daily-user-screenshot-2026-09-09.png",
+        "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://forza.labsgg.com/series/details",
-        "sourceLabel": "Точная игровая плитка Daily текущей Spring-недели не опубликована; нужен скриншот"
+        "sourceUrl": "https://knsk45.github.io/fh6-season-guide/reports/assets/series-04-spring/daily-user-screenshot-2026-09-09.png",
+        "sourceLabel": "Пользовательский игровой скриншот: точная плитка Daily Spring, обрезка только до границ текущего задания"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_03_photo",
@@ -386,13 +384,5 @@
       "missingFields": []
     }
   ],
-  "openItems": [
-    {
-      "activityId": "activity_02_daily",
-      "field": "visual",
-      "reason": "После полного аудита доступен только производный композит Daily, а не отдельная точная игровая плитка текущей Spring-недели.",
-      "nextCheck": "Fandom Series 4 Spring, официальная Playlist/News, свежие Reddit-гайды и ForzaLabs; если отдельная плитка не появится — запросить неизменённый игровой скриншот с полной карточкой Daily.",
-      "status": "missing"
-    }
-  ]
+  "openItems": []
 }
