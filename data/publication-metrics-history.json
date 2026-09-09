@@ -142,11 +142,18 @@
     },
     {
       "runId": "fh6-20260909-063652-990057",
-      "collectedAt": "2026-09-09T06:42:48.6681450+07:00",
+      "collectedAt": "2026-09-09T06:42:48.668145+07:00",
       "steamViews": 873,
       "steamFavorites": 54,
       "githubViews": 996
+    },
+    {
+      "runId": "fh6-20260909-080635-458330",
+      "collectedAt": "2026-09-09T08:14:08.3115389+07:00",
+      "steamViews": 874,
+      "steamFavorites": 54,
+      "githubViews": 1005
     }
   ],
-  "updatedAt": "2026-09-09T06:42:48.7984637+07:00"
+  "updatedAt": "2026-09-09T08:14:08.4163873+07:00"
 }
