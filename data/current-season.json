@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-10T23:46:16+07:00",
+  "lastContentUpdate": "2026-09-11T00:43:05+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -28,7 +28,7 @@
       "conditionHtml": "2020 Land Rover Defender 110 X. Первая глава: получите и опробуйте автомобиль. Награда: 25 000 CR.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">British Automotive: официальная новость</a>",
+      "sourceHtml": "<a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная новость British Automotive</a>",
       "visual": {
         "image": "tile-weekly.webp",
         "sourceImage": "source-playlist-01.png",
@@ -58,7 +58,7 @@
       "conditionHtml": "<ol><li><strong>10.09:</strong> завершить 1 круг в дрифт-заезде.</li><li><strong>11.09:</strong> заработать минимум 1 звезду за скоростные участки.</li><li><strong>12.09:</strong> завершить гонку по грунту.</li><li><strong>13.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>14.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>15.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>16.09:</strong> ожидает подтверждения на игровой плитке.</li></ol> Награда за каждое задание: 5 000 CR.",
       "howHtml": "Ежедневные задания открываются последовательно; снимок показывает первые три пункта. Остальные будут добавлены только после появления их игровых плиток.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-daily.webp",
         "sourceImage": "source-playlist-02.png",
@@ -87,7 +87,7 @@
       "conditionHtml": "Сфотографируйте любую машину марки Jaguar на трассе Симанояма. Награда: одежда «Гоночный ретрокомбинезон».",
       "howHtml": "",
       "tuneHtml": "Подойдёт любой Jaguar; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-photo.webp",
         "sourceImage": "source-playlist-02.png",
@@ -115,7 +115,7 @@
       "conditionHtml": "Исследуйте фотоподсказку, чтобы найти сокровище. Награда: 100 000 CR.",
       "howHtml": "",
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a> · <a href=\"https://forza.labsgg.com/interactive-map\" target=\"_blank\" rel=\"noopener noreferrer\">Интерактивная карта ForzaLabs</a>",
+      "sourceHtml": "<a href=\"https://forza.labsgg.com/interactive-map\" target=\"_blank\" rel=\"noopener noreferrer\">Интерактивная карта ForzaLabs</a> — пригодится, когда появится точная точка сундука.",
       "visual": {
         "image": "tile-treasure.webp",
         "sourceImage": "source-playlist-02.png",
@@ -143,7 +143,7 @@
       "conditionHtml": "Награда: Jaguar XJR-15. Ограничение машин и этапы ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-championship-summer-village.webp",
         "sourceImage": "source-playlist-03.png",
@@ -173,7 +173,7 @@
       "conditionHtml": "Награда: 2020 Land Rover Defender 110 X. Ограничение машин и этапы ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-championship-autocross-heroes.webp",
         "sourceImage": "source-playlist-03.png",
@@ -203,7 +203,7 @@
       "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и результат ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-drift-zone.webp",
         "sourceImage": "source-playlist-04.png",
@@ -233,7 +233,7 @@
       "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и скорость ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-speed-trap.webp",
         "sourceImage": "source-playlist-04.png",
@@ -263,7 +263,7 @@
       "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и дистанция ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-danger-sign.webp",
         "sourceImage": "source-playlist-04.png",
@@ -293,7 +293,7 @@
       "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и время ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-trailblazer.webp",
         "sourceImage": "source-playlist-04.png",
@@ -323,7 +323,7 @@
       "conditionHtml": "Отработайте полную смену: «Доставка еды в Токио». Награда: Forza Link «Мотор!!!».",
       "howHtml": "",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-seasonal-job.webp",
         "sourceImage": "source-playlist-04.png",
@@ -351,7 +351,7 @@
       "conditionHtml": "Награда: Noble M600. Ограничение машин и этапы ожидают подтверждения.",
       "howHtml": "",
       "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-trial.webp",
         "sourceImage": "source-playlist-05.png",
@@ -381,7 +381,7 @@
       "conditionHtml": "Завершите любую каскадёрскую вечеринку Horizon. Награда: эмоция «Робот».",
       "howHtml": "",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-stunt-party.webp",
         "sourceImage": "source-playlist-05.png",
@@ -409,7 +409,7 @@
       "conditionHtml": "Опубликуйте чисто пройденный круг. Награда: призовая суперигра.",
       "howHtml": "",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Festival Playlist</a>",
+      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
         "image": "tile-monthly-rivals.webp",
         "sourceImage": "source-playlist-05.png",

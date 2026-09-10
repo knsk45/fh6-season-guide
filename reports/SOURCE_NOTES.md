@@ -1218,3 +1218,27 @@
 - Ссылки из `howHtml` Photo Challenge и Treasure Hunt перенесены в `sourceHtml`, то есть в нижнюю строку карточки.
 - Favicon заменён предоставленным пользователем изображением FH6 Season Guide; опубликованы отдельные PNG 32×32 и 180×180 с новыми именами для сброса браузерного кэша.
 - Число карточек не считается константой: генератор и валидатор используют только `season.expectedCardCount` текущего состояния.
+
+## Ежедневный аудит — 2026-09-11 00:38 +07:00 — компактные ссылки
+
+- Живая Festival Playlist и официальная новость Series 5 по-прежнему доступны и подтверждают активную неделю British Automotive — Лето до 17.09.2026 21:30 Asia/Krasnoyarsk. Карточки и точные пользовательские плитки не менялись; `audit_visual_evidence.ps1` — `READY`.
+- По просьбе пользователя повторяющаяся ссылка на Playlist удалена из всех карточек. Оставлены только две ссылки с практическим назначением: официальная новость British Automotive в Weekly и интерактивная карта ForzaLabs у Treasure Hunt. Остальные подписи источника не являются ссылками.
+
+| Источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki — FH6 Series category | Автоматический запрос по-прежнему получает 403; старые данные не использовались. |
+| Forza Wiki / Fandom | Автоматический запрос по-прежнему получает 403; старые данные и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; текущий сезон доступен. |
+| Official Forza News | HTTP 200; Series 5 British Automotive остаётся актуальной. |
+| Forza Support — Release Notes | Прежняя настроенная ссылка вернула 404; факты карточек не брались. |
+| Forza Support — Known Issues | HTTP 200; изменений, влияющих на карточки недели, не найдено. |
+| Official Forza Forums | HTTP 200; нового недельного breakdown не найдено. |
+| Reddit r/ForzaHorizon | HTTP 200; точных новых решений или кодов не найдено. |
+| Reddit r/ForzaHorizon6 | HTTP 200; точных новых решений или кодов не найдено. |
+| Reddit r/forza | HTTP 200; проверен официальный репост Series 5. |
+| Reddit r/ForzaTune | HTTP 200; свежего Summer tune-post нет; старые коды не переносились. |
+| Forza Horizon Hub | HTTP 200; точной точки Photo/Treasure пока нет. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельное решение не найдено. |
+| ForzaLabs Interactive Map | HTTP 200; сохранена единственная прикладная ссылка для Treasure Hunt. |
+| Escorenews FH6 | HTTP 403; новый независимый гайд недоступен. |
+| DungG Seasonal Playlist | HTTP 200; подтверждённого отдельного walkthrough Summer нет. |
