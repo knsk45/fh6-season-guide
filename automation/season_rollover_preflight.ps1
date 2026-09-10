@@ -32,7 +32,12 @@ $ExpectedDaily = [int]$State.season.expectedDailyItems
 
 if ($ExpectedCards -lt 1 -or @($State.activities).Count -ne $ExpectedCards) { throw 'Card count is not driven by current season state.' }
 if ($ExpectedDaily -lt 1 -or @($State.activities | Where-Object { $_.kind -match 'Daily' }).Count -ne 1) { throw 'Current season must contain exactly one Daily card.' }
-if ([DateTimeOffset]::Parse([string]$State.season.endAt) -le [DateTimeOffset]::Now) { throw 'Stored season has already ended; do not roll over without live Playlist confirmation.' }
+$seasonEndAt = [DateTimeOffset]::Parse(
+    [string]$State.season.endAt,
+    [Globalization.CultureInfo]::InvariantCulture,
+    [Globalization.DateTimeStyles]::AssumeLocal
+)
+if ($seasonEndAt -le [DateTimeOffset]::Now) { throw 'Stored season has already ended; do not roll over without live Playlist confirmation.' }
 if ($History.schemaVersion -ne 1 -or @($History.snapshots).Count -lt 2) { throw 'Metrics history needs at least two verified snapshots before a trend can be rendered.' }
 if (-not $Project.steamGuide.enabled -or -not $Project.analytics.enabled) { throw 'Steam guide and public analytics must stay enabled for rollover readiness.' }
 

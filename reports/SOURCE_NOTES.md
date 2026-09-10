@@ -1146,6 +1146,34 @@
 - Из-за явного требования убрать диаграмму канонический артефакт использует portable surface `dashboard`: валидатор поверхности `report` принудительно требует chart-блок и нарушил бы точное соответствие числу игровых карточек. Это влияет только на внутреннюю проверочную оболочку; пользовательский файл остаётся лёгкой публичной сезонной сводкой.
 - Визуальная QA через in-app Browser не выполнена: политика браузера блокирует локальные `file://` URL. Штатная сборка и portable-валидация выполняются отдельно.
 
+## Rollover — 2026-09-10 23:04 +07:00 — Series 5 British Automotive, Лето
+
+- Живая официальная новость Series 5 и пользовательские игровые кадры подтверждают начало **British Automotive — Лето** 10.09.2026 в 21:30 Asia/Krasnoyarsk. Новый сезон заканчивается 17.09.2026 в 21:30 Asia/Krasnoyarsk.
+- Пользователь передал пять неизменённых кадров меню Festival Playlist. Оригиналы сохранены в `reports/assets/series-05-summer/source-playlist-01.png` … `source-playlist-05.png`; из них без изменения содержимого вырезаны 14 точных игровых плиток. Общие и старые сезонные иллюстрации не используются.
+- Визуальный аудит: **14 community / 0 confirmed / 0 preliminary / 0 missing**. `automation/audit_visual_evidence.ps1` вернул `VISUAL_QUEUE_STATUS=READY`: точные плитки у всех карточек есть. Иконки в публичном тексте берутся только из постоянной библиотеки и только для типов, различимых на игровой плитке.
+- Подтверждённый порядок и видимые факты: Weekly «Экстремальный Rover»; один Daily из 7 дней; `#JaguarSnap`; Treasure Hunt «Регион Ито»; «Лето в деревне»; «Герои автокросса»; Drift Zone Симанояма; Speed Trap «Побережье»; Danger Sign «Запуск в Ирокаве»; Trailblazer «Спуск Кодати»; Seasonal Job «Доставка еды в Токио»; Trial «Море спринт-кроссов»; Stunt Party «Мини-игры»; Monthly Rivals «Спринт по Симанояме». В state задано 14 карточек и 7 Daily; отсутствующие лимиты, маршруты и свежие share codes остались в `openItems`.
+
+### Аудит обязательных источников — 2026-09-10 23:04 +07:00
+
+| Источник | Результат проверки текущей недели |
+|---|---|
+| Forza Wiki — FH6 Series category | HTTP 403 для автоматического запроса; свежая сезонная подстраница не использовалась как доказательство. |
+| Forza Wiki / Fandom | HTTP 403 для автоматического запроса; старые карточки и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; страница доступна. Новый экран Playlist подтверждён игровыми кадрами пользователя. |
+| Official Forza News | HTTP 200; статья `forza-horizon-6-series-5` подтверждает British Automotive и старт Festival Playlist 10.09 в 14:30 UTC. |
+| Forza Support — Release Notes | Прежняя ссылка вернула HTTP 404; конкретные факты карточек из неё не брались. |
+| Forza Support — Known Issues | HTTP 200; нового подтверждённого недельного бага, меняющего карточки, не найдено. |
+| Official Forza Forums | HTTP 200; отдельного свежего breakdown Summer в official-info не найдено. |
+| Reddit r/ForzaHorizon | HTTP 200; свежий официальный репост British Automotive найден, но точных условий и тюнингов Summer в него не добавлено. |
+| Reddit r/ForzaHorizon6 | HTTP 200; свежий репост Series 5 найден, полного недельного гайда с решениями нет. |
+| Reddit r/forza | HTTP 200; свежий официальный репост British Automotive подтверждает обновление, но не заменяет плитки условий. |
+| Reddit r/ForzaTune | HTTP 200; свежего Series 5 Summer tune-post не найдено, коды прошлой недели не переносились. |
+| Forza Horizon Hub | HTTP 200; точного решения Photo/Treasure Summer пока не найдено. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельного решения не обнаружено. |
+| ForzaLabs Interactive Map | HTTP 200; проверена как альтернатива для будущей точки Treasure. |
+| Escorenews FH6 | HTTP 403; свежий гайд Summer недоступен, сведения не заимствовались. |
+| DungG Seasonal Playlist | HTTP 200; отдельный подтверждённый выпуск Summer на момент проверки не найден. |
+
 ## Обновление визуалов и верхней панели — 2026-08-09
 
 - Страница сезона: [Forza Horizon 6/Series 3/Spring Season](https://forza.fandom.com/wiki/Forza_Horizon_6/Series_3/Spring_Season). Имена файлов получены через Fandom MediaWiki API `action=parse`, исходные URL и размеры — через `action=query&prop=imageinfo`.

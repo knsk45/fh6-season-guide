@@ -63,7 +63,7 @@ function Update-PublicHistory {
     )
 
     if (-not (Test-Path -LiteralPath $Path)) { throw "Publication metrics history is missing: $Path" }
-    $History = Get-Content -LiteralPath $Path -Raw -Encoding UTF8 | ConvertFrom-Json
+    $History = Get-Content -LiteralPath $Path -Raw -Encoding UTF8 | ConvertFrom-Json -DateKind String
     if ($History.schemaVersion -ne 1 -or $null -eq $History.snapshots -or $null -eq $History.source) {
         throw 'Publication metrics history has an unsupported schema.'
     }
@@ -76,7 +76,7 @@ function Update-PublicHistory {
         githubViews = [long]$Snapshot.github.viewsTotal
     }
     $Existing = @($History.snapshots | Where-Object { [string]$_.runId -ne [string]$Snapshot.runId })
-    $History.snapshots = @($Existing + [pscustomobject]$Entry | Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt) } | Select-Object -Last 60)
+    $History.snapshots = @($Existing + [pscustomobject]$Entry | Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt, [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::RoundtripKind) } | Select-Object -Last 60)
     $History | Add-Member -NotePropertyName updatedAt -NotePropertyValue ([DateTimeOffset]::Now.ToString('o')) -Force
 
     $Directory = Split-Path -Parent $Path
