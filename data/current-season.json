@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-11T06:02:44+07:00",
+  "lastContentUpdate": "2026-09-11T06:45:44+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,10 +25,10 @@
       "kind": "Weekly Challenge",
       "title": "Экстремальный Rover",
       "points": "5 очков",
-      "conditionHtml": "2020 Land Rover Defender 110 X. Первая глава: получите и опробуйте автомобиль. Награда: 25 000 CR.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная новость British Automotive</a>",
+      "conditionHtml": "На 2020 Land Rover Defender 110 X выполните главы по порядку: получите и опробуйте автомобиль → 4 звезды на Danger Sign → 3 навыка Great Wreckage → фото на трассе для дрифт-заезда Симанояма. Награда: 25 000 CR.",
+      "howHtml": "Главы засчитываются только последовательно. Для второй главы можно несколько раз проходить один и тот же Danger Sign, пока суммарно не будет 4 звезды.",
+      "tuneHtml": "2020 Land Rover Defender 110 X — A 800, share code: <code>137 549 957</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/forza/comments/1wcqf8s/fh6_summer_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Главы Weekly Series 5</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Актуальный тюнинг</a>",
       "visual": {
         "image": "tile-weekly.webp",
         "sourceImage": "source-playlist-01.png",
@@ -38,16 +38,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -81,8 +77,8 @@
       "kind": "Photo Challenge",
       "title": "#JaguarSnap",
       "points": "2 очка",
-      "conditionHtml": "Сфотографируйте любую машину марки Jaguar на трассе Симанояма. Награда: одежда «Гоночный ретрокомбинезон».",
-      "howHtml": "",
+      "conditionHtml": "Сфотографируйте любую машину марки Jaguar на трассе для дрифт-заезда Симанояма. Награда: одежда «Гоночный ретрокомбинезон».",
+      "howHtml": "Сядьте в любой Jaguar, откройте фоторежим прямо на территории трассы для дрифт-заезда Симанояма и сделайте снимок.",
       "tuneHtml": "Подойдёт любой Jaguar; тюнинг не требуется.",
       "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
@@ -95,13 +91,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure",
@@ -137,10 +131,10 @@
       "kind": "Seasonal Championship",
       "title": "Лето в деревне",
       "points": "5 очков",
-      "conditionHtml": "Награда: Jaguar XJR-15. Ограничение машин и этапы ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только Retro Supercars, A 700; Street Racing. Выиграйте чемпионат «Лето в деревне». Награда: 1991 Jaguar Sport XJR-15.",
+      "howHtml": "Этапы: Cedar Run → River Descent → Sunflower Charge. Для награды нужно набрать больше всего очков по итогам чемпионата.",
+      "tuneHtml": "1994 Ferrari F355 Berlinetta — A 700, share code: <code>258 991 303</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение, этапы и тюнинг</a>",
       "visual": {
         "image": "tile-championship-summer-village.webp",
         "sourceImage": "source-playlist-03.png",
@@ -150,16 +144,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_06_autocross_heroes",
@@ -167,10 +157,10 @@
       "kind": "Seasonal Championship",
       "title": "Герои автокросса",
       "points": "5 очков",
-      "conditionHtml": "Награда: 2020 Land Rover Defender 110 X. Ограничение машин и этапы ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только Sports Utility Heroes, A 700; Cross Country. Выиграйте чемпионат «Герои автокросса». Награда: 2020 Land Rover Defender 110 X.",
+      "howHtml": "Этапы: Edagawa Cross Country Circuit → City Docks Cross Country Circuit → Shinjuku Gyoen Cross Country.",
+      "tuneHtml": "2015 Land Rover Range Rover Sport SVR — A 700, share code: <code>128 948 305</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение, этапы и тюнинг</a>",
       "visual": {
         "image": "tile-championship-autocross-heroes.webp",
         "sourceImage": "source-playlist-03.png",
@@ -180,16 +170,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_07_drift_zone",
@@ -197,10 +183,10 @@
       "kind": "Drift Zone",
       "title": "Трасса для дрифт-заезда Симанояма",
       "points": "3 очка",
-      "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и результат ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Anything Goes, без ограничения PI. Наберите не менее 60 000 очков на Drift Attack Симанояма. Награда: суперигра.",
+      "howHtml": "Подойдёт любая машина: требование намеренно низкое, поэтому достаточно одного уверенного круга без специального тюнинга.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/forza/comments/1wcqf8s/fh6_summer_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Условия Drift Attack</a>",
       "visual": {
         "image": "tile-drift-zone.webp",
         "sourceImage": "source-playlist-04.png",
@@ -210,16 +196,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_08_speed_trap",
@@ -227,10 +209,10 @@
       "kind": "Speed Trap",
       "title": "Побережье",
       "points": "2 очка",
-      "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и скорость ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только автомобили United Kingdom, S1 800. На Speed Trap «Побережье» достигните 273,6 км/ч. Награда: суперигра.",
+      "howHtml": "Используйте длинный разгон и удерживайте машину на прямой перед камерой; цель соответствует 170 mph.",
+      "tuneHtml": "2021 McLaren 620R — S1 800, share code: <code>439 741 670</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение и тюнинг</a>",
       "visual": {
         "image": "tile-speed-trap.webp",
         "sourceImage": "source-playlist-04.png",
@@ -240,16 +222,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_danger_sign",
@@ -257,10 +235,10 @@
       "kind": "Danger Sign",
       "title": "Запуск в Ирокаве",
       "points": "2 очка",
-      "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и дистанция ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только автомобили United Kingdom, A 700. На Danger Sign «Запуск в Ирокаве» пролетите не менее 280 м. Награда: суперигра.",
+      "howHtml": "Для прыжка используйте длинный ровный разгон к трамплину; цель соответствует 918,6 ft.",
+      "tuneHtml": "1961 Jaguar E-Type — A 700, share code: <code>677 050 859</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение и тюнинг</a>",
       "visual": {
         "image": "tile-danger-sign.webp",
         "sourceImage": "source-playlist-04.png",
@@ -270,16 +248,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_trailblazer",
@@ -287,10 +261,10 @@
       "kind": "Trailblazer",
       "title": "Спуск Кодати",
       "points": "2 очка",
-      "conditionHtml": "Награда: Суперигра. Требуемые класс, автомобиль и время ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только автомобили United Kingdom, B 600. Пройдите Trailblazer «Спуск Кодати» за 30 секунд или быстрее. Награда: суперигра.",
+      "howHtml": "После старта идите прямо вниз с холма к дороге: не тратьте время на аккуратный объезд брёвен — запас обычно составляет около трёх секунд.",
+      "tuneHtml": "2015 Land Rover Range Rover Sport SVR — B 600, share code: <code>175 305 746</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение, маршрут и тюнинг</a>",
       "visual": {
         "image": "tile-trailblazer.webp",
         "sourceImage": "source-playlist-04.png",
@@ -300,16 +274,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_seasonal_job",
@@ -317,8 +287,8 @@
       "kind": "Seasonal Job",
       "title": "Доставка еды в Токио",
       "points": "3 очка",
-      "conditionHtml": "Отработайте полную смену: «Доставка еды в Токио». Награда: Forza Link «Мотор!!!».",
-      "howHtml": "",
+      "conditionHtml": "Отработайте полную смену «Доставка еды в Токио»: не менее 3 заказов подряд. Награда: Forza Link «Мотор!!!».",
+      "howHtml": "Завершите три последовательные доставки в одной смене; для удобства разрешено включить Auto-Drive через Anna.",
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
@@ -331,13 +301,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_trial",
@@ -345,10 +313,10 @@
       "kind": "Trial",
       "title": "Море спринт-кроссов",
       "points": "10 очков",
-      "conditionHtml": "Награда: Noble M600. Ограничение машин и этапы ожидают подтверждения.",
-      "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "conditionHtml": "Только Total Buggies & Offroad, A 700; Dirt Racing. Пройдите Trial «Море спринт-кроссов» на сложности Unbeatable. Награда: 2010 Noble M600.",
+      "howHtml": "Заезды: Waterfall Trail → Takashiro Trail → Nukabira Trail. В фильтрах подходящие машины ищите через Buggies, Offroad, Picks & 4x4s, Unlimited Buggies и Unlimited Offroad.",
+      "tuneHtml": "1991 GMC Syclone — A 700, share code: <code>948 525 930</code>.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wclmwm/series_5_playlist_1_summer_competitive_tunes/\" target=\"_blank\" rel=\"noopener noreferrer\">Ограничение, этапы и тюнинг</a>",
       "visual": {
         "image": "tile-trial.webp",
         "sourceImage": "source-playlist-05.png",
@@ -358,16 +326,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
-        "vehicleTune": "missing",
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_stunt_party",
@@ -376,7 +340,7 @@
       "title": "Мини-игры",
       "points": "3 очка",
       "conditionHtml": "Завершите любую каскадёрскую вечеринку Horizon. Награда: эмоция «Робот».",
-      "howHtml": "",
+      "howHtml": "Вечеринка начинается каждый час; есть 10 минут на регистрацию. Ротация: Chaos → Drift → Speed → Wreckage.",
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
@@ -389,13 +353,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -403,8 +365,8 @@
       "kind": "Monthly Rivals",
       "title": "Спринт по Симанояме",
       "points": "4 очка",
-      "conditionHtml": "Опубликуйте чисто пройденный круг. Награда: призовая суперигра.",
-      "howHtml": "",
+      "conditionHtml": "На 2025 McLaren W1 опубликуйте чистый круг на «Спринте по Симанояме». Награда: призовая суперигра.",
+      "howHtml": "В Rivals выберите заезд, выполните круг без столкновений и не пропускайте контрольные точки.",
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "Источник: точная игровая плитка текущей недели.",
       "visual": {
@@ -416,218 +378,20 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "confirmed",
-        "solution": "missing",
+        "condition": "community",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     }
   ],
   "openItems": [
-    {
-      "activityId": "activity_01_weekly",
-      "field": "condition",
-      "reason": "Полные главы Weekly не видны на предоставленной плитке.",
-      "nextCheck": "Official Playlist и свежий недельный гайд",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_01_weekly",
-      "field": "solution",
-      "reason": "Нет свежего пошагового решения.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_01_weekly",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода тюнинга.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "solution",
-      "reason": "Точная точка для #JaguarSnap ещё не подтверждена.",
-      "nextCheck": "Forza Horizon Hub / Reddit",
-      "status": "missing"
-    },
     {
       "activityId": "activity_04_treasure",
       "field": "solution",
       "reason": "Нет подтверждённой точки сундука.",
       "nextCheck": "ForzaLabs / Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_summer_village",
-      "field": "condition",
-      "reason": "Нет точного ограничения и списка этапов.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_summer_village",
-      "field": "solution",
-      "reason": "Нет свежего маршрута.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_summer_village",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_autocross_heroes",
-      "field": "condition",
-      "reason": "Нет точного ограничения и списка этапов.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_06_autocross_heroes",
-      "field": "solution",
-      "reason": "Нет свежего маршрута.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_autocross_heroes",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_drift_zone",
-      "field": "condition",
-      "reason": "Нет требования по классу и результату.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_07_drift_zone",
-      "field": "solution",
-      "reason": "Нет подтверждённого заезда.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_drift_zone",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "condition",
-      "reason": "Нет требования по классу и скорости.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "solution",
-      "reason": "Нет подтверждённого разгона.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_danger_sign",
-      "field": "condition",
-      "reason": "Нет требования по классу и дистанции.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_09_danger_sign",
-      "field": "solution",
-      "reason": "Нет подтверждённого разгона.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_danger_sign",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_trailblazer",
-      "field": "condition",
-      "reason": "Нет требования по классу и времени.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_10_trailblazer",
-      "field": "solution",
-      "reason": "Нет подтверждённого маршрута.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_trailblazer",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_seasonal_job",
-      "field": "solution",
-      "reason": "Нет подтверждённого прохождения задания.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_trial",
-      "field": "condition",
-      "reason": "Нет точного ограничения и списка этапов.",
-      "nextCheck": "Official Playlist",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_12_trial",
-      "field": "solution",
-      "reason": "Нет свежего маршрута.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_trial",
-      "field": "vehicleTune",
-      "reason": "Нет свежего кода.",
-      "nextCheck": "r/ForzaTune",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_stunt_party",
-      "field": "solution",
-      "reason": "Нет подтверждённой рекомендации по мини-игре.",
-      "nextCheck": "Reddit / DungG",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "solution",
-      "reason": "Нет подтверждённой траектории.",
-      "nextCheck": "Reddit / DungG",
       "status": "missing"
     }
   ]
