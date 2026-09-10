@@ -136,8 +136,6 @@ function New-CardHtml($card) {
         $typeIcon = Get-TypeIconDataUri ([string]$visual.typeIconKey)
         $typeIconMarkup = "<span class=`"type-icon`" data-type-icon=`"$($visual.typeIconKey)`"><img src=`"$($typeIcon.dataUri)`" data-local-src=`"$($typeIcon.webPath)`" loading=`"lazy`" decoding=`"async`" alt=`"Иконка $($card.kind)`"></span>"
     }
-    $imageSourceUrl = if ($visual.sourceUrl) { $visual.sourceUrl } else { $season.fandomUrl }
-    $imageSourceLabel = if ($visual.sourceLabel) { $visual.sourceLabel } else { 'изображение и иконка: Forza Wiki' }
     $seasonAlt = "Series $($season.seriesNumber) $($season.seasonDisplay)"
     $conditionHtml = Add-PerformanceIndexBadges ([string]$card.conditionHtml)
     $howHtml = Add-PerformanceIndexBadges ([string]$card.howHtml)
@@ -159,7 +157,7 @@ function New-CardHtml($card) {
       <p><span class="label">Условие:</span> $conditionHtml</p>
       <p><span class="label">Как выполнить:</span> $howHtml</p>
       <p class="tune"><span class="label">Автомобиль и тюнинг:</span> $tuneHtml</p>
-      <div class="sources">$provenanceMarkup$($card.sourceHtml) · <a href='$imageSourceUrl' target='_blank' rel='noopener noreferrer'>$imageSourceLabel</a></div>
+      <div class="sources">$provenanceMarkup$($card.sourceHtml)</div>
     </div>
   </div>
 </article>

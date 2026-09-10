@@ -81,7 +81,12 @@ class PortableTests(unittest.TestCase):
             block['body'] = body
         self.bad_artifact(corrupt_image)
     def test_javascript_link_rejected(self):
-        self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('https://forza.net/fh6playlists','javascript:alert(1)')))
+        def inject_javascript_link(artifact):
+            block = next(item for item in artifact['manifest']['blocks'] if 'href=' in item['body'])
+            body, changed = re.subn(r'(href=[\"\'])https?://[^\"\']+', r'\1javascript:alert(1)', block['body'], count=1)
+            self.assertEqual(changed, 1, 'The negative test needs one current card source link')
+            block['body'] = body
+        self.bad_artifact(inject_javascript_link)
     def test_script_injection_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<script>alert(1)</script>'))
     def test_event_handler_rejected(self):

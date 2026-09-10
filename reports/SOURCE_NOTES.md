@@ -1242,3 +1242,30 @@
 | ForzaLabs Interactive Map | HTTP 200; сохранена единственная прикладная ссылка для Treasure Hunt. |
 | Escorenews FH6 | HTTP 403; новый независимый гайд недоступен. |
 | DungG Seasonal Playlist | HTTP 200; подтверждённого отдельного walkthrough Summer нет. |
+
+## Ежедневный аудит — 2026-09-11 04:38 +07:00 — точные плитки и полный Daily
+
+- `r/forza` Information Thread Series 5 и свежий Summer breakdown подтвердили весь список Daily: Drift Attack; звезда в Speed Zone; Dirt Race; 3 Great Wreckage; парковка на Car Meet; обгон ghost в Rivals; 3 Drift/E-Drift. Все семь пунктов заполнены как community-подтверждённые, без ожидания новых скриншотов.
+- Горизонтальные плитки повторно вырезаны непосредственно из оригиналов 2559×1599 по их фактическим границам: удалены чёрные разделители и полоса соседнего блока, правые края с наградой и типовой иконкой сохранены. Визуальная контрольная сетка проверена локально; общие или прошлосезонные изображения не использовались.
+- В публичных карточках и в Markdown более нет ссылок на `visual.sourceImage` или предоставленные скриншоты. Оригиналы остаются только локальным доказательством в state и assets; для посетителя остаются только ссылки из `sourceHtml`, когда они имеют прикладную ценность.
+
+| Обязательный источник | Проверка 11.09.2026 04:47 +07:00 |
+|---|---|
+| Forza Wiki — Series (FH6) | HTTP 403; материал недоступен автоматически, старые данные не использовались. |
+| Forza Wiki — текущий сезон | HTTP 403; материал недоступен автоматически, старые данные и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; активная Playlist доступна. |
+| Official Forza News | HTTP 200; Series 5 British Automotive подтверждена. |
+| Forza Support — Release Notes | HTTP 404 по настроенному URL; факты карточек не брались. |
+| Forza Support — Known Issues | HTTP 200; влияющих на текущие активности изменений не найдено. |
+| Official Forza Forums | HTTP 200; нового недельного breakdown не найдено. |
+| Reddit r/ForzaHorizon | HTTP 200; проверены текущие Summer breakdown и tune-тред. |
+| Reddit r/ForzaHorizon6 | HTTP 200; проверен текущий Summer tune-кросспост. |
+| Reddit r/forza | HTTP 200; Information Thread Series 5 подтвердил все 7 Daily. |
+| Reddit r/ForzaTune | HTTP 200; свежего Summer-поста с подтверждёнными кодами не найдено. |
+| Forza Horizon Hub | HTTP 200; точного текущего решения Photo/Treasure не найдено. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельного решения не найдено. |
+| ForzaLabs Interactive Map | HTTP 200; проверена для будущей точки Treasure. |
+| Escorenews FH6 | HTTP 403; независимый свежий гайд недоступен. |
+| DungG Seasonal Playlist | HTTP 200; отдельного подтверждённого walkthrough Summer не найдено. |
+
+Визуальный аудит: 14/14 activity проверены; 12 точных пользовательских плиток подготовлены из сохранённых оригиналов текущей недели, 2 карточки без плиток остаются в очереди evidence. Общие, прошлосезонные и AI-визуалы не применялись.

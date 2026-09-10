@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-11T00:43:05+07:00",
+  "lastContentUpdate": "2026-09-11T04:50:18+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -55,10 +55,10 @@
       "kind": "Daily Challenges",
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
-      "conditionHtml": "<ol><li><strong>10.09:</strong> завершить 1 круг в дрифт-заезде.</li><li><strong>11.09:</strong> заработать минимум 1 звезду за скоростные участки.</li><li><strong>12.09:</strong> завершить гонку по грунту.</li><li><strong>13.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>14.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>15.09:</strong> ожидает подтверждения на игровой плитке.</li><li><strong>16.09:</strong> ожидает подтверждения на игровой плитке.</li></ol> Награда за каждое задание: 5 000 CR.",
-      "howHtml": "Ежедневные задания открываются последовательно; снимок показывает первые три пункта. Остальные будут добавлены только после появления их игровых плиток.",
+      "conditionHtml": "<ol><li><strong>10.09:</strong> завершить 1 круг в Drift Attack.</li><li><strong>11.09:</strong> заработать минимум 1 звезду в Speed Zone.</li><li><strong>12.09:</strong> завершить гонку по грунту.</li><li><strong>13.09:</strong> заработать 3 навыка Great Wreckage.</li><li><strong>14.09:</strong> припарковаться на любой Car Meet.</li><li><strong>15.09:</strong> обогнать призрак соперника в Rivals.</li><li><strong>16.09:</strong> заработать 3 навыка Drift или E-Drift.</li></ol> Награда за каждое задание: 5 000 CR.",
+      "howHtml": "Каждое Daily открывается в 21:30 по Красноярску и остаётся доступным 7 дней. Для призрака выберите Rivals и завершите круг быстрее любого показанного ghost; для Drift Attack подойдёт один полный круг.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "Источник: точная игровая плитка текущей недели.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/forza/comments/1wcqf8s/fh6_summer_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Полный список Daily Series 5</a>",
       "visual": {
         "image": "tile-daily.webp",
         "sourceImage": "source-playlist-02.png",
@@ -68,15 +68,12 @@
         "sourceLabel": "Пользовательский игровой скриншот Series 5 Summer; точная плитка Daily вырезана без изменения содержимого"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "preliminary",
+        "condition": "community",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_03_photo",
@@ -450,20 +447,6 @@
       "reason": "Нет свежего кода тюнинга.",
       "nextCheck": "r/ForzaTune",
       "status": "missing"
-    },
-    {
-      "activityId": "activity_02_daily",
-      "field": "condition",
-      "reason": "Плитка подтверждает только первые три Daily; четыре ещё закрыты.",
-      "nextCheck": "Ежедневные игровые плитки",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_02_daily",
-      "field": "solution",
-      "reason": "Нет решений для всех семи Daily.",
-      "nextCheck": "Reddit / DungG",
-      "status": "preliminary"
     },
     {
       "activityId": "activity_03_photo",

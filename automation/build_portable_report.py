@@ -190,7 +190,6 @@ def validate_artifact(root, state, artifact, project):
         require([b.attrs.get('data-copy-code') for b in copy_buttons] == expected_codes, 'Share-code copy controls differ from state')
         require(len(doc.all('div', 'provenance')) <= 1, 'Card provenance must be compact')
         expected_links = links(Document(card['sourceHtml']).root.all('a'))
-        expected_links.append((card['visual'].get('sourceUrl') or season['fandomUrl'], card['visual'].get('sourceLabel') or 'изображение и иконка: Forza Wiki'))
         require(links(doc.all('a')) == expected_links, 'Artifact source links differ from state')
         orientation = card['visual'].get('orientation')
         require(orientation in {'horizontal', 'vertical'}, 'Unknown tile orientation: ' + str(orientation))
