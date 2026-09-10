@@ -1269,3 +1269,27 @@
 | DungG Seasonal Playlist | HTTP 200; отдельного подтверждённого walkthrough Summer не найдено. |
 
 Визуальный аудит: 14/14 activity проверены; 12 точных пользовательских плиток подготовлены из сохранённых оригиналов текущей недели, 2 карточки без плиток остаются в очереди evidence. Общие, прошлосезонные и AI-визуалы не применялись.
+
+## Ежедневный аудит — 2026-09-11 06:02 +07:00 — сводка актуальна
+
+- Сводка актуальна — содержательных изменений не требуется. Живая Playlist и официальные Series 5 материалы по-прежнему подтверждают British Automotive / Лето до 17.09.2026 21:30 Asia/Krasnoyarsk; полный список из 7 Daily остаётся подтверждённым текущенедельным Information Thread r/forza.
+- `audit_visual_evidence.ps1`: `READY`; все 14 визуалов повторно проверены. Точные игровые плитки и их SHA не изменились, новые или более точные варианты не обнаружены.
+
+| Обязательный источник | Проверка 11.09.2026 06:02 +07:00 |
+|---|---|
+| Forza Wiki — Series (FH6) | HTTP 403; старые данные не использовались. |
+| Forza Wiki — текущий сезон | HTTP 403; старые визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; активный сезон подтверждён. |
+| Official Forza News | HTTP 200; Series 5 остаётся актуальной. |
+| Forza Support — Release Notes | HTTP 404 по настроенному URL; факты карточек не брались. |
+| Forza Support — Known Issues | HTTP 200; влияющих изменений не найдено. |
+| Official Forza Forums | HTTP 200; нового недельного breakdown нет. |
+| Reddit r/ForzaHorizon | HTTP 200; свежих точных изменений не найдено. |
+| Reddit r/ForzaHorizon6 | HTTP 200; свежих точных изменений не найдено. |
+| Reddit r/forza | HTTP 200; Information Thread Series 5 проверен. |
+| Reddit r/ForzaTune | HTTP 200; свежих подтверждённых Summer-кодов нет. |
+| Forza Horizon Hub | HTTP 200; точного нового Photo/Treasure решения нет. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельного решения нет. |
+| ForzaLabs Interactive Map | HTTP 200; проверена для будущей точки Treasure. |
+| Escorenews FH6 | HTTP 403; свежий гайд недоступен. |
+| DungG Seasonal Playlist | HTTP 200; отдельного подтверждённого Summer walkthrough нет. |

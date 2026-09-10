@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Лето",
     "description": "Сезон действует до 2026-09-17T21:30:00+07:00",
-    "generatedAt": "2026-09-11T04:50:18.0000000+07:00",
+    "generatedAt": "2026-09-11T06:02:44.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -115,7 +115,7 @@
   "snapshot": {
     "version": 1,
     "status": "partial",
-    "generatedAt": "2026-09-11T04:50:18.0000000+07:00",
+    "generatedAt": "2026-09-11T06:02:44.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -306,6 +306,13 @@
             "steamViews": 921,
             "steamFavorites": 56,
             "githubViews": 1126
+          },
+          {
+            "runId": "fh6-20260911-043741-868634",
+            "collectedAt": "2026-09-11T04:52:15.5919801+07:00",
+            "steamViews": 935,
+            "steamFavorites": 55,
+            "githubViews": 1154
           }
         ]
       }
@@ -518,7 +525,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-09-11T04:50:18.0000000+07:00",
+    "generated_at": "2026-09-11T06:02:44.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }
