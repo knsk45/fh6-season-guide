@@ -1319,3 +1319,28 @@
 | ForzaLabs Interactive Map | HTTP 200; проверена для будущей точки сундука. |
 | Escorenews FH6 | HTTP 403; данные не заимствовались. |
 | DungG Seasonal Playlist | HTTP 200; отдельного подтверждённого Summer walkthrough нет. |
+
+## Ежедневный аудит — 2026-09-12 06:05 +07:00
+
+- Активный сезон подтверждён по живой официальной Playlist: Series 5 «British Automotive» — Лето до 17.09.2026 21:30 Asia/Krasnoyarsk.
+- Свежий текущенедельный гайд r/ForzaHorizon6 подтвердил все Daily и дал машину с 9-значным share code для доступного 12.09 задания «Гонка по грунту»: 2018 Mercedes-Benz X-Class, `832 534 809`. Это добавлено в Daily; остальные факты и порядок карточек не изменились.
+- Визуальный аудит: 14/14 activity проверены; 12 точных текущенедельных плиток и 2 корректно отсутствующих визуала без изменений. Новые, более точные либо прошлосезонные визуалы не применялись.
+
+| Обязательный источник | Проверка 12.09.2026 06:05 +07:00 |
+|---|---|
+| Forza Wiki — Series (FH6) | Доступ автоматического клиента ограничен; старые данные не использовались. |
+| Forza Wiki — текущий сезон | Доступ автоматического клиента ограничен; старые данные и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; Series 5 British Automotive — Summer подтверждён. |
+| Official Forza News | HTTP 200; нового материала, меняющего неделю, не найдено. |
+| Forza Support — Release Notes | Настроенная ссылка недоступна; факты карточек не брались. |
+| Forza Support — Known Issues | HTTP 200; влияющих на текущие активности изменений нет. |
+| Official Forza Forums | HTTP 200; нового недельного breakdown нет. |
+| Reddit r/ForzaHorizon | Проверен свежий Summer breakdown; условия недели подтверждены. |
+| Reddit r/ForzaHorizon6 | Свежий текущенедельный гайд подтвердил Daily и дал код для Daily 12.09. |
+| Reddit r/forza | Information Thread Series 5 подтверждает активный сезон, полный Daily и ограничения. |
+| Reddit r/ForzaTune | Свежего подтверждённого Summer-поста не найдено; старые коды не переносились. |
+| Forza Horizon Hub | HTTP 200; точного решения Treasure Hunt не найдено. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельного решения Treasure Hunt не найдено. |
+| ForzaLabs Interactive Map | HTTP 200; проверена для будущей точки сундука. |
+| Escorenews FH6 | Доступ автоматического клиента ограничен; новые данные не использовались. |
+| DungG Seasonal Playlist | Автоматическая проверка недоступна; отдельного нового walkthrough не подтверждено. |

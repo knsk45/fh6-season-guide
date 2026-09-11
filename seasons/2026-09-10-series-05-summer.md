@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 10.09.2026 21:30 — 17.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 11.09.2026 06:45
+> Обновлено: 12.09.2026 06:09
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. Weekly Challenge — Экстремальный Rover · 5 очков
@@ -16,8 +16,8 @@
 
 - **Условие:** <ol><li><strong>10.09:</strong> завершить 1 круг в Drift Attack.</li><li><strong>11.09:</strong> заработать минимум 1 звезду в Speed Zone.</li><li><strong>12.09:</strong> завершить гонку по грунту.</li><li><strong>13.09:</strong> заработать 3 навыка Great Wreckage.</li><li><strong>14.09:</strong> припарковаться на любой Car Meet.</li><li><strong>15.09:</strong> обогнать призрак соперника в Rivals.</li><li><strong>16.09:</strong> заработать 3 навыка Drift или E-Drift.</li></ol> Награда за каждое задание: 5 000 CR.
 - **Как выполнить:** Каждое Daily открывается в 21:30 по Красноярску и остаётся доступным 7 дней. Для призрака выберите Rivals и завершите круг быстрее любого показанного ghost; для Drift Attack подойдёт один полный круг.
-- **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://www.reddit.com/r/forza/comments/1wcqf8s/fh6_summer_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Полный список Daily Series 5</a>
+- **Автомобиль и тюнинг:** Для Daily «Гонка по грунту» 12.09: 2018 Mercedes-Benz X-Class, share code: <code>832 534 809</code>. Для остальных Daily тюнинг не требуется.
+- **Источники:** <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wd86i2/british_automotive_summer_cars_and_tune_codes/" target="_blank" rel="noopener noreferrer">Полный список Daily и актуальная машина на 12.09</a>
 
 ## 03. Photo Challenge — #JaguarSnap · 2 очка
 

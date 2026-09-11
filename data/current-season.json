@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-11T06:45:44+07:00",
+  "lastContentUpdate": "2026-09-12T06:09:20+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -53,8 +53,8 @@
       "points": "7 × 1 очко",
       "conditionHtml": "<ol><li><strong>10.09:</strong> завершить 1 круг в Drift Attack.</li><li><strong>11.09:</strong> заработать минимум 1 звезду в Speed Zone.</li><li><strong>12.09:</strong> завершить гонку по грунту.</li><li><strong>13.09:</strong> заработать 3 навыка Great Wreckage.</li><li><strong>14.09:</strong> припарковаться на любой Car Meet.</li><li><strong>15.09:</strong> обогнать призрак соперника в Rivals.</li><li><strong>16.09:</strong> заработать 3 навыка Drift или E-Drift.</li></ol> Награда за каждое задание: 5 000 CR.",
       "howHtml": "Каждое Daily открывается в 21:30 по Красноярску и остаётся доступным 7 дней. Для призрака выберите Rivals и завершите круг быстрее любого показанного ghost; для Drift Attack подойдёт один полный круг.",
-      "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://www.reddit.com/r/forza/comments/1wcqf8s/fh6_summer_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Полный список Daily Series 5</a>",
+      "tuneHtml": "Для Daily «Гонка по грунту» 12.09: 2018 Mercedes-Benz X-Class, share code: <code>832 534 809</code>. Для остальных Daily тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wd86i2/british_automotive_summer_cars_and_tune_codes/\" target=\"_blank\" rel=\"noopener noreferrer\">Полный список Daily и актуальная машина на 12.09</a>",
       "visual": {
         "image": "tile-daily.webp",
         "sourceImage": "source-playlist-02.png",
