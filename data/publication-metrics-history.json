@@ -223,7 +223,21 @@
       "steamViews": 975,
       "steamFavorites": 56,
       "githubViews": 1258
+    },
+    {
+      "runId": "fh6-20260912-060914-852625",
+      "collectedAt": "2026-09-12T06:10:44.0458801+07:00",
+      "steamViews": 975,
+      "steamFavorites": 56,
+      "githubViews": 1258
+    },
+    {
+      "runId": "steam-confirmed-20260912-1108",
+      "collectedAt": "2026-09-12T11:11:25.1724551+07:00",
+      "steamViews": 977,
+      "steamFavorites": 57,
+      "githubViews": 1265
     }
   ],
-  "updatedAt": "2026-09-12T06:08:15.4397917+07:00"
+  "updatedAt": "2026-09-12T11:11:25.3005336+07:00"
 }

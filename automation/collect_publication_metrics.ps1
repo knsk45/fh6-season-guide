@@ -4,7 +4,9 @@ param(
     [string]$RunId,
     [string]$ProjectPath,
     [string]$MetricsStatePath,
-    [string]$HistoryPath
+    [string]$HistoryPath,
+    [long]$SteamViews = -1,
+    [long]$SteamFavorites = -1
 )
 
 Set-StrictMode -Version Latest
@@ -105,10 +107,19 @@ if (Test-Path -LiteralPath $MetricsStatePath) {
     }
 }
 
-$SteamResponse = Invoke-WebRequest -UseBasicParsing -Uri ([string]$Project.steamGuide.url) -TimeoutSec 30
-if ($SteamResponse.StatusCode -ne 200) { throw "Steam guide returned HTTP $($SteamResponse.StatusCode)." }
-$SteamViews = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Unique Visitors'
-$SteamFavorites = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Current Favorites'
+if (($SteamViews -ge 0) -xor ($SteamFavorites -ge 0)) {
+    throw 'Provide both -SteamViews and -SteamFavorites, or neither.'
+}
+
+$SteamMetricsSource = 'public-page'
+if ($SteamViews -lt 0) {
+    $SteamResponse = Invoke-WebRequest -UseBasicParsing -Uri ([string]$Project.steamGuide.url) -TimeoutSec 30
+    if ($SteamResponse.StatusCode -ne 200) { throw "Steam guide returned HTTP $($SteamResponse.StatusCode)." }
+    $SteamViews = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Unique Visitors'
+    $SteamFavorites = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Current Favorites'
+} else {
+    $SteamMetricsSource = 'browser-verified-owner-view'
+}
 
 $HitsResponse = Invoke-RestMethod -Method Get -Uri ([string]$Project.analytics.statsApiUrl) -TimeoutSec 30
 $GitHubTotal = [long]$HitsResponse.total
@@ -141,6 +152,7 @@ $Snapshot = [ordered]@{
         viewsToday = $GitHubToday
         viewsAdded = $GitHubViewsAdded
     }
+    steamMetricsSource = $SteamMetricsSource
 }
 
 $StateDirectory = Split-Path -Parent $MetricsStatePath
