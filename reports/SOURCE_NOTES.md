@@ -1344,3 +1344,27 @@
 | ForzaLabs Interactive Map | HTTP 200; проверена для будущей точки сундука. |
 | Escorenews FH6 | Доступ автоматического клиента ограничен; новые данные не использовались. |
 | DungG Seasonal Playlist | Автоматическая проверка недоступна; отдельного нового walkthrough не подтверждено. |
+
+## Ежедневный аудит — 2026-09-13 06:03 +07:00 — сводка актуальна
+
+- Сводка актуальна — содержательных изменений не требуется. Живая официальная Playlist подтверждает Series 5 «British Automotive» — Лето до 17.09.2026 21:30 Asia/Krasnoyarsk. Полный список из 7 Daily и единственная открытая точка Treasure Hunt не получили новых подтверждённых изменений.
+- Визуальный аудит: 14/14 activity проверены; подготовленные точные текущесезонные плитки без изменений, `audit_visual_evidence.ps1` вернул `READY`. Общие, прошлосезонные и AI-визуалы не применялись.
+
+| Обязательный источник | Проверка 13.09.2026 06:03 +07:00 |
+|---|---|
+| Forza Wiki — Series (FH6) | HTTP 403; материал недоступен автоматическому клиенту, старые данные не использовались. |
+| Forza Wiki — текущий сезон | HTTP 403; старые данные и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; British Automotive Summer (10–17 сентября) подтверждён. |
+| Official Forza News | HTTP 200; нового материала, меняющего текущую неделю, не найдено. |
+| Forza Support — Release Notes | Настроенная ссылка вернула HTTP 404; факты карточек не брались. |
+| Forza Support — Known Issues | HTTP 200; новых проблем, влияющих на текущие активности, не найдено. |
+| Official Forza Forums | HTTP 200; официальный форум закрыт, нового недельного breakdown нет. |
+| Reddit r/ForzaHorizon | HTTP 403 для JSON; текущенедельный поиск не дал нового подтверждённого решения или кода. |
+| Reddit r/ForzaHorizon6 | HTTP 403 для JSON; нового подтверждённого Summer-материала не найдено. |
+| Reddit r/forza | HTTP 403 для JSON; нового Information Thread или уточнения активностей не найдено. |
+| Reddit r/ForzaTune | HTTP 403 для JSON; свежего подтверждённого Summer tune-post нет. |
+| Forza Horizon Hub | HTTP 200; точного нового решения Photo/Treasure не найдено. |
+| ForzaLabs Collector Tool | HTTP 200; текущенедельного решения Treasure Hunt не найдено. |
+| ForzaLabs Interactive Map | HTTP 200; проверена для точки сундука, точка не подтверждена. |
+| Escorenews FH6 | HTTP 403; свежий независимый гайд недоступен. |
+| DungG Seasonal Playlist | HTTP 200, но показана cookie-страница YouTube; новый walkthrough не подтверждён. |
