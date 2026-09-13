@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Лето",
     "description": "Сезон действует до 2026-09-17T21:30:00+07:00",
-    "generatedAt": "2026-09-12T06:09:20.0000000+07:00",
+    "generatedAt": "2026-09-13T07:40:13.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -115,7 +115,7 @@
   "snapshot": {
     "version": 1,
     "status": "partial",
-    "generatedAt": "2026-09-12T06:09:20.0000000+07:00",
+    "generatedAt": "2026-09-13T07:40:13.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -125,27 +125,6 @@
         },
         "description": "Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.",
         "rows": [
-          {
-            "runId": "fh6-20260903-070936-588374",
-            "collectedAt": "2026-09-03T07:27:01+07:00",
-            "steamViews": 565,
-            "steamFavorites": 29,
-            "githubViews": 556
-          },
-          {
-            "runId": "fh6-20260903-213252-423237",
-            "collectedAt": "2026-09-03T21:51:16+07:00",
-            "steamViews": 595,
-            "steamFavorites": 30,
-            "githubViews": 613
-          },
-          {
-            "runId": "fh6-20260903-215325-279505",
-            "collectedAt": "2026-09-03T21:56:01+07:00",
-            "steamViews": 596,
-            "steamFavorites": 31,
-            "githubViews": 614
-          },
           {
             "runId": "fh6-20260904-060229-107804",
             "collectedAt": "2026-09-04T06:18:08+07:00",
@@ -334,6 +313,27 @@
             "steamViews": 975,
             "steamFavorites": 56,
             "githubViews": 1258
+          },
+          {
+            "runId": "fh6-20260912-060914-852625",
+            "collectedAt": "2026-09-12T06:10:44.0458801+07:00",
+            "steamViews": 975,
+            "steamFavorites": 56,
+            "githubViews": 1258
+          },
+          {
+            "runId": "steam-confirmed-20260912-1108",
+            "collectedAt": "2026-09-12T11:11:25.1724551+07:00",
+            "steamViews": 977,
+            "steamFavorites": 57,
+            "githubViews": 1265
+          },
+          {
+            "runId": "fh6-20260913-060049-849422",
+            "collectedAt": "2026-09-13T06:06:26.6727516+07:00",
+            "steamViews": 1003,
+            "steamFavorites": 57,
+            "githubViews": 1321
           }
         ]
       }
@@ -350,7 +350,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-09-12T06:09:20.0000000+07:00",
+    "generated_at": "2026-09-13T07:40:13.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }

@@ -16,12 +16,13 @@ class GuardTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.guard = g.Guard(self.root)
         self.end = (datetime.now(g.ZONE) + timedelta(days=1)).isoformat()
-        g.atomic(self.root/'data/current-season.json', {'season': {'endAt': self.end, 'assetsDirectory': 'reports/assets'},
+        g.atomic(self.root/'data/current-season.json', {'season': {'endAt': self.end, 'assetsDirectory': 'reports/assets', 'reportTitle': 'Fixture report'},
             'lastContentUpdate': g.now(), 'activities': [{'id':'daily','visual':{'image':'daily.jpg'}}], 'openItems':[]})
         g.atomic(self.root/'data/project.json', {'requiredSources':[{'id':'official'},{'id':'community'}]})
         (self.root/'reports/assets').mkdir(parents=True)
         (self.root/'reports/assets/daily.jpg').write_bytes(b'test fixture')
         (self.root/'reports/SOURCE_NOTES.md').write_text('dated test evidence')
+        (self.root/'reports/current-week.html').write_text('<html>fixture</html>')
         self.run = self.guard.start()
         self.audit = {'checkedAt':g.now(), 'seasonConfirmed':True, 'seasonEndAt':self.end,
             'sources':[{'id':s,'status':'checked','checkedAt':g.now(),'url':'https://example.com/'+s,'note':'fixture'} for s in ['official','community']],
@@ -63,6 +64,12 @@ class GuardTests(unittest.TestCase):
     def test_changed_visual_rejected(self):
         self.audit['visuals'][0]['sha256']='wrong'
         with self.assertRaises(RuntimeError):self.accept()
+
+    def test_uppercase_audit_digests_are_accepted(self):
+        self.audit['visuals'][0]['sha256'] = self.audit['visuals'][0]['sha256'].upper()
+        self.audit['sourceNotesSha256'] = self.audit['sourceNotesSha256'].upper()
+        self.accept()
+        self.assertTrue(self.guard.audit_valid(self.run))
 
     def test_changed_state_invalidates_audit(self):
         self.accept()
@@ -120,6 +127,12 @@ class GuardTests(unittest.TestCase):
         self.accept()
         status,reasons=self.guard.outcome(self.run)
         self.assertEqual(status,'BLOCKED');self.assertIn('portable',reasons)
+
+    def test_execute_without_audit_skips_external_stages(self):
+        with patch.object(self.guard, 'command') as command, patch.object(self.guard, 'deliver') as deliver:
+            self.guard.execute(self.run)
+        command.assert_not_called()
+        deliver.assert_called_once()
 
     def test_command_failure_not_marked_success(self):
         ok,_=self.guard.command(self.run,'test',[g.sys.executable,'-c','raise SystemExit(3)'])

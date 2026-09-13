@@ -153,9 +153,9 @@ class Guard:
                     raise RuntimeError('Unresolved visual audit must record its evidence gap without an asset digest.')
                 continue
             file = self.root / state['season']['assetsDirectory'] / activity['visual']['image']
-            if visual.get('sha256') != digest(file) or not visual.get('note'):
+            if str(visual.get('sha256', '')).lower() != digest(file).lower() or not visual.get('note'):
                 raise RuntimeError('Visual audit does not match current asset bytes.')
-        if not audit.get('sourceNotesSha256') == digest(self.root / 'reports/SOURCE_NOTES.md'):
+        if str(audit.get('sourceNotesSha256', '')).lower() != digest(self.root / 'reports/SOURCE_NOTES.md').lower():
             raise RuntimeError('Dated source notes must match the audit.')
         audit['stateContentSha256'] = content_digest(state)
         audit['projectSha256'] = digest(self.project_path)
@@ -187,12 +187,12 @@ class Guard:
                     return False
                 continue
             asset = self.root / state['season']['assetsDirectory'] / activity['visual']['image']
-            if digest(asset) != visuals[activity['id']]['sha256']:
+            if digest(asset).lower() != str(visuals[activity['id']].get('sha256', '')).lower():
                 return False
         return (digest(step['path']) == step['sha256']
                 and content_digest(read(self.state_path)) == audit['stateContentSha256']
                 and digest(self.project_path) == audit['projectSha256']
-                and digest(self.root / 'reports/SOURCE_NOTES.md') == audit['sourceNotesSha256']
+                and digest(self.root / 'reports/SOURCE_NOTES.md').lower() == str(audit.get('sourceNotesSha256', '')).lower()
                 and timedelta(0) <= datetime.now(ZONE) - datetime.fromisoformat(audit['checkedAt']) <= timedelta(hours=4)
                 and datetime.now(ZONE) < datetime.fromisoformat(audit['seasonEndAt']))
 
@@ -249,6 +249,13 @@ class Guard:
         # A saved final result is immutable while notification/receipt are retried.
         if run.get('resultPath'):
             return self.deliver(run)
+        # An audit is the publication gate, not a best-effort advisory.  Without
+        # it, never run build, publisher, Steam, or metrics stages.
+        if not self.audit_valid(run):
+            run['blockers'] = ['Полный актуальный аудит не подтверждён.']
+            self.prepare_result(run)
+            self.deliver(run)
+            return
         run['blockers'] = []
         # Never let an earlier attempt's passed downstream step mask a failed retry.
         run['steps'] = {k: v for k, v in run['steps'].items() if k == 'audit'}
