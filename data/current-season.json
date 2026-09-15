@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-15T06:04:36+07:00",
+  "lastContentUpdate": "2026-09-16T06:05:49+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -104,9 +104,9 @@
       "title": "Регион Ито",
       "points": "3 очка",
       "conditionHtml": "Исследуйте фотоподсказку, чтобы найти сокровище. Награда: 100 000 CR.",
-      "howHtml": "",
+      "howHtml": "От аэродрома Ито двигайтесь на юг: когда сельхозугодья окажутся слева, езжайте по дороге между их северной и южной частями. Перед железнодорожным переездом, где дом будет справа, поверните налево в небольшой участок без деревьев — сундук стоит там.",
       "tuneHtml": "Подойдёт любой автомобиль; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.labsgg.com/interactive-map\" target=\"_blank\" rel=\"noopener noreferrer\">Интерактивная карта ForzaLabs</a> — пригодится, когда появится точная точка сундука.",
+      "sourceHtml": "<a href=\"https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-ito-location/\" target=\"_blank\" rel=\"noopener noreferrer\">Точная точка сундука в регионе Ито</a>",
       "visual": {
         "image": "tile-treasure.webp",
         "sourceImage": "source-playlist-02.png",
@@ -117,13 +117,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_summer_village",
@@ -386,13 +384,5 @@
       "missingFields": []
     }
   ],
-  "openItems": [
-    {
-      "activityId": "activity_04_treasure",
-      "field": "solution",
-      "reason": "Нет подтверждённой точки сундука.",
-      "nextCheck": "ForzaLabs / Reddit / DungG",
-      "status": "missing"
-    }
-  ]
+  "openItems": []
 }
