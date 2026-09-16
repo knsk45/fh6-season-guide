@@ -1369,6 +1369,31 @@
 | Escorenews FH6 | HTTP 403; свежий независимый гайд недоступен. |
 | DungG Seasonal Playlist | HTTP 200, но показана cookie-страница YouTube; новый walkthrough не подтверждён. |
 
+## Ежедневный аудит — 2026-09-17 06:02 +07:00 — сводка актуальна
+
+- Живая официальная Playlist по-прежнему показывает Series 5 «British Automotive» — Лето до 17.09.2026 21:30 Asia/Krasnoyarsk. На странице уже виден будущий Autumn как следующий сезон, но фактической смены до дедлайна нет; rollover не запускается.
+- Текущие Daily, ограничения, тюнинги и закрытый 16.09 Treasure Hunt не изменились. `openItems=0`; содержательных изменений в карточках не найдено.
+- Визуальный аудит: 14/14 activity проверены; `audit_visual_evidence.ps1` вернул `READY`. Точные подготовленные плитки текущего сезона и их SHA не изменились, общие/прошлосезонные/AI-визуалы не применялись.
+
+| Обязательный источник | Проверка 17.09.2026 06:02 +07:00 |
+|---|---|
+| Forza Wiki — Series (FH6) | HTTP 403; старые данные не использовались. |
+| Forza Wiki — текущий сезон | HTTP 403; старые данные и визуалы не переносились. |
+| Official Forza Festival Playlist | HTTP 200; Summer ещё активен до 21:30, Autumn отмечен как следующий сезон. |
+| Official Forza News | HTTP 200; Series 5 подтверждена, нового изменения текущей недели нет. |
+| Forza Support — Release Notes | HTTP 403; отдельный новый факт не использован. |
+| Forza Support — Known Issues | HTTP 403; влияющих изменений не подтверждено. |
+| Official Forza Forums | HTTP 200; нового официального breakdown нет. |
+| Reddit r/ForzaHorizon | HTTP 200; нового подтверждённого изменения Summer не найдено. |
+| Reddit r/ForzaHorizon6 | HTTP 200; Daily и текущие рекомендации совпадают со state. |
+| Reddit r/forza | HTTP 200; Information Thread Series 5 подтверждает дедлайн 17.09 14:30 UTC. |
+| Reddit r/ForzaTune | HTTP 200; нового подтверждённого Summer tune-поста нет. |
+| Forza Horizon Hub | HTTP 200; нового материала текущей недели нет. |
+| ForzaLabs Collector Tool | HTTP 200; новых решений нет. |
+| ForzaLabs Interactive Map | HTTP 200; закрытый маршрут Treasure Hunt не требует уточнения. |
+| Escorenews FH6 | HTTP 403; новый гайд недоступен. |
+| DungG Seasonal Playlist | HTTP 200, cookie-страница; нового Summer walkthrough не подтверждено. |
+
 ## Ежедневный аудит — 2026-09-16 06:04 +07:00
 
 - Живая официальная Playlist подтверждает активный Series 5 «British Automotive» — Лето до 17.09.2026 21:30 Asia/Krasnoyarsk; перехода сезона нет. Полный список из 7 Daily, игровые ограничения и награды совпадают с текущей сводкой.
