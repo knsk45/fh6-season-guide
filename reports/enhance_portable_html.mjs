@@ -286,15 +286,6 @@ ${supportHtml}
       });
     }
     filter.addEventListener('change', renderProgress);
-    for (const button of document.querySelectorAll('[data-copy-code]')) {
-      button.addEventListener('click', async () => {
-        const code = button.dataset.copyCode;
-        try { await navigator.clipboard.writeText(code); }
-        catch { const input = document.createElement('textarea'); input.value = code; document.body.append(input); input.select(); document.execCommand('copy'); input.remove(); }
-        button.classList.add('copied'); button.setAttribute('aria-label', 'Код ' + code + ' скопирован');
-        window.setTimeout(() => { button.classList.remove('copied'); button.setAttribute('aria-label', 'Копировать код ' + code); }, 1400);
-      });
-    }
     renderProgress();
   })();
   </script>

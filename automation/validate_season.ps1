@@ -322,9 +322,7 @@ if ($state) {
             if (([regex]::Matches($html, 'class="number"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must place one number beside every activity title' }
             if (-not $html.Contains('.type-icon{display:inline-flex;flex:0 0 24px;width:24px;height:24px')) { Add-ValidationError 'Public HTML must use fixed-size activity type icons' }
             if (([regex]::Matches($html, '<button\s+class="completion-toggle"[^>]*\bdata-completion-toggle\b', 'IgnoreCase')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must contain one local completion control per card' }
-            $expectedShareCodeControls = 0
-            foreach ($activity in $activities) { $expectedShareCodeControls += ([regex]::Matches([string]$activity.tuneHtml, '<code>[0-9]{3} [0-9]{3} [0-9]{3}</code>')).Count }
-            if (([regex]::Matches($html, 'data-copy-code="[0-9]{3} [0-9]{3} [0-9]{3}"')).Count -ne $expectedShareCodeControls) { Add-ValidationError 'Public HTML share-code copy controls differ from state' }
+            if ([regex]::IsMatch($html, 'data-copy-code|class="copy-code"')) { Add-ValidationError 'Public HTML must not contain share-code copy controls' }
             foreach ($match in [regex]::Matches($html, 'src="(assets/[^"]+)"')) {
                 $assetPath = Join-Path (Join-Path $RepoRoot 'reports') ($match.Groups[1].Value -replace '/', '\')
                 if (-not (Test-Path -LiteralPath $assetPath)) { Add-ValidationError "Public HTML references missing asset: $($match.Groups[1].Value)" }

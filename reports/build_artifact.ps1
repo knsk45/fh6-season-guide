@@ -107,7 +107,7 @@ function Add-ShareCodeControls([string]$Html) {
     return [regex]::Replace($Html, '<code>(?<code>[0-9]{3} [0-9]{3} [0-9]{3})</code>', {
         param($match)
         $code = $match.Groups['code'].Value
-        return "<span class=`"share-code`"><code>$code</code><button class=`"copy-code`" type=`"button`" data-copy-code=`"$code`" aria-label=`"Копировать код $code`"></button></span>"
+        return "<span class=`"share-code`"><code>$code</code></span>"
     })
 }
 

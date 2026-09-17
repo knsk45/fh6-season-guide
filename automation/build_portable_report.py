@@ -187,7 +187,7 @@ def validate_artifact(root, state, artifact, project):
             require(normalized(node.text()) == normalized(label + ' ' + card[key]), 'Artifact content differs from state: ' + key)
         expected_codes = re.findall(r'<code>([0-9]{3} [0-9]{3} [0-9]{3})</code>', card['tuneHtml'])
         copy_buttons = doc.all('button', 'copy-code')
-        require([b.attrs.get('data-copy-code') for b in copy_buttons] == expected_codes, 'Share-code copy controls differ from state')
+        require(not copy_buttons and not re.search(r'data-copy-code', block['body']), 'Share-code copy controls are disabled by project rule')
         require(len(doc.all('div', 'provenance')) <= 1, 'Card provenance must be compact')
         expected_links = links(Document(card['sourceHtml']).root.all('a'))
         require(links(doc.all('a')) == expected_links, 'Artifact source links differ from state')
