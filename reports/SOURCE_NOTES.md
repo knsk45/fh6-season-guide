@@ -1469,3 +1469,78 @@
 | ForzaLabs Interactive Map | HTTP 200; проверена для точки сундука, точка не подтверждена. |
 | Escorenews FH6 | HTTP 403 (Cloudflare); новый независимый гайд недоступен. |
 | DungG Seasonal Playlist | HTTP 200, но показана cookie-страница YouTube; новый walkthrough не подтверждён. |
+
+## Автоматический аудит — 2026-09-17T22:43:41+07:00 — deterministic service
+
+- Активный сезон подтверждён по официальной Playlist: Forza Horizon 6: Как пройти Series 5 «British Automotive» — Лето до 2026-09-17T21:30:00+07:00.
+- Сервис проверил все 16 обязательных источника и 14 визуалов; содержательные карточки не изменялись автоматически.
+- Неоднозначные новые факты не переносились: для них создаётся отдельный candidate-файл, а не изменение state.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: HTTP 403; no stale data reused. |
+| `fandom_current` | unavailable: HTTP 403; no stale data reused. |
+| `forza_playlist` | checked: HTTP 200; active British Automotive Summer confirmed from official Playlist. |
+| `forza_news` | no_current_item: HTTP 200; no deterministic current-week delta detected. |
+| `forza_support_release_notes` | unavailable: HTTP 404; no stale data reused. |
+| `forza_support_known_issues` | unavailable: HTTP 403; no stale data reused. |
+| `forza_forums_official` | no_current_item: HTTP 200; no deterministic current-week delta detected. |
+| `reddit_forzahorizon` | unavailable: HTTP 403; no stale data reused. |
+| `reddit_forzahorizon6` | unavailable: HTTP 403; no stale data reused. |
+| `reddit_forza` | unavailable: HTTP 403; no stale data reused. |
+| `reddit_forzatune` | unavailable: HTTP 403; no stale data reused. |
+| `forza_horizon_hub` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_collector` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
+| `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
+| `dungg_playlist` | unavailable: HTTP 200 cookie/consent page; no walkthrough inferred. |
+
+## 2026-09-17T22:51:35+07:00 — Series 5 Autumn rollover audit
+
+Живой переход подтверждён официальной Playlist и свежими текущенедельными Information Thread/гайдами Reddit: Series 5 British Automotive, Autumn, 17–24 сентября 2026, дедлайн 2026-09-24 21:30 Asia/Krasnoyarsk. Все 16 обязательных источников проверены; Forza Playlist и Reddit-публикации дали условия, награды, ограничения классов и актуальные share codes. Fandom/Support/часть вспомогательных источников недоступны или не содержат текущего материала — старые решения и изображения не переносились.
+
+| Источник | Результат текущего аудита |
+|---|---|
+| fandom_series_category | unavailable: HTTP 403; Autumn подтверждён официальными и Reddit-источниками. |
+| fandom_current | unavailable: HTTP 403; точные Autumn-плитки не найдены. |
+| forza_playlist | checked: HTTP 200; Series 5 Autumn и порядок активностей подтверждены. |
+| forza_news | no_current_item: HTTP 200; отдельной Autumn-статьи не найдено. |
+| forza_support_release_notes | unavailable: HTTP 403. |
+| forza_support_known_issues | unavailable: HTTP 403. |
+| forza_forums_official | no_current_item: HTTP 200; свежего Autumn-подтверждения нет. |
+| reddit_forzahorizon | checked: свежий Autumn breakdown с маршрутами и ограничениями. |
+| reddit_forzahorizon6 | checked: свежий Autumn guide с тюнингами и 9-значными кодами. |
+| reddit_forza | checked: свежая Autumn Information Thread с полным списком активностей. |
+| reddit_forzatune | no_current_item: отдельного свежего поста не найдено; тюнинги взяты из FH6 guide. |
+| forza_horizon_hub | unavailable: сеть/страница недоступна. |
+| forza_labs_collector | unavailable: сеть/страница недоступна. |
+| forza_labs_map | unavailable: сеть/страница недоступна. |
+| escorenews_fh6 | unavailable: HTTP 403. |
+| dungg_playlist | unavailable: cookie/consent page; видео-решения не выводились. |
+
+Проверка визуалов: 14/14 статусов `missing`. Точные игровые плитки Autumn не найдены в доступных источниках; старые Summer-визуалы не переиспользованы. `automation/audit_visual_evidence.ps1` сформировал очередь необрезанных пользовательских скриншотов для всех activity. После получения скриншотов будут сохранены оригиналы и вырезаны только точные границы плиток.
+
+## Автоматический аудит — 2026-09-17T22:45:19+07:00 — deterministic service
+
+- Активный сезон подтверждён по официальной Playlist: Forza Horizon 6: Как пройти Series 5 «British Automotive» — Лето до 2026-09-17T21:30:00+07:00.
+- Сервис проверил все 16 обязательных источника и 14 визуалов; содержательные карточки не изменялись автоматически.
+- Неоднозначные новые факты не переносились: для них создаётся отдельный candidate-файл, а не изменение state.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: HTTP 403; no stale data reused. |
+| `fandom_current` | unavailable: HTTP 403; no stale data reused. |
+| `forza_playlist` | checked: HTTP 200; active British Automotive Summer confirmed from official Playlist. |
+| `forza_news` | no_current_item: HTTP 200; no deterministic current-week delta detected. |
+| `forza_support_release_notes` | unavailable: HTTP 403; no stale data reused. |
+| `forza_support_known_issues` | unavailable: HTTP 403; no stale data reused. |
+| `forza_forums_official` | no_current_item: HTTP 200; no deterministic current-week delta detected. |
+| `reddit_forzahorizon` | no_current_item: HTTP 200; no current-week marker found; stale material not reused. |
+| `reddit_forzahorizon6` | no_current_item: HTTP 200; no current-week marker found; stale material not reused. |
+| `reddit_forza` | no_current_item: HTTP 200; no current-week marker found; stale material not reused. |
+| `reddit_forzatune` | no_current_item: HTTP 200; no current-week marker found; stale material not reused. |
+| `forza_horizon_hub` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_collector` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
+| `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
+| `dungg_playlist` | unavailable: HTTP 200 cookie/consent page; no walkthrough inferred. |
