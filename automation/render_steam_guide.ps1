@@ -85,6 +85,10 @@ foreach ($Activity in $State.activities) {
     if ($Condition) {
         $Lines.Add($Condition)
     }
+    if ($Activity.PSObject.Properties.Name -contains 'steamLocationUrl' -and $Activity.steamLocationUrl) {
+        $LocationLabel = if ($Activity.PSObject.Properties.Name -contains 'steamLocationLabel' -and $Activity.steamLocationLabel) { [string]$Activity.steamLocationLabel } else { 'Короткая ссылка на локацию' }
+        $Lines.Add("[url=$($Activity.steamLocationUrl)]$LocationLabel[/url]")
+    }
     if ($Tune) {
         $Lines.Add("[b]Авто:[/b] $Tune")
     }
