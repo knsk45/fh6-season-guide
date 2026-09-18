@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 17.09.2026 21:30 — 24.09.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 18.09.2026 08:24
+> Обновлено: 18.09.2026 08:38
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Fast and Lotus · 5 очков
@@ -10,28 +10,28 @@
 - **Условие:** На 1999 Lotus Elise Series 1 Sport 190: 6 звёзд на Speed Traps, 4 Speed Skills и 3 круга на Shimanoyama Drift Attack. Награда: 25 000 CR.
 - **Как выполнить:** Выполняйте главы по порядку; для Speed Skills используйте безопасный участок трассы и доберите 4 навыка до перехода к Drift Attack.
 - **Автомобиль и тюнинг:** 1999 Lotus Elise Series 1 Sport 190 — share code: <code>114 242 420</code>.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a> · <a href="https://gismoland.com/2026/09/17/forza-horizon-6-shirakawa-go-parking-a-lotus-in-a-mountain-village/" target="_blank" rel="noopener noreferrer">Локация Shirakawa-go</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 × 1 очко
 
 - **Условие:** <ol><li><strong>17.09:</strong> завершить 1 круг в Drift Zone.</li><li><strong>18.09:</strong> использовать Skill Song у vending machine Feed Me.</li><li><strong>19.09:</strong> выполнить 3 LINK Air Skills.</li><li><strong>20.09:</strong> заработать 1 звезду на Danger Sign.</li><li><strong>21.09:</strong> выполнить 3 Clean Racing Skills.</li><li><strong>22.09:</strong> отправить Gift Drop.</li><li><strong>23.09:</strong> завершить Road Race.</li></ol> Награда за каждое: 5 000 CR.
 - **Как выполнить:** Каждое Daily открывается в 21:30 по Красноярску и остаётся доступным 7 дней; будущие дни уже перечислены полностью по свежей Information Thread.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a> · <a href="https://escorenews.com/en/article/81289-tire-hunt-collectibles-challenge-guide-location-of-drift-tire-mascots-at-shimanoyama-in-series-5-autumn-in-forza-horizon-6" target="_blank" rel="noopener noreferrer">Карта Tire Hunt</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a>
 
 ## 03. photo — #RuralLotus · 2 очка
 
 - **Условие:** Сфотографируйте любую машину марки Lotus у Shirakawa-go. Награда: гудок Sea of Thieves Theme.
 - **Как выполнить:** Откройте фотокамеру в Shirakawa-go, убедитесь, что в кадре есть Lotus и локация, затем сохраните фото.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a> · <a href="https://gismoland.com/2026/09/17/forza-horizon-6-shirakawa-go-parking-a-lotus-in-a-mountain-village/" target="_blank" rel="noopener noreferrer">Локация Shirakawa-go</a>
 
 ## 04. collectibles — Tire Hunt · 3 очка
 
 - **Условие:** Разбейте 15 Drift Tyre Mascots на Shimanoyama Drift Circuit. Награда: Super Wheelspin.
 - **Как выполнить:** Ищите красные/чёрные шины-маскоты вдоль трассы; после 15 разрушенных объектов прогресс засчитывается автоматически.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Информационная тема Autumn</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Текущий тюнинг/гид</a> · <a href="https://escorenews.com/en/article/81289-tire-hunt-collectibles-challenge-guide-location-of-drift-tire-mascots-at-shimanoyama-in-series-5-autumn-in-forza-horizon-6" target="_blank" rel="noopener noreferrer">Карта Tire Hunt</a>
 
 ## 05. championship — Offroad Scramble · 5 очков
 

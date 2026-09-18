@@ -46,6 +46,7 @@ function ConvertTo-CompactSteamText {
     $Compact = $Compact -replace '^Подойдёт любой автомобиль; тюнинг не требуется\.$', ''
     $Compact = $Compact -replace '^Используйте удобный дрифт-кар; специального сезонного кода не требуется\.$', ''
     $Compact = $Compact -replace '^Выберите универсальную машину из гаража; специальный тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^Тюнинг не требуется\.$', ''
     $Compact = [regex]::Replace($Compact, '[ \t]+', ' ')
     return $Compact.Trim()
 }
@@ -74,6 +75,7 @@ $Lines.Add("[h1]Series $($Season.seriesNumber) «$($Season.seriesName)» — $($
 $Lines.Add("[b]До:[/b] $Deadline (Красноярск) · [b]Активностей:[/b] $($Season.expectedCardCount)")
 $Lines.Add("[b]$($Project.steamGuide.freshnessNote)[/b]")
 $Lines.Add('[i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]')
+$SteamLocations = [Collections.Generic.List[string]]::new()
 
 foreach ($Activity in $State.activities) {
     $Lines.Add('')
@@ -85,9 +87,9 @@ foreach ($Activity in $State.activities) {
     if ($Condition) {
         $Lines.Add($Condition)
     }
-    if ($Activity.PSObject.Properties.Name -contains 'steamLocationUrl' -and $Activity.steamLocationUrl) {
-        $LocationLabel = if ($Activity.PSObject.Properties.Name -contains 'steamLocationLabel' -and $Activity.steamLocationLabel) { [string]$Activity.steamLocationLabel } else { 'Короткая ссылка на локацию' }
-        $Lines.Add("[url=$($Activity.steamLocationUrl)]$LocationLabel[/url]")
+    $LocationMatches = [regex]::Matches([string]$Activity.sourceHtml, '(?is)<a\s+href="([^"]+)"[^>]*>([^<]*(?:Локация|Карта)[^<]*)</a>')
+    foreach ($LocationMatch in $LocationMatches) {
+        $SteamLocations.Add("[url=$($LocationMatch.Groups[1].Value)]$($LocationMatch.Groups[2].Value.Trim())[/url]")
     }
     if ($Tune) {
         $Lines.Add("[b]Авто:[/b] $Tune")
@@ -98,6 +100,11 @@ $Lines.Add('')
 $Lines.Add('[h1]Карты, скриншоты и уточнения[/h1]')
 $Lines.Add("[url=$GuideUrl][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]")
 $Lines.Add('[b]Добавьте руководство Steam в избранное:[/b] оно регулярно обновляется вместе с Festival Playlist.')
+if ($SteamLocations.Count -gt 0) {
+    $Lines.Add('')
+    $Lines.Add('[h2]Короткие ссылки на локации[/h2]')
+    foreach ($Location in ($SteamLocations | Select-Object -Unique)) { $Lines.Add($Location) }
+}
 
 $OutputDirectory = Split-Path -Parent $OutputPath
 if (-not (Test-Path -LiteralPath $OutputDirectory)) {
