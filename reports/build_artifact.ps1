@@ -116,7 +116,7 @@ function Get-ProvenanceMarkup($card) {
     if ([string]$card.completeness.condition -eq 'confirmed') { $chips.Add('<span class="provenance-chip provenance-official">Условия: Forza</span>') }
     if ([string]$card.completeness.solution -in @('community','preliminary')) { $chips.Add('<span class="provenance-chip provenance-community">Решение: сообщество</span>') }
     if ([string]$card.completeness.vehicleTune -in @('community','preliminary')) { $chips.Add('<span class="provenance-chip provenance-community">Тюнинг: сообщество</span>') }
-    if ([string]$card.completeness.visual -in @('missing','preliminary')) { $chips.Add('<span class="provenance-chip provenance-missing">Плитка: нужен скриншот</span>') }
+    if ($card.id -ne 'activity_02_daily' -and [string]$card.completeness.visual -in @('missing','preliminary')) { $chips.Add('<span class="provenance-chip provenance-missing">Плитка: нужен скриншот</span>') }
     if ($chips.Count -eq 0) { return '' }
     return "<div class=`"provenance`" data-provenance>$($chips -join '')</div>"
 }

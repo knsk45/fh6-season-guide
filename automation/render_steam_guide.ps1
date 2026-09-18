@@ -46,7 +46,6 @@ function ConvertTo-CompactSteamText {
     $Compact = $Compact -replace '^Подойдёт любой автомобиль; тюнинг не требуется\.$', ''
     $Compact = $Compact -replace '^Используйте удобный дрифт-кар; специального сезонного кода не требуется\.$', ''
     $Compact = $Compact -replace '^Выберите универсальную машину из гаража; специальный тюнинг не требуется\.$', ''
-    $Compact = $Compact -replace '^Тюнинг не требуется\.$', ''
     $Compact = [regex]::Replace($Compact, '[ \t]+', ' ')
     return $Compact.Trim()
 }
