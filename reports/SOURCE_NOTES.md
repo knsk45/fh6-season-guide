@@ -1520,6 +1520,10 @@
 
 Проверка визуалов: 14/14 статусов `missing`. Точные игровые плитки Autumn не найдены в доступных источниках; старые Summer-визуалы не переиспользованы. `automation/audit_visual_evidence.ps1` сформировал очередь необрезанных пользовательских скриншотов для всех activity. После получения скриншотов будут сохранены оригиналы и вырезаны только точные границы плиток.
 
+## 2026-09-18 — пользовательские Autumn-плитки
+
+Из пяти присланных скриншотов сохранены оригиналы в `reports/assets/series-05-autumn/evidence/` и вырезаны точные границы плиток без наложений для Weekly, Photo, Collectibles, Offroad Scramble, Toys On The Road, Lakeside Valley Speed Trap, Inner City Run Drift Zone, Ocean Highway Speed Zone, Trial, Horizon Drift, Horizon Stunt Party и Hide & Seek. Monthly Rivals добавлен из прошлой недели по прямому указанию пользователя. Daily не добавлялся: исходный кадр обрезан снизу и не показывает полную плитку; оставлен в openItems/missingFields.
+
 ## 2026-09-18 — дополнительный поиск Autumn-плиток
 
 Проверены свежие гайды r/ForzaHorizon6, официальный `forza.net/fh6playlists`, PandaPlay и поиск изображений. Найдены car renders и сезонные/общие скриншоты, но не отдельные полные игровые плитки 14 активностей. Эти изображения не подключались: они не соответствуют требованию точной плитки и могут содержать обрезку или другой формат. Очередь пользовательских необрезанных скриншотов остаётся актуальной.
@@ -1548,3 +1552,10 @@
 | `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
 | `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
 | `dungg_playlist` | unavailable: HTTP 200 cookie/consent page; no walkthrough inferred. |
+## 2026-09-18 — Autumn Series 5: пользовательские точные плитки
+
+- Получены пять исходных игровых скриншотов пользователя; оригиналы сохранены в `reports/assets/series-05-autumn/evidence/`.
+- Из них вырезаны точные плитки без наложений для Weekly, Photo, Collectibles, трёх Championship, трёх PR, Trial и трёх Horizon Play: 12 подготовленных визуалов (`horizontal`/`vertical` по исходной ориентации).
+- Monthly Rivals восстановлена из сохранённой плитки прошлой недели по прямому указанию пользователя; исходник и подготовленный файл сохранены локально, перенос зафиксирован как исключение.
+- Daily: присланный кадр показывает только часть списка и не содержит полной текущей плитки; визуал оставлен `missing`, добавлен в `openItems`/`missingFields`, запрос полного скриншота не закрыт.
+- Визуальный аудит: `confirmed=0`, `community=13` (12 пользовательских Autumn-плиток и Monthly Rivals по явному исключению), `preliminary=0`, `missing=1` (Daily). Ссылки на скриншоты в карточки не добавлялись.

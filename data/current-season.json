@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-18T06:03:29+07:00",
+  "lastContentUpdate": "2026-09-18T07:50:52+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,31 +30,21 @@
       "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — share code: <code>114 242 420</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-weekly.png",
+        "sourceImage": "evidence/codex-clipboard-1bc6cadb-3019-4837-a957-d8eba8947c86.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_01_weekly",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_02_daily",
@@ -87,8 +77,8 @@
         {
           "activityId": "activity_02_daily",
           "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
+          "reason": "Присланный кадр Daily обрезан снизу и не показывает полную плитку.",
+          "nextCheck": "Получить необрезанный скриншот полной плитки Daily Autumn.",
           "status": "open"
         }
       ]
@@ -104,31 +94,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-photo.png",
+        "sourceImage": "evidence/codex-clipboard-883a135f-7d7a-4f77-b324-d5f77430acbc.png",
         "orientation": "horizontal",
         "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_03_photo",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_04_collectibles",
@@ -141,31 +121,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-collectibles.png",
+        "sourceImage": "evidence/codex-clipboard-883a135f-7d7a-4f77-b324-d5f77430acbc.png",
         "orientation": "horizontal",
         "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_04_collectibles",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_05_championship",
@@ -178,31 +148,21 @@
       "tuneHtml": "1972 Nissan Patrol — B 600, share code: <code>238 942 018</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-championship-offroad.png",
+        "sourceImage": "evidence/codex-clipboard-899ecf60-8c4c-4ac5-a505-39e0d3991f5b.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_05_championship",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_06_championship",
@@ -215,31 +175,21 @@
       "tuneHtml": "2021 McLaren 620R — S1 800, share code: <code>671 873 067</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-championship-toys.png",
+        "sourceImage": "evidence/codex-clipboard-899ecf60-8c4c-4ac5-a505-39e0d3991f5b.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_06_championship",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_07_pr",
@@ -252,31 +202,21 @@
       "tuneHtml": "2020 Land Rover Defender 110 X — A 700, share code: <code>873 603 031</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-speedtrap.png",
+        "sourceImage": "evidence/codex-clipboard-899ecf60-8c4c-4ac5-a505-39e0d3991f5b.png",
         "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_07_pr",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_08_pr",
@@ -289,31 +229,21 @@
       "tuneHtml": "1965 MINI Cooper S — B 600, share code: <code>102 085 813</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-driftzone.png",
+        "sourceImage": "evidence/codex-clipboard-6f231999-33e3-444d-b6f9-e6855b4e39ce.png",
         "orientation": "horizontal",
         "typeIconKey": "drift-zone",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_08_pr",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_09_pr",
@@ -326,31 +256,21 @@
       "tuneHtml": "2020 Land Rover Defender 110 X — A 700, share code: <code>873 603 031</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-speedzone.png",
+        "sourceImage": "evidence/codex-clipboard-899ecf60-8c4c-4ac5-a505-39e0d3991f5b.png",
         "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_09_pr",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_10_trial",
@@ -363,31 +283,21 @@
       "tuneHtml": "2014 McLaren 650S Spider — S1 800, share code: <code>686 193 048</code>.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-trial.png",
+        "sourceImage": "evidence/codex-clipboard-6f231999-33e3-444d-b6f9-e6855b4e39ce.png",
         "orientation": "horizontal",
         "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_10_trial",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_11_horizon_play",
@@ -400,31 +310,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-horizon-drift.png",
+        "sourceImage": "evidence/codex-clipboard-c754fc4d-4f37-42f6-8465-cd1233b19537.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_11_horizon_play",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -437,31 +337,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-hide-seek.png",
+        "sourceImage": "evidence/codex-clipboard-c754fc4d-4f37-42f6-8465-cd1233b19537.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_12_horizon_play",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_13_horizon_play",
@@ -474,31 +364,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-horizon-stunt.png",
+        "sourceImage": "evidence/codex-clipboard-c754fc4d-4f37-42f6-8465-cd1233b19537.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот Autumn; вырезана точная игровая плитка без наложений"
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_13_horizon_play",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -511,230 +391,38 @@
       "tuneHtml": "2025 McLaren W1 — без обязательного тюнинга.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wiwssd/fh6_autumn_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Информационная тема Autumn</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1winz2h/fh6_series_5_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Текущий тюнинг/гид</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-monthly-rivals.webp",
+        "sourceImage": "evidence/source-prior-series-05-summer.webp",
         "orientation": "horizontal",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен необрезанный скриншот полной плитки."
+        "sourceLabel": "Пользовательский скриншот; точная игровая плитка Monthly Rivals сохранена с прошлой недели по запросу пользователя."
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_14_monthly_rivals",
-          "field": "visual",
-          "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-          "status": "open"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     }
   ],
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_04_collectibles",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная плитка текущей Autumn не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить необрезанный скриншот полной игровой плитки Autumn и вырезать только её границы.",
+      "reason": "Присланный кадр Daily обрезан снизу и не показывает полную плитку.",
+      "nextCheck": "Получить необрезанный скриншот полной плитки Daily Autumn.",
       "status": "open"
     }
   ],
   "missingFields": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_04_collectibles",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
-      "status": "open"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная плитка Autumn не найдена; требуется пользовательский скриншот полной игровой плитки.",
-      "nextCheck": "После получения скриншота вырезать только границы плитки без изменения содержимого.",
+      "reason": "Полная плитка Daily отсутствует.",
+      "nextCheck": "Получить полный скриншот Daily Autumn.",
       "status": "open"
     }
   ]
