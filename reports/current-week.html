@@ -81,7 +81,7 @@
     </div>
     <div class="page-meta">
       <span class="countdown"><span id="countdown-label">Заканчивается через</span> <strong id="season-countdown">—</strong></span>
-      <time class="updated" datetime="2026-09-24T22:53:11.0000000+07:00"><span id="updated-label">Обновлено:</span> 24.09.2026, 22:53</time>
+      <time class="updated" datetime="2026-09-24T22:59:57.0000000+07:00"><span id="updated-label">Обновлено:</span> 24.09.2026, 22:59</time>
       <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/14</span>
       <label class="completion-filter"><input id="completion-filter" type="checkbox"><span id="completion-filter-label">Только невыполненные</span></label>
     </div>
@@ -289,18 +289,18 @@
 
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">Динамика аудитории</h3>
-        <p class="publication-chart-subtitle">Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.</p>
-        <svg class="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1188, GitHub 1924; последний замер 24.09.2026, 22:35">
+        <p class="publication-chart-subtitle" id="publication-chart-subtitle">Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.</p>
+        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1188, GitHub 1932; последний замер 24.09.2026, 22:54">
           <line class="trend-grid" x1="44" x2="642" y1="202.0" y2="202.0"></line><text class="trend-axis-label" x="36" y="206.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="113.0" y2="113.0"></line><text class="trend-axis-label" x="36" y="117.0" text-anchor="end">1000</text><line class="trend-grid" x1="44" x2="642" y1="24.0" y2="24.0"></line><text class="trend-axis-label" x="36" y="28.0" text-anchor="end">2000</text>
-          <path class="trend-line trend-steam" d="M44.0,120.3 L64.6,120.3 L85.2,120.0 L105.9,118.8 L126.5,118.7 L147.1,118.7 L167.7,115.2 L188.3,115.2 L209.0,115.2 L229.6,115.0 L250.2,112.7 L270.8,112.7 L291.4,110.2 L312.1,108.2 L332.7,106.5 L353.3,104.7 L373.9,103.3 L394.6,102.8 L415.2,102.8 L435.8,102.8 L456.4,102.8 L477.0,102.8 L497.7,101.8 L518.3,101.1 L538.9,100.3 L559.5,99.2 L580.1,98.3 L600.8,97.2 L621.4,96.4 L642.0,96.3"></path>
-          <path class="trend-line trend-github" d="M44.0,102.9 L64.6,102.9 L85.2,101.8 L105.9,99.3 L126.5,99.0 L147.1,98.6 L167.7,90.0 L188.3,90.0 L209.0,90.0 L229.6,89.4 L250.2,84.4 L270.8,84.3 L291.4,77.3 L312.1,70.6 L332.7,66.5 L353.3,59.5 L373.9,56.7 L394.6,55.4 L415.2,54.9 L435.8,54.8 L456.4,54.7 L477.0,54.6 L497.7,50.0 L518.3,45.5 L538.9,42.9 L559.5,40.5 L580.1,37.4 L600.8,34.1 L621.4,31.6 L642.0,30.8"></path>
+          <path class="trend-line trend-steam" d="M44.0,120.3 L64.6,120.0 L85.2,118.8 L105.9,118.7 L126.5,118.7 L147.1,115.2 L167.7,115.2 L188.3,115.2 L209.0,115.0 L229.6,112.7 L250.2,112.7 L270.8,110.2 L291.4,108.2 L312.1,106.5 L332.7,104.7 L353.3,103.3 L373.9,102.8 L394.6,102.8 L415.2,102.8 L435.8,102.8 L456.4,102.8 L477.0,101.8 L497.7,101.1 L518.3,100.3 L538.9,99.2 L559.5,98.3 L580.1,97.2 L600.8,96.4 L621.4,96.3 L642.0,96.3"></path>
+          <path class="trend-line trend-github" d="M44.0,102.9 L64.6,101.8 L85.2,99.3 L105.9,99.0 L126.5,98.6 L147.1,90.0 L167.7,90.0 L188.3,90.0 L209.0,89.4 L229.6,84.4 L250.2,84.3 L270.8,77.3 L291.4,70.6 L312.1,66.5 L332.7,59.5 L353.3,56.7 L373.9,55.4 L394.6,54.9 L415.2,54.8 L435.8,54.7 L456.4,54.6 L477.0,50.0 L497.7,45.5 L518.3,42.9 L538.9,40.5 L559.5,37.4 L580.1,34.1 L600.8,31.6 L621.4,30.8 L642.0,30.1"></path>
           <circle class="trend-point trend-steam" cx="642.0" cy="96.3" r="4"></circle>
-          <circle class="trend-point trend-github" cx="642.0" cy="30.8" r="4"></circle>
+          <circle class="trend-point trend-github" cx="642.0" cy="30.1" r="4"></circle>
           <text class="trend-direct-label trend-steam-label" x="634.0" y="87.3" text-anchor="end">Steam 1188</text>
-          <text class="trend-direct-label trend-github-label" x="634.0" y="47.8" text-anchor="end">GitHub 1924</text>
-          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">10.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">16.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
+          <text class="trend-direct-label trend-github-label" x="634.0" y="47.1" text-anchor="end">GitHub 1932</text>
+          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">10.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">17.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
         </svg>
-        <p class="publication-chart-note">Последний замер: 24.09.2026, 22:35 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
+        <p class="publication-chart-note" id="publication-chart-note">Последний замер: 24.09.2026, 22:54 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
       </section>
       <a class="steam-guide-link" data-steam-guide-link id="steam-guide-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>
@@ -331,6 +331,12 @@
     const provenanceLabels = {
       'Условия: Forza': 'Requirements: Forza', 'Решение: сообщество': 'Solution: community', 'Тюнинг: сообщество': 'Tune: community', 'Плитка: нужен скриншот': 'Tile: screenshot needed'
     };
+    const sourceLabels = {
+      'Официальная Playlist': 'Official Playlist', 'Новости Forza: British Automotive': 'Forza News: British Automotive',
+      'Официальная карта Forza Labs': 'Official Forza Labs map', 'Forza Horizon Hub': 'Forza Horizon Hub',
+      'Reddit: ForzaHorizon6': 'Reddit: ForzaHorizon6'
+    };
+    const chart = {"title":"Динамика аудитории","description":"Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.","latestDate":"24.09.2026, 22:54","steamViews":1188,"githubViews":1932,"favorites":73};
     const output = document.getElementById('season-countdown');
     const deadline = Date.parse("2026-10-01T21:30:00+07:00");
     function tick() {
@@ -357,7 +363,8 @@
       kind: section.querySelector('[data-card-kind]')?.textContent ?? '',
       conditionHtml: section.querySelector('[data-card-condition-text]')?.innerHTML ?? '',
       howHtml: section.querySelector('[data-card-how-text]')?.innerHTML ?? '',
-      tuneHtml: section.querySelector('[data-card-tune-text]')?.innerHTML ?? ''
+      tuneHtml: section.querySelector('[data-card-tune-text]')?.innerHTML ?? '',
+      sources: section.querySelector('[data-card-sources]')?.innerHTML ?? ''
     }]));
     let currentLanguage = 'ru';
     let complete = new Set();
@@ -393,6 +400,14 @@
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
+      setText('publication-chart-title', currentLanguage === 'en' ? 'Audience trend' : chart.title);
+      setText('publication-chart-subtitle', currentLanguage === 'en' ? 'Latest successful public measurements: Steam unique visitors and GitHub guide views.' : chart.description);
+      setText('publication-chart-note', currentLanguage === 'en'
+        ? 'Latest measurement: ' + chart.latestDate + ' · Steam favorites: ' + chart.favorites + '. Values are recorded after successful public verification.'
+        : 'Последний замер: ' + chart.latestDate + ' · Steam в избранном: ' + chart.favorites + '. Значения фиксируются после успешной публичной проверки.');
+      document.getElementById('publication-chart-svg')?.setAttribute('aria-label', currentLanguage === 'en'
+        ? 'Visits: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; latest measurement ' + chart.latestDate
+        : 'Посещения: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; последний замер ' + chart.latestDate);
       document.getElementById('analytics-link')?.setAttribute('aria-label', copy.analyticsLink);
       document.getElementById('analytics-badge')?.setAttribute('alt', copy.analyticsImage);
       for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.languageButton === currentLanguage));
@@ -406,6 +421,11 @@
         const condition = section.querySelector('[data-card-condition-text]'); if (condition) condition.innerHTML = translated?.conditionHtml ?? original.conditionHtml;
         const how = section.querySelector('[data-card-how-text]'); if (how) how.innerHTML = translated?.howHtml ?? original.howHtml;
         const tune = section.querySelector('[data-card-tune-text]'); if (tune) tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml;
+        const sources = section.querySelector('[data-card-sources]');
+        if (sources) {
+          sources.innerHTML = original.sources;
+          if (currentLanguage === 'en') for (const link of sources.querySelectorAll('a')) link.textContent = sourceLabels[link.textContent] ?? link.textContent;
+        }
         for (const [selector, label] of [['condition', copy.condition], ['how', copy.how], ['tune', copy.tune]]) {
           const node = section.querySelector('[data-card-label="' + selector + '"]'); if (node) node.textContent = label;
         }

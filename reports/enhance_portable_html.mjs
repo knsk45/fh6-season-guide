@@ -123,8 +123,8 @@ function publicationChartHtml(dataset) {
   return `
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">${escapeHtml(dataset.title)}</h3>
-        <p class="publication-chart-subtitle">${escapeHtml(dataset.description)}</p>
-        <svg class="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Посещения: Steam ${last.steamViews}, GitHub ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
+        <p class="publication-chart-subtitle" id="publication-chart-subtitle">${escapeHtml(dataset.description)}</p>
+        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Посещения: Steam ${last.steamViews}, GitHub ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
           ${grid}
           <path class="trend-line trend-steam" d="${path('steamViews')}"></path>
           <path class="trend-line trend-github" d="${path('githubViews')}"></path>
@@ -134,7 +134,7 @@ function publicationChartHtml(dataset) {
           <text class="trend-direct-label trend-github-label" x="${(x(rows.length - 1) - 8).toFixed(1)}" y="${(y(last.githubViews) + 17).toFixed(1)}" text-anchor="end">GitHub ${last.githubViews}</text>
           ${labels}
         </svg>
-        <p class="publication-chart-note">Последний замер: ${escapeHtml(latestDate)} · Steam в избранном: ${last.steamFavorites}. Значения фиксируются после успешной публичной проверки.</p>
+        <p class="publication-chart-note" id="publication-chart-note">Последний замер: ${escapeHtml(latestDate)} · Steam в избранном: ${last.steamFavorites}. Значения фиксируются после успешной публичной проверки.</p>
       </section>`;
 }
 
@@ -307,6 +307,12 @@ ${supportHtml}
     const provenanceLabels = {
       'Условия: Forza': 'Requirements: Forza', 'Решение: сообщество': 'Solution: community', 'Тюнинг: сообщество': 'Tune: community', 'Плитка: нужен скриншот': 'Tile: screenshot needed'
     };
+    const sourceLabels = {
+      'Официальная Playlist': 'Official Playlist', 'Новости Forza: British Automotive': 'Forza News: British Automotive',
+      'Официальная карта Forza Labs': 'Official Forza Labs map', 'Forza Horizon Hub': 'Forza Horizon Hub',
+      'Reddit: ForzaHorizon6': 'Reddit: ForzaHorizon6'
+    };
+    const chart = ${JSON.stringify({ title: publicationMetrics.title, description: publicationMetrics.description, latestDate: new Intl.DateTimeFormat('ru-RU', { timeZone: 'Asia/Krasnoyarsk', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(publicationMetrics.rows.at(-1).collectedAt)), steamViews: publicationMetrics.rows.at(-1).steamViews, githubViews: publicationMetrics.rows.at(-1).githubViews, favorites: publicationMetrics.rows.at(-1).steamFavorites })};
     const output = document.getElementById('season-countdown');
     const deadline = Date.parse(${JSON.stringify(deadlineAt)});
     function tick() {
@@ -333,7 +339,8 @@ ${supportHtml}
       kind: section.querySelector('[data-card-kind]')?.textContent ?? '',
       conditionHtml: section.querySelector('[data-card-condition-text]')?.innerHTML ?? '',
       howHtml: section.querySelector('[data-card-how-text]')?.innerHTML ?? '',
-      tuneHtml: section.querySelector('[data-card-tune-text]')?.innerHTML ?? ''
+      tuneHtml: section.querySelector('[data-card-tune-text]')?.innerHTML ?? '',
+      sources: section.querySelector('[data-card-sources]')?.innerHTML ?? ''
     }]));
     let currentLanguage = 'ru';
     let complete = new Set();
@@ -369,6 +376,14 @@ ${supportHtml}
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
+      setText('publication-chart-title', currentLanguage === 'en' ? 'Audience trend' : chart.title);
+      setText('publication-chart-subtitle', currentLanguage === 'en' ? 'Latest successful public measurements: Steam unique visitors and GitHub guide views.' : chart.description);
+      setText('publication-chart-note', currentLanguage === 'en'
+        ? 'Latest measurement: ' + chart.latestDate + ' · Steam favorites: ' + chart.favorites + '. Values are recorded after successful public verification.'
+        : 'Последний замер: ' + chart.latestDate + ' · Steam в избранном: ' + chart.favorites + '. Значения фиксируются после успешной публичной проверки.');
+      document.getElementById('publication-chart-svg')?.setAttribute('aria-label', currentLanguage === 'en'
+        ? 'Visits: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; latest measurement ' + chart.latestDate
+        : 'Посещения: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; последний замер ' + chart.latestDate);
       document.getElementById('analytics-link')?.setAttribute('aria-label', copy.analyticsLink);
       document.getElementById('analytics-badge')?.setAttribute('alt', copy.analyticsImage);
       for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.languageButton === currentLanguage));
@@ -382,6 +397,11 @@ ${supportHtml}
         const condition = section.querySelector('[data-card-condition-text]'); if (condition) condition.innerHTML = translated?.conditionHtml ?? original.conditionHtml;
         const how = section.querySelector('[data-card-how-text]'); if (how) how.innerHTML = translated?.howHtml ?? original.howHtml;
         const tune = section.querySelector('[data-card-tune-text]'); if (tune) tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml;
+        const sources = section.querySelector('[data-card-sources]');
+        if (sources) {
+          sources.innerHTML = original.sources;
+          if (currentLanguage === 'en') for (const link of sources.querySelectorAll('a')) link.textContent = sourceLabels[link.textContent] ?? link.textContent;
+        }
         for (const [selector, label] of [['condition', copy.condition], ['how', copy.how], ['tune', copy.tune]]) {
           const node = section.querySelector('[data-card-label="' + selector + '"]'); if (node) node.textContent = label;
         }
