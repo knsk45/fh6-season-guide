@@ -359,6 +359,10 @@ if ($state) {
                 if (-not $analyticsMatch.Success -or -not $supportMatch.Success -or $analyticsMatch.Index -lt $supportMatch.Index) { Add-ValidationError 'Public HTML visit statistics must stay inside the final support block' }
                 if (([regex]::Matches($html, '<section\s+class="publication-chart"[^>]*\bdata-publication-chart\b', 'IgnoreCase')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one publication-history chart' }
                 if (-not $html.Contains('Динамика аудитории')) { Add-ValidationError 'Public HTML publication-history chart title is missing' }
+                $steamLinkMatches = [regex]::Matches($html, '<a\s+class="steam-guide-link"[^>]*\bdata-steam-guide-link\b[^>]*>', 'IgnoreCase')
+                if ($steamLinkMatches.Count -ne 1 -or -not $html.Contains([string]$steamGuide.url)) { Add-ValidationError 'Public HTML must contain exactly one configured Steam guide link' }
+                $chartMatch = [regex]::Match($html, '<section\s+class="publication-chart"[^>]*\bdata-publication-chart\b', 'IgnoreCase')
+                if (-not $chartMatch.Success -or $steamLinkMatches.Count -ne 1 -or $steamLinkMatches[0].Index -lt $chartMatch.Index) { Add-ValidationError 'Steam guide link must follow the audience chart' }
             }
         }
 

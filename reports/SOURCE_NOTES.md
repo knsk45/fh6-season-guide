@@ -1626,3 +1626,27 @@
 | `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
 | `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
 | `dungg_playlist` | unavailable: HTTP 200 cookie/consent page; no walkthrough inferred. |
+
+## 2026-09-24T22:35:17+07:00 — публикация ссылки Steam в веб-сводке
+
+- Все обязательные источники перепроверены; активная Winter Series 5 подтверждена официальной Playlist. Карточки и игровые визуалы не менялись.
+- В финальный блок после графика аудитории добавлена прямая ссылка на публичное руководство Steam.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: HTTP 403; no stale data reused. |
+| `fandom_current` | unavailable: HTTP 403; no stale data reused. |
+| `forza_playlist` | checked: HTTP 200; active Winter confirmed. |
+| `forza_news` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `forza_support_release_notes` | unavailable: HTTP 403; no stale data reused. |
+| `forza_support_known_issues` | unavailable: HTTP 403; no stale data reused. |
+| `forza_forums_official` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `reddit_forzahorizon` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `reddit_forzahorizon6` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `reddit_forza` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `reddit_forzatune` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |
+| `forza_horizon_hub` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_collector` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
+| `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
+| `dungg_playlist` | no_current_item: HTTP 200; no fresh material used for this presentation-only update. |

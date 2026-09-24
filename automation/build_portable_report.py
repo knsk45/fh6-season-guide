@@ -237,6 +237,9 @@ def validate_html(root, html, state, artifact, project):
     support = [n for n in doc.all('section') if 'data-support-block' in n.attrs]
     require(len(support) == 1 and len(support[0].all('div','visit-stats')) == 1, 'Support/analytics block missing')
     require(len(support[0].all('section','publication-chart')) == 1, 'Publication history chart missing')
+    steam_links = [n for n in support[0].all('a','steam-guide-link') if 'data-steam-guide-link' in n.attrs]
+    require(len(steam_links) == 1 and steam_links[0].attrs.get('href') == project['steamGuide']['url'], 'Steam guide link missing')
+    require(html.index('data-steam-guide-link') > html.index('data-publication-chart'), 'Steam guide link must follow audience chart')
     support_match = re.search(r'<section\s+class="support-section"[^>]*\bdata-support-block\b', html, re.I)
     card_matches = list(re.finditer(r'<section\s+class="activity-block"[^>]*\bdata-activity-block\b', html, re.I))
     require(support_match is not None and card_matches and support_match.start() > card_matches[-1].start(), 'Support must follow all activities')

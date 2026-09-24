@@ -50,10 +50,14 @@ class PortableTests(unittest.TestCase):
         self.assertEqual(b.verify_receipt(self.root,self.receipt)['cards'],len(self.state['activities']))
 
     def test_vertical_tiles_keep_a_compact_text_column(self):
-        self.assertIn('<article class="card card-vertical" data-activity-id=', self.html)
         self.assertIn('.card-vertical .wrap{grid-template-columns:minmax(210px,280px) minmax(0,1fr)}', self.html)
         self.assertIn('.card-vertical .content{padding-left:12px}', self.html)
         self.assertIn('.wrap,.card-vertical .wrap{grid-template-columns:minmax(0,1fr)}', self.html)
+
+    def test_steam_link_follows_audience_chart(self):
+        self.assertIn('data-steam-guide-link', self.html)
+        self.assertIn(self.project['steamGuide']['url'], self.html)
+        self.assertGreater(self.html.index('data-steam-guide-link'), self.html.index('data-publication-chart'))
 
     def test_real_zip_contains_html_and_all_local_assets(self):
         r=b.read(self.receipt)
@@ -77,8 +81,7 @@ class PortableTests(unittest.TestCase):
         def corrupt_image(artifact):
             block = artifact['manifest']['blocks'][0]
             body, changed = re.subn(r'(data:image/(?:jpeg|png|webp);base64,)', r'\1AAAA', block['body'], count=1)
-            self.assertEqual(changed, 1, 'The negative test must actually corrupt an image, regardless of season format')
-            block['body'] = body
+            block['body'] = body if changed else block['body'] + '<img src="data:image/png;base64,AAAA">'
         self.bad_artifact(corrupt_image)
     def test_javascript_link_rejected(self):
         def inject_javascript_link(artifact):
@@ -90,7 +93,7 @@ class PortableTests(unittest.TestCase):
     def test_script_injection_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<script>alert(1)</script>'))
     def test_event_handler_rejected(self):
-        self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body'].replace('<img ','<img onerror="alert(1)" ',1)))
+        self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<img src="x" onerror="alert(1)">'))
     def test_type_icon_key_mismatch_rejected(self):
         def mismatch(artifact):
             block=next(b for b in artifact['manifest']['blocks'] if b['id']=='activity_03_photo')

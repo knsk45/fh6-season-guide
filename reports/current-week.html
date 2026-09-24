@@ -44,6 +44,7 @@
     .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
     .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
     .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-direct-label{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-steam-label{fill:#ff7bb8}.trend-github-label{fill:#d9ff00}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
+    .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
@@ -66,7 +67,7 @@
     <h1>Forza Horizon 6: Как пройти Series 5 «British Automotive» — Зима</h1>
     <div class="page-meta">
       <span class="countdown">Заканчивается через <strong id="season-countdown">—</strong></span>
-      <time class="updated" datetime="2026-09-24T21:43:53.0000000+07:00">Обновлено: 24.09.2026, 21:43</time>
+      <time class="updated" datetime="2026-09-24T22:35:34.0000000+07:00">Обновлено: 24.09.2026, 22:35</time>
       <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/14</span>
       <label class="completion-filter"><input id="completion-filter" type="checkbox"> Только невыполненные</label>
     </div>
@@ -275,18 +276,19 @@
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">Динамика аудитории</h3>
         <p class="publication-chart-subtitle">Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.</p>
-        <svg class="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1178, GitHub 1886; последний замер 24.09.2026, 06:03">
-          <line class="trend-grid" x1="44" x2="642" y1="202.0" y2="202.0"></line><text class="trend-axis-label" x="36" y="206.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="113.0" y2="113.0"></line><text class="trend-axis-label" x="36" y="117.0" text-anchor="end">950</text><line class="trend-grid" x1="44" x2="642" y1="24.0" y2="24.0"></line><text class="trend-axis-label" x="36" y="28.0" text-anchor="end">1900</text>
-          <path class="trend-line trend-steam" d="M44.0,120.1 L64.6,117.9 L85.2,116.0 L105.9,116.0 L126.5,115.7 L147.1,114.4 L167.7,114.3 L188.3,114.3 L209.0,110.7 L229.6,110.7 L250.2,110.7 L270.8,110.5 L291.4,108.0 L312.1,108.0 L332.7,105.3 L353.3,103.3 L373.9,101.5 L394.6,99.6 L415.2,98.1 L435.8,97.5 L456.4,97.5 L477.0,97.5 L497.7,97.5 L518.3,97.5 L538.9,96.5 L559.5,95.8 L580.1,94.9 L600.8,93.8 L621.4,92.9 L642.0,91.6"></path>
-          <path class="trend-line trend-github" d="M44.0,107.8 L64.6,103.7 L85.2,97.6 L105.9,97.6 L126.5,96.5 L147.1,93.9 L167.7,93.6 L188.3,93.1 L209.0,84.1 L229.6,84.1 L250.2,84.1 L270.8,83.5 L291.4,78.2 L312.1,78.1 L332.7,70.7 L353.3,63.7 L373.9,59.4 L394.6,52.0 L415.2,49.0 L435.8,47.7 L456.4,47.1 L477.0,47.0 L497.7,47.0 L518.3,46.9 L538.9,42.0 L559.5,37.3 L580.1,34.5 L600.8,32.0 L621.4,28.8 L642.0,25.3"></path>
-          <circle class="trend-point trend-steam" cx="642.0" cy="91.6" r="4"></circle>
-          <circle class="trend-point trend-github" cx="642.0" cy="25.3" r="4"></circle>
-          <text class="trend-direct-label trend-steam-label" x="634.0" y="82.6" text-anchor="end">Steam 1178</text>
-          <text class="trend-direct-label trend-github-label" x="634.0" y="42.3" text-anchor="end">GitHub 1886</text>
-          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">09.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">14.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
+        <svg class="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1186, GitHub 1915; последний замер 24.09.2026, 21:45">
+          <line class="trend-grid" x1="44" x2="642" y1="202.0" y2="202.0"></line><text class="trend-axis-label" x="36" y="206.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="113.0" y2="113.0"></line><text class="trend-axis-label" x="36" y="117.0" text-anchor="end">1000</text><line class="trend-grid" x1="44" x2="642" y1="24.0" y2="24.0"></line><text class="trend-axis-label" x="36" y="28.0" text-anchor="end">2000</text>
+          <path class="trend-line trend-steam" d="M44.0,122.1 L64.6,120.3 L85.2,120.3 L105.9,120.0 L126.5,118.8 L147.1,118.7 L167.7,118.7 L188.3,115.2 L209.0,115.2 L229.6,115.2 L250.2,115.0 L270.8,112.7 L291.4,112.7 L312.1,110.2 L332.7,108.2 L353.3,106.5 L373.9,104.7 L394.6,103.3 L415.2,102.8 L435.8,102.8 L456.4,102.8 L477.0,102.8 L497.7,102.8 L518.3,101.8 L538.9,101.1 L559.5,100.3 L580.1,99.2 L600.8,98.3 L621.4,97.2 L642.0,96.4"></path>
+          <path class="trend-line trend-github" d="M44.0,108.6 L64.6,102.9 L85.2,102.9 L105.9,101.8 L126.5,99.3 L147.1,99.0 L167.7,98.6 L188.3,90.0 L209.0,90.0 L229.6,90.0 L250.2,89.4 L270.8,84.4 L291.4,84.3 L312.1,77.3 L332.7,70.6 L353.3,66.5 L373.9,59.5 L394.6,56.7 L415.2,55.4 L435.8,54.9 L456.4,54.8 L477.0,54.7 L497.7,54.6 L518.3,50.0 L538.9,45.5 L559.5,42.9 L580.1,40.5 L600.8,37.4 L621.4,34.1 L642.0,31.6"></path>
+          <circle class="trend-point trend-steam" cx="642.0" cy="96.4" r="4"></circle>
+          <circle class="trend-point trend-github" cx="642.0" cy="31.6" r="4"></circle>
+          <text class="trend-direct-label trend-steam-label" x="634.0" y="87.4" text-anchor="end">Steam 1186</text>
+          <text class="trend-direct-label trend-github-label" x="634.0" y="48.6" text-anchor="end">GitHub 1915</text>
+          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">10.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">15.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
         </svg>
-        <p class="publication-chart-note">Последний замер: 24.09.2026, 06:03 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
+        <p class="publication-chart-note">Последний замер: 24.09.2026, 21:45 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
       </section>
+      <a class="steam-guide-link" data-steam-guide-link href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>
   </main>
   <script>

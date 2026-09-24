@@ -24,6 +24,7 @@ const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
 const branding = project?.branding;
 const support = project?.support;
 const analytics = project?.analytics;
+const steamGuide = project?.steamGuide;
 const publicationMetrics = artifact?.snapshot?.datasets?.publicationMetrics;
 
 if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
@@ -37,6 +38,9 @@ if (blocks.length !== expectedCardCount || blocks.some((block) => block.type !==
 }
 if (!branding?.faviconPng || !branding.appleTouchIcon || !/^#[0-9a-f]{6}$/i.test(branding.themeColor ?? '')) {
   throw new Error('data/project.json must contain complete branding assets and a valid themeColor');
+}
+if (!steamGuide?.enabled || !steamGuide?.url || !steamGuide?.title) {
+  throw new Error('data/project.json must contain the enabled public Steam guide');
 }
 for (const [name, value] of Object.entries({ faviconPng: branding.faviconPng, appleTouchIcon: branding.appleTouchIcon })) {
   if (!value.startsWith('reports/assets/project/')) throw new Error(`${name} must stay under reports/assets/project/: ${value}`);
@@ -159,6 +163,7 @@ const supportHtml = `
         <p class="visit-stats-note">${escapeHtml(analytics.description)}</p>
       </div>
 ${publicationChart}
+      <a class="steam-guide-link" data-steam-guide-link href="${escapeHtml(steamGuide.url)}" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>`;
 const updatedText = new Intl.DateTimeFormat('ru-RU', {
   timeZone: 'Asia/Krasnoyarsk',
@@ -213,6 +218,7 @@ ${sharedCardCss}
     .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
     .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
     .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-direct-label{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-steam-label{fill:#ff7bb8}.trend-github-label{fill:#d9ff00}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
+    .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
       .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
@@ -318,6 +324,9 @@ if ((html.match(/<div class="visit-stats"[^>]*\bdata-visit-stats\b/g) ?? []).len
 }
 if ((html.match(/<section class="publication-chart"[^>]*\bdata-publication-chart\b/g) ?? []).length !== 1 || !html.includes('Динамика аудитории')) {
   throw new Error('Lightweight report lost the native publication-history chart');
+}
+if ((html.match(/<a class="steam-guide-link"[^>]*\bdata-steam-guide-link\b/g) ?? []).length !== 1 || !html.includes(escapeHtml(steamGuide.url)) || html.indexOf('data-steam-guide-link') < html.indexOf('data-publication-chart')) {
+  throw new Error('Lightweight report lost the Steam guide link after the audience chart');
 }
 for (const asset of [faviconPngSrc, appleTouchIconSrc]) {
   if (!html.includes(asset)) throw new Error(`Lightweight report lost branding asset: ${asset}`);
