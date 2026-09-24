@@ -26,12 +26,25 @@ const support = project?.support;
 const analytics = project?.analytics;
 const steamGuide = project?.steamGuide;
 const publicationMetrics = artifact?.snapshot?.datasets?.publicationMetrics;
+const englishLocale = state?.locales?.en;
 
 if (!title || !generatedAt || Number.isNaN(Date.parse(generatedAt)) || Number.isNaN(Date.parse(deadlineAt))) {
   throw new Error('artifact.json and current-season.json must contain valid title, generatedAt and endAt values');
 }
 if (!Number.isInteger(expectedCardCount) || expectedCardCount < 1) {
   throw new Error(`Invalid expectedCardCount: ${state?.season?.expectedCardCount}`);
+}
+if (!englishLocale?.reportTitle || !englishLocale?.seasonDisplay || !englishLocale?.activities ||
+    state.activities.some((activity) => !englishLocale.activities[activity.id])) {
+  throw new Error('data/current-season.json must contain a complete English locale for every activity');
+}
+for (const activity of state.activities) {
+  const translation = englishLocale.activities[activity.id];
+  for (const field of ['title', 'points', 'conditionHtml', 'howHtml', 'tuneHtml']) {
+    if (typeof translation[field] !== 'string' || !translation[field].trim()) {
+      throw new Error(`English locale is missing ${field} for ${activity.id}`);
+    }
+  }
 }
 if (blocks.length !== expectedCardCount || blocks.some((block) => block.type !== 'html' || !block.body)) {
   throw new Error(`Expected exactly ${expectedCardCount} HTML activity blocks, received ${blocks.length}`);
@@ -76,6 +89,8 @@ if (!publicationMetrics.source?.steam || !publicationMetrics.source?.github || !
 }
 const faviconPngSrc = branding.faviconPng.slice('reports/'.length);
 const appleTouchIconSrc = branding.appleTouchIcon.slice('reports/'.length);
+const englishLocaleJson = JSON.stringify(englishLocale).replace(/</g, '\\u003c');
+const activityKindsJson = JSON.stringify(Object.fromEntries(state.activities.map((activity) => [activity.id, activity.kind]))).replace(/</g, '\\u003c');
 
 function escapeHtml(value) {
   return String(value)
@@ -149,21 +164,21 @@ const cardsHtml = blocks.map(staticCard).join('\n');
 const publicationChart = publicationChartHtml(publicationMetrics);
 const supportHtml = `
     <section class="support-section" id="support-project" data-support-block>
-      <h2>${escapeHtml(support.title)}</h2>
-      <p>${escapeHtml(support.description)}</p>
+      <h2 id="support-title">${escapeHtml(support.title)}</h2>
+      <p id="support-description">${escapeHtml(support.description)}</p>
       <a class="support-qr-link" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(support.buttonLabel)}">
         <img class="support-qr" src="${escapeHtml(supportQrSrc)}" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
       </a>
-      <a class="support-button" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.buttonLabel)}</a>
+      <a class="support-button" id="support-button" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.buttonLabel)}</a>
       <div class="visit-stats" data-visit-stats>
-        <h3>${escapeHtml(analytics.title)}</h3>
-        <a class="visit-stats-link" href="${escapeHtml(analytics.dashboardUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
-          <img class="visit-stats-badge" src="${escapeHtml(analytics.counterImageUrl)}" height="28" alt="Просмотры страницы: сегодня и всего" referrerpolicy="no-referrer">
+        <h3 id="analytics-title">${escapeHtml(analytics.title)}</h3>
+        <a class="visit-stats-link" id="analytics-link" href="${escapeHtml(analytics.dashboardUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
+          <img class="visit-stats-badge" id="analytics-badge" src="${escapeHtml(analytics.counterImageUrl)}" height="28" alt="Просмотры страницы: сегодня и всего" referrerpolicy="no-referrer">
         </a>
-        <p class="visit-stats-note">${escapeHtml(analytics.description)}</p>
+        <p class="visit-stats-note" id="analytics-description">${escapeHtml(analytics.description)}</p>
       </div>
 ${publicationChart}
-      <a class="steam-guide-link" data-steam-guide-link href="${escapeHtml(steamGuide.url)}" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
+      <a class="steam-guide-link" data-steam-guide-link id="steam-guide-link" href="${escapeHtml(steamGuide.url)}" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>`;
 const updatedText = new Intl.DateTimeFormat('ru-RU', {
   timeZone: 'Asia/Krasnoyarsk',
@@ -176,7 +191,7 @@ const updatedText = new Intl.DateTimeFormat('ru-RU', {
 }).format(new Date(generatedAt));
 
 const html = `<!doctype html>
-<html lang="ru">
+<html lang="ru" data-language="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -190,13 +205,19 @@ const html = `<!doctype html>
 ${sharedCardCss}
     html{scroll-behavior:smooth;background:#071014}
     body{min-width:0;overflow-x:hidden}
-    .page-header{position:sticky;top:0;z-index:100;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;padding:12px max(20px,calc((100vw - 1360px)/2 + 24px));border-bottom:1px solid #29434b;background:#071014f2;backdrop-filter:blur(12px)}
-    .page-header h1{min-width:0;margin:0;overflow:hidden;color:#fff;font-size:16px;line-height:1.35;font-weight:750;text-overflow:ellipsis;white-space:nowrap}
-    .page-meta{display:flex;align-items:center;justify-content:flex-end;gap:12px;color:#b8ccd1;font-size:12px;white-space:nowrap}
+    .page-header{position:sticky;top:0;z-index:100;display:grid;gap:9px;padding:12px max(20px,calc((100vw - 1360px)/2 + 24px));border-bottom:1px solid #29434b;background:#071014f2;backdrop-filter:blur(12px)}
+    .header-title-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-width:0}
+    .page-header h1{min-width:0;margin:0;color:#fff;font-size:16px;line-height:1.35;font-weight:750}
+    .language-switch{display:inline-flex;flex:0 0 auto;align-items:center;gap:2px;padding:3px;border:1px solid #36515a;border-radius:10px;background:#0e2025}
+    .language-switch-label{padding:0 5px;color:#8ea8ae;font-size:11px;font-weight:700}
+    .language-switch button{min-width:34px;padding:4px 7px;border:0;border-radius:7px;background:transparent;color:#b8ccd1;font:700 11px/1 Inter,Segoe UI,Arial,sans-serif;cursor:pointer}
+    .language-switch button[aria-pressed="true"]{background:#d9ff00;color:#071014}.language-switch button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+    .page-meta{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:8px 12px;color:#b8ccd1;font-size:12px}
     .countdown{display:inline-flex;align-items:center;padding:6px 11px;border:1px solid #36515a;border-radius:999px;background:#0e2025}
     .countdown strong{margin-left:5px;color:#d9ff00;font-variant-numeric:tabular-nums}
     .updated{color:#8ea8ae}
     .completion-progress{color:#d9ff00;font-variant-numeric:tabular-nums}.completion-filter{display:inline-flex;align-items:center;gap:5px;color:#b8ccd1;cursor:pointer}.completion-filter input{accent-color:#d9ff00}.hide-completed .activity-block.is-complete{display:none}.copy-code.copied:after{content:'Скопировано'}
+    html[data-language="en"] .copy-code.copied:after{content:'Copied'}html[data-language="en"] .completion-toggle:after{content:'Mark complete'}html[data-language="en"] .completion-toggle[aria-pressed="true"]:after{content:'Completed'}
     .report{width:min(1360px,100%);margin:0 auto;padding:28px 32px 64px}
     .activity-list{display:grid;gap:28px}
     .activity-block{min-width:0;content-visibility:auto;contain-intrinsic-size:auto 360px}
@@ -221,7 +242,8 @@ ${sharedCardCss}
     .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
-      .page-header{position:static;grid-template-columns:1fr;padding:16px 18px;gap:9px}
+      .page-header{position:static;padding:16px 18px;gap:10px}
+      .header-title-row{align-items:flex-start;flex-direction:column;gap:9px}
       .page-header h1{font-size:20px;white-space:normal}
       .page-meta{justify-content:flex-start;flex-wrap:wrap;gap:8px;font-size:11px}
       .report{padding:18px 14px 44px}
@@ -238,12 +260,19 @@ ${sharedCardCss}
 </head>
 <body>
   <header class="page-header">
-    <h1>${escapeHtml(title)}</h1>
+    <div class="header-title-row">
+      <h1 id="report-title">${escapeHtml(title)}</h1>
+      <div class="language-switch" role="group" aria-labelledby="language-switch-label">
+        <span class="language-switch-label" id="language-switch-label">Язык</span>
+        <button type="button" data-language-button="ru" aria-pressed="true">RU</button>
+        <button type="button" data-language-button="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
     <div class="page-meta">
-      <span class="countdown">Заканчивается через <strong id="season-countdown">—</strong></span>
-      <time class="updated" datetime="${escapeHtml(generatedAt)}">Обновлено: ${escapeHtml(updatedText)}</time>
+      <span class="countdown"><span id="countdown-label">Заканчивается через</span> <strong id="season-countdown">—</strong></span>
+      <time class="updated" datetime="${escapeHtml(generatedAt)}"><span id="updated-label">Обновлено:</span> ${escapeHtml(updatedText)}</time>
       <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/${expectedCardCount}</span>
-      <label class="completion-filter"><input id="completion-filter" type="checkbox"> Только невыполненные</label>
+      <label class="completion-filter"><input id="completion-filter" type="checkbox"><span id="completion-filter-label">Только невыполненные</span></label>
     </div>
   </header>
   <main class="report">
@@ -254,6 +283,30 @@ ${supportHtml}
   </main>
   <script>
   (() => {
+    const englishLocale = ${englishLocaleJson};
+    const languageStorageKey = 'fh6-guide-language';
+    const labels = {
+      ru: {
+        language: 'Язык', countdown: 'Заканчивается через', updated: 'Обновлено:', complete: 'Готово', unfinished: 'Только невыполненные',
+        condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: ${JSON.stringify(support.title)},
+        supportDescription: ${JSON.stringify(support.description)}, supportButton: ${JSON.stringify(support.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
+        analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Просмотры страницы: сегодня и всего',
+        steamGuide: 'Открыть руководство в Steam'
+      },
+      en: {
+        language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
+        condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
+        supportDescription: 'If this guide saved you time, you can support the project with a Sberbank transfer.', supportButton: 'Support the project via Sberbank',
+        analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page views today and in total. Repeat loads and bots may increase the counter.',
+        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page views: today and total', steamGuide: 'Open the guide on Steam'
+      }
+    };
+    const kindLabels = {
+      en: { weekly: 'Weekly Challenge', daily: 'Daily Challenges', photo: 'Photo Challenge', treasure: 'Treasure Hunt', championship: 'Seasonal Championship', pr: 'PR Stunt', trial: 'The Trial', 'horizon-play': 'Horizon Play', monthly: 'Monthly Rivals' }
+    };
+    const provenanceLabels = {
+      'Условия: Forza': 'Requirements: Forza', 'Решение: сообщество': 'Solution: community', 'Тюнинг: сообщество': 'Tune: community', 'Плитка: нужен скриншот': 'Tile: screenshot needed'
+    };
     const output = document.getElementById('season-countdown');
     const deadline = Date.parse(${JSON.stringify(deadlineAt)});
     function tick() {
@@ -261,15 +314,28 @@ ${supportHtml}
       const days = Math.floor(seconds / 86400); seconds %= 86400;
       const hours = Math.floor(seconds / 3600); seconds %= 3600;
       const minutes = Math.floor(seconds / 60); seconds %= 60;
-      output.textContent = days + 'д ' + String(hours).padStart(2,'0') + 'ч ' + String(minutes).padStart(2,'0') + 'м ' + String(seconds).padStart(2,'0') + 'с';
+      output.textContent = document.documentElement.dataset.language === 'en'
+        ? days + 'd ' + String(hours).padStart(2,'0') + 'h ' + String(minutes).padStart(2,'0') + 'm ' + String(seconds).padStart(2,'0') + 's'
+        : days + 'д ' + String(hours).padStart(2,'0') + 'ч ' + String(minutes).padStart(2,'0') + 'м ' + String(seconds).padStart(2,'0') + 'с';
     }
     tick();
     window.setInterval(tick, 1000);
 
     const storageKey = ${JSON.stringify(`fh6-season-progress:${state.season.seriesSlug}:${state.season.season}:${state.season.startAt}`)};
+    const activityKinds = ${activityKindsJson};
     const cards = [...document.querySelectorAll('[data-activity-block]')];
     const progress = document.getElementById('completion-progress');
     const filter = document.getElementById('completion-filter');
+    const languageButtons = [...document.querySelectorAll('[data-language-button]')];
+    const originalCards = new Map(cards.map((section) => [section.id, {
+      title: section.querySelector('[data-card-title]')?.textContent ?? '',
+      points: section.querySelector('[data-card-points]')?.textContent ?? '',
+      kind: section.querySelector('[data-card-kind]')?.textContent ?? '',
+      conditionHtml: section.querySelector('[data-card-condition-text]')?.innerHTML ?? '',
+      howHtml: section.querySelector('[data-card-how-text]')?.innerHTML ?? '',
+      tuneHtml: section.querySelector('[data-card-tune-text]')?.innerHTML ?? ''
+    }]));
+    let currentLanguage = 'ru';
     let complete = new Set();
     try { complete = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]')); } catch { complete = new Set(); }
     const save = () => localStorage.setItem(storageKey, JSON.stringify([...complete]));
@@ -281,8 +347,52 @@ ${supportHtml}
         const button = section.querySelector('[data-completion-toggle]');
         if (button) button.setAttribute('aria-pressed', String(done));
       }
-      progress.textContent = 'Готово: ' + complete.size + '/${expectedCardCount}';
+      progress.textContent = labels[currentLanguage].complete + ': ' + complete.size + '/${expectedCardCount}';
       document.documentElement.classList.toggle('hide-completed', Boolean(filter.checked));
+    };
+    const setText = (id, text) => { const node = document.getElementById(id); if (node) node.textContent = text; };
+    const applyLanguage = (requestedLanguage) => {
+      currentLanguage = requestedLanguage === 'en' ? 'en' : 'ru';
+      const copy = labels[currentLanguage];
+      const translatedActivities = currentLanguage === 'en' ? englishLocale.activities : null;
+      document.documentElement.lang = currentLanguage;
+      document.documentElement.dataset.language = currentLanguage;
+      document.title = currentLanguage === 'en' ? englishLocale.reportTitle : ${JSON.stringify(title)};
+      setText('report-title', document.title);
+      setText('language-switch-label', copy.language);
+      setText('countdown-label', copy.countdown);
+      setText('updated-label', copy.updated);
+      setText('completion-filter-label', copy.unfinished);
+      setText('support-title', copy.supportTitle);
+      setText('support-description', copy.supportDescription);
+      setText('support-button', copy.supportButton);
+      setText('analytics-title', copy.analyticsTitle);
+      setText('analytics-description', copy.analyticsDescription);
+      setText('steam-guide-link', copy.steamGuide);
+      document.getElementById('analytics-link')?.setAttribute('aria-label', copy.analyticsLink);
+      document.getElementById('analytics-badge')?.setAttribute('alt', copy.analyticsImage);
+      for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.languageButton === currentLanguage));
+      for (const section of cards) {
+        const original = originalCards.get(section.id);
+        const translated = translatedActivities?.[section.id];
+        section.querySelector('[data-card-title]')?.replaceChildren(document.createTextNode(translated?.title ?? original.title));
+        section.querySelector('[data-card-points]')?.replaceChildren(document.createTextNode(translated?.points ?? original.points));
+        const kind = section.querySelector('[data-card-kind]');
+        if (kind) kind.textContent = currentLanguage === 'en' ? (kindLabels.en[activityKinds[section.id]] ?? original.kind) : original.kind;
+        const condition = section.querySelector('[data-card-condition-text]'); if (condition) condition.innerHTML = translated?.conditionHtml ?? original.conditionHtml;
+        const how = section.querySelector('[data-card-how-text]'); if (how) how.innerHTML = translated?.howHtml ?? original.howHtml;
+        const tune = section.querySelector('[data-card-tune-text]'); if (tune) tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml;
+        for (const [selector, label] of [['condition', copy.condition], ['how', copy.how], ['tune', copy.tune]]) {
+          const node = section.querySelector('[data-card-label="' + selector + '"]'); if (node) node.textContent = label;
+        }
+        for (const chip of section.querySelectorAll('.provenance-chip')) {
+          chip.dataset.russianText ||= chip.textContent;
+          chip.textContent = currentLanguage === 'en' ? (provenanceLabels[chip.dataset.russianText] ?? chip.dataset.russianText) : chip.dataset.russianText;
+        }
+      }
+      try { localStorage.setItem(languageStorageKey, currentLanguage); } catch {}
+      tick();
+      renderProgress();
     };
     for (const section of cards) {
       section.querySelector('[data-completion-toggle]')?.addEventListener('click', () => {
@@ -292,7 +402,10 @@ ${supportHtml}
       });
     }
     filter.addEventListener('change', renderProgress);
-    renderProgress();
+    for (const button of languageButtons) button.addEventListener('click', () => applyLanguage(button.dataset.languageButton));
+    let savedLanguage = 'ru';
+    try { savedLanguage = localStorage.getItem(languageStorageKey) || 'ru'; } catch {}
+    applyLanguage(savedLanguage);
   })();
   </script>
 </body>

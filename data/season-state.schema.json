@@ -29,6 +29,36 @@
       "additionalProperties": false
     },
     "lastContentUpdate": { "type": "string", "format": "date-time" },
+    "locales": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "object",
+          "required": ["reportTitle", "seasonDisplay", "activities"],
+          "properties": {
+            "reportTitle": { "type": "string", "minLength": 1 },
+            "seasonDisplay": { "type": "string", "minLength": 1 },
+            "activities": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "required": ["title", "points", "conditionHtml", "howHtml", "tuneHtml"],
+                "properties": {
+                  "title": { "type": "string", "minLength": 1 },
+                  "points": { "type": "string", "minLength": 1 },
+                  "conditionHtml": { "type": "string" },
+                  "howHtml": { "type": "string" },
+                  "tuneHtml": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "activities": {
       "type": "array",
       "minItems": 1,

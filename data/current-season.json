@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-24T22:35:34+07:00",
+  "lastContentUpdate": "2026-09-24T22:53:11+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -562,6 +562,112 @@
       ]
     }
   ],
+  "locales": {
+    "en": {
+      "reportTitle": "Forza Horizon 6: Series 5 \"British Automotive\" — Winter Guide",
+      "seasonDisplay": "Winter",
+      "activities": {
+        "activity_01_weekly": {
+          "title": "Weekly Challenge",
+          "points": "5 points",
+          "conditionHtml": "In the 2010 Jaguar C-X75: take a photo, complete Road Races and visit a Car Meet. Reward: 25,000 CR.",
+          "howHtml": "Complete chapters in the order shown in-game; the exact additional requirements await the full tile.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_02_daily": {
+          "title": "7 Daily Challenges",
+          "points": "7 × 1 point",
+          "conditionHtml": "<ol><li><strong>24 Sep:</strong> park at any Car Meet.</li><li><strong>25 Sep:</strong> earn 3 Speed Skills.</li><li><strong>26 Sep:</strong> photograph any car.</li><li><strong>27 Sep:</strong> spend 15,000 CR upgrading any car.</li><li><strong>28 Sep:</strong> use a Wheelspin or Super Wheelspin.</li><li><strong>29 Sep:</strong> earn at least 1 star at a Speed Trap.</li><li><strong>30 Sep:</strong> complete 1 lap at any Time Attack circuit.</li></ol> Reward for each: 5,000 CR.",
+          "howHtml": "Each Daily opens at 21:30 Krasnoyarsk time and remains available for 7 days.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_03_photo": {
+          "title": "#BambooPerfect",
+          "points": "2 points",
+          "conditionHtml": "Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.",
+          "howHtml": "Open Photo Mode in Bamboo Forest, make sure the McLaren is in frame, then save the photo.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_04_treasure_hunt": {
+          "title": "Treasure Hunt",
+          "points": "3 points",
+          "conditionHtml": "Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.",
+          "howHtml": "The exact clue and chest location await the full in-game tile or a fresh Winter guide.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_05_championship": {
+          "title": "Country Pickups",
+          "points": "5 points",
+          "conditionHtml": "Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country, with the third route not yet confirmed. Reward: 2010 Jaguar C-X75.",
+          "howHtml": "Complete the championship; the exact route list will be verified from the in-game tile.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_06_championship": {
+          "title": "Cult Street",
+          "points": "5 points",
+          "conditionHtml": "Cult Street Championship: Cult Cars, D 500. Routes: Rainbow Bridge Descent, Okishinaimura Run, Norikura Descent. Reward: 1972 Reliant Supervan III.",
+          "howHtml": "Finish all three races while keeping clean checkpoint lines.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_07_pr": {
+          "title": "Shimanoyama Drift Attack",
+          "points": "2 points",
+          "conditionHtml": "Shimanoyama Drift Attack: United Kingdom, A 800, at least 80,000 points.",
+          "howHtml": "Score across the full Drift Attack distance and avoid breaking your drift chain.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_08_pr": {
+          "title": "Azure Drive Danger Sign",
+          "points": "2 points",
+          "conditionHtml": "Azure Drive Danger Sign: United Kingdom, B 700, at least 689.0 ft.",
+          "howHtml": "Build speed on a straight approach to the ramp; the exact approach will be confirmed by the in-game tile.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_09_pr": {
+          "title": "Tall Trees Speed Zone",
+          "points": "2 points",
+          "conditionHtml": "Tall Trees Speed Zone: United Kingdom, A 800, at least 70.0 mph.",
+          "howHtml": "Build speed before the entry and keep a smooth line through the zone.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_10_pr": {
+          "title": "Sekibe Kaijo Trailblazer",
+          "points": "2 points",
+          "conditionHtml": "Sekibe Kaijo Trailblazer: United Kingdom, A 800, at least 42 seconds remaining.",
+          "howHtml": "Start with a speed reserve and follow the shortest safe route to the finish.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_11_trial": {
+          "title": "Winter Rallies",
+          "points": "10 points",
+          "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 800. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.",
+          "howHtml": "Drive cleanly as a team and do not push teammates off their line.",
+          "tuneHtml": "No tune has been verified in the sources."
+        },
+        "activity_12_horizon_play": {
+          "title": "Speed Connection",
+          "points": "3 points",
+          "conditionHtml": "In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.",
+          "howHtml": "Start a Horizon Racing event and maintain a chain of speed skills.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_13_horizon_play": {
+          "title": "Horizon Stunt Party",
+          "points": "3 points",
+          "conditionHtml": "Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.",
+          "howHtml": "Reach the event results screen; leaving early does not count.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_14_monthly_rivals": {
+          "title": "Monthly Rivals — Shimanoyama Sprint",
+          "points": "4 points",
+          "conditionHtml": "Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.",
+          "howHtml": "Finish the lap without collisions or penalties.",
+          "tuneHtml": "2025 McLaren W1 — no mandatory tune."
+        }
+      }
+    }
+  },
   "openItems": [
     {
       "activityId": "activity_01_weekly",

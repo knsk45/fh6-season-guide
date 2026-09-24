@@ -181,9 +181,9 @@ def validate_artifact(root, state, artifact, project):
         for node in doc.all():
             require(node.tag in allowed and not any(k.lower().startswith('on') for k in node.attrs), 'Active/unsupported HTML in card')
         require(not re.search(r'@import|url\s*\(|expression\s*\(', block['body'], re.I), 'External/active CSS in card')
-        paragraphs = doc.all('p')
-        require(len(paragraphs) == 3, 'Expected condition, how-to and tune paragraphs')
-        for node, key, label in zip(paragraphs, ['conditionHtml','howHtml','tuneHtml'], ['Условие:', 'Как выполнить:', 'Автомобиль и тюнинг:']):
+        details = [doc.all('div', 'card-detail')[0], *doc.all('p')]
+        require(len(details) == 3, 'Expected condition, how-to and tune detail blocks')
+        for node, key, label in zip(details, ['conditionHtml','howHtml','tuneHtml'], ['Условие:', 'Как выполнить:', 'Автомобиль и тюнинг:']):
             require(normalized(node.text()) == normalized(label + ' ' + card[key]), 'Artifact content differs from state: ' + key)
         expected_codes = re.findall(r'<code>([0-9]{3} [0-9]{3} [0-9]{3})</code>', card['tuneHtml'])
         copy_buttons = doc.all('button', 'copy-code')
