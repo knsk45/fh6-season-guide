@@ -3,68 +3,68 @@
 
 [quote][url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ АКТУАЛЬНУЮ СВОДКУ С КАРТАМИ И ИЗОБРАЖЕНИЯМИ[/b][/url][/quote]
 
-[h1]Series 5 «British Automotive» — Осень[/h1]
-[b]До:[/b] 24.09.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
+[h1]Series 5 «British Automotive» — Зима[/h1]
+[b]До:[/b] 01.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
 [b]Основная сводка проверяется ежедневно; точное время последней проверки всегда указано по ссылке выше.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. weekly — Fast and Lotus · 5 очков[/h2]
-На 1999 Lotus Elise Series 1 Sport 190: 6 звёзд на Speed Traps, 4 Speed Skills и 3 круга на Shimanoyama Drift Attack. Награда: 25 000 CR.
-[b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 — share code: 114 242 420.
+[h2]01. weekly — Еженедельное испытание · 5 очков[/h2]
+На 2010 Jaguar C-X75: фото, Road Races и Car Meet. Награда: 25 000 CR.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
 [h2]02. daily — 7 ежедневных заданий · 7 × 1 очко[/h2]
-• 17.09: завершить 1 круг в Drift Zone.
-• 18.09: использовать Skill Song у vending machine Feed Me.
-• 19.09: выполнить 3 LINK Air Skills.
-• 20.09: заработать 1 звезду на Danger Sign.
-• 21.09: выполнить 3 Clean Racing Skills.
-• 22.09: отправить Gift Drop.
-• 23.09: завершить Road Race.
+• 24.09: припарковаться на любом Car Meet.
+• 25.09: выполнить 3 Speed Skills.
+• 26.09: сфотографировать любую машину.
+• 27.09: потратить 15 000 CR на улучшение любой машины.
+• 28.09: использовать Wheelspin или Super Wheelspin.
+• 29.09: получить хотя бы 1 звезду на Speed Trap.
+• 30.09: завершить 1 круг на любом Time Attack circuit.
  Награда за каждое: 5 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. photo — #RuralLotus · 2 очка[/h2]
-Сфотографируйте любую машину марки Lotus у Shirakawa-go. Награда: гудок Sea of Thieves Theme.
+[h2]03. photo — #BambooPerfect · 2 очка[/h2]
+Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. collectibles — Tire Hunt · 3 очка[/h2]
-Разбейте 15 Drift Tyre Mascots на Shimanoyama Drift Circuit. Награда: Super Wheelspin.
+[h2]04. treasure_hunt — Treasure Hunt · 3 очка[/h2]
+Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. championship — Offroad Scramble · 5 очков[/h2]
-Чемпионат Offroad Scramble, класс B 600 Offroad. Маршруты: Chiheisen Scramble, Horizon Stadium Scramble, Taiyaki Scramble. Награда: 2013 MINI X-Raid All4 Racing Countryman.
-[b]Авто:[/b] 1972 Nissan Patrol — B 600, share code: 238 942 018.
+[h2]05. championship — Country Pickups · 5 очков[/h2]
+Чемпионат Country Pickups: Pickups & 4x4, B 600. Маршруты: Soni Highlands Cross Country, Temple Cross Country и третий маршрут ещё не подтверждён. Награда: 2010 Jaguar C-X75.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]06. championship — Toys On The Road · 5 очков[/h2]
-Чемпионат Toys On The Road, класс Track Toys S1 800. Маршруты: Satta Sprint, Daikoku Circuit, Tokyo Railway Sprint. Награда: 1999 Lotus Elise Series 1 Sport 190.
-[b]Авто:[/b] 2021 McLaren 620R — S1 800, share code: 671 873 067.
+[h2]06. championship — Cult Street · 5 очков[/h2]
+Чемпионат Cult Street: Cult Cars, D 500. Маршруты: Rainbow Bridge Descent, Okishinaimura Run, Norikura Descent. Награда: 1972 Reliant Supervan III.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]07. pr — Lakeside Valley Speed Trap · 2 очка[/h2]
-Speed Trap Lakeside Valley: UK, A 700, минимум 145 mph.
-[b]Авто:[/b] 2020 Land Rover Defender 110 X — A 700, share code: 873 603 031.
+[h2]07. pr — Shimanoyama Drift Attack · 2 очка[/h2]
+Drift Attack Shimanoyama: Великобритания, A 800, минимум 80 000 очков.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]08. pr — Inner City Run Drift Zone · 2 очка[/h2]
-Drift Zone Inner City Run: UK, B 600, минимум 30 000 очков дрифта.
-[b]Авто:[/b] 1965 MINI Cooper S — B 600, share code: 102 085 813.
+[h2]08. pr — Azure Drive Danger Sign · 2 очка[/h2]
+Danger Sign Azure Drive: Великобритания, B 700, минимум 689,0 футов.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]09. pr — Ocean Highway Speed Zone · 2 очка[/h2]
-Speed Zone Ocean Highway: UK, A 700, средняя скорость минимум 135 mph.
-[b]Авто:[/b] 2020 Land Rover Defender 110 X — A 700, share code: 873 603 031.
+[h2]09. pr — Tall Trees Speed Zone · 2 очка[/h2]
+Speed Zone Tall Trees: Великобритания, A 800, минимум 70,0 mph.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]10. trial — Super Circuits · 10 очков[/h2]
-The Trial Super Circuits: Modern Supercars, класс S1 800. Маршруты: Shimanoyama, Shirakawa, Narai-Juku.
-[b]Авто:[/b] 2014 McLaren 650S Spider — S1 800, share code: 686 193 048.
+[h2]10. pr — Sekibe Kaijo Trailblazer · 2 очка[/h2]
+Trailblazer Sekibe Kaijo: Великобритания, A 800, минимум 42 секунды.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]11. horizon_play — Horizon Drift · 3 очка[/h2]
-Horizon Drift: заработайте 5 Drift Skills. Награда: 2021 Aston Martin DBX.
-[b]Авто:[/b] Тюнинг не требуется.
+[h2]11. trial — Winter Rallies · 10 очков[/h2]
+The Trial Winter Rallies: Rally Monsters, A 800. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.
+[b]Авто:[/b] Тюнинг не указан в проверенных источниках.
 
-[h2]12. horizon_play — Hide & Seek · 3 очка[/h2]
-Hide & Seek: завершите режим 5VS1. Награда: Classic Jacket.
+[h2]12. horizon_play — Speed Connection · 3 очка[/h2]
+В Horizon Racing выполните 3 LINK Speed Skills. Награда: 1962 Peel P50.
 [b]Авто:[/b] Тюнинг не требуется.
 
 [h2]13. horizon_play — Horizon Stunt Party · 3 очка[/h2]
-Horizon Stunt Party: завершите Mini Games. Награда: Forza Link «Eurobeat Intensifies».
+Завершите Mini Games в Horizon Stunt Party. Награда: Black and Red Utility Pants.
 [b]Авто:[/b] Тюнинг не требуется.
 
 [h2]14. monthly_rivals — Monthly Rivals — Shimanoyama Sprint · 4 очка[/h2]
@@ -74,7 +74,3 @@ Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren 
 [h1]Карты, скриншоты и уточнения[/h1]
 [url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]
 [b]Добавьте руководство Steam в избранное:[/b] оно регулярно обновляется вместе с Festival Playlist.
-
-[h2]Короткие ссылки на локации[/h2]
-[url=https://gismoland.com/2026/09/17/forza-horizon-6-shirakawa-go-parking-a-lotus-in-a-mountain-village/]Локация Shirakawa-go[/url]
-[url=https://escorenews.com/en/article/81289-tire-hunt-collectibles-challenge-guide-location-of-drift-tire-mascots-at-shimanoyama-in-series-5-autumn-in-forza-horizon-6]Карта Tire Hunt[/url]

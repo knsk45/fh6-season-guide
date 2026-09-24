@@ -1601,3 +1601,28 @@
 - Визуальный аудит всех 14 активностей: `confirmed=0`, `community=13`, `preliminary=0`, `missing=1` (Daily). Daily остаётся текстовым списком без скриншота и без публичной отметки «Плитка: нужен скриншот».
 - Ссылки для Photo Challenge (Shirakawa-go) и Collectibles/Tire Hunt (Shimanoyama) сохранены; ссылок на скриншоты нет.
 - Сводка актуальна — содержательных изменений не требуется.
+
+## 2026-09-24T21:43:36+07:00 — Series 5 Winter rollover audit
+
+- Официальная Playlist подтверждает Series 5 British Automotive — Winter: 24 сентября – 1 октября 2026.
+- Новое состояние создано только из явных фактов официальной Playlist и новости Forza; неуточнённые условия и решения оставлены в openItems.
+- Визуальный аудит: 14/14 точных Winter-плиток отсутствуют. Старые Autumn-визуалы не переиспользованы; очередь ожидает оригинальные полные скриншоты пользователя.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: HTTP 403; no stale data reused. |
+| `fandom_current` | unavailable: HTTP 403; no stale data reused. |
+| `forza_playlist` | checked: HTTP 200; active Series 5 British Automotive Winter confirmed by official Playlist. |
+| `forza_news` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `forza_support_release_notes` | unavailable: HTTP 403; no stale data reused. |
+| `forza_support_known_issues` | unavailable: HTTP 403; no stale data reused. |
+| `forza_forums_official` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `reddit_forzahorizon` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `reddit_forzahorizon6` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `reddit_forza` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `reddit_forzatune` | no_current_item: HTTP 200; no deterministic current-week material found. |
+| `forza_horizon_hub` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_collector` | unavailable: HTTP network error; no stale data reused. |
+| `forza_labs_map` | unavailable: HTTP network error; no stale data reused. |
+| `escorenews_fh6` | unavailable: HTTP 403; no stale data reused. |
+| `dungg_playlist` | unavailable: HTTP 200 cookie/consent page; no walkthrough inferred. |
