@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-25T04:49:11+07:00",
+  "lastContentUpdate": "2026-09-25T05:24:45+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,22 +30,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "tile-weekly-jaguar.png",
+        "sourceImage": "evidence/codex-clipboard-88f4c4f6-c80b-4ba5-903f-2ea7c9fa4cef.png",
+        "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ],
       "openItems": [
         {
@@ -54,13 +53,6 @@
           "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
           "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
           "status": "preliminary"
-        },
-        {
-          "activityId": "activity_01_weekly",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
         }
       ]
     },
@@ -95,8 +87,8 @@
         {
           "activityId": "activity_02_daily",
           "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
+          "reason": "Daily is intentionally text-only and does not use a public game tile.",
+          "nextCheck": "No screenshot required: keep the Daily block as a text list.",
           "status": "missing"
         }
       ]
@@ -112,31 +104,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "tile-photo-bamboo-perfect.png",
+        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "orientation": "vertical",
         "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_03_photo",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_04_treasure_hunt",
@@ -149,22 +131,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "tile-treasure-shimanoyama.png",
+        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "orientation": "vertical",
         "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ],
       "openItems": [
         {
@@ -173,13 +154,6 @@
           "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
           "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
           "status": "preliminary"
-        },
-        {
-          "activityId": "activity_04_treasure_hunt",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
         }
       ]
     },
@@ -194,22 +168,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-championship-country-pickups.png",
+        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ],
       "openItems": [
         {
@@ -218,13 +191,6 @@
           "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
           "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
           "status": "preliminary"
-        },
-        {
-          "activityId": "activity_05_championship",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
         }
       ]
     },
@@ -239,31 +205,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-championship-cult-street.png",
+        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_06_championship",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_07_pr",
@@ -276,31 +232,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-shimanoyama-drift.png",
+        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
         "orientation": "horizontal",
         "typeIconKey": "drift-zone",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_07_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_08_pr",
@@ -313,31 +259,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-azure-danger-sign.png",
+        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_08_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_09_pr",
@@ -350,31 +286,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-tall-trees-speed-zone.png",
+        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
         "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_09_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_10_pr",
@@ -387,31 +313,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-pr-sekibe-kaijo-trailblazer.png",
+        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_10_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_11_trial",
@@ -424,31 +340,21 @@
       "tuneHtml": "Тюнинг не указан в проверенных источниках.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "tile-trial-winter-rallies.png",
+        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "orientation": "vertical",
         "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_11_trial",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -461,31 +367,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-horizon-play-speed-connection.png",
+        "sourceImage": "evidence/codex-clipboard-a7a874e1-f9b3-4b50-ab3c-0e22326b79b5.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_12_horizon_play",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_13_horizon_play",
@@ -498,31 +394,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-horizon-play-stunt-party.png",
+        "sourceImage": "evidence/codex-clipboard-a7a874e1-f9b3-4b50-ab3c-0e22326b79b5.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_13_horizon_play",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -535,31 +421,21 @@
       "tuneHtml": "2025 McLaren W1 — без обязательного тюнинга.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "tile-monthly-rivals-shimanoyama.webp",
+        "sourceImage": "evidence/tile-monthly-rivals-existing.webp",
         "orientation": "horizontal",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Точная игровая плитка Monthly Rivals уже была сохранена локально; повторно использована по явному указанию пользователя."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_14_monthly_rivals",
-          "field": "visual",
-          "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-          "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     }
   ],
   "locales": {
@@ -677,115 +553,24 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
+      "activityId": "activity_04_treasure_hunt",
+      "field": "condition",
+      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
+      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "condition",
+      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
+      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
+      "reason": "Daily is intentionally text-only and does not use a public game tile.",
+      "nextCheck": "No screenshot required: keep the Daily block as a text list.",
       "status": "missing"
     }
   ],
@@ -798,115 +583,24 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
+      "activityId": "activity_04_treasure_hunt",
+      "field": "condition",
+      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
+      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "condition",
+      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
+      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная игровая плитка Winter не найдена в обязательных источниках; старый визуал не переносится.",
-      "nextCheck": "Получить неизменённый скриншот полной игровой плитки Winter и вырезать только её границы.",
+      "reason": "Daily is intentionally text-only and does not use a public game tile.",
+      "nextCheck": "No screenshot required: keep the Daily block as a text list.",
       "status": "missing"
     }
   ]

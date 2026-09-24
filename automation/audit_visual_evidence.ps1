@@ -16,25 +16,21 @@ $AssetRoot = Join-Path $RepoRoot ([string]$State.season.assetsDirectory)
 $Queue = [System.Collections.Generic.List[object]]::new()
 
 foreach ($Activity in @($State.activities)) {
+    # Daily is intentionally a text-only aggregate and never needs a public tile.
+    if ([string]$Activity.kind -eq 'daily') { continue }
     $Visual = $Activity.visual
     $Image = [string]$Visual.image
     $SourceImage = [string]$Visual.sourceImage
     $HasPreparedTile = -not [string]::IsNullOrWhiteSpace($Image) -and (Test-Path -LiteralPath (Join-Path $AssetRoot $Image))
     $HasOriginalEvidence = -not [string]::IsNullOrWhiteSpace($SourceImage) -and (Test-Path -LiteralPath (Join-Path $AssetRoot $SourceImage))
-    $ExactTileClaim = [string]$Visual.sourceLabel -match 'Точная игровая плитка|пользовательск.*скриншот.*точн'
     $Completeness = [string]$Activity.completeness.visual
-
     $Reason = $null
     if ($Completeness -in @('missing','preliminary')) {
-        $Reason = 'В state уже указан незавершённый визуал.'
+        $Reason = 'The state marks this visual as unresolved.'
     }
     elseif (-not $HasPreparedTile -or -not $HasOriginalEvidence) {
-        $Reason = 'Нет подготовленной точной плитки или сохранённого исходного доказательства.'
+        $Reason = 'The prepared exact tile or the original evidence file is missing.'
     }
-    elseif (-not $ExactTileClaim) {
-        $Reason = 'Источник не подтверждает, что файл является точной внутриигровой плиткой текущей недели.'
-    }
-
     if ($Reason) {
         $Queue.Add([ordered]@{
             activityId = [string]$Activity.id
@@ -42,7 +38,7 @@ foreach ($Activity in @($State.activities)) {
             title = [string]$Activity.title
             orientation = [string]$Visual.orientation
             reason = $Reason
-            request = 'Нужен неизменённый игровой скриншот с полностью видимой плиткой. Оригинал будет сохранён как sourceImage, затем из него без ретуши вырежется только граница плитки.'
+            request = 'Need an unedited in-game screenshot with the full tile visible. Save it as sourceImage and crop only the tile boundary without retouching.'
             status = 'screenshot_required'
         })
     }

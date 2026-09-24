@@ -1687,3 +1687,30 @@
 | `forza_labs_map` | no_current_item: карта открылась; новых точных зимних плиток или решений не найдено. |
 | `escorenews_fh6` | unavailable: страница не отдалась средству проверки; устаревшие данные не использовались. |
 | `dungg_playlist` | unavailable: плейлист не отдался средству проверки; маршрут или решение не выводились. |
+
+## 2026-09-25T05:18:00+07:00 — Winter Series 5: пользовательские точные плитки
+
+- Повторная живая проверка всех 16 обязательных источников: официальная Playlist (`HTTP 200`) вновь подтвердила `British Automotive — Winter` до 1 октября 2026. Данные карточек, решения и тюнинги не менялись.
+- Сохранены четыре неизменённых пользовательских скриншота в `reports/assets/series-05-winter/evidence/`. Из них без ретуши и без подложек вырезаны 12 точных зимних плиток: Weekly Jaguar, Photo, Treasure Hunt, два Championship, четыре PR, Trial и две Horizon Play.
+- Daily намеренно не получил плитку: это объединённый текстовый блок. Его скриншот не использовался и не запрашивается.
+- Для Monthly Rivals использована уже сохранённая локальная точная плитка `Спринт по Симанояме` (`tile-monthly-rivals-existing.webp`) по прямому указанию пользователя; новый скриншот не требовался.
+- Визуальный аудит: `confirmed=0`, `community=13`, `preliminary=0`, `missing=1` (только Daily).
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: HTTP 403; устаревшие данные не использовались. |
+| `fandom_current` | unavailable: HTTP 403; устаревшие данные не использовались. |
+| `forza_playlist` | checked: HTTP 200; British Automotive — Winter подтверждён. |
+| `forza_news` | no_current_item: HTTP 200; нового детерминированного факта недели не найдено. |
+| `forza_support_release_notes` | unavailable: HTTP 404; устаревшие данные не использовались. |
+| `forza_support_known_issues` | no_current_item: HTTP 200; нового влияния на плейлист не найдено. |
+| `forza_forums_official` | no_current_item: HTTP 200; нового объявления, меняющего карточки, не найдено. |
+| `reddit_forzahorizon` | unavailable: HTTP 403; решения и тюнинги не переносились. |
+| `reddit_forzahorizon6` | unavailable: HTTP 403; решения и тюнинги не переносились. |
+| `reddit_forza` | unavailable: HTTP 403; решения и тюнинги не переносились. |
+| `reddit_forzatune` | unavailable: HTTP 403; тюнинги не переносились. |
+| `forza_horizon_hub` | no_current_item: HTTP 200; нового недельного решения не найдено. |
+| `forza_labs_collector` | no_current_item: HTTP 200; подтверждённого нового решения collectibles не найдено. |
+| `forza_labs_map` | no_current_item: HTTP 200; нового точного визуала или решения не найдено. |
+| `escorenews_fh6` | unavailable: HTTP 403; устаревшие данные не использовались. |
+| `dungg_playlist` | no_current_item: HTTP 200; нового подтверждённого Winter-видео не найдено. |
