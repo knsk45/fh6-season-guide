@@ -244,7 +244,8 @@ def validate_html(root, html, state, artifact, project):
     card_matches = list(re.finditer(r'<section\s+class="activity-block"[^>]*\bdata-activity-block\b', html, re.I))
     require(support_match is not None and card_matches and support_match.start() > card_matches[-1].start(), 'Support must follow all activities')
     require(project['support']['title'] in support[0].text(), 'Support title mismatch')
-    require(sum(a.attrs.get('href') == project['support']['url'] for a in support[0].all('a')) == 2, 'Support links mismatch')
+    require(sum(a.attrs.get('href') == project['support']['url'] for a in support[0].all('a')) == 2, 'Sber support links mismatch')
+    require(sum(a.attrs.get('href') == project['support']['boosty']['url'] for a in support[0].all('a')) == 1, 'Boosty support link mismatch')
     for rel, key in [('icon','faviconPng'),('apple-touch-icon','appleTouchIcon')]:
         assets = [n.attrs.get('href') for n in doc.all('link') if n.attrs.get('rel') == rel]
         require(assets == [project['branding'][key].removeprefix('reports/')], 'Branding mismatch')

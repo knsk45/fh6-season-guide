@@ -20,11 +20,16 @@
   "support": {
     "enabled": true,
     "title": "Сказать Спасибо (поддержать проект)",
-    "description": "Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.",
+    "description": "Если сводка помогла сэкономить время, проект можно поддержать через Сбер / СБП или Boosty.",
     "url": "https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195",
     "buttonLabel": "Поддержать проект через Сбербанк",
     "qrAsset": "reports/assets/project/support-qr.png",
-    "buttonAsset": "reports/assets/project/support-button.svg"
+    "buttonAsset": "reports/assets/project/support-button.svg",
+    "boosty": {
+      "url": "https://boosty.to/knsk45",
+      "buttonLabel": "Поддержать через Boosty",
+      "internationalButtonLabel": "Support internationally via Boosty"
+    }
   },
   "analytics": {
     "enabled": true,

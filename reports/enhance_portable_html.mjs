@@ -60,11 +60,14 @@ for (const [name, value] of Object.entries({ faviconPng: branding.faviconPng, ap
   const assetPath = path.join(reportDir, ...value.slice('reports/'.length).split('/'));
   if (!fs.existsSync(assetPath)) throw new Error(`Missing branding asset: ${value}`);
 }
-if (!support?.enabled || !support.title || !support.description || !support.url || !support.buttonLabel || !support.qrAsset) {
+if (!support?.enabled || !support.title || !support.description || !support.url || !support.buttonLabel || !support.qrAsset || !support.boosty?.url || !support.boosty?.buttonLabel || !support.boosty?.internationalButtonLabel) {
   throw new Error('data/project.json must contain an enabled and complete support block');
 }
 if (!/^https:\/\/www\.sberbank\.com\//.test(support.url)) {
   throw new Error(`Invalid support URL: ${support.url}`);
+}
+if (!/^https:\/\/boosty\.to\/knsk45\/?$/.test(support.boosty.url)) {
+  throw new Error(`Invalid Boosty URL: ${support.boosty.url}`);
 }
 if (!support.qrAsset.startsWith('reports/assets/project/')) {
   throw new Error(`Support QR must stay under reports/assets/project/: ${support.qrAsset}`);
@@ -166,10 +169,13 @@ const supportHtml = `
     <section class="support-section" id="support-project" data-support-block>
       <h2 id="support-title">${escapeHtml(support.title)}</h2>
       <p id="support-description">${escapeHtml(support.description)}</p>
-      <a class="support-qr-link" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(support.buttonLabel)}">
+      <a class="support-qr-link" data-support-method="sber" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(support.buttonLabel)}">
         <img class="support-qr" src="${escapeHtml(supportQrSrc)}" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
       </a>
-      <a class="support-button" id="support-button" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.buttonLabel)}</a>
+      <div class="support-actions">
+        <a class="support-button support-button-sber" id="support-sber-button" data-support-method="sber" href="${escapeHtml(support.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.buttonLabel)}</a>
+        <a class="support-button support-button-boosty" id="support-boosty-button" data-support-method="boosty" href="${escapeHtml(support.boosty.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(support.boosty.buttonLabel)}</a>
+      </div>
       <div class="visit-stats" data-visit-stats>
         <h3 id="analytics-title">${escapeHtml(analytics.title)}</h3>
         <a class="visit-stats-link" id="analytics-link" href="${escapeHtml(analytics.dashboardUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
@@ -227,8 +233,9 @@ ${sharedCardCss}
     .support-section p{max-width:650px;margin:12px 0 20px;color:#b8ccd1;font-size:15px;line-height:1.55}
     .support-qr-link{display:block;border-radius:18px;background:#fff;line-height:0;box-shadow:0 12px 32px #0007}
     .support-qr{display:block;width:min(240px,70vw);height:auto;border-radius:18px}
-    .support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:20px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}
+    .support-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}.support-button-boosty{background:#f15a24}.support-button-boosty:hover{background:#ff7040!important}
     .support-button:hover{background:#27b743;transform:translateY(-1px)}
+    html[data-language="en"] [data-support-method="sber"]{display:none}
     .visit-stats{width:min(100%,650px);margin-top:28px;padding-top:22px;border-top:1px solid #29434b}
     .visit-stats h3{margin:0 0 12px;color:#fff;font-size:17px;line-height:1.3}
     .visit-stats-link{display:inline-flex;min-height:28px;align-items:center;justify-content:center}
@@ -250,7 +257,7 @@ ${sharedCardCss}
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
-      .support-button{width:100%;padding:0 14px;font-size:15px}
+      .support-actions{width:100%}.support-button{width:100%;padding:0 14px;font-size:15px}
       .visit-stats{margin-top:24px;padding-top:20px}
       .visit-stats-badge{height:26px}
       .publication-chart{margin-top:22px;padding-top:20px}
@@ -289,14 +296,14 @@ ${supportHtml}
       ru: {
         language: 'Язык', countdown: 'Заканчивается через', updated: 'Обновлено:', complete: 'Готово', unfinished: 'Только невыполненные',
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: ${JSON.stringify(support.title)},
-        supportDescription: ${JSON.stringify(support.description)}, supportButton: ${JSON.stringify(support.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
+        supportDescription: ${JSON.stringify(support.description)}, supportSberButton: ${JSON.stringify(support.buttonLabel)}, supportBoostyButton: ${JSON.stringify(support.boosty.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
         analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Просмотры страницы: сегодня и всего',
         steamGuide: 'Открыть руководство в Steam'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
-        supportDescription: 'If this guide saved you time, you can support the project with a Sberbank transfer.', supportButton: 'Support the project via Sberbank',
+        supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: ${JSON.stringify(support.boosty.internationalButtonLabel)},
         analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page views today and in total. Repeat loads and bots may increase the counter.',
         analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page views: today and total', steamGuide: 'Open the guide on Steam'
       }
@@ -372,7 +379,8 @@ ${supportHtml}
       setText('completion-filter-label', copy.unfinished);
       setText('support-title', copy.supportTitle);
       setText('support-description', copy.supportDescription);
-      setText('support-button', copy.supportButton);
+      setText('support-sber-button', copy.supportSberButton);
+      setText('support-boosty-button', copy.supportBoostyButton);
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
@@ -449,7 +457,7 @@ function writeFileWithRetry(filePath, content, attempts = 8) {
 const outputBytes = Buffer.byteLength(html, 'utf8');
 if (outputBytes > maxPublicHtmlBytes) throw new Error(`Lightweight report is unexpectedly large: ${outputBytes} bytes`);
 if ((html.match(/<section class="activity-block"[^>]*\bdata-activity-block\b/g) ?? []).length !== expectedCardCount) throw new Error('Lightweight report lost activity blocks');
-if ((html.match(/<section class="support-section"[^>]*\bdata-support-block\b/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(supportQrSrc)) {
+if ((html.match(/<section class="support-section"[^>]*\bdata-support-block\b/g) ?? []).length !== 1 || !html.includes(support.url) || !html.includes(support.boosty.url) || !html.includes(supportQrSrc)) {
   throw new Error('Lightweight report lost the configured support block');
 }
 if ((html.match(/<div class="visit-stats"[^>]*\bdata-visit-stats\b/g) ?? []).length !== 1 || !html.includes(escapeHtml(analytics.counterImageUrl)) || !html.includes(escapeHtml(analytics.dashboardUrl))) {

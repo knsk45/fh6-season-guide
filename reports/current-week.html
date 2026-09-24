@@ -38,8 +38,9 @@
     .support-section p{max-width:650px;margin:12px 0 20px;color:#b8ccd1;font-size:15px;line-height:1.55}
     .support-qr-link{display:block;border-radius:18px;background:#fff;line-height:0;box-shadow:0 12px 32px #0007}
     .support-qr{display:block;width:min(240px,70vw);height:auto;border-radius:18px}
-    .support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;margin-top:20px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}
+    .support-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.support-button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:14px;background:#21a038;color:#fff!important;font-size:16px;font-weight:750;text-decoration:none;box-shadow:0 8px 22px #0005;transition:transform .15s ease,background .15s ease}.support-button-boosty{background:#f15a24}.support-button-boosty:hover{background:#ff7040!important}
     .support-button:hover{background:#27b743;transform:translateY(-1px)}
+    html[data-language="en"] [data-support-method="sber"]{display:none}
     .visit-stats{width:min(100%,650px);margin-top:28px;padding-top:22px;border-top:1px solid #29434b}
     .visit-stats h3{margin:0 0 12px;color:#fff;font-size:17px;line-height:1.3}
     .visit-stats-link{display:inline-flex;min-height:28px;align-items:center;justify-content:center}
@@ -61,7 +62,7 @@
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
-      .support-button{width:100%;padding:0 14px;font-size:15px}
+      .support-actions{width:100%}.support-button{width:100%;padding:0 14px;font-size:15px}
       .visit-stats{margin-top:24px;padding-top:20px}
       .visit-stats-badge{height:26px}
       .publication-chart{margin-top:22px;padding-top:20px}
@@ -81,7 +82,7 @@
     </div>
     <div class="page-meta">
       <span class="countdown"><span id="countdown-label">Заканчивается через</span> <strong id="season-countdown">—</strong></span>
-      <time class="updated" datetime="2026-09-24T22:59:57.0000000+07:00"><span id="updated-label">Обновлено:</span> 24.09.2026, 22:59</time>
+      <time class="updated" datetime="2026-09-25T04:49:11.0000000+07:00"><span id="updated-label">Обновлено:</span> 25.09.2026, 04:49</time>
       <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/14</span>
       <label class="completion-filter"><input id="completion-filter" type="checkbox"><span id="completion-filter-label">Только невыполненные</span></label>
     </div>
@@ -274,11 +275,14 @@
 
     <section class="support-section" id="support-project" data-support-block>
       <h2 id="support-title">Сказать Спасибо (поддержать проект)</h2>
-      <p id="support-description">Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.</p>
-      <a class="support-qr-link" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer" aria-label="Поддержать проект через Сбербанк">
+      <p id="support-description">Если сводка помогла сэкономить время, проект можно поддержать через Сбер / СБП или Boosty.</p>
+      <a class="support-qr-link" data-support-method="sber" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer" aria-label="Поддержать проект через Сбербанк">
         <img class="support-qr" src="assets/project/support-qr.png" width="636" height="636" loading="lazy" alt="QR-код для поддержки проекта через Сбербанк">
       </a>
-      <a class="support-button" id="support-button" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer">Поддержать проект через Сбербанк</a>
+      <div class="support-actions">
+        <a class="support-button support-button-sber" id="support-sber-button" data-support-method="sber" href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195" target="_blank" rel="noopener noreferrer">Поддержать проект через Сбербанк</a>
+        <a class="support-button support-button-boosty" id="support-boosty-button" data-support-method="boosty" href="https://boosty.to/knsk45" target="_blank" rel="noopener noreferrer">Поддержать через Boosty</a>
+      </div>
       <div class="visit-stats" data-visit-stats>
         <h3 id="analytics-title">Статистика посещений</h3>
         <a class="visit-stats-link" id="analytics-link" href="https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html/" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
@@ -290,17 +294,17 @@
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">Динамика аудитории</h3>
         <p class="publication-chart-subtitle" id="publication-chart-subtitle">Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.</p>
-        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1188, GitHub 1932; последний замер 24.09.2026, 22:54">
+        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 660 244" role="img" aria-label="Посещения: Steam 1188, GitHub 1933; последний замер 24.09.2026, 23:01">
           <line class="trend-grid" x1="44" x2="642" y1="202.0" y2="202.0"></line><text class="trend-axis-label" x="36" y="206.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="113.0" y2="113.0"></line><text class="trend-axis-label" x="36" y="117.0" text-anchor="end">1000</text><line class="trend-grid" x1="44" x2="642" y1="24.0" y2="24.0"></line><text class="trend-axis-label" x="36" y="28.0" text-anchor="end">2000</text>
-          <path class="trend-line trend-steam" d="M44.0,120.3 L64.6,120.0 L85.2,118.8 L105.9,118.7 L126.5,118.7 L147.1,115.2 L167.7,115.2 L188.3,115.2 L209.0,115.0 L229.6,112.7 L250.2,112.7 L270.8,110.2 L291.4,108.2 L312.1,106.5 L332.7,104.7 L353.3,103.3 L373.9,102.8 L394.6,102.8 L415.2,102.8 L435.8,102.8 L456.4,102.8 L477.0,101.8 L497.7,101.1 L518.3,100.3 L538.9,99.2 L559.5,98.3 L580.1,97.2 L600.8,96.4 L621.4,96.3 L642.0,96.3"></path>
-          <path class="trend-line trend-github" d="M44.0,102.9 L64.6,101.8 L85.2,99.3 L105.9,99.0 L126.5,98.6 L147.1,90.0 L167.7,90.0 L188.3,90.0 L209.0,89.4 L229.6,84.4 L250.2,84.3 L270.8,77.3 L291.4,70.6 L312.1,66.5 L332.7,59.5 L353.3,56.7 L373.9,55.4 L394.6,54.9 L415.2,54.8 L435.8,54.7 L456.4,54.6 L477.0,50.0 L497.7,45.5 L518.3,42.9 L538.9,40.5 L559.5,37.4 L580.1,34.1 L600.8,31.6 L621.4,30.8 L642.0,30.1"></path>
+          <path class="trend-line trend-steam" d="M44.0,120.0 L64.6,118.8 L85.2,118.7 L105.9,118.7 L126.5,115.2 L147.1,115.2 L167.7,115.2 L188.3,115.0 L209.0,112.7 L229.6,112.7 L250.2,110.2 L270.8,108.2 L291.4,106.5 L312.1,104.7 L332.7,103.3 L353.3,102.8 L373.9,102.8 L394.6,102.8 L415.2,102.8 L435.8,102.8 L456.4,101.8 L477.0,101.1 L497.7,100.3 L518.3,99.2 L538.9,98.3 L559.5,97.2 L580.1,96.4 L600.8,96.3 L621.4,96.3 L642.0,96.3"></path>
+          <path class="trend-line trend-github" d="M44.0,101.8 L64.6,99.3 L85.2,99.0 L105.9,98.6 L126.5,90.0 L147.1,90.0 L167.7,90.0 L188.3,89.4 L209.0,84.4 L229.6,84.3 L250.2,77.3 L270.8,70.6 L291.4,66.5 L312.1,59.5 L332.7,56.7 L353.3,55.4 L373.9,54.9 L394.6,54.8 L415.2,54.7 L435.8,54.6 L456.4,50.0 L477.0,45.5 L497.7,42.9 L518.3,40.5 L538.9,37.4 L559.5,34.1 L580.1,31.6 L600.8,30.8 L621.4,30.1 L642.0,30.0"></path>
           <circle class="trend-point trend-steam" cx="642.0" cy="96.3" r="4"></circle>
-          <circle class="trend-point trend-github" cx="642.0" cy="30.1" r="4"></circle>
+          <circle class="trend-point trend-github" cx="642.0" cy="30.0" r="4"></circle>
           <text class="trend-direct-label trend-steam-label" x="634.0" y="87.3" text-anchor="end">Steam 1188</text>
-          <text class="trend-direct-label trend-github-label" x="634.0" y="47.1" text-anchor="end">GitHub 1932</text>
-          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">10.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">17.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
+          <text class="trend-direct-label trend-github-label" x="634.0" y="47.0" text-anchor="end">GitHub 1933</text>
+          <text class="trend-axis-label" x="44.0" y="230" text-anchor="middle">11.09</text><text class="trend-axis-label" x="332.7" y="230" text-anchor="middle">17.09</text><text class="trend-axis-label" x="642.0" y="230" text-anchor="middle">24.09</text>
         </svg>
-        <p class="publication-chart-note" id="publication-chart-note">Последний замер: 24.09.2026, 22:54 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
+        <p class="publication-chart-note" id="publication-chart-note">Последний замер: 24.09.2026, 23:01 · Steam в избранном: 73. Значения фиксируются после успешной публичной проверки.</p>
       </section>
       <a class="steam-guide-link" data-steam-guide-link id="steam-guide-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>
@@ -313,14 +317,14 @@
       ru: {
         language: 'Язык', countdown: 'Заканчивается через', updated: 'Обновлено:', complete: 'Готово', unfinished: 'Только невыполненные',
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: "Сказать Спасибо (поддержать проект)",
-        supportDescription: "Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.", supportButton: "Поддержать проект через Сбербанк", analyticsTitle: "Статистика посещений",
+        supportDescription: "Если сводка помогла сэкономить время, проект можно поддержать через Сбер / СБП или Boosty.", supportSberButton: "Поддержать проект через Сбербанк", supportBoostyButton: "Поддержать через Boosty", analyticsTitle: "Статистика посещений",
         analyticsDescription: "Просмотры страницы: сегодня и всего. Повторные загрузки и обращения ботов могут увеличивать счётчик.", analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Просмотры страницы: сегодня и всего',
         steamGuide: 'Открыть руководство в Steam'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
-        supportDescription: 'If this guide saved you time, you can support the project with a Sberbank transfer.', supportButton: 'Support the project via Sberbank',
+        supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: "Support internationally via Boosty",
         analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page views today and in total. Repeat loads and bots may increase the counter.',
         analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page views: today and total', steamGuide: 'Open the guide on Steam'
       }
@@ -336,7 +340,7 @@
       'Официальная карта Forza Labs': 'Official Forza Labs map', 'Forza Horizon Hub': 'Forza Horizon Hub',
       'Reddit: ForzaHorizon6': 'Reddit: ForzaHorizon6'
     };
-    const chart = {"title":"Динамика аудитории","description":"Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.","latestDate":"24.09.2026, 22:54","steamViews":1188,"githubViews":1932,"favorites":73};
+    const chart = {"title":"Динамика аудитории","description":"Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.","latestDate":"24.09.2026, 23:01","steamViews":1188,"githubViews":1933,"favorites":73};
     const output = document.getElementById('season-countdown');
     const deadline = Date.parse("2026-10-01T21:30:00+07:00");
     function tick() {
@@ -396,7 +400,8 @@
       setText('completion-filter-label', copy.unfinished);
       setText('support-title', copy.supportTitle);
       setText('support-description', copy.supportDescription);
-      setText('support-button', copy.supportButton);
+      setText('support-sber-button', copy.supportSberButton);
+      setText('support-boosty-button', copy.supportBoostyButton);
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);

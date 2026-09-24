@@ -50,7 +50,7 @@ docs/HOME_ASSISTANT_NOTIFICATIONS.md — push-статусы ежедневно�
 
 ## Сказать Спасибо (поддержать проект)
 
-Если сводка помогла сэкономить время, проект можно поддержать переводом через Сбербанк.
+Если сводка помогла сэкономить время, проект можно поддержать через Сбер / СБП или Boosty. Boosty удобен и для международных карт.
 
 <p align="center">
   <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195"><img src="reports/assets/project/support-qr.png" width="260" alt="QR-код для поддержки проекта через Сбербанк"></a>
@@ -58,4 +58,8 @@ docs/HOME_ASSISTANT_NOTIFICATIONS.md — push-статусы ежедневно�
 
 <p align="center">
   <a href="https://www.sberbank.com/sms/pbpn?requisiteNumber=79135155195"><img src="reports/assets/project/support-button.svg" width="360" alt="Поддержать проект через Сбербанк"></a>
+</p>
+
+<p align="center">
+  <a href="https://boosty.to/knsk45">Поддержать проект через Boosty</a>
 </p>

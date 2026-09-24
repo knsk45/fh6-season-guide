@@ -75,6 +75,13 @@ if ($project) {
         if ($null -eq $support.$name -or [string]::IsNullOrWhiteSpace([string]$support.$name)) { Add-ValidationError "project.support.$name is required" }
     }
     if ([string]$support.url -notmatch '^https://www\.sberbank\.com/') { Add-ValidationError 'project.support.url must use the configured Sberbank HTTPS host' }
+    if ($null -eq $support.boosty) { Add-ValidationError 'project.support.boosty is required' }
+    else {
+        foreach ($name in @('url','buttonLabel','internationalButtonLabel')) {
+            if ($null -eq $support.boosty.$name -or [string]::IsNullOrWhiteSpace([string]$support.boosty.$name)) { Add-ValidationError "project.support.boosty.$name is required" }
+        }
+        if ([string]$support.boosty.url -notmatch '^https://boosty\.to/knsk45/?$') { Add-ValidationError 'project.support.boosty.url must use the configured Boosty HTTPS page' }
+    }
     foreach ($assetName in @('qrAsset','buttonAsset')) {
         if (-not [string]::IsNullOrWhiteSpace([string]$support.$assetName)) {
             $supportAssetPath = Get-FullProjectPath ([string]$support.$assetName)
@@ -342,6 +349,7 @@ if ($state) {
                 if (([regex]::Matches($html, '<section\s+class="support-section"[^>]*\bdata-support-block\b', 'IgnoreCase')).Count -ne 1) { Add-ValidationError 'Public HTML must contain exactly one support block' }
                 if (-not $html.Contains([string]$support.title)) { Add-ValidationError 'Public HTML support title differs from project config' }
                 if (-not $html.Contains([string]$support.url)) { Add-ValidationError 'Public HTML support URL differs from project config' }
+                if (-not $html.Contains([string]$support.boosty.url)) { Add-ValidationError 'Public HTML Boosty URL differs from project config' }
                 if (-not $html.Contains($supportQrSrc)) { Add-ValidationError 'Public HTML support QR differs from project config' }
                 $supportMatch = [regex]::Match($html, '<section\s+class="support-section"[^>]*\bdata-support-block\b', 'IgnoreCase')
                 $cardMatches = [regex]::Matches($html, '<section\s+class="activity-block"[^>]*\bdata-activity-block\b', 'IgnoreCase')
@@ -375,7 +383,7 @@ if ($state) {
             $readme = Get-Content -LiteralPath $readmePath -Raw -Encoding UTF8
             $headingPattern = '(?m)^## ' + [regex]::Escape([string]$support.title) + '\s*$'
             if (([regex]::Matches($readme, $headingPattern)).Count -ne 1) { Add-ValidationError 'README must contain exactly one configured support heading' }
-            foreach ($expected in @([string]$support.url, [string]$support.qrAsset, [string]$support.buttonAsset)) {
+            foreach ($expected in @([string]$support.url, [string]$support.boosty.url, [string]$support.qrAsset, [string]$support.buttonAsset)) {
                 if (-not $readme.Contains($expected)) { Add-ValidationError "README support block is missing: $expected" }
             }
         }
