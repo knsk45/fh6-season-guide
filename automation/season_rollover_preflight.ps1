@@ -59,13 +59,16 @@ foreach ($Activity in @($State.activities)) {
 }
 if ($MissingAssets.Count -gt 0) { throw "Current-season visual asset check failed: $($MissingAssets -join '; ')" }
 
-$null = & (Join-Path $PSScriptRoot 'render_steam_guide.ps1')
+$null = & (Join-Path $PSScriptRoot 'render_steam_guides.ps1')
 $SteamRendered = $?
-if (-not $SteamRendered) { throw 'Steam mirror renderer failed during rollover preflight.' }
-$SteamOutputPath = Join-Path $RepoRoot 'reports\steam-guide-current.txt'
-Require-File $SteamOutputPath 'Generated Steam subsection'
-$SteamCharacters = ((Get-Content -LiteralPath $SteamOutputPath -Raw -Encoding UTF8) -replace "`r`n", "`n").Length
-if ($SteamCharacters -gt 4800) { throw 'Steam subsection is not safely below the 4800-character ceiling.' }
+if (-not $SteamRendered) { throw 'Steam mirror renderers failed during rollover preflight.' }
+$SteamCharacters = [ordered]@{}
+foreach ($Language in @('ru','en')) {
+    $SteamOutputPath = Join-Path $RepoRoot ([string]$Project.steamGuide.sections.$Language.outputPath)
+    Require-File $SteamOutputPath "Generated Steam $Language subsection"
+    $SteamCharacters[$Language] = ((Get-Content -LiteralPath $SteamOutputPath -Raw -Encoding UTF8) -replace "`r`n", "`n").Length
+    if ($SteamCharacters[$Language] -gt 4800) { throw "Steam $Language subsection is not safely below the 4800-character ceiling." }
+}
 
 $Payload = [ordered]@{
     schemaVersion = 1
@@ -86,6 +89,7 @@ if (-not (Test-Path -LiteralPath $OutputDirectory)) { New-Item -ItemType Directo
 Write-Host 'SEASON_PREFLIGHT=READY'
 Write-Host "SEASON_PREFLIGHT_CARDS=$ExpectedCards"
 Write-Host "SEASON_PREFLIGHT_DAILY=$ExpectedDaily"
-Write-Host "SEASON_PREFLIGHT_STEAM_CHARACTERS=$SteamCharacters"
+Write-Host "SEASON_PREFLIGHT_STEAM_CHARACTERS_RU=$($SteamCharacters.ru)"
+Write-Host "SEASON_PREFLIGHT_STEAM_CHARACTERS_EN=$($SteamCharacters.en)"
 Write-Host "SEASON_PREFLIGHT_METRIC_SNAPSHOTS=$(@($History.snapshots).Count)"
 if ($VisualQueue.Count -gt 0) { Write-Host "SEASON_PREFLIGHT_UNRESOLVED_VISUALS=$($VisualQueue -join ',')" }

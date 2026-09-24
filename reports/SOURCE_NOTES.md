@@ -1714,3 +1714,30 @@
 | `forza_labs_map` | no_current_item: HTTP 200; нового точного визуала или решения не найдено. |
 | `escorenews_fh6` | unavailable: HTTP 403; устаревшие данные не использовались. |
 | `dungg_playlist` | no_current_item: HTTP 200; нового подтверждённого Winter-видео не найдено. |
+
+## 2026-09-25T06:45:00+07:00 — Winter Series 5: новые решения и уточнения
+
+- Живая официальная Playlist вновь подтверждает `British Automotive — Winter` до 1 октября 2026.
+- Закрыты точные условия Weekly Jaguar, место Photo Challenge, место Treasure Hunt и третий маршрут Country Pickups. Добавлены свежие 9-значные коды тюнингов для Weekly, Country Pickups, Cult Street, четырёх PR-заездов и Trial.
+- Исправлены ограничения: Cult Street — `D 400`; Drift Attack — `A 700` и 3 очка; Danger Sign — `B 600`; Speed Zone, Trailblazer и Trial — `A 700`.
+- У Cult Street оставлен явный конфликт маршрутов: два свежих Winter-гида расходятся по одному заезду; маршрут не выбран без игрового/официального подтверждения.
+- Визуалы не менялись: `community=13`, `missing=1` (Daily). Daily остаётся текстовым списком без публичной плитки.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: текущая категория не отдалась средству проверки; устаревшие данные не использовались. |
+| `fandom_current` | unavailable: HTTP 402; устаревшие данные не использовались. |
+| `forza_playlist` | checked: HTTP 200; British Automotive — Winter подтверждён. |
+| `forza_news` | no_current_item: HTTP 200; нового детерминированного факта для карточек не найдено. |
+| `forza_support_release_notes` | unavailable: раздел не отдался средству проверки; устаревшие данные не использовались. |
+| `forza_support_known_issues` | no_current_item: HTTP 200; нового изменения плейлиста не найдено. |
+| `forza_forums_official` | no_current_item: HTTP 200; форум переведён на общую информационную страницу, нового weekly-анонса нет. |
+| `reddit_forzahorizon` | checked: свежий Winter breakdown подтвердил Weekly, Daily, ограничения и маршруты. |
+| `reddit_forzahorizon6` | checked: свежий Winter-гайд дал место Photo, третий маршрут Country Pickups и коды тюнингов. |
+| `reddit_forza` | checked: свежий Information Thread подтвердил ограничения и коды Country Pickups, Cult Street и Trial. |
+| `reddit_forzatune` | no_current_item: свежего поста с решениями именно Winter-недели не найдено. |
+| `forza_horizon_hub` | no_current_item: нового weekly-решения не найдено. |
+| `forza_labs_collector` | no_current_item: текущего решения Winter Treasure Hunt не найдено. |
+| `forza_labs_map` | no_current_item: новой точной Winter-плитки или карты сундука не найдено. |
+| `escorenews_fh6` | unavailable: страница не отдалась средству проверки; устаревшие данные не использовались. |
+| `dungg_playlist` | no_current_item: нового подтверждённого Winter-видео не найдено. |

@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-25T05:24:45+07:00",
+  "lastContentUpdate": "2026-09-25T06:44:07+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,10 +25,10 @@
       "kind": "weekly",
       "title": "Еженедельное испытание",
       "points": "5 очков",
-      "conditionHtml": "На 2010 Jaguar C-X75: фото, Road Races и Car Meet. Награда: 25 000 CR.",
-      "howHtml": "Выполняйте главы в порядке, указанном в игре; точные дополнительные требования ожидают полной плитки.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "conditionHtml": "На 2010 Jaguar C-X75: сядьте за руль, сфотографируйте автомобиль в Shirakawa-go, завершите 2 Road Races и припаркуйтесь на любом Car Meet. Награда: 25 000 CR.",
+      "howHtml": "Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды.",
+      "tuneHtml": "2010 Jaguar C-X75 · 110 140 996.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: главы и тюнинг</a>",
       "visual": {
         "image": "tile-weekly-jaguar.png",
         "sourceImage": "evidence/codex-clipboard-88f4c4f6-c80b-4ba5-903f-2ea7c9fa4cef.png",
@@ -38,23 +38,13 @@
         "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_01_weekly",
-          "field": "condition",
-          "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-          "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-          "status": "preliminary"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_02_daily",
@@ -100,9 +90,9 @@
       "title": "#BambooPerfect",
       "points": "2 очка",
       "conditionHtml": "Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.",
-      "howHtml": "Откройте фотокамеру в Bamboo Forest, убедитесь, что McLaren виден в кадре, затем сохраните фото.",
+      "howHtml": "Езжайте в Arashiyama Bamboo Forest на границе Minamino и Ito; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-bambooperfect-photo-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Карта места Photo Challenge</a>",
       "visual": {
         "image": "tile-photo-bamboo-perfect.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -127,9 +117,9 @@
       "title": "Treasure Hunt",
       "points": "3 очка",
       "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.",
-      "howHtml": "Точная подсказка и место сундука ожидают полной плитки или свежего гайда Winter.",
+      "howHtml": "Сундук стоит в нижней части Shimanoyama: на грунтовке у Lake View Speed Trap, рядом со стартом Taiyaki Scramble Dirt Race. Разбейте сундук — других условий нет.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-shimanoyama-region-british-automotive-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука Treasure Hunt</a>",
       "visual": {
         "image": "tile-treasure-shimanoyama.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -139,23 +129,13 @@
         "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_04_treasure_hunt",
-          "field": "condition",
-          "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-          "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-          "status": "preliminary"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_05_championship",
@@ -163,10 +143,10 @@
       "kind": "championship",
       "title": "Country Pickups",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Country Pickups: Pickups & 4x4, B 600. Маршруты: Soni Highlands Cross Country, Temple Cross Country и третий маршрут ещё не подтверждён. Награда: 2010 Jaguar C-X75.",
-      "howHtml": "Завершите чемпионат; точный список маршрутов будет уточнён по игровой плитке.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "conditionHtml": "Чемпионат Country Pickups: Pickups & 4x4, B 600. Маршруты: Soni Highlands Cross Country, Temple Cross Country и Edogawa Cross Country Circuit. Награда: 2010 Jaguar C-X75.",
+      "howHtml": "Три Cross Country заезда; чтобы открыть первое задание недели без покупки автомобиля, сначала выиграйте этот чемпионат и получите Jaguar C-X75.",
+      "tuneHtml": "2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: маршруты и тюнинг</a>",
       "visual": {
         "image": "tile-championship-country-pickups.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -176,6 +156,33 @@
         "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "community"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_06_championship",
+      "number": "06",
+      "kind": "championship",
+      "title": "Cult Street",
+      "points": "5 очков",
+      "conditionHtml": "Чемпионат Cult Street: Cult Cars, D 400. Маршруты требуют дополнительного подтверждения: свежие гайды расходятся по одному из трёх заездов. Награда: 1972 Reliant Supervan III.",
+      "howHtml": "Завершите три ночных Touge/Street-заезда, сохраняя чистые чекпоинты. Не используйте список маршрутов из одного источника как окончательный до проверки в игре.",
+      "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: класс и тюнинг</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Второй Winter-гайд: конфликт маршрутов</a>",
+      "visual": {
+        "image": "tile-championship-cult-street.png",
+        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-street",
+        "sourceUrl": "",
+        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+      },
+      "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
@@ -186,51 +193,24 @@
       ],
       "openItems": [
         {
-          "activityId": "activity_05_championship",
+          "activityId": "activity_06_championship",
           "field": "condition",
-          "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-          "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-          "status": "preliminary"
+          "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
+          "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
+          "status": "conflict"
         }
       ]
-    },
-    {
-      "id": "activity_06_championship",
-      "number": "06",
-      "kind": "championship",
-      "title": "Cult Street",
-      "points": "5 очков",
-      "conditionHtml": "Чемпионат Cult Street: Cult Cars, D 500. Маршруты: Rainbow Bridge Descent, Okishinaimura Run, Norikura Descent. Награда: 1972 Reliant Supervan III.",
-      "howHtml": "Завершите три заезда, сохраняя чистые чекпоинты.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
-      "visual": {
-        "image": "tile-championship-cult-street.png",
-        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
-        "orientation": "horizontal",
-        "typeIconKey": "championship-street",
-        "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
-      },
-      "missingFields": [],
-      "openItems": []
     },
     {
       "id": "activity_07_pr",
       "number": "07",
       "kind": "pr",
       "title": "Shimanoyama Drift Attack",
-      "points": "2 очка",
-      "conditionHtml": "Drift Attack Shimanoyama: Великобритания, A 800, минимум 80 000 очков.",
+      "points": "3 очка",
+      "conditionHtml": "Drift Attack Shimanoyama: Великобритания, A 700, минимум 80 000 очков.",
       "howHtml": "Наберите очки на полной дистанции Drift Attack, избегая потери серии.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-shimanoyama-drift.png",
         "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
@@ -254,10 +234,10 @@
       "kind": "pr",
       "title": "Azure Drive Danger Sign",
       "points": "2 очка",
-      "conditionHtml": "Danger Sign Azure Drive: Великобритания, B 700, минимум 689,0 футов.",
+      "conditionHtml": "Danger Sign Azure Dive: Великобритания, B 600, минимум 689,0 футов (210 м).",
       "howHtml": "Разгонитесь по прямой траектории к трамплину; точное направление уточнит игровая плитка.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-azure-danger-sign.png",
         "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
@@ -281,10 +261,10 @@
       "kind": "pr",
       "title": "Tall Trees Speed Zone",
       "points": "2 очка",
-      "conditionHtml": "Speed Zone Tall Trees: Великобритания, A 800, минимум 70,0 mph.",
+      "conditionHtml": "Speed Zone Tall Trees: Великобритания, A 700, минимум 70,0 mph (112,7 км/ч).",
       "howHtml": "Наберите скорость до въезда и сохраняйте плавную траекторию.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-tall-trees-speed-zone.png",
         "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
@@ -308,10 +288,10 @@
       "kind": "pr",
       "title": "Sekibe Kaijo Trailblazer",
       "points": "2 очка",
-      "conditionHtml": "Trailblazer Sekibe Kaijo: Великобритания, A 800, минимум 42 секунды.",
+      "conditionHtml": "Trailblazer Sekibe Kaijo: Великобритания, A 700, минимум 42 секунды.",
       "howHtml": "Стартуйте с запасом скорости и следуйте к финишу по кратчайшему безопасному маршруту.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-sekibe-kaijo-trailblazer.png",
         "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
@@ -335,10 +315,10 @@
       "kind": "trial",
       "title": "Winter Rallies",
       "points": "10 очков",
-      "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 800. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.",
+      "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.",
       "howHtml": "Играйте аккуратно в команде и не выталкивайте союзников с траектории.",
-      "tuneHtml": "Тюнинг не указан в проверенных источниках.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: тюнинг Trial</a>",
       "visual": {
         "image": "tile-trial-winter-rallies.png",
         "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
@@ -446,9 +426,9 @@
         "activity_01_weekly": {
           "title": "Weekly Challenge",
           "points": "5 points",
-          "conditionHtml": "In the 2010 Jaguar C-X75: take a photo, complete Road Races and visit a Car Meet. Reward: 25,000 CR.",
-          "howHtml": "Complete chapters in the order shown in-game; the exact additional requirements await the full tile.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "conditionHtml": "In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.",
+          "howHtml": "Chapters count only in order. For the two Road Races, run a one-lap Custom Race at Shimanoyama Circuit twice.",
+          "tuneHtml": "2010 Jaguar C-X75 · 110 140 996."
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
@@ -461,64 +441,64 @@
           "title": "#BambooPerfect",
           "points": "2 points",
           "conditionHtml": "Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.",
-          "howHtml": "Open Photo Mode in Bamboo Forest, make sure the McLaren is in frame, then save the photo.",
+          "howHtml": "Go to Arashiyama Bamboo Forest on the Minamino/Ito border; the Arashiyama Run Speed Zone is a useful landmark. Open Photo Mode with a McLaren in frame, then save the photo.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
           "title": "Treasure Hunt",
           "points": "3 points",
           "conditionHtml": "Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.",
-          "howHtml": "The exact clue and chest location await the full in-game tile or a fresh Winter guide.",
+          "howHtml": "The chest is in southern Shimanoyama: on the dirt road by Lake View Speed Trap, beside the Taiyaki Scramble Dirt Race start. Smash it; there are no other requirements.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
           "title": "Country Pickups",
           "points": "5 points",
-          "conditionHtml": "Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country, with the third route not yet confirmed. Reward: 2010 Jaguar C-X75.",
-          "howHtml": "Complete the championship; the exact route list will be verified from the in-game tile.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "conditionHtml": "Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.",
+          "howHtml": "Complete three Cross Country races. Win this first to receive the Jaguar C-X75 needed for the Weekly Challenge without buying it.",
+          "tuneHtml": "2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520."
         },
         "activity_06_championship": {
           "title": "Cult Street",
           "points": "5 points",
-          "conditionHtml": "Cult Street Championship: Cult Cars, D 500. Routes: Rainbow Bridge Descent, Okishinaimura Run, Norikura Descent. Reward: 1972 Reliant Supervan III.",
-          "howHtml": "Finish all three races while keeping clean checkpoint lines.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "conditionHtml": "Cult Street Championship: Cult Cars, D 400. The route list needs further confirmation because fresh guides disagree on one of its three races. Reward: 1972 Reliant Supervan III.",
+          "howHtml": "Finish all three night Touge/Street races while keeping clean checkpoint lines. Do not treat either community route list as final until confirmed in-game.",
+          "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970."
         },
         "activity_07_pr": {
           "title": "Shimanoyama Drift Attack",
-          "points": "2 points",
-          "conditionHtml": "Shimanoyama Drift Attack: United Kingdom, A 800, at least 80,000 points.",
+          "points": "3 points",
+          "conditionHtml": "Shimanoyama Drift Attack: United Kingdom, A 700, at least 80,000 points.",
           "howHtml": "Score across the full Drift Attack distance and avoid breaking your drift chain.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420."
         },
         "activity_08_pr": {
           "title": "Azure Drive Danger Sign",
           "points": "2 points",
-          "conditionHtml": "Azure Drive Danger Sign: United Kingdom, B 700, at least 689.0 ft.",
+          "conditionHtml": "Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).",
           "howHtml": "Build speed on a straight approach to the ramp; the exact approach will be confirmed by the in-game tile.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917."
         },
         "activity_09_pr": {
           "title": "Tall Trees Speed Zone",
           "points": "2 points",
-          "conditionHtml": "Tall Trees Speed Zone: United Kingdom, A 800, at least 70.0 mph.",
+          "conditionHtml": "Tall Trees Speed Zone: United Kingdom, A 700, at least 70.0 mph (112.7 km/h).",
           "howHtml": "Build speed before the entry and keep a smooth line through the zone.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420."
         },
         "activity_10_pr": {
           "title": "Sekibe Kaijo Trailblazer",
           "points": "2 points",
-          "conditionHtml": "Sekibe Kaijo Trailblazer: United Kingdom, A 800, at least 42 seconds remaining.",
+          "conditionHtml": "Sekibe Kaijo Trailblazer: United Kingdom, A 700, at least 42 seconds remaining.",
           "howHtml": "Start with a speed reserve and follow the shortest safe route to the finish.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420."
         },
         "activity_11_trial": {
           "title": "Winter Rallies",
           "points": "10 points",
-          "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 800. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.",
+          "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.",
           "howHtml": "Drive cleanly as a team and do not push teammates off their line.",
-          "tuneHtml": "No tune has been verified in the sources."
+          "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576."
         },
         "activity_12_horizon_play": {
           "title": "Speed Connection",
@@ -546,25 +526,11 @@
   },
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
+      "activityId": "activity_06_championship",
       "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
+      "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
+      "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
+      "status": "conflict"
     },
     {
       "activityId": "activity_02_daily",
@@ -576,25 +542,11 @@
   ],
   "missingFields": [
     {
-      "activityId": "activity_01_weekly",
+      "activityId": "activity_06_championship",
       "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "condition",
-      "reason": "Официальная Playlist подтверждает доступные части условия, но не публикует все детали.",
-      "nextCheck": "Проверить полную игровую плитку или свежую Information Thread Winter.",
-      "status": "preliminary"
+      "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
+      "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
+      "status": "conflict"
     },
     {
       "activityId": "activity_02_daily",

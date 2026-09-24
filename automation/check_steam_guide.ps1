@@ -3,7 +3,9 @@ param(
     [string]$StatePath,
     [string]$ProjectPath,
     [string]$GuidePath,
-    [string]$PublicationStatePath
+    [string]$PublicationStatePath,
+    [ValidateSet('ru','en')]
+    [string]$Language = 'ru'
 )
 
 Set-StrictMode -Version Latest
@@ -12,8 +14,6 @@ $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 if (-not $ProjectPath) { $ProjectPath = Join-Path $RepoRoot 'data\project.json' }
-if (-not $GuidePath) { $GuidePath = Join-Path $RepoRoot 'reports\steam-guide-current.txt' }
-if (-not $PublicationStatePath) { $PublicationStatePath = Join-Path $RepoRoot 'automation\runs\steam-publication-state.json' }
 
 function Get-SubstantiveSteamHash {
     param([Parameter(Mandatory = $true)][string]$Path)
@@ -86,6 +86,13 @@ function Normalize-Text {
 $State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
 $Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json
 $Steam = $Project.steamGuide
+$Section = $Steam.sections.$Language
+if ($null -eq $Section) { throw "steamGuide.sections.$Language is required." }
+if (-not $GuidePath) { $GuidePath = Join-Path $RepoRoot ([string]$Section.outputPath) }
+if (-not $PublicationStatePath) { $PublicationStatePath = Join-Path $RepoRoot ([string]$Section.publicationStatePath) }
+$IsEnglish = $Language -eq 'en'
+$Locale = if ($IsEnglish) { $State.locales.en } else { $null }
+if ($IsEnglish -and $null -eq $Locale) { throw 'current-season.json is missing locales.en for the English Steam section.' }
 
 if (-not $Steam.enabled) {
     Write-Host 'STEAM_STATUS=DISABLED'
@@ -155,15 +162,20 @@ function Require-PublicText {
 }
 
 Require-PublicText 'guide title' ([string]$Steam.title)
-Require-PublicText 'current section title' ([string]$Steam.sectionTitle)
+Require-PublicText 'current section title' ([string]$Section.title)
 Require-PublicText 'series name' ([string]$State.season.seriesName)
-Require-PublicText 'season display' ([string]$State.season.seasonDisplay)
-Require-PublicText 'daily freshness link note' ([string]$Steam.freshnessNote)
+Require-PublicText 'season display' ($(if ($IsEnglish) { [string]$Locale.seasonDisplay } else { [string]$State.season.seasonDisplay }))
+Require-PublicText 'daily freshness link note' ($(if ($IsEnglish) { 'The full report is checked daily; see the link above for the exact verification time.' } else { [string]$Steam.freshnessNote }))
 
 foreach ($Activity in $State.activities) {
-    Require-PublicText "activity $($Activity.number) title" ([string]$Activity.title)
-    Require-PublicText "activity $($Activity.number) condition" (ConvertFrom-CardHtml ([string]$Activity.conditionHtml))
-    Require-PublicText "activity $($Activity.number) tune" (ConvertTo-CompactSteamText (ConvertFrom-CardHtml ([string]$Activity.tuneHtml)))
+    $Localized = if ($IsEnglish) { $Locale.activities.($Activity.id) } else { $null }
+    if ($IsEnglish -and $null -eq $Localized) { throw "English localization missing for $($Activity.id)." }
+    $Title = if ($IsEnglish) { [string]$Localized.title } else { [string]$Activity.title }
+    $Condition = if ($IsEnglish) { [string]$Localized.conditionHtml } else { [string]$Activity.conditionHtml }
+    $Tune = if ($IsEnglish) { [string]$Localized.tuneHtml } else { [string]$Activity.tuneHtml }
+    Require-PublicText "activity $($Activity.number) title" $Title
+    Require-PublicText "activity $($Activity.number) condition" (ConvertFrom-CardHtml $Condition)
+    Require-PublicText "activity $($Activity.number) tune" (ConvertTo-CompactSteamText (ConvertFrom-CardHtml $Tune))
 }
 
 $RenderedCardCount = ([regex]::Matches($Html, '<div class="bb_h2">')).Count

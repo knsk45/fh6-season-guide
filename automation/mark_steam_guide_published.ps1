@@ -4,17 +4,17 @@ param(
     [string]$StatePath,
     [string]$ProjectPath,
     [string]$PublicationStatePath,
-    [string]$Evidence = 'Public Steam guide verified'
+    [string]$Evidence = 'Public Steam guide verified',
+    [ValidateSet('ru','en')]
+    [string]$Language = 'ru'
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
-if (-not $GuidePath) { $GuidePath = Join-Path $RepoRoot 'reports\steam-guide-current.txt' }
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
 if (-not $ProjectPath) { $ProjectPath = Join-Path $RepoRoot 'data\project.json' }
-if (-not $PublicationStatePath) { $PublicationStatePath = Join-Path $RepoRoot 'automation\runs\steam-publication-state.json' }
 
 function Get-SubstantiveSteamHash {
     param([Parameter(Mandatory = $true)][string]$Path)
@@ -28,12 +28,17 @@ function Get-SubstantiveSteamHash {
     finally { $Hasher.Dispose() }
 }
 
-foreach ($RequiredPath in @($GuidePath, $StatePath, $ProjectPath)) {
+foreach ($RequiredPath in @($StatePath, $ProjectPath)) {
     if (-not (Test-Path -LiteralPath $RequiredPath)) { throw "Required file not found: $RequiredPath" }
 }
 
 $State = Get-Content -LiteralPath $StatePath -Raw -Encoding UTF8 | ConvertFrom-Json
 $Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json
+$Section = $Project.steamGuide.sections.$Language
+if ($null -eq $Section) { throw "steamGuide.sections.$Language is required." }
+if (-not $GuidePath) { $GuidePath = Join-Path $RepoRoot ([string]$Section.outputPath) }
+if (-not $PublicationStatePath) { $PublicationStatePath = Join-Path $RepoRoot ([string]$Section.publicationStatePath) }
+if (-not (Test-Path -LiteralPath $GuidePath)) { throw "Required file not found: $GuidePath" }
 $Hash = Get-SubstantiveSteamHash -Path $GuidePath
 $Directory = Split-Path -Parent $PublicationStatePath
 if (-not (Test-Path -LiteralPath $Directory)) { New-Item -ItemType Directory -Path $Directory | Out-Null }
@@ -44,10 +49,13 @@ $Payload = [ordered]@{
     publishedAt = [DateTimeOffset]::Now.ToString('o')
     sourceAuditAt = [string]$State.lastContentUpdate
     steamGuideUrl = [string]$Project.steamGuide.url
+    language = $Language
+    sectionTitle = [string]$Section.title
     evidence = $Evidence
 }
 [IO.File]::WriteAllText($PublicationStatePath, ($Payload | ConvertTo-Json -Depth 5) + "`r`n", [Text.UTF8Encoding]::new($false))
 
 Write-Host 'STEAM_PUBLICATION_STATE=RECORDED'
+Write-Host "STEAM_GUIDE_LANGUAGE=$Language"
 Write-Host "STEAM_CONTENT_HASH=$Hash"
 Write-Host "STEAM_PUBLICATION_STATE_PATH=$PublicationStatePath"

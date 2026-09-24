@@ -105,6 +105,16 @@ if ($project) {
     }
     if ([string]$steamGuide.safeDescription -match 'https?://|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') { Add-ValidationError 'project.steamGuide.safeDescription contains a moderation-risk link or marker' }
     if ([string]$steamGuide.safeDescription -notmatch 'русск|обновля') { Add-ValidationError 'project.steamGuide.safeDescription must state Russian language and ongoing updates' }
+    if ([string]$steamGuide.safeDescription -notmatch 'English') { Add-ValidationError 'project.steamGuide.safeDescription must state English availability' }
+    foreach ($language in @('ru','en')) {
+        $section = $steamGuide.sections.$language
+        if ($null -eq $section) { Add-ValidationError "project.steamGuide.sections.$language is required"; continue }
+        foreach ($field in @('title','outputPath','publicationStatePath')) {
+            if ([string]::IsNullOrWhiteSpace([string]$section.$field)) { Add-ValidationError "project.steamGuide.sections.$language.$field is required" }
+        }
+        if ([string]$section.outputPath -notmatch '^reports/steam-guide-current(?:-en)?\.txt$') { Add-ValidationError "project.steamGuide.sections.$language.outputPath is invalid" }
+        if ([string]$section.publicationStatePath -notmatch '^automation/runs/steam-publication-state(?:-en)?\.json$') { Add-ValidationError "project.steamGuide.sections.$language.publicationStatePath is invalid" }
+    }
     $metricsHistoryPath = Get-FullProjectPath 'data/publication-metrics-history.json'
     if (-not (Test-Path -LiteralPath $metricsHistoryPath)) { Add-ValidationError 'Public publication metrics history is missing' }
     else {

@@ -23,6 +23,7 @@ if ($Text -match 'https?://|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|
 }
 if ($Text.Length -gt 3000) { throw 'Steam main description exceeds the conservative 3000-character limit.' }
 if ($Text -notmatch 'русск') { throw 'Steam main description must state that the guide is Russian.' }
+if ($Text -notmatch 'English') { throw 'Steam main description must state that an English section is available.' }
 if ($Text -notmatch 'обновля') { throw 'Steam main description must state that the guide is regularly updated.' }
 
 $Directory = Split-Path -Parent $OutputPath

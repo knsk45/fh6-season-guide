@@ -310,13 +310,13 @@ class Guard:
             self.command(run, 'publish', ps('automation/publish_to_github.ps1', '-CommitMessage', 'FH6 guarded run ' + run['runDate']), ['PUBLISHED_SHA=', 'PAGES_URL='], timeout=420)
         else:
             run['blockers'].append('Unfinished report build: publication withheld to preserve public version.')
-        if self.command(run, 'steam_render', ps('automation/render_steam_guide.ps1'), ['STEAM_GUIDE_CHARACTERS='])[0]:
-            ok, output = self.command(run, 'steam_check', ps('automation/check_steam_guide.ps1'), ['STEAM_STATUS='])
-            verified_steam = ('STEAM_VERIFICATION=PUBLIC_AND_LOCAL' in output
-                              or 'STEAM_VERIFICATION=PUBLIC_CONTENT_AND_BROWSER_VERIFIED_BASELINE' in output)
-            if ok and 'STEAM_STATUS=UP_TO_DATE' in output and verified_steam:
+        if self.command(run, 'steam_render', ps('automation/render_steam_guides.ps1'), ['STEAM_GUIDES_RENDERED=ru,en'])[0]:
+            ok, output = self.command(run, 'steam_check', ps('automation/check_steam_guides.ps1'), ['STEAM_GUIDES_STATUS='])
+            verified_steam = (output.count('STEAM_VERIFICATION=PUBLIC_AND_LOCAL')
+                              + output.count('STEAM_VERIFICATION=PUBLIC_CONTENT_AND_BROWSER_VERIFIED_BASELINE'))
+            if ok and 'STEAM_GUIDES_STATUS=UP_TO_DATE' in output and verified_steam == 2:
                 run['steamStatus'] = 'UP_TO_DATE'
-            elif ok and 'STEAM_STATUS=UPDATE_REQUIRED' in output:
+            elif ok and 'STEAM_GUIDES_STATUS=UPDATE_REQUIRED' in output:
                 run['steamStatus'] = 'PENDING_CONFIRMATION'
             else:
                 run['steamStatus'] = 'BLOCKED'

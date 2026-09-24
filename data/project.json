@@ -44,11 +44,23 @@
     "enabled": true,
     "id": "3787739730",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730",
-    "title": "Forza Horizon 6 — русская сводка Festival Playlist (обновляется ежедневно)",
-    "sectionTitle": "Актуальная неделя",
+    "title": "Forza Horizon 6 — Festival Playlist Guide | Русский & English",
+    "sectionTitle": "Актуальная неделя · Русский",
+    "sections": {
+      "ru": {
+        "title": "Актуальная неделя · Русский",
+        "outputPath": "reports/steam-guide-current.txt",
+        "publicationStatePath": "automation/runs/steam-publication-state.json"
+      },
+      "en": {
+        "title": "Current Week · English",
+        "outputPath": "reports/steam-guide-current-en.txt",
+        "publicationStatePath": "automation/runs/steam-publication-state-en.json"
+      }
+    },
     "publicGuideUrl": "https://knsk45.github.io/fh6-season-guide/reports/current-week.html",
-    "freshnessNote": "Основная сводка проверяется ежедневно; точное время последней проверки всегда указано по ссылке выше.",
-    "safeDescription": "[h1]Forza Horizon 6 — Festival Playlist на русском[/h1]\n\nРегулярно обновляемое руководство по сезонным активностям. Актуальные задания, условия, проверенные ссылки, подсказки по прохождению и коды тюнингов находятся в единственном разделе «Актуальная неделя».\n\n[h2]Что есть в сводке[/h2]\n[list]\n[*]все карточки Festival Playlist в игровом порядке;\n[*]рекомендации по автомобилям и 9-значные коды тюнингов;\n[*]решения фотоиспытаний, Treasure Hunt и Collectibles, когда они подтверждены источниками;\n[*]точное время окончания сезона и отметка последней полной проверки.\n[/list]\n\nПосле четверговой смены сезона сначала появляются подтверждённые данные, а затем сводка дополняется по мере появления надёжных решений. Если для плитки из игры нет точного публичного источника, вместо случайной картинки остаётся запрос на оригинальный скриншот.\n\n[h2]Как пользоваться[/h2]\nОткройте раздел «Актуальная неделя» и перейдите к полной русскоязычной сводке: там есть интерактивные карточки, ссылки на источники и актуальные детали. Добавьте руководство в избранное, чтобы быстро возвращаться после еженедельной смены сезона.\n\n[h2]Важно[/h2]\nСоветы сообщества помечаются отдельно; неизвестные данные не заменяются предположениями. Руководство не связано с Turn 10, Playground Games или Microsoft.",
+    "freshnessNote": "Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.",
+    "safeDescription": "[h1]Forza Horizon 6 — Festival Playlist Guide[/h1]\n\n[b]Русский и English[/b] · Регулярно обновляемое практическое руководство по сезонным активностям Festival Playlist.\n\n[h2]Два языка / Two languages[/h2]\n[list]\n[*][b]Актуальная неделя · Русский[/b] — задания, условия, ссылки, подсказки и 9-значные коды тюнингов на русском.\n[*][b]Current Week · English[/b] — the same current Festival Playlist activities in English.\n[/list]\n\nОбе секции обновляются вместе после смены сезона и по мере появления подтверждённых решений. Both sections are updated together after a season change and as verified solutions become available.\n\n[h2]Что внутри / What is included[/h2]\n[list]\n[*]все активности Festival Playlist в игровом порядке / all activities in game order;\n[*]рекомендации по автомобилям и share codes / vehicle recommendations and share codes;\n[*]Photo Challenges, Treasure Hunt и Collectibles, когда места подтверждены источниками / location help when verified;\n[*]время окончания сезона и отметка проверки / season deadline and freshness status.\n[/list]\n\nСоветы сообщества помечаются отдельно; неизвестные данные не заменяются предположениями. Community advice is labelled separately; unknown details are never guessed. Руководство не связано с Turn 10, Playground Games или Microsoft.",
     "coverAsset": "reports/assets/project/steam-guide-cover-v1.png",
     "language": "russian",
     "tags": ["Gameplay Basics", "Loot", "Maps or Levels", "Multiplayer", "Secrets", "Walkthroughs"]
