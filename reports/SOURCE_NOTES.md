@@ -1741,3 +1741,29 @@
 | `forza_labs_map` | no_current_item: новой точной Winter-плитки или карты сундука не найдено. |
 | `escorenews_fh6` | unavailable: страница не отдалась средству проверки; устаревшие данные не использовались. |
 | `dungg_playlist` | no_current_item: нового подтверждённого Winter-видео не найдено. |
+
+## 2026-09-25T08:07:00+07:00 — подтверждение текущих данных и повторный аудит визуалов
+
+- Официальная Playlist повторно подтверждает Series 5 British Automotive — Winter (24 сентября — 1 октября); текущий номер недели и дедлайн совпадают с `data/current-season.json`.
+- Свежий пост r/ForzaHorizon от 24 сентября повторно подтверждает задания Weekly/Daily, Bamboo Forest Photo Challenge и Shimanoyama Treasure Hunt. Escorenews опубликовал карту сундука и статьи по Photo Challenge и Trial 24 сентября; использованы лишь ссылки/решения этой недели.
+- Визуальный повторный аудит: точные локальные сезонные плитки присутствуют у 13 активностей, Daily намеренно текстовый и остаётся без публичной плитки (`community=13, preliminary=0, missing=1`). Хэши 13 активов сверяются в audit.json; новые изображения не подменялись.
+- Найден дефект представления, не игровых данных: EN-локализация вставляла PI строками вроде `A 700` после генерации базовой HTML, поэтому английская версия теряла цветной бейдж. Исправлен общий языковой рендерер; в Steam устранены внутренние kind-маркеры и повтор заголовков.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live Fandom не отдал страницу; старые данные не использовались. |
+| `fandom_current` | unavailable: live Fandom не отдал страницу; старые изображения/решения не переносились. |
+| `forza_playlist` | checked: официальный список подтверждает British Automotive — Winter и дедлайн 1 октября. |
+| `forza_news` | no_current_item: страница открывается, отдельного нового weekly-факта для карточек не обнаружено. |
+| `forza_support_release_notes` | unavailable: раздел Release Notes не отдался; влияние патча не предполагалось. |
+| `forza_support_known_issues` | no_current_item: статья доступна; нового влияния на активности недели не выявлено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую страницу форумов; нового объявления не найдено. |
+| `reddit_forzahorizon` | checked: свежий пост от 24 сентября сверяет Weekly, все семь Daily, Photo и Treasure. |
+| `reddit_forzahorizon6` | no_current_item: страница Reddit не показала свежего материала текущей недели. |
+| `reddit_forza` | no_current_item: не подтверждён новый current-week information thread. |
+| `reddit_forzatune` | no_current_item: нового тюнинг-поста этой недели не найдено. |
+| `forza_horizon_hub` | no_current_item: доступен, нового точного weekly-решения не найдено. |
+| `forza_labs_collector` | no_current_item: доступен, новых подтверждённых collectibles этой недели нет. |
+| `forza_labs_map` | no_current_item: доступна, отдельной точной weekly-плитки не найдено. |
+| `escorenews_fh6` | checked: материалы Winter Treasure, Photo и Trial датированы 24 сентября; использованы ссылки на сундук и фото-локацию. |
+| `dungg_playlist` | no_current_item: свежий Winter-выпуск не подтверждён. |

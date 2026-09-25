@@ -8,11 +8,11 @@
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. weekly — Weekly Challenge · 5 points[/h2]
+[h2]01. Weekly Challenge · 5 points[/h2]
 In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.
 [b]Car:[/b] 2010 Jaguar C-X75 · 110 140 996.
 
-[h2]02. daily — 7 Daily Challenges · 7 × 1 point[/h2]
+[h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
 • 24 Sep: park at any Car Meet.
 • 25 Sep: earn 3 Speed Skills.
 • 26 Sep: photograph any car.
@@ -21,53 +21,48 @@ In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complet
 • 29 Sep: earn at least 1 star at a Speed Trap.
 • 30 Sep: complete 1 lap at any Time Attack circuit.
  Reward for each: 5,000 CR.
-[b]Car:[/b] No tune required.
 
-[h2]03. photo — #BambooPerfect · 2 points[/h2]
+[h2]03. #BambooPerfect · 2 points[/h2]
 Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.
-[b]Car:[/b] No tune required.
 
-[h2]04. treasure_hunt — Treasure Hunt · 3 points[/h2]
+[h2]04. Treasure Hunt · 3 points[/h2]
 Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.
-[b]Car:[/b] No tune required.
 
-[h2]05. championship — Country Pickups · 5 points[/h2]
-Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.
+[h2]05. Country Pickups · 5 points[/h2]
+Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.
 [b]Car:[/b] 2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520.
 
-[h2]06. championship — Cult Street · 5 points[/h2]
-Cult Street Championship: Cult Cars, D 400. The route list needs further confirmation because fresh guides disagree on one of its three races. Reward: 1972 Reliant Supervan III.
+[h2]06. Cult Street · 5 points[/h2]
+Cult Cars, D 400. The route list needs further confirmation because fresh guides disagree on one of its three races. Reward: 1972 Reliant Supervan III.
 [b]Car:[/b] 1968 Abarth 595 esseessee · D 400 · 174 737 970.
 
-[h2]07. pr — Shimanoyama Drift Attack · 3 points[/h2]
-Shimanoyama Drift Attack: United Kingdom, A 700, at least 80,000 points.
+[h2]07. Shimanoyama Drift Attack · 3 points[/h2]
+United Kingdom, A 700, at least 80,000 points.
 [b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]08. pr — Azure Drive Danger Sign · 2 points[/h2]
+[h2]08. Azure Drive Danger Sign · 2 points[/h2]
 Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).
 [b]Car:[/b] 2020 Land Rover Defender 110 X · B 600 · 163 429 917.
 
-[h2]09. pr — Tall Trees Speed Zone · 2 points[/h2]
-Tall Trees Speed Zone: United Kingdom, A 700, at least 70.0 mph (112.7 km/h).
+[h2]09. Tall Trees Speed Zone · 2 points[/h2]
+United Kingdom, A 700, at least 70.0 mph (112.7 km/h).
 [b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]10. pr — Sekibe Kaijo Trailblazer · 2 points[/h2]
-Sekibe Kaijo Trailblazer: United Kingdom, A 700, at least 42 seconds remaining.
+[h2]10. Sekibe Kaijo Trailblazer · 2 points[/h2]
+United Kingdom, A 700, at least 42 seconds remaining.
 [b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]11. trial — Winter Rallies · 10 points[/h2]
-The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.
+[h2]11. Winter Rallies · 10 points[/h2]
+Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.
 [b]Car:[/b] 1984 Opel Manta 400 · A 700 · 930 661 576.
 
-[h2]12. horizon_play — Speed Connection · 3 points[/h2]
+[h2]12. Speed Connection · 3 points[/h2]
 In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.
-[b]Car:[/b] No tune required.
 
-[h2]13. horizon_play — Horizon Stunt Party · 3 points[/h2]
+[h2]13. Horizon Stunt Party · 3 points[/h2]
 Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.
-[b]Car:[/b] No tune required.
 
-[h2]14. monthly_rivals — Monthly Rivals — Shimanoyama Sprint · 4 points[/h2]
+[h2]14. Monthly Rivals — Shimanoyama Sprint · 4 points[/h2]
 Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.
 [b]Car:[/b] 2025 McLaren W1 — no mandatory tune.
 

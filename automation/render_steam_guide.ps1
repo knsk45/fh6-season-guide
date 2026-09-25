@@ -95,10 +95,16 @@ foreach ($Activity in $State.activities) {
     $ConditionHtml = if ($IsEnglish) { [string]$Localized.conditionHtml } else { [string]$Activity.conditionHtml }
     $TuneHtml = if ($IsEnglish) { [string]$Localized.tuneHtml } else { [string]$Activity.tuneHtml }
     $Lines.Add('')
-    $Lines.Add("[h2]$($Activity.number). $($Activity.kind) — $ActivityTitle · $ActivityPoints[/h2]")
+    $Lines.Add("[h2]$($Activity.number). $ActivityTitle · $ActivityPoints[/h2]")
 
     $Condition = ConvertTo-CompactSteamText (ConvertFrom-CardHtml $ConditionHtml)
     $Tune = ConvertTo-CompactSteamText (ConvertFrom-CardHtml $TuneHtml)
+
+    # The localized title already identifies the activity; remove a repeated
+    # leading title from its requirement sentence without losing the actual rule.
+    $ConditionTitle = [regex]::Escape($ActivityTitle)
+    $Condition = [regex]::Replace($Condition, "^(?:The Trial\s+)?$ConditionTitle(?: Championship)?\s*[:—-]\s*", '', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    if ($Tune -match '^(?i)(?:No tune required\.?|No mandatory tune\.?|Специальный автомобиль или тюнинг не нужен\.?|Подойдёт любой .* тюнинг не требуется\.?|Используйте удобный .* не требуется\.?)$') { $Tune = '' }
 
     if ($Condition) {
         $Lines.Add($Condition)

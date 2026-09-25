@@ -8,11 +8,11 @@
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. weekly — Еженедельное испытание · 5 очков[/h2]
+[h2]01. Еженедельное испытание · 5 очков[/h2]
 На 2010 Jaguar C-X75: сядьте за руль, сфотографируйте автомобиль в Shirakawa-go, завершите 2 Road Races и припаркуйтесь на любом Car Meet. Награда: 25 000 CR.
 [b]Авто:[/b] 2010 Jaguar C-X75 · 110 140 996.
 
-[h2]02. daily — 7 ежедневных заданий · 7 × 1 очко[/h2]
+[h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
 • 24.09: припарковаться на любом Car Meet.
 • 25.09: выполнить 3 Speed Skills.
 • 26.09: сфотографировать любую машину.
@@ -23,51 +23,51 @@
  Награда за каждое: 5 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. photo — #BambooPerfect · 2 очка[/h2]
+[h2]03. #BambooPerfect · 2 очка[/h2]
 Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. treasure_hunt — Treasure Hunt · 3 очка[/h2]
+[h2]04. Treasure Hunt · 3 очка[/h2]
 Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. championship — Country Pickups · 5 очков[/h2]
+[h2]05. Country Pickups · 5 очков[/h2]
 Чемпионат Country Pickups: Pickups & 4x4, B 600. Маршруты: Soni Highlands Cross Country, Temple Cross Country и Edogawa Cross Country Circuit. Награда: 2010 Jaguar C-X75.
 [b]Авто:[/b] 2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520.
 
-[h2]06. championship — Cult Street · 5 очков[/h2]
+[h2]06. Cult Street · 5 очков[/h2]
 Чемпионат Cult Street: Cult Cars, D 400. Маршруты требуют дополнительного подтверждения: свежие гайды расходятся по одному из трёх заездов. Награда: 1972 Reliant Supervan III.
 [b]Авто:[/b] 1968 Abarth 595 esseessee · D 400 · 174 737 970.
 
-[h2]07. pr — Shimanoyama Drift Attack · 3 очка[/h2]
+[h2]07. Shimanoyama Drift Attack · 3 очка[/h2]
 Drift Attack Shimanoyama: Великобритания, A 700, минимум 80 000 очков.
 [b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]08. pr — Azure Drive Danger Sign · 2 очка[/h2]
+[h2]08. Azure Drive Danger Sign · 2 очка[/h2]
 Danger Sign Azure Dive: Великобритания, B 600, минимум 689,0 футов (210 м).
 [b]Авто:[/b] 2020 Land Rover Defender 110 X · B 600 · 163 429 917.
 
-[h2]09. pr — Tall Trees Speed Zone · 2 очка[/h2]
+[h2]09. Tall Trees Speed Zone · 2 очка[/h2]
 Speed Zone Tall Trees: Великобритания, A 700, минимум 70,0 mph (112,7 км/ч).
 [b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]10. pr — Sekibe Kaijo Trailblazer · 2 очка[/h2]
+[h2]10. Sekibe Kaijo Trailblazer · 2 очка[/h2]
 Trailblazer Sekibe Kaijo: Великобритания, A 700, минимум 42 секунды.
 [b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
-[h2]11. trial — Winter Rallies · 10 очков[/h2]
-The Trial Winter Rallies: Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.
+[h2]11. Winter Rallies · 10 очков[/h2]
+Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.
 [b]Авто:[/b] 1984 Opel Manta 400 · A 700 · 930 661 576.
 
-[h2]12. horizon_play — Speed Connection · 3 очка[/h2]
+[h2]12. Speed Connection · 3 очка[/h2]
 В Horizon Racing выполните 3 LINK Speed Skills. Награда: 1962 Peel P50.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]13. horizon_play — Horizon Stunt Party · 3 очка[/h2]
+[h2]13. Horizon Stunt Party · 3 очка[/h2]
 Завершите Mini Games в Horizon Stunt Party. Награда: Black and Red Utility Pants.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]14. monthly_rivals — Monthly Rivals — Shimanoyama Sprint · 4 очка[/h2]
+[h2]14. Monthly Rivals — Shimanoyama Sprint · 4 очка[/h2]
 Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren W1.
 [b]Авто:[/b] 2025 McLaren W1 — без обязательного тюнинга.
 
