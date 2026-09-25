@@ -99,6 +99,12 @@ foreach ($Activity in $State.activities) {
 
     $Condition = ConvertTo-CompactSteamText (ConvertFrom-CardHtml $ConditionHtml)
     $Tune = ConvertTo-CompactSteamText (ConvertFrom-CardHtml $TuneHtml)
+    $Tune = [regex]::Replace($Tune, '(?<![0-9])(?<code>[0-9]{3}(?:[ -]?[0-9]{3}){2})(?![0-9])', {
+        param($match)
+        $digits = [regex]::Replace($match.Groups['code'].Value, '\D', '')
+        $code = '{0} {1} {2}' -f $digits.Substring(0,3), $digits.Substring(3,3), $digits.Substring(6,3)
+        return "[code]$code[/code]"
+    })
 
     # The localized title already identifies the activity; remove a repeated
     # leading title from its requirement sentence without losing the actual rule.

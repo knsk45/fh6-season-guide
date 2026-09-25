@@ -400,6 +400,36 @@ ${supportHtml}
         node.replaceWith(fragment);
       }
     };
+    const formatShareCodes = (root) => {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (!node.parentElement?.closest('code, a, .share-code')) textNodes.push(node);
+      }
+      const pattern = /(?<!\\d)(\\d{3}(?:[ -]?\\d{3}){2})(?!\\d)/g;
+      for (const node of textNodes) {
+        const text = node.nodeValue ?? '';
+        pattern.lastIndex = 0;
+        if (!pattern.test(text)) continue;
+        pattern.lastIndex = 0;
+        const fragment = document.createDocumentFragment();
+        let cursor = 0;
+        for (const match of text.matchAll(pattern)) {
+          fragment.append(document.createTextNode(text.slice(cursor, match.index)));
+          const digits = match[1].replace(/\\D/g, '');
+          const code = document.createElement('code');
+          code.textContent = digits.replace(/(\\d{3})(?=\\d)/g, '$1 ');
+          const wrapper = document.createElement('span');
+          wrapper.className = 'share-code';
+          wrapper.append(code);
+          fragment.append(wrapper);
+          cursor = match.index + match[0].length;
+        }
+        fragment.append(document.createTextNode(text.slice(cursor)));
+        node.replaceWith(fragment);
+      }
+    };
     const applyLanguage = (requestedLanguage) => {
       currentLanguage = requestedLanguage === 'en' ? 'en' : 'ru';
       const copy = labels[currentLanguage];
@@ -439,7 +469,7 @@ ${supportHtml}
         if (kind) kind.textContent = currentLanguage === 'en' ? (kindLabels.en[activityKinds[section.id]] ?? original.kind) : original.kind;
         const condition = section.querySelector('[data-card-condition-text]'); if (condition) { condition.innerHTML = translated?.conditionHtml ?? original.conditionHtml; formatPiBadges(condition); }
         const how = section.querySelector('[data-card-how-text]'); if (how) { how.innerHTML = translated?.howHtml ?? original.howHtml; formatPiBadges(how); }
-        const tune = section.querySelector('[data-card-tune-text]'); if (tune) { tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml; formatPiBadges(tune); }
+        const tune = section.querySelector('[data-card-tune-text]'); if (tune) { tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml; formatPiBadges(tune); formatShareCodes(tune); }
         const sources = section.querySelector('[data-card-sources]');
         if (sources) {
           sources.innerHTML = original.sources;

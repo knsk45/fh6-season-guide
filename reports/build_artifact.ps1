@@ -102,13 +102,33 @@ function Add-PerformanceIndexBadges([string]$Html) {
     return ($parts -join '')
 }
 
-function Add-ShareCodeControls([string]$Html) {
+function Format-ShareCodes([string]$Html) {
     if ([string]::IsNullOrWhiteSpace($Html)) { return $Html }
-    return [regex]::Replace($Html, '<code>(?<code>[0-9]{3} [0-9]{3} [0-9]{3})</code>', {
+    $formatted = [regex]::Replace($Html, '<code>(?<code>[0-9]{3}[ -]?[0-9]{3}[ -]?[0-9]{3})</code>', {
         param($match)
-        $code = $match.Groups['code'].Value
+        $digits = [regex]::Replace($match.Groups['code'].Value, '\D', '')
+        $code = '{0} {1} {2}' -f $digits.Substring(0,3), $digits.Substring(3,3), $digits.Substring(6,3)
         return "<span class=`"share-code`"><code>$code</code></span>"
     })
+    $parts = [regex]::Split($formatted, '(<[^>]+>)')
+    $insideCode = $false
+    $pattern = '(?<![0-9])(?<code>[0-9]{3}(?:[ -]?[0-9]{3}){2})(?![0-9])'
+    for ($i = 0; $i -lt $parts.Count; $i++) {
+        $part = $parts[$i]
+        if ($part.StartsWith('<')) {
+            if ($part -match '(?i)^<code(?:\s|>)') { $insideCode = $true }
+            if ($part -match '(?i)^</code\s*>') { $insideCode = $false }
+            continue
+        }
+        if ($insideCode) { continue }
+        $parts[$i] = [regex]::Replace($part, $pattern, {
+            param($match)
+            $digits = [regex]::Replace($match.Groups['code'].Value, '\D', '')
+            $code = '{0} {1} {2}' -f $digits.Substring(0,3), $digits.Substring(3,3), $digits.Substring(6,3)
+            return "<span class=`"share-code`"><code>$code</code></span>"
+        })
+    }
+    return ($parts -join '')
 }
 
 function Get-ProvenanceMarkup($card) {
@@ -139,7 +159,7 @@ function New-CardHtml($card) {
     $seasonAlt = "Series $($season.seriesNumber) $($season.seasonDisplay)"
     $conditionHtml = Add-PerformanceIndexBadges ([string]$card.conditionHtml)
     $howHtml = Add-PerformanceIndexBadges ([string]$card.howHtml)
-    $tuneHtml = Add-ShareCodeControls (Add-PerformanceIndexBadges ([string]$card.tuneHtml))
+    $tuneHtml = Format-ShareCodes (Add-PerformanceIndexBadges ([string]$card.tuneHtml))
     $provenanceMarkup = Get-ProvenanceMarkup $card
     $tileMarkup = if ($hasTile) { "<div class=`"game-tile game-tile-$($visual.orientation)`"><img src=`"$cardImage`" data-local-src=`"$assetWebRoot/$($visual.image)`" loading=`"lazy`" decoding=`"async`" alt=`"Игровая карточка $($card.title) из $seasonAlt`"></div>" } else { '' }
     $cardClass = if ($hasTile) { "card-$($visual.orientation)" } else { 'card-no-tile' }
