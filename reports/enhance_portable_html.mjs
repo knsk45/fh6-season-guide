@@ -373,7 +373,7 @@ ${supportHtml}
         const node = walker.currentNode;
         if (!node.parentElement?.closest('.pi-badge')) textNodes.push(node);
       }
-      const pattern = /\b(D|C|B|A|S1|S2|R|X)\s+(\d{3})\b/g;
+      const pattern = /\\b(D|C|B|A|S1|S2|R|X)\\s+(\\d{3})\\b/g;
       for (const node of textNodes) {
         const text = node.nodeValue ?? '';
         pattern.lastIndex = 0;
