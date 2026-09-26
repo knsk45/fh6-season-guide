@@ -103,7 +103,7 @@ foreach ($Activity in $State.activities) {
         param($match)
         $digits = [regex]::Replace($match.Groups['code'].Value, '\D', '')
         $code = '{0} {1} {2}' -f $digits.Substring(0,3), $digits.Substring(3,3), $digits.Substring(6,3)
-        return "[code]$code[/code]"
+        return $code
     })
 
     # The localized title already identifies the activity; remove a repeated

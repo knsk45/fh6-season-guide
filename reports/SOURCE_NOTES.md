@@ -1799,3 +1799,28 @@
 | `forza_labs_map` | no_current_item: интерактивная карта открыта; отдельной точной плитки текущей недели не найдено. |
 | `escorenews_fh6` | checked: статьи от 24 сентября подтверждают Winter Bamboo Forest Photo Challenge и Shimanoyama Treasure location. |
 | `dungg_playlist` | unavailable: прямое чтение YouTube throttled; свежий Winter-выпуск подтвердить не удалось. |
+## 2026-09-26T07:14:55+07:00 — повторный запуск Winter Series 5
+
+- Официальная Playlist подтверждает `British Automotive — Winter` (24 сентября — 1 октября 2026); активный сезон совпадает с `data/current-season.json`. Полный список из семи Daily сверен с актуальными публикациями r/ForzaHorizon и r/ForzaHorizon6; будущие условия уже внесены в карточку.
+- Официальная Playlist указывает маршрут Cult Street: Rainbow Bridge Descent, Okishinaimura Run, Norikura Descent. Уточнение первичного источника разрешило прежний конфликт маршрутов; закрыт `openItem` для Cult Street, `missingFields` очищен, completeness переведён в confirmed.
+- Обновлены ссылки Photo Challenge и Treasure Hunt на отдельные карты Escorenews от 24 сентября. Уточнено краткое описание сундука по новой карте; неизвестные подробности не добавлялись.
+- Визуально проверены все 14 активностей: 13 точных плиток из неизменённых пользовательских скриншотов, 0 confirmed, 13 community, 0 preliminary, 1 missing. Daily намеренно остаётся текстовым блоком без публичной плитки. SHA-256 13 локальных файлов проверен для audit.json; замен прошлой недели нет.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live Category:Series_(FH6) недоступна через браузерную проверку; устаревшие данные не использовались. |
+| `fandom_current` | unavailable: текущая Series/Season страница Fandom недоступна; старые решения и визуалы не переносились. |
+| `forza_playlist` | checked: официальный список подтверждает British Automotive — Winter, 24.09–01.10; также разрешает маршрут Cult Street. |
+| `forza_news` | no_current_item: страница открывается; последняя новость British Automotive датирована 7 сентября, отдельной новости текущей недели нет. |
+| `forza_support_release_notes` | no_current_item: раздел Release Notes недоступен напрямую, но Known Issues показывает последнюю запись FH6 от 7 сентября; новых заметок текущей недели не найдено. |
+| `forza_support_known_issues` | no_current_item: страница просмотрена; актуальная статья не содержит нового влияющего на эту Playlist пункта. |
+| `forza_forums_official` | no_current_item: официальный адрес перенаправляет на уведомление о закрытии форумов; нового weekly-анонса нет. |
+| `reddit_forzahorizon` | checked: свежий Winter breakdown подтверждает Weekly, семь Daily, условия и ограничения; маршрутный список сверялся с официальной Playlist. |
+| `reddit_forzahorizon6` | checked: текущенедельный Winter-гайд подтверждает активность, условия и тюнинги; его прежний конфликт Cult Street снят официальным маршрутом. |
+| `reddit_forza` | checked: Winter Information Thread Series 5 опубликован 24 сентября; условия, маршруты и коды отмечены как сообщество. |
+| `reddit_forzatune` | no_current_item: свежего FH6-поста именно для Winter текущей недели не найдено; коды из старых публикаций не использовались. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но его сезонный блок показывает устаревшую Series 1; текущие решения оттуда не брались. |
+| `forza_labs_collector` | no_current_item: инструмент коллекции доступен; свежей карточки weekly-collectible этой недели не обнаружено. |
+| `forza_labs_map` | no_current_item: карта доступна, отдельного подтверждённого визуала/решения Winter из неё не найдено. |
+| `escorenews_fh6` | checked: опубликованы Winter-карты Treasure Hunt и Photo Challenge 24 сентября, а также гайд Trial; ссылки Photo/Treasure обновлены на текущие материалы. |
+| `dungg_playlist` | unavailable: YouTube throttled чтение заданного плейлиста; Winter-выпуск подтвердить не удалось. |

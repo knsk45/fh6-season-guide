@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-25T10:54:27+07:00",
+  "lastContentUpdate": "2026-09-26T07:21:17+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -90,9 +90,9 @@
       "title": "#BambooPerfect",
       "points": "2 очка",
       "conditionHtml": "Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.",
-      "howHtml": "Езжайте в Arashiyama Bamboo Forest на границе Minamino и Ito; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.",
+      "howHtml": "Езжайте к бамбуковой роще у грунтовой дороги на границе Ito и Minamino; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-bambooperfect-photo-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Карта места Photo Challenge</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6\" target=\"_blank\" rel=\"noopener noreferrer\">Карта / Map</a>",
       "visual": {
         "image": "tile-photo-bamboo-perfect.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -117,9 +117,9 @@
       "title": "Treasure Hunt",
       "points": "3 очка",
       "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.",
-      "howHtml": "Сундук стоит в нижней части Shimanoyama: на грунтовке у Lake View Speed Trap, рядом со стартом Taiyaki Scramble Dirt Race. Разбейте сундук — других условий нет.",
+      "howHtml": "Ищите сундук у юго-западной границы Shimanoyama, к западу от Tokyo City. Разбейте его — других условий нет.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-shimanoyama-region-british-automotive-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука Treasure Hunt</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука / Chest map</a>",
       "visual": {
         "image": "tile-treasure-shimanoyama.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -170,10 +170,10 @@
       "kind": "championship",
       "title": "Cult Street",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Cult Street: Cult Cars, D 400. Маршруты требуют дополнительного подтверждения: свежие гайды расходятся по одному из трёх заездов. Награда: 1972 Reliant Supervan III.",
-      "howHtml": "Завершите три ночных Touge/Street-заезда, сохраняя чистые чекпоинты. Не используйте список маршрутов из одного источника как окончательный до проверки в игре.",
+      "conditionHtml": "Чемпионат Cult Street: Cult Cars, D 400. Маршруты: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent. Награда: 1972 Reliant Supervan III.",
+      "howHtml": "Завершите три ночных Street-заезда: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent; держитесь чистых чекпоинтов.",
       "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: класс и тюнинг</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Второй Winter-гайд: конфликт маршрутов</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist: маршрут</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: класс и тюнинг</a>",
       "visual": {
         "image": "tile-championship-cult-street.png",
         "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
@@ -183,23 +183,13 @@
         "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_06_championship",
-          "field": "condition",
-          "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
-          "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
-          "status": "conflict"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_07_pr",
@@ -441,14 +431,14 @@
           "title": "#BambooPerfect",
           "points": "2 points",
           "conditionHtml": "Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.",
-          "howHtml": "Go to Arashiyama Bamboo Forest on the Minamino/Ito border; the Arashiyama Run Speed Zone is a useful landmark. Open Photo Mode with a McLaren in frame, then save the photo.",
+          "howHtml": "Go to the bamboo grove by the dirt road on the Ito/Minamino border; use Arashiyama Run Speed Zone as a landmark. Open Photo Mode with a McLaren in frame, then save the photo.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
           "title": "Treasure Hunt",
           "points": "3 points",
           "conditionHtml": "Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.",
-          "howHtml": "The chest is in southern Shimanoyama: on the dirt road by Lake View Speed Trap, beside the Taiyaki Scramble Dirt Race start. Smash it; there are no other requirements.",
+          "howHtml": "Look for the chest by the southwestern edge of Shimanoyama, west of Tokyo City. Smash it; there are no other requirements.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
@@ -461,8 +451,8 @@
         "activity_06_championship": {
           "title": "Cult Street",
           "points": "5 points",
-          "conditionHtml": "Cult Street Championship: Cult Cars, D 400. The route list needs further confirmation because fresh guides disagree on one of its three races. Reward: 1972 Reliant Supervan III.",
-          "howHtml": "Finish all three night Touge/Street races while keeping clean checkpoint lines. Do not treat either community route list as final until confirmed in-game.",
+          "conditionHtml": "Cult Street Championship: Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.",
+          "howHtml": "Finish all three night Street races: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent; keep clean checkpoint lines.",
           "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970."
         },
         "activity_07_pr": {
@@ -526,13 +516,6 @@
   },
   "openItems": [
     {
-      "activityId": "activity_06_championship",
-      "field": "condition",
-      "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
-      "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
-      "status": "conflict"
-    },
-    {
       "activityId": "activity_02_daily",
       "field": "visual",
       "reason": "Daily is intentionally text-only and does not use a public game tile.",
@@ -541,13 +524,6 @@
     }
   ],
   "missingFields": [
-    {
-      "activityId": "activity_06_championship",
-      "field": "condition",
-      "reason": "Свежие гайды согласны по классу D 400, но расходятся по одному из трёх маршрутов.",
-      "nextCheck": "Проверить карточку чемпионата в игре или официальный список маршрутов.",
-      "status": "conflict"
-    },
     {
       "activityId": "activity_02_daily",
       "field": "visual",

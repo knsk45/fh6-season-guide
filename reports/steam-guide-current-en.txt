@@ -10,7 +10,7 @@
 
 [h2]01. Weekly Challenge · 5 points[/h2]
 In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.
-[b]Car:[/b] 2010 Jaguar C-X75 · [code]110 140 996[/code].
+[b]Car:[/b] 2010 Jaguar C-X75 · 110 140 996.
 
 [h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
 • 24 Sep: park at any Car Meet.
@@ -30,31 +30,31 @@ Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 1
 
 [h2]05. Country Pickups · 5 points[/h2]
 Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.
-[b]Car:[/b] 2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · [code]114 989 520[/code].
+[b]Car:[/b] 2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520.
 
 [h2]06. Cult Street · 5 points[/h2]
-Cult Cars, D 400. The route list needs further confirmation because fresh guides disagree on one of its three races. Reward: 1972 Reliant Supervan III.
-[b]Car:[/b] 1968 Abarth 595 esseessee · D 400 · [code]174 737 970[/code].
+Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.
+[b]Car:[/b] 1968 Abarth 595 esseessee · D 400 · 174 737 970.
 
 [h2]07. Shimanoyama Drift Attack · 3 points[/h2]
 United Kingdom, A 700, at least 80,000 points.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · [code]114 242 420[/code].
+[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
 [h2]08. Azure Drive Danger Sign · 2 points[/h2]
 Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).
-[b]Car:[/b] 2020 Land Rover Defender 110 X · B 600 · [code]163 429 917[/code].
+[b]Car:[/b] 2020 Land Rover Defender 110 X · B 600 · 163 429 917.
 
 [h2]09. Tall Trees Speed Zone · 2 points[/h2]
 United Kingdom, A 700, at least 70.0 mph (112.7 km/h).
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · [code]114 242 420[/code].
+[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
 [h2]10. Sekibe Kaijo Trailblazer · 2 points[/h2]
 United Kingdom, A 700, at least 42 seconds remaining.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · [code]114 242 420[/code].
+[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420.
 
 [h2]11. Winter Rallies · 10 points[/h2]
 Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.
-[b]Car:[/b] 1984 Opel Manta 400 · A 700 · [code]930 661 576[/code].
+[b]Car:[/b] 1984 Opel Manta 400 · A 700 · 930 661 576.
 
 [h2]12. Speed Connection · 3 points[/h2]
 In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.
@@ -71,5 +71,5 @@ Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist.
 
 [h2]Short location links[/h2]
-[url=https://www.gameshedge.com/forza-horizon-6-bambooperfect-photo-challenge-guide/]Карта места Photo Challenge[/url]
-[url=https://www.gameshedge.com/forza-horizon-6-shimanoyama-region-british-automotive-treasure-hunt-guide/]Карта сундука Treasure Hunt[/url]
+[url=https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6]Карта / Map[/url]
+[url=https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge]Карта сундука / Chest map[/url]

@@ -1,8 +1,8 @@
 # Forza Horizon 6: Как пройти Series 5 «British Automotive» — Зима
 
-> Статус: предварительно; открытых полей: 2
+> Статус: предварительно; открытых полей: 1
 > Период: 24.09.2026 21:30 — 01.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 25.09.2026 10:54
+> Обновлено: 26.09.2026 07:21
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание · 5 очков
@@ -22,16 +22,16 @@
 ## 03. photo — #BambooPerfect · 2 очка
 
 - **Условие:** Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.
-- **Как выполнить:** Езжайте в Arashiyama Bamboo Forest на границе Minamino и Ito; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.
+- **Как выполнить:** Езжайте к бамбуковой роще у грунтовой дороги на границе Ito и Minamino; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.gameshedge.com/forza-horizon-6-bambooperfect-photo-challenge-guide/" target="_blank" rel="noopener noreferrer">Карта места Photo Challenge</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6" target="_blank" rel="noopener noreferrer">Карта / Map</a>
 
 ## 04. treasure_hunt — Treasure Hunt · 3 очка
 
 - **Условие:** Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.
-- **Как выполнить:** Сундук стоит в нижней части Shimanoyama: на грунтовке у Lake View Speed Trap, рядом со стартом Taiyaki Scramble Dirt Race. Разбейте сундук — других условий нет.
+- **Как выполнить:** Ищите сундук у юго-западной границы Shimanoyama, к западу от Tokyo City. Разбейте его — других условий нет.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.gameshedge.com/forza-horizon-6-shimanoyama-region-british-automotive-treasure-hunt-guide/" target="_blank" rel="noopener noreferrer">Карта сундука Treasure Hunt</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge" target="_blank" rel="noopener noreferrer">Карта сундука / Chest map</a>
 
 ## 05. championship — Country Pickups · 5 очков
 
@@ -42,10 +42,10 @@
 
 ## 06. championship — Cult Street · 5 очков
 
-- **Условие:** Чемпионат Cult Street: Cult Cars, D 400. Маршруты требуют дополнительного подтверждения: свежие гайды расходятся по одному из трёх заездов. Награда: 1972 Reliant Supervan III.
-- **Как выполнить:** Завершите три ночных Touge/Street-заезда, сохраняя чистые чекпоинты. Не используйте список маршрутов из одного источника как окончательный до проверки в игре.
+- **Условие:** Чемпионат Cult Street: Cult Cars, D 400. Маршруты: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent. Награда: 1972 Reliant Supervan III.
+- **Как выполнить:** Завершите три ночных Street-заезда: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent; держитесь чистых чекпоинтов.
 - **Автомобиль и тюнинг:** 1968 Abarth 595 esseessee · D 400 · 174 737 970.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Winter Information Thread: класс и тюнинг</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Второй Winter-гайд: конфликт маршрутов</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist: маршрут</a> · <a href="https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Winter Information Thread: класс и тюнинг</a>
 
 ## 07. pr — Shimanoyama Drift Attack · 3 очка
 
