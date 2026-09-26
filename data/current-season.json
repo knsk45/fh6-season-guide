@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-26T07:21:17+07:00",
+  "lastContentUpdate": "2026-09-26T07:46:45+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -31,11 +31,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: главы и тюнинг</a>",
       "visual": {
         "image": "tile-weekly-jaguar.png",
-        "sourceImage": "evidence/codex-clipboard-88f4c4f6-c80b-4ba5-903f-2ea7c9fa4cef.png",
+        "sourceImage": "evidence/user-english-weekly-tile-source-2026-09-26.png",
         "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "community",
@@ -95,11 +95,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6\" target=\"_blank\" rel=\"noopener noreferrer\">Карта / Map</a>",
       "visual": {
         "image": "tile-photo-bamboo-perfect.png",
-        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
         "orientation": "vertical",
         "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -122,11 +122,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука / Chest map</a>",
       "visual": {
         "image": "tile-treasure-shimanoyama.png",
-        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
         "orientation": "vertical",
         "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "community",
@@ -149,11 +149,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: маршруты и тюнинг</a>",
       "visual": {
         "image": "tile-championship-country-pickups.png",
-        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "community",
@@ -176,11 +176,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist: маршрут</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: класс и тюнинг</a>",
       "visual": {
         "image": "tile-championship-cult-street.png",
-        "sourceImage": "evidence/codex-clipboard-c0ef4a77-c98c-4023-a328-fc1ec4d84475.png",
+        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -203,11 +203,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-shimanoyama-drift.png",
-        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "drift-zone",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -230,11 +230,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-azure-danger-sign.png",
-        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -257,11 +257,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-tall-trees-speed-zone.png",
-        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -284,11 +284,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
         "image": "tile-pr-sekibe-kaijo-trailblazer.png",
-        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -311,11 +311,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: тюнинг Trial</a>",
       "visual": {
         "image": "tile-trial-winter-rallies.png",
-        "sourceImage": "evidence/codex-clipboard-f363a849-5cf5-424b-a9ae-cb82abb5376f.png",
+        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
         "orientation": "vertical",
         "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -338,11 +338,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
         "image": "tile-horizon-play-speed-connection.png",
-        "sourceImage": "evidence/codex-clipboard-a7a874e1-f9b3-4b50-ab3c-0e22326b79b5.png",
+        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -365,11 +365,11 @@
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
         "image": "tile-horizon-play-stunt-party.png",
-        "sourceImage": "evidence/codex-clipboard-a7a874e1-f9b3-4b50-ab3c-0e22326b79b5.png",
+        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Неизменённый пользовательский скриншот Winter; вырезана только точная граница игровой плитки без наложений."
+        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
       },
       "completeness": {
         "condition": "confirmed",
@@ -391,12 +391,12 @@
       "tuneHtml": "2025 McLaren W1 — без обязательного тюнинга.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
       "visual": {
-        "image": "tile-monthly-rivals-shimanoyama.webp",
-        "sourceImage": "evidence/tile-monthly-rivals-existing.webp",
+        "image": "tile-monthly-rivals-shimanoyama.png",
+        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
         "orientation": "horizontal",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Monthly Rivals уже была сохранена локально; повторно использована по явному указанию пользователя."
+        "sourceLabel": "Проверены официальная Playlist, свежие Winter-гайды и поиск изображений: онлайн найдено описание события, но не отдельная актуальная игровая плитка; использован предоставленный пользователем англоязычный скриншот с COMPLETE. Исходник сохранён без изменений, вырезаны только границы плитки."
       },
       "completeness": {
         "condition": "confirmed",

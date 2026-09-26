@@ -1824,3 +1824,29 @@
 | `forza_labs_map` | no_current_item: карта доступна, отдельного подтверждённого визуала/решения Winter из неё не найдено. |
 | `escorenews_fh6` | checked: опубликованы Winter-карты Treasure Hunt и Photo Challenge 24 сентября, а также гайд Trial; ссылки Photo/Treasure обновлены на текущие материалы. |
 | `dungg_playlist` | unavailable: YouTube throttled чтение заданного плейлиста; Winter-выпуск подтвердить не удалось. |
+
+## 2026-09-26T07:39:31+07:00 — английские игровые плитки Series 5 Winter
+
+- Официальная Festival Playlist открыта повторно и подтверждает Series 5 `British Automotive — Winter`, 24 сентября — 1 октября 2026; англоязычные названия и порядок карточек сверены по строкам Winter в официальном списке.
+- Проведён отдельный поиск изображения Monthly Rivals `Shimanoyama Sprint`: официальная Playlist, свежие публикации Reddit, недельные статьи и image search подтверждают событие и автомобиль 2025 McLaren W1, но не дают пригодной отдельной английской игровой плитки. Найденный ForzaLabs промо-постер гонки не является игровой плиткой и не использован. Для этой активности вырезана точная плитка из пользовательского англоязычного скриншота с COMPLETE.
+- Все остальные 12 публичных игровых плиток заменены англоязычными версиями из четырёх приложенных скриншотов. Четыре оригинала сохранены в `reports/assets/series-05-winter/evidence/`; подготовлены 13 локальных точных кропов без изменения изображения внутри плиток. В state обновлены `visual.image`, `visual.sourceImage` и происхождение. Изображения используются общими для русского и английского вариантов сводки, поэтому на обеих языковых версиях теперь виден английский текст самой игры.
+- Daily остаётся текстовым списком без публичной плитки по проектному правилу. Визуальная сводка: `confirmed=0, community=13, preliminary=0, missing=1` (единственный `missing` — намеренно текстовый Daily, не отсутствующая игровая плитка); незакрытых точных игровых плиток нет.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live Category:Series_(FH6) недоступна через веб-проверку; старые изображения и решения не использовались. |
+| `fandom_current` | unavailable: корневая страница Fandom вернула HTTP 402; старые сезонные данные не использовались. |
+| `forza_playlist` | checked: официальная страница открыта 26 сентября; подтверждает активную Winter-неделю, английские названия, Monthly Rivals `Shimanoyama Sprint` и автомобиль `2025 McLaren W1`. |
+| `forza_news` | no_current_item: официальный индекс проверен; отдельной новости Festival Playlist за текущую неделю не найдено. |
+| `forza_support_release_notes` | no_current_item: раздел не открылся напрямую; список Known Issues показывает последние FH6 Release Notes от 7 сентября, обновления за неделю 24–26 сентября нет. |
+| `forza_support_known_issues` | no_current_item: живая статья проверена; нового пункта текущей недели, влияющего на активности, не найдено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую страницу Forza; weekly-анонса в ней нет. |
+| `reddit_forzahorizon` | checked: пост Winter Breakdown от 24 сентября проверен; содержит текущие активности, включая Monthly Rivals. |
+| `reddit_forzahorizon6` | checked: гайд Series 5 Winter от 24 сентября проверен; подтверждает Monthly Rivals и остальные текущие карточки. |
+| `reddit_forza` | checked: Winter Information Thread Series 5 от 24 сентября проверен; подтверждает событие и чистый круг на 2025 McLaren W1. |
+| `reddit_forzatune` | no_current_item: live subreddit проверен, отдельного текущенедельного FH6-поста с новыми решениями не обнаружено. |
+| `forza_horizon_hub` | no_current_item: сайт открыт, но актуальный список Winter-активностей там не подтверждён; визуалы оттуда не брались. |
+| `forza_labs_collector` | no_current_item: Collector Tool открыт; точной текущенедельной плитки или collectible-решения нет. |
+| `forza_labs_map` | no_current_item: Interactive Map открыта; отдельная актуальная игровая плитка Monthly Rivals не найдена; промо-постер трассы не использован. |
+| `escorenews_fh6` | checked: индекс не открылся, но текущие статьи Winter Photo Challenge и Treasure Hunt от 24 сентября проверены напрямую; только для карт и маршрутов. |
+| `dungg_playlist` | unavailable: страница YouTube-плейлиста не загрузилась через веб-проверку; свежий Winter-выпуск подтвердить нельзя. |
