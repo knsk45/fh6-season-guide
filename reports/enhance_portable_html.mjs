@@ -107,7 +107,7 @@ function publicationChartHtml(dataset) {
   const rows = dataset.rows;
   const width = 660;
   const height = 270;
-  const pad = { left: 44, right: 18, top: 52, bottom: 42 };
+  const pad = { left: 44, right: 18, top: 22, bottom: 42 };
   const plotWidth = width - pad.left - pad.right;
   const plotHeight = height - pad.top - pad.bottom;
   const values = rows.flatMap((row) => [Number(row.steamViews), Number(row.githubViews)]);
@@ -128,9 +128,11 @@ function publicationChartHtml(dataset) {
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">${escapeHtml(dataset.title)}</h3>
         <p class="publication-chart-subtitle" id="publication-chart-subtitle">${escapeHtml(dataset.description)}</p>
-        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Посещения: Steam ${last.steamViews}, GitHub ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
-          <g class="trend-legend trend-legend-github"><line x1="52" x2="74" y1="20" y2="20" class="trend-line trend-github"></line><text x="82" y="24">GitHub ${formatCount(last.githubViews)}</text></g>
-          <g class="trend-legend trend-legend-steam"><line x1="250" x2="272" y1="20" y2="20" class="trend-line trend-steam"></line><text x="280" y="24">Steam ${formatCount(last.steamViews)}</text></g>
+        <div class="publication-chart-legend" id="publication-chart-legend" role="group" aria-label="Легенда графика">
+          <span class="publication-chart-legend-item"><span class="publication-chart-swatch trend-github" aria-hidden="true"></span><span id="chart-legend-github">GitHub · ${formatCount(last.githubViews)}</span></span>
+          <span class="publication-chart-legend-item"><span class="publication-chart-swatch trend-steam" aria-hidden="true"></span><span id="chart-legend-steam">Steam · ${formatCount(last.steamViews)}</span></span>
+        </div>
+        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Steam — уникальные посетители: ${last.steamViews}; GitHub — срабатывания счётчика страницы: ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
           ${grid}
           <path class="trend-line trend-steam" d="${path('steamViews')}"></path>
           <path class="trend-line trend-github" d="${path('githubViews')}"></path>
@@ -160,6 +162,11 @@ function staticCard(block, index) {
   }
   return `<section class="activity-block" id="${escapeHtml(block.id)}" data-activity-block>${body}</section>`;
 }
+
+const activityNavLinks = state.activities.map((activity) => {
+  const englishTitle = englishLocale.activities[activity.id]?.title ?? activity.title;
+  return `<a class="activity-nav-link" href="#${escapeHtml(activity.id)}" data-toc-link="${escapeHtml(activity.id)}"><span class="activity-nav-number">${escapeHtml(activity.number)}</span><span class="activity-nav-title" data-toc-title="${escapeHtml(activity.id)}" data-toc-title-ru="${escapeHtml(activity.title)}" data-toc-title-en="${escapeHtml(englishTitle)}">${escapeHtml(activity.title)}</span></a>`;
+}).join('\n');
 
 const sharedStyleMatch = blocks[0].body.match(/<style>([\s\S]*?)<\/style>/i);
 if (!sharedStyleMatch) throw new Error('The first activity block has no shared card styles');
@@ -244,9 +251,20 @@ ${sharedCardCss}
     .support-section .visit-stats-note{margin:10px auto 0;color:#7f9aa1;font-size:12px;line-height:1.45}
     .publication-chart{width:min(100%,700px);margin-top:26px;padding-top:22px;border-top:1px solid #29434b;text-align:left}
     .publication-chart h3{margin:0;color:#fff;font-size:17px;line-height:1.3}
-    .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
+    .publication-chart-subtitle{margin:8px 0 12px!important;color:#b8ccd1!important;font-size:13px!important;line-height:1.5!important}
+    .publication-chart-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0 2px;color:#eef6f5;font-size:13px;font-weight:750}
+    .publication-chart-legend-item{display:inline-flex;align-items:center;gap:8px;min-height:24px}
+    .publication-chart-swatch{display:inline-block;width:24px;height:0;border-top:3px solid;border-radius:2px}.publication-chart-swatch.trend-github{border-color:#d9ff00;border-top-style:dashed}.publication-chart-swatch.trend-steam{border-color:#ff2f92}
     .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
-    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-legend text{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-legend-github text{fill:#d9ff00}.trend-legend-steam text{fill:#ff7bb8}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
+    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#9bb4ba;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.publication-chart-note{margin:8px 0 0!important;color:#9bb4ba!important;font-size:12px!important;line-height:1.5!important}
+    .activity-toc{margin:0 0 24px;border:1px solid #29434b;border-radius:14px;background:#0d1a1f;box-shadow:0 8px 22px #0003}
+    .activity-toc summary{padding:13px 16px;color:#d9ff00;font-size:15px;font-weight:800;cursor:pointer;list-style:none}
+    .activity-toc summary::-webkit-details-marker{display:none}.activity-toc summary:after{content:'＋';float:right;color:#b8ccd1}.activity-toc details[open]>summary:after{content:'−'}
+    .activity-toc-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;padding:0 12px 12px}
+    .activity-nav-link{display:flex;align-items:flex-start;gap:9px;min-width:0;padding:9px 10px;border:1px solid #20363c;border-radius:9px;color:#dce9e9;text-decoration:none;font-size:13px;line-height:1.35;transition:background .15s ease,border-color .15s ease}
+    .activity-nav-link:hover{border-color:#8fae00;background:#14272c}.activity-nav-link:focus-visible{outline:2px solid #d9ff00;outline-offset:2px}
+    .activity-nav-number{flex:0 0 auto;color:#d9ff00;font-variant-numeric:tabular-nums;font-weight:900}.activity-nav-title{min-width:0;overflow-wrap:anywhere}
+    .activity-block[id]{scroll-margin-top:116px}
     .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
@@ -255,6 +273,12 @@ ${sharedCardCss}
       .page-header h1{font-size:20px;white-space:normal}
       .page-meta{justify-content:flex-start;flex-wrap:wrap;gap:8px;font-size:11px}
       .report{padding:18px 14px 44px}
+      .activity-toc{position:sticky;top:8px;z-index:80;margin:0 0 18px;background:#0b171cf5;backdrop-filter:blur(10px)}
+      .activity-toc summary{min-height:46px;padding:14px 15px;font-size:14px}
+      .activity-toc details[open]{max-height:min(72vh,620px);overflow:auto}
+      .activity-toc-links{grid-template-columns:1fr;gap:5px;padding:0 9px 10px}
+      .activity-nav-link{min-height:42px;padding:10px;font-size:14px}
+      .activity-block[id]{scroll-margin-top:12px}
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
@@ -284,6 +308,14 @@ ${sharedCardCss}
     </div>
   </header>
   <main class="report">
+    <nav class="activity-toc" id="activity-toc-nav" aria-label="Навигация по активностям">
+      <details id="activity-toc-details" open>
+        <summary id="activity-toc-summary">Перейти к активности</summary>
+        <div class="activity-toc-links">
+${activityNavLinks}
+        </div>
+      </details>
+    </nav>
     <div class="activity-list">
 ${cardsHtml}
     </div>
@@ -299,14 +331,14 @@ ${supportHtml}
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: ${JSON.stringify(support.title)},
         supportDescription: ${JSON.stringify(support.description)}, supportSberButton: ${JSON.stringify(support.buttonLabel)}, supportBoostyButton: ${JSON.stringify(support.boosty.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
         analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Посещения страницы: сегодня и всего',
-        steamGuide: 'Открыть руководство в Steam'
+        steamGuide: 'Открыть руководство в Steam', toc: 'К активностям'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
         supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: ${JSON.stringify(support.boosty.internationalButtonLabel)},
         analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page visits today and in total. Repeat loads and bots may increase the counter.',
-        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam'
+        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam', toc: 'Jump to an activity'
       }
     };
     const kindLabels = {
@@ -343,6 +375,8 @@ ${supportHtml}
     const cards = [...document.querySelectorAll('[data-activity-block]')];
     const progress = document.getElementById('completion-progress');
     const filter = document.getElementById('completion-filter');
+    const activityToc = document.getElementById('activity-toc-details');
+    const activityTocNav = document.getElementById('activity-toc-nav');
     const languageButtons = [...document.querySelectorAll('[data-language-button]')];
     const originalCards = new Map(cards.map((section) => [section.id, {
       title: section.querySelector('[data-card-title]')?.textContent ?? '',
@@ -453,14 +487,25 @@ ${supportHtml}
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
+      setText('activity-toc-summary', copy.toc);
+      activityTocNav?.setAttribute('aria-label', currentLanguage === 'en' ? 'Activity navigation' : 'Навигация по активностям');
+      document.getElementById('publication-chart-legend')?.setAttribute('aria-label', currentLanguage === 'en' ? 'Chart legend' : 'Легенда графика');
+      for (const link of document.querySelectorAll('[data-toc-title]')) {
+        const title = link.dataset[currentLanguage === 'en' ? 'tocTitleEn' : 'tocTitleRu'];
+        if (title) link.textContent = title;
+      }
       setText('publication-chart-title', currentLanguage === 'en' ? 'Audience trend' : chart.title);
-      setText('publication-chart-subtitle', currentLanguage === 'en' ? 'Latest successful public measurements: Steam unique visitors and GitHub guide views.' : chart.description);
+      setText('publication-chart-subtitle', currentLanguage === 'en'
+        ? 'Steam shows unique guide visitors. GitHub shows hits counted on this page, not unique visitors; repeat loads and bots may increase the total.'
+        : 'Steam показывает уникальных посетителей руководства. GitHub — срабатывания счётчика страницы, а не уникальных посетителей; повторы и боты могут увеличить итог.');
+      setText('chart-legend-github', (currentLanguage === 'en' ? 'GitHub page hits · ' : 'GitHub · ') + new Intl.NumberFormat(currentLanguage === 'en' ? 'en-US' : 'ru-RU').format(chart.githubViews));
+      setText('chart-legend-steam', (currentLanguage === 'en' ? 'Steam unique visitors · ' : 'Steam · ') + new Intl.NumberFormat(currentLanguage === 'en' ? 'en-US' : 'ru-RU').format(chart.steamViews));
       setText('publication-chart-note', currentLanguage === 'en'
         ? 'Latest measurement: ' + chart.latestDate + ' · Steam favorites: ' + chart.favorites + '. Values are recorded after successful public verification.'
         : 'Последний замер: ' + chart.latestDate + ' · Steam в избранном: ' + chart.favorites + '. Значения фиксируются после успешной публичной проверки.');
       document.getElementById('publication-chart-svg')?.setAttribute('aria-label', currentLanguage === 'en'
-        ? 'Visits: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; latest measurement ' + chart.latestDate
-        : 'Посещения: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; последний замер ' + chart.latestDate);
+        ? 'Steam unique guide visitors: ' + chart.steamViews + '; GitHub page-counter hits, not unique visitors: ' + chart.githubViews + '; latest measurement ' + chart.latestDate
+        : 'Уникальные посетители Steam: ' + chart.steamViews + '; срабатывания счётчика страницы GitHub, не уникальные посетители: ' + chart.githubViews + '; последний замер ' + chart.latestDate);
       document.getElementById('analytics-link')?.setAttribute('aria-label', copy.analyticsLink);
       document.getElementById('analytics-badge')?.setAttribute('alt', copy.analyticsImage);
       for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.languageButton === currentLanguage));
@@ -500,6 +545,13 @@ ${supportHtml}
     }
     filter.addEventListener('change', renderProgress);
     for (const button of languageButtons) button.addEventListener('click', () => applyLanguage(button.dataset.languageButton));
+    const tocViewport = window.matchMedia('(max-width: 760px)');
+    const syncTocDisclosure = () => { if (activityToc) activityToc.open = !tocViewport.matches; };
+    syncTocDisclosure();
+    tocViewport.addEventListener?.('change', syncTocDisclosure);
+    for (const link of document.querySelectorAll('.activity-nav-link')) {
+      link.addEventListener('click', () => { if (tocViewport.matches && activityToc) activityToc.open = false; });
+    }
     let savedLanguage = 'ru';
     try { savedLanguage = localStorage.getItem(languageStorageKey) || 'ru'; } catch {}
     applyLanguage(savedLanguage);

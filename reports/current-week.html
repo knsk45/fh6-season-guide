@@ -48,9 +48,20 @@
     .support-section .visit-stats-note{margin:10px auto 0;color:#7f9aa1;font-size:12px;line-height:1.45}
     .publication-chart{width:min(100%,700px);margin-top:26px;padding-top:22px;border-top:1px solid #29434b;text-align:left}
     .publication-chart h3{margin:0;color:#fff;font-size:17px;line-height:1.3}
-    .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
+    .publication-chart-subtitle{margin:8px 0 12px!important;color:#b8ccd1!important;font-size:13px!important;line-height:1.5!important}
+    .publication-chart-legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0 2px;color:#eef6f5;font-size:13px;font-weight:750}
+    .publication-chart-legend-item{display:inline-flex;align-items:center;gap:8px;min-height:24px}
+    .publication-chart-swatch{display:inline-block;width:24px;height:0;border-top:3px solid;border-radius:2px}.publication-chart-swatch.trend-github{border-color:#d9ff00;border-top-style:dashed}.publication-chart-swatch.trend-steam{border-color:#ff2f92}
     .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
-    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-legend text{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-legend-github text{fill:#d9ff00}.trend-legend-steam text{fill:#ff7bb8}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
+    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#9bb4ba;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.publication-chart-note{margin:8px 0 0!important;color:#9bb4ba!important;font-size:12px!important;line-height:1.5!important}
+    .activity-toc{margin:0 0 24px;border:1px solid #29434b;border-radius:14px;background:#0d1a1f;box-shadow:0 8px 22px #0003}
+    .activity-toc summary{padding:13px 16px;color:#d9ff00;font-size:15px;font-weight:800;cursor:pointer;list-style:none}
+    .activity-toc summary::-webkit-details-marker{display:none}.activity-toc summary:after{content:'＋';float:right;color:#b8ccd1}.activity-toc details[open]>summary:after{content:'−'}
+    .activity-toc-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;padding:0 12px 12px}
+    .activity-nav-link{display:flex;align-items:flex-start;gap:9px;min-width:0;padding:9px 10px;border:1px solid #20363c;border-radius:9px;color:#dce9e9;text-decoration:none;font-size:13px;line-height:1.35;transition:background .15s ease,border-color .15s ease}
+    .activity-nav-link:hover{border-color:#8fae00;background:#14272c}.activity-nav-link:focus-visible{outline:2px solid #d9ff00;outline-offset:2px}
+    .activity-nav-number{flex:0 0 auto;color:#d9ff00;font-variant-numeric:tabular-nums;font-weight:900}.activity-nav-title{min-width:0;overflow-wrap:anywhere}
+    .activity-block[id]{scroll-margin-top:116px}
     .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
@@ -59,6 +70,12 @@
       .page-header h1{font-size:20px;white-space:normal}
       .page-meta{justify-content:flex-start;flex-wrap:wrap;gap:8px;font-size:11px}
       .report{padding:18px 14px 44px}
+      .activity-toc{position:sticky;top:8px;z-index:80;margin:0 0 18px;background:#0b171cf5;backdrop-filter:blur(10px)}
+      .activity-toc summary{min-height:46px;padding:14px 15px;font-size:14px}
+      .activity-toc details[open]{max-height:min(72vh,620px);overflow:auto}
+      .activity-toc-links{grid-template-columns:1fr;gap:5px;padding:0 9px 10px}
+      .activity-nav-link{min-height:42px;padding:10px;font-size:14px}
+      .activity-block[id]{scroll-margin-top:12px}
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
@@ -82,12 +99,33 @@
     </div>
     <div class="page-meta">
       <span class="countdown"><span id="countdown-label">Заканчивается через</span> <strong id="season-countdown">—</strong></span>
-      <time class="updated" datetime="2026-09-27T09:02:30.0000000+07:00"><span id="updated-label">Обновлено:</span> 27.09.2026, 09:02</time>
+      <time class="updated" datetime="2026-09-27T10:54:34.0000000+07:00"><span id="updated-label">Обновлено:</span> 27.09.2026, 10:54</time>
       <span class="completion-progress" id="completion-progress" aria-live="polite">Готово: 0/14</span>
       <label class="completion-filter"><input id="completion-filter" type="checkbox"><span id="completion-filter-label">Только невыполненные</span></label>
     </div>
   </header>
   <main class="report">
+    <nav class="activity-toc" id="activity-toc-nav" aria-label="Навигация по активностям">
+      <details id="activity-toc-details" open>
+        <summary id="activity-toc-summary">Перейти к активности</summary>
+        <div class="activity-toc-links">
+<a class="activity-nav-link" href="#activity_01_weekly" data-toc-link="activity_01_weekly"><span class="activity-nav-number">01</span><span class="activity-nav-title" data-toc-title="activity_01_weekly" data-toc-title-ru="Еженедельное испытание" data-toc-title-en="Weekly Challenge">Еженедельное испытание</span></a>
+<a class="activity-nav-link" href="#activity_02_daily" data-toc-link="activity_02_daily"><span class="activity-nav-number">02</span><span class="activity-nav-title" data-toc-title="activity_02_daily" data-toc-title-ru="7 ежедневных заданий" data-toc-title-en="7 Daily Challenges">7 ежедневных заданий</span></a>
+<a class="activity-nav-link" href="#activity_03_photo" data-toc-link="activity_03_photo"><span class="activity-nav-number">03</span><span class="activity-nav-title" data-toc-title="activity_03_photo" data-toc-title-ru="#BambooPerfect" data-toc-title-en="#BambooPerfect">#BambooPerfect</span></a>
+<a class="activity-nav-link" href="#activity_04_treasure_hunt" data-toc-link="activity_04_treasure_hunt"><span class="activity-nav-number">04</span><span class="activity-nav-title" data-toc-title="activity_04_treasure_hunt" data-toc-title-ru="Treasure Hunt" data-toc-title-en="Treasure Hunt">Treasure Hunt</span></a>
+<a class="activity-nav-link" href="#activity_05_championship" data-toc-link="activity_05_championship"><span class="activity-nav-number">05</span><span class="activity-nav-title" data-toc-title="activity_05_championship" data-toc-title-ru="Country Pickups" data-toc-title-en="Country Pickups">Country Pickups</span></a>
+<a class="activity-nav-link" href="#activity_06_championship" data-toc-link="activity_06_championship"><span class="activity-nav-number">06</span><span class="activity-nav-title" data-toc-title="activity_06_championship" data-toc-title-ru="Cult Street" data-toc-title-en="Cult Street">Cult Street</span></a>
+<a class="activity-nav-link" href="#activity_07_pr" data-toc-link="activity_07_pr"><span class="activity-nav-number">07</span><span class="activity-nav-title" data-toc-title="activity_07_pr" data-toc-title-ru="Shimanoyama Drift Attack" data-toc-title-en="Shimanoyama Drift Attack">Shimanoyama Drift Attack</span></a>
+<a class="activity-nav-link" href="#activity_08_pr" data-toc-link="activity_08_pr"><span class="activity-nav-number">08</span><span class="activity-nav-title" data-toc-title="activity_08_pr" data-toc-title-ru="Azure Drive Danger Sign" data-toc-title-en="Azure Drive Danger Sign">Azure Drive Danger Sign</span></a>
+<a class="activity-nav-link" href="#activity_09_pr" data-toc-link="activity_09_pr"><span class="activity-nav-number">09</span><span class="activity-nav-title" data-toc-title="activity_09_pr" data-toc-title-ru="Tall Trees Speed Zone" data-toc-title-en="Tall Trees Speed Zone">Tall Trees Speed Zone</span></a>
+<a class="activity-nav-link" href="#activity_10_pr" data-toc-link="activity_10_pr"><span class="activity-nav-number">10</span><span class="activity-nav-title" data-toc-title="activity_10_pr" data-toc-title-ru="Sekibe Kaijo Trailblazer" data-toc-title-en="Sekibe Kaijo Trailblazer">Sekibe Kaijo Trailblazer</span></a>
+<a class="activity-nav-link" href="#activity_11_trial" data-toc-link="activity_11_trial"><span class="activity-nav-number">11</span><span class="activity-nav-title" data-toc-title="activity_11_trial" data-toc-title-ru="Winter Rallies" data-toc-title-en="Winter Rallies">Winter Rallies</span></a>
+<a class="activity-nav-link" href="#activity_12_horizon_play" data-toc-link="activity_12_horizon_play"><span class="activity-nav-number">12</span><span class="activity-nav-title" data-toc-title="activity_12_horizon_play" data-toc-title-ru="Speed Connection" data-toc-title-en="Speed Connection">Speed Connection</span></a>
+<a class="activity-nav-link" href="#activity_13_horizon_play" data-toc-link="activity_13_horizon_play"><span class="activity-nav-number">13</span><span class="activity-nav-title" data-toc-title="activity_13_horizon_play" data-toc-title-ru="Horizon Stunt Party" data-toc-title-en="Horizon Stunt Party">Horizon Stunt Party</span></a>
+<a class="activity-nav-link" href="#activity_14_monthly_rivals" data-toc-link="activity_14_monthly_rivals"><span class="activity-nav-number">14</span><span class="activity-nav-title" data-toc-title="activity_14_monthly_rivals" data-toc-title-ru="Monthly Rivals — Shimanoyama Sprint" data-toc-title-en="Monthly Rivals — Shimanoyama Sprint">Monthly Rivals — Shimanoyama Sprint</span></a>
+        </div>
+      </details>
+    </nav>
     <div class="activity-list">
 <section class="activity-block" id="activity_01_weekly" data-activity-block><article class="card card-vertical" data-activity-id="activity_01_weekly">
   <div class="wrap">
@@ -187,7 +225,7 @@
       <div class="eyebrow"><span class="kind-line"><span data-card-kind>pr</span></span><span class="points" data-card-points>2 очка</span></div>
       <h2><span class="number">08</span><span data-card-title>Azure Drive Danger Sign</span><button class="completion-toggle" type="button" data-completion-toggle aria-pressed="false" aria-label="Отметить активность 08 выполненной"></button></h2>
       <div class="card-detail" data-card-condition><span class="label" data-card-label="condition">Условие:</span> <span data-card-condition-text>Danger Sign Azure Dive: Великобритания, <span class="pi-badge pi-b" title="Класс B, PI 600"><span class="pi-class">B</span><span class="pi-score">600</span></span>, минимум 689,0 футов (210 м).</span></div>
-      <p data-card-how><span class="label" data-card-label="how">Как выполнить:</span> <span data-card-how-text>Разгонитесь по прямой траектории к трамплину; точное направление уточнит игровая плитка.</span></p>
+      <p data-card-how><span class="label" data-card-label="how">Как выполнить:</span> <span data-card-how-text>Разгонитесь по прямой траектории к трамплину. Игровая плитка подтверждает цель 689 футов; конкретное направление подъезда отдельно не проверено.</span></p>
       <p class="tune" data-card-tune><span class="label" data-card-label="tune">Автомобиль и тюнинг:</span> <span data-card-tune-text>2020 Land Rover Defender 110 X · <span class="pi-badge pi-b" title="Класс B, PI 600"><span class="pi-class">B</span><span class="pi-score">600</span></span> · <span class="share-code"><code>163 429 917</code></span></span></p>
       <div class="sources"><div class="provenance" data-provenance><span class="provenance-chip provenance-official">Условия: Forza</span><span class="provenance-chip provenance-community">Решение: сообщество</span></div><span data-card-sources><a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Winter-гайд сообщества: условия и тюнинг</a></span></div>
     </div>
@@ -294,24 +332,26 @@
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">Динамика аудитории</h3>
         <p class="publication-chart-subtitle" id="publication-chart-subtitle">Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.</p>
-        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 660 270" role="img" aria-label="Посещения: Steam 1222, GitHub 2157; последний замер 27.09.2026, 08:52">
-          <g class="trend-legend trend-legend-github"><line x1="52" x2="74" y1="20" y2="20" class="trend-line trend-github"></line><text x="82" y="24">GitHub 2 157</text></g>
-          <g class="trend-legend trend-legend-steam"><line x1="250" x2="272" y1="20" y2="20" class="trend-line trend-steam"></line><text x="280" y="24">Steam 1 222</text></g>
-          <line class="trend-grid" x1="44" x2="642" y1="228.0" y2="228.0"></line><text class="trend-axis-label" x="36" y="232.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="140.0" y2="140.0"></line><text class="trend-axis-label" x="36" y="144.0" text-anchor="end">1100</text><line class="trend-grid" x1="44" x2="642" y1="52.0" y2="52.0"></line><text class="trend-axis-label" x="36" y="56.0" text-anchor="end">2200</text>
-          <path class="trend-line trend-steam" d="M44.0,143.7 L64.6,142.2 L85.2,140.6 L105.9,139.3 L126.5,138.8 L147.1,138.8 L167.7,138.8 L188.3,138.8 L209.0,138.8 L229.6,137.9 L250.2,137.3 L270.8,136.6 L291.4,135.6 L312.1,134.8 L332.7,133.8 L353.3,133.1 L373.9,133.0 L394.6,133.0 L415.2,133.0 L435.8,132.3 L456.4,132.3 L477.0,132.2 L497.7,132.2 L518.3,131.4 L538.9,131.4 L559.5,130.2 L580.1,130.2 L600.8,130.2 L621.4,130.2 L642.0,130.2"></path>
-          <path class="trend-line trend-github" d="M44.0,109.9 L64.6,106.2 L85.2,99.9 L105.9,97.4 L126.5,96.2 L147.1,95.8 L167.7,95.7 L188.3,95.6 L209.0,95.5 L229.6,91.4 L250.2,87.4 L270.8,85.0 L291.4,82.8 L312.1,80.1 L332.7,77.1 L353.3,74.8 L373.9,74.1 L394.6,73.4 L415.2,73.4 L435.8,70.5 L456.4,70.2 L477.0,70.0 L497.7,69.8 L518.3,62.6 L538.9,62.6 L559.5,55.8 L580.1,55.7 L600.8,55.6 L621.4,55.6 L642.0,55.4"></path>
-          <circle class="trend-point trend-steam" cx="642.0" cy="130.2" r="4"></circle>
-          <circle class="trend-point trend-github" cx="642.0" cy="55.4" r="4"></circle>
-          <text class="trend-axis-label" x="44.0" y="256" text-anchor="middle">15.09</text><text class="trend-axis-label" x="332.7" y="256" text-anchor="middle">24.09</text><text class="trend-axis-label" x="642.0" y="256" text-anchor="middle">27.09</text>
+        <div class="publication-chart-legend" id="publication-chart-legend" role="group" aria-label="Легенда графика">
+          <span class="publication-chart-legend-item"><span class="publication-chart-swatch trend-github" aria-hidden="true"></span><span id="chart-legend-github">GitHub · 2 166</span></span>
+          <span class="publication-chart-legend-item"><span class="publication-chart-swatch trend-steam" aria-hidden="true"></span><span id="chart-legend-steam">Steam · 1 222</span></span>
+        </div>
+        <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 660 270" role="img" aria-label="Steam — уникальные посетители: 1222; GitHub — срабатывания счётчика страницы: 2166; последний замер 27.09.2026, 10:51">
+          <line class="trend-grid" x1="44" x2="642" y1="228.0" y2="228.0"></line><text class="trend-axis-label" x="36" y="232.0" text-anchor="end">0</text><line class="trend-grid" x1="44" x2="642" y1="125.0" y2="125.0"></line><text class="trend-axis-label" x="36" y="129.0" text-anchor="end">1100</text><line class="trend-grid" x1="44" x2="642" y1="22.0" y2="22.0"></line><text class="trend-axis-label" x="36" y="26.0" text-anchor="end">2200</text>
+          <path class="trend-line trend-steam" d="M44.0,125.7 L64.6,124.2 L85.2,123.6 L105.9,123.6 L126.5,123.6 L147.1,123.6 L167.7,123.6 L188.3,122.6 L209.0,121.8 L229.6,121.0 L250.2,119.8 L270.8,118.9 L291.4,117.7 L312.1,116.9 L332.7,116.8 L353.3,116.8 L373.9,116.8 L394.6,116.0 L415.2,116.0 L435.8,115.9 L456.4,115.9 L477.0,114.9 L497.7,114.9 L518.3,113.6 L538.9,113.6 L559.5,113.6 L580.1,113.6 L600.8,113.6 L621.4,113.6 L642.0,113.6"></path>
+          <path class="trend-line trend-github" d="M44.0,78.1 L64.6,75.1 L85.2,73.8 L105.9,73.2 L126.5,73.1 L147.1,73.0 L167.7,72.9 L188.3,68.1 L209.0,63.4 L229.6,60.6 L250.2,58.1 L270.8,54.9 L291.4,51.4 L312.1,48.7 L332.7,47.8 L353.3,47.1 L373.9,47.0 L394.6,43.6 L415.2,43.3 L435.8,43.1 L456.4,42.9 L477.0,34.4 L497.7,34.4 L518.3,26.5 L538.9,26.3 L559.5,26.2 L580.1,26.2 L600.8,26.0 L621.4,25.9 L642.0,25.2"></path>
+          <circle class="trend-point trend-steam" cx="642.0" cy="113.6" r="4"></circle>
+          <circle class="trend-point trend-github" cx="642.0" cy="25.2" r="4"></circle>
+          <text class="trend-axis-label" x="44.0" y="256" text-anchor="middle">17.09</text><text class="trend-axis-label" x="332.7" y="256" text-anchor="middle">24.09</text><text class="trend-axis-label" x="642.0" y="256" text-anchor="middle">27.09</text>
         </svg>
-        <p class="publication-chart-note" id="publication-chart-note">Последний замер: 27.09.2026, 08:52 · Steam в избранном: 77. Значения фиксируются после успешной публичной проверки.</p>
+        <p class="publication-chart-note" id="publication-chart-note">Последний замер: 27.09.2026, 10:51 · Steam в избранном: 77. Значения фиксируются после успешной публичной проверки.</p>
       </section>
       <a class="steam-guide-link" data-steam-guide-link id="steam-guide-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3787739730" target="_blank" rel="noopener noreferrer">Открыть руководство в Steam</a>
     </section>
   </main>
   <script>
   (() => {
-    const englishLocale = {"reportTitle":"Forza Horizon 6: Series 5 \"British Automotive\" — Winter Guide","seasonDisplay":"Winter","activities":{"activity_01_weekly":{"title":"Weekly Challenge","points":"5 points","conditionHtml":"In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.","howHtml":"Chapters count only in order. For the two Road Races, run a one-lap Custom Race at Shimanoyama Circuit twice.","tuneHtml":"2010 Jaguar C-X75 · 110 140 996"},"activity_02_daily":{"title":"7 Daily Challenges","points":"7 × 1 point","conditionHtml":"\u003col>\u003cli>\u003cstrong>24 Sep:\u003c/strong> park at any Car Meet.\u003c/li>\u003cli>\u003cstrong>25 Sep:\u003c/strong> earn 3 Speed Skills.\u003c/li>\u003cli>\u003cstrong>26 Sep:\u003c/strong> photograph any car.\u003c/li>\u003cli>\u003cstrong>27 Sep:\u003c/strong> spend 15,000 CR upgrading any car.\u003c/li>\u003cli>\u003cstrong>28 Sep:\u003c/strong> use a Wheelspin or Super Wheelspin.\u003c/li>\u003cli>\u003cstrong>29 Sep:\u003c/strong> earn at least 1 star at a Speed Trap.\u003c/li>\u003cli>\u003cstrong>30 Sep:\u003c/strong> complete 1 lap at any Time Attack circuit.\u003c/li>\u003c/ol> Reward for each: 5,000 CR.","howHtml":"Each Daily opens at 21:30 Krasnoyarsk time and remains available for 7 days.","tuneHtml":"No tune required."},"activity_03_photo":{"title":"#BambooPerfect","points":"2 points","conditionHtml":"Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.","howHtml":"Go to the bamboo grove by the dirt road on the Ito/Minamino border; use Arashiyama Run Speed Zone as a landmark. Open Photo Mode with a McLaren in frame, then save the photo.","tuneHtml":"No tune required."},"activity_04_treasure_hunt":{"title":"Treasure Hunt","points":"3 points","conditionHtml":"Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.","howHtml":"Look for the chest by the southwestern edge of Shimanoyama, west of Tokyo City. Smash it; there are no other requirements.","tuneHtml":"No tune required."},"activity_05_championship":{"title":"Country Pickups","points":"5 points","conditionHtml":"Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.","howHtml":"Complete three Cross Country races. Win this first to receive the Jaguar C-X75 needed for the Weekly Challenge without buying it.","tuneHtml":"2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520"},"activity_06_championship":{"title":"Cult Street","points":"5 points","conditionHtml":"Cult Street Championship: Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.","howHtml":"Finish all three night Street races: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent; keep clean checkpoint lines.","tuneHtml":"1968 Abarth 595 esseessee · D 400 · 174 737 970"},"activity_07_pr":{"title":"Shimanoyama Drift Attack","points":"3 points","conditionHtml":"Shimanoyama Drift Attack: United Kingdom, A 700, at least 80,000 points.","howHtml":"Score across the full Drift Attack distance and avoid breaking your drift chain.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_08_pr":{"title":"Azure Drive Danger Sign","points":"2 points","conditionHtml":"Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).","howHtml":"Build speed on a straight approach to the ramp; the exact approach will be confirmed by the in-game tile.","tuneHtml":"2020 Land Rover Defender 110 X · B 600 · 163 429 917"},"activity_09_pr":{"title":"Tall Trees Speed Zone","points":"2 points","conditionHtml":"Tall Trees Speed Zone: United Kingdom, A 700, at least 70.0 mph (112.7 km/h).","howHtml":"Build speed before the entry and keep a smooth line through the zone.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_10_pr":{"title":"Sekibe Kaijo Trailblazer","points":"2 points","conditionHtml":"Sekibe Kaijo Trailblazer: United Kingdom, A 700, at least 42 seconds remaining.","howHtml":"Start with a speed reserve and follow the shortest safe route to the finish.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_11_trial":{"title":"Winter Rallies","points":"10 points","conditionHtml":"The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.","howHtml":"Drive cleanly as a team and do not push teammates off their line.","tuneHtml":"1984 Opel Manta 400 · A 700 · 930 661 576"},"activity_12_horizon_play":{"title":"Speed Connection","points":"3 points","conditionHtml":"In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.","howHtml":"Start a Horizon Racing event and maintain a chain of speed skills.","tuneHtml":"No tune required."},"activity_13_horizon_play":{"title":"Horizon Stunt Party","points":"3 points","conditionHtml":"Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.","howHtml":"Reach the event results screen; leaving early does not count.","tuneHtml":"No tune required."},"activity_14_monthly_rivals":{"title":"Monthly Rivals — Shimanoyama Sprint","points":"4 points","conditionHtml":"Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.","howHtml":"Finish the lap without collisions or penalties.","tuneHtml":"2025 McLaren W1 — no mandatory tune."}}};
+    const englishLocale = {"reportTitle":"Forza Horizon 6: Series 5 \"British Automotive\" — Winter Guide","seasonDisplay":"Winter","activities":{"activity_01_weekly":{"title":"Weekly Challenge","points":"5 points","conditionHtml":"In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.","howHtml":"Chapters count only in order. For the two Road Races, run a one-lap Custom Race at Shimanoyama Circuit twice.","tuneHtml":"2010 Jaguar C-X75 · 110 140 996"},"activity_02_daily":{"title":"7 Daily Challenges","points":"7 × 1 point","conditionHtml":"\u003col>\u003cli>\u003cstrong>24 Sep:\u003c/strong> park at any Car Meet.\u003c/li>\u003cli>\u003cstrong>25 Sep:\u003c/strong> earn 3 Speed Skills.\u003c/li>\u003cli>\u003cstrong>26 Sep:\u003c/strong> photograph any car.\u003c/li>\u003cli>\u003cstrong>27 Sep:\u003c/strong> spend 15,000 CR upgrading any car.\u003c/li>\u003cli>\u003cstrong>28 Sep:\u003c/strong> use a Wheelspin or Super Wheelspin.\u003c/li>\u003cli>\u003cstrong>29 Sep:\u003c/strong> earn at least 1 star at a Speed Trap.\u003c/li>\u003cli>\u003cstrong>30 Sep:\u003c/strong> complete 1 lap at any Time Attack circuit.\u003c/li>\u003c/ol> Reward for each: 5,000 CR.","howHtml":"Each Daily opens at 21:30 Krasnoyarsk time and remains available for 7 days.","tuneHtml":"No tune required."},"activity_03_photo":{"title":"#BambooPerfect","points":"2 points","conditionHtml":"Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.","howHtml":"Go to the bamboo grove by the dirt road on the Ito/Minamino border; use Arashiyama Run Speed Zone as a landmark. Open Photo Mode with a McLaren in frame, then save the photo.","tuneHtml":"No tune required."},"activity_04_treasure_hunt":{"title":"Treasure Hunt","points":"3 points","conditionHtml":"Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.","howHtml":"Look for the chest by the southwestern edge of Shimanoyama, west of Tokyo City. Smash it; there are no other requirements.","tuneHtml":"No tune required."},"activity_05_championship":{"title":"Country Pickups","points":"5 points","conditionHtml":"Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.","howHtml":"Complete three Cross Country races. Win this first to receive the Jaguar C-X75 needed for the Weekly Challenge without buying it.","tuneHtml":"2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520"},"activity_06_championship":{"title":"Cult Street","points":"5 points","conditionHtml":"Cult Street Championship: Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.","howHtml":"Finish all three night Street races: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent; keep clean checkpoint lines.","tuneHtml":"1968 Abarth 595 esseessee · D 400 · 174 737 970"},"activity_07_pr":{"title":"Shimanoyama Drift Attack","points":"3 points","conditionHtml":"Shimanoyama Drift Attack: United Kingdom, A 700, at least 80,000 points.","howHtml":"Score across the full Drift Attack distance and avoid breaking your drift chain.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_08_pr":{"title":"Azure Drive Danger Sign","points":"2 points","conditionHtml":"Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).","howHtml":"Build speed on a straight approach to the ramp. The game tile confirms the 689 ft target; the exact approach direction has not been independently verified.","tuneHtml":"2020 Land Rover Defender 110 X · B 600 · 163 429 917"},"activity_09_pr":{"title":"Tall Trees Speed Zone","points":"2 points","conditionHtml":"Tall Trees Speed Zone: United Kingdom, A 700, at least 70.0 mph (112.7 km/h).","howHtml":"Build speed before the entry and keep a smooth line through the zone.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_10_pr":{"title":"Sekibe Kaijo Trailblazer","points":"2 points","conditionHtml":"Sekibe Kaijo Trailblazer: United Kingdom, A 700, at least 42 seconds remaining.","howHtml":"Start with a speed reserve and follow the shortest safe route to the finish.","tuneHtml":"1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"},"activity_11_trial":{"title":"Winter Rallies","points":"10 points","conditionHtml":"The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.","howHtml":"Drive cleanly as a team and do not push teammates off their line.","tuneHtml":"1984 Opel Manta 400 · A 700 · 930 661 576"},"activity_12_horizon_play":{"title":"Speed Connection","points":"3 points","conditionHtml":"In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.","howHtml":"Start a Horizon Racing event and maintain a chain of speed skills.","tuneHtml":"No tune required."},"activity_13_horizon_play":{"title":"Horizon Stunt Party","points":"3 points","conditionHtml":"Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.","howHtml":"Reach the event results screen; leaving early does not count.","tuneHtml":"No tune required."},"activity_14_monthly_rivals":{"title":"Monthly Rivals — Shimanoyama Sprint","points":"4 points","conditionHtml":"Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.","howHtml":"Finish the lap without collisions or penalties.","tuneHtml":"2025 McLaren W1 — no mandatory tune."}}};
     const languageStorageKey = 'fh6-guide-language';
     const labels = {
       ru: {
@@ -319,14 +359,14 @@
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: "Сказать Спасибо (поддержать проект)",
         supportDescription: "Если сводка помогла сэкономить время, проект можно поддержать через Сбер / СБП или Boosty.", supportSberButton: "Поддержать проект через Сбербанк", supportBoostyButton: "Поддержать через Boosty", analyticsTitle: "Статистика посещений",
         analyticsDescription: "Посещения страницы: сегодня и всего. Повторные загрузки и обращения ботов могут увеличивать счётчик.", analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Посещения страницы: сегодня и всего',
-        steamGuide: 'Открыть руководство в Steam'
+        steamGuide: 'Открыть руководство в Steam', toc: 'К активностям'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
         supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: "Support internationally via Boosty",
         analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page visits today and in total. Repeat loads and bots may increase the counter.',
-        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam'
+        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam', toc: 'Jump to an activity'
       }
     };
     const kindLabels = {
@@ -343,7 +383,7 @@
       'Официальная карта Forza Labs': 'Official Forza Labs map', 'Forza Horizon Hub': 'Forza Horizon Hub',
       'Reddit: ForzaHorizon6': 'Reddit: ForzaHorizon6'
     };
-    const chart = {"title":"Динамика аудитории","description":"Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.","latestDate":"27.09.2026, 08:52","steamViews":1222,"githubViews":2157,"favorites":77};
+    const chart = {"title":"Динамика аудитории","description":"Последние успешные публичные замеры: уникальные посетители Steam и просмотры сводки GitHub. Избранное Steam показано отдельным числом, так как это другой масштаб.","latestDate":"27.09.2026, 10:51","steamViews":1222,"githubViews":2166,"favorites":77};
     const output = document.getElementById('season-countdown');
     const deadline = Date.parse("2026-10-01T21:30:00+07:00");
     function tick() {
@@ -363,6 +403,8 @@
     const cards = [...document.querySelectorAll('[data-activity-block]')];
     const progress = document.getElementById('completion-progress');
     const filter = document.getElementById('completion-filter');
+    const activityToc = document.getElementById('activity-toc-details');
+    const activityTocNav = document.getElementById('activity-toc-nav');
     const languageButtons = [...document.querySelectorAll('[data-language-button]')];
     const originalCards = new Map(cards.map((section) => [section.id, {
       title: section.querySelector('[data-card-title]')?.textContent ?? '',
@@ -473,14 +515,25 @@
       setText('analytics-title', copy.analyticsTitle);
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
+      setText('activity-toc-summary', copy.toc);
+      activityTocNav?.setAttribute('aria-label', currentLanguage === 'en' ? 'Activity navigation' : 'Навигация по активностям');
+      document.getElementById('publication-chart-legend')?.setAttribute('aria-label', currentLanguage === 'en' ? 'Chart legend' : 'Легенда графика');
+      for (const link of document.querySelectorAll('[data-toc-title]')) {
+        const title = link.dataset[currentLanguage === 'en' ? 'tocTitleEn' : 'tocTitleRu'];
+        if (title) link.textContent = title;
+      }
       setText('publication-chart-title', currentLanguage === 'en' ? 'Audience trend' : chart.title);
-      setText('publication-chart-subtitle', currentLanguage === 'en' ? 'Latest successful public measurements: Steam unique visitors and GitHub guide views.' : chart.description);
+      setText('publication-chart-subtitle', currentLanguage === 'en'
+        ? 'Steam shows unique guide visitors. GitHub shows hits counted on this page, not unique visitors; repeat loads and bots may increase the total.'
+        : 'Steam показывает уникальных посетителей руководства. GitHub — срабатывания счётчика страницы, а не уникальных посетителей; повторы и боты могут увеличить итог.');
+      setText('chart-legend-github', (currentLanguage === 'en' ? 'GitHub page hits · ' : 'GitHub · ') + new Intl.NumberFormat(currentLanguage === 'en' ? 'en-US' : 'ru-RU').format(chart.githubViews));
+      setText('chart-legend-steam', (currentLanguage === 'en' ? 'Steam unique visitors · ' : 'Steam · ') + new Intl.NumberFormat(currentLanguage === 'en' ? 'en-US' : 'ru-RU').format(chart.steamViews));
       setText('publication-chart-note', currentLanguage === 'en'
         ? 'Latest measurement: ' + chart.latestDate + ' · Steam favorites: ' + chart.favorites + '. Values are recorded after successful public verification.'
         : 'Последний замер: ' + chart.latestDate + ' · Steam в избранном: ' + chart.favorites + '. Значения фиксируются после успешной публичной проверки.');
       document.getElementById('publication-chart-svg')?.setAttribute('aria-label', currentLanguage === 'en'
-        ? 'Visits: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; latest measurement ' + chart.latestDate
-        : 'Посещения: Steam ' + chart.steamViews + ', GitHub ' + chart.githubViews + '; последний замер ' + chart.latestDate);
+        ? 'Steam unique guide visitors: ' + chart.steamViews + '; GitHub page-counter hits, not unique visitors: ' + chart.githubViews + '; latest measurement ' + chart.latestDate
+        : 'Уникальные посетители Steam: ' + chart.steamViews + '; срабатывания счётчика страницы GitHub, не уникальные посетители: ' + chart.githubViews + '; последний замер ' + chart.latestDate);
       document.getElementById('analytics-link')?.setAttribute('aria-label', copy.analyticsLink);
       document.getElementById('analytics-badge')?.setAttribute('alt', copy.analyticsImage);
       for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.languageButton === currentLanguage));
@@ -520,6 +573,13 @@
     }
     filter.addEventListener('change', renderProgress);
     for (const button of languageButtons) button.addEventListener('click', () => applyLanguage(button.dataset.languageButton));
+    const tocViewport = window.matchMedia('(max-width: 760px)');
+    const syncTocDisclosure = () => { if (activityToc) activityToc.open = !tocViewport.matches; };
+    syncTocDisclosure();
+    tocViewport.addEventListener?.('change', syncTocDisclosure);
+    for (const link of document.querySelectorAll('.activity-nav-link')) {
+      link.addEventListener('click', () => { if (tocViewport.matches && activityToc) activityToc.open = false; });
+    }
     let savedLanguage = 'ru';
     try { savedLanguage = localStorage.getItem(languageStorageKey) || 'ru'; } catch {}
     applyLanguage(savedLanguage);

@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-27T09:02:30+07:00",
+  "lastContentUpdate": "2026-09-27T10:54:34+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -225,7 +225,7 @@
       "title": "Azure Drive Danger Sign",
       "points": "2 очка",
       "conditionHtml": "Danger Sign Azure Dive: Великобритания, B 600, минимум 689,0 футов (210 м).",
-      "howHtml": "Разгонитесь по прямой траектории к трамплину; точное направление уточнит игровая плитка.",
+      "howHtml": "Разгонитесь по прямой траектории к трамплину. Игровая плитка подтверждает цель 689 футов; конкретное направление подъезда отдельно не проверено.",
       "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
       "visual": {
@@ -466,7 +466,7 @@
           "title": "Azure Drive Danger Sign",
           "points": "2 points",
           "conditionHtml": "Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).",
-          "howHtml": "Build speed on a straight approach to the ramp; the exact approach will be confirmed by the in-game tile.",
+          "howHtml": "Build speed on a straight approach to the ramp. The game tile confirms the 689 ft target; the exact approach direction has not been independently verified.",
           "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917"
         },
         "activity_09_pr": {
