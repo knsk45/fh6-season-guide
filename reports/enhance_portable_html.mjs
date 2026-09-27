@@ -309,8 +309,11 @@ ${supportHtml}
       }
     };
     const kindLabels = {
-      en: { weekly: 'Weekly Challenge', daily: 'Daily Challenges', photo: 'Photo Challenge', treasure: 'Treasure Hunt', championship: 'Seasonal Championship', pr: 'PR Stunt', trial: 'The Trial', 'horizon-play': 'Horizon Play', monthly: 'Monthly Rivals' }
+      ru: { weekly: 'Еженедельное испытание', daily: 'Ежедневные задания', photo: 'Фотоиспытание', treasure_hunt: 'Охота за сокровищами', championship: 'Сезонный чемпионат', pr: 'PR-испытание', trial: 'The Trial', horizon_play: 'Horizon Play', monthly_rivals: 'Monthly Rivals' },
+      en: { weekly: 'Weekly Challenge', daily: 'Daily Challenges', photo: 'Photo Challenge', treasure_hunt: 'Treasure Hunt', championship: 'Seasonal Championship', pr: 'PR Stunt', trial: 'The Trial', horizon_play: 'Horizon Play', monthly_rivals: 'Monthly Rivals' }
     };
+    const readableKind = (kind, language) => kindLabels[language][kind] ?? String(kind || '')
+      .replace(/[_-]+/g, ' ').trim().replace(/\b\w/g, letter => letter.toUpperCase());
     const provenanceLabels = {
       'Условия: Forza': 'Requirements: Forza', 'Решение: сообщество': 'Solution: community', 'Тюнинг: сообщество': 'Tune: community', 'Плитка: нужен скриншот': 'Tile: screenshot needed'
     };
@@ -466,7 +469,7 @@ ${supportHtml}
         section.querySelector('[data-card-title]')?.replaceChildren(document.createTextNode(translated?.title ?? original.title));
         section.querySelector('[data-card-points]')?.replaceChildren(document.createTextNode(translated?.points ?? original.points));
         const kind = section.querySelector('[data-card-kind]');
-        if (kind) kind.textContent = currentLanguage === 'en' ? (kindLabels.en[activityKinds[section.id]] ?? original.kind) : original.kind;
+        if (kind) kind.textContent = readableKind(activityKinds[section.id], currentLanguage);
         const condition = section.querySelector('[data-card-condition-text]'); if (condition) { condition.innerHTML = translated?.conditionHtml ?? original.conditionHtml; formatPiBadges(condition); }
         const how = section.querySelector('[data-card-how-text]'); if (how) { how.innerHTML = translated?.howHtml ?? original.howHtml; formatPiBadges(how); }
         const tune = section.querySelector('[data-card-tune-text]'); if (tune) { tune.innerHTML = translated?.tuneHtml ?? original.tuneHtml; formatPiBadges(tune); formatShareCodes(tune); }
