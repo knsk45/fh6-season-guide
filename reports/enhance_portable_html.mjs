@@ -106,8 +106,8 @@ function escapeHtml(value) {
 function publicationChartHtml(dataset) {
   const rows = dataset.rows;
   const width = 660;
-  const height = 244;
-  const pad = { left: 44, right: 18, top: 24, bottom: 42 };
+  const height = 270;
+  const pad = { left: 44, right: 18, top: 52, bottom: 42 };
   const plotWidth = width - pad.left - pad.right;
   const plotHeight = height - pad.top - pad.bottom;
   const values = rows.flatMap((row) => [Number(row.steamViews), Number(row.githubViews)]);
@@ -123,18 +123,19 @@ function publicationChartHtml(dataset) {
   const gridValues = [0, Math.round(scaleMax / 2), scaleMax];
   const grid = gridValues.map((value) => `<line class="trend-grid" x1="${pad.left}" x2="${width - pad.right}" y1="${y(value).toFixed(1)}" y2="${y(value).toFixed(1)}"></line><text class="trend-axis-label" x="${pad.left - 8}" y="${(y(value) + 4).toFixed(1)}" text-anchor="end">${value}</text>`).join('');
   const latestDate = new Intl.DateTimeFormat('ru-RU', { timeZone: 'Asia/Krasnoyarsk', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(last.collectedAt));
+  const formatCount = (value) => new Intl.NumberFormat('ru-RU').format(Number(value));
   return `
       <section class="publication-chart" data-publication-chart aria-labelledby="publication-chart-title">
         <h3 id="publication-chart-title">${escapeHtml(dataset.title)}</h3>
         <p class="publication-chart-subtitle" id="publication-chart-subtitle">${escapeHtml(dataset.description)}</p>
         <svg class="publication-chart-svg" id="publication-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Посещения: Steam ${last.steamViews}, GitHub ${last.githubViews}; последний замер ${escapeHtml(latestDate)}">
+          <g class="trend-legend trend-legend-github"><line x1="52" x2="74" y1="20" y2="20" class="trend-line trend-github"></line><text x="82" y="24">GitHub ${formatCount(last.githubViews)}</text></g>
+          <g class="trend-legend trend-legend-steam"><line x1="250" x2="272" y1="20" y2="20" class="trend-line trend-steam"></line><text x="280" y="24">Steam ${formatCount(last.steamViews)}</text></g>
           ${grid}
           <path class="trend-line trend-steam" d="${path('steamViews')}"></path>
           <path class="trend-line trend-github" d="${path('githubViews')}"></path>
           <circle class="trend-point trend-steam" cx="${x(rows.length - 1).toFixed(1)}" cy="${y(last.steamViews).toFixed(1)}" r="4"></circle>
           <circle class="trend-point trend-github" cx="${x(rows.length - 1).toFixed(1)}" cy="${y(last.githubViews).toFixed(1)}" r="4"></circle>
-          <text class="trend-direct-label trend-steam-label" x="${(x(rows.length - 1) - 8).toFixed(1)}" y="${(y(last.steamViews) - 9).toFixed(1)}" text-anchor="end">Steam ${last.steamViews}</text>
-          <text class="trend-direct-label trend-github-label" x="${(x(rows.length - 1) - 8).toFixed(1)}" y="${(y(last.githubViews) + 17).toFixed(1)}" text-anchor="end">GitHub ${last.githubViews}</text>
           ${labels}
         </svg>
         <p class="publication-chart-note" id="publication-chart-note">Последний замер: ${escapeHtml(latestDate)} · Steam в избранном: ${last.steamFavorites}. Значения фиксируются после успешной публичной проверки.</p>
@@ -245,7 +246,7 @@ ${sharedCardCss}
     .publication-chart h3{margin:0;color:#fff;font-size:17px;line-height:1.3}
     .publication-chart-subtitle{margin:8px 0 12px!important;color:#8ea8ae!important;font-size:12px!important;line-height:1.45!important}
     .publication-chart-svg{display:block;width:100%;height:auto;overflow:visible}
-    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-direct-label{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-steam-label{fill:#ff7bb8}.trend-github-label{fill:#d9ff00}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
+    .trend-grid{stroke:#29434b;stroke-width:1}.trend-axis-label{fill:#7f9aa1;font-size:11px;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-line{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.trend-steam{stroke:#ff2f92}.trend-github{stroke:#d9ff00;stroke-dasharray:7 5}.trend-point{stroke:#071014;stroke-width:2}.trend-legend text{font-size:12px;font-weight:800;font-family:Inter,Segoe UI,Arial,sans-serif}.trend-legend-github text{fill:#d9ff00}.trend-legend-steam text{fill:#ff7bb8}.publication-chart-note{margin:8px 0 0!important;color:#7f9aa1!important;font-size:12px!important;line-height:1.45!important}
     .steam-guide-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:22px;padding:0 20px;border:1px solid #4b7690;border-radius:12px;color:#d9ff00!important;font-weight:750;text-decoration:none;background:#0e2025;transition:transform .15s ease,border-color .15s ease}.steam-guide-link:hover{border-color:#d9ff00;transform:translateY(-1px)}
     .support-button:focus-visible,.support-qr-link:focus-visible,.visit-stats-link:focus-visible{outline:3px solid #d9ff00;outline-offset:4px}
     @media(max-width:760px){
