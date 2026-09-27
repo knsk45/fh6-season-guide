@@ -1850,3 +1850,30 @@
 | `forza_labs_map` | no_current_item: Interactive Map открыта; отдельная актуальная игровая плитка Monthly Rivals не найдена; промо-постер трассы не использован. |
 | `escorenews_fh6` | checked: индекс не открылся, но текущие статьи Winter Photo Challenge и Treasure Hunt от 24 сентября проверены напрямую; только для карт и маршрутов. |
 | `dungg_playlist` | unavailable: страница YouTube-плейлиста не загрузилась через веб-проверку; свежий Winter-выпуск подтвердить нельзя. |
+
+## 2026-09-27T08:14:22+07:00 — ежедневная проверка Series 5 Winter и Steam-кодов
+
+- Живая официальная Festival Playlist повторно подтверждает `British Automotive — Winter` (24 сентября — 1 октября 2026); состояние остаётся той же неделей, дедлайн `2026-10-01T21:30:00+07:00`. Новые подтверждённые факты карточек или решений для переноса в state не выявлены; `openItems` не изменены.
+- Для полного английского списка условий использован свежий Winter Information Thread r/forza от 24 сентября; гайд r/ForzaHorizon6 от 24 сентября подтверждает текущие условия, а гайды по тюнингу от 25 сентября сверены как свежие community evidence. В r/ForzaTune свежую отдельную FH6-публикацию текущей недели подтвердить не удалось; коды из устаревших публикаций не переносились.
+- Повторная визуальная сверка состояния: 13 отдельных игровых плиток (community; оригиналы пользовательских скриншотов 26 сентября и точные локальные кропы), 0 confirmed, 0 preliminary; Daily намеренно текстовая карточка без визуала (1 missing по контракту, скриншот не требуется). Новых пригодных текущенедельных плиток сверх пользовательских английских скриншотов не найдено.
+- По запросу пользователя изменён только формат Steam-кода: непосредственно после последней цифры share code точка не выводится. Исправлено в общем RU/EN-рендерере и добавлено в правила проекта. Оба Steam-файла пересозданы; публикация в Steam не повторялась, так как предыдущая отправка русского раздела получила `Failure code: 15` и Steam показывал автоматическую проверку содержимого.
+- Visual inventory: `confirmed=0, community=13, preliminary=0, missing=1` (Daily — намеренно текстовый; отдельной незакрытой плитки нет).
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: Category:Series_(FH6) недоступна через браузерную проверку; старые решения не использовались. |
+| `fandom_current` | unavailable: корень Fandom вернул HTTP 402; старые решения и визуалы не использовались. |
+| `forza_playlist` | checked: [официальная Festival Playlist](https://forza.net/fh6playlists) открыта сегодня; подтверждает British Automotive — Winter, английские названия, порядок, Weekly, Daily, Monthly Rivals и дедлайн 1 октября. |
+| `forza_news` | no_current_item: официальный индекс открыт; отдельной новости Playlist за текущую неделю не обнаружено. |
+| `forza_support_release_notes` | unavailable: раздел release notes не открылся напрямую; доступная последняя FH6-запись — 7 сентября, новой недели/патча нет. |
+| `forza_support_known_issues` | no_current_item: официальная страница открылась; новой записи текущей недели, меняющей условия проверенных карточек, не обнаружено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую страницу Forza; актуального weekly-анонса нет. |
+| `reddit_forzahorizon` | checked: [Winter breakdown Series 5](https://www.reddit.com/r/ForzaHorizon/comments/1wp1p0o/fh6_series_5_winter_breakdown_and_rewards/) от 24 сентября подтверждает активности и награды. |
+| `reddit_forzahorizon6` | checked: [Winter playlist guide](https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/) от 24 сентября и community tuning guide от 25 сентября проверены. |
+| `reddit_forza` | checked: [Winter Information Thread](https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/) от 24 сентября содержит полный список активностей и сезонные награды. |
+| `reddit_forzatune` | no_current_item: subreddit проверен; отдельной публикации тюнингов FH6 за текущую неделю не найдено. Свежие коды из соседних subreddit отдельно сверены, не приписаны этому источнику. |
+| `forza_horizon_hub` | no_current_item: сайт открылся, но свежего подтверждения карточек Series 5 Winter для изменений state не обнаружено. |
+| `forza_labs_collector` | no_current_item: Collector Tool открылся; отдельного нового Winter collectible-решения или игровой плитки нет. |
+| `forza_labs_map` | no_current_item: Interactive Map открылась; самостоятельной точной игровой плитки для этой недели нет. |
+| `escorenews_fh6` | unavailable: индекс Escorenews не открылся сегодня; старые карты не использовались как новое подтверждение. |
+| `dungg_playlist` | unavailable: YouTube playlist недоступен в браузерной проверке; выпуск текущей недели подтвердить нельзя. |

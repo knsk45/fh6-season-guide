@@ -105,6 +105,9 @@ foreach ($Activity in $State.activities) {
         $code = '{0} {1} {2}' -f $digits.Substring(0,3), $digits.Substring(3,3), $digits.Substring(6,3)
         return $code
     })
+    # Leave the final tuning code bare: trailing punctuation makes the
+    # selectable code harder to scan and copy from Steam.
+    $Tune = [regex]::Replace($Tune, '(?<code>(?<![0-9])[0-9]{3} [0-9]{3} [0-9]{3})\.$', '$1')
 
     # The localized title already identifies the activity; remove a repeated
     # leading title from its requirement sentence without losing the actual rule.
