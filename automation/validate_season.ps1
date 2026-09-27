@@ -103,7 +103,12 @@ if ($project) {
     foreach ($steamField in @('id','url','title','sectionTitle','publicGuideUrl','freshnessNote','safeDescription','language')) {
         if ([string]::IsNullOrWhiteSpace([string]$steamGuide.$steamField)) { Add-ValidationError "project.steamGuide.$steamField is required" }
     }
-    if ([string]$steamGuide.safeDescription -match 'https?://|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') { Add-ValidationError 'project.steamGuide.safeDescription contains a moderation-risk link or marker' }
+    $mainDescriptionLinks = [regex]::Matches([string]$steamGuide.safeDescription, '(?i)\[url=([^\]]+)\]')
+    if ($mainDescriptionLinks.Count -ne 1 -or $mainDescriptionLinks[0].Groups[1].Value -ne [string]$steamGuide.publicGuideUrl -or
+        ([regex]::Matches([string]$steamGuide.safeDescription, '(?i)https?://')).Count -ne 1 -or
+        [string]$steamGuide.safeDescription -notmatch '(?i)\[/url\]|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') {
+        Add-ValidationError 'project.steamGuide.safeDescription must contain only one direct link to the configured GitHub report'
+    }
     if ([string]$steamGuide.safeDescription -notmatch 'русск|обновля') { Add-ValidationError 'project.steamGuide.safeDescription must state Russian language and ongoing updates' }
     if ([string]$steamGuide.safeDescription -notmatch 'English') { Add-ValidationError 'project.steamGuide.safeDescription must state English availability' }
     foreach ($language in @('ru','en')) {

@@ -2,9 +2,11 @@
 
 [b]Русский и English[/b] · Регулярно обновляемое практическое руководство по сезонным активностям Festival Playlist.
 
+[quote][url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ СВОДКУ GITHUB / OPEN THE FULL GITHUB GUIDE[/b][/url][/quote]
+
 [h2]Два языка / Two languages[/h2]
 [list]
-[*][b]Актуальная неделя · Русский[/b] — задания, условия, ссылки, подсказки и 9-значные коды тюнингов на русском.
+[*][b]Актуальная неделя · Русский[/b] — задания, условия и коды тюнингов на русском.
 [*][b]Current Week · English[/b] — the same current Festival Playlist activities in English.
 [/list]
 
@@ -14,7 +16,7 @@
 [list]
 [*]все активности Festival Playlist в игровом порядке / all activities in game order;
 [*]рекомендации по автомобилям и share codes / vehicle recommendations and share codes;
-[*]Photo Challenges, Treasure Hunt и Collectibles, когда места подтверждены источниками / location help when verified;
+[*]ссылка на полный отчёт с картами и изображениями / link to the full report with maps and images;
 [*]время окончания сезона и отметка проверки / season deadline and freshness status.
 [/list]
 

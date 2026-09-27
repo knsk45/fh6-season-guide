@@ -1,7 +1,7 @@
 [h1]FH6 WEEKLY GUIDE — ENGLISH[/h1]
 [b]Updated after each season change and whenever verified solutions appear.[/b]
 
-[quote][url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]OPEN THE FULL ENGLISH REPORT WITH MAPS AND IMAGES[/b][/url][/quote]
+[i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
 [h1]Series 5 'British Automotive' — Winter[/h1]
 [b]Ends:[/b] 01.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
@@ -66,10 +66,4 @@ Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.
 Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.
 [b]Car:[/b] 2025 McLaren W1 — no mandatory tune.
 
-[h1]Maps, screenshots and updates[/h1]
-[url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]OPEN THE FULL ENGLISH FH6 REPORT[/b][/url]
-[b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist.
-
-[h2]Short location links[/h2]
-[url=https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6]Карта / Map[/url]
-[url=https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge]Карта сундука / Chest map[/url]
+[b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.

@@ -78,15 +78,13 @@ $Lines = [Collections.Generic.List[string]]::new()
 $Lines.Add($(if ($IsEnglish) { '[h1]FH6 WEEKLY GUIDE — ENGLISH[/h1]' } else { '[h1]РУССКАЯ ЕЖЕНЕДЕЛЬНАЯ СВОДКА FH6[/h1]' }))
 $Lines.Add($(if ($IsEnglish) { '[b]Updated after each season change and whenever verified solutions appear.[/b]' } else { '[b]Регулярно обновляется после смены сезона и по мере появления новых решений.[/b]' }))
 $Lines.Add('')
-$Lines.Add($(if ($IsEnglish) { "[quote][url=$GuideUrl][b]OPEN THE FULL ENGLISH REPORT WITH MAPS AND IMAGES[/b][/url][/quote]" } else { "[quote][url=$GuideUrl][b]ОТКРЫТЬ ПОЛНУЮ АКТУАЛЬНУЮ СВОДКУ С КАРТАМИ И ИЗОБРАЖЕНИЯМИ[/b][/url][/quote]" }))
+$Lines.Add($(if ($IsEnglish) { '[i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]' } else { '[i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]' }))
 $Lines.Add('')
 $SeasonDisplay = if ($IsEnglish) { [string]$Locale.seasonDisplay } else { [string]$Season.seasonDisplay }
 $Lines.Add("[h1]Series $($Season.seriesNumber) '$($Season.seriesName)' — $SeasonDisplay[/h1]")
 $Lines.Add($(if ($IsEnglish) { "[b]Ends:[/b] $Deadline (Krasnoyarsk) · [b]Activities:[/b] $($Season.expectedCardCount)" } else { "[b]До:[/b] $Deadline (Красноярск) · [b]Активностей:[/b] $($Season.expectedCardCount)" }))
 $Lines.Add($(if ($IsEnglish) { '[b]The full report is checked daily; see the link above for the exact verification time.[/b]' } else { "[b]$($Project.steamGuide.freshnessNote)[/b]" }))
 $Lines.Add($(if ($IsEnglish) { '[i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]' } else { '[i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]' }))
-$SteamLocations = [Collections.Generic.List[string]]::new()
-
 foreach ($Activity in $State.activities) {
     $Localized = if ($IsEnglish) { $Locale.activities.($Activity.id) } else { $null }
     if ($IsEnglish -and $null -eq $Localized) { throw "English localization missing for $($Activity.id)." }
@@ -118,57 +116,21 @@ foreach ($Activity in $State.activities) {
     if ($Condition) {
         $Lines.Add($Condition)
     }
-    $LocationMatches = [regex]::Matches([string]$Activity.sourceHtml, '(?is)<a\s+href="([^"]+)"[^>]*>([^<]*(?:Локация|Карта|Location|Map)[^<]*)</a>')
-    foreach ($LocationMatch in $LocationMatches) {
-        $SteamLocations.Add("[url=$($LocationMatch.Groups[1].Value)]$($LocationMatch.Groups[2].Value.Trim())[/url]")
-    }
     if ($Tune) {
         $Lines.Add("[b]$(if ($IsEnglish) { 'Car' } else { 'Авто' }):[/b] $Tune")
     }
 }
 
 $Lines.Add('')
-$Lines.Add($(if ($IsEnglish) { '[h1]Maps, screenshots and updates[/h1]' } else { '[h1]Карты, скриншоты и уточнения[/h1]' }))
-$Lines.Add($(if ($IsEnglish) { "[url=$GuideUrl][b]OPEN THE FULL ENGLISH FH6 REPORT[/b][/url]" } else { "[url=$GuideUrl][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]" }))
-$Lines.Add($(if ($IsEnglish) { '[b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist.' } else { '[b]Добавьте руководство Steam в избранное:[/b] оно регулярно обновляется вместе с Festival Playlist.' }))
-if ($SteamLocations.Count -gt 0) {
-    $Lines.Add('')
-    $Lines.Add($(if ($IsEnglish) { '[h2]Short location links[/h2]' } else { '[h2]Короткие ссылки на локации[/h2]' }))
-    foreach ($Location in ($SteamLocations | Select-Object -Unique)) { $Lines.Add($Location) }
-}
+$Lines.Add($(if ($IsEnglish) { '[b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.' } else { '[b]Добавьте руководство Steam в избранное:[/b] оно обновляется вместе с Festival Playlist. Карты и уточнения локаций — в сводке GitHub по ссылке в описании руководства выше.' }))
 
 $OutputDirectory = Split-Path -Parent $OutputPath
 if (-not (Test-Path -LiteralPath $OutputDirectory)) {
     New-Item -ItemType Directory -Path $OutputDirectory | Out-Null
 }
 $RenderedText = ($Lines -join "`r`n") + "`r`n"
-$RenderedLines = $RenderedText -split "`r?`n"
-$LinksSectionTitle = if ($IsEnglish) { '[h1]Maps, screenshots and updates[/h1]' } else { '[h1]Карты, скриншоты и уточнения[/h1]' }
-$LinksSectionIndex = [Array]::IndexOf($RenderedLines, $LinksSectionTitle)
-if ($LinksSectionIndex -lt 0) { throw 'Steam final links section is missing.' }
-$AllowedSteamUrls = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
-[void]$AllowedSteamUrls.Add($GuideUrl)
-foreach ($Location in $SteamLocations | Select-Object -Unique) {
-    $LocationUrl = [regex]::Match($Location, '^\[url=([^\]]+)\]').Groups[1].Value
-    if (-not [string]::IsNullOrWhiteSpace($LocationUrl)) { [void]$AllowedSteamUrls.Add($LocationUrl) }
-}
-$FoundSteamLinks = [regex]::Matches($RenderedText, '\[url=([^\]]+)\]')
-foreach ($FoundSteamLink in $FoundSteamLinks) {
-    if (-not $AllowedSteamUrls.Contains($FoundSteamLink.Groups[1].Value)) {
-        throw "Unexpected Steam link is not allowed: $($FoundSteamLink.Groups[1].Value)"
-    }
-}
-foreach ($RenderedLineIndex in 0..($RenderedLines.Count - 1)) {
-    if ($RenderedLines[$RenderedLineIndex] -match '\[url=') {
-        $IsGuideLink = $RenderedLines[$RenderedLineIndex] -match ('\[url=' + [regex]::Escape($GuideUrl) + '\]')
-        if (-not $IsGuideLink -and $RenderedLineIndex -lt $LinksSectionIndex) {
-            throw 'Location links are allowed only in the final Steam links section, not within activity text.'
-        }
-    }
-}
-$TextWithoutBbcodeLinks = [regex]::Replace($RenderedText, '(?is)\[url=[^\]]+\](.*?)\[/url\]', '$1')
-if ($TextWithoutBbcodeLinks -match '(?i)https?://') {
-    throw 'Raw URLs are not allowed in Steam text; use descriptive link text from the approved link list.'
+if ($RenderedText -match '(?i)https?://|\[url=|www\.') {
+    throw 'Steam weekly sections must not contain links; place the single GitHub report link in the main guide description.'
 }
 $SteamCharacterCount = ($RenderedText -replace "`r`n", "`n").Length
 $SteamSafeCharacterLimit = 4800

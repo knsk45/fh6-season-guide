@@ -18,8 +18,11 @@ if ($Guide.enabled -ne $true -or [string]::IsNullOrWhiteSpace([string]$Guide.saf
 }
 
 $Text = ([string]$Guide.safeDescription).Trim() + "`r`n"
-if ($Text -match 'https?://|\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') {
-    throw 'Steam main description may not contain external links, removed-link markers, or shorteners.'
+$LinkTags = [regex]::Matches($Text, '(?i)\[url=([^\]]+)\]')
+if ($LinkTags.Count -ne 1 -or $LinkTags[0].Groups[1].Value -ne [string]$Guide.publicGuideUrl -or
+    ([regex]::Matches($Text, '(?i)https?://')).Count -ne 1 -or $Text -notmatch '(?i)\[/url\]' -or
+    $Text -match '\{ССЫЛКА УДАЛЕНА\}|discord\.gg|bit\.ly|tinyurl') {
+    throw 'Steam main description must contain exactly one direct link to the configured GitHub report, and no other links or removed-link markers.'
 }
 if ($Text.Length -gt 3000) { throw 'Steam main description exceeds the conservative 3000-character limit.' }
 if ($Text -notmatch 'русск') { throw 'Steam main description must state that the guide is Russian.' }

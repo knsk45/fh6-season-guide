@@ -1,7 +1,7 @@
 [h1]РУССКАЯ ЕЖЕНЕДЕЛЬНАЯ СВОДКА FH6[/h1]
 [b]Регулярно обновляется после смены сезона и по мере появления новых решений.[/b]
 
-[quote][url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ АКТУАЛЬНУЮ СВОДКУ С КАРТАМИ И ИЗОБРАЖЕНИЯМИ[/b][/url][/quote]
+[i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]
 
 [h1]Series 5 'British Automotive' — Зима[/h1]
 [b]До:[/b] 01.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
@@ -71,10 +71,4 @@ Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, I
 Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren W1.
 [b]Авто:[/b] 2025 McLaren W1 — без обязательного тюнинга.
 
-[h1]Карты, скриншоты и уточнения[/h1]
-[url=https://knsk45.github.io/fh6-season-guide/reports/current-week.html][b]ОТКРЫТЬ ПОЛНУЮ РУССКОЯЗЫЧНУЮ СВОДКУ FH6[/b][/url]
-[b]Добавьте руководство Steam в избранное:[/b] оно регулярно обновляется вместе с Festival Playlist.
-
-[h2]Короткие ссылки на локации[/h2]
-[url=https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6]Карта / Map[/url]
-[url=https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge]Карта сундука / Chest map[/url]
+[b]Добавьте руководство Steam в избранное:[/b] оно обновляется вместе с Festival Playlist. Карты и уточнения локаций — в сводке GitHub по ссылке в описании руководства выше.
