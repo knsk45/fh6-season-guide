@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 24.09.2026 21:30 — 01.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 27.09.2026 21:06
+> Обновлено: 28.09.2026 06:18
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание · 5 очков
@@ -29,7 +29,7 @@
 ## 04. treasure_hunt — Treasure Hunt · 3 очка
 
 - **Условие:** Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.
-- **Как выполнить:** Ищите сундук у юго-западной границы Shimanoyama, к западу от Tokyo City. Разбейте его — других условий нет.
+- **Как выполнить:** Откройте южную часть Shimanoyama к западу от Tokyo City и найдите Lake View Speed Trap у грунтовой дороги; сундук лежит в открытом поле рядом, недалеко от старта Taiyaki Scramble. Разбейте его — других условий нет.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge" target="_blank" rel="noopener noreferrer">Карта сундука / Chest map</a>
 

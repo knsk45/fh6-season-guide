@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-27T21:06:10+07:00",
+  "lastContentUpdate": "2026-09-28T06:18:29+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -117,7 +117,7 @@
       "title": "Treasure Hunt",
       "points": "3 очка",
       "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.",
-      "howHtml": "Ищите сундук у юго-западной границы Shimanoyama, к западу от Tokyo City. Разбейте его — других условий нет.",
+      "howHtml": "Откройте южную часть Shimanoyama к западу от Tokyo City и найдите Lake View Speed Trap у грунтовой дороги; сундук лежит в открытом поле рядом, недалеко от старта Taiyaki Scramble. Разбейте его — других условий нет.",
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука / Chest map</a>",
       "visual": {
@@ -438,7 +438,7 @@
           "title": "Treasure Hunt",
           "points": "3 points",
           "conditionHtml": "Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.",
-          "howHtml": "Look for the chest by the southwestern edge of Shimanoyama, west of Tokyo City. Smash it; there are no other requirements.",
+      "howHtml": "Go to southern Shimanoyama, west of Tokyo City, and find the Lake View Speed Trap beside the dirt road; the chest is in an open field nearby, close to the Taiyaki Scramble start. Smash it; there are no other requirements.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {

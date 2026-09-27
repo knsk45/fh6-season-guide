@@ -2030,3 +2030,28 @@
 | `forza_labs_map` | no_current_item: Interactive Map доступна с общими маркерами локаций, но актуальной Playlist-плитки или Winter-ответа не содержит. |
 | `escorenews_fh6` | checked: индекс проверен; найдены свежие текущенедельные материалы 24 сентября по #BambooPerfect, Shimanoyama Treasure Hunt и Winter Rallies Trial. Карты локаций пригодны как ссылки, но не заменяют игровые плитки. |
 | `dungg_playlist` | unavailable: YouTube throttled live fetch; свежий выпуск текущей недели нельзя подтвердить. |
+
+## 2026-09-28T06:14:13+07:00 — ежедневный аудит Winter Series 5
+
+- Официальная Festival Playlist подтверждает Series 5 `British Automotive — Winter`, 24 сентября–1 октября 2026; активный сезон прежний, дедлайн `2026-10-01T21:30:00+07:00`. Проверены официальный список активностей и их порядок. Нового официального сезонного rollover нет.
+- В карточке Treasure Hunt уточнён подход к сундуку по свежим материалам Escorenews и GamesHedge: южный Shimanoyama к западу от Tokyo City, ориентир Lake View Speed Trap у грунтовой дороги, рядом со стартом Taiyaki Scramble. Этот ориентир внесён синхронно в RU/EN поля решения; неизвестный точный поворот не придумывался.
+- Проверены все 14 визуалов: `community=13, confirmed=0, preliminary=0, missing=1`. 13 отдельных англоязычных игровых плиток проверены по prepared-файлам и SHA-256; они остаются пользовательскими кадрами. Daily намеренно текстовый, без публичного изображения и без запроса скриншота. `automation/audit_visual_evidence.ps1`: `VISUAL_QUEUE_STATUS=READY`, `screenshotsRequired=0`.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: Category:Series_(FH6) недоступна через live fetch; сезонные факты и изображения оттуда не использованы. |
+| `fandom_current` | unavailable: текущая страница Fandom недоступна через live fetch; старые сведения не переносились. |
+| `forza_playlist` | checked: официальная Playlist открыта; подтверждены British Automotive Winter, даты 24 Sep–1 Oct и сезонные активности. |
+| `forza_news` | no_current_item: официальный News индекс доступен; отдельной публикации текущей недели по Winter не найдено, материал Series 5 от 7 сентября не считался свежим. |
+| `forza_support_release_notes` | unavailable: настроенная секция Support вернула Internal Error; обновление текущей недели подтвердить нельзя. |
+| `forza_support_known_issues` | no_current_item: Known Issues открыта; последняя видимая дата обновления — 20 июля, связанных свежих сезонных исправлений нет. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общий форум; публикации этой недели по Playlist не обнаружено. |
+| `reddit_forzahorizon` | no_current_item: свежая лента открыта; текущенедельной публикации с новыми решениями именно для Playlist в проверенной ленте не найдено. |
+| `reddit_forzahorizon6` | checked: проверены свежие Winter Guide и tuning guide от 24–25 сентября; условия и несколько tuning-рекомендаций текущей недели сверены, конфликтующих исправлений карточек нет. |
+| `reddit_forza` | checked: открыт Winter Information Thread от 24 сентября; проверены дедлайн, Daily, награды и текущая недельная информация. |
+| `reddit_forzatune` | no_current_item: текущая лента доступна, но FH6/Winter публикаций за 24–30 сентября не найдено. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, однако сезонной публикации Series 5 Winter текущей недели нет; старый weekly-блок не использован. |
+| `forza_labs_collector` | no_current_item: Collector Tool открыт как общий каталог машин; подтверждённых данных о текущих сезонных collectibles нет. |
+| `forza_labs_map` | no_current_item: Interactive Map открыта, но актуальной Playlist-разметки/плитки этой недели нет. |
+| `escorenews_fh6` | checked: открыты свежие материалы от 24 сентября по #BambooPerfect и Shimanoyama Treasure Hunt; карта/текст сундука подтверждают южный край Shimanoyama западнее Tokyo City. Совместно с GamesHedge уточнены ориентиры Lake View Speed Trap и Taiyaki Scramble; старые коды не переносились. |
+| `dungg_playlist` | unavailable: YouTube playlist не загрузилась через live fetch; новый выпуск текущей недели подтвердить нельзя. |
