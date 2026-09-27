@@ -142,6 +142,34 @@ if (-not (Test-Path -LiteralPath $OutputDirectory)) {
     New-Item -ItemType Directory -Path $OutputDirectory | Out-Null
 }
 $RenderedText = ($Lines -join "`r`n") + "`r`n"
+$RenderedLines = $RenderedText -split "`r?`n"
+$LinksSectionTitle = if ($IsEnglish) { '[h1]Maps, screenshots and updates[/h1]' } else { '[h1]Карты, скриншоты и уточнения[/h1]' }
+$LinksSectionIndex = [Array]::IndexOf($RenderedLines, $LinksSectionTitle)
+if ($LinksSectionIndex -lt 0) { throw 'Steam final links section is missing.' }
+$AllowedSteamUrls = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+[void]$AllowedSteamUrls.Add($GuideUrl)
+foreach ($Location in $SteamLocations | Select-Object -Unique) {
+    $LocationUrl = [regex]::Match($Location, '^\[url=([^\]]+)\]').Groups[1].Value
+    if (-not [string]::IsNullOrWhiteSpace($LocationUrl)) { [void]$AllowedSteamUrls.Add($LocationUrl) }
+}
+$FoundSteamLinks = [regex]::Matches($RenderedText, '\[url=([^\]]+)\]')
+foreach ($FoundSteamLink in $FoundSteamLinks) {
+    if (-not $AllowedSteamUrls.Contains($FoundSteamLink.Groups[1].Value)) {
+        throw "Unexpected Steam link is not allowed: $($FoundSteamLink.Groups[1].Value)"
+    }
+}
+foreach ($RenderedLineIndex in 0..($RenderedLines.Count - 1)) {
+    if ($RenderedLines[$RenderedLineIndex] -match '\[url=') {
+        $IsGuideLink = $RenderedLines[$RenderedLineIndex] -match ('\[url=' + [regex]::Escape($GuideUrl) + '\]')
+        if (-not $IsGuideLink -and $RenderedLineIndex -lt $LinksSectionIndex) {
+            throw 'Location links are allowed only in the final Steam links section, not within activity text.'
+        }
+    }
+}
+$TextWithoutBbcodeLinks = [regex]::Replace($RenderedText, '(?is)\[url=[^\]]+\](.*?)\[/url\]', '$1')
+if ($TextWithoutBbcodeLinks -match '(?i)https?://') {
+    throw 'Raw URLs are not allowed in Steam text; use descriptive link text from the approved link list.'
+}
 $SteamCharacterCount = ($RenderedText -replace "`r`n", "`n").Length
 $SteamSafeCharacterLimit = 4800
 if ($SteamCharacterCount -gt $SteamSafeCharacterLimit) {
