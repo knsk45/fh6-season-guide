@@ -8,13 +8,6 @@
   },
   "snapshots": [
     {
-      "runId": "fh6-20260907-220209-698244",
-      "collectedAt": "2026-09-07T22:07:02+07:00",
-      "steamViews": 800,
-      "steamFavorites": 51,
-      "githubViews": 898
-    },
-    {
       "runId": "fh6-20260907-221420-259358",
       "collectedAt": "2026-09-07T22:32:40+07:00",
       "steamViews": 800,
@@ -426,7 +419,14 @@
       "steamViews": 1222,
       "steamFavorites": 77,
       "githubViews": 2166
+    },
+    {
+      "runId": "fh6-20260927-110650-755534",
+      "collectedAt": "2026-09-27T11:24:27.5420481+07:00",
+      "steamViews": 1222,
+      "steamFavorites": 77,
+      "githubViews": 2168
     }
   ],
-  "updatedAt": "2026-09-27T10:57:14.2313503+07:00"
+  "updatedAt": "2026-09-27T11:24:27.6599246+07:00"
 }
