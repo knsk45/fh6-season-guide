@@ -1952,3 +1952,28 @@
 | `forza_labs_map` | no_current_item: Interactive Map открылась, подтверждённой сезонной плитки или нового решения Winter нет. |
 | `escorenews_fh6` | unavailable: индекс не открылся в этой проверке; текущие статьи ранее найдены поиском, но новых утверждений поверх них не переносилось. |
 | `dungg_playlist` | unavailable: YouTube playlist не загрузился; свежий выпуск Winter не подтверждён. |
+
+## 2026-09-27T11:15:51+07:00 — социальные действия русской/английской сводки
+
+- Живая Official Festival Playlist снова подтверждает Series 5 `British Automotive — Winter`, 24 сентября — 1 октября 2026; срок и карточки не менялись. Свежие текущенедельные темы r/ForzaHorizon, r/ForzaHorizon6 и r/forza проверены; новые факты в карточки не переносились. Forza News проверена, но отдельной публикации этой недели, меняющей Playlist, нет.
+- Пользователь запросил лёгкие социальные действия в русской и английской версиях GitHub-отчёта: системное «Поделиться» на мобильном, копирование ссылки на ПК, форму уточнения/ошибки с выбором языка и активности и переход к комментариям руководства Steam. Реализация не собирает и не сохраняет сообщение на стороне сайта: форма лишь предварительно заполняет черновик публичного GitHub Issue; перед переходом указаны необходимость входа и публичность отзыва. Boosty и статистика остаются в нижнем блоке поддержки.
+- Повторно выполнен `automation/audit_visual_evidence.ps1`: `VISUAL_QUEUE_STATUS=READY`. Текущие локальные точные плитки не изменялись: `community=13, confirmed=0, preliminary=0, missing=1`; `activity_02_daily` остаётся намеренно текстовым без публичной плитки и без запроса скриншота. Все 13 отдельных кадров — актуальные Winter-плитки, ранее сопоставленные с сохранёнными полными пользовательскими скриншотами 26 сентября; новых или прошлосезонных изображений не добавлено.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: Category:Series_(FH6) недоступна через текущий live fetch; новые сведения не использованы. |
+| `fandom_current` | unavailable: корень Fandom вернул HTTP 402; сезонные факты оттуда не брались. |
+| `forza_playlist` | checked: https://forza.net/fh6playlists открыта; Series 5 British Automotive — Winter (24 Sep–1 Oct), условия и порядок Playlist подтверждены. |
+| `forza_news` | no_current_item: Forza News и материал Series 5 проверены; отдельного нового Playlist-материала этой недели не найдено. |
+| `forza_support_release_notes` | unavailable: настроенная секция Release Notes не открылась; свежую заметку этой недели подтвердить нельзя. |
+| `forza_support_known_issues` | no_current_item: официальная Known Issues статья доступна; свежей записи этой недели, влияющей на текущие активности, не обнаружено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общий форум; недельного объявления Playlist не найдено. |
+| `reddit_forzahorizon` | checked: свежий Winter Breakdown от 24 сентября подтверждает условия Weekly/Daily, Photo и Treasure Hunt. |
+| `reddit_forzahorizon6` | checked: текущий Winter guide от 24 сентября проверен, включая PR, Trial и советы этой недели. |
+| `reddit_forza` | checked: Winter Information Thread Series 5 от 24 сентября и свежая сезонная публикация тюнингов проверены. |
+| `reddit_forzatune` | no_current_item: отдельной публикации FH6/Winter за текущую неделю в этом сообществе не обнаружено; сторонние коды к нему не приписывались. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но актуального Winter-материала этой недели нет; старый Weekly блок не использован. |
+| `forza_labs_collector` | no_current_item: Collector Tool доступен; свежего Winter collectible-подтверждения нет. |
+| `forza_labs_map` | no_current_item: Interactive Map доступна; отдельного сезонного ответа или точной Playlist-плитки не обнаружено. |
+| `escorenews_fh6` | unavailable: индекс Escorenews сейчас вернул ошибку загрузки; новые данные не извлечены. |
+| `dungg_playlist` | unavailable: страница YouTube playlist не загрузилась; новый выпуск этой недели подтвердить нельзя. |

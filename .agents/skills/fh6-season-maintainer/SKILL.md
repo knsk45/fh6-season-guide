@@ -64,6 +64,10 @@ The validator, not a remembered number, decides the required card count. Treat a
 
 ## Publish
 
+### Social interactions on the public report
+
+Keep social interaction lightweight and bilingual: use native Web Share on mobile when available, copy the current-language URL on desktop, link to the Steam guide's comments, and provide a short activity/language/comment feedback flow that opens a prefilled public GitHub Issue. Clearly disclose GitHub sign-in and public visibility; do not store feedback in the static report or add like/comment counters, third-party tracking, or a backend without explicit approval.
+
 Publish only after the portable validation/package and `STRUCTURE_OK` succeed:
 
 `pwsh -NoProfile -File automation/publish_to_github.ps1 -CommitMessage "Update FH6 current season YYYY-MM-DD"`

@@ -24,6 +24,7 @@ const maxPublicHtmlBytes = Number(state?.season?.maxPublicHtmlBytes ?? 200_000);
 const branding = project?.branding;
 const support = project?.support;
 const analytics = project?.analytics;
+const community = project?.community;
 const steamGuide = project?.steamGuide;
 const publicationMetrics = artifact?.snapshot?.datasets?.publicationMetrics;
 const englishLocale = state?.locales?.en;
@@ -54,6 +55,9 @@ if (!branding?.faviconPng || !branding.appleTouchIcon || !/^#[0-9a-f]{6}$/i.test
 }
 if (!steamGuide?.enabled || !steamGuide?.url || !steamGuide?.title) {
   throw new Error('data/project.json must contain the enabled public Steam guide');
+}
+if (!/^https:\/\/github\.com\/knsk45\/fh6-season-guide\/issues\/new$/.test(community?.feedbackUrl ?? '') || !community?.feedbackTitlePrefix) {
+  throw new Error('data/project.json must contain the configured public GitHub feedback endpoint');
 }
 for (const [name, value] of Object.entries({ faviconPng: branding.faviconPng, appleTouchIcon: branding.appleTouchIcon })) {
   if (!value.startsWith('reports/assets/project/')) throw new Error(`${name} must stay under reports/assets/project/: ${value}`);
@@ -173,6 +177,37 @@ if (!sharedStyleMatch) throw new Error('The first activity block has no shared c
 const sharedCardCss = sharedStyleMatch[1];
 const cardsHtml = blocks.map(staticCard).join('\n');
 const publicationChart = publicationChartHtml(publicationMetrics);
+const feedbackActivityOptions = state.activities.map((activity) => {
+  const englishTitle = englishLocale.activities[activity.id]?.title ?? activity.title;
+  return `<option value="${escapeHtml(activity.id)}" data-number="${escapeHtml(activity.number)}" data-title-ru="${escapeHtml(activity.title)}" data-title-en="${escapeHtml(englishTitle)}">${escapeHtml(activity.number)} · ${escapeHtml(activity.title)}</option>`;
+}).join('');
+const communityHtml = `
+    <section class="community-actions" aria-labelledby="community-title">
+      <h2 id="community-title">Поделиться и помочь улучшить сводку</h2>
+      <p id="community-description">Поделитесь гайдом или предложите исправление. Отзывы отправляются через GitHub и становятся публичными.</p>
+      <div class="community-actions-row">
+        <button class="community-button community-button-primary" id="share-guide-button" type="button">Поделиться сводкой</button>
+        <button class="community-button" id="open-feedback-button" type="button" aria-haspopup="dialog" aria-controls="feedback-dialog">Нашли ошибку или хотите дополнить?</button>
+        <a class="community-button" id="steam-discussion-link" href="${escapeHtml(steamGuide.url)}#comments" target="_blank" rel="noopener noreferrer">Обсудить в Steam</a>
+      </div>
+      <p class="community-status" id="community-status" aria-live="polite" role="status"></p>
+      <dialog class="feedback-dialog" id="feedback-dialog" aria-labelledby="feedback-dialog-title">
+        <div class="feedback-dialog-content">
+          <h2 id="feedback-dialog-title">Сообщить об ошибке или предложить уточнение</h2>
+          <label for="feedback-language" id="feedback-language-label">Язык сообщения</label>
+          <select id="feedback-language"><option id="feedback-language-ru" value="ru">Русский</option><option id="feedback-language-en" value="en">English</option></select>
+          <label for="feedback-activity" id="feedback-activity-label">Активность</label>
+          <select id="feedback-activity"><option value="__guide__">Вся сводка</option>${feedbackActivityOptions}</select>
+          <label for="feedback-comment" id="feedback-comment-label">Комментарий</label>
+          <textarea id="feedback-comment" rows="5" maxlength="2000" required></textarea>
+          <p class="feedback-privacy" id="feedback-privacy">Продолжая, вы откроете черновик публичного GitHub Issue; для отправки потребуется вход в GitHub. Не указывайте личные данные.</p>
+          <div class="feedback-dialog-actions">
+            <button class="community-button" id="cancel-feedback-button" type="button">Отмена</button>
+            <a class="community-button community-button-primary" id="continue-feedback-link" href="${escapeHtml(community.feedbackUrl)}" target="_blank" rel="noopener noreferrer">Продолжить в GitHub</a>
+          </div>
+        </div>
+      </dialog>
+    </section>`;
 const supportHtml = `
     <section class="support-section" id="support-project" data-support-block>
       <h2 id="support-title">${escapeHtml(support.title)}</h2>
@@ -236,6 +271,13 @@ ${sharedCardCss}
     .activity-list{display:grid;gap:28px}
     .activity-block{min-width:0;content-visibility:auto;contain-intrinsic-size:auto 360px}
     .activity-block .card{width:100%}
+    .community-actions{margin:30px 0 0;padding:22px;border:1px solid #29434b;border-radius:18px;background:linear-gradient(145deg,#0b191e,#10242a)}
+    .community-actions h2{margin:0;color:#fff;font-size:20px;line-height:1.3}.community-actions>p:not(.community-status){margin:8px 0 16px;color:#b8ccd1;font-size:14px;line-height:1.5}
+    .community-actions-row{display:flex;flex-wrap:wrap;gap:10px}.community-button{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:10px 16px;border:1px solid #45636c;border-radius:11px;background:#10242a;color:#eaf4f2!important;font:700 14px/1.3 Inter,Segoe UI,Arial,sans-serif;text-align:center;text-decoration:none;cursor:pointer}
+    .community-button:hover{border-color:#d9ff00;color:#d9ff00!important}.community-button-primary{border-color:#d9ff00;background:#d9ff00;color:#071014!important}.community-button-primary:hover{background:#e8ff58;color:#071014!important}
+    .community-button:focus-visible,.feedback-dialog select:focus-visible,.feedback-dialog textarea:focus-visible{outline:3px solid #fff;outline-offset:3px}.community-status{min-height:1.4em;margin:9px 0 0!important;color:#d9ff00!important;font-size:13px!important}
+    .feedback-dialog{width:min(560px,calc(100% - 24px));max-height:min(90dvh,760px);padding:0;border:1px solid #45636c;border-radius:18px;background:#0b171c;color:#eef6f5;box-shadow:0 24px 80px #000b}.feedback-dialog::backdrop{background:#000a;backdrop-filter:blur(3px)}.feedback-dialog-content{display:grid;gap:9px;padding:22px}
+    .feedback-dialog h2{margin:0 0 6px;font-size:20px;line-height:1.3}.feedback-dialog label{color:#d9ff00;font-size:13px;font-weight:750}.feedback-dialog select,.feedback-dialog textarea{width:100%;min-height:42px;padding:10px;border:1px solid #36515a;border-radius:9px;background:#10242a;color:#eef6f5;font:inherit}.feedback-dialog textarea{resize:vertical;line-height:1.45}.feedback-privacy{margin:4px 0;color:#b8ccd1;font-size:12px;line-height:1.45}.feedback-dialog-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:9px;margin-top:4px}
     .support-section{display:flex;flex-direction:column;align-items:center;margin-top:34px;padding:30px 22px;border:1px solid #29434b;border-radius:22px;background:linear-gradient(145deg,#0b191e,#10242a);text-align:center}
     .support-section h2{margin:0;color:#fff;font-size:clamp(22px,3vw,32px);line-height:1.2}
     .support-section p{max-width:650px;margin:12px 0 20px;color:#b8ccd1;font-size:15px;line-height:1.55}
@@ -282,6 +324,7 @@ ${sharedCardCss}
       .activity-list{gap:18px}
       .activity-block{contain-intrinsic-size:auto 620px}
       .support-section{margin-top:24px;padding:24px 16px;border-radius:18px}
+      .community-actions{margin-top:20px;padding:18px 14px}.community-actions-row{display:grid;grid-template-columns:1fr}.community-button{width:100%;min-height:48px}.feedback-dialog-content{padding:18px 14px}.feedback-dialog-actions{display:grid;grid-template-columns:1fr}
       .support-actions{width:100%}.support-button{width:100%;padding:0 14px;font-size:15px}
       .visit-stats{margin-top:24px;padding-top:20px}
       .visit-stats-badge{height:26px}
@@ -319,6 +362,7 @@ ${activityNavLinks}
     <div class="activity-list">
 ${cardsHtml}
     </div>
+${communityHtml}
 ${supportHtml}
   </main>
   <script>
@@ -331,14 +375,16 @@ ${supportHtml}
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: ${JSON.stringify(support.title)},
         supportDescription: ${JSON.stringify(support.description)}, supportSberButton: ${JSON.stringify(support.buttonLabel)}, supportBoostyButton: ${JSON.stringify(support.boosty.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
         analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Посещения страницы: сегодня и всего',
-        steamGuide: 'Открыть руководство в Steam', toc: 'К активностям'
+        steamGuide: 'Открыть руководство в Steam', toc: 'К активностям',
+        communityTitle: 'Поделиться и помочь улучшить сводку', communityDescription: 'Поделитесь гайдом или предложите исправление. Отзывы отправляются через GitHub и становятся публичными.', shareGuide: 'Поделиться сводкой', shareCopied: 'Ссылка на сводку скопирована.', shareFailed: 'Не удалось скопировать автоматически — выделите и скопируйте адрес страницы.', feedbackOpen: 'Нашли ошибку или хотите дополнить?', steamDiscussion: 'Обсудить в Steam', feedbackDialogTitle: 'Сообщить об ошибке или предложить уточнение', feedbackLanguage: 'Язык сообщения', feedbackLanguageRu: 'Русский', feedbackLanguageEn: 'Английский', feedbackActivity: 'Активность', feedbackWholeGuide: 'Вся сводка', feedbackComment: 'Комментарий', feedbackPrivacy: 'Продолжая, вы откроете черновик публичного GitHub Issue; для отправки потребуется вход в GitHub. Не указывайте личные данные.', feedbackCancel: 'Отмена', feedbackContinue: 'Продолжить в GitHub', feedbackCommentRequired: 'Сначала добавьте комментарий.', feedbackIssueTitle: 'Отзыв о сводке FH6', feedbackIssueBody: 'Язык', feedbackIssueActivity: 'Активность', feedbackIssueComment: 'Комментарий', feedbackIssuePrivacy: 'Отправленный отзыв будет публичным на GitHub.', feedbackIssueReport: 'Ссылка на сводку'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
         supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: ${JSON.stringify(support.boosty.internationalButtonLabel)},
         analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page visits today and in total. Repeat loads and bots may increase the counter.',
-        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam', toc: 'Jump to an activity'
+        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam', toc: 'Jump to an activity',
+        communityTitle: 'Share feedback and help improve the guide', communityDescription: 'Share the guide or suggest a correction. Feedback is submitted through GitHub and becomes public.', shareGuide: 'Share the guide', shareCopied: 'Guide link copied.', shareFailed: 'Could not copy automatically; select and copy the page address.', feedbackOpen: 'Found an error or want to add a tip?', steamDiscussion: 'Discuss on Steam', feedbackDialogTitle: 'Report an error or suggest a correction', feedbackLanguage: 'Comment language', feedbackLanguageRu: 'Russian', feedbackLanguageEn: 'English', feedbackActivity: 'Activity', feedbackWholeGuide: 'Whole guide', feedbackComment: 'Comment', feedbackPrivacy: 'Continue to open a public GitHub Issue draft; signing in to GitHub is required to submit it. Do not include personal information.', feedbackCancel: 'Cancel', feedbackContinue: 'Continue to GitHub', feedbackCommentRequired: 'Please add a comment first.', feedbackIssueTitle: ${JSON.stringify(community.feedbackTitlePrefix)}, feedbackIssueBody: 'Language', feedbackIssueActivity: 'Activity', feedbackIssueComment: 'Comment', feedbackIssuePrivacy: 'Submitted feedback will be public on GitHub.', feedbackIssueReport: 'Guide link'
       }
     };
     const kindLabels = {
@@ -378,6 +424,12 @@ ${supportHtml}
     const activityToc = document.getElementById('activity-toc-details');
     const activityTocNav = document.getElementById('activity-toc-nav');
     const languageButtons = [...document.querySelectorAll('[data-language-button]')];
+    const communityStatus = document.getElementById('community-status');
+    const feedbackDialog = document.getElementById('feedback-dialog');
+    const feedbackLanguage = document.getElementById('feedback-language');
+    const feedbackActivity = document.getElementById('feedback-activity');
+    const feedbackComment = document.getElementById('feedback-comment');
+    const continueFeedbackLink = document.getElementById('continue-feedback-link');
     const originalCards = new Map(cards.map((section) => [section.id, {
       title: section.querySelector('[data-card-title]')?.textContent ?? '',
       points: section.querySelector('[data-card-points]')?.textContent ?? '',
@@ -488,6 +540,26 @@ ${supportHtml}
       setText('analytics-description', copy.analyticsDescription);
       setText('steam-guide-link', copy.steamGuide);
       setText('activity-toc-summary', copy.toc);
+      setText('community-title', copy.communityTitle);
+      setText('community-description', copy.communityDescription);
+      setText('share-guide-button', copy.shareGuide);
+      setText('open-feedback-button', copy.feedbackOpen);
+      setText('steam-discussion-link', copy.steamDiscussion);
+      setText('feedback-dialog-title', copy.feedbackDialogTitle);
+      setText('feedback-language-label', copy.feedbackLanguage);
+      setText('feedback-language-ru', copy.feedbackLanguageRu);
+      setText('feedback-language-en', copy.feedbackLanguageEn);
+      setText('feedback-activity-label', copy.feedbackActivity);
+      setText('feedback-comment-label', copy.feedbackComment);
+      setText('feedback-privacy', copy.feedbackPrivacy);
+      setText('cancel-feedback-button', copy.feedbackCancel);
+      setText('continue-feedback-link', copy.feedbackContinue);
+      const guideOption = feedbackActivity?.querySelector('option[value="__guide__"]');
+      if (guideOption) guideOption.textContent = copy.feedbackWholeGuide;
+      for (const option of feedbackActivity?.querySelectorAll('option[data-title-ru]') ?? []) {
+        const title = option.dataset[currentLanguage === 'en' ? 'titleEn' : 'titleRu'];
+        if (title) option.textContent = option.dataset.number + ' · ' + title;
+      }
       activityTocNav?.setAttribute('aria-label', currentLanguage === 'en' ? 'Activity navigation' : 'Навигация по активностям');
       document.getElementById('publication-chart-legend')?.setAttribute('aria-label', currentLanguage === 'en' ? 'Chart legend' : 'Легенда графика');
       for (const link of document.querySelectorAll('[data-toc-title]')) {
@@ -554,7 +626,50 @@ ${supportHtml}
     }
     let savedLanguage = 'ru';
     try { savedLanguage = localStorage.getItem(languageStorageKey) || 'ru'; } catch {}
+    const sharedLanguage = new URL(window.location.href).searchParams.get('lang');
+    if (sharedLanguage === 'ru' || sharedLanguage === 'en') savedLanguage = sharedLanguage;
     applyLanguage(savedLanguage);
+    const reportUrlForLanguage = (language) => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', language);
+      return url.toString();
+    };
+    document.getElementById('share-guide-button')?.addEventListener('click', async () => {
+      const language = document.documentElement.dataset.language === 'en' ? 'en' : 'ru';
+      const shareData = { title: document.title, text: language === 'en' ? 'Forza Horizon 6 Festival Playlist guide' : 'Сводка Festival Playlist Forza Horizon 6', url: reportUrlForLanguage(language) };
+      if (window.matchMedia('(max-width: 760px)').matches && typeof navigator.share === 'function') {
+        try { await navigator.share(shareData); } catch (error) { if (error?.name !== 'AbortError') communityStatus.textContent = labels[language].shareFailed; }
+        return;
+      }
+      try {
+        if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(shareData.url);
+        else {
+          const helper = document.createElement('textarea'); helper.value = shareData.url; helper.setAttribute('readonly', ''); helper.style.position = 'fixed'; helper.style.opacity = '0'; document.body.append(helper); helper.select();
+          const copied = document.execCommand('copy'); helper.remove(); if (!copied) throw new Error('clipboard unavailable');
+        }
+        communityStatus.textContent = labels[language].shareCopied;
+      } catch { communityStatus.textContent = labels[language].shareFailed; }
+    });
+    document.getElementById('open-feedback-button')?.addEventListener('click', () => {
+      feedbackLanguage.value = document.documentElement.dataset.language === 'en' ? 'en' : 'ru';
+      feedbackDialog.showModal(); feedbackActivity.focus();
+    });
+    document.getElementById('cancel-feedback-button')?.addEventListener('click', () => feedbackDialog.close());
+    feedbackDialog?.addEventListener('click', (event) => { if (event.target === feedbackDialog) feedbackDialog.close(); });
+    continueFeedbackLink?.addEventListener('click', (event) => {
+      const comment = feedbackComment.value.trim();
+      if (!comment) { event.preventDefault(); feedbackComment.setAttribute('aria-invalid', 'true'); feedbackComment.focus(); communityStatus.textContent = labels[document.documentElement.dataset.language === 'en' ? 'en' : 'ru'].feedbackCommentRequired; return; }
+      feedbackComment.removeAttribute('aria-invalid');
+      const currentLanguage = feedbackLanguage.value === 'en' ? 'en' : 'ru';
+      const selected = feedbackActivity.selectedOptions[0];
+      const activity = selected.value === '__guide__' ? labels[currentLanguage].feedbackWholeGuide : selected.dataset[currentLanguage === 'en' ? 'titleEn' : 'titleRu'];
+      const copy = labels[currentLanguage];
+      const issueUrl = new URL(${JSON.stringify(community.feedbackUrl)});
+      issueUrl.searchParams.set('title', copy.feedbackIssueTitle + ': ' + activity);
+      issueUrl.searchParams.set('body', '**' + copy.feedbackIssueBody + ':** ' + (currentLanguage === 'en' ? 'English' : 'Русский') + '\\n**' + copy.feedbackIssueActivity + ':** ' + activity + '\\n**' + copy.feedbackIssueReport + ':** ' + reportUrlForLanguage(currentLanguage) + '\\n\\n**' + copy.feedbackIssueComment + ':**\\n' + comment + '\\n\\n_' + copy.feedbackIssuePrivacy + '_');
+      continueFeedbackLink.href = issueUrl.toString();
+      feedbackDialog.close();
+    });
   })();
   </script>
 </body>

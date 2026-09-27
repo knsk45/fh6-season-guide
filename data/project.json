@@ -40,6 +40,10 @@
     "dashboardUrl": "https://hits.sh/knsk45.github.io/fh6-season-guide/reports/current-week.html/",
     "statsApiUrl": "https://hits.sh/api/urns/knsk45.github.io/fh6-season-guide/reports/current-week.html"
   },
+  "community": {
+    "feedbackUrl": "https://github.com/knsk45/fh6-season-guide/issues/new",
+    "feedbackTitlePrefix": "FH6 guide feedback"
+  },
   "steamGuide": {
     "enabled": true,
     "id": "3787739730",
