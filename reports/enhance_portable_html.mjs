@@ -179,7 +179,7 @@ const supportHtml = `
       <div class="visit-stats" data-visit-stats>
         <h3 id="analytics-title">${escapeHtml(analytics.title)}</h3>
         <a class="visit-stats-link" id="analytics-link" href="${escapeHtml(analytics.dashboardUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть подробную статистику посещений">
-          <img class="visit-stats-badge" id="analytics-badge" src="${escapeHtml(analytics.counterImageUrl)}" height="28" alt="Просмотры страницы: сегодня и всего" referrerpolicy="no-referrer">
+          <img class="visit-stats-badge" id="analytics-badge" src="${escapeHtml(analytics.counterImageUrl)}" height="28" alt="Посещения страницы: сегодня и всего" referrerpolicy="no-referrer">
         </a>
         <p class="visit-stats-note" id="analytics-description">${escapeHtml(analytics.description)}</p>
       </div>
@@ -297,15 +297,15 @@ ${supportHtml}
         language: 'Язык', countdown: 'Заканчивается через', updated: 'Обновлено:', complete: 'Готово', unfinished: 'Только невыполненные',
         condition: 'Условие:', how: 'Как выполнить:', tune: 'Автомобиль и тюнинг:', supportTitle: ${JSON.stringify(support.title)},
         supportDescription: ${JSON.stringify(support.description)}, supportSberButton: ${JSON.stringify(support.buttonLabel)}, supportBoostyButton: ${JSON.stringify(support.boosty.buttonLabel)}, analyticsTitle: ${JSON.stringify(analytics.title)},
-        analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Просмотры страницы: сегодня и всего',
+        analyticsDescription: ${JSON.stringify(analytics.description)}, analyticsLink: 'Открыть подробную статистику посещений', analyticsImage: 'Посещения страницы: сегодня и всего',
         steamGuide: 'Открыть руководство в Steam'
       },
       en: {
         language: 'Language', countdown: 'Ends in', updated: 'Updated:', complete: 'Completed', unfinished: 'Only unfinished',
         condition: 'Requirement:', how: 'How to complete:', tune: 'Car and tune:', supportTitle: 'Say thanks (support the project)',
         supportDescription: 'If this guide saved you time, you can support the project with an international card via Boosty.', supportSberButton: 'Support via Sberbank', supportBoostyButton: ${JSON.stringify(support.boosty.internationalButtonLabel)},
-        analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page views today and in total. Repeat loads and bots may increase the counter.',
-        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page views: today and total', steamGuide: 'Open the guide on Steam'
+        analyticsTitle: 'Visitor statistics', analyticsDescription: 'Page visits today and in total. Repeat loads and bots may increase the counter.',
+        analyticsLink: 'Open detailed visitor statistics', analyticsImage: 'Page visits: today and total', steamGuide: 'Open the guide on Steam'
       }
     };
     const kindLabels = {
