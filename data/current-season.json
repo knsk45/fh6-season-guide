@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-28T06:18:29+07:00",
+  "lastContentUpdate": "2026-09-29T06:52:44+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -26,9 +26,9 @@
       "title": "Еженедельное испытание",
       "points": "5 очков",
       "conditionHtml": "На 2010 Jaguar C-X75: сядьте за руль, сфотографируйте автомобиль в Shirakawa-go, завершите 2 Road Races и припаркуйтесь на любом Car Meet. Награда: 25 000 CR.",
-      "howHtml": "Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды.",
+      "howHtml": "Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды. Если после двух заездов этап не засчитался, в обсуждении этой недели есть сообщение о необходимости третьего; это совет сообщества, официально не подтверждённый.",
       "tuneHtml": "2010 Jaguar C-X75 · 110 140 996",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: главы и тюнинг</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: главы и тюнинг</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Обсуждение засчитывания гонок</a>",
       "visual": {
         "image": "tile-weekly-jaguar.png",
         "sourceImage": "evidence/user-english-weekly-tile-source-2026-09-26.png",
@@ -307,7 +307,7 @@
       "points": "10 очков",
       "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.",
       "howHtml": "Играйте аккуратно в команде и не выталкивайте союзников с траектории.",
-      "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576",
+      "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576 · запасной 947 504 263",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: тюнинг Trial</a>",
       "visual": {
         "image": "tile-trial-winter-rallies.png",
@@ -417,7 +417,7 @@
           "title": "Weekly Challenge",
           "points": "5 points",
           "conditionHtml": "In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.",
-          "howHtml": "Chapters count only in order. For the two Road Races, run a one-lap Custom Race at Shimanoyama Circuit twice.",
+          "howHtml": "Chapters count in order. For the two Road Races, run a short one-lap Custom Race at Shimanoyama Circuit twice. If the chapter does not register after two races, one player in this week's discussion reported needing a third; this is community-reported and not officially confirmed.",
           "tuneHtml": "2010 Jaguar C-X75 · 110 140 996"
         },
         "activity_02_daily": {
@@ -488,7 +488,7 @@
           "points": "10 points",
           "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.",
           "howHtml": "Drive cleanly as a team and do not push teammates off their line.",
-          "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576"
+          "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576 · backup 947 504 263"
         },
         "activity_12_horizon_play": {
           "title": "Speed Connection",

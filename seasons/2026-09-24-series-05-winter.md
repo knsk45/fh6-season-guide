@@ -2,15 +2,15 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 24.09.2026 21:30 — 01.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 28.09.2026 06:18
+> Обновлено: 29.09.2026 06:52
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание · 5 очков
 
 - **Условие:** На 2010 Jaguar C-X75: сядьте за руль, сфотографируйте автомобиль в Shirakawa-go, завершите 2 Road Races и припаркуйтесь на любом Car Meet. Награда: 25 000 CR.
-- **Как выполнить:** Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды.
+- **Как выполнить:** Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды. Если после двух заездов этап не засчитался, в обсуждении этой недели есть сообщение о необходимости третьего; это совет сообщества, официально не подтверждённый.
 - **Автомобиль и тюнинг:** 2010 Jaguar C-X75 · 110 140 996
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Winter-гайд сообщества: главы и тюнинг</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Winter-гайд сообщества: главы и тюнинг</a> · <a href="https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Обсуждение засчитывания гонок</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 × 1 очко
 
@@ -79,7 +79,7 @@
 
 - **Условие:** The Trial Winter Rallies: Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.
 - **Как выполнить:** Играйте аккуратно в команде и не выталкивайте союзников с траектории.
-- **Автомобиль и тюнинг:** 1984 Opel Manta 400 · A 700 · 930 661 576
+- **Автомобиль и тюнинг:** 1984 Opel Manta 400 · A 700 · 930 661 576 · запасной 947 504 263
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/" target="_blank" rel="noopener noreferrer">Winter Information Thread: тюнинг Trial</a>
 
 ## 12. horizon_play — Speed Connection · 3 очка
