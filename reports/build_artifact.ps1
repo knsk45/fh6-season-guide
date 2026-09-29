@@ -193,7 +193,19 @@ $blocks = foreach ($card in $activities) {
     }
 }
 
-$metricRows = @($metricsHistory.snapshots | Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt) } | Select-Object -Last 30 | ForEach-Object {
+$sortedSnapshots = @($metricsHistory.snapshots | Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt) })
+$latestSnapshot = [DateTimeOffset]::Parse([string]$sortedSnapshots[-1].collectedAt)
+$latestKrasnoyarskDate = $latestSnapshot.ToOffset([TimeSpan]::FromHours(7)).Date
+$chartWindowStart = $latestKrasnoyarskDate.AddDays(-6)
+$metricRows = @($sortedSnapshots |
+    Group-Object { [DateTimeOffset]::Parse([string]$_.collectedAt).ToOffset([TimeSpan]::FromHours(7)).ToString('yyyy-MM-dd') } |
+    ForEach-Object { $_.Group[-1] } |
+    Where-Object {
+        $localDate = [DateTimeOffset]::Parse([string]$_.collectedAt).ToOffset([TimeSpan]::FromHours(7)).Date
+        $localDate -ge $chartWindowStart -and $localDate -le $latestKrasnoyarskDate
+    } |
+    Sort-Object { [DateTimeOffset]::Parse([string]$_.collectedAt) } |
+    ForEach-Object {
     [ordered]@{
         runId = [string]$_.runId
         collectedAt = [string]$_.collectedAt
@@ -205,14 +217,14 @@ $metricRows = @($metricsHistory.snapshots | Sort-Object { [DateTimeOffset]::Pars
 $metricDataset = [ordered]@{
     title = [string]$metricsHistory.title
     source = $metricsHistory.source
-    description = [string]$metricsHistory.description
+    description = 'График показывает последний успешный замер за каждый из последних семи календарных дней по времени Красноярска.'
     rows = $metricRows
 }
 $metricChart = [ordered]@{
     id = 'publication-history'
     type = 'line'
     title = [string]$metricsHistory.title
-    subtitle = 'Последние успешные публичные замеры: Steam — уникальные посетители, GitHub — просмотры сводки.'
+    subtitle = 'Динамика за последние 7 дней: Steam — уникальные посетители, GitHub — просмотры сводки.'
     dataset = 'publicationMetrics'
     x = 'collectedAt'
     series = @('steamViews','githubViews')

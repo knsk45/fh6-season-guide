@@ -136,7 +136,7 @@ def validate_artifact(root, state, artifact, project):
     require(artifact['surface'] == manifest['surface'] == 'dashboard', 'Unsupported portable surface')
     require(manifest['version'] == snapshot['version'] == 1, 'Unsupported manifest/snapshot version')
     require(manifest['title'] == season['reportTitle'], 'Artifact title mismatch')
-    from datetime import datetime
+    from datetime import datetime, timedelta, timezone
     stamps = [manifest['generatedAt'], snapshot['generatedAt'], artifact['package_info']['generated_at']]
     require(all(datetime.fromisoformat(s) == datetime.fromisoformat(state['lastContentUpdate']) for s in stamps), 'Artifact timestamp mismatch')
     require(snapshot['accessIssues'] == state['openItems'], 'Lost unresolved evidence')
@@ -148,7 +148,7 @@ def validate_artifact(root, state, artifact, project):
     require(set(metric_data) == {'title','source','description','rows'}, 'Publication metrics dataset fields mismatch')
     require(chart == {
         'id': 'publication-history', 'type': 'line', 'title': metric_data['title'],
-        'subtitle': 'Последние успешные публичные замеры: Steam — уникальные посетители, GitHub — просмотры сводки.',
+        'subtitle': 'Динамика за последние 7 дней: Steam — уникальные посетители, GitHub — просмотры сводки.',
         'dataset': 'publicationMetrics', 'x': 'collectedAt', 'series': ['steamViews','githubViews'],
         'palette': {'steamViews': '#ff2f92', 'githubViews': '#d9ff00'}
     }, 'Unsupported publication-metrics chart contract')
@@ -156,7 +156,9 @@ def validate_artifact(root, state, artifact, project):
     require(set(metric_data['source']) == {'steam','github'}, 'Publication metrics source keys mismatch')
     safe_link(metric_data['source']['steam']); safe_link(metric_data['source']['github'])
     rows = metric_data.get('rows')
-    require(isinstance(rows, list) and len(rows) >= 2 and len(rows) <= 30, 'Publication metrics chart needs 2-30 rows')
+    require(isinstance(rows, list) and len(rows) >= 2 and len(rows) <= 7, 'Publication metrics chart needs 2-7 daily rows')
+    local_days = [datetime.fromisoformat(row['collectedAt']).astimezone(timezone(timedelta(hours=7))).date() for row in rows]
+    require(len(set(local_days)) == len(local_days) and (local_days[-1] - local_days[0]).days <= 6, 'Publication metrics chart must show at most one point per day across a seven-day window')
     previous = None
     for row in rows:
         require(set(row) == {'runId','collectedAt','steamViews','steamFavorites','githubViews'}, 'Publication metric row fields mismatch')

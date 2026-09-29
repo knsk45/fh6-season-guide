@@ -89,7 +89,7 @@ if (!/^https:\/\/hits\.sh\/.+\/$/.test(analytics.dashboardUrl)) {
   throw new Error(`Invalid hits.sh dashboard URL: ${analytics.dashboardUrl}`);
 }
 if (!publicationMetrics || !Array.isArray(publicationMetrics.rows) || publicationMetrics.rows.length < 2 || publicationMetrics.rows.length > 30) {
-  throw new Error('artifact.json must contain 2-30 publication-metrics rows');
+  throw new Error('artifact.json must contain 2-7 publication-metrics rows');
 }
 if (!publicationMetrics.source?.steam || !publicationMetrics.source?.github || !publicationMetrics.title || !publicationMetrics.description) {
   throw new Error('Publication metrics chart is missing source metadata');

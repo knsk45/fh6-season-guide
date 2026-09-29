@@ -2081,3 +2081,28 @@
 | `forza_labs_map` | no_current_item: Interactive Map доступна как общий каталог маркеров, но свежей разметки/точной Playlist-плитки Winter не содержит. |
 | `escorenews_fh6` | checked: открыты текущенедельные руководства от 24 сентября по #BambooPerfect и Treasure Hunt; Treasure подтверждает юго-запад Shimanoyama западнее Tokyo City. Новых материалов после этой недели не найдено. |
 | `dungg_playlist` | unavailable: YouTube playlist live fetch вернул throttling; наличие свежего выпуска недели подтвердить нельзя. |
+
+## 2026-09-29T15:52:00+07:00 — ручное изменение графика аудитории
+
+- Пользователь попросил ограничить публичный график динамики посещаемости последними семью днями. Просмотрен живой официальный Playlist: Series 5 `British Automotive — Winter`, активен 24 сентября — 1 октября 2026; дедлайн прежний `2026-10-01T21:30:00+07:00`, сезон не менялся.
+- Для проверки актуальности карточек просмотрены свежие текущенедельные материалы Reddit и Escorenews. Новых подтверждённых изменений карточек/решений для внесения не выявлено. Этот запуск меняет только отображаемый диапазон графика; исходная полная история метрик остаётся без изменений.
+- Повторная проверка всех 14 визуальных записей: 13 отдельных подготовленных игровых плиток и их исходные пользовательские скриншоты на месте; SHA-256 подготовленных плиток сверены и зарегистрированы в audit.json. В online-источниках более точных отдельных плиток этой недели не найдено. Daily остаётся намеренно текстовым, без публичного визуала/запроса скриншота. `automation/audit_visual_evidence.ps1`: `VISUAL_QUEUE_STATUS=READY`.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: FH6 Series category недоступна через live fetch; старые сведения и изображения не использовались. |
+| `fandom_current` | unavailable: Fandom вернул HTTP 402; сезонную страницу и игровые плитки прочитать нельзя. |
+| `forza_playlist` | checked: https://forza.net/fh6playlists открыта; подтверждены Series 5 Winter и её период 24 сентября — 1 октября. |
+| `forza_news` | no_current_item: официальный индекс доступен, новой публикации текущей недели не обнаружено; материал от 7 сентября не считался свежим. |
+| `forza_support_release_notes` | unavailable: настроенная секция Release Notes вернула Internal Error; свежую заметку недели подтвердить нельзя. |
+| `forza_support_known_issues` | no_current_item: список открыт; видимая официальная запись обновлена 20 июля, связанных с текущей Playlist исправлений этой недели не обнаружено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую страницу Forza Forums; свежего объявления Playlist не найдено. |
+| `reddit_forzahorizon` | checked: просмотрен текущенедельный Winter breakdown от 24 сентября и сезонный tuning guide от 25 сентября; новых подтверждённых изменений карточек нет. |
+| `reddit_forzahorizon6` | checked: проверены Winter Playlist guide от 24 сентября и tuning guide от 25 сентября; новых подтверждённых изменений карточек нет. |
+| `reddit_forza` | checked: проверены Winter Information Thread от 24 сентября и текущий tuning guide; новых подтверждённых изменений карточек нет. |
+| `reddit_forzatune` | no_current_item: текущая лента проверена; свежей публикации FH6/Winter за текущую неделю не обнаружено. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но сезонной записи Series 5 Winter текущей недели не содержит. |
+| `forza_labs_collector` | unavailable: Collector Tool не удалось загрузить через live fetch; новых collectible-фактов не подтверждено. |
+| `forza_labs_map` | no_current_item: Interactive Map доступна как общая карта, актуальной Playlist-разметки или точной плитки Winter не содержит. |
+| `escorenews_fh6` | checked: найдены и просмотрены свежие статьи от 24 сентября по #BambooPerfect, Treasure Hunt и Winter Rallies Trial; они не меняют факты текущих карточек. |
+| `dungg_playlist` | unavailable: YouTube playlist не загрузилась через live fetch; свежий выпуск недели подтвердить нельзя. |
