@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 1
 > Период: 24.09.2026 21:30 — 01.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 29.09.2026 16:00
+> Обновлено: 30.09.2026 07:44
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание · 5 очков
@@ -99,6 +99,6 @@
 ## 14. monthly_rivals — Monthly Rivals — Shimanoyama Sprint · 4 очка
 
 - **Условие:** Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren W1.
-- **Как выполнить:** Завершите круг без столкновений и штрафов.
+- **Как выполнить:** Завершите круг без столкновений и штрафов. По предупреждению игроков в свежем Winter-гайде, ANNA Autopilot может пометить круг как грязный; это наблюдение сообщества, не подтверждённый официальный баг.
 - **Автомобиль и тюнинг:** 2025 McLaren W1 — без обязательного тюнинга.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://forza.net/news/forza-horizon-6-series-5" target="_blank" rel="noopener noreferrer">Новости Forza: British Automotive</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Winter-гайд сообщества: чистый круг</a>

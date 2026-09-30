@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-09-29T16:00:16+07:00",
+  "lastContentUpdate": "2026-09-30T07:44:07+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -387,9 +387,9 @@
       "title": "Monthly Rivals — Shimanoyama Sprint",
       "points": "4 очка",
       "conditionHtml": "Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren W1.",
-      "howHtml": "Завершите круг без столкновений и штрафов.",
+      "howHtml": "Завершите круг без столкновений и штрафов. По предупреждению игроков в свежем Winter-гайде, ANNA Autopilot может пометить круг как грязный; это наблюдение сообщества, не подтверждённый официальный баг.",
       "tuneHtml": "2025 McLaren W1 — без обязательного тюнинга.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: чистый круг</a>",
       "visual": {
         "image": "tile-monthly-rivals-shimanoyama.png",
         "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
@@ -508,7 +508,7 @@
           "title": "Monthly Rivals — Shimanoyama Sprint",
           "points": "4 points",
           "conditionHtml": "Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.",
-          "howHtml": "Finish the lap without collisions or penalties.",
+          "howHtml": "Finish without collisions or penalties. Players in the fresh Winter guide warn that ANNA Autopilot may mark the lap dirty; this is community-reported, not an officially confirmed bug.",
           "tuneHtml": "2025 McLaren W1 — no mandatory tune."
         }
       }

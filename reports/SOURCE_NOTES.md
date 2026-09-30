@@ -2082,6 +2082,31 @@
 | `escorenews_fh6` | checked: открыты текущенедельные руководства от 24 сентября по #BambooPerfect и Treasure Hunt; Treasure подтверждает юго-запад Shimanoyama западнее Tokyo City. Новых материалов после этой недели не найдено. |
 | `dungg_playlist` | unavailable: YouTube playlist live fetch вернул throttling; наличие свежего выпуска недели подтвердить нельзя. |
 
+# 2026-09-30T07:38:20+07:00 — ручной полный аудит Winter Series 5
+
+- Живая официальная Playlist повторно подтверждает Series 5 `British Automotive — Winter`, сезон 24 сентября — 1 октября 2026, и активность до 1 октября. Сегодняшнее Daily (30.09) — завершить один круг на любой Time Attack circuit; официальный список содержит все семь Daily. Смены сезона нет; дедлайн `2026-10-01T21:30:00+07:00`.
+- Проверены свежие текущенедельные публикации Reddit и Escorenews. Новых подтверждённых изменений карточек/условий/наград и новых актуальных решений Treasure Hunt/Photo Challenge не обнаружено. В актуальном Winter-гайде Reddit есть предупреждение сообщества: ANNA Autopilot может пометить круг Monthly Rivals как грязный. Оно добавлено RU/EN к подсказке чистого круга с явной пометкой «неофициальное наблюдение», без объявления подтверждённого бага. Остальные решения и коды не менялись.
+- Проверены все 14 записей визуала: 13 отдельных англоязычных текущих плиток пользователя и их исходные screenshot-evidence на месте, SHA-256 prepared/original файлов зафиксированы в audit.json; `community=13, confirmed=0, preliminary=0, missing=1`. Daily намеренно текстовый, без публичной плитки и без запроса скриншота. Более точных отдельных плиток недели в доступных онлайн-источниках не найдено. `automation/audit_visual_evidence.ps1`: `VISUAL_QUEUE_STATUS=READY`, запросов скриншотов нет.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: FH6 Series category вернула Internal Error; сезонные факты и визуалы оттуда не использовались. |
+| `fandom_current` | unavailable: Fandom root вернул Internal Error; текущую страницу сезона прочитать нельзя. |
+| `forza_playlist` | checked: https://forza.net/fh6playlists открыта; подтверждены British Automotive Winter, даты 24 Sep–1 Oct, 14 активностей, порядок и все 7 Daily, включая Time Attack 30 Sep. |
+| `forza_news` | no_current_item: официальный News индекс доступен; публикации текущей недели по Winter Playlist нет. |
+| `forza_support_release_notes` | unavailable: секция Release Notes вернула Internal Error; обновление текущей недели подтвердить нельзя. |
+| `forza_support_known_issues` | unavailable: настроенная Known Issues страница вернула Internal Error; свежий официальный список проблем не прочитан. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общий форум Forza; новой публикации Playlist на этой неделе не найдено. |
+| `reddit_forzahorizon` | checked: проверены лента и свежий Winter Breakdown от 24 Sep; новых подтверждённых решений/изменений условий не обнаружено. |
+| `reddit_forzahorizon6` | checked: проверены лента и Winter Playlist Guide от 24 Sep; новые условия/коды не выявлены. Зафиксировано неофициальное предупреждение об ANNA Autopilot для чистого круга Monthly Rivals. |
+| `reddit_forza` | checked: проверена лента и Winter Information Thread Series 5 от 24 Sep; подтверждены сезонный порядок, награды и Daily. |
+| `reddit_forzatune` | no_current_item: проверена лента и поиск текущей недели; свежих FH6/Winter тюнингов за 24–30 Sep не найдено, старые коды не переносились. |
+| `forza_horizon_hub` | unavailable: сайт вернул Internal Error при живом открытии; актуальные данные сезона не использованы. |
+| `forza_labs_collector` | unavailable: Collector Tool вернул Internal Error; свежую collectible-разметку подтвердить нельзя. |
+| `forza_labs_map` | no_current_item: Interactive Map открыта, но сезонной Playlist-разметки/новых точных локаций Winter не содержит. |
+| `escorenews_fh6` | checked: индекс временно вернул Internal Error, но поиск подтвердил свежие статьи от 24 Sep по #BambooPerfect, Shimanoyama Treasure Hunt и Winter Rallies Trial; новых уточнений сверх уже внесённых в карточки не найдено. |
+| `dungg_playlist` | unavailable: YouTube playlist вернула Internal Error; выпуск текущей недели подтвердить нельзя. |
+
 ## 2026-09-29T15:52:00+07:00 — ручное изменение графика аудитории
 
 - Пользователь попросил ограничить публичный график динамики посещаемости последними семью днями. Просмотрен живой официальный Playlist: Series 5 `British Automotive — Winter`, активен 24 сентября — 1 октября 2026; дедлайн прежний `2026-10-01T21:30:00+07:00`, сезон не менялся.
