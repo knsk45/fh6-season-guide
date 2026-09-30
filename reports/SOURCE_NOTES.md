@@ -2131,3 +2131,28 @@
 | `forza_labs_map` | no_current_item: Interactive Map доступна как общая карта, актуальной Playlist-разметки или точной плитки Winter не содержит. |
 | `escorenews_fh6` | checked: найдены и просмотрены свежие статьи от 24 сентября по #BambooPerfect, Treasure Hunt и Winter Rallies Trial; они не меняют факты текущих карточек. |
 | `dungg_playlist` | unavailable: YouTube playlist не загрузилась через live fetch; свежий выпуск недели подтвердить нельзя. |
+
+## 2026-10-01T06:19:43+07:00 — повторная проверка Steam и активной недели
+
+- Live Playlist и официальный анонс подтверждают, что Series 5 Winter продолжается до 1 октября 14:30 UTC (21:30 Красноярск); страница Playlist уже заранее показывает Spring (1–8 октября), поэтому Spring не подставлялся в активные карточки до игрового сброса. Проверены все 16 настроенных источников.
+- Повторно проверены все 14 визуальных записей активной Winter: 13 отдельных сезонных плиток с исходными пользовательскими доказательствами, Daily оставлен намеренно текстовым. Новых более точных актуальных плиток в доступных свежих источниках не найдено. Статусы visual: confirmed=0, community=13, preliminary=0, missing=1 (Daily intentionally text-only; no screenshot requested).
+- Steam RU и EN: локальные тексты сгенерированы по текущему Winter state (3738 и 3352 символа, оба ниже лимита 4800). Обновлены только существующие секции 9235220 и 9330926. Публичная страница в браузере подтверждает обе локали и коды; Steam checker после подтверждения показывает UPDATE_REQUIRED из-за несовпадений своей публичной HTML-сверки (часть tune/condition полей и единственная ссылка GitHub в описании не обнаруживаются автоматическим fetch). Отпечатки записаны лишь после публичной проверки; финальный checker не UP_TO_DATE, причина остаётся открытой.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: категория Fandom недоступна live; данные и визуалы оттуда не использовались. |
+| `fandom_current` | unavailable: текущая FH6 страница Fandom не открывается; сезонные решения/плитки не использовались. |
+| `forza_playlist` | checked: официальная Playlist открыта. Текущая по расписанию Winter заканчивается 1 Oct в 14:30 UTC; страница уже предварительно показывает Spring 1–8 Oct. Spring карточки не приняты до времени сброса. Winter conditions и порядок сверены с опубликованной таблицей. |
+| `forza_news` | no_current_item: официальный индекс доступен; свежего анонса/решений именно для Winter недели за последние дни нет. Серия 5 анонс от 7 Sep — контекст, не свежий weekly материал. |
+| `forza_support_release_notes` | no_current_item: секция недоступна прямому чтению; связанная release note от 7 Sep известна, обновления текущей недели не обнаружены. |
+| `forza_support_known_issues` | no_current_item: официальная Known Issues страница доступна; последняя видимая правка 20 Jul, актуального Winter playlist issue нет. |
+| `forza_forums_official` | no_current_item: официальный форум сообщает о закрытии прежних форумов и переходе к Forza News/Feedback Portal; свежей playlist-публикации нет. |
+| `reddit_forzahorizon` | checked: проверена лента и закреплённый Series 5 материал; релевантный новый текущенедельный пост по Winter решениям не найден. |
+| `reddit_forzahorizon6` | checked: проверена текущая лента; свежего Spring материала нет, Winter решений сверх внесённых не обнаружено. |
+| `reddit_forza` | checked: найден Winter Information Thread от 24 Sep; подтверждает смену на Spring 1 Oct в 14:30 UTC, новых условий Winter сверх Playlist нет. |
+| `reddit_forzatune` | no_current_item: лента доступна, свежей публикации по текущей FH6 Winter неделе/тюнингу не найдено. |
+| `forza_horizon_hub` | checked: сайт открыт; свежей разметки/гайда по текущей Winter неделе, карт или точных игровых плиток не обнаружено. |
+| `forza_labs_collector` | checked: Collector Tool открыт; сезонной Playlist коллекционной активности на текущей неделе не содержит. |
+| `forza_labs_map` | checked: Interactive Map открыта; общая карта, точных плиток Festival Playlist не содержит. |
+| `escorenews_fh6` | no_current_item: FH6 индекс недоступен прямому чтению; поиск не выявил более свежих Winter решений, пригодных для внесения. Старые/следующие недели не перенесены. |
+| `dungg_playlist` | unavailable: YouTube playlist недоступна live; выпуск текущей Winter недели подтвердить нельзя. |
