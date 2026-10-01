@@ -2156,3 +2156,29 @@
 | `forza_labs_map` | checked: Interactive Map открыта; общая карта, точных плиток Festival Playlist не содержит. |
 | `escorenews_fh6` | no_current_item: FH6 индекс недоступен прямому чтению; поиск не выявил более свежих Winter решений, пригодных для внесения. Старые/следующие недели не перенесены. |
 | `dungg_playlist` | unavailable: YouTube playlist недоступна live; выпуск текущей Winter недели подтвердить нельзя. |
+
+## 2026-10-02T06:12:04+07:00 — rollover и полный аудит Series 5 Spring
+
+- Живая официальная Playlist подтверждает Series 5 `British Automotive — Spring`, 1–8 октября; расписание Spring Information Thread указывает следующий сброс 8 октября 14:30 UTC (21:30 Красноярск). Официальная таблица и два свежих Reddit-материала совпадают по порядку, ограничениям, наградам и полному списку семи Daily. В state внесены 14 активностей; Monthly Rivals добавлен последним согласно порядку гайда.
+- Подтверждены текущие Spring условия Weekly, Photo #TempleVantage, Treasure Hunt, Rally on Dirt, Aston Martin Nights, Drift Attack, Clifftop Crest Danger Sign, Ine Beach Speed Trap, Trial Hyper Sprints, три Horizon Play и Monthly Rivals. В свежем r/ForzaHorizon6 опубликованы актуальные коды для чемпионатов/PR/Trial; они внесены без имён авторов. Точное положение Nangan chest остаётся открытым: свежий пост показывает image spoiler, но текстовая локация не подтверждена, требуется проверить сам Photo Clue/карту.
+- Проведён отдельный поиск Spring игровых плиток по официальной Playlist/News, текущим Reddit-гайдам и поиску изображений; результаты поиска показывают старые и обзорные визуалы, но не точные Spring плитки по каждой активности. Ничего из Winter не перенесено. Визуалы: `confirmed=0, community=0, preliminary=0, missing=14` (13 отдельных плиток запрошены, Daily остаётся намеренно текстовым без запроса изображения). `automation/audit_visual_evidence.ps1` должен сформировать очередь 13 полных скриншотов.
+- Открытые поля: визуалы 13 карточек кроме Daily; точное решение Treasure Hunt Nangan. Отдельные tune-коды включены только там, где они есть в свежем текущенедельном Spring-гайде. Неизвестные сведения не заполнены предположениями.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: категория Fandom открыта live, но возвращает Internal Error; сезонные факты и визуалы оттуда не использовались. |
+| `fandom_current` | unavailable: актуальная Fandom Series 5 страница возвращает Internal Error; старые статьи не использовались. |
+| `forza_playlist` | checked: https://forza.net/fh6playlists открыта; строки 426–446 подтверждают Spring, 14 активностей, награды, классы, маршруты и требования; Spring 1–8 Oct. |
+| `forza_news` | no_current_item: официальный индекс просмотрен, новой отдельной Series 5 Spring новости текущей недели нет. |
+| `forza_support_release_notes` | unavailable: настроенная секция Release Notes вернула Internal Error; в Known Issues index последняя опубликованная release note — Sep 7, новой за текущую неделю не найдено. |
+| `forza_support_known_issues` | checked: официальная страница открыта; последнее обновление 20 Jul, актуального Spring Playlist issue среди видимых записей нет; страница направляет в Feedback Portal за текущим issue status. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую Forza Forums; отдельного свежего Spring Playlist объявления не обнаружено. |
+| `reddit_forzahorizon` | checked: открыт breakdown Series 5 Spring от 1 Oct; сверены Weekly, все Daily, Photo и Treasure facts, новые уточнения не конфликтуют с официальной Playlist. |
+| `reddit_forzahorizon6` | checked: открыт новый Series 5 Spring guide от 1 Oct; сверены маршруты, ограничения, reward cars и share codes; актуальные изображения — игровые/локационные иллюстрации, не полные точные плитки. |
+| `reddit_forza` | checked: открыта Spring Information Thread Series 5 от 1 Oct и Spring breakdown; подтверждены даты, 7 Daily, сезонные reward thresholds и Monthly Rivals. |
+| `reddit_forzatune` | no_current_item: текущая лента и поиск свежей недели проверены; отдельного FH6 Series 5 Spring tuning-поста в r/ForzaTune не найдено; настройки из прошлых сезонов не переносились. |
+| `forza_horizon_hub` | checked: сайт открыт, но его weekly Playlist section всё ещё сообщает Series 1; эти данные явно устарели и не использовались для Spring. |
+| `forza_labs_collector` | checked: Collector Tool открыт; сезонных Spring collectibles текущей недели не показывает, поэтому не добавлялся отдельный Collectibles card. |
+| `forza_labs_map` | checked: Interactive Map открыта; свежей Spring Playlist разметки/точных игровых плиток нет. |
+| `escorenews_fh6` | no_current_item: FH6 индекс и поиск проверены; текущей Spring Series 5 статьи нет, найденные статьи относятся к прошлым сериям. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist URL проверен, но live fetch вернул Internal Error; публикацию текущего Spring выпуска подтвердить не удалось. | 

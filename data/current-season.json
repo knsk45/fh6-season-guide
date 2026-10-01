@@ -4,20 +4,20 @@
     "seriesNumber": 5,
     "seriesSlug": "05",
     "seriesName": "British Automotive",
-    "season": "winter",
-    "seasonDisplay": "Зима",
-    "startAt": "2026-09-24T21:30:00+07:00",
-    "endAt": "2026-10-01T21:30:00+07:00",
-    "reportTitle": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Зима",
-    "archiveFile": "seasons/2026-09-24-series-05-winter.md",
-    "assetsDirectory": "reports/assets/series-05-winter",
+    "season": "spring",
+    "seasonDisplay": "Весна",
+    "startAt": "2026-10-01T21:30:00+07:00",
+    "endAt": "2026-10-08T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Весна",
+    "archiveFile": "seasons/2026-10-01-series-05-spring.md",
+    "assetsDirectory": "reports/assets/series-05-spring",
     "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
     "officialPlaylistUrl": "https://forza.net/fh6playlists",
     "expectedCardCount": 14,
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-01T06:38:17+07:00",
+  "lastContentUpdate": "2026-10-02T06:14:45+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,26 +25,36 @@
       "kind": "weekly",
       "title": "Еженедельное испытание",
       "points": "5 очков",
-      "conditionHtml": "На 2010 Jaguar C-X75: сядьте за руль, сфотографируйте автомобиль в Shirakawa-go, завершите 2 Road Races и припаркуйтесь на любом Car Meet. Награда: 25 000 CR.",
-      "howHtml": "Главы засчитываются только по порядку. Для двух Road Races удобно запустить короткую пользовательскую гонку на Shimanoyama Circuit с одним кругом и пройти её дважды. Если после двух заездов этап не засчитался, в обсуждении этой недели есть сообщение о необходимости третьего; это совет сообщества, официально не подтверждённый.",
-      "tuneHtml": "2010 Jaguar C-X75 · 110 140 996",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: главы и тюнинг</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Обсуждение засчитывания гонок</a>",
+      "conditionHtml": "На 1964 Aston Martin DB5 Vantage: потратьте 20 000 CR на улучшения, завершите 2 Street Races и заработайте 3 звезды на Speed Zones. Награда: 25 000 CR.",
+      "howHtml": "Выполняйте главы строго по порядку в DB5 Vantage. После покупки/получения автомобиля сначала завершите улучшения, затем гонки и Speed Zones.",
+      "tuneHtml": "1964 Aston Martin DB5 Vantage — код тюнинга не указан в проверенных материалах.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-weekly-jaguar.png",
-        "sourceImage": "evidence/user-english-weekly-tile-source-2026-09-26.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_01_weekly",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_02_daily",
@@ -52,17 +62,17 @@
       "kind": "daily",
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
-      "conditionHtml": "<ol><li><strong>24.09:</strong> припарковаться на любом Car Meet.</li><li><strong>25.09:</strong> выполнить 3 Speed Skills.</li><li><strong>26.09:</strong> сфотографировать любую машину.</li><li><strong>27.09:</strong> потратить 15 000 CR на улучшение любой машины.</li><li><strong>28.09:</strong> использовать Wheelspin или Super Wheelspin.</li><li><strong>29.09:</strong> получить хотя бы 1 звезду на Speed Trap.</li><li><strong>30.09:</strong> завершить 1 круг на любом Time Attack circuit.</li></ol> Награда за каждое: 5 000 CR.",
-      "howHtml": "Каждое Daily открывается в 21:30 по Красноярску и остаётся доступным 7 дней.",
+      "conditionHtml": "<ol><li><strong>01.10:</strong> выполните 3 Trading Paint Skills.</li><li><strong>02.10:</strong> завершите Road Race.</li><li><strong>03.10:</strong> выполните 3 Drift или E-Drift Skills.</li><li><strong>04.10:</strong> купите Aftermarket Car.</li><li><strong>05.10:</strong> получите не менее 1 звезды в Horizon Rush.</li><li><strong>06.10:</strong> получите не менее 1 звезды на Danger Signs.</li><li><strong>07.10:</strong> завершите 1 круг Drift Attack.</li></ol> Награда за каждое: 5 000 CR.",
+      "howHtml": "Каждое задание открывается в 21:30 по Красноярску и доступно 7 дней. Полный список до конца недели подтверждён свежей Information Thread.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не найдена; нужен неизменённый скриншот полной плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
@@ -77,8 +87,8 @@
         {
           "activityId": "activity_02_daily",
           "field": "visual",
-          "reason": "Daily is intentionally text-only and does not use a public game tile.",
-          "nextCheck": "No screenshot required: keep the Daily block as a text list.",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
           "status": "missing"
         }
       ]
@@ -87,109 +97,157 @@
       "id": "activity_03_photo",
       "number": "03",
       "kind": "photo",
-      "title": "#BambooPerfect",
+      "title": "#TempleVantage",
       "points": "2 очка",
-      "conditionHtml": "Сфотографируйте любой McLaren в Bamboo Forest. Награда: эмоция Karate Master.",
-      "howHtml": "Езжайте к бамбуковой роще у грунтовой дороги на границе Ito и Minamino; ориентир — Arashiyama Run Speed Zone. Откройте фотокамеру, оставьте McLaren в кадре и сохраните фото.",
+      "conditionHtml": "Сфотографируйте 1964 Aston Martin DB5 Vantage у храма Ruriko-ji. Награда: Forza Link «Are you not entertained?».",
+      "howHtml": "Подъедьте к Ruriko-ji Temple, откройте Photo Mode и убедитесь, что DB5 Vantage целиком попал в кадр.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81485-bambooperfect-weekly-photo-challenge-in-winter-series-5-festival-playlist-where-is-bamboo-forest-in-forza-horizon-6\" target=\"_blank\" rel=\"noopener noreferrer\">Карта / Map</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-photo-bamboo-perfect.png",
-        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_03_photo",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_04_treasure_hunt",
       "number": "04",
       "kind": "treasure_hunt",
-      "title": "Treasure Hunt",
+      "title": "Nangan Region",
       "points": "3 очка",
-      "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в регионе Shimanoyama. Награда: 100 000 CR.",
-      "howHtml": "Откройте южную часть Shimanoyama к западу от Tokyo City и найдите Lake View Speed Trap у грунтовой дороги; сундук лежит в открытом поле рядом, недалеко от старта Taiyaki Scramble. Разбейте его — других условий нет.",
+      "conditionHtml": "Treasure Hunt в регионе Nangan: выполните Photo Clue и найдите сундук. Награда: 100 000 CR.",
+      "howHtml": "Официальный источник задаёт только регион и фото-подсказку. Точное место сундука пока не подтверждено независимым текстовым описанием — откройте карточку задания в игре.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://escorenews.com/en/article/81484-shimanoyama-region-treasure-hunt-map-in-forza-horizon-6-winter-series-5-treasure-chest-weekly-challenge\" target=\"_blank\" rel=\"noopener noreferrer\">Карта сундука / Chest map</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-treasure-shimanoyama.png",
-        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
-        "condition": "community",
-        "solution": "community",
+        "condition": "confirmed",
+        "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual",
+        "solution"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_04_treasure_hunt",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        },
+        {
+          "activityId": "activity_04_treasure_hunt",
+          "field": "solution",
+          "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
+          "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_05_championship",
       "number": "05",
       "kind": "championship",
-      "title": "Country Pickups",
+      "title": "Rally on Dirt",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Country Pickups: Pickups & 4x4, B 600. Маршруты: Soni Highlands Cross Country, Temple Cross Country и Edogawa Cross Country Circuit. Награда: 2010 Jaguar C-X75.",
-      "howHtml": "Три Cross Country заезда; чтобы открыть первое задание недели без покупки автомобиля, сначала выиграйте этот чемпионат и получите Jaguar C-X75.",
-      "tuneHtml": "2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: маршруты и тюнинг</a>",
+      "conditionHtml": "Чемпионат Rally on Dirt: Total Rally, класс B 600. Маршруты: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Награда: 2012 MINI John Cooper Works GP.",
+      "howHtml": "Подойдёт любая машина Total Rally в B 600. Для грязевых трасс держите плавную траекторию; championship состоит из трёх заездов.",
+      "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-championship-country-pickups.png",
-        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
-        "condition": "community",
+        "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_05_championship",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_06_championship",
       "number": "06",
       "kind": "championship",
-      "title": "Cult Street",
+      "title": "Aston Martin Nights",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Cult Street: Cult Cars, D 400. Маршруты: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent. Награда: 1972 Reliant Supervan III.",
-      "howHtml": "Завершите три ночных Street-заезда: Rainbow Bridge Descent, Okishinaimura Run и Norikura Descent; держитесь чистых чекпоинтов.",
-      "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist: маршрут</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: класс и тюнинг</a>",
+      "conditionHtml": "Чемпионат Aston Martin Nights: автомобили Aston Martin, класс A 800. Маршруты: Festival Chase, Matsumi Climb, Shimanoyama Charge. Награда: 1964 Aston Martin DB5 Vantage.",
+      "howHtml": "Выберите любой Aston Martin класса A 800 и пройдите три Street/Touge-заезда.",
+      "tuneHtml": "2017 Aston Martin DB11 — A 800 · 109 918 685",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-championship-cult-street.png",
-        "sourceImage": "evidence/user-english-playlist-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_06_championship",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_07_pr",
@@ -197,338 +255,614 @@
       "kind": "pr",
       "title": "Shimanoyama Drift Attack",
       "points": "3 очка",
-      "conditionHtml": "Drift Attack Shimanoyama: Великобритания, A 700, минимум 80 000 очков.",
-      "howHtml": "Наберите очки на полной дистанции Drift Attack, избегая потери серии.",
-      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
+      "conditionHtml": "Drift Attack Shimanoyama: Великобритания, A 700, минимум 120 000 очков дрифта. Награда: Wheelspin.",
+      "howHtml": "Набирайте очки на протяжении всей трассы и поддерживайте непрерывную цепочку дрифта.",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-pr-shimanoyama-drift.png",
-        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "drift-zone",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_07_pr",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_08_pr",
       "number": "08",
       "kind": "pr",
-      "title": "Azure Drive Danger Sign",
+      "title": "Clifftop Crest Danger Sign",
       "points": "2 очка",
-      "conditionHtml": "Danger Sign Azure Dive: Великобритания, B 600, минимум 689,0 футов (210 м).",
-      "howHtml": "Разгонитесь по прямой траектории к трамплину. Игровая плитка подтверждает цель 689 футов; конкретное направление подъезда отдельно не проверено.",
-      "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
+      "conditionHtml": "Danger Sign Clifftop Crest: Великобритания, B 600, минимум 590,6 ft (180 м). Награда: Wheelspin.",
+      "howHtml": "Разгонитесь по прямой перед трамплином; ориентир прохождения — 590,6 ft.",
+      "tuneHtml": "2020 Land Rover Defender 110 X — B 600 · 163 429 917",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-pr-azure-danger-sign.png",
-        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_08_pr",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_09_pr",
       "number": "09",
       "kind": "pr",
-      "title": "Tall Trees Speed Zone",
+      "title": "Ine Beach Speed Trap",
       "points": "2 очка",
-      "conditionHtml": "Speed Zone Tall Trees: Великобритания, A 700, минимум 70,0 mph (112,7 км/ч).",
-      "howHtml": "Наберите скорость до въезда и сохраняйте плавную траекторию.",
-      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
+      "conditionHtml": "Speed Trap Ine Beach: Великобритания, A 700, минимум 150 mph (241,4 км/ч). Награда: Wheelspin.",
+      "howHtml": "Наберите скорость до камеры и выберите ровную траекторию для въезда.",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-pr-tall-trees-speed-zone.png",
-        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "vehicleTune": "community",
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_09_pr",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
-      "id": "activity_10_pr",
+      "id": "activity_10_trial",
       "number": "10",
-      "kind": "pr",
-      "title": "Sekibe Kaijo Trailblazer",
-      "points": "2 очка",
-      "conditionHtml": "Trailblazer Sekibe Kaijo: Великобритания, A 700, минимум 42 секунды.",
-      "howHtml": "Стартуйте с запасом скорости и следуйте к финишу по кратчайшему безопасному маршруту.",
-      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: условия и тюнинг</a>",
-      "visual": {
-        "image": "tile-pr-sekibe-kaijo-trailblazer.png",
-        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
-      },
-      "missingFields": [],
-      "openItems": []
-    },
-    {
-      "id": "activity_11_trial",
-      "number": "11",
       "kind": "trial",
-      "title": "Winter Rallies",
+      "title": "Hyper Sprints",
       "points": "10 очков",
-      "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Маршруты: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Награда: 1986 MG Metro 6R4.",
-      "howHtml": "Играйте аккуратно в команде и не выталкивайте союзников с траектории.",
-      "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576 · запасной 947 504 263",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1wp7bpn/fh6_winter_information_thread_series_5/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread: тюнинг Trial</a>",
+      "conditionHtml": "The Trial Hyper Sprints: Hypercars, класс S1 800. Маршруты: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Награда: 2015 Radical RXC Turbo.",
+      "howHtml": "Играйте на командный результат и финишируйте чисто. Все три маршрута — Road Races.",
+      "tuneHtml": "2025 McLaren W1 — S1 800 · 612 366 901",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-trial-winter-rallies.png",
-        "sourceImage": "evidence/user-english-pr-and-trial-board-source-2026-09-26.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_10_trial",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "activity_11_horizon_play",
+      "number": "11",
+      "kind": "horizon_play",
+      "title": "Double Clean",
+      "points": "3 очка",
+      "conditionHtml": "В Horizon Racing выполните 3 LINK Clean Start Skills. Награда: 2014 McLaren 650S Spider.",
+      "howHtml": "Стартуйте в Horizon Racing и выполните чистые старты, не задевая соперников.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "",
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_11_horizon_play",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_12_horizon_play",
       "number": "12",
       "kind": "horizon_play",
-      "title": "Speed Connection",
+      "title": "The Eliminator — Battle Royale",
       "points": "3 очка",
-      "conditionHtml": "В Horizon Racing выполните 3 LINK Speed Skills. Награда: 1962 Peel P50.",
-      "howHtml": "Начните событие Horizon Racing и поддерживайте цепочку скоростных навыков.",
+      "conditionHtml": "Завершите матч The Eliminator на 30-м месте или выше. Награда: 2015 Ultima Evolution Coupe 1020.",
+      "howHtml": "Сосредоточьтесь на выживании; для выполнения задания достаточно финишировать в топ-30.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-horizon-play-speed-connection.png",
-        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_12_horizon_play",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_13_horizon_play",
       "number": "13",
       "kind": "horizon_play",
-      "title": "Horizon Stunt Party",
+      "title": "Horizon Stunt Party — Mini Games",
       "points": "3 очка",
-      "conditionHtml": "Завершите Mini Games в Horizon Stunt Party. Награда: Black and Red Utility Pants.",
-      "howHtml": "Дойдите до итогового экрана события; досрочный выход не засчитывается.",
+      "conditionHtml": "Завершите любой матч Horizon Stunt Party. Награда: гудок Jaguar Growl.",
+      "howHtml": "Играйте до завершения матча и дождитесь экрана результатов.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-5\" target=\"_blank\" rel=\"noopener noreferrer\">Новости Forza: British Automotive</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-horizon-play-stunt-party.png",
-        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Англоязычный пользовательский скриншот актуальной Winter-плитки; исходник сохранён без изменений, вырезаны только границы игровой плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_13_horizon_play",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     },
     {
       "id": "activity_14_monthly_rivals",
       "number": "14",
       "kind": "monthly_rivals",
-      "title": "Monthly Rivals — Shimanoyama Sprint",
+      "title": "Monthly Rivals - Shimanoyama Sprint",
       "points": "4 очка",
-      "conditionHtml": "Monthly Rivals: чистый круг на Shimanoyama Sprint на 2025 McLaren W1.",
-      "howHtml": "Завершите круг без столкновений и штрафов. По предупреждению игроков в свежем Winter-гайде, ANNA Autopilot может пометить круг как грязный; это наблюдение сообщества, не подтверждённый официальный баг.",
-      "tuneHtml": "2025 McLaren W1 — без обязательного тюнинга.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wozwwv/fh6_series_5_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter-гайд сообщества: чистый круг</a>",
+      "conditionHtml": "Установите чистый круг на Shimanoyama Sprint на 2025 McLaren W1. Награда: Super Wheelspin.",
+      "howHtml": "Ещё до сброса Series можно выполнить Monthly Rivals один раз; для чистого круга избегайте столкновений, пропуска чекпоинтов и перемотки.",
+      "tuneHtml": "2025 McLaren W1 - R 918, задний привод; настройка не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "tile-monthly-rivals-shimanoyama.png",
-        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
-        "orientation": "horizontal",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Проверены официальная Playlist, свежие Winter-гайды и поиск изображений: онлайн найдено описание события, но не отдельная актуальная игровая плитка; использован предоставленный пользователем англоязычный скриншот с COMPLETE. Исходник сохранён без изменений, вырезаны только границы плитки."
+        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
       },
       "completeness": {
-        "condition": "confirmed",
+        "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": [],
-      "openItems": []
+      "missingFields": [
+        "visual"
+      ],
+      "openItems": [
+        {
+          "activityId": "activity_14_monthly_rivals",
+          "field": "visual",
+          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+          "status": "missing"
+        }
+      ]
     }
   ],
   "locales": {
     "en": {
-      "reportTitle": "Forza Horizon 6: Series 5 \"British Automotive\" — Winter Guide",
-      "seasonDisplay": "Winter",
+      "reportTitle": "Forza Horizon 6: Series 5 \"British Automotive\" — Spring Guide",
+      "seasonDisplay": "Spring",
       "activities": {
         "activity_01_weekly": {
           "title": "Weekly Challenge",
           "points": "5 points",
-          "conditionHtml": "In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.",
-          "howHtml": "Chapters count in order. For the two Road Races, run a short one-lap Custom Race at Shimanoyama Circuit twice. If the chapter does not register after two races, one player in this week's discussion reported needing a third; this is community-reported and not officially confirmed.",
-          "tuneHtml": "2010 Jaguar C-X75 · 110 140 996"
+          "conditionHtml": "In the 1964 Aston Martin DB5 Vantage, spend 20,000 CR on upgrades, complete 2 Street Races, and earn 3 stars at Speed Zones. Reward: 25,000 CR.",
+          "howHtml": "Complete the chapters in order in the DB5 Vantage: upgrades first, then races and Speed Zones.",
+          "tuneHtml": "1964 Aston Martin DB5 Vantage — no tune code listed in the checked sources."
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
           "points": "7 × 1 point",
-          "conditionHtml": "<ol><li><strong>24 Sep:</strong> park at any Car Meet.</li><li><strong>25 Sep:</strong> earn 3 Speed Skills.</li><li><strong>26 Sep:</strong> photograph any car.</li><li><strong>27 Sep:</strong> spend 15,000 CR upgrading any car.</li><li><strong>28 Sep:</strong> use a Wheelspin or Super Wheelspin.</li><li><strong>29 Sep:</strong> earn at least 1 star at a Speed Trap.</li><li><strong>30 Sep:</strong> complete 1 lap at any Time Attack circuit.</li></ol> Reward for each: 5,000 CR.",
-          "howHtml": "Each Daily opens at 21:30 Krasnoyarsk time and remains available for 7 days.",
+          "conditionHtml": "<ol><li><strong>Oct 1:</strong> earn 3 Trading Paint Skills.</li><li><strong>Oct 2:</strong> complete a Road Race.</li><li><strong>Oct 3:</strong> earn 3 Drift or E-Drift Skills.</li><li><strong>Oct 4:</strong> purchase an Aftermarket Car.</li><li><strong>Oct 5:</strong> earn at least 1 star from Horizon Rush.</li><li><strong>Oct 6:</strong> earn at least 1 star from Danger Signs.</li><li><strong>Oct 7:</strong> complete 1 lap of Drift Attack.</li></ol> Reward: 5,000 CR each.",
+          "howHtml": "Each challenge opens at 21:30 Krasnoyarsk time and remains available for 7 days. The full week's list is confirmed by the fresh Information Thread.",
           "tuneHtml": "No tune required."
         },
         "activity_03_photo": {
-          "title": "#BambooPerfect",
+          "title": "#TempleVantage",
           "points": "2 points",
-          "conditionHtml": "Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.",
-          "howHtml": "Go to the bamboo grove by the dirt road on the Ito/Minamino border; use Arashiyama Run Speed Zone as a landmark. Open Photo Mode with a McLaren in frame, then save the photo.",
+          "conditionHtml": "Photograph the 1964 Aston Martin DB5 Vantage at Ruriko-ji Temple. Reward: “Are you not entertained?” Forza Link.",
+          "howHtml": "Go to Ruriko-ji Temple, open Photo Mode, and make sure the DB5 Vantage is fully in frame.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
-          "title": "Treasure Hunt",
+          "title": "Nangan Region",
           "points": "3 points",
-          "conditionHtml": "Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.",
-      "howHtml": "Go to southern Shimanoyama, west of Tokyo City, and find the Lake View Speed Trap beside the dirt road; the chest is in an open field nearby, close to the Taiyaki Scramble start. Smash it; there are no other requirements.",
+          "conditionHtml": "Treasure Hunt in the Nangan Region: follow the Photo Clue and find the chest. Reward: 100,000 CR.",
+          "howHtml": "The official source gives the region and photo clue only. The exact chest spot is not yet independently confirmed in text; inspect the in-game clue.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
-          "title": "Country Pickups",
+          "title": "Rally on Dirt",
           "points": "5 points",
-          "conditionHtml": "Country Pickups Championship: Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.",
-          "howHtml": "Complete three Cross Country races. Win this first to receive the Jaguar C-X75 needed for the Weekly Challenge without buying it.",
-          "tuneHtml": "2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520"
+          "conditionHtml": "Total Rally, B 600. Routes: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Reward: 2012 MINI John Cooper Works GP.",
+          "howHtml": "Use any Total Rally car in B 600. Keep a smooth line on the dirt routes; the championship has three races.",
+          "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961"
         },
         "activity_06_championship": {
-          "title": "Cult Street",
+          "title": "Aston Martin Nights",
           "points": "5 points",
-          "conditionHtml": "Cult Street Championship: Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.",
-          "howHtml": "Finish all three night Street races: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent; keep clean checkpoint lines.",
-          "tuneHtml": "1968 Abarth 595 esseessee · D 400 · 174 737 970"
+          "conditionHtml": "Aston Martin cars, A 800. Routes: Festival Chase, Matsumi Climb, Shimanoyama Charge. Reward: 1964 Aston Martin DB5 Vantage.",
+          "howHtml": "Choose any Aston Martin in A 800 and complete the three Street/Touge races.",
+          "tuneHtml": "2017 Aston Martin DB11 — A 800 · 109 918 685"
         },
         "activity_07_pr": {
           "title": "Shimanoyama Drift Attack",
           "points": "3 points",
-          "conditionHtml": "Shimanoyama Drift Attack: United Kingdom, A 700, at least 80,000 points.",
-          "howHtml": "Score across the full Drift Attack distance and avoid breaking your drift chain.",
-          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"
+          "conditionHtml": "United Kingdom, A 700, at least 120,000 Drift Points. Reward: Wheelspin.",
+          "howHtml": "Score across the full course and keep your drift chain going.",
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420"
         },
         "activity_08_pr": {
-          "title": "Azure Drive Danger Sign",
+          "title": "Clifftop Crest Danger Sign",
           "points": "2 points",
-          "conditionHtml": "Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).",
-          "howHtml": "Build speed on a straight approach to the ramp. The game tile confirms the 689 ft target; the exact approach direction has not been independently verified.",
-          "tuneHtml": "2020 Land Rover Defender 110 X · B 600 · 163 429 917"
+          "conditionHtml": "United Kingdom, B 600, at least 590.6 ft (180 m). Reward: Wheelspin.",
+          "howHtml": "Build speed on the straight approach; the target is 590.6 ft.",
+          "tuneHtml": "2020 Land Rover Defender 110 X — B 600 · 163 429 917"
         },
         "activity_09_pr": {
-          "title": "Tall Trees Speed Zone",
+          "title": "Ine Beach Speed Trap",
           "points": "2 points",
-          "conditionHtml": "Tall Trees Speed Zone: United Kingdom, A 700, at least 70.0 mph (112.7 km/h).",
-          "howHtml": "Build speed before the entry and keep a smooth line through the zone.",
-          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"
+          "conditionHtml": "United Kingdom, A 700, at least 150 mph (241.4 km/h). Reward: Wheelspin.",
+          "howHtml": "Build speed before the camera and use a smooth approach.",
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420"
         },
-        "activity_10_pr": {
-          "title": "Sekibe Kaijo Trailblazer",
-          "points": "2 points",
-          "conditionHtml": "Sekibe Kaijo Trailblazer: United Kingdom, A 700, at least 42 seconds remaining.",
-          "howHtml": "Start with a speed reserve and follow the shortest safe route to the finish.",
-          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420"
-        },
-        "activity_11_trial": {
-          "title": "Winter Rallies",
+        "activity_10_trial": {
+          "title": "The Trial: Hyper Sprints",
           "points": "10 points",
-          "conditionHtml": "The Trial Winter Rallies: Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.",
-          "howHtml": "Drive cleanly as a team and do not push teammates off their line.",
-          "tuneHtml": "1984 Opel Manta 400 · A 700 · 930 661 576 · backup 947 504 263"
+          "conditionHtml": "Hypercars, S1 800. Routes: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Reward: 2015 Radical RXC Turbo.",
+          "howHtml": "Focus on the team result and finish cleanly. All three routes are Road Races.",
+          "tuneHtml": "2025 McLaren W1 — S1 800 · 612 366 901"
+        },
+        "activity_11_horizon_play": {
+          "title": "Double Clean",
+          "points": "3 points",
+          "conditionHtml": "Earn 3 LINK Clean Start Skills in Horizon Racing. Reward: 2014 McLaren 650S Spider.",
+          "howHtml": "Start a Horizon Racing event and earn clean starts without hitting other cars.",
+          "tuneHtml": "No tune required."
         },
         "activity_12_horizon_play": {
-          "title": "Speed Connection",
+          "title": "The Eliminator — Battle Royale",
           "points": "3 points",
-          "conditionHtml": "In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.",
-          "howHtml": "Start a Horizon Racing event and maintain a chain of speed skills.",
+          "conditionHtml": "Finish 30th or better in The Eliminator. Reward: 2015 Ultima Evolution Coupe 1020.",
+          "howHtml": "Focus on survival; finishing in the top 30 completes the requirement.",
           "tuneHtml": "No tune required."
         },
         "activity_13_horizon_play": {
-          "title": "Horizon Stunt Party",
+          "title": "Horizon Stunt Party — Mini Games",
           "points": "3 points",
-          "conditionHtml": "Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.",
-          "howHtml": "Reach the event results screen; leaving early does not count.",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Jaguar Growl car horn.",
+          "howHtml": "Play through the match and wait for the results screen.",
           "tuneHtml": "No tune required."
         },
         "activity_14_monthly_rivals": {
-          "title": "Monthly Rivals — Shimanoyama Sprint",
+          "title": "Monthly Rivals - Shimanoyama Sprint",
           "points": "4 points",
-          "conditionHtml": "Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.",
-          "howHtml": "Finish without collisions or penalties. Players in the fresh Winter guide warn that ANNA Autopilot may mark the lap dirty; this is community-reported, not an officially confirmed bug.",
-          "tuneHtml": "2025 McLaren W1 — no mandatory tune."
+          "conditionHtml": "Set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1. Reward: Super Wheelspin.",
+          "howHtml": "Monthly Rivals only needs to be completed once per Series. For a clean lap, avoid collisions, missed checkpoints and rewind.",
+          "tuneHtml": "2025 McLaren W1 - R 918, RWD; no tune required."
         }
       }
     }
   },
   "openItems": [
     {
+      "activityId": "activity_01_weekly",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Daily is intentionally text-only and does not use a public game tile.",
-      "nextCheck": "No screenshot required: keep the Daily block as a text list.",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_03_photo",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "solution",
+      "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
+      "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_trial",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_12_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_13_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_14_monthly_rivals",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
       "status": "missing"
     }
   ],
   "missingFields": [
     {
+      "activityId": "activity_01_weekly",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
       "activityId": "activity_02_daily",
       "field": "visual",
-      "reason": "Daily is intentionally text-only and does not use a public game tile.",
-      "nextCheck": "No screenshot required: keep the Daily block as a text list.",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_03_photo",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "solution",
+      "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
+      "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_pr",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_trial",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_12_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_13_horizon_play",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_14_monthly_rivals",
+      "field": "visual",
+      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
+      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
       "status": "missing"
     }
   ]

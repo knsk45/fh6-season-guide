@@ -3,67 +3,66 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 5 'British Automotive' — Winter[/h1]
-[b]Ends:[/b] 01.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
+[h1]Series 5 'British Automotive' — Spring[/h1]
+[b]Ends:[/b] 08.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
 [h2]01. Weekly Challenge · 5 points[/h2]
-In the 2010 Jaguar C-X75: get in the car, photograph it at Shirakawa-go, complete 2 Road Races, then park at any Car Meet. Reward: 25,000 CR.
-[b]Car:[/b] 2010 Jaguar C-X75 · 110 140 996
+In the 1964 Aston Martin DB5 Vantage, spend 20,000 CR on upgrades, complete 2 Street Races, and earn 3 stars at Speed Zones. Reward: 25,000 CR.
+[b]Car:[/b] 1964 Aston Martin DB5 Vantage — no tune code listed in the checked sources.
 
 [h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
-• 24 Sep: park at any Car Meet.
-• 25 Sep: earn 3 Speed Skills.
-• 26 Sep: photograph any car.
-• 27 Sep: spend 15,000 CR upgrading any car.
-• 28 Sep: use a Wheelspin or Super Wheelspin.
-• 29 Sep: earn at least 1 star at a Speed Trap.
-• 30 Sep: complete 1 lap at any Time Attack circuit.
- Reward for each: 5,000 CR.
+• Oct 1: earn 3 Trading Paint Skills.
+• Oct 2: complete a Road Race.
+• Oct 3: earn 3 Drift or E-Drift Skills.
+• Oct 4: purchase an Aftermarket Car.
+• Oct 5: earn at least 1 star from Horizon Rush.
+• Oct 6: earn at least 1 star from Danger Signs.
+• Oct 7: complete 1 lap of Drift Attack.
+ Reward: 5,000 CR each.
 
-[h2]03. #BambooPerfect · 2 points[/h2]
-Photograph any McLaren in Bamboo Forest. Reward: Karate Master emote.
+[h2]03. #TempleVantage · 2 points[/h2]
+Photograph the 1964 Aston Martin DB5 Vantage at Ruriko-ji Temple. Reward: “Are you not entertained?” Forza Link.
 
-[h2]04. Treasure Hunt · 3 points[/h2]
-Follow the photo clue and find the treasure in the Shimanoyama region. Reward: 100,000 CR.
+[h2]04. Nangan Region · 3 points[/h2]
+Treasure Hunt in the Nangan Region: follow the Photo Clue and find the chest. Reward: 100,000 CR.
 
-[h2]05. Country Pickups · 5 points[/h2]
-Pickups & 4x4, B 600. Routes: Soni Highlands Cross Country, Temple Cross Country and Edogawa Cross Country Circuit. Reward: 2010 Jaguar C-X75.
-[b]Car:[/b] 2020 Ford Super Duty F-450 DRW Platinum FE · B 600 · 114 989 520
+[h2]05. Rally on Dirt · 5 points[/h2]
+Total Rally, B 600. Routes: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Reward: 2012 MINI John Cooper Works GP.
+[b]Car:[/b] 2011 Subaru WRX STI — B 600 · 158 111 961
 
-[h2]06. Cult Street · 5 points[/h2]
-Cult Cars, D 400. Routes: Rainbow Bridge Descent, Okishinaimura Run and Norikura Descent. Reward: 1972 Reliant Supervan III.
-[b]Car:[/b] 1968 Abarth 595 esseessee · D 400 · 174 737 970
+[h2]06. Aston Martin Nights · 5 points[/h2]
+Aston Martin cars, A 800. Routes: Festival Chase, Matsumi Climb, Shimanoyama Charge. Reward: 1964 Aston Martin DB5 Vantage.
+[b]Car:[/b] 2017 Aston Martin DB11 — A 800 · 109 918 685
 
 [h2]07. Shimanoyama Drift Attack · 3 points[/h2]
-United Kingdom, A 700, at least 80,000 points.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420
+United Kingdom, A 700, at least 120,000 Drift Points. Reward: Wheelspin.
+[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
 
-[h2]08. Azure Drive Danger Sign · 2 points[/h2]
-Azure Dive Danger Sign: United Kingdom, B 600, at least 689.0 ft (210 m).
-[b]Car:[/b] 2020 Land Rover Defender 110 X · B 600 · 163 429 917
+[h2]08. Clifftop Crest Danger Sign · 2 points[/h2]
+United Kingdom, B 600, at least 590.6 ft (180 m). Reward: Wheelspin.
+[b]Car:[/b] 2020 Land Rover Defender 110 X — B 600 · 163 429 917
 
-[h2]09. Tall Trees Speed Zone · 2 points[/h2]
-United Kingdom, A 700, at least 70.0 mph (112.7 km/h).
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420
+[h2]09. Ine Beach Speed Trap · 2 points[/h2]
+United Kingdom, A 700, at least 150 mph (241.4 km/h). Reward: Wheelspin.
+[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
 
-[h2]10. Sekibe Kaijo Trailblazer · 2 points[/h2]
-United Kingdom, A 700, at least 42 seconds remaining.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 · A 700 · 114 242 420
+[h2]10. The Trial: Hyper Sprints · 10 points[/h2]
+Hypercars, S1 800. Routes: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Reward: 2015 Radical RXC Turbo.
+[b]Car:[/b] 2025 McLaren W1 — S1 800 · 612 366 901
 
-[h2]11. Winter Rallies · 10 points[/h2]
-Rally Monsters, A 700. Routes: Bamboo Forest Scramble, Ine Scramble, Ito Trail. Reward: 1986 MG Metro 6R4.
-[b]Car:[/b] 1984 Opel Manta 400 · A 700 · 930 661 576 · backup 947 504 263
+[h2]11. Double Clean · 3 points[/h2]
+Earn 3 LINK Clean Start Skills in Horizon Racing. Reward: 2014 McLaren 650S Spider.
 
-[h2]12. Speed Connection · 3 points[/h2]
-In Horizon Racing, earn 3 LINK Speed Skills. Reward: 1962 Peel P50.
+[h2]12. The Eliminator — Battle Royale · 3 points[/h2]
+Finish 30th or better in The Eliminator. Reward: 2015 Ultima Evolution Coupe 1020.
 
-[h2]13. Horizon Stunt Party · 3 points[/h2]
-Complete Mini Games in Horizon Stunt Party. Reward: Black and Red Utility Pants.
+[h2]13. Horizon Stunt Party — Mini Games · 3 points[/h2]
+Complete any Horizon Stunt Party. Reward: Jaguar Growl car horn.
 
-[h2]14. Monthly Rivals — Shimanoyama Sprint · 4 points[/h2]
-Monthly Rivals: set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1.
-[b]Car:[/b] 2025 McLaren W1 — no mandatory tune.
+[h2]14. Monthly Rivals - Shimanoyama Sprint · 4 points[/h2]
+Set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1. Reward: Super Wheelspin.
+[b]Car:[/b] 2025 McLaren W1 - R 918, RWD; no tune required.
 
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.
