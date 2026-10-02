@@ -1,8 +1,8 @@
 # Forza Horizon 6: Как пройти Series 5 «British Automotive» — Весна
 
-> Статус: предварительно; открытых полей: 2
+> Статус: предварительно; открытых полей: 1
 > Период: 01.10.2026 21:30 — 08.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 03.10.2026 02:04
+> Обновлено: 03.10.2026 06:09
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание · 5 очков
@@ -29,9 +29,9 @@
 ## 04. treasure_hunt — Nangan Region · 3 очка
 
 - **Условие:** Treasure Hunt в регионе Nangan: выполните Photo Clue и найдите сундук. Награда: 100 000 CR.
-- **Как выполнить:** Официальный источник задаёт только регион и фото-подсказку. Точное место сундука пока не подтверждено независимым текстовым описанием — откройте карточку задания в игре.
+- **Как выполнить:** Сундук находится в Irokawa Space Centre у Irokawa Circuit: поднимитесь на верхнюю бетонную площадку к ракете и ищите слева от неё, над дорогой. Для быстрого пути переместитесь к концу взлётной полосы, не к драг-стрипу.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Spring-разбор сообщества</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Spring-гайд и решения</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Spring-разбор сообщества</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Spring-гайд и решения</a> · <a href="https://www.gameshedge.com/forza-horizon-6-nangan-region-british-automotive-treasure-hunt-guide/" target="_blank" rel="noopener noreferrer">Локация сундука</a> · <a href="https://traxion.gg/how-to-complete-the-series-5-week-4-nangan-region-treasure-hunt-in-forza-horizon-6/" target="_blank" rel="noopener noreferrer">Маршрут к сундуку</a>
 
 ## 05. championship — Rally on Dirt · 5 очков
 

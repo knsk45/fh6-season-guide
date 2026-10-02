@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-03T02:04:11+07:00",
+  "lastContentUpdate": "2026-10-03T06:09:58+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -107,9 +107,9 @@
       "title": "Nangan Region",
       "points": "3 очка",
       "conditionHtml": "Treasure Hunt в регионе Nangan: выполните Photo Clue и найдите сундук. Награда: 100 000 CR.",
-      "howHtml": "Официальный источник задаёт только регион и фото-подсказку. Точное место сундука пока не подтверждено независимым текстовым описанием — откройте карточку задания в игре.",
+  "howHtml": "Сундук находится в Irokawa Space Centre у Irokawa Circuit: поднимитесь на верхнюю бетонную площадку к ракете и ищите слева от неё, над дорогой. Для быстрого пути переместитесь к концу взлётной полосы, не к драг-стрипу.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+  "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-nangan-region-british-automotive-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Локация сундука</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-5-week-4-nangan-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Маршрут к сундуку</a>",
       "visual": {
         "image": "user-tiles-20261002/treasure.png",
         "sourceImage": "user-tiles-20261002/source-1.png",
@@ -120,22 +120,12 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+    "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "confirmed"
       },
-      "missingFields": [
-        "solution"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_04_treasure_hunt",
-          "field": "solution",
-          "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
-          "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
-          "status": "missing"
-        }
-      ]
+  "missingFields": [],
+  "openItems": []
     },
     {
       "id": "activity_05_championship",
@@ -448,7 +438,7 @@
           "title": "Nangan Region",
           "points": "3 points",
           "conditionHtml": "Treasure Hunt in the Nangan Region: follow the Photo Clue and find the chest. Reward: 100,000 CR.",
-          "howHtml": "The official source gives the region and photo clue only. The exact chest spot is not yet independently confirmed in text; inspect the in-game clue.",
+          "howHtml": "The chest is at Irokawa Space Centre beside Irokawa Circuit: reach the upper concrete platform by the rocket and look to its left, above the road. For the quickest route, fast-travel to the runway end (not the drag strip), then head to the launchpad.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
@@ -526,13 +516,6 @@
   },
   "openItems": [
     {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "solution",
-      "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
-      "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_14_monthly_rivals",
       "field": "visual",
       "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
@@ -541,13 +524,6 @@
     }
   ],
   "missingFields": [
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "solution",
-      "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
-      "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
-      "status": "missing"
-    },
     {
       "activityId": "activity_14_monthly_rivals",
       "field": "visual",

@@ -2258,3 +2258,30 @@
 | `forza_labs_map` | checked: Interactive Map доступна, точная позиция Nangan Treasure не подтверждена. |
 | `escorenews_fh6` | unavailable: FH6 category index вернул Internal Error. |
 | `dungg_playlist` | unavailable: YouTube playlist вернула Internal Error; текущий выпуск не подтверждён. |
+
+## 2026-10-03T06:07:00+07:00 — полный аудит Series 5 Spring
+
+- Live-Playlist подтверждает Series 5 `British Automotive — Spring`, 1–8 октября; дедлайн состояния — 08.10.2026 21:30 Asia/Krasnoyarsk. Проверены все семь Daily и полный порядок активностей; карточное содержимое сверено с официальной таблицей и свежими публикациями недели.
+- Новое подтверждённое уточнение: сундук Nangan находится в Irokawa Space Centre у Irokawa Circuit, на верхней бетонной площадке слева от ракеты, над дорогой. GamesHedge и Traxion опубликовали независимые пошаговые разборы 1 октября, а свежие разборы Reddit содержат ссылку/скриншот спойлера. Формулировка добавлена в RU/EN state с уровнем `community`; решение исключено из `missingFields` и `openItems`.
+- Все 12 подготовленных пользовательских Spring-плиток повторно осмотрены: содержимое, названия, кадрирование и соответствие активности правильные. Daily намеренно текстовый. Итого визуалов: `confirmed=12`, `community=0`, `preliminary=0`, `missing=1` (Monthly Rivals), `not_applicable=1` (Daily). Нужен только один скриншот Monthly Rivals; прежние кадры не переиспользуются.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: категория FH6 Fandom недоступна через live reader (Internal Error); архивные сведения не использовались. |
+| `fandom_current` | unavailable: текущая Series/Season страница Fandom недоступна (402/Internal Error); старые страницы не использовались. |
+| `forza_playlist` | checked: официальная таблица открыта; строки 426–446 подтверждают Spring, 14 активностей и порядок, строка 360 — Monthly Rivals. |
+| `forza_news` | no_current_item: индекс доступен; Series 5 announcement опубликован раньше текущей недели, отдельной новой Spring новости нет. |
+| `forza_support_release_notes` | unavailable: обязательный Support Release Notes endpoint вернул Internal Error; более ранняя заметка Series 5 не выдавалась за свежую. |
+| `forza_support_known_issues` | checked: FH6 Known Issues открыта; свежей записи об ошибке Playlist Spring не обнаружено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общий форум; свежего объявления текущей недели не найдено. |
+| `reddit_forzahorizon` | checked: разбор Spring от 1 Oct подтверждает условия и точные дни Daily; его спойлер подтверждает сундук в Nangan. |
+| `reddit_forzahorizon6` | checked: FH6-гайд от 1 Oct подтверждает сезон, ежедневные задания, машины, классы, коды и текущие решения; спойлер-ссылка осмотрена. |
+| `reddit_forza` | checked: Spring Information Thread от 1 Oct подтверждает дедлайн, Daily, условия активностей и Monthly Rivals. |
+| `reddit_forzatune` | no_current_item: проверена лента новых публикаций; актуального отдельного FH6 Spring тюнинг-поста не найдено, старые коды не переносились. |
+| `forza_horizon_hub` | checked: FH6 Hub и доступные сведения о текущей Series просмотрены; полезной новой детали Spring сверх подтверждённых источников нет. |
+| `forza_labs_collector` | checked: Collector Tool открыт; отдельной Spring Collectibles-активности в официальном списке нет. |
+| `forza_labs_map` | checked: Interactive Map открыта; Nangan сундук не подтверждался по её маркеру, точную позицию взяли из двух свежих текстовых разборов. |
+| `escorenews_fh6` | unavailable: FH6 раздел Escorenews вернул Internal Error; свежий недельный материал подтвердить не удалось. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist не открылся в live reader; выпуск текущей недели подтвердить нельзя. |
+
+Дополнительная проверка открытого решения (вне `requiredSources`): [GamesHedge](https://www.gameshedge.com/forza-horizon-6-nangan-region-british-automotive-treasure-hunt-guide/) и [Traxion](https://traxion.gg/how-to-complete-the-series-5-week-4-nangan-region-treasure-hunt-in-forza-horizon-6/) — свежие публикации 1 октября с совпадающей локацией у ракеты в Irokawa Space Centre. Текст помечен как подтверждённый сообществом, а не официально проверенный в игре.
