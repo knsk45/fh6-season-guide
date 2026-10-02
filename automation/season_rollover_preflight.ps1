@@ -45,6 +45,9 @@ $MissingAssets = [System.Collections.Generic.List[string]]::new()
 $VisualQueue = [System.Collections.Generic.List[string]]::new()
 foreach ($Activity in @($State.activities)) {
     $Visual = $Activity.visual
+    $DailyTextOnly = ([string]$Activity.kind -eq 'daily' -and [string]$Activity.completeness.visual -eq 'not_applicable' -and
+        [string]::IsNullOrWhiteSpace([string]$Visual.image) -and [string]::IsNullOrWhiteSpace([string]$Visual.sourceImage))
+    if ($DailyTextOnly) { continue }
     $VisualIsUnresolved = [string]$Activity.completeness.visual -in @('missing','preliminary')
     if ($VisualIsUnresolved -and ([string]::IsNullOrWhiteSpace([string]$Visual.image) -or [string]::IsNullOrWhiteSpace([string]$Visual.sourceImage))) {
         $VisualQueue.Add([string]$Activity.id)

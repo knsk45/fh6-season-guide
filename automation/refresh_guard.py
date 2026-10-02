@@ -146,6 +146,13 @@ class Guard:
         for visual in visuals:
             activity = activities[visual['id']]
             activity_visual = activity.get('visual', {})
+            text_only = (activity.get('kind') == 'daily'
+                         and activity.get('completeness', {}).get('visual') == 'not_applicable'
+                         and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
+            if text_only:
+                if visual.get('sha256') is not None or not visual.get('note'):
+                    raise RuntimeError('Text-only Daily visual audit must record its intentional no-tile status without an asset digest.')
+                continue
             unresolved = (activity.get('completeness', {}).get('visual') in {'missing', 'preliminary'}
                           and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
             if unresolved:
@@ -180,6 +187,13 @@ class Guard:
         visuals = {v['id']: v for v in audit['visuals']}
         for activity in state['activities']:
             activity_visual = activity.get('visual', {})
+            text_only = (activity.get('kind') == 'daily'
+                         and activity.get('completeness', {}).get('visual') == 'not_applicable'
+                         and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
+            if text_only:
+                if visuals[activity['id']].get('sha256') is not None:
+                    return False
+                continue
             unresolved = (activity.get('completeness', {}).get('visual') in {'missing', 'preliminary'}
                           and not activity_visual.get('image') and not activity_visual.get('sourceImage'))
             if unresolved:

@@ -197,11 +197,14 @@ def validate_artifact(root, state, artifact, project):
         require(orientation in {'horizontal', 'vertical'}, 'Unknown tile orientation: ' + str(orientation))
         tiles = [node for node in doc.all('div') if 'game-tile' in node.attrs.get('class', '').split()]
         has_tile = bool(card['visual'].get('image') and card['visual'].get('sourceImage'))
+        daily_text_only = (card.get('kind') == 'daily'
+                           and card['completeness'].get('visual') == 'not_applicable'
+                           and not card['visual'].get('image') and not card['visual'].get('sourceImage'))
         if has_tile:
             require(len(tiles) == 1 and f'game-tile-{orientation}' in tiles[0].attrs.get('class', '').split(), 'Card tile layout differs from state')
         else:
-            require(card['completeness']['visual'] in {'missing','preliminary'} and 'visual' in card['missingFields'], 'Missing tile lacks unresolved evidence state')
-            require(not tiles and len(doc.all('article','card-no-tile')) == 1, 'Missing tile must not render a fallback visual')
+            require(daily_text_only or (card['completeness']['visual'] in {'missing','preliminary'} and 'visual' in card['missingFields']), 'Missing tile lacks unresolved evidence state')
+            require(not tiles and len(doc.all('article','card-no-tile')) == 1, 'Missing/text-only tile must not render a fallback visual')
         require(not doc.all('span', 'activity-icon'), 'Tile must not render a decorative overlay icon')
         names = [season['assetsDirectory'] + '/' + card['visual']['image']] if has_tile else []
         type_icon_key = card['visual'].get('typeIconKey')

@@ -2182,3 +2182,79 @@
 | `forza_labs_map` | checked: Interactive Map открыта; свежей Spring Playlist разметки/точных игровых плиток нет. |
 | `escorenews_fh6` | no_current_item: FH6 индекс и поиск проверены; текущей Spring Series 5 статьи нет, найденные статьи относятся к прошлым сериям. |
 | `dungg_playlist` | unavailable: настроенный YouTube playlist URL проверен, но live fetch вернул Internal Error; публикацию текущего Spring выпуска подтвердить не удалось. | 
+
+## 2026-10-03T01:20:00+07:00 — повторная регистрация аудита Series 5 Spring после исправления Daily text-only проверки
+
+- Guarded попытка `fh6-20261002-231146-202478` не опубликовала отчёт: предсезонный preflight ошибочно считал намеренно текстовый Daily карточкой с потерянным визуалом. Валидатор, audit guard и preflight теперь согласованы с правилом `not_applicable` для Daily; прошлый запуск завершён `BLOCKED`, Home Assistant получил CheckBlocked. Текущий запуск повторяет полный цикл; дата в сводке не обновлялась.
+- Свежая повторная сверка подтвердила активный Series 5 `British Automotive — Spring`, дедлайн 08.10.2026 21:30 Красноярск и официальный порядок семи Daily. Снова проверены все обязательные live источники. В state уже записаны 12 точных плиток из пользовательских скриншотов; Daily оставлен без публичного изображения. Monthly Rivals карточка сохранена, но его плитки в новых изображениях нет; визуал и решение Treasure Hunt Nangan остаются открытыми.
+- Счётчики visual: `confirmed=12`, `community=0`, `preliminary=0`, `missing=1` (Monthly Rivals), `not_applicable=1` (Daily). Полные исходные скриншоты и точные неизменённые вырезки сохранены в `reports/assets/series-05-spring/user-tiles-20261002/`.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live категория Fandom снова вернула Internal Error; старые данные не использованы. |
+| `fandom_current` | unavailable: текущая страница Fandom Series/Season вернула Internal Error; прежние страницы не использованы. |
+| `forza_playlist` | checked: официальная Playlist открыта повторно; строки 426–446 подтверждают Spring activities и Daily order, строка 360 — Monthly Rivals. |
+| `forza_news` | no_current_item: официальный индекс доступен; отдельной новости Series 5 Spring на текущей неделе нет. |
+| `forza_support_release_notes` | unavailable: настроенный Release Notes section вернул Internal Error. |
+| `forza_support_known_issues` | checked: Known Issues доступна, последние видимые записи старые; текущенедельного playlist issue нет. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправлен на общую Forza Forums; актуального объявления не найдено. |
+| `reddit_forzahorizon` | checked: текущий Spring breakdown доступен; его порядок двух Daily расходится с официальной таблицей. Оставлен официальный порядок. |
+| `reddit_forzahorizon6` | checked: актуальный FH6-specific Spring guide доступен и подтверждает карточки, условия и коды недели. |
+| `reddit_forza` | checked: Spring Information Thread и недельная tune thread доступны; проверены условия, reward cars, Daily и Monthly Rivals. |
+| `reddit_forzatune` | no_current_item: live `/new` лента доступна, поста FH6 Series 5 Spring за эту неделю нет. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но weekly блок всё ещё указывает Series 1 и не годится как источник актуального Spring. |
+| `forza_labs_collector` | unavailable: повторный live reader вернул Internal Error; актуальную сезонную collectible-информацию подтвердить нельзя. |
+| `forza_labs_map` | checked: Interactive Map доступна; точная позиция Nangan chest/current playlist overlay не подтверждена. |
+| `escorenews_fh6` | unavailable: индекс вернул Internal Error; актуальный Spring guide не подтверждён. |
+| `dungg_playlist` | unavailable: YouTube playlist вернула Internal Error; видео текущей недели подтвердить нельзя. |
+
+## 2026-10-03T00:27:00+07:00 — повторный аудит и пользовательские игровые плитки Series 5 Spring
+
+- Активный сезон повторно подтверждён live: Series 5 `British Automotive — Spring`, действует до 08.10.2026 21:30 Asia/Krasnoyarsk. Официальная Playlist (строки 426–446) подтверждает сезонные награды, Weekly, полный порядок Daily, Photo, Treasure, два чемпионата, PR, Trial и Horizon Play; Monthly Rivals проверен в строке 360. Свежая Spring Information Thread r/forza подтверждает сроки, содержание заданий и ежемесячную гонку.
+- Из присланных пользователем трёх изображений сохранены оригиналы `source-1.png`–`source-3.png`; без ретуши вырезаны ровно 12 актуальных игровых плиток в `reports/assets/series-05-spring/user-tiles-20261002/`. Кадры проверены визуально. В `data/current-season.json` внесены соответствующие `visual.image`, оригинальный `visual.sourceImage`, ориентация и происхождение. Daily намеренно оставлен текстовым, без публичного изображения. Monthly Rivals есть в карточках, но его плитки среди переданных кадров нет — визуал остаётся открытым.
+- Статусы визуалов (14 карточек state): `confirmed=12`, `community=0`, `preliminary=0`, `missing=1` (Monthly Rivals), `not_applicable=1` (Daily, текстовая сводка). Закрыты 12 запросов точных плиток и ошибочный запрос визуала для Daily. Открыты только визуал Monthly Rivals и текстовое решение для точной позиции сундука Nangan.
+- В живых Reddit-источниках найдено расхождение порядка Daily: один breakdown r/ForzaHorizon переставляет Drift Skills и Aftermarket Car, тогда как официальная Playlist, Spring Information Thread r/forza, FH6-specific guide r/ForzaHorizon6 и полученный игровой экран подтверждают текущий порядок в state; оставлен приоритетный официальный/FH6 порядок без изменения карточки. В свежем Community tune thread замечено сообщение автора об отсутствии новых tune-рекомендаций на этой неделе; уже подтверждённые значения не заменялись.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live категория Fandom возвращает Internal Error; не использовалась для фактов и изображений. |
+| `fandom_current` | unavailable: страницы текущей Series/Season Fandom возвращают Internal Error; старые данные не переносились. |
+| `forza_playlist` | checked: официальная таблица открыта; текущая Spring и все активности подтверждены на строках 426–446; Monthly Rivals Series 5 — строка 360. |
+| `forza_news` | no_current_item: официальный индекс доступен, отдельной свежей Series 5 Spring новости за текущую неделю не найдено. |
+| `forza_support_release_notes` | unavailable: Release Notes section вернула Internal Error; свежей релизной заметки недели не подтверждено. |
+| `forza_support_known_issues` | checked: Known Issues доступна; видимое обновление от 20 Jul 2026, Playlist-багов Spring не указано; актуальный список направляет в Feedback Portal. |
+| `forza_forums_official` | no_current_item: тег перенаправлен на общую страницу Forza Forums; текущей официальной playlist-публикации нет. |
+| `reddit_forzahorizon` | checked: breakdown Series 5 Spring от 01 Oct прочитан; выявлен конфликт порядка двух Daily против официального источника, поэтому сохранён порядок официальной таблицы и FH6 guide. |
+| `reddit_forzahorizon6` | checked: свежий Spring guide от 01 Oct сверён; подтверждает даты, семь Daily, условия, награды и сезонные решения. |
+| `reddit_forza` | checked: Spring Information Thread от 01 Oct и текущий tuning thread просмотрены; подтверждены даты, Daily, события, награды и Monthly Rivals. |
+| `reddit_forzatune` | no_current_item: лента `new` открыта, актуального FH6 Spring материала недели не найдено; новые share codes не перенесены. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, однако блок «this week» сообщает Series 1; устаревшая Playlist не использована. |
+| `forza_labs_collector` | checked: Collector Tool доступен; Spring collectibles карточку текущей недели не подтверждает. |
+| `forza_labs_map` | checked: Interactive Map доступна, но отдельная актуальная Spring метка/позиция сундука Nangan не подтверждена. |
+| `escorenews_fh6` | unavailable: FH6 индекс не открылся через live reader; свежая Spring статья не подтверждена. |
+| `dungg_playlist` | unavailable: текущий playlist URL вернул Internal Error; выпуск этой недели подтвердить нельзя. |
+
+## 2026-10-03T01:50:00+07:00 — повторный live-аудит после исправления text-only Daily во всех сборочных проверках
+
+- Серия и Spring повторно подтверждены официальной Festival Playlist; дедлайн 08.10.2026 21:30 Красноярск. Все 16 обязательных источников перепроверены в этом запуске. Проверочные цепочки guard, season validator, artifact renderer и portable verifier согласованы: Daily допустимо иметь `visual=not_applicable`, пустые пути и не запрашивать публичную плитку.
+- Тесты после исправлений: `automation/test_refresh_guard.py` — 27 passed; `automation/test_portable_report.py` — 21 passed, portable provider `fh6-portable/1.0.0`, в тестовом окружении `PORTABLE_VALIDATION=passed`, `PORTABLE_PACKAGE=passed`. Ранее два защищённых запуска остановились до публикации на обнаруженном несоответствии Daily; текущий полный цикл повторяется с исправленной проверкой.
+- Визуалы остались без изменений: `confirmed=12`, `community=0`, `preliminary=0`, `missing=1` (визуал Monthly Rivals не прислан), `not_applicable=1` (Daily). Точная позиция Nangan Treasure остаётся единственным другим содержательным openItem.
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: live категория Fandom вернула Internal Error. |
+| `fandom_current` | unavailable: текущая страница Series/Season Fandom вернула Internal Error. |
+| `forza_playlist` | checked: Live Playlist подтверждает Spring, текущие активности, семь Daily и Monthly Rivals Series 5. |
+| `forza_news` | no_current_item: официальный индекс доступен; отдельной свежей Spring playlist новости нет. |
+| `forza_support_release_notes` | unavailable: настроенная секция Release Notes вернула Internal Error. |
+| `forza_support_known_issues` | checked: Known Issues доступна; актуального playlist issue среди опубликованных проблем не видно. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет к общей странице форумов; свежего playlist сообщения нет. |
+| `reddit_forzahorizon` | checked: свежий Spring breakdown проверен; Daily order расходится с официальной таблицей, в state оставлен официальный порядок. |
+| `reddit_forzahorizon6` | checked: свежий FH6-specific guide проверен; подтверждает текущую неделю, задания и решения. |
+| `reddit_forza` | checked: текущая Information Thread и Spring tune thread проверены; подтверждены сроки и активности. |
+| `reddit_forzatune` | no_current_item: свежей публикации FH6 текущей недели в `/new` нет. |
+| `forza_horizon_hub` | no_current_item: доступный weekly-блок указывает Series 1 и не подтверждает текущую неделю. |
+| `forza_labs_collector` | checked: Collector Tool доступен, текущей Spring collectible-активности не показывает. |
+| `forza_labs_map` | checked: Interactive Map доступна, точная позиция Nangan Treasure не подтверждена. |
+| `escorenews_fh6` | unavailable: FH6 category index вернул Internal Error. |
+| `dungg_playlist` | unavailable: YouTube playlist вернула Internal Error; текущий выпуск не подтверждён. |

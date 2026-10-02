@@ -147,7 +147,8 @@ function New-CardHtml($card) {
         throw "No visual mapping for $($card.id)"
     }
     $hasTile = -not [string]::IsNullOrWhiteSpace([string]$visual.image) -and -not [string]::IsNullOrWhiteSpace([string]$visual.sourceImage)
-    if (-not $hasTile -and [string]$card.completeness.visual -notin @('missing','preliminary')) {
+    $dailyTextOnly = ([string]$card.kind -eq 'daily' -and [string]$card.completeness.visual -eq 'not_applicable' -and -not $hasTile)
+    if (-not $hasTile -and -not $dailyTextOnly -and [string]$card.completeness.visual -notin @('missing','preliminary')) {
         throw "Missing tile for a completed visual: $($card.id)"
     }
     $cardImage = if ($hasTile) { Get-AssetDataUri $visual.image } else { '' }

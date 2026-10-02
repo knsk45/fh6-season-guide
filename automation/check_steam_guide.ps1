@@ -68,6 +68,7 @@ function ConvertTo-CompactSteamText {
     $Compact = $Compact -replace '^Подойдёт любой автомобиль; тюнинг не требуется\.$', ''
     $Compact = $Compact -replace '^Используйте удобный дрифт-кар; специального сезонного кода не требуется\.$', ''
     $Compact = $Compact -replace '^Выберите универсальную машину из гаража; специальный тюнинг не требуется\.$', ''
+    $Compact = $Compact -replace '^(?i)(?:no tune required\.?|no mandatory tune\.?)$', ''
     $Compact = [regex]::Replace($Compact, '[ \t]+', ' ')
     return $Compact.Trim()
 }
@@ -173,8 +174,12 @@ foreach ($Activity in $State.activities) {
     $Title = if ($IsEnglish) { [string]$Localized.title } else { [string]$Activity.title }
     $Condition = if ($IsEnglish) { [string]$Localized.conditionHtml } else { [string]$Activity.conditionHtml }
     $Tune = if ($IsEnglish) { [string]$Localized.tuneHtml } else { [string]$Activity.tuneHtml }
+    $Title = if ($IsEnglish) { [string]$Localized.title } else { [string]$Activity.title }
     Require-PublicText "activity $($Activity.number) title" $Title
-    Require-PublicText "activity $($Activity.number) condition" (ConvertFrom-CardHtml $Condition)
+    $ConditionText = ConvertFrom-CardHtml $Condition
+    $ConditionTitle = [regex]::Escape($Title)
+    $ConditionText = [regex]::Replace($ConditionText, "^(?:The Trial\s+)?$ConditionTitle(?: Championship)?\s*[:—-]\s*", '', [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    Require-PublicText "activity $($Activity.number) condition" $ConditionText
     Require-PublicText "activity $($Activity.number) tune" (ConvertTo-CompactSteamText (ConvertFrom-CardHtml $Tune))
 }
 

@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-02T06:14:45+07:00",
+  "lastContentUpdate": "2026-10-03T02:04:11+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,31 +30,21 @@
       "tuneHtml": "1964 Aston Martin DB5 Vantage — код тюнинга не указан в проверенных материалах.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "user-tiles-20261002/weekly.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
         "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_01_weekly",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_02_daily",
@@ -72,26 +62,16 @@
         "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Daily намеренно оформлен только текстовым списком; публичная плитка не используется."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "not_applicable"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_02_daily",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_03_photo",
@@ -104,31 +84,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "user-tiles-20261002/photo.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
         "orientation": "vertical",
         "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_03_photo",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_04_treasure_hunt",
@@ -141,31 +111,23 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "user-tiles-20261002/treasure.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
         "orientation": "vertical",
         "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "visual",
         "solution"
       ],
       "openItems": [
-        {
-          "activityId": "activity_04_treasure_hunt",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        },
         {
           "activityId": "activity_04_treasure_hunt",
           "field": "solution",
@@ -186,31 +148,21 @@
       "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/rally-dirt.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
         "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_05_championship",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_06_championship",
@@ -223,31 +175,21 @@
       "tuneHtml": "2017 Aston Martin DB11 — A 800 · 109 918 685",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/aston-martin-nights.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
         "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_06_championship",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_07_pr",
@@ -260,31 +202,21 @@
       "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/drift-attack.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
         "typeIconKey": "drift-zone",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_07_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_08_pr",
@@ -297,31 +229,21 @@
       "tuneHtml": "2020 Land Rover Defender 110 X — B 600 · 163 429 917",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/danger-sign.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_08_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_09_pr",
@@ -334,31 +256,21 @@
       "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/speed-trap.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_09_pr",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_10_trial",
@@ -371,31 +283,21 @@
       "tuneHtml": "2025 McLaren W1 — S1 800 · 612 366 901",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "user-tiles-20261002/trial.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
         "orientation": "vertical",
         "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_10_trial",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_11_horizon_play",
@@ -408,31 +310,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/horizon-play-double-clean.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_11_horizon_play",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -445,31 +337,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/eliminator.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_12_horizon_play",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_13_horizon_play",
@@ -482,31 +364,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "user-tiles-20261002/stunt-party.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_13_horizon_play",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -654,101 +526,10 @@
   },
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_02_daily",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_04_treasure_hunt",
       "field": "solution",
       "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
       "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
       "status": "missing"
     },
     {
@@ -761,101 +542,10 @@
   ],
   "missingFields": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_02_daily",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_04_treasure_hunt",
       "field": "solution",
       "reason": "Fresh Spring posts show a location-image spoiler but no confirmed readable text description of the exact Nangan chest position.",
       "nextCheck": "Inspect the current in-game Photo Clue or verify a current-week independent map/screenshot.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_pr",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
       "status": "missing"
     },
     {

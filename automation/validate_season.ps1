@@ -265,8 +265,11 @@ if ($state) {
         foreach ($field in $fieldValues.Keys) {
             if ([string]::IsNullOrWhiteSpace($fieldValues[$field]) -and $missing -notcontains $field) { Add-ValidationError "$($card.id).$field is empty without missingFields" }
         }
+        $dailyTextOnly = ([string]$card.kind -eq 'daily' -and [string]$card.completeness.visual -eq 'not_applicable' -and
+            [string]::IsNullOrWhiteSpace([string]$card.visual.image) -and [string]::IsNullOrWhiteSpace([string]$card.visual.sourceImage))
         if ([string]::IsNullOrWhiteSpace([string]$card.visual.image) -or [string]::IsNullOrWhiteSpace([string]$card.visual.sourceImage)) {
-            if ($missing -notcontains 'visual') { Add-ValidationError "$($card.id).visual is empty without missingFields" }
+            if (-not $dailyTextOnly -and $missing -notcontains 'visual') { Add-ValidationError "$($card.id).visual is empty without missingFields" }
+            if ($dailyTextOnly -and $missing -contains 'visual') { Add-ValidationError "$($card.id) Daily must not request a public visual" }
         }
         else {
             foreach ($asset in @($card.visual.image, $card.visual.sourceImage)) {
@@ -339,8 +342,9 @@ if ($state) {
                 if ($html.Contains($forbiddenVisual)) { Add-ValidationError "Public HTML contains retired tile overlay treatment: $forbiddenVisual" }
             }
             $missingVisualCount = @($activities | Where-Object { [string]$_.completeness.visual -in @('missing','preliminary') -and ([string]::IsNullOrWhiteSpace([string]$_.visual.image) -or [string]::IsNullOrWhiteSpace([string]$_.visual.sourceImage)) }).Count
-            if (([regex]::Matches($html, 'class="game-tile game-tile-(?:horizontal|vertical)"')).Count -ne ($expectedCount - $missingVisualCount)) { Add-ValidationError 'Public HTML game-tile count differs from confirmed visual mappings' }
-            if (([regex]::Matches($html, 'class="card card-no-tile"')).Count -ne $missingVisualCount) { Add-ValidationError 'Public HTML must omit, not replace, unresolved game tiles' }
+            $textOnlyCount = @($activities | Where-Object { [string]$_.kind -eq 'daily' -and [string]$_.completeness.visual -eq 'not_applicable' -and [string]::IsNullOrWhiteSpace([string]$_.visual.image) -and [string]::IsNullOrWhiteSpace([string]$_.visual.sourceImage) }).Count
+            if (([regex]::Matches($html, 'class="game-tile game-tile-(?:horizontal|vertical)"')).Count -ne ($expectedCount - $missingVisualCount - $textOnlyCount)) { Add-ValidationError 'Public HTML game-tile count differs from confirmed visual mappings' }
+            if (([regex]::Matches($html, 'class="card card-no-tile"')).Count -ne ($missingVisualCount + $textOnlyCount)) { Add-ValidationError 'Public HTML must omit, not replace, unresolved and text-only cards' }
             if (([regex]::Matches($html, 'class="number"')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must place one number beside every activity title' }
             if (-not $html.Contains('.type-icon{display:inline-flex;flex:0 0 24px;width:24px;height:24px')) { Add-ValidationError 'Public HTML must use fixed-size activity type icons' }
             if (([regex]::Matches($html, '<button\s+class="completion-toggle"[^>]*\bdata-completion-toggle\b', 'IgnoreCase')).Count -ne $expectedCount) { Add-ValidationError 'Public HTML must contain one local completion control per card' }
