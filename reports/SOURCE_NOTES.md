@@ -2313,3 +2313,27 @@
 | `forza_labs_map` | checked: Interactive Map доступна, но не содержит плитку Monthly Rivals или индикатор её выполнения. |
 | `escorenews_fh6` | unavailable: FH6-раздел вернул Internal Error; свежий пригодный кадр подтвердить нельзя. |
 | `dungg_playlist` | unavailable: YouTube playlist не открылась через live reader; выпуск недели и требуемое изображение подтвердить нельзя. |
+
+## 2026-10-04T06:12:00+07:00 — полный ежедневный аудит Series 5 Spring
+
+- Живая [официальная Festival Playlist](https://forza.net/fh6playlists) подтверждает **Series 5 British Automotive — Spring**, активную 1–8 октября; дедлайн — **08.10.2026 21:30 Asia/Krasnoyarsk**. Строки 426–446 подтверждают недельное задание, все семь типов Daily, Photo Challenge, Treasure Hunt, оба чемпионата, три PR Stunts, Trial и Horizon Play; строка 360 подтверждает Monthly Rivals **Shimanoyama Sprint / 2025 McLaren W1** на уровне Series. Свежие r/ForzaHorizon6 и r/forza Spring guides подтверждают условия и дату-соответствие всех семи Daily, награды и активности. В одном свежем посте r/ForzaHorizon перепутан порядок Daily (Aftermarket Car и Drift Skills); оставлен последовательный порядок, совпадающий с датированным FH6-гайдом и игровой очередью Playlist.
+- Все подготовленные игровые плитки проверены повторно и сопоставлены с текущими активностями; исходники пользователя сохранены. Итог: **confirmed=13, community=0, preliminary=0, missing=0, not_applicable=1** (объединённый Daily намеренно текстовый). Monthly Rivals остался привязан к тому же активному месячному событию и изображение не удалялось при смене недели. Дополнительный поиск точной completed-плитки Monthly Rivals без золотого свечения результатов не дал: доступны обычная плитка без статуса и ранее присланный завершённый кадр с игровым золотым состоянием. Неизвестную альтернативу и ретушь не использовал; текущая точная плитка оставлена.
+
+| Источник | Результат проверки 06:12 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: live reader вернул Internal Error; категорию и её изображения не использовал. |
+| `fandom_current` | unavailable: Fandom root также вернул Internal Error; старые сезонные сведения не переносил. |
+| `forza_playlist` | checked: текущая официальная таблица подтверждает Series 5 Spring, срок до 8 Oct, все сезонные карточки и месячный Shimanoyama Sprint; семь Daily сведены в одну карточку отчёта. |
+| `forza_news` | no_current_item: официальный индекс доступен; свежей отдельной Spring Playlist новости за неделю не найдено. |
+| `forza_support_release_notes` | unavailable: настроенный раздел Support вернул Internal Error; свежую заметку не подтверждал. |
+| `forza_support_known_issues` | checked: страница Known Issues открылась; упоминания Playlist Spring/Monthly Rivals в доступном тексте не найдено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправил на общий Forza Forums; текущего официального поста Playlist не обнаружено. |
+| `reddit_forzahorizon` | checked: breakdown Spring от 1 Oct подтверждает сезонные условия/наград и Monthly Rivals; его распределение Daily по дням расходится с более точным FH6-гайдом. |
+| `reddit_forzahorizon6` | checked: свежий FH6-гайд от 1 Oct проверен; подтверждает даты Oct 1–7 для всех Daily, Weekly/Photo/Treasure, события, маршруты, классы, награды и рекомендации. |
+| `reddit_forza` | checked: Spring Information Thread от 1 Oct подтверждает дедлайн 8 Oct 14:30 UTC, порядок условий Daily, Photo/Treasure и месячный clean lap. |
+| `reddit_forzatune` | no_current_item: лента `/new` проверена; свежего FH6 Spring-тюнинг-поста за эту неделю не найдено, share codes не переносились из старых публикаций. |
+| `forza_horizon_hub` | no_current_item: открытая страница показывает Series 1, поэтому как источник текущей Spring не использовалась. |
+| `forza_labs_collector` | checked: Collector Tool доступен; активности Collectibles в подтверждённой текущей Playlist нет. |
+| `forza_labs_map` | checked: актуальная карта доступна, но не публикует сезонные плитки/завершённое Monthly Rivals; новых локационных фактов не добавлял. |
+| `escorenews_fh6` | unavailable: FH6 landing page вернула Internal Error; свежего недельного гайда или подходящей плитки не подтверждено. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist вернул Internal Error; видео недели подтвердить нельзя. |
