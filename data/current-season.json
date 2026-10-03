@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-03T06:09:58+07:00",
+  "lastContentUpdate": "2026-10-03T10:28:06+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -381,31 +381,21 @@
       "tuneHtml": "2025 McLaren W1 - R 918, задний привод; настройка не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "tile-monthly-rivals-shimanoyama.png",
+        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
+        "orientation": "horizontal",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Spring не найдена онлайн; ждём полный неизменённый скриншот этой игровой активности."
+        "sourceLabel": "Точная игровая плитка Monthly Rivals Shimanoyama Sprint с отметкой COMPLETE сохранена с прошлой недели того же ежемесячного события; исходник и кадр перенесены без изменений, SHA-256 сверены. В открытых источниках не найден вариант одновременно с подтверждением выполнения и без золотого эффекта."
       },
       "completeness": {
         "condition": "community",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ],
-      "openItems": [
-        {
-          "activityId": "activity_14_monthly_rivals",
-          "field": "visual",
-          "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-          "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-          "status": "missing"
-        }
-      ]
+      "missingFields": [],
+      "openItems": []
     }
   ],
   "locales": {
@@ -514,22 +504,6 @@
       }
     }
   },
-  "openItems": [
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    }
-  ],
-  "missingFields": [
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная игровая плитка Spring этой активности не найдена в проверенных актуальных источниках; прежняя Winter-плитка не переносится.",
-      "nextCheck": "Нужен неизменённый скриншот игры с полной Spring-плиткой; затем сохранить оригинал и вырезать только границы плитки.",
-      "status": "missing"
-    }
-  ]
+  "openItems": [],
+  "missingFields": []
 }

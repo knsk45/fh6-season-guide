@@ -2285,3 +2285,31 @@
 | `dungg_playlist` | unavailable: настроенный YouTube playlist не открылся в live reader; выпуск текущей недели подтвердить нельзя. |
 
 Дополнительная проверка открытого решения (вне `requiredSources`): [GamesHedge](https://www.gameshedge.com/forza-horizon-6-nangan-region-british-automotive-treasure-hunt-guide/) и [Traxion](https://traxion.gg/how-to-complete-the-series-5-week-4-nangan-region-treasure-hunt-in-forza-horizon-6/) — свежие публикации 1 октября с совпадающей локацией у ракеты в Irokawa Space Centre. Текст помечен как подтверждённый сообществом, а не официально проверенный в игре.
+
+## 2026-10-03T10:23:00+07:00 — восстановление плитки Monthly Rivals
+
+- Обновлена только `activity_14_monthly_rivals`; Weekly и объединённый Daily не менялись. Spring и предыдущая Winter-неделя относятся к одному месячному событию Series 5: Shimanoyama Sprint на 2025 McLaren W1.
+- Проверены [официальная Playlist](https://forza.net/fh6playlists), [свежий Spring-разбор r/ForzaHorizon](https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/) и [страница Winter с изображением Monthly Rivals](https://forzahorizonwiki.com/wiki/forza-horizon-6/series-5/winter-season/). Официальная Playlist и текущий разбор подтверждают актуальность события; онлайн-изображение [Wiki](https://wikiassets.net/forza-567d92/images/f8f4337a6d4c5efb94b5850083c7bfe9.webp) подтверждает саму плитку, но не завершение. Среди просмотренных веб-результатов не найден кадр этой активности одновременно с отметкой выполнения и без золотого эффекта.
+- Плитка с видимой отметкой `COMPLETE` восстановлена из уже сохранённого пользовательского скриншота предыдущей недели того же Monthly Rivals. Исходный скриншот сохранён как evidence; подготовленная плитка и исходник скопированы побайтно в Spring assets. SHA-256 совпали с оригиналами (`8EA10C7C…D8E295F` для плитки и `1B2D21BF…EF62EB` для исходника). Золотой эффект присутствует в самой игре на завершённой плитке; он не удалялся и изображение не ретушировалось.
+- `activity_14_monthly_rivals.visual` теперь `confirmed`; его visual `missingFields`/`openItems` закрыты. Число visual: `confirmed=13`, `community=0`, `preliminary=0`, `missing=0`, `not_applicable=1` (Daily остаётся текстовым).
+
+Повторный live-аудит обязательных источников этого запуска:
+
+| Источник | Результат |
+|---|---|
+| `fandom_series_category` | unavailable: текущая категория Fandom недоступна через live reader; не использовалась. |
+| `fandom_current` | unavailable: Fandom недоступен через live reader; сезонные изображения из кэша не выдавались за свежие. |
+| `forza_playlist` | checked: открытая официальная Playlist подтверждает Series 5 British Automotive — Spring (1–8 Oct); таблица содержит Monthly Rivals Shimanoyama Sprint. |
+| `forza_news` | no_current_item: индекс Forza News доступен, совпадений по Spring нет; отдельной свежей новости недели не обнаружено. |
+| `forza_support_release_notes` | unavailable: настроенная секция Release Notes вернула Internal Error. |
+| `forza_support_known_issues` | checked: страница FH6 Known Issues доступна; записи про Monthly Rivals нет. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общий форум, свежего объявления недели нет. |
+| `reddit_forzahorizon` | checked: свежий Spring breakdown подтверждает Shimanoyama Sprint и требование clean lap; отдельной плитки COMPLETE без золотого эффекта в посте нет. |
+| `reddit_forzahorizon6` | checked: свежий FH6 Spring guide подтверждает месячное задание, Shimanoyama Sprint и 2025 McLaren W1; отдельной альтернативной COMPLETE-плитки нет. |
+| `reddit_forza` | checked: Spring Information Thread подтверждает один clean lap на серию и награду Super Wheelspin; визуала требуемого вида не содержит. |
+| `reddit_forzatune` | no_current_item: лента `/new` доступна, свежей FH6 Spring-публикации с Monthly Rivals плиткой нет. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но текущую Spring плитку Monthly Rivals не публикует. |
+| `forza_labs_collector` | checked: Collector Tool доступен; Monthly Rivals не является collectible и новых сведений не даёт. |
+| `forza_labs_map` | checked: Interactive Map доступна, но не содержит плитку Monthly Rivals или индикатор её выполнения. |
+| `escorenews_fh6` | unavailable: FH6-раздел вернул Internal Error; свежий пригодный кадр подтвердить нельзя. |
+| `dungg_playlist` | unavailable: YouTube playlist не открылась через live reader; выпуск недели и требуемое изображение подтвердить нельзя. |
