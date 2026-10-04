@@ -2337,3 +2337,29 @@
 | `forza_labs_map` | checked: актуальная карта доступна, но не публикует сезонные плитки/завершённое Monthly Rivals; новых локационных фактов не добавлял. |
 | `escorenews_fh6` | unavailable: FH6 landing page вернула Internal Error; свежего недельного гайда или подходящей плитки не подтверждено. |
 | `dungg_playlist` | unavailable: настроенный YouTube playlist вернул Internal Error; видео недели подтвердить нельзя. |
+
+## 2026-10-05T06:08:00+07:00 — полный ежедневный аудит Series 5 Spring
+
+- Живая официальная Playlist по-прежнему подтверждает **Series 5 British Automotive — Spring**, активную до **08.10.2026 21:30 Asia/Krasnoyarsk**. Проверены недельные активности, награды, семь Daily и месячная **Shimanoyama Sprint / 2025 McLaren W1**. Свежие текущенедельные обсуждения r/ForzaHorizon6 и r/forza сверены; в r/ForzaHorizon обнаружено расхождение в распределении двух Daily, поэтому сохраняется порядок, совпадающий с официальной Playlist и FH6-гайдом.
+- Для полного списка Daily подтверждены даты 1–7 октября: Trading Paint Skills; Road Race; Drift/E-Drift Skills; покупка Aftermarket Car; звезда Horizon Rush; звезда Danger Signs; круг Drift Attack.
+- Повторно проверены все подготовленные индивидуальные плитки и исходники. Итого визуалов: **confirmed=13, community=0, preliminary=0, missing=0, not_applicable=1** (объединённый Daily намеренно текстовый). Очередь `audit_visual_evidence.ps1`: `READY`, 14 карточек проверено, `screenshotsRequired=0`. Октябрьская плитка Monthly Rivals сохранена без изменений: тот же Shimanoyama Sprint остаётся активен в этом месяце; файл не удалялся и повторно не запрашивался.
+- Содержательных изменений карточек и `openItems` не найдено. Требуется только обычное обновление времени полной проверки и публикация производных отчётов.
+
+| Источник | Результат проверки 06:08 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: live категория Fandom вернула Internal Error; сезонные данные из кэша не использовались. |
+| `fandom_current` | unavailable: текущая Fandom Series/Season страница вернула Internal Error; изображения оттуда не переносились. |
+| `forza_playlist` | checked: официальная Playlist подтверждает Series 5 Spring, период 1–8 Oct, все сезонные активности, семь Daily и Monthly Rivals Shimanoyama Sprint. |
+| `forza_news` | no_current_item: официальный индекс проверен; отдельной свежей Spring Playlist новости текущей недели не обнаружено. |
+| `forza_support_release_notes` | unavailable: настроенный раздел Release Notes вернул Internal Error. |
+| `forza_support_known_issues` | checked: FH6 Known Issues просмотрен; свежего Playlist/Monthly Rivals issue в доступном материале нет. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправляет на общую страницу форумов; свежего объявления текущей недели не найдено. |
+| `reddit_forzahorizon` | checked: свежий Spring breakdown проверен; условия сверены, но публикация расходится в порядке двух Daily. |
+| `reddit_forzahorizon6` | checked: свежий FH6 Spring guide проверен; подтверждает активную неделю, активности и полный список Daily. |
+| `reddit_forza` | checked: текущая Spring Information Thread проверена; подтверждает дедлайн, условия недели и последовательность Daily. |
+| `reddit_forzatune` | no_current_item: лента новых публикаций проверена; отдельного свежего FH6 Spring tuning-поста нет, старые коды не использовались. |
+| `forza_horizon_hub` | no_current_item: сайт проверен, но доступный weekly-блок показывает Series 1 и не подтверждает текущую Spring-неделю. |
+| `forza_labs_collector` | checked: Collector Tool доступен; отдельной сезонной collectible-активности в Playlist нет. |
+| `forza_labs_map` | checked: Interactive Map доступна; подтверждённых новых локационных фактов этой проверки нет. |
+| `escorenews_fh6` | unavailable: FH6-раздел вернул Internal Error; свежего недельного материала подтвердить не удалось. |
+| `dungg_playlist` | unavailable: YouTube playlist не открылась через live reader; выпуск текущей недели подтвердить нельзя. |

@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Весна",
     "description": "Сезон действует до 2026-10-08T21:30:00+07:00",
-    "generatedAt": "2026-10-04T06:20:05.0000000+07:00",
+    "generatedAt": "2026-10-05T06:10:53.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -115,7 +115,7 @@
   "snapshot": {
     "version": 1,
     "status": "ready",
-    "generatedAt": "2026-10-04T06:20:05.0000000+07:00",
+    "generatedAt": "2026-10-05T06:10:53.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -125,13 +125,6 @@
         },
         "description": "График показывает последний успешный замер за каждый из последних семи календарных дней по времени Красноярска.",
         "rows": [
-          {
-            "runId": "fh6-20260927-203757-690166",
-            "collectedAt": "2026-09-27T21:07:50.4570510+07:00",
-            "steamViews": 1223,
-            "steamFavorites": 77,
-            "githubViews": 2219
-          },
           {
             "runId": "fh6-20260928-054003-571158",
             "collectedAt": "2026-09-28T06:20:10.0218367+07:00",
@@ -173,6 +166,13 @@
             "steamViews": 1268,
             "steamFavorites": 78,
             "githubViews": 2642
+          },
+          {
+            "runId": "fh6-20261004-054003-790485",
+            "collectedAt": "2026-10-04T06:21:45.5536597+07:00",
+            "steamViews": 1269,
+            "steamFavorites": 78,
+            "githubViews": 2719
           }
         ]
       }
@@ -181,7 +181,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-10-04T06:20:05.0000000+07:00",
+    "generated_at": "2026-10-05T06:10:53.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }
