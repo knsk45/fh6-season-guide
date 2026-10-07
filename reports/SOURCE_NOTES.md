@@ -2416,3 +2416,30 @@
 | `forza_labs_map` | checked: карта открывается; отдельной новой локационной информации для текущих карточек не найдено. |
 | `escorenews_fh6` | unavailable: FH6 landing section вернула Internal Error; текущенедельная статья недоступна. |
 | `dungg_playlist` | unavailable: configured YouTube playlist вернула Internal Error; выпуск недели подтвердить нельзя. |
+
+## 2026-10-07T09:28:10+07:00 — повторная живая проверка перед повторной попыткой публикации
+
+- Официальная Festival Playlist повторно подтверждает **Series 5 British Automotive — Spring** до **08.10.2026 21:30 Asia/Krasnoyarsk**. Horizon Meets/Series 6 уже объявлены официально, но стартуют только 8 октября; Thursday rollover сейчас не выполнялся.
+- Сверил все 14 текущих активностей и полный список семи Daily. Официальная таблица совпадает с сохранённым порядком условий; один свежий breakdown r/ForzaHorizon переставляет Drift Skills и Aftermarket Car относительно официальной последовательности, поэтому его порядок не переношу. Свежий FH6-гайд и Information Thread подтверждают Spring и дедлайн. Условия не менялись.
+- Официальный анонс Horizon Meets от 5 октября сообщает о фиксах, в том числе эксплойта набора очков Drift Attack, с релизом нового плейлиста 8 октября. Это не меняет ещё активную сегодня карточку.
+- Повторно проверены все визуалы: **confirmed=13, community=0, preliminary=0, missing=0, not_applicable=1** (Daily остаётся намеренно текстовым). Все 13 PNG-плиток и исходники пользователя присутствуют; подготовленные SHA-256 сверены. Октябрьский Monthly Rivals Shimanoyama Sprint сохранён вместе с исходником без изменений, поскольку активность та же. `audit_visual_evidence.ps1`: `READY`, 0 запросов скриншотов.
+- **Сводка актуальна — содержательных изменений не требуется.** Повторная попытка предназначена только для публикационной проверки и итоговой доставки; открытых пунктов нет.
+
+| Источник | Результат проверки 09:28 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: категория Forza Wiki/Fandom вернула Internal Error; данные и визуалы из кэша не использовались. |
+| `fandom_current` | unavailable: текущая Series/Season страница Forza Wiki/Fandom вернула Internal Error; сезон подтверждён официальной Playlist. |
+| `forza_playlist` | checked: живая таблица подтверждает Series 5 Spring, даты 1–8 Oct, активные события, Daily и ежемесячный Soni Circuit Monthly Rivals; Spring остаётся текущей до 8 Oct. |
+| `forza_news` | checked: официальный индекс и Horizon Meets announcement от 5 Oct проверены; новые награды/Playlist начнутся 8 Oct. |
+| `forza_support_release_notes` | unavailable: Support section и прямой Oct 5 article вернули Internal Error; доступное официальное Forza News summary подтверждает исправление Drift Attack, вступающее с 8 Oct. |
+| `forza_support_known_issues` | checked: актуальная FH6 Known Issues страница открылась; текущего пункта, меняющего условия Spring, не обнаружено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправил на общий Forza Forums; поиск текущей Playlist/Series announcement не дал публикации этой недели. |
+| `reddit_forzahorizon` | checked: свежий Spring breakdown от 1 Oct проверен; условия совпадают, но последовательность двух Daily расходится с официальной таблицей. |
+| `reddit_forzahorizon6` | checked: FH6-specific Spring guide и tune thread от 1 Oct проверены; подтверждают сезон и активности; текущие коды не требовалось менять. |
+| `reddit_forza` | checked: Spring Information Thread от 1 Oct подтверждает смену плейлиста 8 Oct 14:30 UTC; отдельная Release Notes-публикация Forza Support от 5 Oct также просмотрена. |
+| `reddit_forzatune` | no_current_item: `/new` проверена, поиском свежая FH6 публикация текущей недели не найдена; старые tune codes не переносились. |
+| `forza_horizon_hub` | no_current_item: FH6 Hub доступен, но не показывает подтверждение актуальной Series 5 Spring; сезонный источник не использовался. |
+| `forza_labs_collector` | checked: Collector Tool доступен; отдельной Collectibles activity в текущей Playlist нет. |
+| `forza_labs_map` | checked: Interactive Map доступна; новых подтверждённых локаций или точных недельных плиток не публикует. |
+| `escorenews_fh6` | unavailable: FH6 landing page вернула Internal Error; статью текущей недели проверить не удалось. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist вернул Internal Error; выпуск текущей недели подтвердить не удалось. |
