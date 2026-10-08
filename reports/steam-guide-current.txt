@@ -3,72 +3,68 @@
 
 [i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]
 
-[h1]Series 5 'British Automotive' — Весна[/h1]
-[b]До:[/b] 08.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
+[h1]Series 6 'Horizon Meets' — Лето[/h1]
+[b]До:[/b] 15.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 13
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Еженедельное испытание · 5 очков[/h2]
-На 1964 Aston Martin DB5 Vantage: потратьте 20 000 CR на улучшения, завершите 2 Street Races и заработайте 3 звезды на Speed Zones. Награда: 25 000 CR.
-[b]Авто:[/b] 1964 Aston Martin DB5 Vantage — код тюнинга не указан в проверенных материалах.
+[h2]01. Еженедельное испытание: Turbocharged · 5 очков[/h2]
+Выполните четыре главы на 1973 BMW Turbo 2002: владейте автомобилем и прокатитесь на нём; заработайте 4 Speed Skills; проедьте 2 круга на Hokubu Time Attack Circuit; наберите 6 звёзд на Speed Traps. Награда: 150 000 CR.
+[b]Авто:[/b] 1973 BMW Turbo 2002 — код тюнинга 136 527 514
 
 [h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
-• 01.10: выполните 3 Trading Paint Skills.
-• 02.10: завершите Road Race.
-• 03.10: выполните 3 Drift или E-Drift Skills.
-• 04.10: купите Aftermarket Car.
-• 05.10: получите не менее 1 звезды в Horizon Rush.
-• 06.10: получите не менее 1 звезды на Danger Signs.
-• 07.10: завершите 1 круг Drift Attack.
- Награда за каждое: 5 000 CR.
+• 08.10: выполните 5 Drift или E-Drift Skills.
+• 09.10: получите не менее 1 звезды на Speed Traps.
+• 10.10: выполните 3 Kangaroo Skills.
+• 11.10: отправьте Gift Drop другому игроку.
+• 12.10: активируйте Wheelspin или Super Wheelspin.
+• 13.10: проедьте 10 миль (16,1 км).
+• 14.10: наберите 15 000 Skill Score.
+ Награда: 20 000 CR за каждое задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. #TempleVantage · 2 очка[/h2]
-Сфотографируйте 1964 Aston Martin DB5 Vantage у храма Ruriko-ji. Награда: Forza Link «Are you not entertained?».
+[h2]03. #LightLunch · 2 очка[/h2]
+Сфотографируйте любой автомобиль категории Eclectic Domestic у магазина 7-Eleven. Награда: форма 7-Eleven.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. Nangan Region · 3 очка[/h2]
-Treasure Hunt в регионе Nangan: выполните Photo Clue и найдите сундук. Награда: 100 000 CR.
+[h2]04. Ito Region · 3 очка[/h2]
+Следуйте фото-подсказке в регионе Ito и найдите сундук. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. Rally on Dirt · 5 очков[/h2]
-Чемпионат Rally on Dirt: Total Rally, класс B 600. Маршруты: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Награда: 2012 MINI John Cooper Works GP.
+[h2]05. Bee Happy · 5 очков[/h2]
+Чемпионат по Dirt Racing: Modern Rally, класс B 600. Маршруты: Kawazu Nanadaru Scramble, Cherry Field Trail и Sunflower Scramble. Награда: 1970 Dodge Coronet Super Bee.
 [b]Авто:[/b] 2011 Subaru WRX STI — B 600 · 158 111 961
 
-[h2]06. Aston Martin Nights · 5 очков[/h2]
-Чемпионат Aston Martin Nights: автомобили Aston Martin, класс A 800. Маршруты: Festival Chase, Matsumi Climb, Shimanoyama Charge. Награда: 1964 Aston Martin DB5 Vantage.
-[b]Авто:[/b] 2017 Aston Martin DB11 — A 800 · 109 918 685
+[h2]06. Ghost Hunter · 5 очков[/h2]
+Чемпионат Cross Country: Rally Monsters, класс A 700. Маршруты: Takashiro Cross Country, Oka Cross Country Circuit и Temple Cross Country. Награда: 1973 BMW Turbo 2002.
+[b]Авто:[/b] 1984 Opel Manta 400 — A 700 · 483 621 253
 
-[h2]07. Shimanoyama Drift Attack · 3 очка[/h2]
-Drift Attack Shimanoyama: Великобритания, A 700, минимум 120 000 очков дрифта. Награда: Wheelspin.
-[b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
+[h2]07. Vetting the Competition · 5 очков[/h2]
+Чемпионат Touge & Street: категория Track Life, класс S1 800. Маршруты: Norikura Descent, Hokubu Ascent и Kita Ine. Награда: 1970 Chevrolet Corvette ZR-1.
+[b]Авто:[/b] 1991 Mazda #55 787B — S1 800 · 133 810 469
 
-[h2]08. Clifftop Crest Danger Sign · 2 очка[/h2]
-Danger Sign Clifftop Crest: Великобритания, B 600, минимум 590,6 ft (180 м). Награда: Wheelspin.
-[b]Авто:[/b] 2020 Land Rover Defender 110 X — B 600 · 163 429 917
+[h2]08. Soni Time Attack · 3 очка[/h2]
+Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1. Награда: Wheelspin.
+[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]09. Ine Beach Speed Trap · 2 очка[/h2]
-Speed Trap Ine Beach: Великобритания, A 700, минимум 150 mph (241,4 км/ч). Награда: Wheelspin.
-[b]Авто:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
+[h2]09. Highway Jump · 2 очка[/h2]
+Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]10. Hyper Sprints · 10 очков[/h2]
-Hypercars, класс S1 800. Маршруты: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Награда: 2015 Radical RXC Turbo.
-[b]Авто:[/b] 2025 McLaren W1 — S1 800 · 612 366 901
+[h2]10. Konbini Dash · 2 очка[/h2]
+На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]11. Double Clean · 3 очка[/h2]
-В Horizon Racing выполните 3 LINK Clean Start Skills. Награда: 2014 McLaren 650S Spider.
+[h2]11. The Trial: Aim for the Top · 10 очков[/h2]
+Командный Trial: Total Muscle, класс A 800. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
+[b]Авто:[/b] 2024 Chevrolet Camaro ZL1 — A 800 · 100 986 561
+
+[h2]12. Smooth and Steady · 3 очка[/h2]
+Завершите Horizon Drift Championship. Награда: White Haori.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]12. The Eliminator — Battle Royale · 3 очка[/h2]
-Завершите матч The Eliminator на 30-м месте или выше. Награда: 2015 Ultima Evolution Coupe 1020.
-[b]Авто:[/b] Тюнинг не требуется.
-
-[h2]13. Horizon Stunt Party — Mini Games · 3 очка[/h2]
-Завершите любой матч Horizon Stunt Party. Награда: гудок Jaguar Growl.
-[b]Авто:[/b] Тюнинг не требуется.
-
-[h2]14. Monthly Rivals - Shimanoyama Sprint · 4 очка[/h2]
-Установите чистый круг на Shimanoyama Sprint на 2025 McLaren W1. Награда: Super Wheelspin.
-[b]Авто:[/b] 2025 McLaren W1 - R 918, задний привод; настройка не требуется.
+[h2]13. Monthly Rivals — Daikoku Circuit · 4 очка[/h2]
+Поставьте чистый круг на Daikoku Circuit на 2025 BMW M4 CS. Награда: Super Wheelspin.
+[b]Авто:[/b] 2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.
 
 [b]Добавьте руководство Steam в избранное:[/b] оно обновляется вместе с Festival Playlist. Карты и уточнения локаций — в сводке GitHub по ссылке в описании руководства выше.

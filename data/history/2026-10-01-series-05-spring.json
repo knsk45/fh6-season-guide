@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 1,
+  "season": {
+    "seriesNumber": 5,
+    "seriesSlug": "05",
+    "seriesName": "British Automotive",
+    "season": "spring",
+    "seasonDisplay": "Весна",
+    "startAt": "2026-10-01T21:30:00+07:00",
+    "endAt": "2026-10-08T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Как пройти Series 5 «British Automotive» — Весна",
+    "archiveFile": "seasons/2026-10-01-series-05-spring.md",
+    "assetsDirectory": "reports/assets/series-05-spring",
+    "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
+    "officialPlaylistUrl": "https://forza.net/fh6playlists",
+    "expectedCardCount": 14,
+    "expectedDailyItems": 7,
+    "maxPublicHtmlBytes": 200000
+  },
+  "lastContentUpdate": "2026-10-08T06:04:57+07:00",
+  "activities": [
+    {
+      "id": "activity_01_weekly",
+      "number": "01",
+      "kind": "weekly",
+      "title": "Еженедельное испытание",
+      "points": "5 очков",
+      "conditionHtml": "На 1964 Aston Martin DB5 Vantage: потратьте 20 000 CR на улучшения, завершите 2 Street Races и заработайте 3 звезды на Speed Zones. Награда: 25 000 CR.",
+      "howHtml": "Выполняйте главы строго по порядку в DB5 Vantage. После покупки/получения автомобиля сначала завершите улучшения, затем гонки и Speed Zones.",
+      "tuneHtml": "1964 Aston Martin DB5 Vantage — код тюнинга не указан в проверенных материалах.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/weekly.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
+        "orientation": "vertical",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_02_daily",
+      "number": "02",
+      "kind": "daily",
+      "title": "7 ежедневных заданий",
+      "points": "7 × 1 очко",
+      "conditionHtml": "<ol><li><strong>01.10:</strong> выполните 3 Trading Paint Skills.</li><li><strong>02.10:</strong> завершите Road Race.</li><li><strong>03.10:</strong> выполните 3 Drift или E-Drift Skills.</li><li><strong>04.10:</strong> купите Aftermarket Car.</li><li><strong>05.10:</strong> получите не менее 1 звезды в Horizon Rush.</li><li><strong>06.10:</strong> получите не менее 1 звезды на Danger Signs.</li><li><strong>07.10:</strong> завершите 1 круг Drift Attack.</li></ol> Награда за каждое: 5 000 CR.",
+      "howHtml": "Каждое задание открывается в 21:30 по Красноярску и доступно 7 дней. Полный список до конца недели подтверждён свежей Information Thread.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Daily намеренно оформлен только текстовым списком; публичная плитка не используется."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "not_applicable"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_03_photo",
+      "number": "03",
+      "kind": "photo",
+      "title": "#TempleVantage",
+      "points": "2 очка",
+      "conditionHtml": "Сфотографируйте 1964 Aston Martin DB5 Vantage у храма Ruriko-ji. Награда: Forza Link «Are you not entertained?».",
+      "howHtml": "Подъедьте к Ruriko-ji Temple, откройте Photo Mode и убедитесь, что DB5 Vantage целиком попал в кадр.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/photo.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
+        "orientation": "vertical",
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_04_treasure_hunt",
+      "number": "04",
+      "kind": "treasure_hunt",
+      "title": "Nangan Region",
+      "points": "3 очка",
+      "conditionHtml": "Treasure Hunt в регионе Nangan: выполните Photo Clue и найдите сундук. Награда: 100 000 CR.",
+  "howHtml": "Сундук находится в Irokawa Space Centre у Irokawa Circuit: поднимитесь на верхнюю бетонную площадку к ракете и ищите слева от неё, над дорогой. Для быстрого пути переместитесь к концу взлётной полосы, не к драг-стрипу.",
+      "tuneHtml": "Тюнинг не требуется.",
+  "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-nangan-region-british-automotive-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Локация сундука</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-5-week-4-nangan-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Маршрут к сундуку</a>",
+      "visual": {
+        "image": "user-tiles-20261002/treasure.png",
+        "sourceImage": "user-tiles-20261002/source-1.png",
+        "orientation": "vertical",
+        "typeIconKey": "treasure-hunt",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+    "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+  "missingFields": [],
+  "openItems": []
+    },
+    {
+      "id": "activity_05_championship",
+      "number": "05",
+      "kind": "championship",
+      "title": "Rally on Dirt",
+      "points": "5 очков",
+      "conditionHtml": "Чемпионат Rally on Dirt: Total Rally, класс B 600. Маршруты: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Награда: 2012 MINI John Cooper Works GP.",
+      "howHtml": "Подойдёт любая машина Total Rally в B 600. Для грязевых трасс держите плавную траекторию; championship состоит из трёх заездов.",
+      "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/rally-dirt.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-cross-country",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_06_championship",
+      "number": "06",
+      "kind": "championship",
+      "title": "Aston Martin Nights",
+      "points": "5 очков",
+      "conditionHtml": "Чемпионат Aston Martin Nights: автомобили Aston Martin, класс A 800. Маршруты: Festival Chase, Matsumi Climb, Shimanoyama Charge. Награда: 1964 Aston Martin DB5 Vantage.",
+      "howHtml": "Выберите любой Aston Martin класса A 800 и пройдите три Street/Touge-заезда.",
+      "tuneHtml": "2017 Aston Martin DB11 — A 800 · 109 918 685",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/aston-martin-nights.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-street",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_07_pr",
+      "number": "07",
+      "kind": "pr",
+      "title": "Shimanoyama Drift Attack",
+      "points": "3 очка",
+      "conditionHtml": "Drift Attack Shimanoyama: Великобритания, A 700, минимум 120 000 очков дрифта. Награда: Wheelspin.",
+      "howHtml": "Набирайте очки на протяжении всей трассы и поддерживайте непрерывную цепочку дрифта.",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/drift-attack.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
+        "typeIconKey": "drift-zone",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_08_pr",
+      "number": "08",
+      "kind": "pr",
+      "title": "Clifftop Crest Danger Sign",
+      "points": "2 очка",
+      "conditionHtml": "Danger Sign Clifftop Crest: Великобритания, B 600, минимум 590,6 ft (180 м). Награда: Wheelspin.",
+      "howHtml": "Разгонитесь по прямой перед трамплином; ориентир прохождения — 590,6 ft.",
+      "tuneHtml": "2020 Land Rover Defender 110 X — B 600 · 163 429 917",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/danger-sign.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_09_pr",
+      "number": "09",
+      "kind": "pr",
+      "title": "Ine Beach Speed Trap",
+      "points": "2 очка",
+      "conditionHtml": "Speed Trap Ine Beach: Великобритания, A 700, минимум 150 mph (241,4 км/ч). Награда: Wheelspin.",
+      "howHtml": "Наберите скорость до камеры и выберите ровную траекторию для въезда.",
+      "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/speed-trap.png",
+        "sourceImage": "user-tiles-20261002/source-2.png",
+        "orientation": "horizontal",
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_10_trial",
+      "number": "10",
+      "kind": "trial",
+      "title": "Hyper Sprints",
+      "points": "10 очков",
+      "conditionHtml": "The Trial Hyper Sprints: Hypercars, класс S1 800. Маршруты: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Награда: 2015 Radical RXC Turbo.",
+      "howHtml": "Играйте на командный результат и финишируйте чисто. Все три маршрута — Road Races.",
+      "tuneHtml": "2025 McLaren W1 — S1 800 · 612 366 901",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/trial.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "vertical",
+        "typeIconKey": "trial",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_11_horizon_play",
+      "number": "11",
+      "kind": "horizon_play",
+      "title": "Double Clean",
+      "points": "3 очка",
+      "conditionHtml": "В Horizon Racing выполните 3 LINK Clean Start Skills. Награда: 2014 McLaren 650S Spider.",
+      "howHtml": "Стартуйте в Horizon Racing и выполните чистые старты, не задевая соперников.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/horizon-play-double-clean.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_12_horizon_play",
+      "number": "12",
+      "kind": "horizon_play",
+      "title": "The Eliminator — Battle Royale",
+      "points": "3 очка",
+      "conditionHtml": "Завершите матч The Eliminator на 30-м месте или выше. Награда: 2015 Ultima Evolution Coupe 1020.",
+      "howHtml": "Сосредоточьтесь на выживании; для выполнения задания достаточно финишировать в топ-30.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/eliminator.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_13_horizon_play",
+      "number": "13",
+      "kind": "horizon_play",
+      "title": "Horizon Stunt Party — Mini Games",
+      "points": "3 очка",
+      "conditionHtml": "Завершите любой матч Horizon Stunt Party. Награда: гудок Jaguar Growl.",
+      "howHtml": "Играйте до завершения матча и дождитесь экрана результатов.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "user-tiles-20261002/stunt-party.png",
+        "sourceImage": "user-tiles-20261002/source-3.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 02.10.2026: точная игровая плитка Series 5 Spring; исходный кадр сохранён без изменений, плитка вырезана без ретуши."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    },
+    {
+      "id": "activity_14_monthly_rivals",
+      "number": "14",
+      "kind": "monthly_rivals",
+      "title": "Monthly Rivals - Shimanoyama Sprint",
+      "points": "4 очка",
+      "conditionHtml": "Установите чистый круг на Shimanoyama Sprint на 2025 McLaren W1. Награда: Super Wheelspin.",
+      "howHtml": "Ещё до сброса Series можно выполнить Monthly Rivals один раз; для чистого круга избегайте столкновений, пропуска чекпоинтов и перемотки.",
+      "tuneHtml": "2025 McLaren W1 - R 918, задний привод; настройка не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1wuzhi5/fh6_series_5_spring_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-разбор сообщества</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1wuzrd4/fh6_series_5_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring-гайд и решения</a>",
+      "visual": {
+        "image": "tile-monthly-rivals-shimanoyama.png",
+        "sourceImage": "evidence/user-english-series-events-board-source-2026-09-26.png",
+        "orientation": "horizontal",
+        "typeIconKey": "monthly-rivals",
+        "sourceUrl": "",
+        "sourceLabel": "Точная игровая плитка Monthly Rivals Shimanoyama Sprint с отметкой COMPLETE сохранена с прошлой недели того же ежемесячного события; исходник и кадр перенесены без изменений, SHA-256 сверены. В открытых источниках не найден вариант одновременно с подтверждением выполнения и без золотого эффекта."
+      },
+      "completeness": {
+        "condition": "community",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": [],
+      "openItems": []
+    }
+  ],
+  "locales": {
+    "en": {
+      "reportTitle": "Forza Horizon 6: Series 5 \"British Automotive\" — Spring Guide",
+      "seasonDisplay": "Spring",
+      "activities": {
+        "activity_01_weekly": {
+          "title": "Weekly Challenge",
+          "points": "5 points",
+          "conditionHtml": "In the 1964 Aston Martin DB5 Vantage, spend 20,000 CR on upgrades, complete 2 Street Races, and earn 3 stars at Speed Zones. Reward: 25,000 CR.",
+          "howHtml": "Complete the chapters in order in the DB5 Vantage: upgrades first, then races and Speed Zones.",
+          "tuneHtml": "1964 Aston Martin DB5 Vantage — no tune code listed in the checked sources."
+        },
+        "activity_02_daily": {
+          "title": "7 Daily Challenges",
+          "points": "7 × 1 point",
+          "conditionHtml": "<ol><li><strong>Oct 1:</strong> earn 3 Trading Paint Skills.</li><li><strong>Oct 2:</strong> complete a Road Race.</li><li><strong>Oct 3:</strong> earn 3 Drift or E-Drift Skills.</li><li><strong>Oct 4:</strong> purchase an Aftermarket Car.</li><li><strong>Oct 5:</strong> earn at least 1 star from Horizon Rush.</li><li><strong>Oct 6:</strong> earn at least 1 star from Danger Signs.</li><li><strong>Oct 7:</strong> complete 1 lap of Drift Attack.</li></ol> Reward: 5,000 CR each.",
+          "howHtml": "Each challenge opens at 21:30 Krasnoyarsk time and remains available for 7 days. The full week's list is confirmed by the fresh Information Thread.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_03_photo": {
+          "title": "#TempleVantage",
+          "points": "2 points",
+          "conditionHtml": "Photograph the 1964 Aston Martin DB5 Vantage at Ruriko-ji Temple. Reward: “Are you not entertained?” Forza Link.",
+          "howHtml": "Go to Ruriko-ji Temple, open Photo Mode, and make sure the DB5 Vantage is fully in frame.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_04_treasure_hunt": {
+          "title": "Nangan Region",
+          "points": "3 points",
+          "conditionHtml": "Treasure Hunt in the Nangan Region: follow the Photo Clue and find the chest. Reward: 100,000 CR.",
+          "howHtml": "The chest is at Irokawa Space Centre beside Irokawa Circuit: reach the upper concrete platform by the rocket and look to its left, above the road. For the quickest route, fast-travel to the runway end (not the drag strip), then head to the launchpad.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_05_championship": {
+          "title": "Rally on Dirt",
+          "points": "5 points",
+          "conditionHtml": "Total Rally, B 600. Routes: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Reward: 2012 MINI John Cooper Works GP.",
+          "howHtml": "Use any Total Rally car in B 600. Keep a smooth line on the dirt routes; the championship has three races.",
+          "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961"
+        },
+        "activity_06_championship": {
+          "title": "Aston Martin Nights",
+          "points": "5 points",
+          "conditionHtml": "Aston Martin cars, A 800. Routes: Festival Chase, Matsumi Climb, Shimanoyama Charge. Reward: 1964 Aston Martin DB5 Vantage.",
+          "howHtml": "Choose any Aston Martin in A 800 and complete the three Street/Touge races.",
+          "tuneHtml": "2017 Aston Martin DB11 — A 800 · 109 918 685"
+        },
+        "activity_07_pr": {
+          "title": "Shimanoyama Drift Attack",
+          "points": "3 points",
+          "conditionHtml": "United Kingdom, A 700, at least 120,000 Drift Points. Reward: Wheelspin.",
+          "howHtml": "Score across the full course and keep your drift chain going.",
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420"
+        },
+        "activity_08_pr": {
+          "title": "Clifftop Crest Danger Sign",
+          "points": "2 points",
+          "conditionHtml": "United Kingdom, B 600, at least 590.6 ft (180 m). Reward: Wheelspin.",
+          "howHtml": "Build speed on the straight approach; the target is 590.6 ft.",
+          "tuneHtml": "2020 Land Rover Defender 110 X — B 600 · 163 429 917"
+        },
+        "activity_09_pr": {
+          "title": "Ine Beach Speed Trap",
+          "points": "2 points",
+          "conditionHtml": "United Kingdom, A 700, at least 150 mph (241.4 km/h). Reward: Wheelspin.",
+          "howHtml": "Build speed before the camera and use a smooth approach.",
+          "tuneHtml": "1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420"
+        },
+        "activity_10_trial": {
+          "title": "The Trial: Hyper Sprints",
+          "points": "10 points",
+          "conditionHtml": "Hypercars, S1 800. Routes: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Reward: 2015 Radical RXC Turbo.",
+          "howHtml": "Focus on the team result and finish cleanly. All three routes are Road Races.",
+          "tuneHtml": "2025 McLaren W1 — S1 800 · 612 366 901"
+        },
+        "activity_11_horizon_play": {
+          "title": "Double Clean",
+          "points": "3 points",
+          "conditionHtml": "Earn 3 LINK Clean Start Skills in Horizon Racing. Reward: 2014 McLaren 650S Spider.",
+          "howHtml": "Start a Horizon Racing event and earn clean starts without hitting other cars.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_12_horizon_play": {
+          "title": "The Eliminator — Battle Royale",
+          "points": "3 points",
+          "conditionHtml": "Finish 30th or better in The Eliminator. Reward: 2015 Ultima Evolution Coupe 1020.",
+          "howHtml": "Focus on survival; finishing in the top 30 completes the requirement.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_13_horizon_play": {
+          "title": "Horizon Stunt Party — Mini Games",
+          "points": "3 points",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Jaguar Growl car horn.",
+          "howHtml": "Play through the match and wait for the results screen.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_14_monthly_rivals": {
+          "title": "Monthly Rivals - Shimanoyama Sprint",
+          "points": "4 points",
+          "conditionHtml": "Set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1. Reward: Super Wheelspin.",
+          "howHtml": "Monthly Rivals only needs to be completed once per Series. For a clean lap, avoid collisions, missed checkpoints and rewind.",
+          "tuneHtml": "2025 McLaren W1 - R 918, RWD; no tune required."
+        }
+      }
+    }
+  },
+  "openItems": [],
+  "missingFields": []
+}

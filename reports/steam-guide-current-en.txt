@@ -3,66 +3,64 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 5 'British Automotive' — Spring[/h1]
-[b]Ends:[/b] 08.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
+[h1]Series 6 'Horizon Meets' — Summer[/h1]
+[b]Ends:[/b] 15.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 13
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge · 5 points[/h2]
-In the 1964 Aston Martin DB5 Vantage, spend 20,000 CR on upgrades, complete 2 Street Races, and earn 3 stars at Speed Zones. Reward: 25,000 CR.
-[b]Car:[/b] 1964 Aston Martin DB5 Vantage — no tune code listed in the checked sources.
+[h2]01. Weekly Challenge: Turbocharged · 5 points[/h2]
+Complete four chapters in the 1973 BMW Turbo 2002: own and drive it; earn 4 Speed Skills; complete 2 laps at Hokubu Time Attack Circuit; earn 6 stars at Speed Traps. Reward: 150,000 CR.
+[b]Car:[/b] 1973 BMW Turbo 2002 — tune code 136 527 514
 
 [h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
-• Oct 1: earn 3 Trading Paint Skills.
-• Oct 2: complete a Road Race.
-• Oct 3: earn 3 Drift or E-Drift Skills.
-• Oct 4: purchase an Aftermarket Car.
-• Oct 5: earn at least 1 star from Horizon Rush.
-• Oct 6: earn at least 1 star from Danger Signs.
-• Oct 7: complete 1 lap of Drift Attack.
- Reward: 5,000 CR each.
+• Oct 8: earn 5 Drift or E-Drift Skills.
+• Oct 9: earn at least 1 star from Speed Traps.
+• Oct 10: earn 3 Kangaroo Skills.
+• Oct 11: send a Gift Drop to another player.
+• Oct 12: redeem a Wheelspin or Super Wheelspin.
+• Oct 13: drive 10 miles (16.1 km).
+• Oct 14: bank 15,000 Skill Score.
+ Reward: 20,000 CR each.
 
-[h2]03. #TempleVantage · 2 points[/h2]
-Photograph the 1964 Aston Martin DB5 Vantage at Ruriko-ji Temple. Reward: “Are you not entertained?” Forza Link.
+[h2]03. #LightLunch · 2 points[/h2]
+Photograph any Eclectic Domestic car outside the 7-Eleven store. Reward: 7-Eleven Uniform.
 
-[h2]04. Nangan Region · 3 points[/h2]
-Treasure Hunt in the Nangan Region: follow the Photo Clue and find the chest. Reward: 100,000 CR.
+[h2]04. Ito Region · 3 points[/h2]
+Follow the Photo Clue in the Ito Region and find the treasure chest. Reward: 100,000 CR.
 
-[h2]05. Rally on Dirt · 5 points[/h2]
-Total Rally, B 600. Routes: Oyashirazu Trail, Horizon Stadium Scramble, Airfield Trail. Reward: 2012 MINI John Cooper Works GP.
+[h2]05. Bee Happy · 5 points[/h2]
+Dirt Racing: Modern Rally, B 600. Routes: Kawazu Nanadaru Scramble, Cherry Field Trail, Sunflower Scramble. Reward: 1970 Dodge Coronet Super Bee.
 [b]Car:[/b] 2011 Subaru WRX STI — B 600 · 158 111 961
 
-[h2]06. Aston Martin Nights · 5 points[/h2]
-Aston Martin cars, A 800. Routes: Festival Chase, Matsumi Climb, Shimanoyama Charge. Reward: 1964 Aston Martin DB5 Vantage.
-[b]Car:[/b] 2017 Aston Martin DB11 — A 800 · 109 918 685
+[h2]06. Ghost Hunter · 5 points[/h2]
+Cross Country: Rally Monsters, A 700. Routes: Takashiro Cross Country, Oka Cross Country Circuit, Temple Cross Country. Reward: 1973 BMW Turbo 2002.
+[b]Car:[/b] 1984 Opel Manta 400 — A 700 · 483 621 253
 
-[h2]07. Shimanoyama Drift Attack · 3 points[/h2]
-United Kingdom, A 700, at least 120,000 Drift Points. Reward: Wheelspin.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
+[h2]07. Vetting the Competition · 5 points[/h2]
+Touge & Street: Track Life, S1 800. Routes: Norikura Descent, Hokubu Ascent, Kita Ine. Reward: 1970 Chevrolet Corvette ZR-1.
+[b]Car:[/b] 1991 Mazda #55 787B — S1 800 · 133 810 469
 
-[h2]08. Clifftop Crest Danger Sign · 2 points[/h2]
-United Kingdom, B 600, at least 590.6 ft (180 m). Reward: Wheelspin.
-[b]Car:[/b] 2020 Land Rover Defender 110 X — B 600 · 163 429 917
+[h2]08. Soni Time Attack · 3 points[/h2]
+Finish Soni Time Attack in 00:49.000 or faster. Restriction: Porsche, S1. Reward: Wheelspin.
+[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]09. Ine Beach Speed Trap · 2 points[/h2]
-United Kingdom, A 700, at least 150 mph (241.4 km/h). Reward: Wheelspin.
-[b]Car:[/b] 1999 Lotus Elise Series 1 Sport 190 — A 700 · 114 242 420
+[h2]09. Highway Jump · 2 points[/h2]
+Jump at least 853 ft (260 m) at Highway Jump. Restriction: Porsche, S1. Reward: Wheelspin.
+[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]10. The Trial: Hyper Sprints · 10 points[/h2]
-Hypercars, S1 800. Routes: Ito Sprint, Shimanoyama Sprint, Satta Sprint. Reward: 2015 Radical RXC Turbo.
-[b]Car:[/b] 2025 McLaren W1 — S1 800 · 612 366 901
+[h2]10. Konbini Dash · 2 points[/h2]
+Reach 125 mph (201.2 km/h) at Konbini Dash Speed Trap. Restriction: Porsche, S1. Reward: Wheelspin.
+[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
-[h2]11. Double Clean · 3 points[/h2]
-Earn 3 LINK Clean Start Skills in Horizon Racing. Reward: 2014 McLaren 650S Spider.
+[h2]11. The Trial: Aim for the Top · 10 points[/h2]
+Team Trial: Total Muscle, A 800. Routes: Soni Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2017 Volkswagen #34 Andretti Rallycross Beetle.
+[b]Car:[/b] 2024 Chevrolet Camaro ZL1 — A 800 · 100 986 561
 
-[h2]12. The Eliminator — Battle Royale · 3 points[/h2]
-Finish 30th or better in The Eliminator. Reward: 2015 Ultima Evolution Coupe 1020.
+[h2]12. Smooth and Steady · 3 points[/h2]
+Complete a Horizon Drift Championship. Reward: White Haori.
 
-[h2]13. Horizon Stunt Party — Mini Games · 3 points[/h2]
-Complete any Horizon Stunt Party. Reward: Jaguar Growl car horn.
-
-[h2]14. Monthly Rivals - Shimanoyama Sprint · 4 points[/h2]
-Set a clean lap on Shimanoyama Sprint in the 2025 McLaren W1. Reward: Super Wheelspin.
-[b]Car:[/b] 2025 McLaren W1 - R 918, RWD; no tune required.
+[h2]13. Monthly Rivals — Daikoku Circuit · 4 points[/h2]
+Set a clean lap on Daikoku Circuit in the 2025 BMW M4 CS. Reward: Super Wheelspin.
+[b]Car:[/b] 2025 BMW M4 CS — S1 733, AWD; no tune required.
 
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.
