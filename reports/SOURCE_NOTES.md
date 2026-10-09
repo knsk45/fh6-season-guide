@@ -2521,3 +2521,28 @@
 | `forza_labs_map` | checked: Interactive Map открыта; точные плитки пользовательские, координаты сундука не подтверждены картой. |
 | `escorenews_fh6` | unavailable: FH6 landing page не открылась; свежая статья недели не подтверждена. |
 | `dungg_playlist` | unavailable: настроенный YouTube playlist не открылся; выпуск недели не подтверждён. |
+
+## 2026-10-09T16:52:00+07:00 — повторная проверка публикации карточек Series 6 Summer
+
+- Живая [официальная Festival Playlist](https://forza.net/fh6playlists) повторно подтверждает Horizon Meets — Summer, 8–15 октября, и текущие карточки; свежие посты от 8 октября в `r/ForzaHorizon`, `r/ForzaHorizon6` и `r/forza` сверены. Дедлайн остаётся 15.10.2026 21:30 Asia/Krasnoyarsk. Состояние карточек не менял; найденный ранее незакрытый пункт о точном месте Treasure Hunt остаётся открытым.
+- Визуально перепроверены все 13 activity: confirmed=12, community=0, preliminary=0, missing=0, not_applicable=1. Для 12 визуальных карточек подготовленные игровые плитки и исходники присутствуют; SHA-256 подготовленных кадров совпадает с зарегистрированными ранее значениями. Daily остаётся намеренно текстовой. `automation/audit_visual_evidence.ps1` вернул `VISUAL_QUEUE_STATUS=READY`.
+- Проверка источников относится к опубликованному commit и не добавляет новых плиток или решений: Fandom и Collector Tool недоступны; свежих материалов на `r/ForzaTune` нет; Hub/Interactive Map доступны, но новых точных игровых плиток не дают; Escorenews и DungG не открылись. Старые данные и изображения из этих источников не переносились.
+
+| Источник | Результат проверки 16:52 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: живая категория Fandom не открылась; старые факты и изображения не использовались. |
+| `fandom_current` | unavailable: текущая Series/Season Fandom-страница не открылась; сезон подтверждён официальной Playlist. |
+| `forza_playlist` | checked: официальная Playlist открыта; Series 6 Summer, порядок и условия карточек совпадают с текущим state. |
+| `forza_news` | checked: официальная новость Horizon Meets доступна; противоречий текущей Playlist не обнаружено. |
+| `forza_support_release_notes` | unavailable: прямая статья Release Notes вернула Internal Error при открытии; старые сведения не использовались для обновления карточек. |
+| `forza_support_known_issues` | checked: актуальная страница открыта; соответствующего текущим карточкам пункта Playlist не найдено. |
+| `forza_forums_official` | no_current_item: ссылка перенаправила на общий Forza форум; отдельного объявления этой недели не найдено. |
+| `reddit_forzahorizon` | checked: свежий Series 6 Summer breakdown от 8 октября открыт и сверён. |
+| `reddit_forzahorizon6` | checked: свежий FH6 Summer guide от 8 октября открыт; неофициальные решения не повышены до подтверждённых без проверки. |
+| `reddit_forza` | checked: свежий Summer Information Thread от 8 октября открыт; даты и список недели сверены. |
+| `reddit_forzatune` | no_current_item: проверенная свежая лента не содержит материала FH6 текущей недели; старые тюнинги не использовались как новые. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но нового точного материала/плиток для этой недели не обнаружено. |
+| `forza_labs_collector` | unavailable: Collector Tool endpoint вернул Internal Error; отдельной Collectibles активности в Playlist нет. |
+| `forza_labs_map` | checked: карта открыта; новых точных плиток или независимого подтверждения точки сундука нет. |
+| `escorenews_fh6` | unavailable: FH6-страница вернула Internal Error; свежий материал недели не подтверждён. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist вернул Internal Error; свежий выпуск не подтверждён. |
