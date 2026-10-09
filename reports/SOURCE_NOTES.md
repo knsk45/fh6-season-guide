@@ -2495,3 +2495,29 @@
 | `forza_labs_map` | checked: Interactive Map просмотрена; точную недельную плитку/доказательство сундука не даёт, координаты не подменялись догадкой. |
 | `escorenews_fh6` | unavailable: FH6 landing section вернула Internal Error; свежий недельный материал недоступен. |
 | `dungg_playlist` | unavailable: настроенный YouTube playlist не удалось проверить; свежий выпуск недели не подтверждён. |
+
+## 2026-10-09T12:15:00+07:00 — внеплановое обновление скриншотов Series 6 Summer
+
+- Живая [официальная Festival Playlist](https://forza.net/fh6playlists) подтверждает Series 6 «Horizon Meets» — Summer, 8–15 октября 2026; дедлайн **15.10.2026 21:30 Asia/Krasnoyarsk**. Сверены 13 карточек, включая 7 Daily, порядок активности, условия, награды и Monthly Rivals Daikoku Circuit. Официальная [новость Series 6](https://forza.net/news/forza-horizon-6-series-6) и [Release Notes от 5 октября](https://support.forza.net/hc/en-us/articles/55985143856531-FH6-Release-Notes-October-5-2026) проверены. Known Issues открыта; актуального пункта, меняющего эти условия, не обнаружено.
+- Проверены все обязательные источники: свежие публикации в `r/ForzaHorizon`, `r/ForzaHorizon6` и `r/forza` подтверждают текущую неделю; свежего FH6-поста в `r/ForzaTune` не найдено. Forza Horizon Hub и обе ForzaLabs-страницы доступны, но не дают точных плиток этой недели. Fandom (категория и текущая страница), раздел Support Release Notes, Escorenews FH6 и плейлист DungG не дали пригодного свежего материала/не открылись; старые данные оттуда не переносились.
+- Получены три пользовательских полных кадра: `reports/assets/series-06-summer/user-source-1.png` (SHA-256 `896c6e9289b47ab4d588f0da52fe81799d9f9aa7b774f8d47cca0edf76239ace`), `user-source-2.png` (`37e197b25c9b0b3b26d8e53234dea7abb7c88cd6aece983a00b6778797232ce4`) и `user-source-3.png` (`d42758f5a7fa783e19db3c412d5d981156673e69020c5fb7f7ad00a37cf5b994`). Оригиналы сохранены байт-в-байт. Из них без ретуши, затемнения и оверлеев вырезаны отдельные полные игровые плитки для Weekly, Photo, Treasure Hunt, Bee Happy, Ghost Hunter, Vetting the Competition, Soni Time Attack, Highway Jump, Konbini Dash, Trial, Horizon Play и Monthly Rivals; все кадры визуально проверены. Monthly Rivals теперь показывает новый Daikoku Circuit, не прежний Shimanoyama.
+- В состоянии обновлены локальные `visual.image`/`visual.sourceImage` и статусы подтверждения для 12 карточек; Daily намеренно остаётся текстовым. **confirmed=12, community=0, preliminary=0, missing=0, not_applicable=1.** У Treasure Hunt решение о точном местоположении сундука всё ещё предварительное и остаётся в `openItems`; изображение плитки не считается доказательством координат.
+
+| Источник | Результат проверки 12:15 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: живая категория Forza Wiki/Fandom не открылась; старые факты и изображения не использованы. |
+| `fandom_current` | unavailable: текущая Series/Season-страница недоступна; сезон подтверждён официальной Playlist. |
+| `forza_playlist` | checked: живая официальная Playlist подтверждает Series 6 Summer, 13 активностей, порядок, требования, награды и Daikoku Circuit. |
+| `forza_news` | checked: официальная новость Horizon Meets проверена; согласуется с текущей Series 6. |
+| `forza_support_release_notes` | checked: прямая статья Release Notes от 5 октября открыта; изменения плейлиста сверены. |
+| `forza_support_known_issues` | checked: живая FH6 Known Issues открыта; правки текущих условий не обнаружены. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправил на общую страницу форумов; отдельного текущенедельного объявления Playlist не найдено. |
+| `reddit_forzahorizon` | checked: пост Series 6 Summer от 8 октября просмотрен, карточки и недельный список сверены. |
+| `reddit_forzahorizon6` | checked: FH6 Summer guide от 8 октября просмотрен; карточки/рекомендации сверены, неофициальные советы не подменяют условия Playlist. |
+| `reddit_forza` | checked: свежая Summer Information Thread от 8 октября просмотрена; даты и расписание подтверждены. |
+| `reddit_forzatune` | no_current_item: свежей публикации FH6 Series 6 в текущей ленте/поиске не найдено; старые коды не использовались. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но свежего точного недельного материала/плиток для этих карточек нет. |
+| `forza_labs_collector` | checked: Collector Tool открыт; отдельной Collectibles activity в текущей Playlist нет. |
+| `forza_labs_map` | checked: Interactive Map открыта; точные плитки пользовательские, координаты сундука не подтверждены картой. |
+| `escorenews_fh6` | unavailable: FH6 landing page не открылась; свежая статья недели не подтверждена. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist не открылся; выпуск недели не подтверждён. |

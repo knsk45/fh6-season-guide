@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-09T06:07:18+07:00",
+  "lastContentUpdate": "2026-10-09T12:18:28+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,22 +30,20 @@
       "tuneHtml": "1973 BMW Turbo 2002 — код тюнинга 136 527 514",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_01_weekly.png",
+        "sourceImage": "user-source-1.png",
         "orientation": "vertical",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена в проверенных текущенедельных источниках; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -84,22 +82,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_03_photo.png",
+        "sourceImage": "user-source-1.png",
         "orientation": "vertical",
-        "typeIconKey": null,
+        "typeIconKey": "photo-challenge",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure_hunt",
@@ -112,22 +108,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_04_treasure_hunt.png",
+        "sourceImage": "user-source-1.png",
         "orientation": "vertical",
-        "typeIconKey": null,
+        "typeIconKey": "treasure-hunt",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "preliminary",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "solution",
-        "visual"
+        "solution"
       ]
     },
     {
@@ -141,22 +136,20 @@
       "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship_bee_happy.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_06_championship",
@@ -169,22 +162,20 @@
       "tuneHtml": "1984 Opel Manta 400 — A 700 · 483 621 253",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship_ghost_hunter.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
+        "typeIconKey": "championship-cross-country",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_07_championship",
@@ -197,22 +188,20 @@
       "tuneHtml": "1991 Mazda #55 787B — S1 800 · 133 810 469",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_championship_vetting.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
+        "typeIconKey": "championship-street",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_08_time_attack",
@@ -225,22 +214,20 @@
       "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_time_attack.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
         "typeIconKey": "time-attack",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_danger_sign",
@@ -253,22 +240,20 @@
       "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_danger_sign.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_speed_trap",
@@ -281,22 +266,20 @@
       "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_speed_trap.png",
+        "sourceImage": "user-source-2.png",
         "orientation": "horizontal",
         "typeIconKey": "speed-trap",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_trial",
@@ -309,22 +292,20 @@
       "tuneHtml": "2024 Chevrolet Camaro ZL1 — A 800 · 100 986 561",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_11_trial.png",
+        "sourceImage": "user-source-3.png",
         "orientation": "vertical",
-        "typeIconKey": null,
+        "typeIconKey": "trial",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -337,22 +318,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_horizon_play.png",
+        "sourceImage": "user-source-3.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Точная плитка Series 6 не найдена; нужен полный скриншот из игры."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_monthly_rivals",
@@ -365,22 +344,20 @@
       "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "vertical",
+        "image": "activity_13_monthly_rivals.png",
+        "sourceImage": "user-source-3.png",
+        "orientation": "horizontal",
         "typeIconKey": "monthly-rivals",
         "sourceUrl": "",
-        "sourceLabel": "Новая плитка Monthly Rivals Daikoku Circuit не найдена; сохранённое изображение Shimanoyama относится к другой активности. Нужен новый полный скриншот."
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     }
   ],
   "locales": {
@@ -484,95 +461,11 @@
   },
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_04_treasure_hunt",
       "field": "solution",
       "reason": "Точное место сундука есть только на изображении-спойлере из одного свежего гайда; независимого подтверждения нет.",
       "nextCheck": "Проверить второй независимый актуальный источник или пользовательский кадр карты.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_championship",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_time_attack",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_danger_sign",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_speed_trap",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Не найдена точная полная игровая плитка новой недели в проверенных живых источниках.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот плитки Series 6 Summer.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_monthly_rivals",
-      "field": "visual",
-      "reason": "В этом месяце активность изменилась: вместо Shimanoyama Sprint теперь Daikoku Circuit. Старую плитку переносить нельзя.",
-      "nextCheck": "Попросить пользователя прислать несжатый полный скриншот новой плитки Monthly Rivals.",
-      "status": "missing"
     }
   ]
 }
