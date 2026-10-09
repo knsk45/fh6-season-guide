@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-09T16:57:24+07:00",
+  "lastContentUpdate": "2026-10-10T06:00:53+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -104,9 +104,9 @@
       "title": "Ito Region",
       "points": "3 очка",
       "conditionHtml": "Следуйте фото-подсказке в регионе Ito и найдите сундук. Награда: 100 000 CR.",
-      "howHtml": "Точное место сундука пока не публикую: свежий гайд ссылается на изображение-спойлер, но независимого подтверждения координат не найдено.",
+      "howHtml": "По двум свежим гайдам сообщества: отправляйтесь на пляж в нижней центральной части региона Ito, к скалам Meoto Iwa напротив Legend Island. Сундук стоит рядом с деревянной лодкой; разбейте его, чтобы получить награду.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-ito-region-horizon-meets-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд GamesHedge от 8 октября</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-6-week-1-ito-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Независимая проверка Traxion от 8 октября</a>",
       "visual": {
         "image": "activity_04_treasure_hunt.png",
         "sourceImage": "user-source-1.png",
@@ -117,13 +117,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "preliminary",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "confirmed"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -390,7 +388,7 @@
           "title": "Ito Region",
           "points": "3 points",
           "conditionHtml": "Follow the Photo Clue in the Ito Region and find the treasure chest. Reward: 100,000 CR.",
-          "howHtml": "The exact chest location is not included yet: the fresh guide points to a spoiler image, but no independent location confirmation was found.",
+          "howHtml": "Two fresh community guides agree: head to the beach in the lower-middle part of Ito, by the Meoto Iwa rocks facing Legend Island. The chest sits beside a wooden boat; smash it to claim the reward.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
@@ -459,13 +457,5 @@
       }
     }
   },
-  "openItems": [
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "solution",
-      "reason": "Точное место сундука есть только на изображении-спойлере из одного свежего гайда; независимого подтверждения нет.",
-      "nextCheck": "Проверить второй независимый актуальный источник или пользовательский кадр карты.",
-      "status": "preliminary"
-    }
-  ]
+  "openItems": []
 }

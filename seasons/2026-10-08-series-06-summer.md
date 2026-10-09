@@ -1,8 +1,8 @@
 # Forza Horizon 6: Series 6 «Horizon Meets» — Лето
 
-> Статус: предварительно; открытых полей: 1
+> Статус: подтверждено
 > Период: 08.10.2026 21:30 — 15.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 09.10.2026 16:57
+> Обновлено: 10.10.2026 06:00
 > В отчёте: 13 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: Turbocharged · 5 очков
@@ -29,9 +29,9 @@
 ## 04. treasure_hunt — Ito Region · 3 очка
 
 - **Условие:** Следуйте фото-подсказке в регионе Ito и найдите сундук. Награда: 100 000 CR.
-- **Как выполнить:** Точное место сундука пока не публикую: свежий гайд ссылается на изображение-спойлер, но независимого подтверждения координат не найдено.
+- **Как выполнить:** По двум свежим гайдам сообщества: отправляйтесь на пляж в нижней центральной части региона Ito, к скалам Meoto Iwa напротив Legend Island. Сундук стоит рядом с деревянной лодкой; разбейте его, чтобы получить награду.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.gameshedge.com/forza-horizon-6-ito-region-horizon-meets-treasure-hunt-guide/" target="_blank" rel="noopener noreferrer">Гайд GamesHedge от 8 октября</a> · <a href="https://traxion.gg/how-to-complete-the-series-6-week-1-ito-region-treasure-hunt-in-forza-horizon-6/" target="_blank" rel="noopener noreferrer">Независимая проверка Traxion от 8 октября</a>
 
 ## 05. championship — Bee Happy · 5 очков
 

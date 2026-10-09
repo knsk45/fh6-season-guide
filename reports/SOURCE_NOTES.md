@@ -2522,6 +2522,33 @@
 | `escorenews_fh6` | unavailable: FH6 landing page не открылась; свежая статья недели не подтверждена. |
 | `dungg_playlist` | unavailable: настроенный YouTube playlist не открылся; выпуск недели не подтверждён. |
 
+## 2026-10-10T05:59:00+07:00 — ежедневная проверка Series 6 Summer
+
+- Живая официальная [Festival Playlist](https://forza.net/fh6playlists) подтверждает Series 6 «Horizon Meets» — Summer, активные 13 карточек и дедлайн **15.10.2026 21:30 Asia/Krasnoyarsk**. Полный список семи Daily сверен с официальной таблицей и свежей информационной темой недели.
+- Найдено независимое подтверждение решения Treasure Hunt: два свежих гайда от 8 октября (GamesHedge и Traxion) указывают пляж в нижней центральной части Ito, скалы Meoto Iwa у Legend Island и сундук рядом с деревянной лодкой. Решение внесено как `community`, с обеими ссылками в `sourceHtml`; `missingFields` и `openItems` для него закрыты. Игровая плитка при этом подтверждает только само задание, не координаты.
+- Проверены все 13 visuals: **confirmed=12, community=0, preliminary=0, missing=0, not_applicable=1**. Каждая из 12 отдельных плиток и её исходный кадр на месте; изображения просмотрены повторно. Daily остаётся без публичной картинки. Октябрьский Monthly Rivals — Daikoku Circuit — сохранён с исходником и exact tile; он не заменён и повторно не запрашивался. `automation/audit_visual_evidence.ps1` вернул `VISUAL_QUEUE_STATUS=READY`.
+
+| Источник | Результат проверки 05:59 +07:00 |
+|---|---|
+| `fandom_series_category` | unavailable: живая категория Fandom вернула Internal Error; прежние данные/визуалы не использованы. |
+| `fandom_current` | unavailable: текущая Series/Season-страница Fandom недоступна; сезон подтверждён официальной Playlist. |
+| `forza_playlist` | checked: таблица открыта; Horizon Meets Summer и порядок/условия карточек подтверждены. |
+| `forza_news` | checked: официальная новость Horizon Meets доступна; согласуется с действующей Playlist. |
+| `forza_support_release_notes` | unavailable: прямая статья Support Release Notes вернула Internal Error; официальный релиз-анонс на Forza News прочитан, но Support URL не подменялся. |
+| `forza_support_known_issues` | checked: текущая Known Issues страница открыта; влияющей на условия текущей Playlist записи не найдено. |
+| `forza_forums_official` | no_current_item: официальный тег перенаправил на общий форум; отдельного объявления Playlist этой недели нет. |
+| `reddit_forzahorizon` | checked: Series 6 Summer breakdown от 8 октября и текущие комментарии просмотрены; использован только как community-перекрёстная проверка. |
+| `reddit_forzahorizon6` | checked: актуальный FH6 Summer guide от 8 октября открыт; советы не подменяют официальный порядок. |
+| `reddit_forza` | checked: Summer Information Thread от 8 октября открыта; сезон, полный Daily и награды сверены. |
+| `reddit_forzatune` | checked: свежий пост от 6 октября о B-class tune для нового Treasure Car просмотрен; он не относится к Playlist-машинам и код в карточки не переносился. |
+| `forza_horizon_hub` | no_current_item: сайт доступен, но свежего точного материала для активных карточек не найдено. |
+| `forza_labs_collector` | checked: Collector Tool открыт; отдельной Collectibles активности в действующей Playlist нет. |
+| `forza_labs_map` | checked: Interactive Map открыта; точная Treasure Hunt подсказка сверена с двумя независимыми свежими гайдами, старые метки не использованы. |
+| `escorenews_fh6` | unavailable: FH6-раздел вернул Internal Error; недельная статья недоступна. |
+| `dungg_playlist` | unavailable: настроенный YouTube playlist вернул Internal Error; выпуск этой недели не подтверждён. |
+
+Дополнительная свежая перекрёстная проверка Treasure Hunt: [GamesHedge](https://www.gameshedge.com/forza-horizon-6-ito-region-horizon-meets-treasure-hunt-guide/) и [Traxion](https://traxion.gg/how-to-complete-the-series-6-week-1-ito-region-treasure-hunt-in-forza-horizon-6/), обе статьи датированы 8 октября 2026.
+
 ## 2026-10-09T16:52:00+07:00 — повторная проверка публикации карточек Series 6 Summer
 
 - Живая [официальная Festival Playlist](https://forza.net/fh6playlists) повторно подтверждает Horizon Meets — Summer, 8–15 октября, и текущие карточки; свежие посты от 8 октября в `r/ForzaHorizon`, `r/ForzaHorizon6` и `r/forza` сверены. Дедлайн остаётся 15.10.2026 21:30 Asia/Krasnoyarsk. Состояние карточек не менял; найденный ранее незакрытый пункт о точном месте Treasure Hunt остаётся открытым.
