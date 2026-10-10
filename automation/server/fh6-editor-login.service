@@ -1,0 +1,8 @@
+[Unit]
+Description=FH6 owner-only Codex device login
+[Service]
+Type=oneshot
+User=fh6-editor
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/login_bridge.py
+TimeoutStartSec=920
+UMask=0027

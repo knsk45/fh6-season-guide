@@ -15,7 +15,7 @@ $PagesFallbackIps = @(
     "185.199.110.153",
     "185.199.111.153"
 )
-$GitHubCli = "C:\Program Files\GitHub CLI\gh.exe"
+$CurlCli = (Get-Command curl -CommandType Application -ErrorAction Stop).Source
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $Validator = Join-Path $PSScriptRoot "validate_season.ps1"
 $StatePath = Join-Path $RepoRoot "data\current-season.json"
@@ -55,7 +55,7 @@ function Invoke-PagesRequest {
             )
             if ($Method -eq 'HEAD') { $CurlArgs += '-I' }
             $CurlArgs += @('-o', $TempPath, '-w', '%{http_code}', $Uri)
-            $StatusText = (& curl.exe @CurlArgs | Select-Object -Last 1).Trim()
+            $StatusText = (& $CurlCli @CurlArgs | Select-Object -Last 1).Trim()
             if ($LASTEXITCODE -ne 0) {
                 continue
             }
@@ -102,8 +102,8 @@ try {
     if ($LASTEXITCODE -notin @(0, 1)) { throw 'Cannot inspect changed report inputs.' }
     $PortableReceipt = Join-Path $RepoRoot 'automation/runs/current-portable-receipt.json'
     if ($ReportChanged -or (Test-Path -LiteralPath $PortableReceipt)) {
-        $PortablePython = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
-        if (-not (Test-Path -LiteralPath $PortablePython)) { $PortablePython = (Get-Command python -ErrorAction Stop).Source }
+        $PortablePython = (Get-Command python3,python -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1).Source
+        if (-not $PortablePython) { throw 'Python 3 is required to verify the portable receipt.' }
         & $PortablePython -X utf8 (Join-Path $PSScriptRoot 'build_portable_report.py') verify
         Assert-NativeSuccess 'Verify compatible portable package receipt'
     }
@@ -192,16 +192,12 @@ try {
         throw "Publication verification failed: local $LocalSha, remote $RemoteSha."
     }
 
-    if (-not (Test-Path -LiteralPath $GitHubCli)) {
-        throw "GitHub CLI was not found at '$GitHubCli'; Pages verification cannot run."
-    }
-
     $Deadline = (Get-Date).AddMinutes(3)
     $PagesRun = $null
     do {
-        $RunsJson = & $GitHubCli api "repos/$Repository/actions/runs?head_sha=$LocalSha&per_page=20"
-        Assert-NativeSuccess "Read GitHub Actions runs"
-        $PagesRun = (($RunsJson | ConvertFrom-Json).workflow_runs | Where-Object {
+        # This repository is public; no account-wide API token is needed on the server.
+        $Runs = Invoke-RestMethod -Uri "https://api.github.com/repos/$Repository/actions/runs?head_sha=$LocalSha&per_page=20" -Headers @{'User-Agent'='FH6-Publisher'} -TimeoutSec 30
+        $PagesRun = ($Runs.workflow_runs | Where-Object {
             $_.path -eq "dynamic/pages/pages-build-deployment" -and $_.head_sha -eq $LocalSha
         } | Select-Object -First 1)
         if ($PagesRun -and $PagesRun.status -eq "completed" -and $PagesRun.conclusion -eq "success") {

@@ -1,0 +1,7 @@
+[Unit]
+Description=FH6 Thursday 20:30 readiness check
+[Timer]
+OnCalendar=Thu *-*-* 20:30:00 Asia/Krasnoyarsk
+Persistent=false
+[Install]
+WantedBy=timers.target

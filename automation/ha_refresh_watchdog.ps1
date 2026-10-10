@@ -7,7 +7,8 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $local = Get-Content -Raw (Join-Path $RepoRoot 'automation/runs/home-assistant-notification.local.json') | ConvertFrom-Json
-$secret = Get-Content -Raw (Join-Path $RepoRoot $local.homeAssistantSecretPath) | ConvertFrom-Json
+$secretPath = if ([IO.Path]::IsPathRooted([string]$local.homeAssistantSecretPath)) { [string]$local.homeAssistantSecretPath } else { Join-Path $RepoRoot $local.homeAssistantSecretPath }
+$secret = Get-Content -Raw $secretPath | ConvertFrom-Json
 $api = $secret.home_assistant.api_base_url.TrimEnd('/')
 $headers = @{Authorization=('Bearer ' + $secret.home_assistant.long_lived_access_tokens.health_auto_export.raw_token)}
 $receiptId = 'fh6_refresh_receipt'

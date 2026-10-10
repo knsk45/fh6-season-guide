@@ -10,6 +10,8 @@ import shutil
 import subprocess
 import sys
 import time
+import base64
+import shlex
 import build_portable_report as portable
 from datetime import datetime, timedelta, timezone
 
@@ -118,6 +120,31 @@ class Guard:
         if not self.active.exists():
             raise RuntimeError('Run start first.')
         return read(self.active)
+
+    def close_expired(self, run):
+        """Close yesterday's undelivered result honestly, keeping original evidence."""
+        if (run['status'] != 'AWAITING_DELIVERY' or run.get('notification')
+                or not run.get('resultPath') or read(run['resultPath'])['runDate'] >= now()[:10]):
+            raise RuntimeError('Only an expired, never-delivered result can be closed this way.')
+        original = Path(run['resultPath'])
+        if digest(original) != run['resultSha256']:
+            raise RuntimeError('Expired result evidence changed.')
+        archive = original.with_name('undelivered-result.json')
+        if archive.exists():
+            raise RuntimeError('Expired result was already archived; inspect the checkpoint.')
+        shutil.copyfile(original, archive)
+        reason = 'Старая попытка не доставила итог в свой день; закрыта как BLOCKED, не как успешная проверка сегодня.'
+        run['blockers'] = [reason]
+        result = {'schemaVersion': 1, 'runId': run['runId'], 'runDate': now()[:10],
+                  'status': 'BLOCKED', 'notificationType': 'CheckBlocked', 'metrics': None,
+                  'reasons': [reason], 'createdAt': now(),
+                  'message': 'FH6: закрытие недоставленного запуска ' + run['runDate'] + '\n' + reason,
+                  'archivedResultSha256': digest(archive)}
+        atomic(original, result)
+        run['resultSha256'] = digest(original)
+        run['expiredResultArchive'] = str(archive)
+        run['nextAction'] = 'Deliver the honest expired-run failure; start a fresh audit only after HA receipt.'
+        self.save(run)
 
     def audit(self, run, path):
         if run['status'] in TERMINAL:
@@ -236,6 +263,8 @@ class Guard:
     def outcome(self, run):
         required = ['audit', 'preflight', 'rollover_preflight', 'visual_queue', 'timestamp', 'markdown', 'artifact', 'portable', 'html',
                     'structure', 'publish', 'steam_render', 'steam_check', 'metrics']
+        if os.environ.get('FH6_BROWSER_QA'):
+            required.append('browser_qa')
         missing = [x for x in required if run['steps'].get(x, {}).get('status') != 'passed']
         for name, step in run['steps'].items():
             if step.get('log') and (not Path(step['log']).exists() or digest(step['log']) != step['sha256']):
@@ -311,6 +340,10 @@ class Guard:
                         run['blockers'].append('Portable receipt verification failed: ' + str(error))
                         self.save(run); break
             rebuilt = run['steps'].get('structure', {}).get('status') == 'passed'
+            if rebuilt and os.environ.get('FH6_BROWSER_QA'):
+                rebuilt, _ = self.command(run, 'browser_qa', [os.environ['FH6_BROWSER_QA'],
+                    self.root / 'automation/server/browser_qa.py', (self.root / 'reports/current-week.html').as_uri(),
+                    self.base / run['runId'] / 'browser-qa.png'], ['"status": "PASSED"'], timeout=150)
             if rebuilt:
                 state = read(self.state_path)
                 run['builtFiles'] = {str(self.root / file): digest(self.root / file) for file in
@@ -414,11 +447,32 @@ class Guard:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('action', choices=['start', 'status', 'audit', 'execute'])
+    parser.add_argument('action', choices=['start', 'status', 'audit', 'execute', 'close-expired'])
     parser.add_argument('--root', default=str(Path(__file__).resolve().parents[1]))
     parser.add_argument('--input')
     args = parser.parse_args()
     guard = Guard(args.root)
+    owner_path = guard.root / 'automation/runs/server-owner.json'
+    if os.name == 'nt' and owner_path.exists():
+        owner = read(owner_path)
+        if owner.get('enabled'):
+            if args.input and not args.input.startswith('/opt/fh6/'):
+                raise RuntimeError('Server owns publication. Transfer canonical data/evidence/audit first; --input must be a server path under /opt/fh6/.')
+            command = ['pct', 'exec', str(int(owner['containerId'])), '--', 'runuser', '-u', 'fh6', '--',
+                       'python3', '/opt/fh6/repo/automation/server/guard_bridge.py', args.action]
+            if args.input: command += ['--input', args.input]
+            result = subprocess.run(['ssh', '-i', owner['sshKey'], '-o', 'BatchMode=yes',
+                                     '-o', 'StrictHostKeyChecking=yes', '-o', 'ConnectTimeout=10',
+                                     owner['sshTarget'], shlex.join(command)],capture_output=True,encoding='utf-8',errors='replace')
+            for line in result.stdout.splitlines():
+                if line.startswith('FH6_REMOTE_CHECKPOINT='):
+                    checkpoint=json.loads(base64.b64decode(line.split('=',1)[1]))
+                    checkpoint['executionOwner']={'containerId':owner['containerId'],'root':'/opt/fh6/repo'}
+                    atomic(guard.active,checkpoint)
+                else: print(line)
+            if result.stderr: print(result.stderr,file=sys.stderr)
+            if result.returncode: raise RuntimeError('Server guard did not complete; no local fallback publication is allowed.')
+            return
     # Atomic replacement permits observers during an active executor; only mutations lock.
     with (contextlib.nullcontext() if args.action == 'status' else exclusive(guard.base / 'process.lock')):
         run = guard.start() if args.action == 'start' else guard.load()
@@ -426,6 +480,8 @@ def main():
             guard.audit(run, args.input)
         elif args.action == 'execute':
             guard.execute(run)
+        elif args.action == 'close-expired':
+            guard.close_expired(run)
         print(json.dumps({'runId': run['runId'], 'status': run['status'], 'task': run['task'], 'nextAction': run['nextAction'],
                           'steps': {k: v['status'] for k, v in run['steps'].items()}}, ensure_ascii=False, indent=2))
 

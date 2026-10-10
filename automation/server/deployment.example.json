@@ -1,0 +1,8 @@
+{
+  "containerId": 109,
+  "phoneUrl": "https://192.168.1.55:8443/",
+  "publisherRoot": "/opt/fh6/repo",
+  "mode": "hybrid",
+  "editorAuthentication": "owner-device-login",
+  "steamEditing": "owner-confirmed-browser-only"
+}

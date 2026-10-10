@@ -1,0 +1,7 @@
+[Unit]
+Description=FH6 phone request for owner-only login
+[Path]
+PathChanged=/var/lib/fh6/login-request
+Unit=fh6-editor-login.service
+[Install]
+WantedBy=multi-user.target

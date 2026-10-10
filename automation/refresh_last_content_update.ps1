@@ -13,7 +13,8 @@ if (-not $StatePath) {
 }
 $StatePath = [IO.Path]::GetFullPath($StatePath)
 
-$KrasnoyarskTimeZone = [TimeZoneInfo]::FindSystemTimeZoneById('North Asia Standard Time')
+try { $KrasnoyarskTimeZone = [TimeZoneInfo]::FindSystemTimeZoneById('Asia/Krasnoyarsk') }
+catch { $KrasnoyarskTimeZone = [TimeZoneInfo]::FindSystemTimeZoneById('North Asia Standard Time') }
 if ($Timestamp) {
     $parsedTimestamp = [DateTimeOffset]::Parse($Timestamp, [Globalization.CultureInfo]::InvariantCulture)
     $verifiedAt = [TimeZoneInfo]::ConvertTime($parsedTimestamp, $KrasnoyarskTimeZone)

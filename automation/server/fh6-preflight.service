@@ -1,0 +1,8 @@
+[Unit]
+Description=FH6 Thursday preflight only, without publication
+[Service]
+Type=oneshot
+User=fh6
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/pwsh -NoProfile -File /opt/fh6/repo/automation/season_rollover_preflight.ps1
+UMask=0027

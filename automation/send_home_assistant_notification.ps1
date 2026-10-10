@@ -35,7 +35,8 @@ if (-not (Test-Path -LiteralPath $LocalConfigPath)) {
     exit 2
 }
 $LocalConfig = Get-Content -LiteralPath $LocalConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
-$SecretPath = [IO.Path]::GetFullPath((Join-Path $RepoRoot ([string]$LocalConfig.homeAssistantSecretPath)))
+$ConfiguredSecretPath = [string]$LocalConfig.homeAssistantSecretPath
+$SecretPath = [IO.Path]::GetFullPath($(if ([IO.Path]::IsPathRooted($ConfiguredSecretPath)) { $ConfiguredSecretPath } else { Join-Path $RepoRoot $ConfiguredSecretPath }))
 if (-not (Test-Path -LiteralPath $SecretPath)) {
     Write-Host 'HA_NOTIFICATION_STATUS=BLOCKED'
     Write-Host 'HA_NOTIFICATION_ERROR=Home Assistant secret file not found'

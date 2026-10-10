@@ -45,6 +45,26 @@ class GuardTests(unittest.TestCase):
         self.run['status']='BLOCKED';self.guard.save(self.run)
         self.assertNotEqual(self.run['runId'],self.guard.start()['runId'])
 
+    def test_close_expired_preserves_original_and_never_claims_success(self):
+        result = {'runDate': (datetime.now(g.ZONE)-timedelta(days=1)).date().isoformat(), 'status':'COMPLETED'}
+        path = self.root/'automation/runs/refresh'/self.run['runId']/'result.json'
+        g.atomic(path,result)
+        self.run.update(status='AWAITING_DELIVERY',resultPath=str(path),resultSha256=g.digest(path))
+        original_sha = g.digest(path)
+        self.guard.close_expired(self.run)
+        self.assertEqual(g.digest(path.with_name('undelivered-result.json')),original_sha)
+        self.assertEqual(g.read(path)['status'],'BLOCKED')
+        self.assertEqual(self.guard.start()['runId'],self.run['runId'])
+
+    def test_close_expired_rejects_today_and_already_sent(self):
+        path = self.root/'automation/runs/refresh'/self.run['runId']/'result.json'
+        g.atomic(path,{'runDate':g.now()[:10]})
+        self.run.update(status='AWAITING_DELIVERY',resultPath=str(path),resultSha256=g.digest(path))
+        with self.assertRaises(RuntimeError): self.guard.close_expired(self.run)
+        g.atomic(path,{'runDate':'2020-01-01'})
+        self.run.update(notification='SENT',resultSha256=g.digest(path))
+        with self.assertRaises(RuntimeError): self.guard.close_expired(self.run)
+
     def test_missing_source_rejected(self):
         self.audit['sources'].pop()
         with self.assertRaises(RuntimeError):self.accept()
@@ -112,6 +132,13 @@ class GuardTests(unittest.TestCase):
     def test_all_gates_can_complete(self):
         self.complete_fixture()
         self.assertEqual(self.guard.outcome(self.run),('COMPLETED',[]))
+
+    def test_server_browser_qa_is_a_required_gate(self):
+        self.complete_fixture()
+        with patch.dict(g.os.environ,{'FH6_BROWSER_QA':'isolated-test-runtime'}):
+            self.assertEqual(self.guard.outcome(self.run)[0],'BLOCKED')
+            self.run['steps']['browser_qa']={'status':'passed'}
+            self.assertEqual(self.guard.outcome(self.run),('COMPLETED',[]))
 
     def test_steam_change_is_pending_not_completed(self):
         self.complete_fixture()

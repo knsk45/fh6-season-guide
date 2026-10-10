@@ -1,0 +1,16 @@
+[Unit]
+Description=FH6 private phone inbox (localhost, nginx authentication)
+After=network.target
+[Service]
+User=fh6
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/phone_ui.py
+Restart=on-failure
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/fh6
+UMask=0027
+[Install]
+WantedBy=multi-user.target

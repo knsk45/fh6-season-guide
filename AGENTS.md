@@ -1,5 +1,7 @@
 # FH6 project instructions
 
+- After the CT109 migration, `automation/runs/server-owner.json` delegates local guard commands to the single publisher in `/opt/fh6/repo` on Proxmox. Never bypass it to execute a second local pipeline. Read the remote canonical state/SOURCE_NOTES before editorial changes; transfer verified state, original assets and audit to the server before `audit --input`. The PC checkout is a development/editorial mirror, not an independent scheduler. Phone uploads/Steam approvals live in `/var/lib/fh6`; a saved approval is not proof of Steam publication. See `docs/SERVER_DEPLOYMENT.md`.
+
 - For each scheduled/manual refresh, use `automation/refresh_guard.py start` first and read `docs/RUN_RECOVERY.md`. After context compaction or interruption, run `status` and resume the recorded unfinished task; old conversation messages are not new requests. Respect genuine new user instructions.
 - Record the full live audit with guard `audit`, then use guard `execute` for checked stages, final metrics, one HA notification and an authenticated HA receipt. Return its `result.json`/`summary.txt` in chat. Never declare success from chat completion alone. Guard RunId identifies the attempt independently of lastContentUpdate and overrides the older timestamp-as-RunId convention below.
 

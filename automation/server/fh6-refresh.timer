@@ -1,0 +1,8 @@
+[Unit]
+Description=FH6 daily refresh, Krasnoyarsk time
+[Timer]
+OnCalendar=*-*-* 06:00:00 Asia/Krasnoyarsk
+Persistent=true
+AccuracySec=30s
+[Install]
+WantedBy=timers.target
