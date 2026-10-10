@@ -91,13 +91,13 @@ def editor():
     audit=work/'automation/editor-audit.json'
     return work if result.returncode==0 and audit.is_file() else None
 
-def run():
+def run(force=False):
     STORE.mkdir(parents=True,exist_ok=True)
     with exclusive(STORE/'runner.lock'):
         checkpoint=ROOT/'automation/runs/refresh/active.json'
         if checkpoint.exists():
             previous=read(checkpoint)
-            if (previous['status'] in {'COMPLETED','BLOCKED','PENDING_CONFIRMATION'}
+            if (not force and previous['status'] in {'COMPLETED','BLOCKED','PENDING_CONFIRMATION'}
                     and previous.get('runDate')==now()[:10]
                     and previous.get('finishedAt','')[11:16]>='06:00'):
                 return
@@ -156,10 +156,11 @@ def run():
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('action',choices=['run','collect','publish-audit'])
+    parser.add_argument('--force',action='store_true',help='Owner-requested unscheduled audit, still resumes unfinished runs')
     parser.add_argument('--audit')
     args=parser.parse_args()
     if args.action=='collect': collect()
     elif args.action=='publish-audit':
         with exclusive(STORE/'runner.lock'):
             guard('start');guard('audit','--input',args.audit);guard('execute')
-    else: run()
+    else: run(args.force)

@@ -51,6 +51,7 @@ class UI(BaseHTTPRequestHandler):
         <style>body{font:16px system-ui;max-width:950px;margin:auto;padding:20px;background:#151825;color:#eee}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#232940;padding:16px}button,input{font:inherit;padding:12px}a{color:#8ce6ff}</style>
         <h1>FH6 — серверный сборщик</h1><p>Доступ только через домашнюю сеть/VPN. Пароль не вводите в чате.</p>'''
         body+=f'<pre>{html.escape(json.dumps(safe_status,ensure_ascii=False,indent=2))}</pre>'
+        body+='<form method="post" action="/refresh"><button>Запустить внеплановую проверку на сервере</button></form>'
         body+='<h2>Облачный редактор</h2><form method="post" action="/login"><button>Войти в Codex на сервере</button></form><p>После нажатия обновите страницу через 5 секунд. Код вводит только владелец; не отправляйте его в чат.</p>'
         login=STORE/'login/device.txt'
         if login.is_file():
@@ -95,6 +96,12 @@ class UI(BaseHTTPRequestHandler):
                     return self.respond(409,'Вход уже запущен; обновите страницу.')
                 request.write_text(str(time.time()),encoding='ascii')
                 return self.respond(200,'Запрос входа передан. <a href="/">Обновить страницу через 5 секунд</a>')
+            if path=='/refresh':
+                request=STORE/'refresh-request'
+                if request.exists() and time.time()-request.stat().st_mtime<60:
+                    return self.respond(409,'Запрос уже отправлен; дождитесь результата.')
+                request.write_text(str(time.time()),encoding='ascii')
+                return self.respond(200,'Внеплановая проверка поставлена в очередь. <a href="/">Посмотреть статус</a>')
             self.respond(404,'Not found')
         except ValueError as exc:self.respond(400,html.escape(str(exc)))
 

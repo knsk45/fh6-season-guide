@@ -1,0 +1,7 @@
+[Unit]
+Description=FH6 phone-triggered manual refresh
+[Path]
+PathChanged=/var/lib/fh6/refresh-request
+Unit=fh6-manual.service
+[Install]
+WantedBy=multi-user.target

@@ -6,6 +6,6 @@ install -m 0644 /opt/fh6/repo/automation/server/*.service /opt/fh6/repo/automati
 systemd-analyze verify /etc/systemd/system/fh6-refresh.service /etc/systemd/system/fh6-refresh.timer /etc/systemd/system/fh6-preflight.service /etc/systemd/system/fh6-preflight.timer /etc/systemd/system/fh6-phone.service
 systemctl daemon-reload
 systemctl restart fh6-phone.service
-systemctl enable --now fh6-refresh.timer fh6-preflight.timer
+systemctl enable --now fh6-refresh.timer fh6-preflight.timer fh6-delivery.timer fh6-manual.path
 systemctl list-timers --all fh6-refresh.timer fh6-preflight.timer --no-pager
 echo FH6_CUTOVER_READY

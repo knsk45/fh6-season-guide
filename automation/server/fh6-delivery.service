@@ -1,0 +1,9 @@
+[Unit]
+Description=FH6 resume final delivery only
+[Service]
+Type=oneshot
+User=fh6
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/resume_delivery.py
+TimeoutStartSec=120
+UMask=0027
