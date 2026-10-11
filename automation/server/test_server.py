@@ -119,7 +119,7 @@ class SetupHttpTests(unittest.TestCase):
         self.assertEqual(status,200);self.assertIn(b'knsk45',body)
         self.assertNotIn(b'minlength',body);self.assertNotIn(b'maxlength',body)
         self.assertEqual(headers['Cache-Control'],'no-store')
-        self.assertEqual(headers['Referrer-Policy'],'no-referrer')
+        self.assertEqual(headers['Referrer-Policy'],'strict-origin')
         self.assertEqual(headers['X-Frame-Options'],'DENY')
     def test_cross_origin_is_rejected(self):
         fields=dict(key=self.token,password='test-only-pass-123',confirmation='test-only-pass-123')
