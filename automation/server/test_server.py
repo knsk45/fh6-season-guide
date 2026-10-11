@@ -72,9 +72,14 @@ class PasswordTests(unittest.TestCase):
         self.assertFalse(password.valid_invitation(state,self.token))
     def test_password_validation(self):
         with patch.object(ui.subprocess,'run') as run:
-            for value,confirm in [('short','short'),('a'*12,'b'*12),('a'*12+'\n','a'*12+'\n'),('a'*129,'a'*129)]:
+            for value,confirm in [('', ''),('a','b'),('a\n','a\n'),('a\0','a\0')]:
                 with self.assertRaises(ValueError):ui.password_hash(value,confirm)
             run.assert_not_called()
+    def test_no_password_length_or_complexity_policy(self):
+        with patch.object(ui.subprocess,'run') as run:
+            run.return_value.stdout=self.hashed+'\n'
+            for value in ['a','123','a'*129,'тест']:
+                self.assertEqual(ui.password_hash(value,value),self.hashed)
     def test_password_hash_uses_stdin_not_arguments(self):
         with patch.object(ui.subprocess,'run') as run:
             run.return_value.stdout=self.hashed+'\n'
@@ -112,6 +117,7 @@ class SetupHttpTests(unittest.TestCase):
     def test_valid_form_and_security_headers(self):
         status,body,headers=self.get('/setup?key='+self.token)
         self.assertEqual(status,200);self.assertIn(b'knsk45',body)
+        self.assertNotIn(b'minlength',body);self.assertNotIn(b'maxlength',body)
         self.assertEqual(headers['Cache-Control'],'no-store')
         self.assertEqual(headers['Referrer-Policy'],'no-referrer')
         self.assertEqual(headers['X-Frame-Options'],'DENY')
@@ -139,7 +145,7 @@ class RootStorageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder,patch.object(password,'ETC',Path(folder)):
             state=dict(status='pending',expiresAt=time.time()+60,tokenSha256=ui.fingerprint(token))
             password.atomic(Path(folder)/'phone-first-login.json',json.dumps(state),'fh6',0o640)
-            hashed=ui.password_hash('test-only-pass-123','test-only-pass-123')
+            hashed=ui.password_hash('a','a')
             self.assertTrue(password.apply(dict(token=token,hash=hashed))['ok'])
             actual=Path(folder)/'phone.htpasswd'
             self.assertEqual(actual.read_text(),'knsk45:'+hashed+'\n')

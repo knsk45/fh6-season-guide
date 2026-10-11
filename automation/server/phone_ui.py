@@ -27,8 +27,9 @@ def invitation_valid(token):
 
 def password_hash(password,confirmation):
     if password!=confirmation:raise ValueError('Пароли не совпадают.')
-    if not 12<=len(password)<=128 or any(c in password for c in '\r\n\0'):
-        raise ValueError('Пароль должен содержать от 12 до 128 символов без перевода строки.')
+    if not password:raise ValueError('Введите пароль.')
+    if any(c in password for c in '\r\n\0'):
+        raise ValueError('Пароль не может содержать перевод строки или нулевой символ.')
     result=subprocess.run(['openssl','passwd','-6','-stdin'],input=password+'\n',
                           text=True,capture_output=True,check=True,timeout=5)
     hashed=result.stdout.strip()
@@ -74,8 +75,8 @@ class UI(BaseHTTPRequestHandler):
             <style>body{font:17px system-ui;max-width:440px;margin:32px auto;padding:20px;background:#151825;color:#eee}label,input,button{display:block;box-sizing:border-box;width:100%;font:inherit}input,button{padding:12px;margin:8px 0 20px}button{background:#8ce6ff;border:0;border-radius:8px}</style>
             <h1>Установите свой пароль</h1><p>Логин: <strong>knsk45</strong>. Пароль только для панели FH6, не для ChatGPT.</p>
             <form method="post" action="/setup"><input type="hidden" name="key" value="'''+html.escape(token)+'''">
-            <label>Новый пароль (не менее 12 символов)<input type="password" name="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
-            <label>Повторите пароль<input type="password" name="confirmation" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+            <label>Новый пароль<input type="password" name="password" autocomplete="new-password" required></label>
+            <label>Повторите пароль<input type="password" name="confirmation" autocomplete="new-password" required></label>
             <button>Установить пароль и перейти к входу</button></form><p>Одноразовая ссылка перестанет работать после сохранения.</p></html>''')
         if urlsplit(self.path).path!='/': return self.respond(404,'Not found')
         active=load(ROOT/'automation/runs/refresh/active.json')
@@ -160,7 +161,7 @@ class UI(BaseHTTPRequestHandler):
                 return self.respond(200,'Внеплановая проверка поставлена в очередь. <a href="/">Посмотреть статус</a>')
             self.respond(404,'Not found')
         except ValueError as exc:
-            if path=='/setup' and not str(exc).startswith(('Пароли','Пароль должен','Не удалось подготовить')):
+            if path=='/setup' and not str(exc).startswith(('Пароли','Пароль не может','Введите пароль.','Не удалось подготовить')):
                 return self.respond(400,'Некорректная форма.')
             self.respond(400,html.escape(str(exc)))
         except (OSError,subprocess.SubprocessError):self.respond(503,'Сервис временно недоступен. Попробуйте снова.')
