@@ -105,10 +105,10 @@ class SetupHttpTests(unittest.TestCase):
         try:
             with urllib.request.urlopen(self.base+path) as response:return response.status,response.read(),response.headers
         except urllib.error.HTTPError as error:return error.code,error.read(),error.headers
-    def post(self,fields,origin=None):
+    def post(self,fields,origin=None,path='/setup'):
         headers={'Content-Type':'application/x-www-form-urlencoded',
                  'Origin':origin or 'https://127.0.0.1:'+str(self.server.server_port)}
-        request=urllib.request.Request(self.base+'/setup',data=urlencode(fields).encode(),headers=headers,method='POST')
+        request=urllib.request.Request(self.base+path,data=urlencode(fields).encode(),headers=headers,method='POST')
         try:
             with urllib.request.urlopen(request) as response:return response.status,response.read()
         except urllib.error.HTTPError as error:return error.code,error.read()
@@ -136,6 +136,20 @@ class SetupHttpTests(unittest.TestCase):
             self.assertEqual(self.post(dict(key=self.token,password='test-only-pass-123',confirmation='different'))[0],400)
             self.assertEqual(self.post(dict(key=self.token,password='x'*5000,confirmation='x'*5000))[0],413)
             broker.assert_not_called()
+    def test_empty_control_forms_and_duplicate_requests(self):
+        with patch.object(ui,'STORE',Path(self.folder.name)):
+            for path,name in [('/login','login-request'),('/refresh','refresh-request')]:
+                self.assertEqual(self.post({},path=path)[0],200)
+                self.assertTrue((Path(self.folder.name)/name).is_file())
+                self.assertEqual(self.post({},path=path)[0],409)
+    def test_control_form_origin_and_size_guards(self):
+        with patch.object(ui,'STORE',Path(self.folder.name)):
+            for path,name in [('/login','login-request'),('/refresh','refresh-request')]:
+                self.assertEqual(self.post({},'https://untrusted.invalid',path)[0],403)
+                self.assertEqual(self.post({'ignored':'x'*5000},path=path)[0],413)
+                self.assertFalse((Path(self.folder.name)/name).exists())
+            self.assertEqual(self.post({},path='/upload')[0],413)
+            self.assertEqual(self.post({},path='/unknown')[0],404)
 
 @unittest.skipUnless(os.name=='posix' and getattr(os,'geteuid',lambda:1)()==0,
                      'Root Linux storage test')

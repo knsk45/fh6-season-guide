@@ -38,9 +38,13 @@ async def main():
         first=root/'phone-first-login.json'
         first.write_text(json.dumps(dict(status='pending',expiresAt=time.time()+60,
                                          tokenSha256=ui.fingerprint(token))))
+        reports=root/'reports';reports.mkdir()
+        for name in ['steam-guide-current.txt','steam-guide-current-en.txt']:
+            (reports/name).write_text('Browser fixture',encoding='utf-8')
         def fixture_atomic(file,content,group,mode):
             file.write_text(content)
         with patch.object(ui,'FIRST_LOGIN',first),patch.object(password,'ETC',root),\
+             patch.object(ui,'STORE',root),patch.object(ui,'ROOT',root),\
              patch.object(password,'atomic',side_effect=fixture_atomic),\
              patch.object(ui,'set_password',side_effect=lambda key,hashed:password.apply(dict(token=key,hash=hashed))):
             server=ui.ThreadingHTTPServer(('127.0.0.1',0),Fixture)
@@ -64,10 +68,20 @@ async def main():
                     assert (root/'phone.htpasswd').read_text().startswith('knsk45:$6$')
                     replay=await page.goto(base+'/setup?key='+token)
                     assert replay.status==404
+                    # Real button-only forms must not be rejected as empty uploads.
+                    for path,name in [('/login','login-request'),('/refresh','refresh-request')]:
+                        await page.goto(base+'/')
+                        async with page.expect_navigation() as navigation:
+                            await page.locator('form[action="'+path+'"] button').click()
+                        response=await navigation.value
+                        assert response.status==200
+                        assert (root/name).is_file()
+                    assert origins==[base,base,base]
                     await browser.close()
             finally:
                 server.shutdown();server.server_close();thread.join()
     print('PHONE_BROWSER_FORM=PASSED SHORT_PASSWORD=PASSED INVITATION_REPLAY=REJECTED')
+    print('PHONE_BROWSER_LOGIN=PASSED PHONE_BROWSER_REFRESH=PASSED')
 
 
 if __name__=='__main__':asyncio.run(main())

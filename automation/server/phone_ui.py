@@ -115,10 +115,18 @@ class UI(BaseHTTPRequestHandler):
             return self.respond(403,'Same-origin request required')
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
-        if urlsplit(self.path).path=='/setup' and not 0<size<=4096:
-            return self.respond(413,'Форма слишком велика.')
-        if not 0<size<=MAX_UPLOAD:return self.respond(413,'Upload must be at most 20 MiB')
         path=urlsplit(self.path).path
+        if path not in {'/setup','/upload','/approve','/login','/refresh'}:
+            return self.respond(404,'Not found')
+        if size<0:return self.respond(400,'Invalid content length')
+        if path=='/setup' and not 0<size<=4096:
+            return self.respond(413,'Форма слишком велика.')
+        if path=='/upload' and not 0<size<=MAX_UPLOAD:
+            return self.respond(413,'Upload must be at most 20 MiB')
+        # Native button-only forms (/login and /refresh) have a zero-byte body.
+        # Keep upload validation separate from small control requests.
+        if path!='/upload' and size>4096:
+            return self.respond(413,'Форма слишком велика.')
         data=self.rfile.read(size)
         try:
             if path=='/setup':
