@@ -5,6 +5,10 @@ import hashlib
 import html
 import json
 import os
+import hmac
+import re
+import socket
+import subprocess
 import time
 import uuid
 from urllib.parse import parse_qs, urlsplit
@@ -12,6 +16,32 @@ from urllib.parse import parse_qs, urlsplit
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
 MAX_UPLOAD=20*1024*1024
+FIRST_LOGIN=Path('/etc/fh6/phone-first-login.json')
+PASSWORD_SOCKET='/run/fh6-phone/password.sock'
+
+def invitation_valid(token):
+    state=load(FIRST_LOGIN)
+    return (isinstance(token,str) and re.fullmatch(r'[A-Za-z0-9_-]{43}',token)
+            and state.get('status')=='pending' and state.get('expiresAt',0)>time.time()
+            and hmac.compare_digest(state.get('tokenSha256',''),fingerprint(token)))
+
+def password_hash(password,confirmation):
+    if password!=confirmation:raise ValueError('Пароли не совпадают.')
+    if not 12<=len(password)<=128 or any(c in password for c in '\r\n\0'):
+        raise ValueError('Пароль должен содержать от 12 до 128 символов без перевода строки.')
+    result=subprocess.run(['openssl','passwd','-6','-stdin'],input=password+'\n',
+                          text=True,capture_output=True,check=True,timeout=5)
+    hashed=result.stdout.strip()
+    if not re.fullmatch(r'\$6\$[./A-Za-z0-9]{1,16}\$[./A-Za-z0-9]{86}',hashed):
+        raise ValueError('Не удалось подготовить пароль.')
+    return hashed
+
+def set_password(token,hashed):
+    with socket.socket(socket.AF_UNIX,socket.SOCK_STREAM) as connection:
+        connection.settimeout(5);connection.connect(PASSWORD_SOCKET)
+        connection.sendall(json.dumps(dict(token=token,hash=hashed)).encode())
+        connection.shutdown(socket.SHUT_WR)
+        return json.loads(connection.recv(1024))
 
 def load(file):
     try: return json.loads(file.read_text(encoding='utf-8-sig'))
@@ -32,8 +62,21 @@ class UI(BaseHTTPRequestHandler):
         self.send_response(code);self.send_header('Content-Type',kind)
         self.send_header('Cache-Control','no-store')
         self.send_header('X-Content-Type-Options','nosniff')
+        self.send_header('Referrer-Policy','no-referrer')
+        self.send_header('X-Frame-Options','DENY')
+        self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
         self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
     def do_GET(self):
+        if urlsplit(self.path).path=='/setup':
+            token=parse_qs(urlsplit(self.path).query).get('key',[''])[0]
+            if not invitation_valid(token):return self.respond(404,'Ссылка недействительна, истекла или уже использована.')
+            return self.respond(200,'''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FH6 — свой пароль</title>
+            <style>body{font:17px system-ui;max-width:440px;margin:32px auto;padding:20px;background:#151825;color:#eee}label,input,button{display:block;box-sizing:border-box;width:100%;font:inherit}input,button{padding:12px;margin:8px 0 20px}button{background:#8ce6ff;border:0;border-radius:8px}</style>
+            <h1>Установите свой пароль</h1><p>Логин: <strong>knsk45</strong>. Пароль только для панели FH6, не для ChatGPT.</p>
+            <form method="post" action="/setup"><input type="hidden" name="key" value="'''+html.escape(token)+'''">
+            <label>Новый пароль (не менее 12 символов)<input type="password" name="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+            <label>Повторите пароль<input type="password" name="confirmation" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+            <button>Установить пароль и перейти к входу</button></form><p>Одноразовая ссылка перестанет работать после сохранения.</p></html>''')
         if urlsplit(self.path).path!='/': return self.respond(404,'Not found')
         active=load(ROOT/'automation/runs/refresh/active.json')
         state=load(ROOT/'data/current-season.json')
@@ -67,11 +110,24 @@ class UI(BaseHTTPRequestHandler):
         origin=self.headers.get('Origin')
         if origin != 'https://'+self.headers.get('Host',''):
             return self.respond(403,'Same-origin request required')
-        size=int(self.headers.get('Content-Length','0'))
+        try:size=int(self.headers.get('Content-Length','0'))
+        except ValueError:return self.respond(400,'Invalid content length')
+        if urlsplit(self.path).path=='/setup' and not 0<size<=4096:
+            return self.respond(413,'Форма слишком велика.')
         if not 0<size<=MAX_UPLOAD:return self.respond(413,'Upload must be at most 20 MiB')
         path=urlsplit(self.path).path
         data=self.rfile.read(size)
         try:
+            if path=='/setup':
+                fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
+                if any(len(fields.get(key,[]))!=1 for key in ['key','password','confirmation']):
+                    return self.respond(400,'Заполните пароль и подтверждение.')
+                token=fields['key'][0]
+                if not invitation_valid(token):return self.respond(404,'Ссылка недействительна, истекла или уже использована.')
+                hashed=password_hash(fields['password'][0],fields['confirmation'][0])
+                result=set_password(token,hashed)
+                if not result.get('ok'):return self.respond(409,'Не удалось сохранить пароль; ссылка могла истечь или уже использована.')
+                return self.respond(200,'Пароль установлен. <a href="/">Открыть панель</a> и войти с логином <strong>knsk45</strong> и вашим паролем.')
             if path=='/upload':
                 if self.headers.get('X-FH6-Request')!='upload':return self.respond(403,'Invalid upload request')
                 extension=mime(data)
@@ -103,7 +159,11 @@ class UI(BaseHTTPRequestHandler):
                 request.write_text(str(time.time()),encoding='ascii')
                 return self.respond(200,'Внеплановая проверка поставлена в очередь. <a href="/">Посмотреть статус</a>')
             self.respond(404,'Not found')
-        except ValueError as exc:self.respond(400,html.escape(str(exc)))
+        except ValueError as exc:
+            if path=='/setup' and not str(exc).startswith(('Пароли','Пароль должен','Не удалось подготовить')):
+                return self.respond(400,'Некорректная форма.')
+            self.respond(400,html.escape(str(exc)))
+        except (OSError,subprocess.SubprocessError):self.respond(503,'Сервис временно недоступен. Попробуйте снова.')
 
 if __name__=='__main__':
     ThreadingHTTPServer(('127.0.0.1',8765),UI).serve_forever()
