@@ -4,7 +4,7 @@ set -euo pipefail
 test "$(hostname)" = fh6-collector
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get install -y ca-certificates curl wget gnupg python3 python3-venv python3-pil nodejs npm git gh chromium fonts-dejavu fonts-noto-color-emoji openssl rsync sudo
+apt-get install -y ca-certificates curl wget gnupg python3 python3-venv python3-pil nodejs npm git gh chromium fonts-dejavu fonts-noto-color-emoji openssl rsync sudo acl
 curl --fail --silent --show-error https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb -o /tmp/fh6-microsoft.deb
 dpkg -i /tmp/fh6-microsoft.deb
 apt-get update

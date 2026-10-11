@@ -7,6 +7,7 @@ import hashlib
 import json
 import time
 import os
+import subprocess
 import threading
 import urllib.request
 import urllib.error
@@ -152,6 +153,10 @@ class RootStorageTests(unittest.TestCase):
             self.assertEqual(actual.stat().st_uid,0)
             self.assertEqual(actual.stat().st_gid,grp.getgrnam('www-data').gr_gid)
             self.assertEqual(actual.stat().st_mode & 0o777,0o640)
+            self.assertNotEqual(subprocess.run(['runuser','-u','www-data','--','test','-r',str(actual)]).returncode,0)
+            subprocess.run(['setfacl','-m','u:www-data:--x',folder],check=True)
+            self.assertEqual(subprocess.run(['runuser','-u','www-data','--','test','-r',str(actual)]).returncode,0)
+            self.assertNotEqual(subprocess.run(['runuser','-u','www-data','--','test','-r',str(Path(folder)/'phone-first-login.json')]).returncode,0)
             self.assertFalse(password.apply(dict(token=token,hash=hashed))['ok'])
             self.assertFalse(any('test-only-pass-123' in file.read_text() for file in Path(folder).iterdir()))
 
