@@ -19,6 +19,34 @@ def module(name):
 
 ui=module('phone_ui')
 password=module('phone_password')
+bridge=module('login_bridge')
+
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self,*args):return None
+
+class LoginBridgeTests(unittest.TestCase):
+    def test_success_is_verified_and_code_removed(self):
+        with tempfile.TemporaryDirectory() as folder,patch.object(bridge,'LOGIN',Path(folder)),\
+             patch.object(bridge,'authenticated',side_effect=[False,True]),\
+             patch.object(bridge.subprocess,'run',return_value=subprocess.CompletedProcess([],0)):
+            self.assertEqual(bridge.run_login(),0)
+            state=json.loads((Path(folder)/'status.json').read_text())
+            self.assertEqual(state['status'],'CONNECTED')
+            self.assertEqual(set(state),{'status','startedAt','updatedAt'})
+            self.assertFalse((Path(folder)/'device.txt').exists())
+    def test_failure_timeout_and_unverified_exit_are_not_connected(self):
+        for outcome in [subprocess.CompletedProcess([],1),subprocess.CompletedProcess([],0),
+                        subprocess.TimeoutExpired('fixture',900),OSError('private fixture detail')]:
+            with tempfile.TemporaryDirectory() as folder,patch.object(bridge,'LOGIN',Path(folder)),\
+                 patch.object(bridge,'authenticated',return_value=False),\
+                 patch.object(bridge.subprocess,'run') as run:
+                if isinstance(outcome,Exception):run.side_effect=outcome
+                else:run.return_value=outcome
+                self.assertEqual(bridge.run_login(),1)
+                state=(Path(folder)/'status.json').read_text()
+                self.assertIn(json.loads(state)['status'],{'FAILED','EXPIRED'})
+                self.assertNotIn('private fixture detail',state)
+                self.assertFalse((Path(folder)/'device.txt').exists())
 
 class Tests(unittest.TestCase):
     def test_only_image_upload_types(self):
@@ -110,7 +138,7 @@ class SetupHttpTests(unittest.TestCase):
                  'Origin':origin or 'https://127.0.0.1:'+str(self.server.server_port)}
         request=urllib.request.Request(self.base+path,data=urlencode(fields).encode(),headers=headers,method='POST')
         try:
-            with urllib.request.urlopen(request) as response:return response.status,response.read()
+            with urllib.request.build_opener(NoRedirect).open(request) as response:return response.status,response.read()
         except urllib.error.HTTPError as error:return error.code,error.read()
     def test_form_is_not_public(self):
         self.assertEqual(self.get('/setup')[0],404)
@@ -139,9 +167,27 @@ class SetupHttpTests(unittest.TestCase):
     def test_empty_control_forms_and_duplicate_requests(self):
         with patch.object(ui,'STORE',Path(self.folder.name)):
             for path,name in [('/login','login-request'),('/refresh','refresh-request')]:
-                self.assertEqual(self.post({},path=path)[0],200)
+                self.assertEqual(self.post({},path=path)[0],303 if path=='/login' else 200)
                 self.assertTrue((Path(self.folder.name)/name).is_file())
-                self.assertEqual(self.post({},path=path)[0],409)
+                self.assertEqual(self.post({},path=path)[0],303 if path=='/login' else 409)
+    def test_login_status_is_secret_free_and_failure_can_retry(self):
+        root=Path(self.folder.name);login=root/'login';login.mkdir()
+        with patch.object(ui,'STORE',root):
+            (login/'status.json').write_text(json.dumps(dict(status='WAITING_FOR_OWNER',startedAt=time.time(),updatedAt=time.time())))
+            (login/'device.txt').write_text('public synthetic fixture only')
+            code,body,headers=self.get('/login-status')
+            self.assertEqual(code,200)
+            self.assertEqual(json.loads(body),dict(status='WAITING_FOR_OWNER',codeReady=True))
+            self.assertNotIn(b'synthetic',body)
+            (login/'status.json').write_text(json.dumps(dict(status='FAILED',startedAt=time.time(),updatedAt=time.time())))
+            self.assertEqual(self.post({},path='/login')[0],303)
+            self.assertEqual(ui.login_status()['status'],'QUEUED')
+    def test_expired_login_never_renders_stale_code(self):
+        root=Path(self.folder.name);login=root/'login';login.mkdir()
+        with patch.object(ui,'STORE',root):
+            (login/'status.json').write_text(json.dumps(dict(status='WAITING_FOR_OWNER',startedAt=time.time()-1000,updatedAt=time.time()-1000)))
+            (login/'device.txt').write_text('public synthetic fixture only')
+            self.assertEqual(ui.login_status(),dict(status='EXPIRED',codeReady=False))
     def test_control_form_origin_and_size_guards(self):
         with patch.object(ui,'STORE',Path(self.folder.name)):
             for path,name in [('/login','login-request'),('/refresh','refresh-request')]:
@@ -154,6 +200,18 @@ class SetupHttpTests(unittest.TestCase):
 @unittest.skipUnless(os.name=='posix' and getattr(os,'geteuid',lambda:1)()==0,
                      'Root Linux storage test')
 class RootStorageTests(unittest.TestCase):
+    def test_editor_traversal_without_publisher_group_or_secrets(self):
+        import pwd,grp
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);login=root/'login';login.mkdir()
+            os.chown(login,pwd.getpwnam('fh6-editor').pw_uid,grp.getgrnam('fh6').gr_gid)
+            os.chmod(login,0o2750)
+            secret=root/'publisher.json';secret.write_text('public test fixture')
+            os.chmod(secret,0o600)
+            self.assertNotEqual(subprocess.run(['runuser','-u','fh6-editor','--','test','-w',str(login)]).returncode,0)
+            subprocess.run(['setfacl','-m','u:fh6-editor:--x',folder],check=True)
+            self.assertEqual(subprocess.run(['runuser','-u','fh6-editor','--','test','-w',str(login)]).returncode,0)
+            self.assertNotEqual(subprocess.run(['runuser','-u','fh6-editor','--','test','-r',str(secret)]).returncode,0)
     def test_real_hash_and_atomic_credentials(self):
         import grp
         token='a'*43

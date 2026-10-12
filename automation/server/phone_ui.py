@@ -50,6 +50,21 @@ def load(file):
 
 def fingerprint(text): return hashlib.sha256(text.encode()).hexdigest()
 
+def login_status():
+    saved=load(STORE/'login/status.json')
+    state=saved.get('status','IDLE')
+    started=saved.get('startedAt',0)
+    if state not in {'IDLE','STARTING','WAITING_FOR_OWNER','CONNECTED','FAILED','EXPIRED'}:
+        state='FAILED'
+    if state in {'STARTING','WAITING_FOR_OWNER'} and time.time()-started>920:
+        state='EXPIRED'
+    request=STORE/'login-request'
+    if request.exists() and request.stat().st_mtime>saved.get('updatedAt',0) and time.time()-request.stat().st_mtime<15:
+        state='QUEUED'
+    code=STORE/'login/device.txt'
+    ready=state=='WAITING_FOR_OWNER' and code.is_file() and code.stat().st_size>0
+    return dict(status=state,codeReady=ready)
+
 def mime(data):
     if data.startswith(b'\x89PNG\r\n\x1a\n'): return '.png'
     if data.startswith(b'\xff\xd8\xff'): return '.jpg'
@@ -70,6 +85,9 @@ class UI(BaseHTTPRequestHandler):
         self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
         self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
     def do_GET(self):
+        if urlsplit(self.path).path=='/login':return self.redirect_login()
+        if urlsplit(self.path).path=='/login-status':
+            return self.respond(200,json.dumps(login_status()),'application/json; charset=utf-8')
         if urlsplit(self.path).path=='/setup':
             token=parse_qs(urlsplit(self.path).query).get('key',[''])[0]
             if not invitation_valid(token):return self.respond(404,'Ссылка недействительна, истекла или уже использована.')
@@ -98,16 +116,36 @@ class UI(BaseHTTPRequestHandler):
         <h1>FH6 — серверный сборщик</h1><p>Доступ только через домашнюю сеть/VPN. Пароль не вводите в чате.</p>'''
         body+=f'<pre>{html.escape(json.dumps(safe_status,ensure_ascii=False,indent=2))}</pre>'
         body+='<form method="post" action="/refresh"><button>Запустить внеплановую проверку на сервере</button></form>'
-        body+='<h2>Облачный редактор</h2><form method="post" action="/login"><button>Войти в Codex на сервере</button></form><p>После нажатия обновите страницу через 5 секунд. Код вводит только владелец; не отправляйте его в чат.</p>'
+        auth=login_status()
+        labels={'IDLE':'Codex ещё не подключён. Нажмите кнопку входа.',
+                'QUEUED':'Запрос принят — запускаем вход…','STARTING':'Запускаем вход…',
+                'WAITING_FOR_OWNER':'Ожидаем подтверждения владельца на странице OpenAI.',
+                'CONNECTED':'Codex подключён. Авторизация на сервере подтверждена.',
+                'FAILED':'Вход завершился с ошибкой. Нажмите кнопку, чтобы повторить.',
+                'EXPIRED':'Время входа истекло. Нажмите кнопку для нового кода.'}
+        body+='<h2 id="codex">Codex на сервере</h2><p id="codex-status">'+labels[auth['status']]+'</p>'
+        if auth['status']!='CONNECTED':
+            body+='<form method="post" action="/login"><button>Войти в Codex на сервере</button></form>'
+        body+='<p>Откройте <a href="https://auth.openai.com/codex/device" target="_blank" rel="noopener noreferrer">официальную страницу входа OpenAI</a> и введите код ниже. Код и пароль вводит только владелец; не отправляйте их в чат.</p>'
         login=STORE/'login/device.txt'
-        if login.is_file():
-            body+='<pre>'+html.escape(login.read_text(encoding='utf-8',errors='replace'))+'</pre>'
+        if auth['codeReady']:
+            try:body+='<pre id="codex-code">'+html.escape(login.read_text(encoding='utf-8',errors='replace'))+'</pre>'
+            except OSError:pass
+        if auth['status'] in {'QUEUED','STARTING','WAITING_FOR_OWNER'}:
+            body+='<p>Статус обновляется автоматически. Если код ещё не появился, подождите.</p>'
+            body+='<script>const initialLogin='+json.dumps(auth)+''';setInterval(async()=>{try{const r=await fetch('/login-status',{cache:'no-store'});if(!r.ok)return;const s=await r.json();if(s.status!==initialLogin.status||s.codeReady!==initialLogin.codeReady)location.replace('/#codex');}catch{}},3000);</script>'''
         body+='''<h2>Оригинальные скриншоты</h2><input id="screens" type="file" accept="image/png,image/jpeg,image/webp" multiple><button onclick="upload()">Передать оригиналы</button><p id="message"></p>
         <script>async function upload(){for(const f of document.querySelector('#screens').files){const r=await fetch('/upload',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-FH6-Request':'upload'},body:f});document.querySelector('#message').textContent=await r.text();if(!r.ok)break;}}</script>'''
         body+=''.join(steam)
         body+=f'''<p>Подтверждение сохраняется для редактора. Оно не означает, что Steam уже опубликован.</p><form method="post" action="/approve"><input type="hidden" name="sha" value="{sha}"><button>Разрешаю заменить эти два текста Steam</button></form>
         <p>Steam редактируется после входа владельца через браузер. Публичная проверка обязательна.</p></html>'''
         self.respond(200,body)
+    def redirect_login(self):
+        self.send_response(303)
+        self.send_header('Location','/#codex')
+        self.send_header('Cache-Control','no-store')
+        self.send_header('Content-Length','0')
+        self.end_headers()
     def do_POST(self):
         # Same-origin only; Basic auth is checked by nginx before forwarding.
         origin=self.headers.get('Origin')
@@ -159,10 +197,11 @@ class UI(BaseHTTPRequestHandler):
                 return self.respond(200,'Подтверждение записано. Steam ещё не опубликован. <a href="/">Вернуться</a>')
             if path=='/login':
                 request=STORE/'login-request'
-                if request.exists() and time.time()-request.stat().st_mtime<920:
-                    return self.respond(409,'Вход уже запущен; обновите страницу.')
+                auth=login_status()
+                if auth['status'] in {'QUEUED','STARTING','WAITING_FOR_OWNER','CONNECTED'}:
+                    return self.redirect_login()
                 request.write_text(str(time.time()),encoding='ascii')
-                return self.respond(200,'Запрос входа передан. <a href="/">Обновить страницу через 5 секунд</a>')
+                return self.redirect_login()
             if path=='/refresh':
                 request=STORE/'refresh-request'
                 if request.exists() and time.time()-request.stat().st_mtime<60:

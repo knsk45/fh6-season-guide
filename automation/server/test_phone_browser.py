@@ -76,12 +76,21 @@ async def main():
                         response=await navigation.value
                         assert response.status==200
                         assert (root/name).is_file()
+                        if path=='/login':
+                            assert page.url==base+'/#codex'
+                            assert 'Запрос принят' in await page.locator('#codex-status').inner_text()
+                            await page.reload()  # Must be GET, never repost /login.
+                            assert origins==[base,base]
+                            login=root/'login';login.mkdir()
+                            (login/'status.json').write_text(json.dumps(dict(status='CONNECTED',startedAt=time.time(),updatedAt=time.time())))
+                            await page.wait_for_function("document.querySelector('#codex-status').textContent.includes('Codex подключён')")
+                            assert await page.locator('form[action="/login"]').count()==0
                     assert origins==[base,base,base]
                     await browser.close()
             finally:
                 server.shutdown();server.server_close();thread.join()
     print('PHONE_BROWSER_FORM=PASSED SHORT_PASSWORD=PASSED INVITATION_REPLAY=REJECTED')
-    print('PHONE_BROWSER_LOGIN=PASSED PHONE_BROWSER_REFRESH=PASSED')
+    print('PHONE_BROWSER_LOGIN=PASSED PHONE_BROWSER_REFRESH=PASSED LOGIN_AUTO_STATUS=PASSED')
 
 
 if __name__=='__main__':asyncio.run(main())

@@ -14,6 +14,7 @@ id fh6 >/dev/null 2>&1 || useradd --create-home --shell /bin/bash fh6
 id fh6-editor >/dev/null 2>&1 || useradd --create-home --shell /bin/bash fh6-editor
 install -d -m 0750 -o fh6 -g fh6 /opt/fh6/repo /var/lib/fh6 /var/lib/fh6/inbox /etc/fh6
 install -d -m 0700 -o fh6-editor -g fh6-editor /var/lib/fh6/editor
+setfacl -m u:fh6-editor:--x /var/lib/fh6
 timedatectl set-timezone Asia/Krasnoyarsk
 python3 -m venv /opt/fh6/venv
 /opt/fh6/venv/bin/pip install 'playwright>=1.55,<2'

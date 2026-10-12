@@ -3,6 +3,8 @@ set -euo pipefail
 test "$(hostname)" = fh6-collector
 apt-get install -y --no-install-recommends nginx
 install -d -m 2750 -o fh6-editor -g fh6 /var/lib/fh6/login
+# Traverse only; never add the editor to the publisher's private group.
+setfacl -m u:fh6-editor:--x /var/lib/fh6
 install -d -m 0755 -o root -g root /usr/local/lib/fh6
 install -m 0600 -o root -g root /opt/fh6/repo/automation/server/phone_password.py /usr/local/lib/fh6/phone_password.py
 chown root:fh6 /etc/fh6

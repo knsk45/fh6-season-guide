@@ -21,6 +21,12 @@ for private in ['/etc/fh6/home-assistant.json','/etc/fh6/phone-first-login.json'
     if Path(private).exists() and subprocess.run(['runuser','-u','www-data','--','test','-r',private]).returncode==0:
         raise RuntimeError('nginx can read private project material')
 print('NGINX_CREDENTIAL_ACCESS=PASSED PRIVATE_FILES=DENIED')
+for directory in ['/var/lib/fh6/login','/var/lib/fh6/editor']:
+    subprocess.run(['runuser','-u','fh6-editor','--','test','-w',directory],check=True)
+for private in ['/etc/fh6/home-assistant.json','/home/fh6/.ssh']:
+    if Path(private).exists() and subprocess.run(['runuser','-u','fh6-editor','--','test','-r',private]).returncode==0:
+        raise RuntimeError('Editor can read publisher credentials')
+print('EDITOR_DIRECTORY_ACCESS=PASSED PUBLISHER_SECRETS=DENIED')
 # 401 without Authorization does not exercise nginx's password-file read.
 # A random deliberately-invalid fixture must fail authentication, never HTTP 500.
 invalid=base64.b64encode(('knsk45:'+secrets.token_urlsafe(32)).encode()).decode()
