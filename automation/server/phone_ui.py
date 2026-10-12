@@ -133,7 +133,7 @@ class UI(BaseHTTPRequestHandler):
             except OSError:pass
         if auth['status'] in {'QUEUED','STARTING','WAITING_FOR_OWNER'}:
             body+='<p>Статус обновляется автоматически. Если код ещё не появился, подождите.</p>'
-            body+='<script>const initialLogin='+json.dumps(auth)+''';setInterval(async()=>{try{const r=await fetch('/login-status',{cache:'no-store'});if(!r.ok)return;const s=await r.json();if(s.status!==initialLogin.status||s.codeReady!==initialLogin.codeReady)location.replace('/#codex');}catch{}},3000);</script>'''
+            body+='<script>const initialLogin='+json.dumps(auth)+''';setInterval(async()=>{try{const r=await fetch('/login-status',{cache:'no-store'});if(!r.ok)return;const s=await r.json();if(s.status!==initialLogin.status||s.codeReady!==initialLogin.codeReady)location.reload();}catch{}},3000);</script>'''
         body+='''<h2>Оригинальные скриншоты</h2><input id="screens" type="file" accept="image/png,image/jpeg,image/webp" multiple><button onclick="upload()">Передать оригиналы</button><p id="message"></p>
         <script>async function upload(){for(const f of document.querySelector('#screens').files){const r=await fetch('/upload',{method:'POST',headers:{'Content-Type':'application/octet-stream','X-FH6-Request':'upload'},body:f});document.querySelector('#message').textContent=await r.text();if(!r.ok)break;}}</script>'''
         body+=''.join(steam)
