@@ -83,7 +83,7 @@ async def main():
                             assert origins==[base,base]
                             login=root/'login';login.mkdir()
                             (login/'status.json').write_text(json.dumps(dict(status='CONNECTED',startedAt=time.time(),updatedAt=time.time())))
-                            await page.wait_for_function("document.querySelector('#codex-status').textContent.includes('Codex подключён')")
+                            await page.locator('#codex-status').filter(has_text='Codex подключён').wait_for()
                             assert await page.locator('form[action="/login"]').count()==0
                     assert origins==[base,base,base]
                     await browser.close()
