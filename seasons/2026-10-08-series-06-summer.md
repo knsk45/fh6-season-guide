@@ -2,7 +2,7 @@
 
 > Статус: подтверждено
 > Период: 08.10.2026 21:30 — 15.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 13.10.2026 23:44
+> Обновлено: 14.10.2026 06:05
 > В отчёте: 13 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: Turbocharged · 5 очков
@@ -36,23 +36,23 @@
 ## 05. championship — Bee Happy · 5 очков
 
 - **Условие:** Чемпионат по Dirt Racing: Modern Rally, класс B 600. Маршруты: Kawazu Nanadaru Scramble, Cherry Field Trail и Sunflower Scramble. Награда: 1970 Dodge Coronet Super Bee.
-- **Как выполнить:** Подойдёт любая Modern Rally в B 600; чемпионат состоит из трёх гонок.
+- **Как выполнить:** Используйте любой Modern Rally класса B 600. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.
 - **Автомобиль и тюнинг:** 2011 Subaru WRX STI — B 600 · 158 111 961
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread: условие победы</a>
 
 ## 06. championship — Ghost Hunter · 5 очков
 
 - **Условие:** Чемпионат Cross Country: Rally Monsters, класс A 700. Маршруты: Takashiro Cross Country, Oka Cross Country Circuit и Temple Cross Country. Награда: 1973 BMW Turbo 2002.
-- **Как выполнить:** Подойдёт любая Rally Monsters в A 700; заезд состоит из трёх гонок.
+- **Как выполнить:** Используйте любой Rally Monsters класса A 700. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.
 - **Автомобиль и тюнинг:** 1984 Opel Manta 400 — A 700 · 483 621 253
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread: условие победы</a>
 
 ## 07. championship — Vetting the Competition · 5 очков
 
 - **Условие:** Чемпионат Touge & Street: категория Track Life, класс S1 800. Маршруты: Norikura Descent, Hokubu Ascent и Kita Ine. Награда: 1970 Chevrolet Corvette ZR-1.
-- **Как выполнить:** Выберите автомобиль категории Track Life класса S1 800 и пройдите три гонки.
+- **Как выполнить:** Выберите автомобиль Track Life класса S1 800. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.
 - **Автомобиль и тюнинг:** 1991 Mazda #55 787B — S1 800 · 133 810 469
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread: условие победы</a>
 
 ## 08. time_attack — Soni Time Attack · 3 очка
 

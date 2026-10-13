@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-13T23:44:26+07:00",
+  "lastContentUpdate": "2026-10-14T06:05:42+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -130,9 +130,9 @@
       "title": "Bee Happy",
       "points": "5 очков",
       "conditionHtml": "Чемпионат по Dirt Racing: Modern Rally, класс B 600. Маршруты: Kawazu Nanadaru Scramble, Cherry Field Trail и Sunflower Scramble. Награда: 1970 Dodge Coronet Super Bee.",
-      "howHtml": "Подойдёт любая Modern Rally в B 600; чемпионат состоит из трёх гонок.",
+      "howHtml": "Используйте любой Modern Rally класса B 600. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
       "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
       "visual": {
         "image": "activity_05_championship_bee_happy.png",
         "sourceImage": "user-source-2.png",
@@ -156,9 +156,9 @@
       "title": "Ghost Hunter",
       "points": "5 очков",
       "conditionHtml": "Чемпионат Cross Country: Rally Monsters, класс A 700. Маршруты: Takashiro Cross Country, Oka Cross Country Circuit и Temple Cross Country. Награда: 1973 BMW Turbo 2002.",
-      "howHtml": "Подойдёт любая Rally Monsters в A 700; заезд состоит из трёх гонок.",
+      "howHtml": "Используйте любой Rally Monsters класса A 700. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
       "tuneHtml": "1984 Opel Manta 400 — A 700 · 483 621 253",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
       "visual": {
         "image": "activity_06_championship_ghost_hunter.png",
         "sourceImage": "user-source-2.png",
@@ -182,9 +182,9 @@
       "title": "Vetting the Competition",
       "points": "5 очков",
       "conditionHtml": "Чемпионат Touge & Street: категория Track Life, класс S1 800. Маршруты: Norikura Descent, Hokubu Ascent и Kita Ine. Награда: 1970 Chevrolet Corvette ZR-1.",
-      "howHtml": "Выберите автомобиль категории Track Life класса S1 800 и пройдите три гонки.",
+      "howHtml": "Выберите автомобиль Track Life класса S1 800. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
       "tuneHtml": "1991 Mazda #55 787B — S1 800 · 133 810 469",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
       "visual": {
         "image": "activity_07_championship_vetting.png",
         "sourceImage": "user-source-2.png",
@@ -395,21 +395,21 @@
           "title": "Bee Happy",
           "points": "5 points",
           "conditionHtml": "Dirt Racing: Modern Rally, B 600. Routes: Kawazu Nanadaru Scramble, Cherry Field Trail, Sunflower Scramble. Reward: 1970 Dodge Coronet Super Bee.",
-          "howHtml": "Use any Modern Rally car in B 600; the championship has three races.",
+          "howHtml": "Use any Modern Rally car in B 600. Win the three-race championship by scoring the most points overall.",
           "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961"
         },
         "activity_06_championship": {
           "title": "Ghost Hunter",
           "points": "5 points",
           "conditionHtml": "Cross Country: Rally Monsters, A 700. Routes: Takashiro Cross Country, Oka Cross Country Circuit, Temple Cross Country. Reward: 1973 BMW Turbo 2002.",
-          "howHtml": "Use any Rally Monsters car in A 700; the championship has three races.",
+          "howHtml": "Use any Rally Monsters car in A 700. Win the three-race championship by scoring the most points overall.",
           "tuneHtml": "1984 Opel Manta 400 — A 700 · 483 621 253"
         },
         "activity_07_championship": {
           "title": "Vetting the Competition",
           "points": "5 points",
           "conditionHtml": "Touge & Street: Track Life, S1 800. Routes: Norikura Descent, Hokubu Ascent, Kita Ine. Reward: 1970 Chevrolet Corvette ZR-1.",
-          "howHtml": "Choose a Track Life car in S1 800 and complete all three races.",
+          "howHtml": "Choose a Track Life car in S1 800. Win the three-race championship by scoring the most points overall.",
           "tuneHtml": "1991 Mazda #55 787B — S1 800 · 133 810 469"
         },
         "activity_08_time_attack": {
