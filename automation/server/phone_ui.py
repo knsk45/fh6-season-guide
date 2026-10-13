@@ -115,6 +115,16 @@ class UI(BaseHTTPRequestHandler):
         <style>body{font:16px system-ui;max-width:950px;margin:auto;padding:20px;background:#151825;color:#eee}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#232940;padding:16px}button,input{font:inherit;padding:12px}a{color:#8ce6ff}</style>
         <h1>FH6 — серверный сборщик</h1><p>Доступ только через домашнюю сеть/VPN. Пароль не вводите в чате.</p>'''
         body+=f'<pre>{html.escape(json.dumps(safe_status,ensure_ascii=False,indent=2))}</pre>'
+        recovery=load(STORE/'recovery.json')
+        recovery_labels={'WAITING':'Запланирован автоматический повтор.',
+            'QUEUED':'Автоматический повтор запускается.',
+            'NEEDS_LOGIN':'Нужно снова войти в Codex. После входа проверка повторится автоматически.',
+            'NEEDS_REVIEW':'Нужна проверка причины ошибки. Автоматический повтор остановлен.',
+            'LIMIT_REACHED':'Лимит автоматических повторов на сегодня исчерпан.'}
+        if recovery.get('status') in recovery_labels and recovery.get('runId')==active.get('runId'):
+            body+='<p>'+recovery_labels[recovery['status']]+'</p>'
+            if recovery.get('status')=='WAITING':
+                body+='<p>Следующая попытка: '+html.escape(str(recovery.get('nextAttemptAt','')))+'</p>'
         body+='<form method="post" action="/refresh"><button>Запустить внеплановую проверку на сервере</button></form>'
         auth=login_status()
         labels={'IDLE':'Codex ещё не подключён. Нажмите кнопку входа.',
