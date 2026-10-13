@@ -19,7 +19,7 @@
 • 11.10: отправьте Gift Drop другому игроку.
 • 12.10: активируйте Wheelspin или Super Wheelspin.
 • 13.10: проедьте 10 миль (16,1 км).
-• 14.10: наберите 15 000 Skill Score.
+• 14.10: зачтите одну цепочку навыков на 15 000 очков.
  Награда: 20 000 CR за каждое задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
@@ -44,20 +44,20 @@
 [b]Авто:[/b] 1991 Mazda #55 787B — S1 800 · 133 810 469
 
 [h2]08. Soni Time Attack · 3 очка[/h2]
-Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1. Награда: Wheelspin.
+Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 [b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
 [h2]09. Highway Jump · 2 очка[/h2]
-Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 [b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
 [h2]10. Konbini Dash · 2 очка[/h2]
-На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 [b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
 
 [h2]11. The Trial: Aim for the Top · 10 очков[/h2]
-Командный Trial: Total Muscle, класс A 800. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
-[b]Авто:[/b] 2024 Chevrolet Camaro ZL1 — A 800 · 100 986 561
+Командный Trial: Total Muscle, класс A 700. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
+[b]Авто:[/b] 2024 Chevrolet Camaro ZL1 — A · 100 986 561
 
 [h2]12. Smooth and Steady · 3 очка[/h2]
 Завершите Horizon Drift Championship. Награда: White Haori.

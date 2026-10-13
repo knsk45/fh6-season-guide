@@ -2,7 +2,7 @@
 
 > Статус: подтверждено
 > Период: 08.10.2026 21:30 — 15.10.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 10.10.2026 06:00
+> Обновлено: 13.10.2026 23:44
 > В отчёте: 13 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: Turbocharged · 5 очков
@@ -14,8 +14,8 @@
 
 ## 02. daily — 7 ежедневных заданий · 7 × 1 очко
 
-- **Условие:** <ol><li><strong>08.10:</strong> выполните 5 Drift или E-Drift Skills.</li><li><strong>09.10:</strong> получите не менее 1 звезды на Speed Traps.</li><li><strong>10.10:</strong> выполните 3 Kangaroo Skills.</li><li><strong>11.10:</strong> отправьте Gift Drop другому игроку.</li><li><strong>12.10:</strong> активируйте Wheelspin или Super Wheelspin.</li><li><strong>13.10:</strong> проедьте 10 миль (16,1 км).</li><li><strong>14.10:</strong> наберите 15 000 Skill Score.</li></ol> Награда: 20 000 CR за каждое задание.
-- **Как выполнить:** Открываются ежедневно в 21:30 по Красноярску. Daily намеренно оставлен списком без изображения игровой плитки.
+- **Условие:** <ol><li><strong>08.10:</strong> выполните 5 Drift или E-Drift Skills.</li><li><strong>09.10:</strong> получите не менее 1 звезды на Speed Traps.</li><li><strong>10.10:</strong> выполните 3 Kangaroo Skills.</li><li><strong>11.10:</strong> отправьте Gift Drop другому игроку.</li><li><strong>12.10:</strong> активируйте Wheelspin или Super Wheelspin.</li><li><strong>13.10:</strong> проедьте 10 миль (16,1 км).</li><li><strong>14.10:</strong> зачтите одну цепочку навыков на 15 000 очков.</li></ol> Награда: 20 000 CR за каждое задание.
+- **Как выполнить:** Открываются ежедневно в 21:30 по Красноярску; каждое задание доступно 7 дней с момента открытия. Для 14.10 завершите и зачтите одну цепочку на 15 000 очков. Daily оформлен текстовым списком без игровой плитки.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6-summer-information-thread-series-6/" target="_blank" rel="noopener noreferrer">Свежая Information Thread</a>
 
@@ -56,31 +56,31 @@
 
 ## 08. time_attack — Soni Time Attack · 3 очка
 
-- **Условие:** Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1. Награда: Wheelspin.
+- **Условие:** Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 - **Как выполнить:** Нужно показать время не хуже 49 секунд; держите чистую траекторию на поворотах.
 - **Автомобиль и тюнинг:** 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread Series 6</a>
 
 ## 09. danger_sign — Highway Jump · 2 очка
 
-- **Условие:** Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+- **Условие:** Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 - **Как выполнить:** Разгонитесь по прямой и удерживайте направление на трамплине; ориентир — 260 м.
 - **Автомобиль и тюнинг:** 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread Series 6</a>
 
 ## 10. speed_trap — Konbini Dash · 2 очка
 
-- **Условие:** На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1. Награда: Wheelspin.
+- **Условие:** На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
 - **Как выполнить:** Соберите скорость до камеры; цель — не менее 201,2 км/ч.
 - **Автомобиль и тюнинг:** 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread Series 6</a>
 
 ## 11. trial — The Trial: Aim for the Top · 10 очков
 
-- **Условие:** Командный Trial: Total Muscle, класс A 800. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
+- **Условие:** Командный Trial: Total Muscle, класс A 700. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
 - **Как выполнить:** Финишируйте выше соперников-Драйватаров и помогайте команде; важен командный итог.
-- **Автомобиль и тюнинг:** 2024 Chevrolet Camaro ZL1 — A 800 · 100 986 561
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a>
+- **Автомобиль и тюнинг:** 2024 Chevrolet Camaro ZL1 — A · 100 986 561
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Официальная Playlist</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Свежий гайд Series 6</a> · <a href="https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/" target="_blank" rel="noopener noreferrer">Information Thread Series 6</a>
 
 ## 12. horizon_play — Smooth and Steady · 3 очка
 
