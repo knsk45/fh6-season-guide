@@ -11,6 +11,7 @@ import socket
 import subprocess
 import time
 import uuid
+import secrets
 import sys
 from urllib.parse import parse_qs, urlsplit
 
@@ -21,6 +22,8 @@ import steam_consent
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
+CSRF_TOKEN=secrets.token_urlsafe(32)
+PUBLIC_ORIGIN='https://fh6.knsk45.crazedns.ru'
 MAX_UPLOAD=20*1024*1024
 FIRST_LOGIN=Path('/etc/fh6/phone-first-login.json')
 PASSWORD_SOCKET='/run/fh6-phone/password.sock'
@@ -154,7 +157,10 @@ class UI(BaseHTTPRequestHandler):
         if data['auth']['codeReady']:
             try:login_code=(STORE/'login/device.txt').read_text(encoding='utf-8',errors='replace')
             except OSError:pass
-        self.respond(200,phone_view.render(**data,login_code=login_code,signature=panel_signature(data)))
+        body=phone_view.render(**data,login_code=login_code,signature=panel_signature(data))
+        body=re.sub(r'(<form\b[^>]*>)',lambda m:m.group(1)+'<input type="hidden" name="_csrf" value="'+CSRF_TOKEN+'">',body)
+        body=body.replace("fetch('/upload',", "fetch('/upload?_csrf="+CSRF_TOKEN+"',")
+        self.respond(200,body)
     def is_ajax(self):
         # Query fallback survives proxies that remove custom request headers.
         # This selects response format only; it never authorizes a request.
@@ -174,8 +180,7 @@ class UI(BaseHTTPRequestHandler):
     def do_POST(self):
         # Same-origin only; Basic auth is checked by nginx before forwarding.
         origin=self.headers.get('Origin')
-        if origin != 'https://'+self.headers.get('Host',''):
-            return self.respond(403,json.dumps(dict(message='HTTP 403: адрес запроса не совпадает с адресом панели. Запрос не выполнен.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
+        same_origin=origin == 'https://'+self.headers.get('Host','')
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
@@ -191,6 +196,12 @@ class UI(BaseHTTPRequestHandler):
         if path!='/upload' and size>(24000 if path=='/task' else 4096):
             return self.respond(413,'Форма слишком велика.')
         data=self.rfile.read(size)
+        # KeenDNS may replace Host and omit Origin. Only an unpredictable token
+        # from the authenticated, no-store panel may authorize this fallback.
+        if not same_origin:
+            tokens=parse_qs(urlsplit(self.path).query).get('_csrf',[]) if path=='/upload' else parse_qs(data.decode('utf-8',errors='replace')).get('_csrf',[])
+            if path=='/setup' or origin not in (None,'null',PUBLIC_ORIGIN) or len(tokens)!=1 or not re.fullmatch(r'[A-Za-z0-9_-]{43}',tokens[0]) or not hmac.compare_digest(tokens[0],CSRF_TOKEN):
+                return self.respond(403,json.dumps(dict(message='HTTP 403: защитный токен отсутствует или устарел. Обновите страницу панели.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
         try:
             if path=='/consent':
                 fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
