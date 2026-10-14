@@ -19,7 +19,7 @@ STORE = Path('/var/lib/fh6')
 CONFIG = Path('/etc/fh6/steam-browser.json')
 GUIDE_ID = '3787739730'
 SECTION_IDS = {'ru': '9235220', 'en': '9330926'}
-SAVE = 'a.btn_green_white_innerfade[href*="ValidateEditSubSectionForm"]'
+SAVE = 'a.btn_green_white_innerfade[href*="ValidateEditSubSectionForm"]:visible'
 PHASE = 'START'
 DETAILS = {}
 PHASES = {'START', 'MODULES', 'TEXTS', 'CONNECT', 'CONTEXTS', 'AUDIT', 'CONSENT'} | {
