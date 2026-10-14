@@ -51,7 +51,32 @@ uploadButton.addEventListener('click',async()=>{const files=[...screens.files];i
 async function poll(){if(document.hidden||document.querySelector('#task')?.value.trim()||screens?.files.length||document.querySelector('.action-form button:disabled'))return;try{const r=await fetch('/panel-status',{cache:'no-store'});if(!r.ok)return;const data=await r.json();if(JSON.stringify(data)!==JSON.stringify(initialPanel)){location.reload();}}catch{}}setInterval(poll,5000);
 '''
 
-def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None,steam_publication=None):
+
+def refresh_history(rows,active):
+    labels={'ACCEPTED':('Запрос принят · ожидаем запуск','active'),'WAITING_FOR_WORKER':('Запуск пока не подтверждён','warn'),'STARTED':('Сборщик начал проверку','active'),'RUNNING':('Проверка выполняется','active'),'AWAITING_DELIVERY':('Проверка проведена · доставляем уведомление','active'),'COMPLETED':('Проверка завершена','good'),'PENDING_CONFIRMATION':('Проверка сезона завершена · статус Steam показан выше','warn'),'BLOCKED':('Проверка остановлена · нужна проверка ошибки','bad'),'FAILED_TO_QUEUE':('Не удалось поставить запрос в очередь','bad')}
+    stages={'audit':'Источники и изображения','structure':'Структура сезона','html':'Подготовка страниц','markdown':'Подготовка отчёта','portable':'Сборка сайта','artifact':'Артефакт сайта','timestamp':'Время обновления','browser_qa':'Отображение страниц','publish':'Публикация сайта','steam_check':'Проверка Steam','steam_render':'Подготовка текстов Steam','preflight':'Предварительная проверка','rollover_preflight':'Проверка границ сезона','visual_queue':'Проверка изображений','ha_receipt':'Подтверждение уведомления','metrics':'Показатели','notification':'Уведомление'}
+    def entry(row):
+        label,tone=labels.get(row.get('status'),('Результат пока не подтверждён','warn'))
+        text='<div class="task">'+badge(label,tone)
+        for key,label in [('acceptedAt','Запрос принят'),('startedAt','Начало проверки'),('finishedAt','Завершение')]:
+            if row.get(key):text+='<p class="muted">'+label+': '+date(row[key])+'</p>'
+        for key,value in row.get('steps',{}).items():
+            if key in stages and value in {'passed','running','failed'}:
+                text+='<p>'+esc(stages[key])+': '+{'passed':'✓ Проверено','running':'Выполняется','failed':'Ошибка — результат не подтверждён'}[value]+'</p>'
+        if row.get('notificationReceived'):text+='<p>✓ Получение уведомления подтверждено.</p>'
+        if row.get('status')=='WAITING_FOR_WORKER':text+='<p class="hint">Запрос сохранён, но сборщик ещё не подтвердил запуск. Завершение проверки не подтверждено.</p>'
+        return text+'</div>'
+    text='<div id="refresh-progress" role="status" aria-live="polite"><h3>Проверка и обновление</h3>'
+    if rows:
+        text+=entry(rows[0])
+        if len(rows)>1:text+='<details><summary>Предыдущие запросы ('+str(len(rows)-1)+')</summary>'+''.join(entry(r) for r in rows[1:])+'</details>'
+    elif active.get('runId'):
+        text+='<p class="hint">Последний запуск сборщика. История запросов с кнопки будет сохраняться после следующего нажатия.</p>'
+        text+=entry(dict(status=active.get('status'),startedAt=active.get('startedAt'),finishedAt=active.get('finishedAt'),steps={k:v.get('status') for k,v in active.get('steps',{}).items() if isinstance(v,dict)},notificationReceived=active.get('haReceipt')=='CONFIRMED'))
+    else:text+='<p class="hint">После нажатия здесь появится принятый запрос, ход проверки и её результат.</p>'
+    return text+'</div>'
+
+def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None,steam_publication=None,refresh_requests=None):
     status=active.get('status')
     labels={'RUNNING':('Обновление выполняется','active'),'BLOCKED':('Нужна проверка ошибки','bad'),
         'COMPLETED':('Обновление завершено','good'),'PENDING_CONFIRMATION':('Сайт обновлён · Steam ждёт разрешения','warn'),
@@ -87,7 +112,8 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
         if recovery.get('nextAttemptAt'):body+='<p class="muted">Следующая попытка: '+date(recovery['nextAttemptAt'])+'</p>'
     if status=='RUNNING':body+='<p class="hint">Сборщик проверяет источники и готовит обновление. Статус обновляется автоматически.</p>'
     if status in {'RUNNING'} or queued:body+='<button disabled>Проверка '+('выполняется' if status=='RUNNING' else 'в очереди')+'</button>'
-    else:body+=action('/refresh','Проверить и обновить сейчас','Запустит полную проверку сезона. Steam потребует отдельного разрешения.')
+    else:body+=action('/refresh','Проверить и обновить сейчас','Запустит полную проверку сезона. Принятый запрос, ход проверки и результат сохраняются ниже.')
+    body+=refresh_history(refresh_requests or [],active)
     body+='</section><section class="card" id="tasks"><div class="section-head"><h2>Задачи для Codex</h2>'+badge('Отдельная рабочая копия')+'</div><p class="hint">Опишите задачу. Ответ появится здесь. Подготовленные изменения устанавливаются отдельно.</p>'
     busy=any(t.get('status') in {'QUEUED','RUNNING'} for t in tasks)
     if busy:body+='<p class="hint">Дождитесь завершения текущей задачи перед отправкой следующей.</p>'
@@ -111,10 +137,11 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
                  '<label class="switch-label"><input id="steam-consent" type="checkbox" role="switch" name="enabled" value="true" '+('checked' if enabled else '')+'><span class="switch-track" aria-hidden="true"></span><span>Постоянное согласие на обновление Steam</span></label><p class="hint">'+('Включено — согласие действует и на будущие тексты.' if enabled else 'Выключено — каждую пару текстов нужно разрешать отдельно.')+'</p>')
     for locale,label in [('ru','Русский'),('en','English')]:
         body+='<div class="steam-block"><div class="steam-row"><h3>'+label+'</h3><button class="secondary" type="button" data-copy="steam-'+locale+'">Скопировать текст</button></div><details><summary>Показать текст · '+str(len(texts[locale]))+' символов</summary><pre class="steam-text" id="steam-'+locale+'">'+esc(texts[locale])+'</pre></details><p class="action-message" role="status" aria-live="polite"></p></div>'
-    if enabled:body+='<p class="action-message">Постоянное согласие активно. Сборщик сохранит разрешение на проверенные тексты автоматически.</p>'
+    if publication_status=='COMPLETE':body+='<p class="action-message">Оба текущих текста публично проверены в Steam. Повторная публикация не требуется.</p>'
+    elif enabled:body+='<p class="action-message">Постоянное согласие активно. Сборщик сохранит разрешение на проверенные тексты автоматически.</p>'
     elif approval:body+='<p class="action-message">✓ Разрешение на эти два текста сохранено. Ожидается публикация.</p><button disabled>Разрешение сохранено</button>'
     else:body+=action('/approve','Разрешить обновление двух текстов','Разрешение сохраняется для текущих текстов. Само нажатие пока не публикует их в Steam.','<input type="hidden" name="sha" value="'+esc(sha)+'">')
-    body+='<p class="hint">Публикация пока требует отдельного входа владельца в Steam и проверки результата.</p></section><section class="card" id="screenshots"><div class="section-head"><h2>Игровые скриншоты</h2>'+badge('Оригиналы')+'</div><p class="hint">Передайте полные игровые плитки. Сборщик сохранит файлы без изменений для проверки.</p><label for="screens">Выберите изображения</label><br><input id="screens" type="file" accept="image/png,image/jpeg,image/webp" multiple><br><button id="upload-button" type="button" disabled>Загрузить скриншоты</button><p id="message" class="action-message" role="status" aria-live="polite"></p></section>'
+    body+='<p class="hint">При действующей авторизации разрешённые обновления публикуются автоматически. Если потребуется вход или проверка, статус появится здесь.</p></section><section class="card" id="screenshots"><div class="section-head"><h2>Игровые скриншоты</h2>'+badge('Оригиналы')+'</div><p class="hint">Передайте полные игровые плитки. Сборщик сохранит файлы без изменений для проверки.</p><label for="screens">Выберите изображения</label><br><input id="screens" type="file" accept="image/png,image/jpeg,image/webp" multiple><br><button id="upload-button" type="button" disabled>Загрузить скриншоты</button><p id="message" class="action-message" role="status" aria-live="polite"></p></section>'
     auth_labels={'CONNECTED':('Codex подключён','good'),'IDLE':('Нужен вход','warn'),'QUEUED':('Вход в очереди','active'),'STARTING':('Запускаем вход','active'),'WAITING_FOR_OWNER':('Подтвердите вход','warn'),'FAILED':('Ошибка входа','bad'),'EXPIRED':('Код истёк','warn')}
     label,t=auth_labels.get(auth['status'],('Проверьте вход','warn'))
     body+='<section class="card" id="codex"><div class="section-head"><h2>Подключение Codex</h2>'+badge(label,t)+'</div><p id="codex-status">'+('Авторизация на сервере подтверждена. Можно отправлять задачи.' if auth['status']=='CONNECTED' else 'Подключите свой аккаунт OpenAI, чтобы серверный Codex мог выполнять задачи.')+'</p>'

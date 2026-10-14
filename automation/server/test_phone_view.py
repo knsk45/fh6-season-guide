@@ -81,12 +81,14 @@ class Tests(unittest.TestCase):
                 self.assertFalse((root/'refresh-request').exists())
                 self.assertEqual(json.load(post('/refresh',{}))['anchor'],'overview')
                 (root/'refresh-request').unlink()
+                for receipt in (root/'refresh-history').glob('*.json'):receipt.unlink()
                 # Response-format fallback must work with a stripped AJAX
                 # header and must preserve the same-origin security gate.
                 response=urllib.request.urlopen(urllib.request.Request(base+'/refresh?_ui=1',data=b'',headers={'Origin':'https://'+host}))
                 self.assertIn('application/json',response.headers['Content-Type'])
                 self.assertEqual(json.load(response)['anchor'],'overview')
                 (root/'refresh-request').unlink()
+                for receipt in (root/'refresh-history').glob('*.json'):receipt.unlink()
                 with self.assertRaises(urllib.error.HTTPError) as err:
                     urllib.request.urlopen(urllib.request.Request(base+'/refresh?_ui=1',data=b'',headers={'Origin':'https://evil.example'}))
                 self.assertEqual(err.exception.code,403)

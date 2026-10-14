@@ -160,6 +160,9 @@ def run(force=False,recovery_run_id=None):
             active=read(ROOT/'automation/runs/refresh/active.json')
             if active['status']=='AWAITING_DELIVERY': return
             guard('start')
+        if force:
+            import refresh_receipts
+            refresh_receipts.bind(STORE,read(ROOT/'automation/runs/refresh/active.json')['runId'])
         collect()
         try:
             work=editor()

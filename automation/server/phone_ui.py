@@ -19,6 +19,7 @@ sys.path.insert(0,str(Path(__file__).parent))
 import phone_tasks
 import phone_view
 import steam_consent
+import refresh_receipts
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
@@ -102,14 +103,14 @@ def panel_data():
     steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
-                texts=texts,sha=sha,approval=approval,queued=queued,consent=steam_consent.state(STORE),steam_publication=steam_publication)
+                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_receipts.snapshot(ROOT,STORE),consent=steam_consent.state(STORE),steam_publication=steam_publication)
 
 def panel_signature(data):
     return dict(runId=data['active'].get('runId'),status=data['active'].get('status'),
                 steps={k:(v.get('status') if isinstance(v,dict) else v) for k,v in data['active'].get('steps',{}).items()},updated=data['state'].get('lastContentUpdate'),
                 notification=data['active'].get('notification'),receipt=data['active'].get('haReceipt'),
                 auth=data['auth'],tasks=[[t['id'],t.get('status')] for t in data['tasks']],
-                recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'))
+                refresh_requests=data.get('refresh_requests',[]),recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'))
 
 class UI(BaseHTTPRequestHandler):
     def log_message(self,*args): pass  # Do not log credentials/query contents.
@@ -255,8 +256,14 @@ class UI(BaseHTTPRequestHandler):
                 request=STORE/'refresh-request'
                 if request.exists() and time.time()-request.stat().st_mtime<60:
                     return self.action_result(409,'Запрос уже отправлен. Дождитесь результата.','overview')
-                request.write_text(str(time.time()),encoding='ascii')
-                return self.action_result(200,'Проверка сезона поставлена в очередь. Статус появится в обзоре.','overview')
+                if load(ROOT/'automation/runs/refresh/active.json').get('status') in {'RUNNING','AWAITING_DELIVERY'}:
+                    return self.action_result(409,'Проверка уже выполняется. Дождитесь результата в обзоре.','overview')
+                receipt=refresh_receipts.accept(STORE)
+                try:request.write_text(str(time.time()),encoding='ascii')
+                except OSError:
+                    refresh_receipts.failed(STORE,receipt)
+                    return self.action_result(500,'Не удалось поставить запрос в очередь. Повторите после проверки службы.','overview')
+                return self.action_result(200,'Запрос принят. Ход проверки и итог появятся под кнопкой.','overview')
             self.respond(404,'Not found')
         except ValueError as exc:
             if path=='/setup' and not str(exc).startswith(('Пароли','Пароль не может','Введите пароль.','Не удалось подготовить')):
