@@ -11,7 +11,11 @@ import socket
 import subprocess
 import time
 import uuid
+import sys
 from urllib.parse import parse_qs, urlsplit
+
+sys.path.insert(0,str(Path(__file__).parent))
+import phone_tasks
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
@@ -88,6 +92,8 @@ class UI(BaseHTTPRequestHandler):
         if urlsplit(self.path).path=='/login':return self.redirect_login()
         if urlsplit(self.path).path=='/login-status':
             return self.respond(200,json.dumps(login_status()),'application/json; charset=utf-8')
+        if urlsplit(self.path).path=='/task-status':
+            return self.respond(200,json.dumps(phone_tasks.latest(),ensure_ascii=False),'application/json; charset=utf-8')
         if urlsplit(self.path).path=='/setup':
             token=parse_qs(urlsplit(self.path).query).get('key',[''])[0]
             if not invitation_valid(token):return self.respond(404,'Ссылка недействительна, истекла или уже использована.')
@@ -126,6 +132,23 @@ class UI(BaseHTTPRequestHandler):
             if recovery.get('status')=='WAITING':
                 body+='<p>Следующая попытка: '+html.escape(str(recovery.get('nextAttemptAt','')))+'</p>'
         body+='<form method="post" action="/refresh"><button>Запустить внеплановую проверку на сервере</button></form>'
+        body+='''<h2 id="tasks">Задача серверному Codex</h2>
+        <p>Codex подготовит ответ и предложенные изменения в отдельной копии проекта. Установка изменений и публикация выполняются отдельно. Не вставляйте пароли и токены.</p>
+        <form method="post" action="/task"><label for="task">Что нужно сделать?</label><br>
+        <textarea id="task" name="task" rows="6" maxlength="2000" required style="box-sizing:border-box;width:100%;font:inherit;padding:12px"></textarea><br>
+        <button>Отправить задачу</button></form>'''
+        task_labels={'QUEUED':'В очереди — начнётся после текущего обновления',
+            'RUNNING':'Выполняется','FINISHED':'Готово — изменения ещё не установлены',
+            'FAILED':'Ошибка','TIMED_OUT':'Время выполнения истекло',
+            'NEEDS_LOGIN':'Нужен вход в Codex','INTERRUPTED':'Выполнение прервано'}
+        tasks=phone_tasks.latest()
+        for task in tasks:
+            body+='<article><h3>'+task_labels.get(task.get('status'),'Неизвестный статус')+'</h3>'
+            body+='<p>'+html.escape(task.get('task',''))+'</p>'
+            if task.get('result'):body+='<pre>'+html.escape(task['result'])+'</pre>'
+            body+='</article>'
+        if any(t.get('status') in phone_tasks.BUSY for t in tasks):
+            body+='<p>Статус задачи обновляется автоматически.</p><script>const initialTasks='+json.dumps([[t['id'],t.get('status')] for t in tasks])+''';setInterval(async()=>{if(document.activeElement?.id==='task')return;try{const r=await fetch('/task-status',{cache:'no-store'});if(!r.ok)return;const s=await r.json();if(JSON.stringify(s.map(t=>[t.id,t.status]))!==JSON.stringify(initialTasks))location.reload();}catch{}},5000);</script>'''
         auth=login_status()
         labels={'IDLE':'Codex ещё не подключён. Нажмите кнопку входа.',
                 'QUEUED':'Запрос принят — запускаем вход…','STARTING':'Запускаем вход…',
@@ -164,7 +187,7 @@ class UI(BaseHTTPRequestHandler):
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
-        if path not in {'/setup','/upload','/approve','/login','/refresh'}:
+        if path not in {'/setup','/upload','/approve','/login','/refresh','/task'}:
             return self.respond(404,'Not found')
         if size<0:return self.respond(400,'Invalid content length')
         if path=='/setup' and not 0<size<=4096:
@@ -173,10 +196,16 @@ class UI(BaseHTTPRequestHandler):
             return self.respond(413,'Upload must be at most 20 MiB')
         # Native button-only forms (/login and /refresh) have a zero-byte body.
         # Keep upload validation separate from small control requests.
-        if path!='/upload' and size>4096:
+        if path!='/upload' and size>(24000 if path=='/task' else 4096):
             return self.respond(413,'Форма слишком велика.')
         data=self.rfile.read(size)
         try:
+            if path=='/task':
+                fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
+                if len(fields.get('task',[]))!=1:return self.respond(400,'Введите одну задачу.')
+                phone_tasks.enqueue(fields['task'][0])
+                self.send_response(303);self.send_header('Location','/#tasks')
+                self.send_header('Content-Length','0');self.end_headers();return
             if path=='/setup':
                 fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
                 if any(len(fields.get(key,[]))!=1 for key in ['key','password','confirmation']):

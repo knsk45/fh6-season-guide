@@ -1,0 +1,12 @@
+[Unit]
+Description=FH6 isolated owner tasks
+After=network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/phone_tasks.py
+TimeoutStartSec=1500
+TimeoutStopSec=10
+KillMode=control-group
+UMask=0027
+Nice=15

@@ -1,0 +1,8 @@
+[Unit]
+Description=Check FH6 owner task queue
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=30s
+AccuracySec=5s
+[Install]
+WantedBy=timers.target
