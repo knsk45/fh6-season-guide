@@ -11,19 +11,19 @@ STORE = Path('/var/lib/fh6')
 INSPECT = r'''expected => {
  const visible = e => !!e.getClientRects().length && getComputedStyle(e).visibility !== 'hidden';
  const safe = v => /^[\w .:\-]{0,100}$/.test(v || '') ? (v || '') : '';
- const controls = Array.from(document.querySelectorAll('input:not([type="hidden"]):not([type="password"]),textarea,button,a[onclick]'))
-  .filter(visible).slice(0,60).map(e => {
+ const controls = Array.from(document.querySelectorAll('input:not([type="hidden"]):not([type="password"]),textarea,button,[onclick]:not([type="hidden"]):not([type="password"])'))
+  .filter(visible).map(e => {
    const kind = e.tagName.toLowerCase();
    const type = (e.getAttribute('type') || '').toLowerCase();
-   const text = kind === 'button' || kind === 'a' ? (e.textContent || '').trim() : '';
-   const saveLabel = /^(save|save changes|сохранить|сохранить изменения)$/i.test(text);
-   const functionName = (e.getAttribute('onclick') || '').match(/^\s*([A-Za-z_]\w*)\s*\(/);
-   return {tag:kind,id:safe(e.id),name:safe(e.getAttribute('name')),type:safe(type),
+   const text = kind==='input' && /^(submit|button)$/.test(type) ? e.value : (e.textContent || '').trim();
+   const saveLabel = /^(save|save changes|save section|сохранить|сохранить изменения)$/i.test(text);
+   const functionName = (e.getAttribute('onclick') || '').match(/^\s*(?:javascript:\s*)?(?:return\s+)?([A-Za-z_]\w*)\s*\(/);
+   return {tag:kind,id:safe(e.id),name:safe(e.getAttribute('name')),type:safe(type),class:safe(e.getAttribute('class')),
     enabled:!e.disabled,titleMatches:kind==='input' && type!=='password' && e.value===expected,
     textLength:kind==='textarea' ? e.value.length : null,
     saveLabel:saveLabel ? text : null,onclickFunction:functionName ? functionName[1] : null};
   });
- return {controls,textareaCount:controls.filter(e=>e.tag==='textarea').length,
+ return {controls:controls.filter(e=>e.titleMatches || e.tag==='textarea' || e.saveLabel || /save|submit/i.test(e.onclickFunction || '') || e.type==='submit'),textareaCount:controls.filter(e=>e.tag==='textarea').length,
   titleMatchCount:controls.filter(e=>e.titleMatches).length};
 }'''
 
@@ -73,7 +73,8 @@ def main():
                 finally:page.close()
             # Disconnect the inspection transport without closing the owner's browser.
     print('STEAM_EDITOR_INSPECTION_READ_ONLY no form filled or submitted; no cookies accessed')
-    print(json.dumps(results,ensure_ascii=False,indent=2))
+    for result in results:
+        print(json.dumps(result,ensure_ascii=False,separators=(',',':')))
 
 
 if __name__=='__main__':
