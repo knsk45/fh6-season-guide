@@ -47,3 +47,14 @@ Actual X11/Chromium startup, kernel firewall rules, and protected mobile access
 can only be confirmed on CT109. The installer performs the first two; the owner
 must confirm the mobile screen before login. A successful package installation
 alone is not evidence of working Steam authentication or publication.
+
+After login, run `automation/server/configure_steam_browser.py` as root from a
+root-owned file readable by `fh6`. It verifies both configured existing editors
+as `fh6`, including the observed `ValidateEditSubSectionForm` JavaScript Save
+link, and checks both public bodies in an anonymous context. No form is filled
+or submitted. The original configuration is backed up privately before saving
+verified selectors with `publishEnabled=false`; the publication timer remains
+disabled. Its compact result also reports standing-consent and accepted-audit
+booleans. Generic password/one-time-code fields classify challenges; any missing
+editor control or changed URL still stops setup. Configuration alone does not
+prove a publication, approval, fresh audit, or a permanently valid Steam login.

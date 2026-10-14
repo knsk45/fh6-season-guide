@@ -11,19 +11,30 @@ STORE = Path('/var/lib/fh6')
 INSPECT = r'''expected => {
  const visible = e => !!e.getClientRects().length && getComputedStyle(e).visibility !== 'hidden';
  const safe = v => /^[\w .:\-]{0,100}$/.test(v || '') ? (v || '') : '';
- const controls = Array.from(document.querySelectorAll('input:not([type="hidden"]):not([type="password"]),textarea,button,[onclick]:not([type="hidden"]):not([type="password"])'))
+ const functionName = v => {
+  const match = (v || '').match(/^\s*(?:javascript:\s*)?(?:return\s+)?([A-Za-z_$][\w$]*)\s*\(/);
+  return match ? match[1] : null;
+ };
+ const controls = Array.from(document.querySelectorAll('input:not([type="hidden"]):not([type="password"]),textarea,button,a,[role="button"],[onclick]:not([type="hidden"]):not([type="password"])'))
   .filter(visible).map(e => {
    const kind = e.tagName.toLowerCase();
    const type = (e.getAttribute('type') || '').toLowerCase();
    const text = kind==='input' && /^(submit|button)$/.test(type) ? e.value : (e.textContent || '').trim();
-   const saveLabel = /^(save|save changes|save section|сохранить|сохранить изменения)$/i.test(text);
-   const functionName = (e.getAttribute('onclick') || '').match(/^\s*(?:javascript:\s*)?(?:return\s+)?([A-Za-z_]\w*)\s*\(/);
+   // Steam may expose Save as a javascript: link, rather than a button/onclick.
+   // Return only a boolean label match and a function identifier, never link
+   // arguments, account names, session IDs, or an arbitrary element's text.
+   const saveLabel = /\bsave\b|сохранить/i.test(text);
+   const href = e.getAttribute('href') || '';
+   const hrefIsJavascript = /^\s*javascript:/i.test(href);
    return {tag:kind,id:safe(e.id),name:safe(e.getAttribute('name')),type:safe(type),class:safe(e.getAttribute('class')),
     enabled:!e.disabled,titleMatches:kind==='input' && type!=='password' && e.value===expected,
     textLength:kind==='textarea' ? e.value.length : null,
-    saveLabel:saveLabel ? text : null,onclickFunction:functionName ? functionName[1] : null};
+    saveLabel,onclickFunction:functionName(e.getAttribute('onclick')),
+    onclickPresent:e.hasAttribute('onclick'),
+    hrefFunction:hrefIsJavascript ? functionName(href) : null,
+    hrefIsJavascript,role:safe(e.getAttribute('role'))};
   });
- return {controls:controls.filter(e=>e.titleMatches || e.tag==='textarea' || e.saveLabel || /save|submit/i.test(e.onclickFunction || '') || e.type==='submit'),textareaCount:controls.filter(e=>e.tag==='textarea').length,
+ return {controls:controls.filter(e=>e.titleMatches || e.tag==='textarea' || e.saveLabel || e.onclickPresent || e.hrefIsJavascript || e.tag==='button' || e.role==='button' || /^(submit|button|image)$/.test(e.type)),textareaCount:controls.filter(e=>e.tag==='textarea').length,
   titleMatchCount:controls.filter(e=>e.titleMatches).length};
 }'''
 
@@ -62,7 +73,7 @@ def main():
                 try:
                     section=config['sections'][lang]
                     response=page.goto(section['editUrl'],wait_until='domcontentloaded',timeout=20000)
-                    page.wait_for_timeout(1000)
+                    page.wait_for_timeout(3000)
                     current=urlsplit(page.url)
                     result={'locale':lang,'httpStatus':response.status if response else None,
                             'exactEditUrl':page.url==section['editUrl'],
