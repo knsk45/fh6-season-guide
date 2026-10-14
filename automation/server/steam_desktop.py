@@ -12,6 +12,16 @@ PROFILE = Path('/var/lib/fh6/steam-browser-profile')
 RUNTIME = Path('/run/fh6-steam-desktop')
 
 
+def browser_environment(profile, runtime, auth, source=None):
+    environment = dict(os.environ if source is None else source)
+    for key in ('DBUS_SESSION_BUS_ADDRESS', 'DBUS_SYSTEM_BUS_ADDRESS'):
+        environment.pop(key, None)
+    environment.update(HOME=str(profile), XDG_CONFIG_HOME=str(profile/'config'),
+                       XDG_CACHE_HOME=str(profile/'cache'), XDG_RUNTIME_DIR=str(runtime),
+                       DISPLAY=':91', XAUTHORITY=str(auth))
+    return environment
+
+
 def wait_port(port, processes):
     deadline = time.monotonic() + 35
     while time.monotonic() < deadline:
@@ -31,6 +41,11 @@ def main():
     if PROFILE.is_symlink() or PROFILE.stat().st_uid != os.getuid():
         raise RuntimeError('Unexpected Steam profile ownership')
     PROFILE.chmod(0o700)
+    for folder in (PROFILE/'config', PROFILE/'cache'):
+        if folder.is_symlink():
+            raise RuntimeError('Unexpected browser directory symlink')
+        folder.mkdir(mode=0o700, exist_ok=True)
+        folder.chmod(0o700)
     auth = RUNTIME/'Xauthority'
     auth.touch(mode=0o600, exist_ok=True)
     auth.chmod(0o600)
@@ -53,7 +68,7 @@ def main():
     try:
         start(['/usr/bin/Xvfb', ':91', '-screen', '0', '1280x900x24',
                '-nolisten', 'tcp', '-auth', str(auth), '-noreset'])
-        environment = dict(os.environ, DISPLAY=':91', XAUTHORITY=str(auth))
+        environment = browser_environment(PROFILE, RUNTIME, auth)
         deadline = time.monotonic() + 15
         while not Path('/tmp/.X11-unix/X91').exists():
             if children[0].poll() is not None or time.monotonic() > deadline:

@@ -53,5 +53,15 @@ class DesktopTests(unittest.TestCase):
         self.assertIn('input=f\'add :91 .',text)
         self.assertIn('stderr=subprocess.DEVNULL',text)
 
+    def test_private_environment_replaces_hidden_home(self):
+        module=load('steam_desktop');profile=Path('/private/profile');runtime=Path('/private/runtime')
+        env=module.browser_environment(profile,runtime,runtime/'Xauthority',
+              {'HOME':'/home/hidden','XDG_RUNTIME_DIR':'/run/user/0','DBUS_SESSION_BUS_ADDRESS':'bad','PATH':'/usr/bin'})
+        self.assertEqual(env['HOME'],str(profile))
+        self.assertEqual(env['XDG_CONFIG_HOME'],str(profile/'config'))
+        self.assertEqual(env['XDG_RUNTIME_DIR'],str(runtime))
+        self.assertNotIn('DBUS_SESSION_BUS_ADDRESS',env)
+        self.assertEqual(env['PATH'],'/usr/bin')
+
 
 if __name__=='__main__':unittest.main()
