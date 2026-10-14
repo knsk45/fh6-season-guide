@@ -155,8 +155,12 @@ class UI(BaseHTTPRequestHandler):
             try:login_code=(STORE/'login/device.txt').read_text(encoding='utf-8',errors='replace')
             except OSError:pass
         self.respond(200,phone_view.render(**data,login_code=login_code,signature=panel_signature(data)))
+    def is_ajax(self):
+        # Query fallback survives proxies that remove custom request headers.
+        # This selects response format only; it never authorizes a request.
+        return self.headers.get('X-FH6-UI')=='1' or parse_qs(urlsplit(self.path).query).get('_ui')==['1']
     def action_result(self,code,message,anchor):
-        if self.headers.get('X-FH6-UI')=='1':
+        if self.is_ajax():
             return self.respond(code,json.dumps(dict(message=message,anchor=anchor),ensure_ascii=False),'application/json; charset=utf-8')
         return self.respond(code,html.escape(message)+' <a href="/#'+anchor+'">Вернуться в панель</a>')
     def redirect_login(self):
@@ -171,7 +175,7 @@ class UI(BaseHTTPRequestHandler):
         # Same-origin only; Basic auth is checked by nginx before forwarding.
         origin=self.headers.get('Origin')
         if origin != 'https://'+self.headers.get('Host',''):
-            return self.respond(403,'Same-origin request required')
+            return self.respond(403,json.dumps(dict(message='HTTP 403: адрес запроса не совпадает с адресом панели. Запрос не выполнен.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
