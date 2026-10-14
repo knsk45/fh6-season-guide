@@ -85,7 +85,9 @@ def snapshot(work):
         if source.is_symlink() or not source.resolve().is_relative_to(ROOT.resolve()) or not source.is_file():continue
         dest=work/relative;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,dest)
     # Read current server state even when a publication is newer than the checkout.
-    for relative in ['data/current-season.json','reports/SOURCE_NOTES.md']:
+    for relative in ['data/current-season.json','reports/SOURCE_NOTES.md',
+                     'automation/server/phone_tasks.py','automation/server/phone_view.py',
+                     'automation/server/steam_consent.py']:
         source=ROOT/relative
         if source.is_file() and not source.is_symlink():
             dest=work/relative;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,dest)
@@ -139,6 +141,8 @@ def tick():
     try:
         # Same lock as scheduled/manual refresh: the workspace is never copied during publication.
         with lock(STORE/'runner.lock'):
+            from steam_consent import sync
+            sync(ROOT,STORE)
             with lock(directory/'queue.lock',blocking=True):
                 rows=[read(f) for f in directory.glob('*.json') if not f.is_symlink()]
                 for row in rows:
