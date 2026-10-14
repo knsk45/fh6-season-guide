@@ -33,4 +33,13 @@ restarting the panel. It does not change the daily runner or publish Steam.
 Validation here: 10 queue/HTTP tests, 5 panel/action tests, 4 standing-consent
 tests and 21 existing non-root tests; inline JavaScript syntax checked with
 Node. Root storage tests also run during the server installation. Headless
-visual browser validation was unavailable in the development environment.
+visual browser validation was unavailable in the development environment:
+Chromium download returned a corrupted archive. The pinned installer now
+requires `test_phone_panel_browser.py` to pass using the existing server
+Playwright/Chromium environment before declaring success. It tests 390px and
+1440px layout bounds, separated cards, collapsed Steam text, both clipboard
+contents, clipboard failure, task/refresh/login/upload feedback, persisted
+switch state and the explicit reload control after an uncertain network result.
+All browser requests use disposable localhost fixtures; no real tasks,
+credentials or publications are submitted. Failed checks restore the previous
+panel files.
