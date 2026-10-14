@@ -45,6 +45,16 @@ class Tests(unittest.TestCase):
             self.result['sections']['ru']['generatedCharacters'] = count
             with self.subTest(count=count), self.assertRaises(ValueError): setup.verified(self.result)
 
+    def test_diagnostics_exclude_exception_text_and_unknown_fields(self):
+        with patch.multiple(setup, PHASE='RU_EDITOR', DETAILS={'saveCount': 0}):
+            value = setup.diagnostic(RuntimeError('PRIVATE_COOKIE_OR_URL'))
+        value['private'] = 'PRIVATE_COOKIE_OR_URL'
+        value['details'].update(cookie='PRIVATE_COOKIE', title='PRIVATE_ACCOUNT')
+        safe = setup.safe_diagnostic(value)
+        self.assertEqual(safe['details'], {'saveCount': 0})
+        self.assertNotIn('PRIVATE', json.dumps(safe))
+        self.assertIsNone(setup.safe_diagnostic(dict(phase='PRIVATE_URL', errorType='Error', status='BLOCKED')))
+
     def run_setup(self, child_success):
         with tempfile.TemporaryDirectory() as temp:
             base = Path(temp); root = base/'repo'; store = base/'store'

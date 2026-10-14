@@ -20,6 +20,39 @@ CONFIG = Path('/etc/fh6/steam-browser.json')
 GUIDE_ID = '3787739730'
 SECTION_IDS = {'ru': '9235220', 'en': '9330926'}
 SAVE = 'a.btn_green_white_innerfade[href*="ValidateEditSubSectionForm"]'
+PHASE = 'START'
+DETAILS = {}
+PHASES = {'START', 'MODULES', 'TEXTS', 'CONNECT', 'CONTEXTS', 'AUDIT', 'CONSENT'} | {
+    lang.upper() + '_' + step for lang in SECTION_IDS
+    for step in ('EDITOR', 'HEADER', 'SAVE', 'LENGTH', 'PUBLIC')}
+
+
+def diagnostic(error):
+    code = str(error) if type(error).__name__ == 'Stop' else 'BLOCKED'
+    if code not in {'BLOCKED', 'NEEDS_SETUP', 'NEEDS_LOGIN', 'STEAM_GUARD'}:
+        code = 'BLOCKED'
+    return dict(phase=PHASE, status=code, errorType=type(error).__name__, details=DETAILS)
+
+
+def safe_diagnostic(value):
+    """Accept only enumerated stages and small DOM counts/booleans from child."""
+    if not isinstance(value, dict) or value.get('phase') not in PHASES:
+        return None
+    kind = value.get('errorType', '')
+    if not isinstance(kind, str) or not re.fullmatch(r'[A-Za-z_][A-Za-z_0-9]{0,50}', kind):
+        return None
+    code = value.get('status')
+    if code not in {'BLOCKED', 'NEEDS_SETUP', 'NEEDS_LOGIN', 'STEAM_GUARD'}:
+        return None
+    allowed = {'exactEditorUrl', 'loginRedirect', 'titleCount', 'titleVisible',
+               'titleEnabled', 'textareaCount', 'textareaVisible', 'textareaEnabled',
+               'saveCount', 'saveVisible', 'saveEnabled', 'publicCount', 'publicVisible',
+               'unsupportedMarkup'}
+    details = value.get('details', {})
+    if not isinstance(details, dict): return None
+    details = {key: item for key, item in details.items() if key in allowed
+               and (type(item) is bool or type(item) is int and 0 <= item <= 1000)}
+    return dict(phase=value['phase'], status=code, errorType=kind, details=details)
 
 
 def candidate(current, project):
@@ -51,38 +84,67 @@ def candidate(current, project):
 
 
 def probe(config):
+    global PHASE, DETAILS
+    PHASE = 'MODULES'; DETAILS = {}
     sys.path.insert(0, str(ROOT / 'automation/server'))
     import steam_publish as worker
     from steam_consent import state
     from playwright.sync_api import sync_playwright
     result = {'sections': {}}
-    desired = worker.texts(ROOT)
+    PHASE = 'TEXTS'; desired = worker.texts(ROOT)
     with sync_playwright() as pw:
+        PHASE = 'CONNECT'
         browser = pw.chromium.connect_over_cdp(config['cdp'], timeout=15000)
+        PHASE = 'CONTEXTS'
         adapter = worker.SteamBrowser(browser, config)
         try:
             for lang in SECTION_IDS:
-                adapter.ready(lang)  # navigation and DOM checks only
+                PHASE = lang.upper() + '_EDITOR'; DETAILS = {}
+                try:
+                    adapter.ready(lang)  # navigation and DOM checks only
+                except Exception:
+                    DETAILS['exactEditorUrl'] = adapter.page.url == config['sections'][lang]['editUrl']
+                    DETAILS['loginRedirect'] = '/login' in urlsplit(adapter.page.url).path
+                    for name in ('title', 'textarea', 'save'):
+                        node = adapter.page.locator(config['sections'][lang][name])
+                        count = node.count(); DETAILS[name + 'Count'] = count
+                        if count == 1:
+                            DETAILS[name + 'Visible'] = node.is_visible()
+                            DETAILS[name + 'Enabled'] = node.is_enabled()
+                    raise
+                PHASE = lang.upper() + '_HEADER'
                 header = adapter.page.locator('#account_pulldown')
                 if header.count() != 1 or not header.is_visible():
                     raise ValueError('Authenticated header unavailable')
+                PHASE = lang.upper() + '_SAVE'
                 save = adapter.page.locator(config['sections'][lang]['save'])
                 callback = save.evaluate(r'''e =>
                     /^\s*javascript:\s*(?:return\s+)?ValidateEditSubSectionForm\s*\(/.test(e.getAttribute("href") || "")''')
                 if not callback:
                     raise ValueError('Unexpected save handler')
+                PHASE = lang.upper() + '_LENGTH'
                 if not desired[lang].strip() or len(desired[lang]) > 4800:
                     raise ValueError('Invalid generated text')
+                PHASE = lang.upper() + '_PUBLIC'
+                try:
+                    matches = adapter.matches(lang, desired[lang])
+                except Exception:
+                    node = adapter.viewer.locator(config['sections'][lang]['publicText'])
+                    count = node.count(); DETAILS['publicCount'] = count
+                    if count == 1: DETAILS['publicVisible'] = node.is_visible()
+                    plain = re.sub(r'\[/?(?:b|i|u|h[1-6])\]', '', desired[lang])
+                    DETAILS['unsupportedMarkup'] = bool(re.search(r'\[/?[a-z]', plain, re.I))
+                    raise
                 result['sections'][lang] = dict(editorVerified=True, saveVerified=True,
-                    publicMatchesCurrent=adapter.matches(lang, desired[lang]),
+                    publicMatchesCurrent=matches,
                     generatedCharacters=len(desired[lang]))
         finally:
             adapter.page.close()
             adapter.public.close()
         # Playwright disconnects at context-manager exit; never close the
         # owner's browser or its persistent default authentication context.
-    result.update(freshAuditAccepted=bool(worker.fresh_audit(ROOT)),
-                  consentEnabled=bool(state(STORE)['enabled']))
+    PHASE = 'AUDIT'; result['freshAuditAccepted'] = bool(worker.fresh_audit(ROOT))
+    PHASE = 'CONSENT'; result['consentEnabled'] = bool(state(STORE)['enabled'])
     return result
 
 
@@ -143,6 +205,10 @@ def main():
                                 str(source), '--probe'], input=json.dumps(config),
                                text=True, capture_output=True, timeout=180)
         if child.returncode != 0:
+            try: detail = safe_diagnostic(json.loads(child.stdout))
+            except (ValueError, TypeError): detail = None
+            if detail is not None:
+                print('STEAM_BROWSER_PROBE_FAILED ' + json.dumps(detail, separators=(',', ':')))
             raise RuntimeError('Read-only browser verification failed; configuration unchanged')
         result = json.loads(child.stdout)
         verified(result)
@@ -167,5 +233,8 @@ if __name__ == '__main__':
         main()
     except Exception as error:
         # Browser errors may include private details; never echo them or stderr.
-        print('STEAM_BROWSER_SETUP_FAILED type=' + type(error).__name__)
+        if sys.argv[1:] == ['--probe']:
+            print(json.dumps(diagnostic(error), separators=(',', ':')))
+        else:
+            print('STEAM_BROWSER_SETUP_FAILED type=' + type(error).__name__)
         raise SystemExit(1)
