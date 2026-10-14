@@ -77,6 +77,7 @@ if (-not $Content -or [string]::IsNullOrWhiteSpace([string]$Content.title) -or [
     throw "Notification text is not configured for status $Status."
 }
 
+$Metrics = $null
 $MetricsMessage = 'Статистика публикаций недоступна для этого запуска.'
 if (Test-Path -LiteralPath $MetricsStatePath) {
     try {
@@ -110,9 +111,22 @@ if ($ResultPath) {
     if ($CheckedResult.schemaVersion -ne 1 -or $CheckedResult.runId -ne $RunId -or $CheckedResult.notificationType -ne $Status -or [string]::IsNullOrWhiteSpace($CheckedResult.message)) {
         throw 'Guarded result does not match notification RunId/status.'
     }
-    # Use exactly the same substantive result in HA and in the chat summary.
+    # Keep the detailed guarded result in its receipt; push uses a short projection.
     $Body.message = [string]$CheckedResult.message
 }
+# Format only the current, validated run. Never include logs, paths or commit IDs.
+. (Join-Path $PSScriptRoot 'notification_text.ps1')
+$ResultForPush = $null
+$MetricsForPush = $null
+if ($ResultPath) {
+    $ResultForPush = $CheckedResult
+    if ($CheckedResult.PSObject.Properties.Name -contains 'metrics') {
+        $MetricsForPush = $CheckedResult.metrics
+    }
+} elseif ($Metrics -and [string]$Metrics.runId -eq $RunId) { $MetricsForPush = $Metrics }
+$ShortNotification = Get-Fh6NotificationText -Status $Status -CheckedResult $ResultForPush -Metrics $MetricsForPush
+$Body.title = $ShortNotification.title
+$Body.message = $ShortNotification.message
 $Headers = @{ Authorization = "Bearer $Token" }
 $Uri = "$ApiBase/services/notify/$ServiceName"
 
