@@ -120,6 +120,15 @@ class UI(BaseHTTPRequestHandler):
         self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
         self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data)
     def do_GET(self):
+        if urlsplit(self.path).path=='/steam-review.zip':
+            file=STORE/'steam-review.zip'
+            if file.is_symlink() or not file.is_file():return self.respond(404,'Архив для проверки ещё не подготовлен.')
+            if file.stat().st_size>2_000_000:return self.respond(413,'Архив слишком велик.')
+            data=file.read_bytes()
+            self.send_response(200);self.send_header('Content-Type','application/zip')
+            self.send_header('Content-Disposition','attachment; filename="fh6-steam-review.zip"')
+            self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff')
+            self.send_header('Content-Length',str(len(data)));self.end_headers();self.wfile.write(data);return
         if urlsplit(self.path).path=='/login':return self.redirect_login()
         if urlsplit(self.path).path=='/login-status':
             return self.respond(200,json.dumps(login_status()),'application/json; charset=utf-8')

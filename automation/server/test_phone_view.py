@@ -53,6 +53,16 @@ class Tests(unittest.TestCase):
             def post(path,fields,origin=None):
                 return urllib.request.urlopen(urllib.request.Request(base+path,data=urllib.parse.urlencode(fields).encode(),headers={'Origin':origin or 'https://'+host,'X-FH6-UI':'1'}))
             try:
+                with self.assertRaises(urllib.error.HTTPError) as err:urllib.request.urlopen(base+'/steam-review.zip')
+                self.assertEqual(err.exception.code,404)
+                (root/'steam-review.zip').write_bytes(b'PK disposable archive')
+                download=urllib.request.urlopen(base+'/steam-review.zip')
+                self.assertEqual(download.read(),b'PK disposable archive')
+                self.assertIn('attachment',download.headers['Content-Disposition'])
+                (root/'steam-review.zip').unlink()
+                (root/'steam-review.zip').symlink_to(root/'reports/steam-guide-current.txt')
+                with self.assertRaises(urllib.error.HTTPError) as err:urllib.request.urlopen(base+'/steam-review.zip')
+                self.assertEqual(err.exception.code,404)
                 response=post('/approve',{'sha':ui.fingerprint('Russian\nEnglish')})
                 self.assertIn('application/json',response.headers['Content-Type'])
                 self.assertIn('Разрешение сохранено',json.load(response)['message'])
