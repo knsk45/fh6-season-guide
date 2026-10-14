@@ -95,16 +95,18 @@ def panel_data():
             started=datetime.fromisoformat(active.get('startedAt','')).timestamp()
         except (ValueError,TypeError):started=0
         queued=request.stat().st_mtime>started and time.time()-request.stat().st_mtime<60
+    published=load(STORE/'steam-status.json')
+    steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
-                texts=texts,sha=sha,approval=approval,queued=queued,consent=steam_consent.state(STORE))
+                texts=texts,sha=sha,approval=approval,queued=queued,consent=steam_consent.state(STORE),steam_publication=steam_publication)
 
 def panel_signature(data):
     return dict(runId=data['active'].get('runId'),status=data['active'].get('status'),
                 steps={k:(v.get('status') if isinstance(v,dict) else v) for k,v in data['active'].get('steps',{}).items()},updated=data['state'].get('lastContentUpdate'),
                 notification=data['active'].get('notification'),receipt=data['active'].get('haReceipt'),
                 auth=data['auth'],tasks=[[t['id'],t.get('status')] for t in data['tasks']],
-                recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'])
+                recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'))
 
 class UI(BaseHTTPRequestHandler):
     def log_message(self,*args): pass  # Do not log credentials/query contents.

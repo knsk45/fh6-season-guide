@@ -42,6 +42,11 @@ class Tests(unittest.TestCase):
     def test_signature_has_no_private_commands(self):
         data=fixture();data['active']['steps']['publish']['command']='secret command'
         self.assertNotIn('secret command',json.dumps(ui.panel_signature(data)))
+    def test_steam_complete_bound_to_current_pair(self):
+        data=fixture();data['steam_publication']={'status':'COMPLETE','sha256':'old'}
+        self.assertNotIn('Оба раздела опубликованы',view.render(**data))
+        data['steam_publication']['sha256']=data['sha']
+        self.assertIn('Сайт и Steam обновлены',view.render(**data))
     def test_ajax_actions_and_same_origin(self):
         with tempfile.TemporaryDirectory() as d,patch.object(ui,'STORE',Path(d)),patch.object(ui,'ROOT',Path(d)):
             root=Path(d);(root/'reports').mkdir()

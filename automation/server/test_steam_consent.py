@@ -38,4 +38,10 @@ class Tests(unittest.TestCase):
         (self.root/'reports/steam-guide-current-en.txt').write_text('x'*4801)
         consent.sync(self.root,self.store);self.assertEqual(self.approvals(),[])
 
+    def test_expired_approval_is_renewed_without_duplicates(self):
+        consent.set_enabled(self.store,True);consent.sync(self.root,self.store)
+        file=next(self.store.glob('steam-approval-*.json'));value=json.loads(file.read_text());value['approvedAt']=0;file.write_text(json.dumps(value))
+        consent.sync(self.root,self.store);consent.sync(self.root,self.store)
+        self.assertEqual(len(self.approvals()),2)
+
 if __name__=='__main__':unittest.main()

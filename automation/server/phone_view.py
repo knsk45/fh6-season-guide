@@ -51,7 +51,7 @@ uploadButton.addEventListener('click',async()=>{const files=[...screens.files];i
 async function poll(){if(document.hidden||document.querySelector('#task')?.value.trim()||screens?.files.length||document.querySelector('.action-form button:disabled'))return;try{const r=await fetch('/panel-status',{cache:'no-store'});if(!r.ok)return;const data=await r.json();if(JSON.stringify(data)!==JSON.stringify(initialPanel)){location.reload();}}catch{}}setInterval(poll,5000);
 '''
 
-def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None):
+def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None,steam_publication=None):
     status=active.get('status')
     labels={'RUNNING':('Обновление выполняется','active'),'BLOCKED':('Нужна проверка ошибки','bad'),
         'COMPLETED':('Обновление завершено','good'),'PENDING_CONFIRMATION':('Сайт обновлён · Steam ждёт разрешения','warn'),
@@ -66,6 +66,19 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     notified=badge('Получено','good') if active.get('haReceipt')=='CONFIRMED' else badge('Отправлено','active') if active.get('notification') else badge('Ожидается')
     steam=badge('Тексты актуальны','good') if status=='COMPLETED' else badge('Разрешение сохранено','warn') if approval else badge('Нужно разрешение','warn') if status=='PENDING_CONFIRMATION' else badge('Проверяется') if status=='RUNNING' else badge('Нет данных')
     if (consent or {}).get('enabled') and status!='COMPLETED':steam=badge('Автосогласие включено','good')
+    publication=steam_publication or {}
+    publication_labels={'NEEDS_SETUP':('Нужна настройка браузера','warn'),
+        'NEEDS_LOGIN':('Нужен вход в Steam','warn'),'STEAM_GUARD':('Подтвердите Steam Guard','warn'),
+        'NEEDS_APPROVAL':('Нужно разрешение','warn'),'STALE_APPROVAL':('Нужно новое разрешение','warn'),
+        'AUDIT_REQUIRED':('Нужна свежая проверка сезона','warn'),
+        'PUBLISHING':('Публикуется','active'),'VERIFYING':('Проверяется публикация','active'),
+        'UNCERTAIN':('Результат отправки уточняется','warn'),'BLOCKED':('Публикация остановлена','bad'),
+        'COMPLETE':('Оба раздела опубликованы','good')}
+    publication_status=publication.get('status')
+    if publication_status=='COMPLETE' and publication.get('sha256')!=sha:publication_status=None
+    if publication_status in publication_labels:
+        label,t=publication_labels[publication_status];steam=badge(label,t)
+        if publication_status=='COMPLETE' and status=='PENDING_CONFIRMATION':title,tone='Сайт и Steam обновлены','good'
     body='<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FH6 · Панель сборщика</title><style>'+STYLE+'</style><main><header><div class="eyebrow">FH6 · управление проектом</div><h1>Панель сборщика</h1><p class="muted">Обновления, задачи и подготовка Steam — с телефона.</p><nav><a href="#overview">Обзор</a><a href="#tasks">Задачи</a><a href="#steam">Steam</a><a href="#screenshots">Скриншоты</a><a href="#codex">Вход в Codex</a></nav></header><div id="notice" role="status" aria-live="polite"></div>'
     body+='<section class="card" id="overview"><div class="section-head"><h2>Состояние проекта</h2>'+badge(title,tone)+'</div><p>'+esc(state.get('season',{}).get('reportTitle','Текущий сезон'))+'</p><p class="muted">Последнее обновление: '+date(state.get('lastContentUpdate'))+' · время вашего устройства</p><div class="grid"><div class="stat"><strong>Сайт</strong>'+site+'</div><div class="stat"><strong>Steam</strong>'+steam+'</div><div class="stat"><strong>Уведомление</strong>'+notified+'</div></div>'
     recovery_labels={'WAITING':'Автовосстановление запланировало повтор.', 'QUEUED':'Автовосстановление запускает повтор.', 'NEEDS_LOGIN':'Для продолжения войдите в Codex ниже.', 'NEEDS_REVIEW':'Нужна проверка причины ошибки.', 'LIMIT_REACHED':'Лимит повторов на сегодня исчерпан.'}
@@ -90,6 +103,9 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     if len(tasks)>1:body+='</details>'
     if not tasks:body+='<p class="hint">Пока нет задач. Отправьте первую выше.</p>'
     body+='</section><section class="card" id="steam"><div class="section-head"><h2>Обновление Steam</h2>'+steam+'</div><p class="hint">Подготовлены русский и английский тексты. Откройте для проверки или скопируйте целиком.</p>'
+    if publication_status=='NEEDS_SETUP':body+='<p class="hint">Обработчик подготовлен. До настройки серверного браузера публикация выключена.</p>'
+    if publication_status in {'NEEDS_LOGIN','STEAM_GUARD'}:body+='<p class="hint">Войдите в выделенном серверном браузере и подтвердите вход. Пароль и коды не вводите в панели или чате.</p>'
+    if publication_status=='UNCERTAIN':body+='<p class="hint">Не запускайте отправку повторно вручную: сначала нужна проверка публичного результата.</p>'
     enabled=(consent or {}).get('enabled') is True
     body+=action('/consent','Сохранить настройку','Включение разрешает заменять оба текста во всех следующих обновлениях. Выключение отзывает автоматические разрешения.',
                  '<label class="switch-label"><input id="steam-consent" type="checkbox" role="switch" name="enabled" value="true" '+('checked' if enabled else '')+'><span class="switch-track" aria-hidden="true"></span><span>Постоянное согласие на обновление Steam</span></label><p class="hint">'+('Включено — согласие действует и на будущие тексты.' if enabled else 'Выключено — каждую пару текстов нужно разрешать отдельно.')+'</p>')
