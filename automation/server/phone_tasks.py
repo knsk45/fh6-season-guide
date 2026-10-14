@@ -75,7 +75,7 @@ def enqueue(text):
 
 def snapshot(work):
     """Copy tracked regular source files, never .git or ignored credentials."""
-    names=subprocess.run(['git','ls-files','-z'],cwd=ROOT,check=True,capture_output=True,timeout=30).stdout
+    names=subprocess.run(['runuser','-u','fh6','--','git','ls-files','-z'],cwd=ROOT,check=True,capture_output=True,timeout=30).stdout
     for raw in names.split(b'\0'):
         if not raw:continue
         relative=Path(os.fsdecode(raw))
@@ -94,6 +94,10 @@ def execute(row):
     auth=subprocess.run(['runuser','-u','fh6-editor','--','/usr/local/bin/codex','login','status'],capture_output=True,timeout=30)
     if auth.returncode:return 'NEEDS_LOGIN','Войдите в Codex через панель и отправьте задачу заново.'
     base=STORE/'task-workspaces';base.mkdir(mode=0o711,exist_ok=True)
+    if base.is_symlink():raise ValueError('Unexpected workspace directory')
+    # Existing deployments use setgid/750 parents. Grant traversal only,
+    # never publisher group membership or listing/read access to its secrets.
+    subprocess.run(['setfacl','-m','u:fh6-editor:--x',str(STORE),str(base)],check=True,timeout=30)
     work=base/row['id'];work.mkdir(mode=0o700)
     snapshot(work)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(work)],check=True,timeout=60)
@@ -148,7 +152,9 @@ def tick():
                     raise ValueError('Invalid task ID')
                 row.update(status='RUNNING',startedAt=time.time());save(directory/(row['id']+'.json'),row)
             try:status,result=execute(row)
-            except Exception:status,result='FAILED','Не удалось выполнить задачу. Подробности доступны администратору сервера.'
+            except Exception as exc:
+                print('PHONE_TASK_FAILED id='+row['id']+' error='+type(exc).__name__,flush=True)
+                status,result='FAILED','Не удалось выполнить задачу. Код причины: '+type(exc).__name__+'. Подробности доступны администратору сервера.'
             with lock(directory/'queue.lock',blocking=True):
                 row.update(status=status,result=result,finishedAt=time.time());save(directory/(row['id']+'.json'),row)
     except BlockingIOError:return
