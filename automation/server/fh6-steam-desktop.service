@@ -1,0 +1,22 @@
+[Unit]
+Description=FH6 owner-controlled Steam browser
+Requires=fh6-steam-desktop-guard.service
+After=network-online.target fh6-steam-desktop-guard.service
+BindsTo=fh6-steam-desktop-guard.service
+[Service]
+Type=simple
+User=fh6
+Group=fh6
+RuntimeDirectory=fh6-steam-desktop
+RuntimeDirectoryMode=0700
+UMask=0077
+ExecStart=/usr/bin/python3 /usr/local/lib/fh6-browser/steam_desktop.py
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=20
+KillMode=control-group
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+[Install]
+WantedBy=multi-user.target
