@@ -1,0 +1,9 @@
+[Unit]
+Description=Evaluate bounded FH6 recovery
+After=network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/recovery.py tick
+TimeoutStartSec=90
+UMask=0027

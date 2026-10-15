@@ -1,0 +1,9 @@
+[Unit]
+Description=Check FH6 recovery every five minutes
+[Timer]
+OnBootSec=2min
+OnCalendar=*-*-* *:0/5:00
+AccuracySec=15s
+Persistent=true
+[Install]
+WantedBy=timers.target

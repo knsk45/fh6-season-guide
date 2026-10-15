@@ -89,6 +89,9 @@ Preflight проверяет доступ редактора к обоим ра�
 `fh6-refresh.timer` запускает сервер ежедневно в 06:00 Asia/Krasnoyarsk.
 `fh6-preflight.timer`: четверг 20:30, только preflight без публикации.
 Независимый watchdog HA в 06:30 не изменяется и не отключается.
+`fh6-recovery.timer` проверяет возможность ограниченного восстановления каждые
+пять минут. Правила пауз, лимитов, входа и сохранения результатов описаны в
+[SERVER_RECOVERY.md](SERVER_RECOVERY.md).
 Доставка сохранённого итога повторяется каждые пять минут отдельным timer,
 без повторной сборки, нового аудита и дублирования уже подтверждённого уведомления.
 Windows task и heartbeat следует отключать только после серверных проверок.
@@ -127,7 +130,7 @@ receipt не становится Linux receipt простым переписы�
 
 ## Отказ и откат
 
-Остановка: `systemctl stop fh6-refresh.timer fh6-preflight.timer`. Старую задачу
+Остановка автоматических новых запусков: `systemctl stop fh6-refresh.timer fh6-preflight.timer fh6-recovery.timer`. Старую задачу
 ПК включать только после остановки серверного publisher и проверки canonical
 state/метрик/Steam baseline. Оригинальные плитки, месячные assets, history и
 seasons не удаляются. CT109 входит в существующий weekly backup job `all=1`;
