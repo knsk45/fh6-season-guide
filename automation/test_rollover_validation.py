@@ -34,9 +34,10 @@ class Tests(unittest.TestCase):
             capture_output=True, text=True, timeout=60)
 
     def test_full_validation_still_requires_operational_config(self):
-        result = self.invoke('validate_season.ps1', '-SkipOutputs')
+        result = self.invoke('validate_season.ps1', '-SkipOutputs', '-AsJson')
         self.assertNotEqual(result.returncode, 0, result.stdout+result.stderr)
-        self.assertIn('Home Assistant notification local config is missing', result.stdout)
+        errors = json.loads(result.stdout)['errors']
+        self.assertIn('Home Assistant notification local config is missing', errors)
 
     def test_editorial_validation_succeeds_without_config(self):
         result = self.invoke('validate_season.ps1', '-SkipOutputs', '-ContentOnly')
@@ -47,16 +48,16 @@ class Tests(unittest.TestCase):
     def test_invalid_content_is_still_rejected(self):
         self.state['season']['expectedCardCount'] += 1
         self.state_path.write_text(json.dumps(self.state))
-        result = self.invoke('validate_season.ps1', '-SkipOutputs', '-ContentOnly')
+        result = self.invoke('validate_season.ps1', '-SkipOutputs', '-ContentOnly', '-AsJson')
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn('activities, found', result.stdout)
+        self.assertTrue(any('activities, found' in error for error in json.loads(result.stdout)['errors']))
 
     def test_editorial_validation_keeps_config_path_constraint(self):
         self.project['notifications']['localConfigPath'] = 'reports/not-a-secret.json'
         self.project_path.write_text(json.dumps(self.project))
-        result = self.invoke('validate_season.ps1', '-SkipOutputs', '-ContentOnly')
+        result = self.invoke('validate_season.ps1', '-SkipOutputs', '-ContentOnly', '-AsJson')
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn('must stay under ignored automation/runs/', result.stdout)
+        self.assertIn('project.notifications.localConfigPath must stay under ignored automation/runs/', json.loads(result.stdout)['errors'])
 
     def test_rollover_prepares_history_and_archive_without_config(self):
         self.state['season']['archiveFile'] = 'seasons/isolated-rollover-test.md'
