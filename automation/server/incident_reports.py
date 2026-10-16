@@ -13,6 +13,7 @@ STAGES=('audit','preflight','rollover_preflight','visual_queue','timestamp','mar
 STATUSES={'RUNNING','COMPLETED','BLOCKED','PENDING_CONFIRMATION','AWAITING_DELIVERY'}
 # The matching log text is NEVER copied. Each match yields only this fixed code/text.
 RULES=(
+ ('GIT_SPARSE_CHECKOUT',r'outside of your sparse-checkout definition|Use the --sparse option','Git отказался добавить изображения вне sparse-checkout; издателю нужен git add --sparse.'),
  ('GIT_PATHSPEC',r"pathspec .+ did not match any files|did not match any file","Git не нашёл один из путей, переданных для публикации."),
  ('PORTABLE_RECEIPT',r'Verify compatible portable package receipt failed|PORTABLE_.*FAILED','Издатель отклонил проверку переносимого пакета.'),
  ('BRANCH_MISMATCH',r'Expected branch .+current branch','Публикация запущена не из ожидаемой ветки Git.'),

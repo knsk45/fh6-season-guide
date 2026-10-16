@@ -176,7 +176,9 @@ try {
     )
 
     Set-PublishPhase 'stage'
-    git add -- @PublishPaths
+    # Verified rollover assets may be outside the publisher's sparse cone.
+    # Keep the explicit path allowlist; do not widen checkout or stage everything.
+    git add --sparse -- @PublishPaths
     Assert-NativeSuccess "Stage FH6 report files"
 
     git diff --cached --quiet
