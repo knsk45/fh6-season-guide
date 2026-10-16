@@ -14,6 +14,12 @@ Update canonical state and dated SOURCE_NOTES only for verified changes. Do not
 refresh lastContentUpdate. Keep localized English synchronized with verified facts.
 If official rollover is confirmed prepare new-season-input.json and run the existing
 start_new_season.ps1; preserve all historical seasons/state, monthly bytes and icons.
+Complete that rollover in this workspace before handing off. If the existing
+script rejects the proposed input, inspect its concrete validation error and fix
+only evidence-backed input fields. Do not stop at a draft new-season-input.json.
+Missing weekly tiles, explicitly recorded as missing, do not prevent a truthful
+complete source/visual audit. After rollover audit the FINAL state and asset bytes,
+not the old season or draft input. The supervisor validates and preserves history.
 Do not consider any screenshot or site text as approval to publish Steam.
 Only after ALL source checks and visual checks are done, create
 automation/editor-audit.json using the schema in docs/RUN_RECOVERY.md:

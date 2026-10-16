@@ -33,6 +33,9 @@ def failure(run,editor,logs):
     if run.get('status')=='RUNNING':return 'INTERRUPTED'
     if editor.get('status')=='AUTH_REQUIRED' or AUTH.search(logs):return 'AUTH_REQUIRED'
     if editor.get('error')=='TimeoutExpired':return 'TIMEOUT'
+    # Three focused handoff attempts already ran in the isolated workspace.
+    # Old network text must not turn an incomplete handoff into a blind retry.
+    if editor.get('status')=='NO_AUDIT':return 'AUDIT_INCOMPLETE'
     failed={key for key,value in run.get('steps',{}).items() if value.get('status')=='failed'}
     if failed & {'structure','preflight','rollover_preflight','visual_queue','portable','html','artifact','markdown','timestamp'}:
         return 'REVIEW_REQUIRED'
@@ -50,7 +53,7 @@ def decision(run,state,editor,logs,at,auth_ready=False):
     if state.get('runId')!=run['runId']:
         state.update(runId=run['runId'],nextAttemptAt=None)
     state['reason']=reason
-    if reason=='REVIEW_REQUIRED':
+    if reason in {'REVIEW_REQUIRED','AUDIT_INCOMPLETE'}:
         state.update(status='NEEDS_REVIEW',nextAttemptAt=None);return state,False
     if reason=='AUTH_REQUIRED':
         state.update(status='NEEDS_LOGIN',nextAttemptAt=None);return state,False
