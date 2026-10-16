@@ -192,6 +192,9 @@ class Tests(unittest.TestCase):
             with self.subTest(stale=stale),tempfile.TemporaryDirectory() as d:
                 Path(d).chmod(0o755)
                 root,work=self.monthly_fixture(d);store=Path(d)/'store';store.mkdir()
+                # Isolate the directory-under-test from the service's 0027 umask.
+                for parent in (root,root/'data',root/'reports',root/'reports/assets'):
+                    parent.chmod(0o755)
                 destination=root/'reports/assets/autumn'
                 if stale:destination.mkdir(mode=0o750)
                 files=[work/'data/current-season.json',work/'reports/assets/autumn/original.png',work/'reports/assets/autumn/tile.png']
