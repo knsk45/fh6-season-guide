@@ -1,5 +1,5 @@
 """Focused retries, safe rollover and canonical rollback; no real model calls."""
-import contextlib,json,tempfile,unittest
+import contextlib,json,tempfile,unittest,os,pwd,shutil,subprocess
 from pathlib import Path
 from unittest.mock import Mock,patch
 import test_recovery
@@ -181,5 +181,40 @@ class Tests(unittest.TestCase):
             (root/'data/current-season.json').write_text('{"newer":true}')
             with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner,'validate_editor_handoff') as validate:
                 self.assertFalse(runner.reusable_editor_candidate(work,status));validate.assert_not_called()
+
+    @unittest.skipUnless(os.geteuid()==0 and shutil.which('runuser'),'Requires root for real unprivileged access test')
+    def test_published_monthly_images_are_readable_by_unprivileged_publisher(self):
+        user=pwd.getpwnam('daemon')
+        mapping=Path('/proc/self/uid_map')
+        if mapping.exists() and not any(int(row.split()[0])<=user.pw_uid<int(row.split()[0])+int(row.split()[2]) for row in mapping.read_text().splitlines()):
+            self.skipTest('Unprivileged UID is not mapped in this test environment')
+        for stale in (False,True):
+            with self.subTest(stale=stale),tempfile.TemporaryDirectory() as d:
+                Path(d).chmod(0o755)
+                root,work=self.monthly_fixture(d);store=Path(d)/'store';store.mkdir()
+                destination=root/'reports/assets/autumn'
+                if stale:destination.mkdir(mode=0o750)
+                files=[work/'data/current-season.json',work/'reports/assets/autumn/original.png',work/'reports/assets/autumn/tile.png']
+                def ownership(path,user=None,group=None):
+                    os.chown(path,pwd.getpwnam('daemon').pw_uid,pwd.getpwnam('daemon').pw_gid)
+                def register(*args):
+                    result=subprocess.run(['runuser','-u','daemon','--','python3','-c',
+                        'from pathlib import Path;import sys;assert Path(sys.argv[1]).read_bytes()==b"prepared crop fixture"',
+                        str(destination/'tile.png')],capture_output=True,text=True)
+                    self.assertEqual(result.returncode,0,result.stderr)
+                with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner.shutil,'chown',side_effect=ownership),patch.object(runner,'guard',side_effect=register):
+                    runner.promote_candidate(work,files)
+                self.assertEqual(destination.stat().st_uid,user.pw_uid)
+
+    def test_rollover_parent_ownership_is_prepared_before_audit_registration(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,work=self.monthly_fixture(d);store=Path(d)/'store';store.mkdir()
+            destination=root/'reports/assets/autumn'
+            destination.mkdir(mode=0o750)
+            files=[work/'data/current-season.json',work/'reports/assets/autumn/tile.png']
+            with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner.shutil,'chown') as chown,patch.object(runner,'guard'):
+                runner.promote_candidate(work,files)
+            self.assertTrue(any(call.args==(destination,) and call.kwargs=={'user':'fh6','group':'fh6'} for call in chown.call_args_list))
+            self.assertFalse(any(call.args==(root/'automation',) for call in chown.call_args_list))
 
 if __name__=='__main__':unittest.main()

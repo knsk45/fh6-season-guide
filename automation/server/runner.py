@@ -183,10 +183,37 @@ def wait_editor(process,timeout=1200,grace=5):
             except subprocess.TimeoutExpired:continue
         raise
 
+def prepare_publisher_parent(relative,rollover_assets=None):
+    """Create publisher-owned parents; repair root-owned failed rollover folders."""
+    parent=(ROOT/relative).parent
+    if not parent.resolve().is_relative_to(ROOT.resolve()):
+        raise RuntimeError('Publication directory escapes canonical root')
+    current=ROOT
+    for part in parent.relative_to(ROOT).parts:
+        current=current/part
+        if current.is_symlink():raise RuntimeError('Symlink in publication directory')
+        if not current.exists():
+            current.mkdir(mode=0o750)
+            shutil.chown(current,user='fh6',group='fh6')
+    if rollover_assets is not None and relative.is_relative_to(rollover_assets):
+        # Earlier failed transfers could leave the new season's empty root-owned
+        # directories behind. Repair only that asset subtree, never code/config.
+        current=ROOT/rollover_assets
+        directories=[current]
+        for part in parent.relative_to(current).parts:
+            current=current/part;directories.append(current)
+        for directory in directories:
+            if directory.stat().st_uid==0:
+                shutil.chown(directory,user='fh6',group='fh6')
+                directory.chmod((directory.stat().st_mode&0o777)|0o700)
+
 def promote_candidate(work,files):
     """Keep rollback evidence until canonical audit registration succeeds."""
     backup=STORE/('before-editor-'+str(time.time_ns()))
     applied=[]
+    old_assets=Path(read(ROOT/'data/current-season.json')['season']['assetsDirectory'])
+    new_assets=Path(read(work/'data/current-season.json')['season']['assetsDirectory'])
+    rollover_assets=new_assets if new_assets!=old_assets else None
     try:
         for file in files:
             relative=file.relative_to(work);target=ROOT/relative
@@ -194,7 +221,7 @@ def promote_candidate(work,files):
             if existed:
                 saved=backup/relative;saved.parent.mkdir(parents=True,exist_ok=True)
                 shutil.copyfile(target,saved)
-            target.parent.mkdir(parents=True,exist_ok=True)
+            prepare_publisher_parent(relative,rollover_assets)
             applied.append((relative,existed))
             shutil.copyfile(file,target);shutil.chown(target,user='fh6',group='fh6')
         guard('audit','--input',ROOT/'automation/editor-audit.json')
