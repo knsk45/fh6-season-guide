@@ -4,46 +4,48 @@
     "seriesNumber": 6,
     "seriesSlug": "06",
     "seriesName": "Horizon Meets",
-    "season": "summer",
-    "seasonDisplay": "Лето",
-    "startAt": "2026-10-08T21:30:00+07:00",
-    "endAt": "2026-10-15T21:30:00+07:00",
-    "reportTitle": "Forza Horizon 6: Series 6 «Horizon Meets» — Лето",
-    "archiveFile": "seasons/2026-10-08-series-06-summer.md",
-    "assetsDirectory": "reports/assets/series-06-summer",
+    "season": "autumn",
+    "seasonDisplay": "Осень",
+    "startAt": "2026-10-15T21:30:00+07:00",
+    "endAt": "2026-10-22T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Series 6 «Horizon Meets» — Осень",
+    "archiveFile": "seasons/2026-10-15-series-06-autumn.md",
+    "assetsDirectory": "reports/assets/series-06-autumn",
     "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
     "officialPlaylistUrl": "https://forza.net/fh6playlists",
     "expectedCardCount": 13,
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-15T06:03:41+07:00",
+  "lastContentUpdate": "2026-10-16T17:17:09+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
       "number": "01",
       "kind": "weekly",
-      "title": "Еженедельное испытание: Turbocharged",
+      "title": "Еженедельное испытание: In Focus",
       "points": "5 очков",
-      "conditionHtml": "Выполните четыре главы на <strong>1973 BMW Turbo 2002</strong>: владейте автомобилем и прокатитесь на нём; заработайте 4 Speed Skills; проедьте 2 круга на Hokubu Time Attack Circuit; наберите 6 звёзд на Speed Traps. Награда: 150 000 CR.",
-      "howHtml": "Главы выполняются по порядку. Для Speed Skills подойдёт скоростной участок; звёзды на Speed Traps суммируются между попытками. Машину можно получить в чемпионате Ghost Hunter или купить в Autoshow за 127 000 CR.",
-      "tuneHtml": "1973 BMW Turbo 2002 — код тюнинга 136 527 514",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "conditionHtml": "На <strong>2017 Ford Focus RS</strong> по порядку: владейте машиной и прокатитесь; сфотографируйте её; получите 3 звезды на Speed Traps; выполните Great Skill Chain. Награда: 25 000 CR.",
+      "howHtml": "Машина — награда Fully Charged. Главы выполняются по порядку; звёзды суммируются.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_01_weekly.png",
-        "sourceImage": "user-source-1.png",
-        "orientation": "vertical",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "vehicleTune": "not_applicable",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_02_daily",
@@ -51,17 +53,17 @@
       "kind": "daily",
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
-      "conditionHtml": "<ol><li><strong>08.10:</strong> выполните 5 Drift или E-Drift Skills.</li><li><strong>09.10:</strong> получите не менее 1 звезды на Speed Traps.</li><li><strong>10.10:</strong> выполните 3 Kangaroo Skills.</li><li><strong>11.10:</strong> отправьте Gift Drop другому игроку.</li><li><strong>12.10:</strong> активируйте Wheelspin или Super Wheelspin.</li><li><strong>13.10:</strong> проедьте 10 миль (16,1 км).</li><li><strong>14.10:</strong> зачтите одну цепочку навыков на 15 000 очков.</li></ol> Награда: 20 000 CR за каждое задание.",
-      "howHtml": "Открываются ежедневно в 21:30 по Красноярску; каждое задание доступно 7 дней с момента открытия. Для 14.10 завершите и зачтите одну цепочку на 15 000 очков. Daily оформлен текстовым списком без игровой плитки.",
+      "conditionHtml": "<ol><li><strong>15.10:</strong> завершите Street Race.</li><li><strong>16.10:</strong> получите не менее 1 звезды на Danger Signs.</li><li><strong>17.10:</strong> завершите Cross Country Race.</li><li><strong>18.10:</strong> выполните 3 Feed Me Skills, разбивая торговые автоматы.</li><li><strong>19.10:</strong> завершите Horizon Rush.</li><li><strong>20.10:</strong> выполните Drift Tap Skill.</li><li><strong>21.10:</strong> получите не менее 1 звезды на Speed Zones.</li></ol> Награда: 5 000 CR за каждое задание.",
+      "howHtml": "Открываются в 21:30 по Красноярску, доступны 7 дней. Horizon Rush: Pier Pressure, Off Piste или Launch Control. Drift Tap: слегка коснитесь барьера углом машины в заносе без аварии.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6-summer-information-thread-series-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежая Information Thread</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Daily оформлен только текстом по правилу проекта."
+        "sourceLabel": "Daily: только текст."
       },
       "completeness": {
         "condition": "confirmed",
@@ -75,261 +77,282 @@
       "id": "activity_03_photo",
       "number": "03",
       "kind": "photo",
-      "title": "#LightLunch",
+      "title": "#SliceOfLife",
       "points": "2 очка",
-      "conditionHtml": "Сфотографируйте любой автомобиль категории Eclectic Domestic у магазина 7-Eleven. Награда: форма 7-Eleven.",
-      "howHtml": "Найдите значок 7-Eleven Evolving World на карте и подъедьте к магазину; используйте автомобиль Eclectic Domestic.",
+      "conditionHtml": "Сфотографируйте любую Mazda на Jodogahama Beach. Награда: эмоция Relax.",
+      "howHtml": "Подъедьте на Mazda к берегу Jodogahama Beach и сделайте снимок.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_03_photo.png",
-        "sourceImage": "user-source-1.png",
-        "orientation": "vertical",
-        "typeIconKey": "photo-challenge",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_04_treasure_hunt",
       "number": "04",
       "kind": "treasure_hunt",
-      "title": "Ito Region",
+      "title": "Takashiro Region",
       "points": "3 очка",
-      "conditionHtml": "Следуйте фото-подсказке в регионе Ito и найдите сундук. Награда: 100 000 CR.",
-      "howHtml": "По двум свежим гайдам сообщества: отправляйтесь на пляж в нижней центральной части региона Ito, к скалам Meoto Iwa напротив Legend Island. Сундук стоит рядом с деревянной лодкой; разбейте его, чтобы получить награду.",
+      "conditionHtml": "Найдите и разбейте сундук по фото-подсказке в Takashiro. Награда: 100 000 CR.",
+      "howHtml": "Ищите у поля высокой травы в восточной части Takashiro рядом с Okishinaimura Run: площадка отдыха у небольшого пруда.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-ito-region-horizon-meets-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Гайд GamesHedge от 8 октября</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-6-week-1-ito-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Независимая проверка Traxion от 8 октября</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-takashiro-region-horizon-meets-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge 15 October</a> · <a href=\"https://techwiser.com/forza-horizon-6-takashiro-region-treasure-hunt/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser 15 October</a>",
       "visual": {
-        "image": "activity_04_treasure_hunt.png",
-        "sourceImage": "user-source-1.png",
-        "orientation": "vertical",
-        "typeIconKey": "treasure-hunt",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
-      "id": "activity_05_championship",
+      "id": "activity_05_collectibles",
       "number": "05",
-      "kind": "championship",
-      "title": "Bee Happy",
-      "points": "5 очков",
-      "conditionHtml": "Чемпионат по Dirt Racing: Modern Rally, класс B 600. Маршруты: Kawazu Nanadaru Scramble, Cherry Field Trail и Sunflower Scramble. Награда: 1970 Dodge Coronet Super Bee.",
-      "howHtml": "Используйте любой Modern Rally класса B 600. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
-      "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
+      "kind": "collectibles",
+      "title": "Egging You On",
+      "points": "3 очка",
+      "conditionHtml": "Разбейте 20 Egg Sandwiches у Horizon Stadium по официальной Playlist. Награда: Forza Link «Nothin but net!». ",
+      "howHtml": "Гайды сообщества указывают другую локацию: магазин и Car Meet 7-Eleven в Nangan рядом с Konbini Dash. Расхождение с официальной Playlist пока не разрешено; точную локацию нужно проверить в игре.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-egging-you-on-collectibles-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge 15 October</a>",
       "visual": {
-        "image": "activity_05_championship_bee_happy.png",
-        "sourceImage": "user-source-2.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "solution": "preliminary",
+        "vehicleTune": "not_applicable",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual",
+        "solution"
+      ]
     },
     {
       "id": "activity_06_championship",
       "number": "06",
       "kind": "championship",
-      "title": "Ghost Hunter",
+      "title": "Coming In Hot",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Cross Country: Rally Monsters, класс A 700. Маршруты: Takashiro Cross Country, Oka Cross Country Circuit и Temple Cross Country. Награда: 1973 BMW Turbo 2002.",
-      "howHtml": "Используйте любой Rally Monsters класса A 700. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
-      "tuneHtml": "1984 Opel Manta 400 — A 700 · 483 621 253",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
+      "conditionHtml": "Dirt: Retro Hot Hatch, C 500. Маршруты: Oyashirazu Trail, Ito Trail, Ine Scramble. Награда: 1971 Plymouth Cuda 426 HEMI.",
+      "howHtml": "Выиграйте чемпионат, набрав больше всего очков по итогам трёх гонок.",
+      "tuneHtml": "1986 Honda Civic Si — C 500 · 177 752 892",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_06_championship_ghost_hunter.png",
-        "sourceImage": "user-source-2.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "championship-cross-country",
+        "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_07_championship",
       "number": "07",
       "kind": "championship",
-      "title": "Vetting the Competition",
+      "title": "Weekend Break",
       "points": "5 очков",
-      "conditionHtml": "Чемпионат Touge & Street: категория Track Life, класс S1 800. Маршруты: Norikura Descent, Hokubu Ascent и Kita Ine. Награда: 1970 Chevrolet Corvette ZR-1.",
-      "howHtml": "Выберите автомобиль Track Life класса S1 800. Выиграйте чемпионат из трёх гонок, набрав больше всего очков по итогам серии.",
-      "tuneHtml": "1991 Mazda #55 787B — S1 800 · 133 810 469",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread: условие победы</a>",
+      "conditionHtml": "Road: USA, B 600. Маршруты: Ito Sprint, Festival Sprint, Tateyama Kurobe Sprint. Награда: 2008 BMW Z4 M Coupé.",
+      "howHtml": "Выиграйте чемпионат, набрав больше всего очков по итогам трёх гонок.",
+      "tuneHtml": "2001 Acura Integra Type R — B 600 · 133 576 980",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_07_championship_vetting.png",
-        "sourceImage": "user-source-2.png",
-        "orientation": "horizontal",
-        "typeIconKey": "championship-street",
-        "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_08_time_attack",
-      "number": "08",
-      "kind": "time_attack",
-      "title": "Soni Time Attack",
-      "points": "3 очка",
-      "conditionHtml": "Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1 800. Награда: Wheelspin.",
-      "howHtml": "Нужно показать время не хуже 49 секунд; держите чистую траекторию на поворотах.",
-      "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread Series 6</a>",
-      "visual": {
-        "image": "activity_08_time_attack.png",
-        "sourceImage": "user-source-2.png",
-        "orientation": "horizontal",
-        "typeIconKey": "time-attack",
-        "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_09_danger_sign",
-      "number": "09",
-      "kind": "danger_sign",
-      "title": "Highway Jump",
-      "points": "2 очка",
-      "conditionHtml": "Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.",
-      "howHtml": "Разгонитесь по прямой и удерживайте направление на трамплине; ориентир — 260 м.",
-      "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread Series 6</a>",
-      "visual": {
-        "image": "activity_09_danger_sign.png",
-        "sourceImage": "user-source-2.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
-      "id": "activity_10_speed_trap",
-      "number": "10",
+      "id": "activity_08_championship",
+      "number": "08",
+      "kind": "championship",
+      "title": "Fully Charged",
+      "points": "5 очков",
+      "conditionHtml": "Touge & Street: Electric Vehicles, A 700. Маршруты: Sunflower Charge, Matsumi Climb, Shimanoyama Charge. Награда: 2017 Ford Focus RS.",
+      "howHtml": "Выиграйте чемпионат, набрав больше всего очков по итогам трёх гонок.",
+      "tuneHtml": "2022 Hyundai N Vision 74 — A 700 · 166 684 637",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_09_speed_trap",
+      "number": "09",
       "kind": "speed_trap",
       "title": "Konbini Dash",
       "points": "2 очка",
-      "conditionHtml": "На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.",
-      "howHtml": "Соберите скорость до камеры; цель — не менее 201,2 км/ч.",
-      "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread Series 6</a>",
+      "conditionHtml": "Speed Trap: не менее 94 mph (151,3 км/ч). Nissan, B 600. Награда: Wheelspin.",
+      "howHtml": "Наберите скорость до камеры.",
+      "tuneHtml": "1992 Nissan Skyline GT-R — B 600 · 161 020 665",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_10_speed_trap.png",
-        "sourceImage": "user-source-2.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "speed-trap",
+        "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_10_drift_zone",
+      "number": "10",
+      "kind": "drift_zone",
+      "title": "Shiro Switch",
+      "points": "2 очка",
+      "conditionHtml": "Drift Zone: наберите 61 750 очков. Nissan, B 600. Награда: Wheelspin.",
+      "howHtml": "Удерживайте занос в пределах зоны.",
+      "tuneHtml": "1992 Nissan Skyline GT-R — B 600 · 161 020 665",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "community",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_11_trial",
       "number": "11",
       "kind": "trial",
-      "title": "The Trial: Aim for the Top",
+      "title": "The Trial: Take It From the Top",
       "points": "10 очков",
-      "conditionHtml": "Командный Trial: Total Muscle, класс A 700. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.",
-      "howHtml": "Финишируйте выше соперников-Драйватаров и помогайте команде; важен командный итог.",
-      "tuneHtml": "2024 Chevrolet Camaro ZL1 — A · 100 986 561",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x0vf1q/fh6_summer_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread Series 6</a>",
+      "conditionHtml": "Командный Cross Country: Unlimited Offroad, A 700. Маршруты: Ruriko-ji Cross Country, Soni Highlands Cross Country, Shimanoyama Cross Country. Награда: 2020 Mercedes-Benz AMG Black Series.",
+      "howHtml": "Обгоняйте Drivatars и помогайте команде набрать больше очков.",
+      "tuneHtml": "2016 Jeep Trailcat — A 700 · 174 603 628",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_11_trial.png",
-        "sourceImage": "user-source-3.png",
-        "orientation": "vertical",
-        "typeIconKey": "trial",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_12_horizon_play",
       "number": "12",
       "kind": "horizon_play",
-      "title": "Smooth and Steady",
+      "title": "Mini Games",
       "points": "3 очка",
-      "conditionHtml": "Завершите Horizon Drift Championship. Награда: White Haori.",
-      "howHtml": "Выберите Horizon Drift Championship и завершите соревнование.",
+      "conditionHtml": "Завершите любой Horizon Stunt Party. Награда: Black Carbon Fibre Helmet.",
+      "howHtml": "Участвуйте в Horizon Stunt Party и завершите событие.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
-        "image": "activity_12_horizon_play.png",
-        "sourceImage": "user-source-3.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
         "sourceUrl": "",
-        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+        "sourceLabel": "Точная игровая плитка Autumn не получена: CDN недоступен; нужен полный неизменённый скриншот."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_13_monthly_rivals",
@@ -338,9 +361,9 @@
       "title": "Monthly Rivals — Daikoku Circuit",
       "points": "4 очка",
       "conditionHtml": "Поставьте чистый круг на Daikoku Circuit на <strong>2025 BMW M4 CS</strong>. Награда: Super Wheelspin.",
-      "howHtml": "Событие Series 6 сменило трассу на Daikoku Circuit, поэтому плитку Monthly Rivals Series 5 нельзя переносить. Достаточно одного чистого круга за Series; не врезайтесь, не пропускайте чекпоинты и не используйте rewind или Anna Autopilot.",
+      "howHtml": "Один чистый круг засчитывается на всю Series: избегайте столкновений, пропущенных контрольных точек, перемотки и Anna Autopilot.",
       "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Официальная Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x0s8dm/fh6_series_6_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Свежий гайд Series 6</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Autumn guide</a> · <a href=\"https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Information Thread</a>",
       "visual": {
         "image": "activity_13_monthly_rivals.png",
         "sourceImage": "user-source-3.png",
@@ -360,102 +383,187 @@
   ],
   "locales": {
     "en": {
-      "reportTitle": "Forza Horizon 6: Series 6 “Horizon Meets” — Summer",
-      "seasonDisplay": "Summer",
+      "reportTitle": "Forza Horizon 6: Series 6 “Horizon Meets” — Autumn",
+      "seasonDisplay": "Autumn",
       "activities": {
         "activity_01_weekly": {
-          "title": "Weekly Challenge: Turbocharged",
+          "title": "Weekly Challenge: In Focus",
           "points": "5 points",
-          "conditionHtml": "Complete four chapters in the <strong>1973 BMW Turbo 2002</strong>: own and drive it; earn 4 Speed Skills; complete 2 laps at Hokubu Time Attack Circuit; earn 6 stars at Speed Traps. Reward: 150,000 CR.",
-          "howHtml": "Complete chapters in order. Speed Skills are easiest on a fast road; Speed Trap stars accumulate across attempts. The car is available from Ghost Hunter or the Autoshow for 127,000 CR.",
-          "tuneHtml": "1973 BMW Turbo 2002 — tune code 136 527 514"
+          "conditionHtml": "In the <strong>2017 Ford Focus RS</strong>, in order: own and drive it; photograph it; earn 3 Speed Trap stars; earn a Great Skill Chain. Reward: 25,000 CR.",
+          "howHtml": "The car is a Fully Charged reward. Complete chapters in order; stars accumulate.",
+          "tuneHtml": "No tune required."
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
           "points": "7 × 1 point",
-          "conditionHtml": "<ol><li><strong>Oct 8:</strong> earn 5 Drift or E-Drift Skills.</li><li><strong>Oct 9:</strong> earn at least 1 star from Speed Traps.</li><li><strong>Oct 10:</strong> earn 3 Kangaroo Skills.</li><li><strong>Oct 11:</strong> send a Gift Drop to another player.</li><li><strong>Oct 12:</strong> redeem a Wheelspin or Super Wheelspin.</li><li><strong>Oct 13:</strong> drive 10 miles (16.1 km).</li><li><strong>Oct 14:</strong> bank one 15,000-point Skill Chain.</li></ol> Reward: 20,000 CR each.",
-          "howHtml": "Challenges unlock daily at 21:30 Krasnoyarsk time; each stays available for 7 days from its start. For Oct 14, finish and bank one 15,000-point chain. Daily is a text-only list without a tile image.",
+          "conditionHtml": "<ol><li><strong>Oct 15:</strong> complete a Street Race.</li><li><strong>Oct 16:</strong> earn at least 1 star from Danger Signs.</li><li><strong>Oct 17:</strong> complete a Cross Country Race.</li><li><strong>Oct 18:</strong> earn 3 Feed Me Skills by smashing vending machines.</li><li><strong>Oct 19:</strong> complete a Horizon Rush.</li><li><strong>Oct 20:</strong> earn a Drift Tap Skill.</li><li><strong>Oct 21:</strong> earn at least 1 star from Speed Zones.</li></ol> Reward: 5,000 CR per challenge.",
+          "howHtml": "Unlock at 21:30 Krasnoyarsk time and remain available for 7 days. Horizon Rush: Pier Pressure, Off Piste or Launch Control. For Drift Tap, gently tap a barrier with a corner of the drifting car without crashing.",
           "tuneHtml": "No tune required."
         },
         "activity_03_photo": {
-          "title": "#LightLunch",
+          "title": "#SliceOfLife",
           "points": "2 points",
-          "conditionHtml": "Photograph any Eclectic Domestic car outside the 7-Eleven store. Reward: 7-Eleven Uniform.",
-          "howHtml": "Find the 7-Eleven Evolving World icon on the map, drive to the storefront, and use an Eclectic Domestic car.",
+          "conditionHtml": "Photograph any Mazda at Jodogahama Beach. Reward: Relax emote.",
+          "howHtml": "Drive a Mazda to the Jodogahama Beach shoreline and take a photo.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
-          "title": "Ito Region",
+          "title": "Takashiro Region",
           "points": "3 points",
-          "conditionHtml": "Follow the Photo Clue in the Ito Region and find the treasure chest. Reward: 100,000 CR.",
-          "howHtml": "Two fresh community guides agree: head to the beach in the lower-middle part of Ito, by the Meoto Iwa rocks facing Legend Island. The chest sits beside a wooden boat; smash it to claim the reward.",
+          "conditionHtml": "Find and smash the photo-clue chest in Takashiro. Reward: 100,000 CR.",
+          "howHtml": "Look by the tall-grass field in east Takashiro near Okishinaimura Run, at a rest area beside a small pond.",
           "tuneHtml": "No tune required."
         },
-        "activity_05_championship": {
-          "title": "Bee Happy",
-          "points": "5 points",
-          "conditionHtml": "Dirt Racing: Modern Rally, B 600. Routes: Kawazu Nanadaru Scramble, Cherry Field Trail, Sunflower Scramble. Reward: 1970 Dodge Coronet Super Bee.",
-          "howHtml": "Use any Modern Rally car in B 600. Win the three-race championship by scoring the most points overall.",
-          "tuneHtml": "2011 Subaru WRX STI — B 600 · 158 111 961"
+        "activity_05_collectibles": {
+          "title": "Egging You On",
+          "points": "3 points",
+          "conditionHtml": "Smash 20 Egg Sandwiches at the Horizon Stadium according to the official Playlist. Reward: “Nothin but net!” Forza Link.",
+          "howHtml": "Community guides instead place them around the 7-Eleven store and Car Meet in Nangan near Konbini Dash. The discrepancy with the official Playlist remains unresolved; check the exact location in game.",
+          "tuneHtml": "No tune required."
         },
         "activity_06_championship": {
-          "title": "Ghost Hunter",
+          "title": "Coming In Hot",
           "points": "5 points",
-          "conditionHtml": "Cross Country: Rally Monsters, A 700. Routes: Takashiro Cross Country, Oka Cross Country Circuit, Temple Cross Country. Reward: 1973 BMW Turbo 2002.",
-          "howHtml": "Use any Rally Monsters car in A 700. Win the three-race championship by scoring the most points overall.",
-          "tuneHtml": "1984 Opel Manta 400 — A 700 · 483 621 253"
+          "conditionHtml": "Dirt: Retro Hot Hatch, C 500. Routes: Oyashirazu Trail, Ito Trail, Ine Scramble. Reward: 1971 Plymouth Cuda 426 HEMI.",
+          "howHtml": "Win the championship by scoring the most points across all three races.",
+          "tuneHtml": "1986 Honda Civic Si — C 500 · 177 752 892"
         },
         "activity_07_championship": {
-          "title": "Vetting the Competition",
+          "title": "Weekend Break",
           "points": "5 points",
-          "conditionHtml": "Touge & Street: Track Life, S1 800. Routes: Norikura Descent, Hokubu Ascent, Kita Ine. Reward: 1970 Chevrolet Corvette ZR-1.",
-          "howHtml": "Choose a Track Life car in S1 800. Win the three-race championship by scoring the most points overall.",
-          "tuneHtml": "1991 Mazda #55 787B — S1 800 · 133 810 469"
+          "conditionHtml": "Road: USA, B 600. Routes: Ito Sprint, Festival Sprint, Tateyama Kurobe Sprint. Reward: 2008 BMW Z4 M Coupé.",
+          "howHtml": "Win the championship by scoring the most points across all three races.",
+          "tuneHtml": "2001 Acura Integra Type R — B 600 · 133 576 980"
         },
-        "activity_08_time_attack": {
-          "title": "Soni Time Attack",
-          "points": "3 points",
-          "conditionHtml": "Finish Soni Time Attack in 00:49.000 or faster. Restriction: Porsche, S1 800. Reward: Wheelspin.",
-          "howHtml": "Set a time of 49 seconds or faster and keep a clean line through the corners.",
-          "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264"
+        "activity_08_championship": {
+          "title": "Fully Charged",
+          "points": "5 points",
+          "conditionHtml": "Touge & Street: Electric Vehicles, A 700. Routes: Sunflower Charge, Matsumi Climb, Shimanoyama Charge. Reward: 2017 Ford Focus RS.",
+          "howHtml": "Win the championship by scoring the most points across all three races.",
+          "tuneHtml": "2022 Hyundai N Vision 74 — A 700 · 166 684 637"
         },
-        "activity_09_danger_sign": {
-          "title": "Highway Jump",
-          "points": "2 points",
-          "conditionHtml": "Jump at least 853 ft (260 m) at Highway Jump. Restriction: Porsche, S1 800. Reward: Wheelspin.",
-          "howHtml": "Build speed on a straight approach and hold your line over the ramp; target 260 m.",
-          "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264"
-        },
-        "activity_10_speed_trap": {
+        "activity_09_speed_trap": {
           "title": "Konbini Dash",
           "points": "2 points",
-          "conditionHtml": "Reach 125 mph (201.2 km/h) at Konbini Dash Speed Trap. Restriction: Porsche, S1 800. Reward: Wheelspin.",
-          "howHtml": "Build speed before the camera; target at least 201.2 km/h.",
-          "tuneHtml": "2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264"
+          "conditionHtml": "Speed Trap: at least 94 mph (151.3 km/h). Nissan, B 600. Reward: Wheelspin.",
+          "howHtml": "Build speed before the camera.",
+          "tuneHtml": "1992 Nissan Skyline GT-R — B 600 · 161 020 665"
+        },
+        "activity_10_drift_zone": {
+          "title": "Shiro Switch",
+          "points": "2 points",
+          "conditionHtml": "Drift Zone: score 61,750 points. Nissan, B 600. Reward: Wheelspin.",
+          "howHtml": "Maintain a drift within the zone.",
+          "tuneHtml": "1992 Nissan Skyline GT-R — B 600 · 161 020 665"
         },
         "activity_11_trial": {
-          "title": "The Trial: Aim for the Top",
+          "title": "The Trial: Take It From the Top",
           "points": "10 points",
-          "conditionHtml": "Team Trial: Total Muscle, A 700. Routes: Soni Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2017 Volkswagen #34 Andretti Rallycross Beetle.",
-          "howHtml": "Finish ahead of Drivatars and help the team; the team result is what matters.",
-          "tuneHtml": "2024 Chevrolet Camaro ZL1 — A · 100 986 561"
+          "conditionHtml": "Team Cross Country: Unlimited Offroad, A 700. Routes: Ruriko-ji Cross Country, Soni Highlands Cross Country, Shimanoyama Cross Country. Reward: 2020 Mercedes-Benz AMG Black Series.",
+          "howHtml": "Pass Drivatars and help your team score more points.",
+          "tuneHtml": "2016 Jeep Trailcat — A 700 · 174 603 628"
         },
         "activity_12_horizon_play": {
-          "title": "Smooth and Steady",
+          "title": "Mini Games",
           "points": "3 points",
-          "conditionHtml": "Complete a Horizon Drift Championship. Reward: White Haori.",
-          "howHtml": "Select a Horizon Drift Championship and complete the event.",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Black Carbon Fibre Helmet.",
+          "howHtml": "Join a Horizon Stunt Party and finish the event.",
           "tuneHtml": "No tune required."
         },
         "activity_13_monthly_rivals": {
           "title": "Monthly Rivals — Daikoku Circuit",
           "points": "4 points",
           "conditionHtml": "Set a clean lap on Daikoku Circuit in the <strong>2025 BMW M4 CS</strong>. Reward: Super Wheelspin.",
-          "howHtml": "Series 6 changed the route to Daikoku Circuit, so the Series 5 Shimanoyama tile cannot be reused. One clean lap per Series is enough; avoid collisions, missed checkpoints, rewind, and Anna Autopilot.",
+          "howHtml": "One clean lap counts for the whole Series: avoid collisions, missed checkpoints, rewind and Anna Autopilot.",
           "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; no tune required."
         }
       }
     }
   },
-  "openItems": []
+  "openItems": [
+    {
+      "activityId": "activity_01_weekly",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_03_photo",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_collectibles",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_championship",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_championship",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_speed_trap",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_drift_zone",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_trial",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_12_horizon_play",
+      "field": "visual",
+      "reason": "Нет доступной точной игровой плитки Autumn; летняя плитка не используется.",
+      "nextCheck": "Нужен оригинальный неизменённый игровой скриншот с полной плиткой этой активности; повторить текущие ForzaLabs/Fandom.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_collectibles",
+      "field": "solution",
+      "reason": "Официальная Playlist указывает Horizon Stadium, свежие GamesHedge и Reddit — 7-Eleven Nangan. Местоположение остаётся спорным.",
+      "nextCheck": "Проверить точное условие и карту в игре; нужен оригинальный кадр текущей активности.",
+      "status": "conflict"
+    }
+  ]
 }

@@ -15,7 +15,9 @@ $Validator = Join-Path $PSScriptRoot 'validate_season.ps1'
 $Renderer = Join-Path $PSScriptRoot 'render_season_markdown.ps1'
 
 if (-not (Test-Path -LiteralPath $InputPath)) { throw "New-season input was not found: $InputPath" }
-$validationOutput = & $Validator -StatePath $InputPath -SkipOutputs
+# Rollover prepares local editorial data; it never delivers notifications.
+# The publisher still runs full validation before building/publishing.
+$validationOutput = & $Validator -StatePath $InputPath -SkipOutputs -ContentOnly
 $validationSucceeded = $?
 $validationOutput | Write-Output
 if (-not $validationSucceeded) { throw 'New-season input failed validation' }

@@ -3,61 +3,59 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 6 'Horizon Meets' — Summer[/h1]
-[b]Ends:[/b] 15.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 13
+[h1]Series 6 'Horizon Meets' — Autumn[/h1]
+[b]Ends:[/b] 22.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 13
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge: Turbocharged · 5 points[/h2]
-Complete four chapters in the 1973 BMW Turbo 2002: own and drive it; earn 4 Speed Skills; complete 2 laps at Hokubu Time Attack Circuit; earn 6 stars at Speed Traps. Reward: 150,000 CR.
-[b]Car:[/b] 1973 BMW Turbo 2002 — tune code 136 527 514
+[h2]01. Weekly Challenge: In Focus · 5 points[/h2]
+In the 2017 Ford Focus RS, in order: own and drive it; photograph it; earn 3 Speed Trap stars; earn a Great Skill Chain. Reward: 25,000 CR.
 
 [h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
-• Oct 8: earn 5 Drift or E-Drift Skills.
-• Oct 9: earn at least 1 star from Speed Traps.
-• Oct 10: earn 3 Kangaroo Skills.
-• Oct 11: send a Gift Drop to another player.
-• Oct 12: redeem a Wheelspin or Super Wheelspin.
-• Oct 13: drive 10 miles (16.1 km).
-• Oct 14: bank one 15,000-point Skill Chain.
- Reward: 20,000 CR each.
+• Oct 15: complete a Street Race.
+• Oct 16: earn at least 1 star from Danger Signs.
+• Oct 17: complete a Cross Country Race.
+• Oct 18: earn 3 Feed Me Skills by smashing vending machines.
+• Oct 19: complete a Horizon Rush.
+• Oct 20: earn a Drift Tap Skill.
+• Oct 21: earn at least 1 star from Speed Zones.
+ Reward: 5,000 CR per challenge.
 
-[h2]03. #LightLunch · 2 points[/h2]
-Photograph any Eclectic Domestic car outside the 7-Eleven store. Reward: 7-Eleven Uniform.
+[h2]03. #SliceOfLife · 2 points[/h2]
+Photograph any Mazda at Jodogahama Beach. Reward: Relax emote.
 
-[h2]04. Ito Region · 3 points[/h2]
-Follow the Photo Clue in the Ito Region and find the treasure chest. Reward: 100,000 CR.
+[h2]04. Takashiro Region · 3 points[/h2]
+Find and smash the photo-clue chest in Takashiro. Reward: 100,000 CR.
 
-[h2]05. Bee Happy · 5 points[/h2]
-Dirt Racing: Modern Rally, B 600. Routes: Kawazu Nanadaru Scramble, Cherry Field Trail, Sunflower Scramble. Reward: 1970 Dodge Coronet Super Bee.
-[b]Car:[/b] 2011 Subaru WRX STI — B 600 · 158 111 961
+[h2]05. Egging You On · 3 points[/h2]
+Smash 20 Egg Sandwiches at the Horizon Stadium according to the official Playlist. Reward: “Nothin but net!” Forza Link.
 
-[h2]06. Ghost Hunter · 5 points[/h2]
-Cross Country: Rally Monsters, A 700. Routes: Takashiro Cross Country, Oka Cross Country Circuit, Temple Cross Country. Reward: 1973 BMW Turbo 2002.
-[b]Car:[/b] 1984 Opel Manta 400 — A 700 · 483 621 253
+[h2]06. Coming In Hot · 5 points[/h2]
+Dirt: Retro Hot Hatch, C 500. Routes: Oyashirazu Trail, Ito Trail, Ine Scramble. Reward: 1971 Plymouth Cuda 426 HEMI.
+[b]Car:[/b] 1986 Honda Civic Si — C 500 · 177 752 892
 
-[h2]07. Vetting the Competition · 5 points[/h2]
-Touge & Street: Track Life, S1 800. Routes: Norikura Descent, Hokubu Ascent, Kita Ine. Reward: 1970 Chevrolet Corvette ZR-1.
-[b]Car:[/b] 1991 Mazda #55 787B — S1 800 · 133 810 469
+[h2]07. Weekend Break · 5 points[/h2]
+Road: USA, B 600. Routes: Ito Sprint, Festival Sprint, Tateyama Kurobe Sprint. Reward: 2008 BMW Z4 M Coupé.
+[b]Car:[/b] 2001 Acura Integra Type R — B 600 · 133 576 980
 
-[h2]08. Soni Time Attack · 3 points[/h2]
-Finish Soni Time Attack in 00:49.000 or faster. Restriction: Porsche, S1 800. Reward: Wheelspin.
-[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]08. Fully Charged · 5 points[/h2]
+Touge & Street: Electric Vehicles, A 700. Routes: Sunflower Charge, Matsumi Climb, Shimanoyama Charge. Reward: 2017 Ford Focus RS.
+[b]Car:[/b] 2022 Hyundai N Vision 74 — A 700 · 166 684 637
 
-[h2]09. Highway Jump · 2 points[/h2]
-Jump at least 853 ft (260 m) at Highway Jump. Restriction: Porsche, S1 800. Reward: Wheelspin.
-[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]09. Konbini Dash · 2 points[/h2]
+Speed Trap: at least 94 mph (151.3 km/h). Nissan, B 600. Reward: Wheelspin.
+[b]Car:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
 
-[h2]10. Konbini Dash · 2 points[/h2]
-Reach 125 mph (201.2 km/h) at Konbini Dash Speed Trap. Restriction: Porsche, S1 800. Reward: Wheelspin.
-[b]Car:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]10. Shiro Switch · 2 points[/h2]
+Drift Zone: score 61,750 points. Nissan, B 600. Reward: Wheelspin.
+[b]Car:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
 
-[h2]11. The Trial: Aim for the Top · 10 points[/h2]
-Team Trial: Total Muscle, A 700. Routes: Soni Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2017 Volkswagen #34 Andretti Rallycross Beetle.
-[b]Car:[/b] 2024 Chevrolet Camaro ZL1 — A · 100 986 561
+[h2]11. The Trial: Take It From the Top · 10 points[/h2]
+Team Cross Country: Unlimited Offroad, A 700. Routes: Ruriko-ji Cross Country, Soni Highlands Cross Country, Shimanoyama Cross Country. Reward: 2020 Mercedes-Benz AMG Black Series.
+[b]Car:[/b] 2016 Jeep Trailcat — A 700 · 174 603 628
 
-[h2]12. Smooth and Steady · 3 points[/h2]
-Complete a Horizon Drift Championship. Reward: White Haori.
+[h2]12. Mini Games · 3 points[/h2]
+Complete any Horizon Stunt Party. Reward: Black Carbon Fibre Helmet.
 
 [h2]13. Monthly Rivals — Daikoku Circuit · 4 points[/h2]
 Set a clean lap on Daikoku Circuit in the 2025 BMW M4 CS. Reward: Super Wheelspin.

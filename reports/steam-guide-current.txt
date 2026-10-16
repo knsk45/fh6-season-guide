@@ -3,64 +3,64 @@
 
 [i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]
 
-[h1]Series 6 'Horizon Meets' — Лето[/h1]
-[b]До:[/b] 15.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 13
+[h1]Series 6 'Horizon Meets' — Осень[/h1]
+[b]До:[/b] 22.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 13
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Еженедельное испытание: Turbocharged · 5 очков[/h2]
-Выполните четыре главы на 1973 BMW Turbo 2002: владейте автомобилем и прокатитесь на нём; заработайте 4 Speed Skills; проедьте 2 круга на Hokubu Time Attack Circuit; наберите 6 звёзд на Speed Traps. Награда: 150 000 CR.
-[b]Авто:[/b] 1973 BMW Turbo 2002 — код тюнинга 136 527 514
+[h2]01. Еженедельное испытание: In Focus · 5 очков[/h2]
+На 2017 Ford Focus RS по порядку: владейте машиной и прокатитесь; сфотографируйте её; получите 3 звезды на Speed Traps; выполните Great Skill Chain. Награда: 25 000 CR.
+[b]Авто:[/b] Тюнинг не требуется.
 
 [h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
-• 08.10: выполните 5 Drift или E-Drift Skills.
-• 09.10: получите не менее 1 звезды на Speed Traps.
-• 10.10: выполните 3 Kangaroo Skills.
-• 11.10: отправьте Gift Drop другому игроку.
-• 12.10: активируйте Wheelspin или Super Wheelspin.
-• 13.10: проедьте 10 миль (16,1 км).
-• 14.10: зачтите одну цепочку навыков на 15 000 очков.
- Награда: 20 000 CR за каждое задание.
+• 15.10: завершите Street Race.
+• 16.10: получите не менее 1 звезды на Danger Signs.
+• 17.10: завершите Cross Country Race.
+• 18.10: выполните 3 Feed Me Skills, разбивая торговые автоматы.
+• 19.10: завершите Horizon Rush.
+• 20.10: выполните Drift Tap Skill.
+• 21.10: получите не менее 1 звезды на Speed Zones.
+ Награда: 5 000 CR за каждое задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. #LightLunch · 2 очка[/h2]
-Сфотографируйте любой автомобиль категории Eclectic Domestic у магазина 7-Eleven. Награда: форма 7-Eleven.
+[h2]03. #SliceOfLife · 2 очка[/h2]
+Сфотографируйте любую Mazda на Jodogahama Beach. Награда: эмоция Relax.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. Ito Region · 3 очка[/h2]
-Следуйте фото-подсказке в регионе Ito и найдите сундук. Награда: 100 000 CR.
+[h2]04. Takashiro Region · 3 очка[/h2]
+Найдите и разбейте сундук по фото-подсказке в Takashiro. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. Bee Happy · 5 очков[/h2]
-Чемпионат по Dirt Racing: Modern Rally, класс B 600. Маршруты: Kawazu Nanadaru Scramble, Cherry Field Trail и Sunflower Scramble. Награда: 1970 Dodge Coronet Super Bee.
-[b]Авто:[/b] 2011 Subaru WRX STI — B 600 · 158 111 961
+[h2]05. Egging You On · 3 очка[/h2]
+Разбейте 20 Egg Sandwiches у Horizon Stadium по официальной Playlist. Награда: Forza Link «Nothin but net!».
+[b]Авто:[/b] Тюнинг не требуется.
 
-[h2]06. Ghost Hunter · 5 очков[/h2]
-Чемпионат Cross Country: Rally Monsters, класс A 700. Маршруты: Takashiro Cross Country, Oka Cross Country Circuit и Temple Cross Country. Награда: 1973 BMW Turbo 2002.
-[b]Авто:[/b] 1984 Opel Manta 400 — A 700 · 483 621 253
+[h2]06. Coming In Hot · 5 очков[/h2]
+Dirt: Retro Hot Hatch, C 500. Маршруты: Oyashirazu Trail, Ito Trail, Ine Scramble. Награда: 1971 Plymouth Cuda 426 HEMI.
+[b]Авто:[/b] 1986 Honda Civic Si — C 500 · 177 752 892
 
-[h2]07. Vetting the Competition · 5 очков[/h2]
-Чемпионат Touge & Street: категория Track Life, класс S1 800. Маршруты: Norikura Descent, Hokubu Ascent и Kita Ine. Награда: 1970 Chevrolet Corvette ZR-1.
-[b]Авто:[/b] 1991 Mazda #55 787B — S1 800 · 133 810 469
+[h2]07. Weekend Break · 5 очков[/h2]
+Road: USA, B 600. Маршруты: Ito Sprint, Festival Sprint, Tateyama Kurobe Sprint. Награда: 2008 BMW Z4 M Coupé.
+[b]Авто:[/b] 2001 Acura Integra Type R — B 600 · 133 576 980
 
-[h2]08. Soni Time Attack · 3 очка[/h2]
-Завершите Soni Time Attack за 00:49.000 или быстрее. Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
-[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]08. Fully Charged · 5 очков[/h2]
+Touge & Street: Electric Vehicles, A 700. Маршруты: Sunflower Charge, Matsumi Climb, Shimanoyama Charge. Награда: 2017 Ford Focus RS.
+[b]Авто:[/b] 2022 Hyundai N Vision 74 — A 700 · 166 684 637
 
-[h2]09. Highway Jump · 2 очка[/h2]
-Преодолейте на Danger Sign Highway Jump не менее 853 ft (260 м). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
-[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]09. Konbini Dash · 2 очка[/h2]
+Speed Trap: не менее 94 mph (151,3 км/ч). Nissan, B 600. Награда: Wheelspin.
+[b]Авто:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
 
-[h2]10. Konbini Dash · 2 очка[/h2]
-На Speed Trap Konbini Dash достигните 125 mph (201,2 км/ч). Ограничение: Porsche, класс S1 800. Награда: Wheelspin.
-[b]Авто:[/b] 2005 Porsche Cayman GT3 WTAC — S1 · 838 051 264
+[h2]10. Shiro Switch · 2 очка[/h2]
+Drift Zone: наберите 61 750 очков. Nissan, B 600. Награда: Wheelspin.
+[b]Авто:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
 
-[h2]11. The Trial: Aim for the Top · 10 очков[/h2]
-Командный Trial: Total Muscle, класс A 700. Маршруты: Soni Circuit, Hokubu Circuit и Shikisai Sprint. Награда: 2017 Volkswagen #34 Andretti Rallycross Beetle.
-[b]Авто:[/b] 2024 Chevrolet Camaro ZL1 — A · 100 986 561
+[h2]11. The Trial: Take It From the Top · 10 очков[/h2]
+Командный Cross Country: Unlimited Offroad, A 700. Маршруты: Ruriko-ji Cross Country, Soni Highlands Cross Country, Shimanoyama Cross Country. Награда: 2020 Mercedes-Benz AMG Black Series.
+[b]Авто:[/b] 2016 Jeep Trailcat — A 700 · 174 603 628
 
-[h2]12. Smooth and Steady · 3 очка[/h2]
-Завершите Horizon Drift Championship. Награда: White Haori.
+[h2]12. Mini Games · 3 очка[/h2]
+Завершите любой Horizon Stunt Party. Награда: Black Carbon Fibre Helmet.
 [b]Авто:[/b] Тюнинг не требуется.
 
 [h2]13. Monthly Rivals — Daikoku Circuit · 4 очка[/h2]
