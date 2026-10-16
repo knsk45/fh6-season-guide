@@ -2,6 +2,9 @@
 param(
     [string]$StatePath,
     [switch]$SkipOutputs,
+    # Editorial workspaces validate data without receiving publisher credentials.
+    # Publication callers use the default full operational validation.
+    [switch]$ContentOnly,
     [switch]$AsJson
 )
 
@@ -146,7 +149,7 @@ if ($project) {
         $notificationConfigPath = Get-FullProjectPath ([string]$notifications.localConfigPath)
         $notificationRunsRoot = Get-FullProjectPath 'automation/runs'
         if (-not $notificationConfigPath.StartsWith($notificationRunsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError 'project.notifications.localConfigPath must stay under ignored automation/runs/' }
-        elseif (-not (Test-Path -LiteralPath $notificationConfigPath)) { Add-ValidationError 'Home Assistant notification local config is missing' }
+        elseif (-not $ContentOnly -and -not (Test-Path -LiteralPath $notificationConfigPath)) { Add-ValidationError 'Home Assistant notification local config is missing' }
     }
     foreach ($messageName in @('updateRequired','upToDate','checkBlocked')) {
         foreach ($fieldName in @('title','message')) {

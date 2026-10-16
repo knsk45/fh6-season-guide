@@ -15,6 +15,9 @@ refresh lastContentUpdate. Keep localized English synchronized with verified fac
 If official rollover is confirmed prepare new-season-input.json and run the existing
 start_new_season.ps1; preserve all historical seasons/state, monthly bytes and icons.
 Complete that rollover in this workspace before handing off. If the existing
+rollover script validates content without publisher configuration, that is expected:
+do not copy or create Home Assistant credentials/configuration in this workspace.
+The supervisor performs full operational validation before publication. If the existing
 script rejects the proposed input, inspect its concrete validation error and fix
 only evidence-backed input fields. Do not stop at a draft new-season-input.json.
 Missing weekly tiles, explicitly recorded as missing, do not prevent a truthful
