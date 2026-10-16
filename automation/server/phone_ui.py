@@ -11,6 +11,7 @@ import socket
 import subprocess
 import time
 import uuid
+import secrets
 import sys
 from urllib.parse import parse_qs, urlsplit
 
@@ -18,9 +19,12 @@ sys.path.insert(0,str(Path(__file__).parent))
 import phone_tasks
 import phone_view
 import steam_consent
+import refresh_receipts
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
+CSRF_TOKEN=secrets.token_urlsafe(32)
+PUBLIC_ORIGIN='https://fh6.knsk45.crazedns.ru'
 MAX_UPLOAD=20*1024*1024
 FIRST_LOGIN=Path('/etc/fh6/phone-first-login.json')
 PASSWORD_SOCKET='/run/fh6-phone/password.sock'
@@ -95,16 +99,18 @@ def panel_data():
             started=datetime.fromisoformat(active.get('startedAt','')).timestamp()
         except (ValueError,TypeError):started=0
         queued=request.stat().st_mtime>started and time.time()-request.stat().st_mtime<60
+    published=load(STORE/'steam-status.json')
+    steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
-                texts=texts,sha=sha,approval=approval,queued=queued,consent=steam_consent.state(STORE))
+                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_receipts.snapshot(ROOT,STORE),consent=steam_consent.state(STORE),steam_publication=steam_publication)
 
 def panel_signature(data):
     return dict(runId=data['active'].get('runId'),status=data['active'].get('status'),
                 steps={k:(v.get('status') if isinstance(v,dict) else v) for k,v in data['active'].get('steps',{}).items()},updated=data['state'].get('lastContentUpdate'),
                 notification=data['active'].get('notification'),receipt=data['active'].get('haReceipt'),
                 auth=data['auth'],tasks=[[t['id'],t.get('status')] for t in data['tasks']],
-                recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'])
+                refresh_requests=data.get('refresh_requests',[]),recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'))
 
 class UI(BaseHTTPRequestHandler):
     def log_message(self,*args): pass  # Do not log credentials/query contents.
@@ -152,9 +158,16 @@ class UI(BaseHTTPRequestHandler):
         if data['auth']['codeReady']:
             try:login_code=(STORE/'login/device.txt').read_text(encoding='utf-8',errors='replace')
             except OSError:pass
-        self.respond(200,phone_view.render(**data,login_code=login_code,signature=panel_signature(data)))
+        body=phone_view.render(**data,login_code=login_code,signature=panel_signature(data))
+        body=re.sub(r'(<form\b[^>]*>)',lambda m:m.group(1)+'<input type="hidden" name="_csrf" value="'+CSRF_TOKEN+'">',body)
+        body=body.replace("fetch('/upload',", "fetch('/upload?_csrf="+CSRF_TOKEN+"',")
+        self.respond(200,body)
+    def is_ajax(self):
+        # Query fallback survives proxies that remove custom request headers.
+        # This selects response format only; it never authorizes a request.
+        return self.headers.get('X-FH6-UI')=='1' or parse_qs(urlsplit(self.path).query).get('_ui')==['1']
     def action_result(self,code,message,anchor):
-        if self.headers.get('X-FH6-UI')=='1':
+        if self.is_ajax():
             return self.respond(code,json.dumps(dict(message=message,anchor=anchor),ensure_ascii=False),'application/json; charset=utf-8')
         return self.respond(code,html.escape(message)+' <a href="/#'+anchor+'">Вернуться в панель</a>')
     def redirect_login(self):
@@ -168,8 +181,7 @@ class UI(BaseHTTPRequestHandler):
     def do_POST(self):
         # Same-origin only; Basic auth is checked by nginx before forwarding.
         origin=self.headers.get('Origin')
-        if origin != 'https://'+self.headers.get('Host',''):
-            return self.respond(403,'Same-origin request required')
+        same_origin=origin == 'https://'+self.headers.get('Host','')
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
@@ -185,6 +197,12 @@ class UI(BaseHTTPRequestHandler):
         if path!='/upload' and size>(24000 if path=='/task' else 4096):
             return self.respond(413,'Форма слишком велика.')
         data=self.rfile.read(size)
+        # KeenDNS may replace Host and omit Origin. Only an unpredictable token
+        # from the authenticated, no-store panel may authorize this fallback.
+        if not same_origin:
+            tokens=parse_qs(urlsplit(self.path).query).get('_csrf',[]) if path=='/upload' else parse_qs(data.decode('utf-8',errors='replace')).get('_csrf',[])
+            if path=='/setup' or origin not in (None,'null',PUBLIC_ORIGIN) or len(tokens)!=1 or not re.fullmatch(r'[A-Za-z0-9_-]{43}',tokens[0]) or not hmac.compare_digest(tokens[0],CSRF_TOKEN):
+                return self.respond(403,json.dumps(dict(message='HTTP 403: защитный токен отсутствует или устарел. Обновите страницу панели.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
         try:
             if path=='/consent':
                 fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
@@ -238,8 +256,14 @@ class UI(BaseHTTPRequestHandler):
                 request=STORE/'refresh-request'
                 if request.exists() and time.time()-request.stat().st_mtime<60:
                     return self.action_result(409,'Запрос уже отправлен. Дождитесь результата.','overview')
-                request.write_text(str(time.time()),encoding='ascii')
-                return self.action_result(200,'Проверка сезона поставлена в очередь. Статус появится в обзоре.','overview')
+                if load(ROOT/'automation/runs/refresh/active.json').get('status') in {'RUNNING','AWAITING_DELIVERY'}:
+                    return self.action_result(409,'Проверка уже выполняется. Дождитесь результата в обзоре.','overview')
+                receipt=refresh_receipts.accept(STORE)
+                try:request.write_text(str(time.time()),encoding='ascii')
+                except OSError:
+                    refresh_receipts.failed(STORE,receipt)
+                    return self.action_result(500,'Не удалось поставить запрос в очередь. Повторите после проверки службы.','overview')
+                return self.action_result(200,'Запрос принят. Ход проверки и итог появятся под кнопкой.','overview')
             self.respond(404,'Not found')
         except ValueError as exc:
             if path=='/setup' and not str(exc).startswith(('Пароли','Пароль не может','Введите пароль.','Не удалось подготовить')):

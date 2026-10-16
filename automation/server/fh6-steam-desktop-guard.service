@@ -1,0 +1,9 @@
+[Unit]
+Description=Protect dedicated FH6 Steam browser ports
+Before=fh6-steam-desktop.service
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/lib/fh6-browser/steam_desktop_guard.py
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

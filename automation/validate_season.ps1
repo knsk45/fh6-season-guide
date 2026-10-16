@@ -1,12 +1,18 @@
 ﻿[CmdletBinding()]
 param(
     [string]$StatePath,
+    # Read candidate season images before promotion; trusted project/config stay here.
+    [string]$SeasonAssetsBasePath,
     [switch]$SkipOutputs,
+    # Editorial workspaces validate data without receiving publisher credentials.
+    # Publication callers use the default full operational validation.
+    [switch]$ContentOnly,
     [switch]$AsJson
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if ($SeasonAssetsBasePath -and -not $SkipOutputs) { throw 'SeasonAssetsBasePath requires SkipOutputs' }
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 . (Join-Path $PSScriptRoot 'json_compat.ps1')
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
@@ -146,7 +152,7 @@ if ($project) {
         $notificationConfigPath = Get-FullProjectPath ([string]$notifications.localConfigPath)
         $notificationRunsRoot = Get-FullProjectPath 'automation/runs'
         if (-not $notificationConfigPath.StartsWith($notificationRunsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError 'project.notifications.localConfigPath must stay under ignored automation/runs/' }
-        elseif (-not (Test-Path -LiteralPath $notificationConfigPath)) { Add-ValidationError 'Home Assistant notification local config is missing' }
+        elseif (-not $ContentOnly -and -not (Test-Path -LiteralPath $notificationConfigPath)) { Add-ValidationError 'Home Assistant notification local config is missing' }
     }
     foreach ($messageName in @('updateRequired','upToDate','checkBlocked')) {
         foreach ($fieldName in @('title','message')) {
@@ -198,6 +204,9 @@ if ($state) {
     $assetRoot = Get-FullProjectPath $season.assetsDirectory
     $reportsAssetsRoot = Get-FullProjectPath 'reports/assets'
     if (-not $assetRoot.StartsWith($reportsAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError 'assetsDirectory must stay under reports/assets/' }
+    if ($SeasonAssetsBasePath) {
+        $assetRoot = [IO.Path]::GetFullPath((Join-Path $SeasonAssetsBasePath $season.assetsDirectory))
+    }
 
     $expectedCount = [int]$season.expectedCardCount
     $piPattern = '(?<![A-Za-z0-9])(?:S1|S2|[DCBARX])\s*[0-9]{3}(?![0-9])'
