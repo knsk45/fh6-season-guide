@@ -40,7 +40,9 @@ async def main():
                         await page.goto('http://127.0.0.1:'+str(server.server_port))
                         assert not await page.evaluate('document.documentElement.scrollWidth>innerWidth')
                         assert 'SECRET_FIXTURE' not in await page.content()
-                        button=page.get_by_role('button',name='Скопировать диагностику')
+                        # Accessible name changes after copying; keep a stable
+                        # locator while verifying the success label and clipboard.
+                        button=page.locator('[data-copy^="diagnostic-"]')
                         await button.click();await expect(button).to_have_text('✓ Скопировано')
                         copied=await page.evaluate('navigator.clipboard.readText()')
                         assert run_id in copied and 'BRANCH_DIVERGED' in copied and 'SECRET_FIXTURE' not in copied
