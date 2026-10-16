@@ -36,10 +36,10 @@ document.querySelectorAll('.action-form').forEach(form=>form.addEventListener('s
 const consent=document.querySelector('#steam-consent');if(consent){const form=consent.closest('form');form.querySelector('button').hidden=true;consent.addEventListener('change',()=>form.requestSubmit());}
 const saved=sessionStorage.getItem('fh6-notice');if(saved){announce(saved);sessionStorage.removeItem('fh6-notice');}
 document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
- const source=document.getElementById(button.dataset.copy),message=button.closest('.steam-block').querySelector('.action-message');button.disabled=true;
- try{const text=source.textContent;if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(text);else{const box=document.createElement('textarea');box.value=text;document.body.append(box);box.select();try{if(!document.execCommand('copy'))throw Error();}finally{box.remove();}}button.textContent='✓ Скопировано';message.classList.remove('error');message.textContent='Весь текст скопирован. Можно вставить в редактор Steam.';announce(message.textContent);}
+ const source=document.getElementById(button.dataset.copy),message=button.closest('.steam-block').querySelector('.action-message'),original=button.textContent;button.disabled=true;
+ try{const text=source.textContent;if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(text);else{const box=document.createElement('textarea');box.value=text;document.body.append(box);box.select();try{if(!document.execCommand('copy'))throw Error();}finally{box.remove();}}button.textContent='✓ Скопировано';message.classList.remove('error');message.textContent=button.dataset.copyMessage||'Весь текст скопирован. Можно вставить в редактор Steam.';announce(message.textContent);}
  catch{source.closest('details').open=true;message.textContent='Браузер не разрешил копирование. Выделите текст в раскрытом блоке и скопируйте вручную.';message.classList.add('error');button.textContent='Повторить копирование';}
- finally{setTimeout(()=>{button.disabled=false;button.textContent='Скопировать текст';},2500);}
+ finally{setTimeout(()=>{button.disabled=false;button.textContent=original;},2500);}
 }));
 const screens=document.querySelector('#screens'),uploadButton=document.querySelector('#upload-button'),uploadMessage=document.querySelector('#message');
 screens.addEventListener('change',()=>{uploadButton.disabled=!screens.files.length;uploadMessage.textContent=screens.files.length?'Выбрано файлов: '+screens.files.length:'';});
@@ -60,9 +60,21 @@ def refresh_history(rows,active):
         text='<div class="task">'+badge(label,tone)
         for key,label in [('acceptedAt','Запрос принят'),('startedAt','Начало проверки'),('finishedAt','Завершение')]:
             if row.get(key):text+='<p class="muted">'+label+': '+date(row[key])+'</p>'
+        stage_text='';passed=0;total=0
         for key,value in row.get('steps',{}).items():
             if key in stages and value in {'passed','running','failed'}:
-                text+='<p>'+esc(stages[key])+': '+{'passed':'✓ Проверено','running':'Выполняется','failed':'Ошибка — результат не подтверждён'}[value]+'</p>'
+                total+=1;passed+=value=='passed'
+                if value=='failed':text+='<p class="action-message error">'+esc(stages[key])+': ошибка.</p>'
+                stage_text+='<p>'+esc(stages[key])+': '+{'passed':'✓ Проверено','running':'Выполняется','failed':'Ошибка — результат не подтверждён'}[value]+'</p>'
+        if total:text+='<details><summary>Этапы: '+str(passed)+' из '+str(total)+' пройдено</summary>'+stage_text+'</details>'
+        if row.get('diagnostic'):
+            identity='diagnostic-'+str(row.get('id') or row.get('runId'))
+            text+='<div class="steam-block"><button class="secondary" type="button" data-copy="'+esc(identity)+'" data-copy-message="Диагностика скопирована. Вставьте её в чат.">Скопировать диагностику</button><details><summary>Диагностический отчёт</summary><pre class="steam-text" id="'+esc(identity)+'">'+esc(row['diagnostic'])+'</pre></details><p class="action-message" role="status"></p></div>'
+            states={'QUEUED':'Разбор в очереди','RUNNING':'Разбирает ошибку','FINISHED':'Ответ готов','FAILED':'Разбор завершился ошибкой','TIMED_OUT':'Истёк лимит разбора','NEEDS_LOGIN':'Требуется вход','INTERRUPTED':'Разбор прерван','BUSY':'Занят другой задачей','DAILY_LIMIT':'Достигнут дневной лимит авторазбора'}
+            analysis=row.get('analysisStatus')
+            if analysis in states:text+='<p>Codex: '+esc(states[analysis])+'. <a href="#tasks">Открыть задачи</a></p>'
+            if row.get('status')=='BLOCKED' and analysis in (None,'BUSY','DAILY_LIMIT'):
+                text+=action('/diagnose','Разобрать ошибку в Codex','Подготовит решение в отдельной копии. Код и службы не меняются автоматически.',fields='<input type="hidden" name="runId" value="'+esc(row.get('runId'))+'">')
         if row.get('notificationReceived'):text+='<p>✓ Получение уведомления подтверждено.</p>'
         if row.get('status')=='WAITING_FOR_WORKER':text+='<p class="hint">Запрос сохранён, но сборщик ещё не подтвердил запуск. Завершение проверки не подтверждено.</p>'
         return text+'</div>'

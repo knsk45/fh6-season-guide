@@ -4,6 +4,7 @@ import uuid
 import re
 from pathlib import Path
 import phone_tasks
+import incident_reports
 
 STAGES={'audit':'Проверка источников и изображений','structure':'Проверка структуры сезона','html':'Подготовка страниц','markdown':'Подготовка отчёта','portable':'Сборка сайта','artifact':'Артефакт сайта','timestamp':'Время обновления','browser_qa':'Проверка отображения','publish':'Публикация сайта','steam_check':'Проверка Steam','steam_render':'Подготовка текстов Steam','preflight':'Предварительная проверка','rollover_preflight':'Проверка границ сезона','visual_queue':'Проверка изображений','ha_receipt':'Подтверждение уведомления','metrics':'Сбор показателей','notification':'Доставка уведомления'}
 
@@ -58,5 +59,8 @@ def snapshot(root,store):
         r['steps']={k:v.get('status') for k,v in steps.items() if k in STAGES and isinstance(v,dict)}
         r['siteVerified']=r['steps'].get('publish')=='passed'
         r['notificationReceived']=run.get('haReceipt')=='CONFIRMED'
+        if run.get('runId')==run_id:
+            r['diagnostic']=incident_reports.report(root,store,run)['text']
+            r['analysisStatus']=incident_reports.analysis_state(store,run_id)
         out.append(r)
     return out

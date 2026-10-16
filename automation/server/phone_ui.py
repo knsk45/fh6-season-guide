@@ -20,6 +20,7 @@ import phone_tasks
 import phone_view
 import steam_consent
 import refresh_receipts
+import incident_reports
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
@@ -99,11 +100,14 @@ def panel_data():
             started=datetime.fromisoformat(active.get('startedAt','')).timestamp()
         except (ValueError,TypeError):started=0
         queued=request.stat().st_mtime>started and time.time()-request.stat().st_mtime<60
+    refresh_requests=refresh_receipts.snapshot(ROOT,STORE)
+    if refresh_requests and refresh_requests[0].get('runId') and refresh_requests[0]['runId']==active.get('runId'):
+        queued=False  # Explicit worker binding beats sub-second request timestamps.
     published=load(STORE/'steam-status.json')
     steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
-                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_receipts.snapshot(ROOT,STORE),consent=steam_consent.state(STORE),steam_publication=steam_publication)
+                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_requests,consent=steam_consent.state(STORE),steam_publication=steam_publication)
 
 def panel_signature(data):
     return dict(runId=data['active'].get('runId'),status=data['active'].get('status'),
@@ -185,7 +189,7 @@ class UI(BaseHTTPRequestHandler):
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
-        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent'}:
+        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent','/diagnose'}:
             return self.respond(404,'Not found')
         if size<0:return self.respond(400,'Invalid content length')
         if path=='/setup' and not 0<size<=4096:
@@ -252,6 +256,14 @@ class UI(BaseHTTPRequestHandler):
                     return self.redirect_login()
                 request.write_text(str(time.time()),encoding='ascii')
                 return self.redirect_login()
+            if path=='/diagnose':
+                fields=parse_qs(data.decode('utf-8'))
+                ids=fields.get('runId',[])
+                if len(ids)!=1:raise ValueError('Укажите один запуск.')
+                run=incident_reports.load_run(ROOT,ids[0])
+                state=incident_reports.queue_analysis(ROOT,STORE,run)
+                messages={'BUSY':'Codex занят другой задачей. Повторите разбор позже.','NEEDS_LOGIN':'Для разбора требуется вход в Codex.'}
+                return self.action_result(409 if state=='BUSY' else 200,messages.get(state,'Разбор сохранён. Ответ появится в разделе «Задачи для Codex».'),'tasks')
             if path=='/refresh':
                 request=STORE/'refresh-request'
                 if request.exists() and time.time()-request.stat().st_mtime<60:

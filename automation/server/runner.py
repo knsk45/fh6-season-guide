@@ -331,6 +331,14 @@ def editor():
                                      'reasonCode':'EDITOR_HANDOFF_INCOMPLETE'})
     return None
 
+def queue_incident_analysis(active):
+    if active.get('status')!='BLOCKED':return
+    try:
+        import incident_reports
+        incident_reports.queue_analysis(ROOT,STORE,active,automatic=True)
+    except Exception as exc:
+        print('INCIDENT_ANALYSIS_QUEUE_FAILED type='+type(exc).__name__,flush=True)
+
 def run(force=False,recovery_run_id=None):
     STORE.mkdir(parents=True,exist_ok=True)
     with exclusive(STORE/'runner.lock'):
@@ -345,6 +353,7 @@ def run(force=False,recovery_run_id=None):
                 if Guard(ROOT).audit_valid(previous):
                     audit=previous['steps']['audit']['path']
                     guard('start');guard('audit','--input',audit);guard('execute')
+                    queue_incident_analysis(read(checkpoint))
                     return
             if (not force and not recovery_run_id and previous['status'] in {'COMPLETED','BLOCKED','PENDING_CONFIRMATION'}
                     and previous.get('runDate')==now()[:10]
@@ -394,6 +403,7 @@ def run(force=False,recovery_run_id=None):
         # The guard yields an honest BLOCKED final when no audit is available.
         guard('execute')
         active=read(ROOT/'automation/runs/refresh/active.json')
+        queue_incident_analysis(active)
         if active['status']=='AWAITING_DELIVERY': raise RuntimeError('HA delivery is not confirmed; run remains unfinished')
 
 if __name__=='__main__':
