@@ -13,6 +13,8 @@ STAGES=('audit','preflight','rollover_preflight','visual_queue','timestamp','mar
 STATUSES={'RUNNING','COMPLETED','BLOCKED','PENDING_CONFIRMATION','AWAITING_DELIVERY'}
 # The matching log text is NEVER copied. Each match yields only this fixed code/text.
 RULES=(
+ ('GIT_PATHSPEC',r"pathspec .+ did not match any files|did not match any file","Git не нашёл один из путей, переданных для публикации."),
+ ('PORTABLE_RECEIPT',r'Verify compatible portable package receipt failed|PORTABLE_.*FAILED','Издатель отклонил проверку переносимого пакета.'),
  ('BRANCH_MISMATCH',r'Expected branch .+current branch','Публикация запущена не из ожидаемой ветки Git.'),
  ('BRANCH_DIVERGED',r'Local branch does not contain origin/|non-fast-forward|fetch first','Локальная ветка отстала от GitHub или разошлась с ним.'),
  ('GIT_IDENTITY',r'Please tell me who you are|unable to auto-detect email','Для Git не настроены имя или адрес автора коммита.'),
@@ -52,6 +54,35 @@ def load_run(root,run_id):
 def classify(text):
     return [{'code':code,'message':message} for code,pattern,message in RULES if re.search(pattern,text,re.I)]
 
+PUBLISH_PHASES={'repository','branch','validation','receipt','fetch','ancestry','stage',
+                'commit','push','remote','pages','public_html','public_assets'}
+ERROR_TYPES={'RuntimeException','CommandNotFoundException','ParameterBindingException',
+             'PropertyNotFoundException','MethodInvocationException','ItemNotFoundException',
+             'UnauthorizedAccessException','HttpResponseException','WebException',
+             'ActionPreferenceStopException','IOException','InvalidOperationException'}
+
+def error_context(text):
+    """Project diagnostics, not raw log lines: only fixed identifiers and numbers.
+
+    Works on historical PowerShell error views too. Never exports echoed source,
+    exception messages, headers, commands, URLs or arbitrary exception type names.
+    """
+    clean=re.sub(r'\x1b\[[0-?]*[ -/]*[@-~]','',text)
+    result=[]
+    for phase in re.findall(r'FH6_PUBLISH_PHASE=([a-z_]+)',clean):
+        if phase in PUBLISH_PHASES:
+            item='Publisher operation: '+phase
+            if item not in result:result.append(item)
+    # Match only this known script basename, not a caller-controlled file path.
+    for line in re.findall(r'publish_to_github\.ps1:(?:line\s+)?([0-9]{1,5})\b',clean,re.I):
+        item='PowerShell location: automation/publish_to_github.ps1:'+str(int(line))
+        if item not in result:result.append(item)
+    for kind in ERROR_TYPES:
+        if re.search(r'\b'+kind+r'\b',clean):result.append('PowerShell exception: '+kind)
+    for code in re.findall(r'FH6_PUBLISH_NATIVE_EXIT=(-?[0-9]{1,5})\b',clean):
+        result.append('Native exit: '+str(int(code)))
+    return result[-12:]
+
 def report(root,store,run):
     run_id=run.get('runId','')
     if not RUN_ID.fullmatch(str(run_id)):raise ValueError('Некорректный номер запуска.')
@@ -81,7 +112,9 @@ def report(root,store,run):
                 reasons.append({'code':'LOG_CHANGED','message':'Контрольная сумма журнала не совпала; содержимое не использовано.'})
             else:
                 lines.append(name+' log SHA256: '+sha)
-                reasons.extend(classify(raw.decode('utf-8',errors='replace')))
+                decoded=raw.decode('utf-8',errors='replace')
+                reasons.extend(classify(decoded))
+                if name=='publish':lines.extend(error_context(decoded))
     # Pre-promotion errors have no guard stage. Include only a time-correlated,
     # root-written reason, classified to fixed messages; never copy its raw command.
     raw=regular(store,Path(store)/'review-required.json',20000)

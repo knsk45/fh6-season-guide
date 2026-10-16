@@ -41,6 +41,33 @@ class Tests(unittest.TestCase):
         result=incidents.report(self.root,self.store,self.run)['text']
         self.assertIn('UNCLASSIFIED',result);self.assertNotIn('Private arbitrary',result)
 
+    def test_historical_powershell_location_without_private_message(self):
+        self.log('\x1b[31;1mException: /opt/fh6/repo/automation/publish_to_github.ps1:164\x1b[0m\n'
+                 'RuntimeException: PRIVATE_SECRET Cookie=PRIVATE_SECRET\n'
+                 'fatal: pathspec PRIVATE_SECRET did not match any files')
+        text=incidents.report(self.root,self.store,self.run)['text']
+        self.assertIn('GIT_PATHSPEC',text)
+        self.assertIn('automation/publish_to_github.ps1:164',text)
+        self.assertIn('PowerShell exception: RuntimeException',text)
+        self.assertNotIn('PRIVATE_SECRET',text)
+        self.assertNotIn('/opt/',text)
+
+    def test_operation_projection_rejects_arbitrary_payload(self):
+        self.log('FH6_PUBLISH_PHASE=receipt\nFH6_PUBLISH_PHASE=PRIVATE_SECRET\n'
+                 'FH6_PUBLISH_NATIVE_EXIT=128\nPrivateSecretException: PRIVATE_SECRET')
+        text=incidents.report(self.root,self.store,self.run)['text']
+        self.assertIn('Publisher operation: receipt',text)
+        self.assertIn('Native exit: 128',text)
+        self.assertNotIn('PRIVATE_SECRET',text)
+        self.assertNotIn('PrivateSecretException',text)
+
+    def test_changed_log_cannot_inject_location(self):
+        self.log('FH6_PUBLISH_PHASE=receipt')
+        (self.base/'publish.log').write_text('FH6_PUBLISH_PHASE=push')
+        text=incidents.report(self.root,self.store,self.run)['text']
+        self.assertIn('LOG_CHANGED',text)
+        self.assertNotIn('Publisher operation:',text)
+
     def test_log_identity_hash_and_symlink_checks(self):
         self.log('Permission denied')
         (self.base/'publish.log').write_text('Authentication failed SECRET')
