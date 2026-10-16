@@ -144,11 +144,17 @@ def rollover_handoff_files(work):
                 if not old_image:continue
                 new_image=(matches[0].get('visual') or {}).get(field)
                 if not new_image:raise RuntimeError('Monthly visual was lost at rollover')
-                source=ROOT/old_image;target=work/new_image
+                # visual paths are relative to season.assetsDirectory, just as
+                # in the renderer and refresh guard, not to the repository root.
+                for image in (old_image,new_image):
+                    if Path(image).is_absolute() or '..' in Path(image).parts:
+                        raise RuntimeError('Monthly image path escapes season assets')
+                source=ROOT/before['season']['assetsDirectory']/old_image
+                target=work/after['season']['assetsDirectory']/new_image
                 if (not source.resolve().is_relative_to(ROOT.resolve()) or
                         not target.resolve().is_relative_to(work.resolve()) or
                         source.is_symlink() or target.is_symlink() or
-                        not target.is_file() or digest(source)!=digest(target)):
+                        not source.is_file() or not target.is_file() or digest(source)!=digest(target)):
                     raise RuntimeError('Monthly original/prepared bytes changed at rollover')
     archive=confined_file(work,new)
     if (ROOT/new).exists() or archive.is_symlink() or not archive.is_file():

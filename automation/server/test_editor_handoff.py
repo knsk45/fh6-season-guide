@@ -97,4 +97,44 @@ class Tests(unittest.TestCase):
             with patch.object(runner,'ROOT',root):
                 with self.assertRaisesRegex(RuntimeError,'escapes workspace'):runner.safe_candidate(work)
 
+    def monthly_fixture(self, d):
+        root, work = self.rollover_fixture(d)
+        before = json.loads((root/'data/current-season.json').read_text())
+        after = json.loads((work/'data/current-season.json').read_text())
+        activity = {'id':'monthly', 'kind':'monthly_rivals', 'title':'same event',
+                    'visual':{'sourceImage':'original.png', 'image':'tile.png'}}
+        before['activities'] = [activity]; after['activities'] = [activity]
+        before['season'].update(seriesNumber=6, startAt='2026-10-08')
+        after['season'].update(seriesNumber=6, startAt='2026-10-15')
+        (root/'data/current-season.json').write_text(json.dumps(before))
+        (work/'data/current-season.json').write_text(json.dumps(after))
+        (work/'data/history/summer.json').write_text(json.dumps(before))
+        for base, state in ((root,before),(work,after)):
+            folder = base/state['season']['assetsDirectory']; folder.mkdir(parents=True)
+            (folder/'original.png').write_bytes(b'original screenshot fixture')
+            (folder/'tile.png').write_bytes(b'prepared crop fixture')
+        return root, work
+
+    def test_identical_monthly_images_resolve_relative_to_each_season_assets(self):
+        with tempfile.TemporaryDirectory() as d:
+            root, work = self.monthly_fixture(d)
+            with patch.object(runner,'ROOT',root):
+                self.assertIn(work/'seasons/autumn.md',runner.safe_candidate(work))
+
+    def test_changed_monthly_original_or_crop_is_rejected(self):
+        for name in ('original.png','tile.png'):
+            with self.subTest(name=name),tempfile.TemporaryDirectory() as d:
+                root, work = self.monthly_fixture(d)
+                (work/'reports/assets/autumn'/name).write_bytes(b'changed')
+                with patch.object(runner,'ROOT',root):
+                    with self.assertRaisesRegex(RuntimeError,'bytes changed'):runner.safe_candidate(work)
+
+    def test_monthly_image_symlink_is_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            root, work = self.monthly_fixture(d)
+            target = work/'reports/assets/autumn/tile.png'
+            target.unlink(); target.symlink_to(root/'reports/assets/summer/tile.png')
+            with patch.object(runner,'ROOT',root):
+                with self.assertRaises(RuntimeError):runner.safe_candidate(work)
+
 if __name__=='__main__':unittest.main()
