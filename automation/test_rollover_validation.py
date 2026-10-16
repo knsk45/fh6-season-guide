@@ -73,5 +73,39 @@ class Tests(unittest.TestCase):
         self.assertEqual(json.loads(self.state_path.read_text(encoding='utf-8-sig')), self.state)
         self.assertFalse(self.config.exists())
 
+    def candidate_fixture(self):
+        work=self.root/'isolated-candidate'
+        source=self.root/self.state['season']['assetsDirectory']
+        self.state['season']['assetsDirectory']='reports/assets/candidate-season'
+        shutil.copytree(source,work/self.state['season']['assetsDirectory'])
+        (work/'data').mkdir(parents=True)
+        candidate=work/'data/current-season.json'
+        candidate.write_text(json.dumps(self.state))
+        self.config.parent.mkdir(parents=True,exist_ok=True)
+        self.config.write_text('{"testFixture":true}')
+        return work,candidate
+
+    def test_trusted_validator_reads_unpromoted_candidate_assets(self):
+        work,candidate=self.candidate_fixture()
+        old=self.invoke('validate_season.ps1','-StatePath',str(candidate),'-SkipOutputs','-AsJson')
+        self.assertNotEqual(old.returncode,0)
+        self.assertTrue(any('references missing asset:' in error for error in json.loads(old.stdout)['errors']))
+        result=self.invoke('validate_season.ps1','-StatePath',str(candidate),'-SeasonAssetsBasePath',str(work),'-SkipOutputs','-AsJson')
+        self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+        self.assertTrue(json.loads(result.stdout)['ok'])
+        self.assertEqual(self.state_path.read_bytes(),self.original)
+
+    def test_candidate_assets_do_not_disable_operational_config_check(self):
+        work,candidate=self.candidate_fixture();self.config.unlink()
+        result=self.invoke('validate_season.ps1','-StatePath',str(candidate),'-SeasonAssetsBasePath',str(work),'-SkipOutputs','-AsJson')
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('Home Assistant notification local config is missing',json.loads(result.stdout)['errors'])
+
+    def test_candidate_asset_override_requires_input_validation_mode(self):
+        work,candidate=self.candidate_fixture()
+        result=self.invoke('validate_season.ps1','-StatePath',str(candidate),'-SeasonAssetsBasePath',str(work))
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('SeasonAssetsBasePath requires SkipOutputs',result.stdout+result.stderr)
+
 if __name__ == '__main__':
     unittest.main()

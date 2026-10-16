@@ -210,6 +210,31 @@ def promote_candidate(work,files):
                 target.rename(rejected)
         raise
 
+def validate_candidate_state(work):
+    # Execute only the trusted canonical script, with candidate season assets.
+    # Project configuration and operational prerequisites remain canonical.
+    validation=subprocess.run(['runuser','-u','fh6','--','pwsh','-NoProfile','-File',
+        str(ROOT/'automation/validate_season.ps1'),'-StatePath',str(work/'data/current-season.json'),
+        '-SeasonAssetsBasePath',str(work),'-SkipOutputs','-AsJson'],cwd=ROOT,
+        stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=120)
+    (STORE/'candidate-validation.log').write_text(validation.stdout,encoding='utf-8')
+    if validation.returncode:
+        try:details='; '.join(json.loads(validation.stdout).get('errors',[])[:8])
+        except (ValueError,TypeError):details='See candidate-validation.log'
+        raise RuntimeError('Candidate structure validation failed: '+details[:3000])
+
+def reusable_editor_candidate(work,previous_status):
+    if previous_status.get('status')!='FINISHED':return False
+    try:
+        # A failed promotion records the exact canonical base. Never replay a
+        # candidate over newer canonical edits, or accept an expired/changed audit.
+        review=read(STORE/'review-required.json')
+        if review.get('stateSha256')!=digest(ROOT/'data/current-season.json'):return False
+        if review.get('at','')<previous_status.get('at',''):return False
+        validate_editor_handoff(work)
+        return True
+    except (OSError,ValueError,KeyError,RuntimeError):return False
+
 def editor():
     # Dedicated directory; rebuild source view without any ignored secrets/.git.
     work=EDITOR/'work'
@@ -217,6 +242,8 @@ def editor():
     previous_status={}
     try:previous_status=read(STORE/'editor-status.json')
     except (OSError,ValueError):pass
+    if work.exists() and reusable_editor_candidate(work,previous_status):
+        return work
     if work.exists():
         archive=EDITOR/('previous-'+str(time.time_ns()))
         work.rename(archive)
@@ -324,11 +351,7 @@ def run(force=False,recovery_run_id=None):
                 # Rollover is accepted only with preserved history and a fresh,
                 # fully validated audit for the new state's actual bytes.
                 rollover_handoff_files(work)
-                validation=subprocess.run(['runuser','-u','fh6','--','pwsh','-NoProfile','-File',
-                    str(ROOT/'automation/validate_season.ps1'),'-StatePath',str(work/'data/current-season.json'),
-                    '-SkipOutputs'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=120)
-                (STORE/'candidate-validation.log').write_text(validation.stdout,encoding='utf-8')
-                validation.check_returncode()
+                validate_candidate_state(work)
                 # Validate a prospective audit BEFORE changing canonical state.
                 # Guard is rooted in the credential-free candidate, so all paths match.
                 review=Guard(work)

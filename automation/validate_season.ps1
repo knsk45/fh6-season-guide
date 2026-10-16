@@ -1,6 +1,8 @@
 ﻿[CmdletBinding()]
 param(
     [string]$StatePath,
+    # Read candidate season images before promotion; trusted project/config stay here.
+    [string]$SeasonAssetsBasePath,
     [switch]$SkipOutputs,
     # Editorial workspaces validate data without receiving publisher credentials.
     # Publication callers use the default full operational validation.
@@ -10,6 +12,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+if ($SeasonAssetsBasePath -and -not $SkipOutputs) { throw 'SeasonAssetsBasePath requires SkipOutputs' }
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 . (Join-Path $PSScriptRoot 'json_compat.ps1')
 if (-not $StatePath) { $StatePath = Join-Path $RepoRoot 'data\current-season.json' }
@@ -201,6 +204,9 @@ if ($state) {
     $assetRoot = Get-FullProjectPath $season.assetsDirectory
     $reportsAssetsRoot = Get-FullProjectPath 'reports/assets'
     if (-not $assetRoot.StartsWith($reportsAssetsRoot, [StringComparison]::OrdinalIgnoreCase)) { Add-ValidationError 'assetsDirectory must stay under reports/assets/' }
+    if ($SeasonAssetsBasePath) {
+        $assetRoot = [IO.Path]::GetFullPath((Join-Path $SeasonAssetsBasePath $season.assetsDirectory))
+    }
 
     $expectedCount = [int]$season.expectedCardCount
     $piPattern = '(?<![A-Za-z0-9])(?:S1|S2|[DCBARX])\s*[0-9]{3}(?![0-9])'

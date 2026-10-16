@@ -137,4 +137,49 @@ class Tests(unittest.TestCase):
             with patch.object(runner,'ROOT',root):
                 with self.assertRaises(RuntimeError):runner.safe_candidate(work)
 
+    def test_candidate_validation_reads_candidate_assets_using_trusted_script(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,work=self.rollover_fixture(d);store=Path(d)/'store';store.mkdir()
+            with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner.subprocess,'run',return_value=Mock(returncode=0,stdout='{}')) as process:
+                runner.validate_candidate_state(work)
+            args=process.call_args.args[0]
+            self.assertEqual(args[args.index('-File')+1],str(root/'automation/validate_season.ps1'))
+            self.assertEqual(args[args.index('-SeasonAssetsBasePath')+1],str(work))
+            self.assertNotIn('-ContentOnly',args)
+            self.assertIn('-AsJson',args)
+
+    def test_candidate_validation_retains_concrete_errors(self):
+        with tempfile.TemporaryDirectory() as d:
+            store=Path(d)
+            output=json.dumps({'errors':['missing original fixture']})
+            with patch.object(runner,'STORE',store),patch.object(runner.subprocess,'run',return_value=Mock(returncode=1,stdout=output)):
+                with self.assertRaisesRegex(RuntimeError,'missing original fixture'):runner.validate_candidate_state(store)
+
+    def reusable_fixture(self,d):
+        root,store,calls,process=self.editor_fixture(d)
+        (root/'data').mkdir();(root/'data/current-season.json').write_text('{}')
+        work=store/'editor/work';work.mkdir(parents=True)
+        (work/'retained-evidence.txt').write_text('keep')
+        (store/'editor-status.json').write_text(json.dumps({'status':'FINISHED','at':'2026-10-16T12:00:00+07:00'}))
+        (store/'review-required.json').write_text(json.dumps({'stateSha256':runner.digest(root/'data/current-season.json'),'at':'2026-10-16T12:00:01+07:00'}))
+        return root,store,work
+
+    def test_fresh_finished_candidate_resumes_without_model_or_workspace_rebuild(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,store,work=self.reusable_fixture(d)
+            with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner,'EDITOR',store/'editor'),patch.object(runner,'validate_editor_handoff') as validate,patch.object(runner.subprocess,'Popen') as model:
+                self.assertEqual(runner.editor(),work)
+                model.assert_not_called();validate.assert_called_once_with(work)
+            self.assertTrue((work/'retained-evidence.txt').is_file())
+
+    def test_changed_base_or_expired_audit_prevents_candidate_reuse(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,store,work=self.reusable_fixture(d)
+            status={'status':'FINISHED','at':'2026-10-16T12:00:00+07:00'}
+            with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner,'validate_editor_handoff',side_effect=RuntimeError('expired audit')):
+                self.assertFalse(runner.reusable_editor_candidate(work,status))
+            (root/'data/current-season.json').write_text('{"newer":true}')
+            with patch.object(runner,'ROOT',root),patch.object(runner,'STORE',store),patch.object(runner,'validate_editor_handoff') as validate:
+                self.assertFalse(runner.reusable_editor_candidate(work,status));validate.assert_not_called()
+
 if __name__=='__main__':unittest.main()
