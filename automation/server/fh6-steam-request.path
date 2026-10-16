@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Steam publisher on an owner panel request
+
+[Path]
+PathChanged=/var/lib/fh6/steam-publish-request
+Unit=fh6-steam.service
+
+[Install]
+WantedBy=multi-user.target

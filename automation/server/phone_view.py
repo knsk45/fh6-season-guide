@@ -145,6 +145,18 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     if publication_status in {'NEEDS_LOGIN','STEAM_GUARD'}:body+='<p class="hint">Войдите в выделенном серверном браузере и подтвердите вход. Пароль и коды не вводите в панели или чате.</p>'
     if publication_status=='UNCERTAIN':body+='<p class="hint">Не запускайте отправку повторно вручную: сначала нужна проверка публичного результата.</p>'
     enabled=(consent or {}).get('enabled') is True
+    requested=publication.get('requestedAt')
+    updated=publication.get('updatedAt')
+    pending=(isinstance(requested,(int,float)) and
+             (not isinstance(updated,(int,float)) or requested>updated))
+    if pending:
+        body+='<p class="action-message" role="status">Запрос Steam принят. Ожидается результат издателя.</p>'
+    if enabled or approval:
+        body+=action('/steam-refresh','Обновить тексты Steam',
+                     'Только Steam: проверит оба раздела и обновит изменённые тексты. Сайт не пересобирается.',
+                     '<input type="hidden" name="sha" value="'+esc(sha)+'">')
+    else:
+        body+='<button disabled>Обновить тексты Steam</button><p class="hint">Сначала разрешите обновление текстов ниже.</p>'
     body+=action('/consent','Сохранить настройку','Включение разрешает заменять оба текста во всех следующих обновлениях. Выключение отзывает автоматические разрешения.',
                  '<label class="switch-label"><input id="steam-consent" type="checkbox" role="switch" name="enabled" value="true" '+('checked' if enabled else '')+'><span class="switch-track" aria-hidden="true"></span><span>Постоянное согласие на обновление Steam</span></label><p class="hint">'+('Включено — согласие действует и на будущие тексты.' if enabled else 'Выключено — каждую пару текстов нужно разрешать отдельно.')+'</p>')
     for locale,label in [('ru','Русский'),('en','English')]:

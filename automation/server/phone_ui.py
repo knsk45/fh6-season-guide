@@ -105,6 +105,8 @@ def panel_data():
         queued=False  # Explicit worker binding beats sub-second request timestamps.
     published=load(STORE/'steam-status.json')
     steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
+    steam_request=load(STORE/'steam-publish-request')
+    steam_publication['requestedAt']=steam_request.get('requestedAt')
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
                 texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_requests,consent=steam_consent.state(STORE),steam_publication=steam_publication)
@@ -189,7 +191,7 @@ class UI(BaseHTTPRequestHandler):
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
-        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent','/diagnose'}:
+        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent','/diagnose','/steam-refresh'}:
             return self.respond(404,'Not found')
         if size<0:return self.respond(400,'Invalid content length')
         if path=='/setup' and not 0<size<=4096:
@@ -208,6 +210,23 @@ class UI(BaseHTTPRequestHandler):
             if path=='/setup' or origin not in (None,'null',PUBLIC_ORIGIN) or len(tokens)!=1 or not re.fullmatch(r'[A-Za-z0-9_-]{43}',tokens[0]) or not hmac.compare_digest(tokens[0],CSRF_TOKEN):
                 return self.respond(403,json.dumps(dict(message='HTTP 403: защитный токен отсутствует или устарел. Обновите страницу панели.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
         try:
+            if path=='/steam-refresh':
+                fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
+                from steam_publish import texts,combined,approved
+                desired=texts(ROOT);sha=combined(desired)
+                if fields.get('sha')!=[sha]:
+                    return self.action_result(409,'Тексты изменились. Обновите страницу.','steam')
+                consent=steam_consent.state(STORE)['enabled']
+                approval=any(approved(load(p),sha,STORE) for p in STORE.glob('steam-approval-*.json') if not p.is_symlink())
+                if not consent and not approval:
+                    return self.action_result(409,'Сначала разрешите обновление текущих текстов.','steam')
+                request=STORE/'steam-publish-request'
+                if request.is_symlink():raise ValueError('Недопустимый файл запроса.')
+                previous=load(request).get('requestedAt',0)
+                if isinstance(previous,(int,float)) and 0<=time.time()-previous<30:
+                    return self.action_result(409,'Запрос Steam уже принят. Дождитесь результата.','steam')
+                phone_tasks.save(request,dict(requestedAt=time.time(),sha256=sha))
+                return self.action_result(200,'Запрос Steam принят. Проверка и результат появятся в этом разделе.','steam')
             if path=='/consent':
                 fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
                 enabled=fields.get('enabled')==['true']
