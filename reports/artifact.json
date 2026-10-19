@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Series 6 «Horizon Meets» — Осень",
     "description": "Сезон действует до 2026-10-22T21:30:00+07:00",
-    "generatedAt": "2026-10-19T06:09:13.0000000+07:00",
+    "generatedAt": "2026-10-20T06:02:42.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -109,7 +109,7 @@
   "snapshot": {
     "version": 1,
     "status": "partial",
-    "generatedAt": "2026-10-19T06:09:13.0000000+07:00",
+    "generatedAt": "2026-10-20T06:02:42.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -160,6 +160,13 @@
             "steamViews": 1321,
             "steamFavorites": 81,
             "githubViews": 3561
+          },
+          {
+            "runId": "fh6-20261019-060007-901759",
+            "collectedAt": "2026-10-19T06:10:33.7027163+07:00",
+            "steamViews": 1323,
+            "steamFavorites": 81,
+            "githubViews": 3606
           }
         ]
       }
@@ -253,7 +260,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-10-19T06:09:13.0000000+07:00",
+    "generated_at": "2026-10-20T06:02:42.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }

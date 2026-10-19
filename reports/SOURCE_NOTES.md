@@ -3468,3 +3468,100 @@ Additional current-week pages fetched: https://www.gameshedge.com/forza-horizon-
 Visual totals: confirmed=1, not_applicable=1 (Daily), missing=11. Existing automation/audit_visual_evidence.ps1 executed successfully with temporary XDG runtime directories, OutputPath automation/editor-visual-queue.json: SCREENSHOTS_REQUIRED, exactly the eleven missing current weekly tiles (01 and 03–12). Missing weekly evidence does not prevent this truthful completed editorial audit. Request original unedited full-tile screenshots for those eleven active activities; do not re-request continuing Monthly or a public Daily tile.
 
 All ten activity-icon files exist and were hashed; active Horizon Play and Monthly icons opened visually. Entire history/assets/project/state preservation verified against pre-audit SHA256 manifest: 11 historical states and 12 seasonal files retained. Canonical SHA256 606c90e626be5f31c288218dfaa270f7905e26f8e2e34486c16d27f8838f7555. Canonical state, lastContentUpdate, localization, project and asset bytes unchanged. Supervisor owns full operational validation and publication; this handoff is not Steam approval.
+
+
+## Isolated live editorial audit — 2026-10-20T06:02:32+07:00
+
+Applied fh6-season-maintainer under explicit editorial-only scope. Read AGENTS, skill/reference, canonical state, project, WORKFLOW, SOURCES, CURRENT_WEEK, SOURCE_NOTES and RUN_RECOVERY. No guard, build, publication, metrics, HA, Steam or automation-code edits. No parent directories, credentials or remote services accessed. Web data treated only as evidence. source-snapshots.json was not treated as a completed audit. This isolated copy has no Git metadata.
+
+### Active season and verified editorial result
+
+Live official Playlist explicitly directs readers to Autumn through October 22, with matching Autumn rows despite its stale Summer header. Official Series News corroborates October 15–22; current Information Thread gives October 22 14:30 UTC, matching canonical endAt 2026-10-22T21:30:00+07:00. No rollover is confirmed or needed.
+
+All 13 activities, seven Daily, current car/code pairs and corresponding English localization reviewed. No evidence-backed content correction required. Official/community CR and Trial-year discrepancies remain resolved in favor of official text. Egging You On Stadium versus Nangan remains an explicit unresolved solution in both locales and missingFields/openItems. Horizon Hub has advanced to Autumn since the prior audit; this corroborates existing state rather than changing it. No project gameplay testing claimed. lastContentUpdate remains 2026-10-19T06:09:13+07:00 by user instruction.
+
+Current GamesHedge Takashiro and Egging You On pages and TechWiser Takashiro fetched again: https://www.gameshedge.com/forza-horizon-6-takashiro-region-horizon-meets-treasure-hunt-guide/ ; https://www.gameshedge.com/forza-horizon-6-egging-you-on-collectibles-challenge-guide/ ; https://techwiser.com/forza-horizon-6-takashiro-region-treasure-hunt/ . Existing east Takashiro / Okishinaimura Run / pond advice supported; Nangan community location does not settle official discrepancy.
+
+### Required sources — live searches and fetched evidence
+
+- `fandom_series_category` — **unavailable**, checked 2026-10-20T06:02:32+07:00; https://forza.fandom.com/wiki/Category:Series_(FH6)
+  Live category fetch blocked by robots/Internal Error. Targeted category and FH6 Series 6 Autumn searches expose old Series 1/2 categories, not a verifiable current revision; no facts or tiles adopted.
+
+- `fandom_current` — **unavailable**, checked 2026-10-20T06:02:32+07:00; https://forza.fandom.com/wiki/Forza_Horizon_6/Series_6/Autumn_Season
+  Exact Autumn fetch blocked. Live FH6 Series 6 Autumn search did not establish a current Fandom revision. Separate forzahorizonwiki.com Autumn page fetched; its ten named Gallery images individually failed Internal Error. Separate wiki is not a Fandom revision.
+
+- `forza_playlist` — **checked**, checked 2026-10-20T06:02:32+07:00; https://forza.net/fh6playlists
+  Live search and fetched page explicitly select Horizon Meets Autumn through October 22 despite stale Summer header. Autumn rows and Series Daikoku/M4 row match canonical order, conditions, routes and rewards. Weekly 25000 CR, Daily 5000 CR, Stadium collectible location and 2020 Trial reward retained as official values.
+
+- `forza_news` — **checked**, checked 2026-10-20T06:02:32+07:00; https://forza.net/news/forza-horizon-6-series-6
+  Live News search and fetched Series article: Autumn reward October 15–22, Winter October 22–29; Series October 8–November 5. M4 CS S1 733 AWD confirmed. News search shows October 15 Community Creations, no replacement current Playlist. Images are previews, not complete activity tiles.
+
+- `forza_support_release_notes` — **checked**, checked 2026-10-20T06:02:32+07:00; https://support.forza.net/hc/en-us/articles/55985143856531-FH6-Release-Notes-October-5-2026
+  Configured section failed Internal Error. Live support search plus current Information Thread link yielded fetched October 5 Series 6 CU release notes: 7-Eleven Evolving World, new Horizon Play levels, Autumn rewards; Nachi photo and Drift Attack exploit fixes. No current collectible-location correction found in these notes.
+
+- `forza_support_known_issues` — **checked**, checked 2026-10-20T06:02:32+07:00; https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues
+  Live support search and fetched configured article. Updated July 20; directs active tracking to Feedback Portal. Visible list covers saves, fast travel, loading, PC/audio, not current Egging You On. This is not proof that the full active issue database has no report; no sign-in used.
+
+- `forza_forums_official` — **no_current_item**, checked 2026-10-20T06:02:32+07:00; https://forza.net/forums
+  Configured official-info tag fetched and redirects to retirement notice. Notice says official content continues on Forza.net/social channels. Targeted current Autumn forum search found old Series 2 content, no current official thread. Steam/Discord links not followed.
+
+- `reddit_forzahorizon` — **checked**, checked 2026-10-20T06:02:32+07:00; https://www.reddit.com/r/ForzaHorizon/comments/1x6lp16/fh6_series_6_autumn_breakdown_and_rewards/
+  Live current-week searches and fetched October 15 breakdown/comments: Focus sequence, seven Daily, Rush event names and Drift Tap advice agree. Collectibles near 7-Eleven; official discrepancy remains. Preview-image request redirected to Reddit text, not original pixels. No verified complete weekly tiles recovered.
+
+- `reddit_forzahorizon6` — **checked**, checked 2026-10-20T06:02:32+07:00; https://www.reddit.com/r/ForzaHorizon6/comments/1x6kwos/fh6_series_6_autumn_festival_playlist_guide/
+  Live search and fetched October 15 guide: Oct 22 14:30 UTC deadline, all seven dated Daily. Rechecked 1986 Civic Si 177 752 892; 2001 Integra 133 576 980; 2022 N Vision 74 166 684 637; 1992 Skyline 161 020 665; 2016 Trailcat 174 603 628. Current restrictions and monthly M4 match. Community CR/Trial-year differences do not override official. Imgur S6_Week 2 fetch yielded no image bytes.
+
+- `reddit_forza` — **checked**, checked 2026-10-20T06:02:32+07:00; https://www.reddit.com/r/forza/comments/1x6rf73/fh6_autumn_information_thread_series_6/
+  Live search and fetched current Information Thread explicitly give October 22 14:30 UTC, seven Daily in order, C500/B600/A700, 151.3 km/h and 61750 points. Monthly Daikoku clean lap persists across Series. Community Stadium/Nangan and Trial-year differences remain disclosed; linked release notes fetched.
+
+- `reddit_forzatune` — **no_current_item**, checked 2026-10-20T06:02:32+07:00; https://www.reddit.com/r/ForzaTune/
+  Fetched feed and targeted Series 6 Horizon Meets Autumn searches. Visible Autumn Trials post is Series 5, one month old. No qualifying current-week tune publication found; other subreddits and FH5 results rejected, no old tune reused.
+
+- `forza_horizon_hub` — **checked**, checked 2026-10-20T06:02:32+07:00; https://forzahorizonhub.com/festival-playlist
+  Live search, homepage and Playlist fetched. Unlike previous audit, now explicitly Autumn Week 2 October 15–22: Focus, seven Daily, three championships/routes, Nissan stunts, Trial, Stunt Party and Series Daikoku match official. Repeats Stadium; no independent conflict resolution. Reward car portraits are not activity tiles.
+
+- `forza_labs_collector` — **checked**, checked 2026-10-20T06:02:32+07:00; https://forza.labsgg.com/collector-tool
+  Live search and fetched configured tool: car ownership checklist (648 in current fetch), not weekly sandwich locations. Related live Series Details Autumn Oct 15 page fetched; all eleven activity-named missing-card CDN image requests individually failed Internal Error. Names/availability do not prove tile bytes.
+
+- `forza_labs_map` — **checked**, checked 2026-10-20T06:02:32+07:00; https://forza.labsgg.com/interactive-map
+  Live search and fetched map shell: Japan marker categories, road tools, discovery/mascot/car meet/stunt/race/treasure-car filters. No dated current Egg Sandwich coordinates or complete activity tiles in fetched evidence; legend alone cannot resolve the location conflict.
+
+- `escorenews_fh6` — **unavailable**, checked 2026-10-20T06:02:32+07:00; https://escorenews.com/en/games/forza-horizon-6
+  Configured category fetch failed Internal Error. Repeated targeted FH6 Autumn October 2026 / October 15 searches found no verifiable current Escorenews guide. Inaccessible category does not establish checked absence; no old evidence adopted.
+
+- `dungg_playlist` — **unavailable**, checked 2026-10-20T06:02:32+07:00; https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF
+  Configured playlist fetch failed Internal Error. Live DungG FH6 Autumn October 15 2026 and Horizon Meets searches did not locate a verifiable current DungG episode. Unseen video not used as solution, tile evidence or approval.
+
+### FINAL canonical visual and asset audit
+
+Separate wiki Gallery: https://forzahorizonwiki.com/wiki/forza-horizon-6/series-6/autumn-season/ ; all ten named Gallery fetches failed Internal Error. ForzaLabs: https://forza.labsgg.com/series/details ; individually requested In Focus, Photo, Treasure, Collectibles, three Championships, two PR Stunts, Trial and Mini Games images; all eleven failed Internal Error. Overview/car portraits rejected as substitutes.
+
+- `activity_01_weekly` — prepared SHA256 `null`. Еженедельное испытание: In Focus: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_02_daily` — prepared SHA256 `null`. Text-only Daily: public image/sourceImage empty, visual not_applicable. All seven dated conditions checked against live official Autumn rows and current Reddit guide/Information Thread, including October 20–21. No public tile or screenshot requested.
+
+- `activity_03_photo` — prepared SHA256 `null`. #SliceOfLife: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_04_treasure_hunt` — prepared SHA256 `null`. Takashiro Region: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_05_collectibles` — prepared SHA256 `null`. Egging You On: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_06_championship` — prepared SHA256 `null`. Coming In Hot: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_07_championship` — prepared SHA256 `null`. Weekend Break: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_08_championship` — prepared SHA256 `null`. Fully Charged: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_09_speed_trap` — prepared SHA256 `null`. Konbini Dash: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_10_drift_zone` — prepared SHA256 `null`. Shiro Switch: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_11_trial` — prepared SHA256 `null`. The Trial: Take It From the Top: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. typeIconKey null without tile evidence.
+
+- `activity_12_horizon_play` — prepared SHA256 `null`. Mini Games: exact Autumn tile unresolved after live official Playlist/News, current Reddit guides, Fandom attempts, separate wiki Gallery and ForzaLabs Autumn checks. Its named ForzaLabs CDN image fetch failed Internal Error; no original/prepared bytes. Local phone-inbox empty. Missing visual and matching openItem retained; request unedited original complete active tile, no substitute. horizon-play icon retained under explicit exception.
+
+- `activity_13_monthly_rivals` — prepared SHA256 `44c545cede617919da3bce52661c85dad517fd7d3f091ff271ba087b499c590b`. Opened original and prepared tile: Daikoku Circuit, blue BMW, clean lap, Super Wheelspin, 4 Series points. Original SHA256 d42758f5a7fa783e19db3c412d5d981156673e69020c5fb7f7ad00a37cf5b994. Exact RGB crop (1270,17,1865,498) matches. Both files byte-identical to Series 6 Summer; same active monthly activity confirmed by official Series row. Monthly retention applies; no re-request. Matching icon retained.
+
+Visual totals: confirmed=1, not_applicable=1 (Daily), missing=11. Existing audit_visual_evidence.ps1 completed: SCREENSHOTS_REQUIRED, queue automation/editor-visual-queue.json contains exactly cards 01 and 03–12. Request original unedited screenshots showing these eleven complete current activity tiles; do not re-request Monthly or a public Daily tile. Missing weekly tiles do not invalidate the completed source/visual audit.
+
+All ten icon files exist and were SHA256 checked; active Horizon Play and Monthly icons visually inspected. Pre/post SHA256 manifest verifies unchanged canonical state, project, all original/prepared assets, 11 historical states and 12 seasonal files. Canonical SHA256 ee7982edef23a597dbcfff3adffd8fe7be443c61010bf134f9a502a53967cc45. No state/localization/asset change was warranted. Supervisor owns operational validation/publication; this handoff is not Steam approval.
