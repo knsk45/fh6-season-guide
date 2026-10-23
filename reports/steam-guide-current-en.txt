@@ -3,61 +3,64 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 6 'Horizon Meets' — Autumn[/h1]
-[b]Ends:[/b] 22.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 13
+[h1]Series 6 'Horizon Meets' — Winter[/h1]
+[b]Ends:[/b] 29.10.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 13
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge: In Focus · 5 points[/h2]
-In the 2017 Ford Focus RS, in order: own and drive it; photograph it; earn 3 Speed Trap stars; earn a Great Skill Chain. Reward: 25,000 CR.
+[h2]01. Weekly Challenge: Strictly for Fun · 5 points[/h2]
+In the 1991 Honda Beat, in order: own and drive; earn 3 stars at Danger Signs; park at any Car Meet; complete 2 laps at Hokubu Time Attack. Official Playlist reward: 25,000 CR.
+[b]Car:[/b] 1991 Honda Beat — A road tune: 757 075 974
 
 [h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
-• Oct 15: complete a Street Race.
-• Oct 16: earn at least 1 star from Danger Signs.
-• Oct 17: complete a Cross Country Race.
-• Oct 18: earn 3 Feed Me Skills by smashing vending machines.
-• Oct 19: complete a Horizon Rush.
-• Oct 20: earn a Drift Tap Skill.
-• Oct 21: earn at least 1 star from Speed Zones.
+• Oct 22: park at the 7-Eleven Car Meet.
+• Oct 23: earn at least 1 star from Trailblazers.
+• Oct 24: complete a Dirt Race.
+• Oct 25: earn 5 Air Skills.
+• Oct 26: earn 5 Speed Skills.
+• Oct 27: take a photo of any car.
+• Oct 28: spend 20,000 CR on upgrades.
  Reward: 5,000 CR per challenge.
 
-[h2]03. #SliceOfLife · 2 points[/h2]
-Photograph any Mazda at Jodogahama Beach. Reward: Relax emote.
+[h2]03. #PolarisPoint · 2 points[/h2]
+Take a photo of any Polaris at the Irokawa Space Center. Reward: All-White Techwear Boots.
 
-[h2]04. Takashiro Region · 3 points[/h2]
-Find and smash the photo-clue chest in Takashiro. Reward: 100,000 CR.
+[h2]04. Sotoyama Region · 3 points[/h2]
+Find the photo-clue chest in Sotoyama. Reward: 100,000 CR.
 
-[h2]05. Egging You On · 3 points[/h2]
-Smash 20 Egg Sandwiches at the Horizon Stadium according to the official Playlist. Reward: “Nothin but net!” Forza Link.
+[h2]05. Touring the Sights · 5 points[/h2]
+Road: Super GT, S1 800. Routes: Coastline Sprint, Irokawa Circuit, Shimanoyama Sprint. Reward: 2021 Polaris RZR Pro XP Factory Racing Limited Edition.
+[b]Car:[/b] 2017 Ferrari 812 Superfast — S1 800; 855 747 244
 
-[h2]06. Coming In Hot · 5 points[/h2]
-Dirt: Retro Hot Hatch, C 500. Routes: Oyashirazu Trail, Ito Trail, Ine Scramble. Reward: 1971 Plymouth Cuda 426 HEMI.
-[b]Car:[/b] 1986 Honda Civic Si — C 500 · 177 752 892
+[h2]06. Daily Exercise · 5 points[/h2]
+Street: High Performance Dailies, A 700. Routes: Nachi Run, Cedar Run, Okishinaimura Run. Reward: 1991 Honda Beat.
+[b]Car:[/b] 2014 HSV Gen-F GTS — A 700; 250 331 392
 
-[h2]07. Weekend Break · 5 points[/h2]
-Road: USA, B 600. Routes: Ito Sprint, Festival Sprint, Tateyama Kurobe Sprint. Reward: 2008 BMW Z4 M Coupé.
-[b]Car:[/b] 2001 Acura Integra Type R — B 600 · 133 576 980
+[h2]07. Hitting Your A Game · 5 points[/h2]
+Cross Country: Heavy Hitters, A 700. Routes: Izu Cross Country, Stadium Cross Country Circuit, Yahikoyama Cross Country. Reward: 1987 Nissan Skyline GTS-R.
+[b]Car:[/b] 2018 Porsche Cayenne Turbo — A 700; 200 366 736
 
-[h2]08. Fully Charged · 5 points[/h2]
-Touge & Street: Electric Vehicles, A 700. Routes: Sunflower Charge, Matsumi Climb, Shimanoyama Charge. Reward: 2017 Ford Focus RS.
-[b]Car:[/b] 2022 Hyundai N Vision 74 — A 700 · 166 684 637
+[h2]08. Hokubu Time Attack · 3 points[/h2]
+Toyota, C 500; target time 1:25.000. Reward: Wheelspin.
+[b]Car:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
 
-[h2]09. Konbini Dash · 2 points[/h2]
-Speed Trap: at least 94 mph (151.3 km/h). Nissan, B 600. Reward: Wheelspin.
-[b]Car:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
+[h2]09. Irokawa Quarter Mile · 3 points[/h2]
+Toyota, C 500; target time 15.000 seconds. Reward: Konbini Door horn.
+[b]Car:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
 
-[h2]10. Shiro Switch · 2 points[/h2]
-Drift Zone: score 61,750 points. Nissan, B 600. Reward: Wheelspin.
-[b]Car:[/b] 1992 Nissan Skyline GT-R — B 600 · 161 020 665
+[h2]10. Alpine Heights · 2 points[/h2]
+Toyota, C 500; target 721.8 ft (220.0 m). Reward: Wheelspin.
+[b]Car:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
 
-[h2]11. The Trial: Take It From the Top · 10 points[/h2]
-Team Cross Country: Unlimited Offroad, A 700. Routes: Ruriko-ji Cross Country, Soni Highlands Cross Country, Shimanoyama Cross Country. Reward: 2020 Mercedes-Benz AMG Black Series.
-[b]Car:[/b] 2016 Jeep Trailcat — A 700 · 174 603 628
+[h2]11. Konbini Dash · 2 points[/h2]
+Toyota, C 500; target 85.0 mph (136.8 km/h). Reward: Wheelspin.
+[b]Car:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
 
-[h2]12. Mini Games · 3 points[/h2]
-Complete any Horizon Stunt Party. Reward: Black Carbon Fibre Helmet.
+[h2]12. The Trial: Full Send · 10 points[/h2]
+Dirt: Subaru, B 600. Routes: Hokubu Trail, Waterfall Trail, Nukabira Trail. Reward: 2023 Toyota Camry TRD.
+[b]Car:[/b] 2004 Subaru Impreza WRX STI — B 600; 528 993 509
 
-[h2]13. Monthly Rivals — Daikoku Circuit · 4 points[/h2]
+[h2]13. Monthly Rivals — Daikoku Circuit · 4 points per Series (1 per season)[/h2]
 Set a clean lap on Daikoku Circuit in the 2025 BMW M4 CS. Reward: Super Wheelspin.
 [b]Car:[/b] 2025 BMW M4 CS — S1 733, AWD; no tune required.
 

@@ -8,34 +8,6 @@
   },
   "snapshots": [
     {
-      "runId": "fh6-20260918-083827-008424",
-      "collectedAt": "2026-09-18T08:40:10.3401206+07:00",
-      "steamViews": 1115,
-      "steamFavorites": 67,
-      "githubViews": 1656
-    },
-    {
-      "runId": "fh6-20260919-060519-415706",
-      "collectedAt": "2026-09-19T06:07:02.8400335+07:00",
-      "steamViews": 1126,
-      "steamFavorites": 67,
-      "githubViews": 1708
-    },
-    {
-      "runId": "fh6-20260920-054002-999090",
-      "collectedAt": "2026-09-20T06:07:01.4745988+07:00",
-      "steamViews": 1134,
-      "steamFavorites": 66,
-      "githubViews": 1758
-    },
-    {
-      "runId": "fh6-20260921-054003-142093",
-      "collectedAt": "2026-09-21T06:05:38.1504676+07:00",
-      "steamViews": 1143,
-      "steamFavorites": 68,
-      "githubViews": 1788
-    },
-    {
       "runId": "fh6-20260922-054005-275033",
       "collectedAt": "2026-09-22T06:08:13.0723094+07:00",
       "steamViews": 1155,
@@ -426,7 +398,35 @@
       "steamViews": 1323,
       "steamFavorites": 81,
       "githubViews": 3637
+    },
+    {
+      "runId": "fh6-20261021-060004-543067",
+      "collectedAt": "2026-10-21T06:05:08.4751557+07:00",
+      "steamViews": 1325,
+      "steamFavorites": 81,
+      "githubViews": 3668
+    },
+    {
+      "runId": "fh6-20261022-060007-911644",
+      "collectedAt": "2026-10-22T06:05:59.3899627+07:00",
+      "steamViews": 1332,
+      "steamFavorites": 83,
+      "githubViews": 3704
+    },
+    {
+      "runId": "fh6-20261022-142804-734179",
+      "collectedAt": "2026-10-22T14:34:19.9237333+07:00",
+      "steamViews": 1333,
+      "steamFavorites": 83,
+      "githubViews": 3706
+    },
+    {
+      "runId": "fh6-20261023-060007-999001",
+      "collectedAt": "2026-10-23T06:04:47.4986167+07:00",
+      "steamViews": 1342,
+      "steamFavorites": 83,
+      "githubViews": 3739
     }
   ],
-  "updatedAt": "2026-10-20T06:04:14.5094620+07:00"
+  "updatedAt": "2026-10-23T06:04:47.5945403+07:00"
 }
