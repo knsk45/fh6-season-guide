@@ -171,10 +171,20 @@ def grant_candidate_read_access(work):
     # Physical traversal never grants access through a candidate symlink.
     subprocess.run(['setfacl','-R','-P','-m','u:fh6:rX',str(work)],check=True)
 
-def wait_editor(process,timeout=1200,grace=5):
+def wait_editor(process,timeout=1200,grace=5,cancelled=None):
     try:
-        process.wait(timeout=timeout)
-    except subprocess.TimeoutExpired:
+        if cancelled is None:
+            process.wait(timeout=timeout)
+        else:
+            deadline=time.monotonic()+timeout
+            while True:
+                if cancelled():raise InterruptedError('Tile search disabled')
+                remaining=deadline-time.monotonic()
+                if remaining<=0:raise subprocess.TimeoutExpired(process.args,timeout)
+                try:
+                    process.wait(timeout=min(5,remaining));break
+                except subprocess.TimeoutExpired:pass
+    except (subprocess.TimeoutExpired,InterruptedError):
         # runuser and Codex descendants belong to the invocation's own group.
         for sig in (signal.SIGTERM,signal.SIGKILL):
             try:os.killpg(process.pid,sig)
@@ -262,14 +272,14 @@ def reusable_editor_candidate(work,previous_status):
         return True
     except (OSError,ValueError,KeyError,RuntimeError):return False
 
-def editor():
+def editor(tile_version=None):
     # Dedicated directory; rebuild source view without any ignored secrets/.git.
     work=EDITOR/'work'
     archive=None
     previous_status={}
     try:previous_status=read(STORE/'editor-status.json')
     except (OSError,ValueError):pass
-    if work.exists() and reusable_editor_candidate(work,previous_status):
+    if tile_version is None and work.exists() and reusable_editor_candidate(work,previous_status):
         return work
     if work.exists():
         archive=EDITOR/('previous-'+str(time.time_ns()))
@@ -292,6 +302,22 @@ def editor():
     shutil.copytree(STORE/'inbox',work/'phone-inbox',dirs_exist_ok=True)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(EDITOR)],check=True)
     prompt=(ROOT/'automation/server/editor-prompt.md').read_text(encoding='utf-8')
+    if tile_version is not None:
+        prompt+='''
+THIS INVOCATION IS AN OWNER-ENABLED NETWORK TILE SEARCH.
+Search the web specifically for the missing exact whole in-game activity tiles
+of the canonical current season. Try fresh source pages, original image/CDN links,
+official material and current community guides. Inspect actual downloaded pixels;
+an HTTP status, label or search thumbnail is not evidence. Retain untouched originals
+and exact crops with sourceUrl/sourceLabel and dated per-card provenance in SOURCE_NOTES.
+Preserve ALL season facts, texts, translations, dates, order, known tiles and monthly
+evidence. Do not roll over. Only visual fields, visual completeness/missingFields and
+corresponding visual openItems may change. Daily stays text-only. Never fabricate,
+use overview art, prior-week material, generated graphics or change the game tile.
+Complete the full live source/visual audit required by the normal handoff. If nothing
+qualifies, leave state unchanged and report that honestly; no repeated screenshot
+request to the owner is needed for this background attempt.
+'''
     # Account authentication stays in editor's private home; never copy PC auth.
     status=subprocess.run(['runuser','-u','fh6-editor','--','/usr/local/bin/codex','login','status'],capture_output=True)
     if status.returncode:
@@ -313,7 +339,12 @@ def editor():
             process=subprocess.Popen(['runuser','-u','fh6-editor','--','/usr/local/bin/codex','--search','exec',
                       '--sandbox','workspace-write','--skip-git-repo-check','--ephemeral',current],
                       cwd=work,stdout=log,stderr=log,start_new_session=True)
-            wait_editor(process,timeout=timeout)
+            if tile_version is None:
+                wait_editor(process,timeout=timeout)
+            else:
+                import tile_search
+                wait_editor(process,timeout=timeout,
+                            cancelled=lambda:not tile_search.still_enabled(STORE,tile_version))
         if process.returncode:
             atomic(STORE/'editor-status.json',{'status':'FAILED','at':now(),'attempt':attempt})
             return None
@@ -330,6 +361,42 @@ def editor():
     atomic(STORE/'editor-status.json',{'status':'NO_AUDIT','at':now(),'attempt':3,
                                      'reasonCode':'EDITOR_HANDOFF_INCOMPLETE'})
     return None
+
+def run_tiles(version):
+    """Research first; enter the sole publication pipeline only for new tiles."""
+    import tile_search
+    with exclusive(STORE/'runner.lock'):
+        if not tile_search.still_enabled(STORE,version):return 'STOPPED',0
+        checkpoint=ROOT/'automation/runs/refresh/active.json'
+        active=read(checkpoint) if checkpoint.exists() else {}
+        if active.get('status') in {'RUNNING','AWAITING_DELIVERY','BLOCKED'}:
+            return 'BUSY',0
+        before=read(ROOT/'data/current-season.json')
+        if not tile_search.missing(before):return 'COMPLETE',0
+        collect()
+        try:work=editor(tile_version=version)
+        except InterruptedError:return 'STOPPED',0
+        if not tile_search.still_enabled(STORE,version):return 'STOPPED',0
+        if not work:
+            status=read(STORE/'editor-status.json').get('status')
+            return ('AUTH_REQUIRED' if status=='AUTH_REQUIRED' else 'FAILED'),0
+        gained=tile_search.improvements(before,read(work/'data/current-season.json'))
+        if not gained:return 'NO_NEW_TILES',0
+        files=safe_candidate(work)
+        grant_candidate_read_access(work)
+        validate_candidate_state(work)
+        validate_editor_handoff(work)
+        if not tile_search.still_enabled(STORE,version):return 'STOPPED',0
+        # Once a verified publication begins, finish its delivery atomically.
+        guard('start')
+        promote_candidate(work,files)
+        guard('execute')
+        active=read(checkpoint)
+        queue_incident_analysis(active)
+        if active.get('status') not in {'COMPLETED','PENDING_CONFIRMATION'}:
+            raise RuntimeError('Tile publication did not finish')
+        return 'UPDATED',gained
+
 
 def queue_incident_analysis(active):
     if active.get('status')!='BLOCKED':return

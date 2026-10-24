@@ -27,13 +27,13 @@ function announce(text,error=false){notice.textContent=text;notice.classList.tog
 function localDates(){document.querySelectorAll('time[datetime]').forEach(e=>{const d=new Date(e.dateTime);if(!isNaN(d))e.textContent=new Intl.DateTimeFormat('ru',{dateStyle:'medium',timeStyle:'short'}).format(d);});}localDates();
 document.querySelectorAll('.action-form').forEach(form=>form.addEventListener('submit',async event=>{
  event.preventDefault();const button=form.querySelector('button[type=submit]');if(button.disabled)return;
- const original=button.textContent;const payload=new URLSearchParams(new FormData(form));if(form.action.endsWith('/consent'))form.querySelector('input[type=checkbox]').disabled=true;const message=form.querySelector('.action-message');button.disabled=true;button.textContent='Отправляем…';message.textContent='Запрос отправляется на сервер';message.classList.remove('error');
+ const original=button.textContent;const payload=new URLSearchParams(new FormData(form));if(form.querySelector('input[role=switch]'))form.querySelector('input[type=checkbox]').disabled=true;const message=form.querySelector('.action-message');button.disabled=true;button.textContent='Отправляем…';message.textContent='Запрос отправляется на сервер';message.classList.remove('error');
  try{const endpoint=new URL(form.action);endpoint.searchParams.set('_ui','1');const r=await fetch(endpoint,{method:'POST',headers:{'X-FH6-UI':'1'},body:payload});const raw=await r.text();let data;try{data=JSON.parse(raw);}catch{const failure=new Error();failure.notice=r.status===401?'HTTP 401: снова войдите в панель и обновите страницу.':'HTTP '+r.status+': сервер вернул неожиданный ответ. Обновите страницу и проверьте статус перед повтором.';throw failure;}message.textContent=data.message;message.classList.toggle('error',!r.ok);announce(data.message,!r.ok);
- if(!r.ok){if(form.action.endsWith('/consent'))form.querySelector('input[type=checkbox]').checked=!form.querySelector('input[type=checkbox]').checked;button.disabled=false;if(form.action.endsWith('/consent'))form.querySelector('input[type=checkbox]').disabled=false;button.textContent=original;return;}button.textContent='✓ Принято';sessionStorage.setItem('fh6-notice',data.message);
+ if(!r.ok){if(form.querySelector('input[role=switch]'))form.querySelector('input[type=checkbox]').checked=!form.querySelector('input[type=checkbox]').checked;button.disabled=false;if(form.querySelector('input[role=switch]'))form.querySelector('input[type=checkbox]').disabled=false;button.textContent=original;return;}button.textContent='✓ Принято';sessionStorage.setItem('fh6-notice',data.message);
  if(data.anchor){setTimeout(()=>{location.assign('/#'+data.anchor);location.reload();},1200);}
  }catch(error){message.textContent=error.notice||'Не удалось получить ответ. Обновите страницу и проверьте статус перед повтором.';message.classList.add('error');announce(message.textContent,true);button.textContent='Проверьте статус';const retry=document.createElement('button');retry.type='button';retry.className='secondary';retry.textContent='Обновить статус';retry.addEventListener('click',()=>location.reload());message.after(retry);}
 }));
-const consent=document.querySelector('#steam-consent');if(consent){const form=consent.closest('form');form.querySelector('button').hidden=true;consent.addEventListener('change',()=>form.requestSubmit());}
+document.querySelectorAll('input[role=switch]').forEach(toggle=>{const form=toggle.closest('form');form.querySelector('button').hidden=true;toggle.addEventListener('change',()=>form.requestSubmit());});
 const saved=sessionStorage.getItem('fh6-notice');if(saved){announce(saved);sessionStorage.removeItem('fh6-notice');}
 document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{
  const source=document.getElementById(button.dataset.copy),message=button.closest('.steam-block').querySelector('.action-message'),original=button.textContent;button.disabled=true;
@@ -88,7 +88,7 @@ def refresh_history(rows,active):
     else:text+='<p class="hint">После нажатия здесь появится принятый запрос, ход проверки и её результат.</p>'
     return text+'</div>'
 
-def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None,steam_publication=None,refresh_requests=None):
+def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,login_code='',signature=None,consent=None,steam_publication=None,refresh_requests=None,tile_search_state=None):
     status=active.get('status')
     labels={'RUNNING':('Обновление выполняется','active'),'BLOCKED':('Нужна проверка ошибки','bad'),
         'COMPLETED':('Обновление завершено','good'),'PENDING_CONFIRMATION':('Сайт обновлён · Steam ждёт разрешения','warn'),
@@ -154,6 +154,18 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     elif approval:body+='<p class="action-message">✓ Разрешение на эти два текста сохранено. Ожидается публикация.</p><button disabled>Разрешение сохранено</button>'
     else:body+=action('/approve','Разрешить обновление двух текстов','Разрешение сохраняется для текущих текстов. Само нажатие пока не публикует их в Steam.','<input type="hidden" name="sha" value="'+esc(sha)+'">')
     body+='<p class="hint">При действующей авторизации разрешённые обновления публикуются автоматически. Если потребуется вход или проверка, статус появится здесь.</p></section><section class="card" id="screenshots"><div class="section-head"><h2>Игровые скриншоты</h2>'+badge('Оригиналы')+'</div><p class="hint">Передайте полные игровые плитки. Сборщик сохранит файлы без изменений для проверки.</p><label for="screens">Выберите изображения</label><br><input id="screens" type="file" accept="image/png,image/jpeg,image/webp" multiple><br><button id="upload-button" type="button" disabled>Загрузить скриншоты</button><p id="message" class="action-message" role="status" aria-live="polite"></p></section>'
+    search=tile_search_state or {}
+    search_labels={'SEARCHING':'Ищем точные плитки в сети','NO_NEW_TILES':'Новых подтверждённых плиток пока нет',
+        'UPDATED':'Найденные плитки опубликованы','COMPLETE':'Все плитки найдены — ожидаем следующую неделю',
+        'BUSY':'Ожидаем завершения текущего обновления','AUTH_REQUIRED':'Для поиска войдите в Codex ниже',
+        'FAILED':'Попытка не завершилась — повторим позже','STOPPED':'Поиск выключен','WAITING':'Ожидаем первую попытку'}
+    # Keep the existing five sections and place the switch beside image uploads.
+    search_html=action('/tile-search','Сохранить поиск плиток','',
+        '<label class="switch-label"><input id="tile-search" type="checkbox" role="switch" name="enabled" value="true" '+('checked' if search.get('enabled') else '')+'><span class="switch-track" aria-hidden="true"></span><span>Искать плитки в сети</span></label>')
+    search_html+='<p class="hint">Работает на сервере без ноутбука: первая попытка в течение минуты, затем раз в 3 часа. Сохраняем только точные игровые плитки с проверенным источником. Выключение останавливает поиск; уже начатая публикация завершится.</p><p id="tile-search-status" role="status">'+esc(search_labels.get(search.get('status'),'Поиск выключен'))+' · Не хватает плиток: '+esc(search.get('missingCount',0))+'</p>'
+    if search.get('lastCheckedAt'):search_html+='<p class="hint">Последняя попытка: '+date(search['lastCheckedAt'])+'</p>'
+    if search.get('enabled') and search.get('nextAttemptAt'):search_html+='<p class="hint">Следующая попытка: '+date(search['nextAttemptAt'])+'</p>'
+    body=body.replace('<label for="screens">',search_html+'<div class="divider"></div><label for="screens">')
     auth_labels={'CONNECTED':('Codex подключён','good'),'IDLE':('Нужен вход','warn'),'QUEUED':('Вход в очереди','active'),'STARTING':('Запускаем вход','active'),'WAITING_FOR_OWNER':('Подтвердите вход','warn'),'FAILED':('Ошибка входа','bad'),'EXPIRED':('Код истёк','warn')}
     label,t=auth_labels.get(auth['status'],('Проверьте вход','warn'))
     body+='<section class="card" id="codex"><div class="section-head"><h2>Подключение Codex</h2>'+badge(label,t)+'</div><p id="codex-status">'+('Авторизация на сервере подтверждена. Можно отправлять задачи.' if auth['status']=='CONNECTED' else 'Подключите свой аккаунт OpenAI, чтобы серверный Codex мог выполнять задачи.')+'</p>'

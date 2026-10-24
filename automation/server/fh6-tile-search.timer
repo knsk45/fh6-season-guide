@@ -1,0 +1,9 @@
+[Unit]
+Description=Check FH6 tile search switch every minute
+[Timer]
+OnBootSec=60
+OnUnitInactiveSec=60
+AccuracySec=5
+Unit=fh6-tile-search.service
+[Install]
+WantedBy=timers.target

@@ -21,6 +21,7 @@ import phone_view
 import steam_consent
 import refresh_receipts
 import incident_reports
+import tile_search
 
 ROOT=Path(os.environ.get('FH6_ROOT','/opt/fh6/repo'))
 STORE=Path(os.environ.get('FH6_STORE','/var/lib/fh6'))
@@ -107,14 +108,14 @@ def panel_data():
     steam_publication={k:published.get(k) for k in ['status','sha256','updatedAt']}
     return dict(active=active,state=state,editor=load(STORE/'editor-status.json'),
                 recovery=load(STORE/'recovery.json'),auth=login_status(),tasks=phone_tasks.latest(),
-                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_requests,consent=steam_consent.state(STORE),steam_publication=steam_publication)
+                texts=texts,sha=sha,approval=approval,queued=queued,refresh_requests=refresh_requests,consent=steam_consent.state(STORE),steam_publication=steam_publication,tile_search_state=tile_search.snapshot(ROOT,STORE))
 
 def panel_signature(data):
     return dict(runId=data['active'].get('runId'),status=data['active'].get('status'),
                 steps={k:(v.get('status') if isinstance(v,dict) else v) for k,v in data['active'].get('steps',{}).items()},updated=data['state'].get('lastContentUpdate'),
                 notification=data['active'].get('notification'),receipt=data['active'].get('haReceipt'),
                 auth=data['auth'],tasks=[[t['id'],t.get('status')] for t in data['tasks']],
-                refresh_requests=data.get('refresh_requests',[]),recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'))
+                refresh_requests=data.get('refresh_requests',[]),recovery=data['recovery'].get('status'),sha=data['sha'],approval=data['approval'],queued=data['queued'],consent=data['consent'],steam_publication=data.get('steam_publication'),tile_search=data.get('tile_search_state'))
 
 class UI(BaseHTTPRequestHandler):
     def log_message(self,*args): pass  # Do not log credentials/query contents.
@@ -189,7 +190,7 @@ class UI(BaseHTTPRequestHandler):
         try:size=int(self.headers.get('Content-Length','0'))
         except ValueError:return self.respond(400,'Invalid content length')
         path=urlsplit(self.path).path
-        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent','/diagnose'}:
+        if path not in {'/setup','/upload','/approve','/login','/refresh','/task','/consent','/diagnose','/tile-search'}:
             return self.respond(404,'Not found')
         if size<0:return self.respond(400,'Invalid content length')
         if path=='/setup' and not 0<size<=4096:
@@ -208,6 +209,12 @@ class UI(BaseHTTPRequestHandler):
             if path=='/setup' or origin not in (None,'null',PUBLIC_ORIGIN) or len(tokens)!=1 or not re.fullmatch(r'[A-Za-z0-9_-]{43}',tokens[0]) or not hmac.compare_digest(tokens[0],CSRF_TOKEN):
                 return self.respond(403,json.dumps(dict(message='HTTP 403: защитный токен отсутствует или устарел. Обновите страницу панели.',anchor='overview'),ensure_ascii=False),'application/json; charset=utf-8')
         try:
+            if path=='/tile-search':
+                fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
+                if fields.get('enabled') not in (None,['true']):raise ValueError('Некорректное значение настройки.')
+                enabled=fields.get('enabled')==['true']
+                tile_search.set_enabled(STORE,enabled)
+                return self.action_result(200,'Поиск плиток включён. Первая попытка — в течение минуты.' if enabled else 'Поиск плиток выключен. Начатая публикация, если есть, завершится.','screenshots')
             if path=='/consent':
                 fields=parse_qs(data.decode('utf-8'),keep_blank_values=True)
                 enabled=fields.get('enabled')==['true']

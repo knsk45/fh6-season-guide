@@ -49,6 +49,14 @@ async def main():
                         for section in await page.locator('section.card').all():
                             assert await section.evaluate('e=>getComputedStyle(e).borderStyle')=='solid'
                     await page.goto(base)
+                    await page.locator('#tile-search').check()
+                    await expect(page.locator('form[action="/tile-search"] .action-message')).to_contain_text('Поиск плиток включён')
+                    await page.wait_for_timeout(1500)
+                    await expect(page.locator('#tile-search')).to_be_checked()
+                    assert json.loads((root/'tile-search.json').read_text())['enabled'] is True
+                    await page.locator('#tile-search').uncheck()
+                    await page.wait_for_timeout(1500)
+                    await expect(page.locator('#tile-search')).not_to_be_checked()
                     async def fail_copy(route):pass
                     await page.evaluate("Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('fixture')}}})")
                     await page.locator('[data-copy="steam-ru"]').click()
