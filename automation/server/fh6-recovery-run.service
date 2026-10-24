@@ -1,0 +1,11 @@
+[Unit]
+Description=Resume FH6 after a transient failure
+After=network-online.target
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/usr/bin/python3 /opt/fh6/repo/automation/server/recovery.py run
+TimeoutStartSec=3600
+UMask=0027
+Nice=10
+Environment=FH6_BROWSER_QA=/opt/fh6/venv/bin/python

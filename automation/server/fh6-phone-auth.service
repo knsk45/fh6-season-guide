@@ -1,0 +1,19 @@
+[Unit]
+Description=FH6 private panel cookie authentication
+After=network.target
+[Service]
+User=www-data
+Group=www-data
+ExecStart=/usr/bin/python3 /usr/local/lib/fh6/phone_auth.py
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+UMask=0077
+TasksMax=32
+MemoryMax=96M
+[Install]
+WantedBy=multi-user.target

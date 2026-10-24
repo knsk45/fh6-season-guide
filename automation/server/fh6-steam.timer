@@ -1,0 +1,8 @@
+[Unit]
+Description=Check owner-approved Steam publication (no refresh pipeline)
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=2min
+Unit=fh6-steam.service
+[Install]
+WantedBy=timers.target

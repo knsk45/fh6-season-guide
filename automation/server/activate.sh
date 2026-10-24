@@ -7,6 +7,7 @@ install -d -m 2750 -o fh6-editor -g fh6 /var/lib/fh6/login
 setfacl -m u:fh6-editor:--x /var/lib/fh6
 install -d -m 0755 -o root -g root /usr/local/lib/fh6
 install -m 0600 -o root -g root /opt/fh6/repo/automation/server/phone_password.py /usr/local/lib/fh6/phone_password.py
+install -m 0644 -o root -g root /opt/fh6/repo/automation/server/phone_auth.py /usr/local/lib/fh6/phone_auth.py
 chown root:fh6 /etc/fh6
 # nginx needs traversal, not directory listing or membership in the private fh6 group.
 setfacl -m u:www-data:--x /etc/fh6
@@ -21,7 +22,7 @@ nginx -t
 if test -L /etc/nginx/sites-enabled/default; then unlink /etc/nginx/sites-enabled/default; fi
 install -m 0644 /opt/fh6/repo/automation/server/*.service /opt/fh6/repo/automation/server/*.timer /opt/fh6/repo/automation/server/*.path /etc/systemd/system/
 systemctl daemon-reload
-systemctl enable --now fh6-phone-password.service fh6-phone.service fh6-editor-login.path
+systemctl enable --now fh6-phone-password.service fh6-phone-auth.service fh6-phone.service fh6-editor-login.path
 systemctl restart nginx
 # Timers are activated only after live verification, by a separate cutover step.
 echo FH6_PRIVATE_UI_READY
