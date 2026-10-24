@@ -7,7 +7,7 @@ from phone_tasks import read, save, lock
 
 INTERVAL = 3 * 60 * 60
 STATUSES = {'SEARCHING', 'NO_NEW_TILES', 'UPDATED', 'COMPLETE', 'BUSY',
-            'AUTH_REQUIRED', 'FAILED', 'STOPPED', 'WAITING'}
+            'AUTH_REQUIRED', 'FAILED', 'STOPPED', 'WAITING', 'SOURCE_UNAVAILABLE'}
 
 
 def policy(store):
@@ -66,9 +66,15 @@ def snapshot(root, store):
     setting = policy(store)
     result = read(Path(store) / 'tile-search-status.json')
     current = result if result.get('version') == setting['version'] else {}
+    downloads={}
+    state=read(Path(root) / 'data/current-season.json')
+    try:
+        from tile_images import section_key
+        downloads=read(Path(store)/'tile-image-cache'/section_key(state)/'index.json')
+    except (KeyError,ValueError,TypeError):pass
     return dict(enabled=setting['enabled'],
                 status=(current.get('status', 'WAITING') if setting['enabled'] else 'STOPPED'),
-                missingCount=len(missing(read(Path(root) / 'data/current-season.json'))),
+                missingCount=len(missing(state)), downloadedCount=len(downloads.get('entries',[])),
                 lastCheckedAt=result.get('finishedAt'),
                 nextAttemptAt=current.get('nextAttemptAt'), foundCount=current.get('foundCount', 0))
 

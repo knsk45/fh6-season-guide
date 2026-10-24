@@ -288,6 +288,11 @@ def editor(tile_version=None,repair_locale=False):
     except (OSError,ValueError):pass
     if not repair_locale and tile_version is None and work.exists() and reusable_editor_candidate(work,previous_status):
         return work
+    network_cache=None
+    import tile_search,tile_images
+    state=read(ROOT/'data/current-season.json') if (ROOT/'data/current-season.json').is_file() else {}
+    if tile_search.missing(state):
+        network_cache,_=tile_images.collect(ROOT,STORE,state)
     if work.exists():
         archive=EDITOR/('previous-'+str(time.time_ns()))
         work.rename(archive)
@@ -307,8 +312,24 @@ def editor(tile_version=None,repair_locale=False):
             shutil.copyfile(file,target)
     shutil.copyfile(STORE/'source-snapshots.json',work/'source-snapshots.json')
     shutil.copytree(STORE/'inbox',work/'phone-inbox',dirs_exist_ok=True)
+    if network_cache:
+        shutil.copytree(network_cache,work/'network-tile-candidates',dirs_exist_ok=True)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(EDITOR)],check=True)
     prompt=(ROOT/'automation/server/editor-prompt.md').read_text(encoding='utf-8')
+    if network_cache:
+        prompt+='''
+The supervisor downloaded original image bytes BEFORE entering this offline
+sandbox. Read network-tile-candidates/index.json and inspect the actual local
+images with the image viewer. They come from the exact season section named
+in index.json; labels alone are NOT proof. Match each full tile visually to the
+canonical activity and current week. Copy accepted raw originals byte-for-byte
+to visual.sourceImage, prepare only exact tile bounds for visual.image and record
+the original CDN URL, source page, SHA and visual verification in SOURCE_NOTES.
+Keep Daily text-only and preserve existing monthly evidence. Reject overview,
+wrong-week or partial tiles. Do not claim download failure when local bytes exist.
+Network access inside this editor remains unavailable by design; use these local
+candidates for pixel inspection rather than repeatedly retrying shell downloads.
+'''
     if repair_locale:
         prompt+='''
 BOUNDED EDITORIAL SELF-REPAIR: a verified build failure identified missing
@@ -398,7 +419,11 @@ def run_tiles(version):
             status=read(STORE/'editor-status.json').get('status')
             return ('AUTH_REQUIRED' if status=='AUTH_REQUIRED' else 'FAILED'),0
         gained=tile_search.improvements(before,read(work/'data/current-season.json'))
-        if not gained:return 'NO_NEW_TILES',0
+        if not gained:
+            index=work/'network-tile-candidates/index.json'
+            if index.is_file() and read(index).get('status')!='AVAILABLE':
+                return 'SOURCE_UNAVAILABLE',0
+            return 'NO_NEW_TILES',0
         files=safe_candidate(work)
         grant_candidate_read_access(work)
         validate_candidate_state(work)
