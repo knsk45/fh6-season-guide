@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-24T12:28:13+07:00",
+  "lastContentUpdate": "2026-10-24T12:35:17+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -82,22 +82,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "image": "activity_03_photo.png",
+        "sourceImage": "network-source-activity_03_photo.png",
+        "orientation": "vertical",
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/956bea3b54d45c111048491ba3f070746b2e4070-884x1415.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка #PolarisPoint; оригинальные CDN-байты сохранены, границы 884×1415 проверены визуально, без ретуши и наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure_hunt",
@@ -459,13 +457,5 @@
       }
     }
   },
-  "openItems": [
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная полная плитка #PolarisPoint не подтверждена пикселями: локального оригинала нет; ссылка Winter ForzaLabs недоступна reader.",
-      "nextCheck": "Фоновый поиск точной Winter-плитки в свежих источниках; без повторного запроса владельцу в этом запуске.",
-      "status": "missing"
-    }
-  ]
+  "openItems": []
 }
