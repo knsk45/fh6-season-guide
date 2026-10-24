@@ -8,9 +8,10 @@ import sys
 
 import runner
 from refresh_guard import atomic, exclusive, now, read
+from editorial_health import locale_failure
 
 DELAYS=(300,900,3600)
-UNITS=('fh6-refresh.service','fh6-manual.service','fh6-recovery-run.service')
+UNITS=('fh6-refresh.service','fh6-manual.service','fh6-recovery-run.service','fh6-tile-search.service')
 TRANSIENT=re.compile(r'(?i)\b(?:429|500|502|503|504)\b|rate.limit|usage.limit|quota.exceeded|too.many.requests|'
                      r'connection.(?:reset|refused|timed.out)|timed.out|timeout|temporary.failure|'
                      r'network.(?:error|unreachable)|service.unavailable|failed.to.fetch|'
@@ -37,6 +38,8 @@ def failure(run,editor,logs):
     # Old network text must not turn an incomplete handoff into a blind retry.
     if editor.get('status')=='NO_AUDIT':return 'AUDIT_INCOMPLETE'
     failed={key for key,value in run.get('steps',{}).items() if value.get('status')=='failed'}
+    if failed & {'portable','html','structure','audit'} and locale_failure(logs):
+        return 'LOCALIZATION_INCOMPLETE'
     if failed & {'structure','preflight','rollover_preflight','visual_queue','portable','html','artifact','markdown','timestamp'}:
         return 'REVIEW_REQUIRED'
     if TRANSIENT.search(logs):return 'TEMPORARY_FAILURE'
@@ -101,11 +104,18 @@ def tick():
             if run.get('status')=='BLOCKED':
                 if run.get('steps',{}).get('audit',{}).get('status')!='passed':
                     logs=tail(store/'editor.log')+'\n'+tail(store/'candidate-validation.log')
-                for step in run.get('steps',{}).values():
+                for name,step in run.get('steps',{}).items():
                     if step.get('status')=='failed' and step.get('log'):
                         path=Path(step['log'])
-                        if path.resolve().is_relative_to((root/'automation/runs/refresh').resolve()):
-                            logs+='\n'+tail(path)
+                        expected=root/'automation/runs/refresh'/str(run.get('runId'))/(name+'.log')
+                        if (path==expected and not path.is_symlink() and not path.parent.is_symlink()
+                                and path.resolve().is_relative_to((root/'automation/runs/refresh').resolve())):
+                            import hashlib
+                            try:
+                                raw=path.read_bytes() if path.stat().st_size<=2_000_000 else b''
+                            except OSError:raw=b''
+                            if raw and step.get('sha256') and hashlib.sha256(raw).hexdigest()==step['sha256']:
+                                logs+='\n'+raw[-65536:].decode('utf-8','replace')
             ready=False
             if (run.get('status')=='BLOCKED' and failure(run,editor,logs)=='AUTH_REQUIRED'
                     and login_restored(run,load(store/'login/status.json'))):

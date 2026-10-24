@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 import time
 import phone_tasks
+from editorial_health import locale_context, locale_failure
 
 RUN_ID=re.compile(r'fh6-[0-9-]{1,80}')
 STAGES=('audit','preflight','rollover_preflight','visual_queue','timestamp','markdown',
@@ -15,7 +16,7 @@ STATUSES={'RUNNING','COMPLETED','BLOCKED','PENDING_CONFIRMATION','AWAITING_DELIV
 RULES=(
  ('GIT_SPARSE_CHECKOUT',r'outside of your sparse-checkout definition|Use the --sparse option','Git отказался добавить изображения вне sparse-checkout; издателю нужен git add --sparse.'),
  ('GIT_PATHSPEC',r"pathspec .+ did not match any files|did not match any file","Git не нашёл один из путей, переданных для публикации."),
- ('PORTABLE_RECEIPT',r'Verify compatible portable package receipt failed|PORTABLE_.*FAILED','Издатель отклонил проверку переносимого пакета.'),
+ ('PORTABLE_RECEIPT',r'Verify compatible portable package receipt failed|PORTABLE_RECEIPT.*FAILED|No compatible successful receipt|Package hash mismatch','Проверка переносимого пакета не пройдена.'),
  ('BRANCH_MISMATCH',r'Expected branch .+current branch','Публикация запущена не из ожидаемой ветки Git.'),
  ('BRANCH_DIVERGED',r'Local branch does not contain origin/|non-fast-forward|fetch first','Локальная ветка отстала от GitHub или разошлась с ним.'),
  ('GIT_IDENTITY',r'Please tell me who you are|unable to auto-detect email','Для Git не настроены имя или адрес автора коммита.'),
@@ -115,6 +116,9 @@ def report(root,store,run):
                 lines.append(name+' log SHA256: '+sha)
                 decoded=raw.decode('utf-8',errors='replace')
                 reasons.extend(classify(decoded))
+                if locale_failure(decoded):
+                    reasons.append({'code':'LOCALIZATION_INCOMPLETE','message':'Не заполнено обязательное поле английской версии. Сборщик может повторить редакторскую проверку.'})
+                    lines.extend(locale_context(decoded))
                 if name=='publish':lines.extend(error_context(decoded))
     # Pre-promotion errors have no guard stage. Include only a time-correlated,
     # root-written reason, classified to fixed messages; never copy its raw command.

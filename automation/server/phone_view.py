@@ -80,8 +80,13 @@ def refresh_history(rows,active):
         return text+'</div>'
     text='<div id="refresh-progress" role="status" aria-live="polite"><h3>Проверка и обновление</h3>'
     if rows:
-        text+=entry(rows[0])
-        if len(rows)>1:text+='<details><summary>Предыдущие запросы ('+str(len(rows)-1)+')</summary>'+''.join(entry(r) for r in rows[1:])+'</details>'
+        if rows[0].get('runId') and active.get('runId') and rows[0]['runId']!=active['runId']:
+            text+='<p class="hint">Текущий запуск сборщика. Более ранние запросы сохранены в истории ниже.</p>'
+            text+=entry(dict(status=active.get('status'),startedAt=active.get('startedAt'),finishedAt=active.get('finishedAt'),steps={k:v.get('status') for k,v in active.get('steps',{}).items() if isinstance(v,dict)},notificationReceived=active.get('haReceipt')=='CONFIRMED'))
+            text+='<details><summary>История запросов ('+str(len(rows))+')</summary>'+''.join(entry(r) for r in rows)+'</details>'
+        else:
+            text+=entry(rows[0])
+            if len(rows)>1:text+='<details><summary>Предыдущие запросы ('+str(len(rows)-1)+')</summary>'+''.join(entry(r) for r in rows[1:])+'</details>'
     elif active.get('runId'):
         text+='<p class="hint">Последний запуск сборщика. История запросов с кнопки будет сохраняться после следующего нажатия.</p>'
         text+=entry(dict(status=active.get('status'),startedAt=active.get('startedAt'),finishedAt=active.get('finishedAt'),steps={k:v.get('status') for k,v in active.get('steps',{}).items() if isinstance(v,dict)},notificationReceived=active.get('haReceipt')=='CONFIRMED'))

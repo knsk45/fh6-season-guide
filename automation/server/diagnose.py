@@ -83,7 +83,7 @@ def snapshot(root, store):
     recovery=load(store/'recovery.json')
     report['recovery']={
         'status':enum(recovery.get('status'),{'IDLE','WAITING','QUEUED','NEEDS_LOGIN','NEEDS_REVIEW','LIMIT_REACHED'}),
-        'reason':enum(recovery.get('reason'),{'INTERRUPTED','AUTH_REQUIRED','AUTH_RESTORED','TIMEOUT','TEMPORARY_FAILURE','REVIEW_REQUIRED'}),
+        'reason':enum(recovery.get('reason'),{'INTERRUPTED','AUTH_REQUIRED','AUTH_RESTORED','TIMEOUT','TEMPORARY_FAILURE','REVIEW_REQUIRED','AUDIT_INCOMPLETE','LOCALIZATION_INCOMPLETE'}),
         'retryCount':recovery.get('retryCount') if type(recovery.get('retryCount')) is int and 0<=recovery['retryCount']<=3 else None,
         'nextAttemptAt':stamp(recovery.get('nextAttemptAt')),
     }

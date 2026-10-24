@@ -25,6 +25,7 @@ STORE = Path(os.environ.get('FH6_STORE', '/var/lib/fh6'))
 EDITOR = STORE / 'editor'
 sys.path.insert(0, str(ROOT / 'automation'))
 from refresh_guard import Guard, atomic, read, digest, now, exclusive
+from editorial_health import validate_locale
 
 EDITOR_HANDOFF_REPAIR='''
 SUPERVISOR: the previous model call exited without a valid editorial handoff.
@@ -42,6 +43,10 @@ SOURCE_NOTES table, or successful exit alone is NOT a handoff. Do not invent fac
 mark an unconfirmed season as confirmed, relax validators, or edit automation.
 If live evidence genuinely cannot confirm the season, explain that exact blocker
 in SOURCE_NOTES; do not fabricate an audit merely to satisfy this request.
+If supervisor-feedback identifies a missing English field, translate only the
+already verified Russian content for that same activity. Preserve car years,
+codes, restrictions and completeness; never invent a solution. Revalidate every
+English field before writing a fresh full audit. Do not edit executable code.
 '''
 
 def validate_editor_handoff(work):
@@ -49,6 +54,8 @@ def validate_editor_handoff(work):
     project=confined_file(work,'data/project.json')
     if project.read_bytes() != (ROOT/'data/project.json').read_bytes():
         raise RuntimeError('Project configuration changed in isolated candidate')
+    # Let bounded editorial retries fix missing localization before promotion.
+    validate_locale(read(confined_file(work,'data/current-season.json')))
     grant_candidate_read_access(work)
     review=Guard(work)
     candidate=review.start()
@@ -272,14 +279,14 @@ def reusable_editor_candidate(work,previous_status):
         return True
     except (OSError,ValueError,KeyError,RuntimeError):return False
 
-def editor(tile_version=None):
+def editor(tile_version=None,repair_locale=False):
     # Dedicated directory; rebuild source view without any ignored secrets/.git.
     work=EDITOR/'work'
     archive=None
     previous_status={}
     try:previous_status=read(STORE/'editor-status.json')
     except (OSError,ValueError):pass
-    if tile_version is None and work.exists() and reusable_editor_candidate(work,previous_status):
+    if not repair_locale and tile_version is None and work.exists() and reusable_editor_candidate(work,previous_status):
         return work
     if work.exists():
         archive=EDITOR/('previous-'+str(time.time_ns()))
@@ -302,6 +309,16 @@ def editor(tile_version=None):
     shutil.copytree(STORE/'inbox',work/'phone-inbox',dirs_exist_ok=True)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(EDITOR)],check=True)
     prompt=(ROOT/'automation/server/editor-prompt.md').read_text(encoding='utf-8')
+    if repair_locale:
+        prompt+='''
+BOUNDED EDITORIAL SELF-REPAIR: a verified build failure identified missing
+required English localization. Read the canonical Russian activity fields and
+fill only their faithful English equivalents in locales.en. Preserve all verified
+facts, years, restrictions, tune codes and missing-evidence status. Do not invent
+unknown guidance. Validate all five required English fields for every activity,
+plus reportTitle/seasonDisplay. Then perform the full fresh source/visual audit
+and handoff. Do not modify code, settings, secrets, approvals or validators.
+'''
     if tile_version is not None:
         prompt+='''
 THIS INVOCATION IS AN OWNER-ENABLED NETWORK TILE SEARCH.
@@ -409,6 +426,7 @@ def queue_incident_analysis(active):
 def run(force=False,recovery_run_id=None):
     STORE.mkdir(parents=True,exist_ok=True)
     with exclusive(STORE/'runner.lock'):
+        editorial_repair=False
         checkpoint=ROOT/'automation/runs/refresh/active.json'
         if checkpoint.exists():
             previous=read(checkpoint)
@@ -417,7 +435,12 @@ def run(force=False,recovery_run_id=None):
                     return
                 # A recent, accepted audit can repeat guarded deterministic stages
                 # without another model invocation. Hash/freshness checks stay intact.
-                if Guard(ROOT).audit_valid(previous):
+                recovery_state={}
+                try:recovery_state=read(STORE/'recovery.json')
+                except (OSError,ValueError):pass
+                editorial_repair=(recovery_state.get('runId')==recovery_run_id and
+                                  recovery_state.get('reason')=='LOCALIZATION_INCOMPLETE')
+                if not editorial_repair and Guard(ROOT).audit_valid(previous):
                     audit=previous['steps']['audit']['path']
                     guard('start');guard('audit','--input',audit);guard('execute')
                     queue_incident_analysis(read(checkpoint))
@@ -443,7 +466,7 @@ def run(force=False,recovery_run_id=None):
             refresh_receipts.bind(STORE,read(ROOT/'automation/runs/refresh/active.json')['runId'])
         collect()
         try:
-            work=editor()
+            work=editor(repair_locale=True) if editorial_repair else editor()
         except Exception as exc:
             atomic(STORE/'editor-status.json',{'status':'FAILED','at':now(),'error':type(exc).__name__})
             work=None
