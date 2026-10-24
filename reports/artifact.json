@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Series 6 «Horizon Meets» — Зима",
     "description": "Сезон действует до 2026-10-29T21:30:00+07:00",
-    "generatedAt": "2026-10-24T12:35:17.0000000+07:00",
+    "generatedAt": "2026-10-25T06:04:27.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -109,7 +109,7 @@
   "snapshot": {
     "version": 1,
     "status": "ready",
-    "generatedAt": "2026-10-24T12:35:17.0000000+07:00",
+    "generatedAt": "2026-10-25T06:04:27.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -162,11 +162,11 @@
             "githubViews": 3739
           },
           {
-            "runId": "fh6-20261024-122811-059236",
-            "collectedAt": "2026-10-24T12:30:38.5688361+07:00",
+            "runId": "fh6-20261024-123514-594855",
+            "collectedAt": "2026-10-24T12:37:42.5120162+07:00",
             "steamViews": 1346,
             "steamFavorites": 83,
-            "githubViews": 3773
+            "githubViews": 3775
           }
         ]
       }
@@ -175,7 +175,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-10-24T12:35:17.0000000+07:00",
+    "generated_at": "2026-10-25T06:04:27.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }
