@@ -43,6 +43,25 @@ class Tests(unittest.TestCase):
             cache,index=images.collect(Path(d),Path(d),self.state())
             self.assertEqual(index['status'],'UNAVAILABLE')
             self.assertNotIn('PRIVATE_NETWORK_ERROR',str(index))
+    def test_cached_original_survives_a_transient_cdn_failure(self):
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+                cache,index=images.collect(Path(d),Path(d),self.state())
+            # A new page check still proves this URL belongs to the active week.
+            # No second CDN download is needed for already verified raw bytes.
+            with patch.object(images,'fetch',return_value=(self.page(),'text/html')) as fetch:
+                _,current=images.collect(Path(d),Path(d),self.state())
+                self.assertEqual(fetch.call_count,1)
+            self.assertEqual(current['status'],'AVAILABLE');self.assertTrue(current['entries'][0]['reused'])
+            self.assertEqual(current['entries'][0]['sha256'],index['entries'][0]['sha256'])
+    def test_changed_cache_is_not_trusted(self):
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+                cache,index=images.collect(Path(d),Path(d),self.state())
+            (cache/index['entries'][0]['path']).write_bytes(b'changed')
+            with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]) as fetch:
+                _,current=images.collect(Path(d),Path(d),self.state());self.assertEqual(fetch.call_count,2)
+            self.assertEqual(current['status'],'AVAILABLE');self.assertNotIn('reused',current['entries'][0])
 
 
 if __name__=='__main__':unittest.main()

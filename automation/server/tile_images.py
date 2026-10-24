@@ -11,9 +11,10 @@ from pathlib import Path
 import re
 import shutil
 import tempfile
+import time
 import urllib.request
 from urllib.parse import urlsplit, urlunsplit
-from phone_tasks import save
+from phone_tasks import save,read
 
 PAGE='https://forza.labsgg.com/series/details'
 PREFIX='/images/jr6fd40q/production/'
@@ -78,6 +79,28 @@ def extension(raw,mime):
     raise ValueError('Unsupported image bytes')
 
 
+def cached_entry(cache,candidate,previous):
+    receipt=cache/('source-'+hashlib.sha256(candidate['url'].encode()).hexdigest()+'.json')
+    entry=read(receipt) or previous.get(candidate['url'],{})
+    if entry.get('url')!=candidate['url']:return None
+    name=entry.get('path','')
+    if not re.fullmatch(r'[a-f0-9]{64}\.(?:png|jpg|webp)',name):return None
+    file=cache/name
+    if file.is_symlink() or not file.is_file() or file.stat().st_size>MAX_IMAGE:return None
+    raw=file.read_bytes()
+    if hashlib.sha256(raw).hexdigest()!=entry.get('sha256'):return None
+    extension(raw,'image/verified-cache')
+    return dict(entry,label=candidate['label'],reused=True)
+
+
+def download(url,limit):
+    for attempt in range(2):
+        try:return fetch(url,limit)
+        except OSError:
+            if attempt:raise
+            time.sleep(1)
+
+
 def collect(root,store,state):
     key=section_key(state)
     cache=Path(store)/'tile-image-cache'/key
@@ -87,6 +110,7 @@ def collect(root,store,state):
         if os.geteuid()==0:shutil.chown(parent,group='fh6')
     manifest=dict(section=key,pageUrl=PAGE,checkedAt=datetime.now().astimezone().isoformat(),
                   status='UNAVAILABLE',entries=[],errors=[])
+    previous={row.get('url'):row for row in read(cache/'index.json').get('entries',[])}
     try:
         page,mime=fetch(PAGE,4*1024*1024)
         if mime!='text/html':raise ValueError('Not a source page')
@@ -98,7 +122,12 @@ def collect(root,store,state):
             total=0
             for candidate in parser.items[:MAX_CANDIDATES]:
                 try:
-                    raw,mime=fetch(candidate['url'],min(MAX_IMAGE,MAX_TOTAL-total))
+                    cached=cached_entry(cache,candidate,previous)
+                    if cached and total+cached['bytes']<=MAX_TOTAL:
+                        total+=cached['bytes'];manifest['entries'].append(cached)
+                        save(cache/('source-'+hashlib.sha256(candidate['url'].encode()).hexdigest()+'.json'),cached)
+                        continue
+                    raw,mime=download(candidate['url'],min(MAX_IMAGE,MAX_TOTAL-total))
                     suffix=extension(raw,mime);total+=len(raw)
                     sha=hashlib.sha256(raw).hexdigest();name=sha+suffix
                     target=cache/name
@@ -110,7 +139,9 @@ def collect(root,store,state):
                         if os.geteuid()==0:shutil.chown(temp,group='fh6')
                         os.replace(temp,target)
                     finally:Path(temp).unlink(missing_ok=True)
-                    manifest['entries'].append(dict(candidate,path=name,sha256=sha,bytes=len(raw)))
+                    entry=dict(candidate,path=name,sha256=sha,bytes=len(raw))
+                    save(cache/('source-'+hashlib.sha256(candidate['url'].encode()).hexdigest()+'.json'),entry)
+                    manifest['entries'].append(entry)
                 except Exception as exc:
                     manifest['errors'].append(dict(url=candidate['url'],error=type(exc).__name__))
                 if total>=MAX_TOTAL:break
