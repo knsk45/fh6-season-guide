@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-24T06:04:26+07:00",
+  "lastContentUpdate": "2026-10-24T12:28:13+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,22 +30,20 @@
       "tuneHtml": "1991 Honda Beat — A, дорожный тюнинг: 757 075 974",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xcj6zf/fh6_series_6_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_01_weekly.png",
+        "sourceImage": "network-source-activity_01_weekly.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/956631c2dc60307abb71921126ac60636d1b7917-884x1416.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -112,22 +110,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-6-week-3-sotoyama-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Sotoyama — Traxion</a> · <a href=\"https://www.pcgamer.com/games/racing/forza-horizon-6-sotoyama-treasure-hunt-location/\" target=\"_blank\" rel=\"noopener noreferrer\">Sotoyama — PC Gamer</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261022/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter — Lights to Flag</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "image": "activity_04_treasure_hunt.png",
+        "sourceImage": "network-source-activity_04_treasure_hunt.png",
+        "orientation": "vertical",
+        "typeIconKey": "treasure-hunt",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/18b6c972e8c22c0b12397f98e9bb017de39513f0-886x1412.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -140,22 +136,20 @@
       "tuneHtml": "2017 Ferrari 812 Superfast — S1 800; 855 747 244",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship.png",
+        "sourceImage": "network-source-activity_05_championship.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/af633be6dfb2278696951e59c354deeaa4d1df31-886x700.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_06_championship",
@@ -168,22 +162,20 @@
       "tuneHtml": "2014 HSV Gen-F GTS — A 700; 250 331 392",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship.png",
+        "sourceImage": "network-source-activity_06_championship.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "typeIconKey": "championship-street",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/73a8e7b513b569d9a8c5a7928c05514beb761732-886x697.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_07_championship",
@@ -196,22 +188,20 @@
       "tuneHtml": "2018 Porsche Cayenne Turbo — A 700; 200 366 736",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_championship.png",
+        "sourceImage": "network-source-activity_07_championship.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "typeIconKey": "championship-cross-country",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4fdb8ade34a388f03a8673aba91b53c82debb7fa-882x698.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_08_time_attack",
@@ -224,22 +214,20 @@
       "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_time_attack.png",
+        "sourceImage": "network-source-activity_08_time_attack.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "typeIconKey": "time-attack",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/8f2142ba57fef5e52814a462566e94470c6d6c6e-884x696.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_drag_meet",
@@ -252,22 +240,20 @@
       "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_drag_meet.png",
+        "sourceImage": "network-source-activity_09_drag_meet.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6a930b422ac4c4258a34586502d8a5cad9663253-885x699.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_danger_sign",
@@ -280,22 +266,20 @@
       "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_danger_sign.png",
+        "sourceImage": "network-source-activity_10_danger_sign.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/d515d79b1f4400e4d14567d9be05a5234248b0f0-881x699.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_speed_trap",
@@ -308,22 +292,20 @@
       "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_11_speed_trap.png",
+        "sourceImage": "network-source-activity_11_speed_trap.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/ace4a412eb9261afb37e980d4956468adbcee9ba-886x697.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_trial",
@@ -336,22 +318,20 @@
       "tuneHtml": "2004 Subaru Impreza WRX STI — B 600; 528 993 509",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Winter не получена; нужен оригинальный скриншот полной плитки."
+        "image": "activity_12_trial.png",
+        "sourceImage": "network-source-activity_12_trial.png",
+        "orientation": "vertical",
+        "typeIconKey": "trial",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c3d377d626d1085d164133884d7cb959a167f031-884x1419.png",
+        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_monthly_rivals",
@@ -481,80 +461,10 @@
   },
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_03_photo",
       "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_championship",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_time_attack",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_drag_meet",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_danger_sign",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_speed_trap",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_trial",
-      "field": "visual",
-      "reason": "Точная зимняя игровая плитка недоступна; CDN ForzaLabs вернул Cache miss.",
-      "nextCheck": "Повторить живые Winter Playlist, Reddit Information Thread и гайды; для visual нужен оригинальный неизменённый скриншот полной плитки.",
+      "reason": "Точная полная плитка #PolarisPoint не подтверждена пикселями: локального оригинала нет; ссылка Winter ForzaLabs недоступна reader.",
+      "nextCheck": "Фоновый поиск точной Winter-плитки в свежих источниках; без повторного запроса владельцу в этом запуске.",
       "status": "missing"
     }
   ]

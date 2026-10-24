@@ -95,12 +95,18 @@ class PortableTests(unittest.TestCase):
     def test_event_handler_rejected(self):
         self.bad_artifact(lambda a:a['manifest']['blocks'][0].update(body=a['manifest']['blocks'][0]['body']+'<img src="x" onerror="alert(1)">'))
     def test_type_icon_key_mismatch_rejected(self):
-        def mismatch(artifact):
-            block=next(b for b in artifact['manifest']['blocks'] if b['id']=='activity_03_photo')
-            body, changed=re.subn('data-type-icon="photo-challenge"','data-type-icon="treasure-hunt"',block['body'])
-            self.assertEqual(changed,1)
-            block['body']=body
-        self.bad_artifact(mismatch)
+        # A current photo tile may legitimately be unresolved and have no icon.
+        # Exercise every card without assuming a particular season's evidence.
+        for index, original in enumerate(self.artifact['manifest']['blocks']):
+            with self.subTest(card=original['id']):
+                def mismatch(artifact):
+                    block=artifact['manifest']['blocks'][index]
+                    body, changed=re.subn(r'data-type-icon="[^"]+"',
+                        'data-type-icon="invalid-test-icon"',block['body'])
+                    if not changed:
+                        body+='<span class="type-icon" data-type-icon="invalid-test-icon"></span>'
+                    block['body']=body
+                self.bad_artifact(mismatch)
     def test_traversal_rejected(self):
         with self.assertRaises(ValueError):b.safe_path(self.root,'../outside.txt')
     def test_missing_favicon_rejected(self):

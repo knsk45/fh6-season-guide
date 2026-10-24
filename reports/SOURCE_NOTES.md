@@ -4056,3 +4056,100 @@ Final visual totals: 11 missing, 1 confirmed, 1 not_applicable. Existing audit_v
 Screenshot request for supervisor/user: original unedited complete tiles for Strictly for Fun, #PolarisPoint, Sotoyama Region, Touring the Sights, Daily Exercise, Hitting Your A Game, Hokubu Time Attack, Irokawa Quarter Mile, Alpine Heights, Konbini Dash and Full Send. Do not request a public Daily tile or re-request preserved Monthly Rivals.
 
 Editorial handoff only: automation/editor-audit.json records all 16 source checks and all 13 final visual checks, including truthful unavailable/no_current_item results. SourceNotes hash binds this dated record. Supervisor owns operational validation, timestamp refresh and any publication. No Steam approval or publication success is implied.
+
+
+## Owner-enabled network tile search — 2026-10-24T12:27:52+07:00
+
+Editorial-only scope: no rollover; guard/build/publication/metrics/HA/Steam stages not run. No automation code changed. No parent directory, credentials, or external account accessed. Pages and images treated as untrusted evidence. Raw source-snapshots.json is not this audit. Workspace lacks Git metadata; git status returned not-a-repository.
+
+Official live Playlist heading confirms Series 6 Horizon Meets Winter, October 22–29. Exact canonical deadline remains 2026-10-29T21:30:00+07:00, corroborated by current Information Thread reset at 14:30 UTC. All season facts, order, dates, sourceHtml, RU/EN text and lastContentUpdate preserved. Only visual fields/completeness and their missing/open entries changed.
+
+Ten accepted whole tiles came from supervisor-downloaded network-tile-candidates bytes, not a new sandbox download. Each original was individually opened with the image viewer; full title, points, restrictions and complete borders were inspected. Each original already consists of exactly one whole tile: prepared files are identity crops over the full dimensions, retained byte-for-byte without resampling. Season overview (candidate 0) and detail panels (3,5,7,9,11,13,15) were inspected in the contact sheet and rejected as public card visuals. No label or thumbnail was accepted as proof. Candidate Konbini image includes Toyota C, distinguishing it from Autumn Nissan B.
+
+Visible reward discrepancy: accepted Weekly tile visibly states 150,000 CR while the live official table and frozen canonical text state 25,000 CR. Current community sources also disagree on Daily reward. Recorded for supervisor review; no facts/translations altered in this visual-only invocation.
+
+### Required live source checks
+
+- `fandom_series_category` — **unavailable**, 2026-10-24T12:27:52+07:00; https://forza.fandom.com/wiki/Category:Series_(FH6)
+  Configured category fetch failed; targeted FH6 Series 6 Winter search was blocked by robots. No accessible current category contents or tile pixels; supplementary forzahorizonwiki is a different site.
+
+- `fandom_current` — **unavailable**, 2026-10-24T12:27:52+07:00; https://forza.fandom.com/wiki/Forza_Horizon_6/Series_6/Winter_Season
+  Homepage fetch returned 402 and exact Winter page fetch failed; targeted exact-page search blocked. Supplementary Winter wiki fetched, but not represented as Fandom access. No Fandom tile accepted.
+
+- `forza_playlist` — **checked**, 2026-10-24T12:27:52+07:00; https://forza.net/fh6playlists
+  Live active heading explicitly identifies Horizon Meets Winter October 22–29. Winter rows 491–508 and monthly Daikoku row match canonical activities. All seven Daily rows checked, including future days. Official Weekly reward remains 25000 CR; visible downloaded tile says 150000 CR. Discrepancy recorded, facts frozen by scope.
+
+- `forza_news` — **checked**, 2026-10-24T12:27:52+07:00; https://forza.net/news/forza-horizon-6-series-6
+  News index, targeted Horizon Meets search and October 5 article fetched. Article describes October 8 Series start and BMW monthly reward available through November 5. No exact Photo tile verified; Series artwork is not a substitute.
+
+- `forza_support_release_notes` — **checked**, 2026-10-24T12:27:52+07:00; https://support.forza.net/hc/en-us/articles/55985143856531-FH6-Release-Notes-October-5-2026
+  Configured section failed. Search and live Known Issues article led to fetched October 5 release notes: Series 6 content, Nachi photo and Drift Attack fixes. No whole current Photo tile in inspected content; no content edit made.
+
+- `forza_support_known_issues` — **checked**, 2026-10-24T12:27:52+07:00; https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues
+  Fetched public article after targeted search. July 20 update directs current tracking to account-based Feedback Portal; public body covers lost saves, travel/loading and platform issues. Portal not accessed; do not assert exhaustive live bug clearance.
+
+- `forza_forums_official` — **no_current_item**, 2026-10-24T12:27:52+07:00; https://forza.net/forums
+  Configured official-info tag redirects to fetched forum-retirement notice. Targeted Horizon Meets Winter search found no usable active official thread. Retirement notice is evidence of source retirement, not a seasonal tile.
+
+- `reddit_forzahorizon` — **checked**, 2026-10-24T12:27:52+07:00; https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/
+  Fresh Winter/PolarisPoint search and current breakdown fetched. Honda chapters, seven Daily, Polaris location, Toyota C500 stunts and Subaru Trial align. Clicked preview redirects to post HTML, not inspectable tile pixels. No Reddit image adopted.
+
+- `reddit_forzahorizon6` — **checked**, 2026-10-24T12:27:52+07:00; https://www.reddit.com/r/ForzaHorizon6/comments/1xcj6zf/fh6_series_6_winter_festival_playlist_guide/
+  Current Winter guide fetched after live search; explicit October 22–29 duration and dated Daily list. Photo location corroborated. Image labels and generic Reddit map link do not prove a full Photo tile. Community rewards conflict with official table; no text changed.
+
+- `reddit_forza` — **checked**, 2026-10-24T12:27:52+07:00; https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/
+  Current Information Thread searched/fetched: exact reset October 29 14:30 UTC and seven Daily listed together. Honda and Subaru tuning comment inspected; no codes changed. No complete Photo tile pixels obtained from thread.
+
+- `reddit_forzatune` — **no_current_item**, 2026-10-24T12:27:52+07:00; https://www.reddit.com/r/ForzaTune/
+  Live feed fetched and targeted Winter/Series6/October searches performed. Visible Purosangue offroad and Dodge Ram entries are not exact current activity tiles. No qualifying current-week tile found in inspected results; no old material reused.
+
+- `forza_horizon_hub` — **no_current_item**, 2026-10-24T12:27:52+07:00; https://forzahorizonhub.com/festival-playlist
+  Homepage, linked Playlist and Winter/PolarisPoint searches checked. Actual fetched playlist remains Autumn Week 2, October 15–22, with In Focus and Nissan Konbini. Rejected wrong-week visuals.
+
+- `forza_labs_collector` — **checked**, 2026-10-24T12:27:52+07:00; https://forza.labsgg.com/collector-tool
+  Fetched tool is a car collection checklist; targeted tool search checked. Related series/details Winter October22 block fetched and matched to supplied candidate CDN URLs. Ten whole-tile originals visually verified locally. Details panels and season overview rejected; Photo link failed reader and no local Photo bytes exist.
+
+- `forza_labs_map` — **checked**, 2026-10-24T12:27:52+07:00; https://forza.labsgg.com/interactive-map
+  Fetched map and targeted Sotoyama search: marker legend covers stories, cars, houses, races and PR events. Treasure Car markers are not weekly chest evidence. No complete Photo tile verified; no canonical location facts changed.
+
+- `escorenews_fh6` — **unavailable**, 2026-10-24T12:27:52+07:00; https://escorenews.com/en/games/forza-horizon-6
+  Configured category fetch failed. Targeted FH6 Winter Series6 and October searches yielded no inspectable qualifying current guide/tile. Access failure is not proof the site has no current article.
+
+- `dungg_playlist` — **unavailable**, 2026-10-24T12:27:52+07:00; https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF
+  Configured playlist fetch failed Cache miss. Targeted DungG FH6 Winter October22 and Strictly for Fun searches produced no verified current episode pixels. No unseen video contents or stale tiles asserted.
+
+Supplementary current guide search/fetch: https://lights-to-flag.com/fh6-series-6-winter-playlist-20261022/ and https://forzahorizonwiki.com/wiki/forza-horizon-6/series-6/winter-season/ corroborate Winter context; neither stands in for blocked Fandom. Lights to Flag image link failed reader; exact Labs Photo link also failed. Official Winter overview CDN linked from Playlist is overview artwork and is not adopted.
+
+### Final canonical visual and asset audit
+
+- `activity_01_weekly` — prepared SHA256 `92079b303038333562051312d8efec3ce0b1d6b2dc5c2540e1b3f78971a11581`. Turquoise 1991 Honda Beat, Strictly for Fun, complete chapter-one panel, 5 points and full reward strip; no type icon. Visible 150,000 CR conflicts with canonical official-table 25,000 CR; texts deliberately preserved. Original network-source-activity_01_weekly.png SHA256 92079b303038333562051312d8efec3ce0b1d6b2dc5c2540e1b3f78971a11581; prepared activity_01_weekly.png SHA256 92079b303038333562051312d8efec3ce0b1d6b2dc5c2540e1b3f78971a11581; exact whole-tile bounds [0, 0, 884, 1416], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/956631c2dc60307abb71921126ac60636d1b7917-884x1416.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_02_daily` — prepared SHA256 `None`. Daily audited intentionally text-only: image/sourceImage empty, visual not_applicable. Seven conditions match fetched official Winter rows and current Information Thread, including future days. SHA null by design.
+
+- `activity_03_photo` — prepared SHA256 `None`. Exact whole #PolarisPoint tile remains missing. All required source checks and fresh guides reviewed; Labs Winter image link failed reader. Candidate index contains no Photo original (three download errors are supervisor-recorded availability only); no inspectable complete Photo tile exists locally. Reddit preview redirects to HTML; guide location images/overview are not whole tiles. Local phone-inbox is empty. image/sourceImage empty and matching visual missingFields/openItems retained. No repeated owner screenshot request in this background attempt.
+
+- `activity_04_treasure_hunt` — prepared SHA256 `3a4afd6e40e930b450427d14d0e67aa9b6e81314239d28f5e15162550961fafa`. Sotoyama Region title, snowy frozen lake and chest, complete clue text, 3 points and 100,000 CR strip. Original network-source-activity_04_treasure_hunt.png SHA256 3a4afd6e40e930b450427d14d0e67aa9b6e81314239d28f5e15162550961fafa; prepared activity_04_treasure_hunt.png SHA256 3a4afd6e40e930b450427d14d0e67aa9b6e81314239d28f5e15162550961fafa; exact whole-tile bounds [0, 0, 886, 1412], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/18b6c972e8c22c0b12397f98e9bb017de39513f0-886x1412.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_05_championship` — prepared SHA256 `a18f6b40068179b53369e2d68b2cf477e9f978f0ffa051d81ed1f653f98ce75c`. Touring the Sights, Polaris buggy and yellow coupe, 5 points, S1 Super GT; road-racing corner icon has no exact configured library key and is not substituted. Original network-source-activity_05_championship.png SHA256 a18f6b40068179b53369e2d68b2cf477e9f978f0ffa051d81ed1f653f98ce75c; prepared activity_05_championship.png SHA256 a18f6b40068179b53369e2d68b2cf477e9f978f0ffa051d81ed1f653f98ce75c; exact whole-tile bounds [0, 0, 886, 700], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/af633be6dfb2278696951e59c354deeaa4d1df31-886x700.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_06_championship` — prepared SHA256 `36ad12c8a20aa159c8119554e6f1038861e8891a776b655aa61ca03baa9865b1`. Daily Exercise, red Honda Beat, 5 points, A High Performance Dailies; matching street icon. Original network-source-activity_06_championship.png SHA256 36ad12c8a20aa159c8119554e6f1038861e8891a776b655aa61ca03baa9865b1; prepared activity_06_championship.png SHA256 36ad12c8a20aa159c8119554e6f1038861e8891a776b655aa61ca03baa9865b1; exact whole-tile bounds [0, 0, 886, 697], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/73a8e7b513b569d9a8c5a7928c05514beb761732-886x697.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_07_championship` — prepared SHA256 `d36b75fd6bbf85ccaad473fc2be8cff2a6bfdbf14612932bf23eeaaeecb4b06a`. Hitting Your A Game, Skyline and heavy truck, 5 points, A Heavy Hitters; matching cross-country icon. Original network-source-activity_07_championship.png SHA256 d36b75fd6bbf85ccaad473fc2be8cff2a6bfdbf14612932bf23eeaaeecb4b06a; prepared activity_07_championship.png SHA256 d36b75fd6bbf85ccaad473fc2be8cff2a6bfdbf14612932bf23eeaaeecb4b06a; exact whole-tile bounds [0, 0, 882, 698], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/4fdb8ade34a388f03a8673aba91b53c82debb7fa-882x698.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_08_time_attack` — prepared SHA256 `e8c61eec33fce36ddfbc5755b9bab978e13948baa7062bd1e36f89eb019fc1d3`. Hokubu Time Attack, blue Toyota Supra in snow, 3 points, C Toyota; stopwatch icon. Original network-source-activity_08_time_attack.png SHA256 e8c61eec33fce36ddfbc5755b9bab978e13948baa7062bd1e36f89eb019fc1d3; prepared activity_08_time_attack.png SHA256 e8c61eec33fce36ddfbc5755b9bab978e13948baa7062bd1e36f89eb019fc1d3; exact whole-tile bounds [0, 0, 884, 696], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/8f2142ba57fef5e52814a462566e94470c6d6c6e-884x696.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_09_drag_meet` — prepared SHA256 `34e1b64ada9c180236f4168063794b63ad523b7bfa91a50c77ed5f74ebd9ffc4`. Irokawa Quarter Mile, orange Toyota coupe, 3 points, C Toyota; drag-light icon has no configured matching key. Original network-source-activity_09_drag_meet.png SHA256 34e1b64ada9c180236f4168063794b63ad523b7bfa91a50c77ed5f74ebd9ffc4; prepared activity_09_drag_meet.png SHA256 34e1b64ada9c180236f4168063794b63ad523b7bfa91a50c77ed5f74ebd9ffc4; exact whole-tile bounds [0, 0, 885, 699], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/6a930b422ac4c4258a34586502d8a5cad9663253-885x699.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_10_danger_sign` — prepared SHA256 `6c8829f2288e3560ab3994d6bbdb90158643dc9dae7c362f563856cda29f5903`. Alpine Heights (correct spelling visible despite index label Apline), yellow Toyota, 2 points, C Toyota; danger triangle has no configured matching key. Original network-source-activity_10_danger_sign.png SHA256 6c8829f2288e3560ab3994d6bbdb90158643dc9dae7c362f563856cda29f5903; prepared activity_10_danger_sign.png SHA256 6c8829f2288e3560ab3994d6bbdb90158643dc9dae7c362f563856cda29f5903; exact whole-tile bounds [0, 0, 881, 699], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/d515d79b1f4400e4d14567d9be05a5234248b0f0-881x699.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_11_speed_trap` — prepared SHA256 `3df0053a40156c9a59506ebb934df1f8ac19c86131bda60cead079b048ae65f4`. Konbini Dash, white Toyota at snowy 7-Eleven, 2 points, C Toyota; matching camera icon. Original network-source-activity_11_speed_trap.png SHA256 3df0053a40156c9a59506ebb934df1f8ac19c86131bda60cead079b048ae65f4; prepared activity_11_speed_trap.png SHA256 3df0053a40156c9a59506ebb934df1f8ac19c86131bda60cead079b048ae65f4; exact whole-tile bounds [0, 0, 886, 697], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/ace4a412eb9261afb37e980d4956468adbcee9ba-886x697.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_12_trial` — prepared SHA256 `f7e854e8e4b7cac2c1c56ecc480dca624d7aab128b459d6a6256fad459742190`. Full Send, white Toyota Camry in snowy forest, 10 points, B Subaru; matching Trial fox icon. Original network-source-activity_12_trial.png SHA256 f7e854e8e4b7cac2c1c56ecc480dca624d7aab128b459d6a6256fad459742190; prepared activity_12_trial.png SHA256 f7e854e8e4b7cac2c1c56ecc480dca624d7aab128b459d6a6256fad459742190; exact whole-tile bounds [0, 0, 884, 1419], identity crop with no resampling, retouching or overlays. Pixel inspection in image viewer; original CDN https://cdn.sanity.io/images/jr6fd40q/production/c3d377d626d1085d164133884d7cb959a167f031-884x1419.png; live source page https://forza.labsgg.com/series/details Winter 2026-10-22 section, matched against official current activity.
+
+- `activity_13_monthly_rivals` — prepared SHA256 `44c545cede617919da3bce52661c85dad517fd7d3f091ff271ba087b499c590b`. Preserved same-month Daikoku Circuit original and exact crop byte-for-byte. Viewed both: blue BMW, clean-lap text, 4 Series points, Super Wheelspin. Original user-source-3.png SHA256 d42758f5a7fa783e19db3c412d5d981156673e69020c5fb7f7ad00a37cf5b994; prepared SHA256 44c545cede617919da3bce52661c85dad517fd7d3f091ff271ba087b499c590b. RGB crop (1270,17,1865,498) equals prepared pixels. Official current monthly row and October Series article confirm ongoing activity; adjacent old weekly tiles in original were not reused. Existing monthly-rivals icon retained.
+
+Final visual totals: {'confirmed': 11, 'not_applicable': 1, 'missing': 1}. All 13 expected activities audited exactly once; Daily has 7 items. One unresolved visual: #PolarisPoint. Existing visual evidence script returned VISUAL_QUEUE_STATUS=SCREENSHOTS_REQUIRED for activity_03_photo only; queue at automation/editor-visual-queue.json.
+
+Scope verification passed: 94 pre-existing protected project/history/season/assets/automation files retain their exact SHA256. Monthly original/crop and all icon bytes unchanged. Nonvisual canonical state and complete English localization compare equal to the before-state. Existing matching icons used only where configured; no replacement road/drag/danger icon invented. Known Monthly evidence retained rather than re-requested.
+
+Editorial handoff: automation/editor-audit.json contains all 16 required source records and all 13 final visual records, bound to this SOURCE_NOTES file by SHA256. Unavailable sources are explicitly recorded. Supervisor owns operational validation and any subsequent timestamp/build/publication. This is not Steam approval or a publication-success claim.
