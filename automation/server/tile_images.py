@@ -10,6 +10,8 @@ import os
 from pathlib import Path
 import re
 import shutil
+import subprocess
+import sys
 import tempfile
 import time
 import urllib.request
@@ -21,6 +23,37 @@ PREFIX='/images/jr6fd40q/production/'
 MAX_IMAGE=8*1024*1024
 MAX_TOTAL=48*1024*1024
 MAX_CANDIDATES=24
+
+
+class HandoffError(RuntimeError):
+    pass
+
+
+HANDOFF_CHECK=r'''
+import hashlib,json,re,sys
+from pathlib import Path
+folder=Path(sys.argv[1]);index=json.loads((folder/'index.json').read_text())
+assert index['section']==sys.argv[2] and isinstance(index['entries'],list)
+for row in index['entries']:
+    name=row['path']
+    assert re.fullmatch(r'[a-f0-9]{64}\.(png|jpg|webp)',name)
+    file=folder/name
+    assert not file.is_symlink() and file.is_file() and file.stat().st_size<=8*1024*1024
+    raw=file.read_bytes()
+    assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256']==name.split('.')[0]
+print(len(index['entries']))
+'''
+
+
+def verify_handoff(folder,section,user='fh6-editor'):
+    command=[sys.executable,'-c',HANDOFF_CHECK,str(folder),section]
+    if user:command=['runuser','-u',user,'--',*command]
+    try:result=subprocess.run(command,capture_output=True,text=True,timeout=30)
+    except (OSError,subprocess.TimeoutExpired):
+        raise HandoffError('Image handoff reader did not complete') from None
+    if result.returncode or not result.stdout.strip().isdigit():
+        raise HandoffError('Downloaded image handoff failed integrity/readability checks')
+    return int(result.stdout.strip())
 
 
 def section_key(state):
@@ -81,16 +114,20 @@ def extension(raw,mime):
 
 def cached_entry(cache,candidate,previous):
     receipt=cache/('source-'+hashlib.sha256(candidate['url'].encode()).hexdigest()+'.json')
-    entry=read(receipt) or previous.get(candidate['url'],{})
-    if entry.get('url')!=candidate['url']:return None
-    name=entry.get('path','')
-    if not re.fullmatch(r'[a-f0-9]{64}\.(?:png|jpg|webp)',name):return None
-    file=cache/name
-    if file.is_symlink() or not file.is_file() or file.stat().st_size>MAX_IMAGE:return None
-    raw=file.read_bytes()
-    if hashlib.sha256(raw).hexdigest()!=entry.get('sha256'):return None
-    extension(raw,'image/verified-cache')
-    return dict(entry,label=candidate['label'],reused=True)
+    # A damaged receipt must not hide a valid index entry or prevent re-download.
+    for entry in (read(receipt),previous.get(candidate['url'],{})):
+        try:
+            if not isinstance(entry,dict) or entry.get('url')!=candidate['url']:continue
+            name=entry.get('path','')
+            if not re.fullmatch(r'[a-f0-9]{64}\.(?:png|jpg|webp)',name):continue
+            file=cache/name
+            if file.is_symlink() or not file.is_file() or file.stat().st_size>MAX_IMAGE:continue
+            raw=file.read_bytes()
+            if hashlib.sha256(raw).hexdigest()!=entry.get('sha256'):continue
+            extension(raw,'image/verified-cache')
+            return dict(entry,label=candidate['label'],bytes=len(raw),reused=True)
+        except (OSError,ValueError,TypeError):continue
+    return None
 
 
 def download(url,limit):
@@ -110,9 +147,11 @@ def collect(root,store,state):
         if os.geteuid()==0:shutil.chown(parent,group='fh6')
     manifest=dict(section=key,pageUrl=PAGE,checkedAt=datetime.now().astimezone().isoformat(),
                   status='UNAVAILABLE',entries=[],errors=[])
-    previous={row.get('url'):row for row in read(cache/'index.json').get('entries',[])}
+    old_index=read(cache/'index.json')
+    old_rows=old_index.get('entries',[]) if isinstance(old_index,dict) else []
+    previous={row['url']:row for row in old_rows if isinstance(row,dict) and isinstance(row.get('url'),str)} if isinstance(old_rows,list) else {}
     try:
-        page,mime=fetch(PAGE,4*1024*1024)
+        page,mime=download(PAGE,4*1024*1024)
         if mime!='text/html':raise ValueError('Not a source page')
         parser=Images(key);parser.feed(page.decode('utf-8'))
         manifest['pageSha256']=hashlib.sha256(page).hexdigest()
@@ -145,7 +184,7 @@ def collect(root,store,state):
                 except Exception as exc:
                     manifest['errors'].append(dict(url=candidate['url'],error=type(exc).__name__))
                 if total>=MAX_TOTAL:break
-            manifest['status']='AVAILABLE' if manifest['entries'] else 'UNAVAILABLE'
+            manifest['status']=('PARTIAL' if manifest['errors'] else 'AVAILABLE') if manifest['entries'] else 'UNAVAILABLE'
     except Exception as exc:manifest['errors'].append(dict(error=type(exc).__name__))
     save(cache/'index.json',manifest)
     return cache,manifest

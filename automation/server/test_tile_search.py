@@ -131,6 +131,37 @@ class Tests(unittest.TestCase):
                 validate.assert_called_once_with(work);audit.assert_called_once_with(work)
                 promote.assert_called_once_with(work,[])
                 self.assertEqual([call.args for call in publish.call_args_list],[('start',),('execute',)])
+    def test_transport_retry_backoff_is_bounded_and_resets_next_day(self):
+        previous={}
+        with patch.object(search.time,'time',return_value=1000):
+            for count,delay in enumerate(search.RETRY_DELAYS):
+                result={'nextAttemptAt':1000+search.INTERVAL}
+                search.schedule_retry(result,previous,True)
+                self.assertEqual(result['nextAttemptAt'],1000+delay)
+                self.assertEqual(result['retryCount'],count+1);previous=result
+            result={'nextAttemptAt':1000+search.INTERVAL}
+            search.schedule_retry(result,previous,True)
+            self.assertTrue(result['retryLimitReached'])
+            self.assertEqual(result['nextAttemptAt'],1000+search.INTERVAL)
+            previous=dict(previous,retryDay='2000-01-01')
+            search.schedule_retry(result,previous,True)
+            self.assertEqual(result['retryCount'],1)
+    def test_handoff_failure_is_not_no_new_tiles_and_retries_quickly(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,store=self.fixture(d);search.set_enabled(store,True)
+            with patch.object(runner,'run_tiles',side_effect=search.HandoffError('private fixture')):
+                search.tick(root,store)
+            state=search.snapshot(root,store)
+            self.assertEqual(state['status'],'HANDOFF_FAILED')
+            self.assertLess(state['nextAttemptAt']-search.time.time(),301)
+            self.assertEqual(state['retryCount'],1)
+            self.assertNotIn('private fixture',str(state))
+    def test_unknown_error_does_not_get_blind_accelerated_retries(self):
+        with tempfile.TemporaryDirectory() as d:
+            root,store=self.fixture(d);search.set_enabled(store,True)
+            with patch.object(runner,'run_tiles',side_effect=RuntimeError('unknown')):search.tick(root,store)
+            state=search.snapshot(root,store)
+            self.assertEqual(state['status'],'FAILED');self.assertEqual(state['retryCount'],0)
 
 
 if __name__=='__main__':unittest.main()

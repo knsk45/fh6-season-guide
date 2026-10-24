@@ -34,6 +34,7 @@ def failure(run,editor,logs):
     if run.get('status')=='RUNNING':return 'INTERRUPTED'
     if editor.get('status')=='AUTH_REQUIRED' or AUTH.search(logs):return 'AUTH_REQUIRED'
     if editor.get('error')=='TimeoutExpired':return 'TIMEOUT'
+    if editor.get('error')=='HandoffError':return 'IMAGE_HANDOFF_FAILED'
     # Three focused handoff attempts already ran in the isolated workspace.
     # Old network text must not turn an incomplete handoff into a blind retry.
     if editor.get('status')=='NO_AUDIT':return 'AUDIT_INCOMPLETE'

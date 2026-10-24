@@ -315,6 +315,8 @@ def editor(tile_version=None,repair_locale=False):
     if network_cache:
         shutil.copytree(network_cache,work/'network-tile-candidates',dirs_exist_ok=True)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(EDITOR)],check=True)
+    if network_cache:
+        tile_images.verify_handoff(work/'network-tile-candidates',tile_images.section_key(state))
     prompt=(ROOT/'automation/server/editor-prompt.md').read_text(encoding='utf-8')
     if network_cache:
         prompt+='''
@@ -465,7 +467,9 @@ def run(force=False,recovery_run_id=None):
                 except (OSError,ValueError):pass
                 editorial_repair=(recovery_state.get('runId')==recovery_run_id and
                                   recovery_state.get('reason')=='LOCALIZATION_INCOMPLETE')
-                if not editorial_repair and Guard(ROOT).audit_valid(previous):
+                image_repair=(recovery_state.get('runId')==recovery_run_id and
+                              recovery_state.get('reason')=='IMAGE_HANDOFF_FAILED')
+                if not (editorial_repair or image_repair) and Guard(ROOT).audit_valid(previous):
                     audit=previous['steps']['audit']['path']
                     guard('start');guard('audit','--input',audit);guard('execute')
                     queue_incident_analysis(read(checkpoint))

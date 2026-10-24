@@ -3,6 +3,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
+import json,os,pwd,shutil
 import tile_images as images
 
 URL='https://cdn.sanity.io/images/jr6fd40q/production/'+'a'*40+'-884x1416.png'
@@ -62,6 +63,49 @@ class Tests(unittest.TestCase):
             with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]) as fetch:
                 _,current=images.collect(Path(d),Path(d),self.state());self.assertEqual(fetch.call_count,2)
             self.assertEqual(current['status'],'AVAILABLE');self.assertNotIn('reused',current['entries'][0])
+    def test_corrupt_receipt_falls_back_to_valid_index(self):
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+                cache,index=images.collect(Path(d),Path(d),self.state())
+            next(cache.glob('source-*.json')).write_text('[]')
+            with patch.object(images,'fetch',return_value=(self.page(),'text/html')) as fetch:
+                _,current=images.collect(Path(d),Path(d),self.state());self.assertEqual(fetch.call_count,1)
+            self.assertTrue(current['entries'][0]['reused'])
+    def test_corrupt_index_uses_per_source_receipt(self):
+        with tempfile.TemporaryDirectory() as d:
+            with patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+                cache,index=images.collect(Path(d),Path(d),self.state())
+            (cache/'index.json').write_text('[]')
+            with patch.object(images,'fetch',return_value=(self.page(),'text/html')) as fetch:
+                _,current=images.collect(Path(d),Path(d),self.state());self.assertEqual(fetch.call_count,1)
+            self.assertEqual(current['status'],'AVAILABLE')
+    def test_partial_download_reports_transport_problem_and_keeps_good_bytes(self):
+        other=URL.replace('a'*40,'b'*40)
+        page=self.page().decode().replace('</article><article id="summer',
+            '<img src="'+other+'" alt="Other"></article><article id="summer').encode()
+        with tempfile.TemporaryDirectory() as d,patch.object(images.time,'sleep'),\
+             patch.object(images,'fetch',side_effect=[(page,'text/html'),(PNG,'image/png'),OSError('fixture'),OSError('fixture')]):
+            cache,index=images.collect(Path(d),Path(d),self.state())
+            self.assertEqual(index['status'],'PARTIAL');self.assertEqual(len(index['entries']),1)
+            self.assertEqual((cache/index['entries'][0]['path']).read_bytes(),PNG)
+    def test_actual_handoff_checks_hashes_and_section(self):
+        with tempfile.TemporaryDirectory() as d,patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+            cache,index=images.collect(Path(d),Path(d),self.state())
+            self.assertEqual(images.verify_handoff(cache,index['section'],user=None),1)
+            with self.assertRaises(images.HandoffError):images.verify_handoff(cache,'wrong-week',user=None)
+            (cache/index['entries'][0]['path']).write_bytes(b'changed')
+            with self.assertRaises(images.HandoffError):images.verify_handoff(cache,index['section'],user=None)
+    @unittest.skipUnless(os.geteuid()==0 and shutil.which('runuser'),'Requires unprivileged reader fixture')
+    def test_handoff_is_checked_as_actual_editor_user(self):
+        with tempfile.TemporaryDirectory() as d,patch.object(images,'fetch',side_effect=[(self.page(),'text/html'),(PNG,'image/png')]):
+            Path(d).chmod(0o755)
+            cache,index=images.collect(Path(d),Path(d),self.state())
+            bundle=Path(d)/'editor-bundle';shutil.copytree(cache,bundle)
+            user=pwd.getpwnam('fh6-editor')
+            for file in [bundle,*bundle.iterdir()]:os.chown(file,user.pw_uid,user.pw_gid)
+            self.assertEqual(images.verify_handoff(bundle,index['section']),1)
+            (bundle/index['entries'][0]['path']).chmod(0)
+            with self.assertRaises(images.HandoffError):images.verify_handoff(bundle,index['section'])
 
 
 if __name__=='__main__':unittest.main()

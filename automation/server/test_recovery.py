@@ -23,6 +23,12 @@ def failed_run(**kwargs):
     return dict(runId='fixture-run',runDate=AT.date().isoformat(),status='BLOCKED',steps={},**kwargs)
 
 class PolicyTests(unittest.TestCase):
+    def test_editor_handoff_error_uses_bounded_image_recovery(self):
+        state,queue=recovery.decision(failed_run(),{}, {'error':'HandoffError'},'',AT)
+        self.assertEqual(state['reason'],'IMAGE_HANDOFF_FAILED')
+        self.assertEqual(state['status'],'WAITING');self.assertFalse(queue)
+        state,queue=recovery.decision(failed_run(),state,{'error':'HandoffError'},'',AT+timedelta(minutes=5))
+        self.assertTrue(queue);self.assertEqual(state['retryCount'],1)
     def test_backoff_three_attempts_then_stop_and_reset_next_day(self):
         run=failed_run();state={};at=AT
         for count,seconds in enumerate(recovery.DELAYS):

@@ -163,7 +163,7 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     search_labels={'SEARCHING':'Ищем точные плитки в сети','NO_NEW_TILES':'Новых подтверждённых плиток пока нет',
         'UPDATED':'Найденные плитки опубликованы','COMPLETE':'Все плитки найдены — ожидаем следующую неделю',
         'BUSY':'Ожидаем завершения текущего обновления','AUTH_REQUIRED':'Для поиска войдите в Codex ниже',
-        'FAILED':'Попытка не завершилась — повторим позже','SOURCE_UNAVAILABLE':'Не удалось получить изображения из источника — повторим позже','STOPPED':'Поиск выключен','WAITING':'Ожидаем первую попытку'}
+        'FAILED':'Попытка не завершилась — повторим позже','SOURCE_UNAVAILABLE':'Не удалось получить все изображения из источника — запланирован повтор','HANDOFF_FAILED':'Передача изображений редактору не прошла проверку — запланирован повтор','STOPPED':'Поиск выключен','WAITING':'Ожидаем первую попытку'}
     # Keep the existing five sections and place the switch beside image uploads.
     search_html=action('/tile-search','Сохранить поиск плиток','',
         '<label class="switch-label"><input id="tile-search" type="checkbox" role="switch" name="enabled" value="true" '+('checked' if search.get('enabled') else '')+'><span class="switch-track" aria-hidden="true"></span><span>Искать плитки в сети</span></label>')
@@ -171,6 +171,7 @@ def render(active,state,editor,recovery,auth,tasks,texts,sha,approval,queued,log
     if search.get('lastCheckedAt'):search_html+='<p class="hint">Последняя попытка: '+date(search['lastCheckedAt'])+'</p>'
     if search.get('downloadedCount'):search_html+='<p class="hint">Получено изображений для проверки: '+esc(search['downloadedCount'])+'. Принимаются только визуально подтверждённые плитки.</p>'
     if search.get('enabled') and search.get('nextAttemptAt'):search_html+='<p class="hint">Следующая попытка: '+date(search['nextAttemptAt'])+'</p>'
+    if search.get('retryLimitReached'):search_html+='<p class="hint">Ускоренные повторы на сегодня исчерпаны. Поиск продолжится по обычному расписанию.</p>'
     body=body.replace('<label for="screens">',search_html+'<div class="divider"></div><label for="screens">')
     auth_labels={'CONNECTED':('Codex подключён','good'),'IDLE':('Нужен вход','warn'),'QUEUED':('Вход в очереди','active'),'STARTING':('Запускаем вход','active'),'WAITING_FOR_OWNER':('Подтвердите вход','warn'),'FAILED':('Ошибка входа','bad'),'EXPIRED':('Код истёк','warn')}
     label,t=auth_labels.get(auth['status'],('Проверьте вход','warn'))
