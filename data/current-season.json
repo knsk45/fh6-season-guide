@@ -4,46 +4,51 @@
     "seriesNumber": 6,
     "seriesSlug": "06",
     "seriesName": "Horizon Meets",
-    "season": "winter",
-    "seasonDisplay": "Зима",
-    "startAt": "2026-10-22T21:30:00+07:00",
-    "endAt": "2026-10-29T21:30:00+07:00",
-    "reportTitle": "Forza Horizon 6: Series 6 «Horizon Meets» — Зима",
-    "archiveFile": "seasons/2026-10-22-series-06-winter.md",
-    "assetsDirectory": "reports/assets/series-06-winter",
+    "season": "spring",
+    "seasonDisplay": "Весна",
+    "startAt": "2026-10-29T21:30:00+07:00",
+    "endAt": "2026-11-05T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Series 6 «Horizon Meets» — Весна",
+    "archiveFile": "seasons/2026-10-29-series-06-spring.md",
+    "assetsDirectory": "reports/assets/series-06-spring",
     "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
     "officialPlaylistUrl": "https://forza.net/fh6playlists",
-    "expectedCardCount": 13,
+    "expectedCardCount": 14,
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-29T07:20:59+07:00",
+  "lastContentUpdate": "2026-10-30T06:07:23+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
       "number": "01",
       "kind": "weekly",
-      "title": "Еженедельное испытание: Strictly for Fun",
+      "title": "Еженедельное испытание: A Retro Adventure",
       "points": "5 очков",
-      "conditionHtml": "На 1991 Honda Beat по порядку: владеть и проехать; получить 3 звезды на Danger Signs; припарковаться на любом Car Meet; завершить 2 круга Hokubu Time Attack. Награда по официальной Playlist: 25 000 CR.",
-      "howHtml": "Выполняйте главы последовательно. Для прыжков сообщество рекомендует Rollercoaster Leap; на Hokubu достаточно завершить 2 круга.",
-      "tuneHtml": "1991 Honda Beat — A, дорожный тюнинг: 757 075 974",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xcj6zf/fh6_series_6_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter guide</a>",
+      "conditionHtml": "1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.",
+      "howHtml": "",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_01_weekly.png",
-        "sourceImage": "network-source-activity_01_weekly.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/956631c2dc60307abb71921126ac60636d1b7917-884x1416.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c66e16736dc4e4f59a2ca85d8b4259d02753aeba-882x1415.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "condition": "preliminary",
+        "solution": "missing",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "solution",
+        "vehicleTune",
+        "visual",
+        "condition"
+      ]
     },
     {
       "id": "activity_02_daily",
@@ -51,10 +56,10 @@
       "kind": "daily",
       "title": "7 ежедневных заданий",
       "points": "7 × 1 очко",
-      "conditionHtml": "<ol><li><strong>22.10:</strong> припаркуйтесь на 7-Eleven Car Meet.</li><li><strong>23.10:</strong> получите не менее 1 звезды на Trailblazers.</li><li><strong>24.10:</strong> завершите Dirt Race.</li><li><strong>25.10:</strong> выполните 5 Air Skills.</li><li><strong>26.10:</strong> выполните 5 Speed Skills.</li><li><strong>27.10:</strong> сфотографируйте любую машину.</li><li><strong>28.10:</strong> потратьте 20 000 CR на улучшения.</li></ol> Награда: 5 000 CR за каждое задание.",
-      "howHtml": "7-Eleven Car Meet находится в Nangan рядом с Nangan Day Trip.",
+      "conditionHtml": "<ol><li><strong>29.10:</strong> купите Aftermarket Car.</li><li><strong>30.10:</strong> выполните 5 Clean Racing Skills.</li><li><strong>31.10:</strong> завершите Cross Country Race.</li><li><strong>01.11:</strong> получите не менее 1 звезды на Speed Zones.</li><li><strong>02.11:</strong> завершите заезд на любом Drag Meet.</li><li><strong>03.11:</strong> выполните 5 Wreckage Skills.</li><li><strong>04.11:</strong> получите не менее 1 звезды на Danger Signs.</li></ol> Награда: 5 000 CR за задание.",
+      "howHtml": "Выполните указанное условие в соответствующий день.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
@@ -75,272 +80,329 @@
       "id": "activity_03_photo",
       "number": "03",
       "kind": "photo",
-      "title": "#PolarisPoint",
+      "title": "#TakingYourTime",
       "points": "2 очка",
-      "conditionHtml": "Сфотографируйте любой Polaris в Irokawa Space Center. Награда: All-White Techwear Boots.",
-      "howHtml": "Используйте 2021 Polaris RZR Pro XP Factory Racing Limited Edition — награду Touring the Sights; сделайте снимок в Irokawa Space Center.",
+      "conditionHtml": "Сфотографируйте 1989 Nissan S-Cargo у Kinkaku-ji Temple. Награда: эмоция So Cute.",
+      "howHtml": "Подъедьте к Kinkaku-ji Temple на указанной машине и сделайте фото.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_03_photo.png",
-        "sourceImage": "network-source-activity_03_photo.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
-        "typeIconKey": "photo-challenge",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/956bea3b54d45c111048491ba3f070746b2e4070-884x1415.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка #PolarisPoint; оригинальные CDN-байты сохранены, границы 884×1415 проверены визуально, без ретуши и наложений."
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5b90bcee214b52695fc042f4cf10e6d5e721c7ab-884x1417.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
+        "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_04_treasure_hunt",
       "number": "04",
       "kind": "treasure_hunt",
-      "title": "Sotoyama Region",
+      "title": "Hokubu Region",
       "points": "3 очка",
-      "conditionHtml": "Найдите сундук по фото-подсказке в Sotoyama. Награда: 100 000 CR.",
-      "howHtml": "Отправляйтесь к горному озеру к северу от дома Hakusan Mountain Lodge, в восточной части Sotoyama. Сундук находится на восточном берегу; разбейте его машиной.",
+      "conditionHtml": "Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.",
+      "howHtml": "",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-6-week-3-sotoyama-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Sotoyama — Traxion</a> · <a href=\"https://www.pcgamer.com/games/racing/forza-horizon-6-sotoyama-treasure-hunt-location/\" target=\"_blank\" rel=\"noopener noreferrer\">Sotoyama — PC Gamer</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261022/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter — Lights to Flag</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_04_treasure_hunt.png",
-        "sourceImage": "network-source-activity_04_treasure_hunt.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "vertical",
-        "typeIconKey": "treasure-hunt",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/18b6c972e8c22c0b12397f98e9bb017de39513f0-886x1412.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/73e97fd4a72e2a781af6b21221b6f896a83a3eb8-884x1412.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "confirmed",
+        "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "confirmed"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "solution",
+        "visual"
+      ]
     },
     {
       "id": "activity_05_championship",
       "number": "05",
       "kind": "championship",
-      "title": "Touring the Sights",
+      "title": "Dockside Drive",
       "points": "5 очков",
-      "conditionHtml": "Road: Super GT, S1 800. Маршруты: Coastline Sprint, Irokawa Circuit, Shimanoyama Sprint. Награда: 2021 Polaris RZR Pro XP Factory Racing Limited Edition.",
-      "howHtml": "Победите в чемпионате: наберите больше всего очков по сумме трёх гонок.",
-      "tuneHtml": "2017 Ferrari 812 Superfast — S1 800; 855 747 244",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "conditionHtml": "Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.",
+      "howHtml": "Победите в чемпионате по сумме очков.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_05_championship.png",
-        "sourceImage": "network-source-activity_05_championship.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/af633be6dfb2278696951e59c354deeaa4d1df31-886x700.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/50da34d84c29e6ee416001a1818b4d501127d178-884x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
-        "condition": "confirmed",
+        "condition": "preliminary",
         "solution": "confirmed",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "vehicleTune",
+        "visual",
+        "condition"
+      ]
     },
     {
       "id": "activity_06_championship",
       "number": "06",
       "kind": "championship",
-      "title": "Daily Exercise",
+      "title": "Good Old Days",
       "points": "5 очков",
-      "conditionHtml": "Street: High Performance Dailies, A 700. Маршруты: Nachi Run, Cedar Run, Okishinaimura Run. Награда: 1991 Honda Beat.",
-      "howHtml": "Победите в чемпионате: наберите больше всего очков по сумме трёх гонок.",
-      "tuneHtml": "2014 HSV Gen-F GTS — A 700; 250 331 392",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "conditionHtml": "Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.",
+      "howHtml": "Победите в чемпионате по сумме очков.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_06_championship.png",
-        "sourceImage": "network-source-activity_06_championship.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "championship-street",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/73a8e7b513b569d9a8c5a7928c05514beb761732-886x697.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6fd4e070ae47d8b65b5049227b0a04c4f6eecc2f-885x700.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
-        "condition": "confirmed",
+        "condition": "preliminary",
         "solution": "confirmed",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "vehicleTune",
+        "visual",
+        "condition"
+      ]
     },
     {
-      "id": "activity_07_championship",
+      "id": "activity_07_drift_attack",
       "number": "07",
-      "kind": "championship",
-      "title": "Hitting Your A Game",
-      "points": "5 очков",
-      "conditionHtml": "Cross Country: Heavy Hitters, A 700. Маршруты: Izu Cross Country, Stadium Cross Country Circuit, Yahikoyama Cross Country. Награда: 1987 Nissan Skyline GTS-R.",
-      "howHtml": "Победите в чемпионате: наберите больше всего очков по сумме трёх гонок.",
-      "tuneHtml": "2018 Porsche Cayenne Turbo — A 700; 200 366 736",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "kind": "drift_attack",
+      "title": "Shimanoyama Drift Attack",
+      "points": "3 очка",
+      "conditionHtml": "Mazda, B 600; 80 000 очков. Награда: Wheelspin.",
+      "howHtml": "Наберите 80 000 очков на Shimanoyama Drift Attack.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_07_championship.png",
-        "sourceImage": "network-source-activity_07_championship.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "championship-cross-country",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4fdb8ade34a388f03a8673aba91b53c82debb7fa-882x698.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/94ced5016bbf7a9778ef824dcdcaf5846625b9d6-886x700.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "vehicleTune",
+        "visual"
+      ]
     },
     {
-      "id": "activity_08_time_attack",
+      "id": "activity_08_speed_trap",
       "number": "08",
-      "kind": "time_attack",
-      "title": "Hokubu Time Attack",
-      "points": "3 очка",
-      "conditionHtml": "Toyota, C 500; целевое время 1:25.000. Награда: Wheelspin.",
-      "howHtml": "На Toyota C 500 покажите на Hokubu время 1:25.000 или быстрее.",
-      "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
-      "visual": {
-        "image": "activity_08_time_attack.png",
-        "sourceImage": "network-source-activity_08_time_attack.png",
-        "orientation": "horizontal",
-        "typeIconKey": "time-attack",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/8f2142ba57fef5e52814a462566e94470c6d6c6e-884x696.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "confirmed",
-        "vehicleTune": "community",
-        "visual": "confirmed"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_09_drag_meet",
-      "number": "09",
-      "kind": "drag_meet",
-      "title": "Irokawa Quarter Mile",
-      "points": "3 очка",
-      "conditionHtml": "Toyota, C 500; целевое время 15.000 секунд. Награда: клаксон Konbini Door.",
-      "howHtml": "Найдите значок стартового светофора Irokawa Quarter Mile в открытом мире, займите свободную полосу и подтвердите готовность. Стартуйте на зелёный; время — 15.000 секунд или быстрее.",
-      "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
-      "visual": {
-        "image": "activity_09_drag_meet.png",
-        "sourceImage": "network-source-activity_09_drag_meet.png",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6a930b422ac4c4258a34586502d8a5cad9663253-885x699.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_10_danger_sign",
-      "number": "10",
-      "kind": "danger_sign",
-      "title": "Alpine Heights",
-      "points": "2 очка",
-      "conditionHtml": "Toyota, C 500; цель 721,8 ft (220,0 м). Награда: Wheelspin.",
-      "howHtml": "Разгоняйтесь от Т-образного перекрёстка восточной грунтовой тропы, примерно в 314 м от прыжка.",
-      "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
-      "visual": {
-        "image": "activity_10_danger_sign.png",
-        "sourceImage": "network-source-activity_10_danger_sign.png",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/d515d79b1f4400e4d14567d9be05a5234248b0f0-881x699.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_11_speed_trap",
-      "number": "11",
       "kind": "speed_trap",
       "title": "Konbini Dash",
       "points": "2 очка",
-      "conditionHtml": "Toyota, C 500; цель 85,0 mph (136,8 км/ч). Награда: Wheelspin.",
-      "howHtml": "Начните разгон примерно за 530 м от камеры, у северного Т-образного перекрёстка.",
-      "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "conditionHtml": "Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.",
+      "howHtml": "Пройдите радар с указанной скоростью на подходящей Mazda.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_11_speed_trap.png",
-        "sourceImage": "network-source-activity_11_speed_trap.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "speed-trap",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/ace4a412eb9261afb37e980d4956468adbcee9ba-886x697.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2beb6065713c396119b4d184b7863b73e18b2d38-886x694.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "vehicleTune",
+        "visual"
+      ]
     },
     {
-      "id": "activity_12_trial",
-      "number": "12",
-      "kind": "trial",
-      "title": "The Trial: Full Send",
-      "points": "10 очков",
-      "conditionHtml": "Dirt: Subaru, B 600. Маршруты: Hokubu Trail, Waterfall Trail, Nukabira Trail. Награда: 2023 Toyota Camry TRD.",
-      "howHtml": "Командные гонки против Unbeatable AI; требуется Horizon Legend. Помогайте партнёрам, замедляя ИИ, вместо борьбы с союзниками.",
-      "tuneHtml": "2004 Subaru Impreza WRX STI — B 600; 528 993 509",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xcimbx/fh6_series_6_winter_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter breakdown</a>",
+      "id": "activity_09_drift_zone",
+      "number": "09",
+      "kind": "drift_zone",
+      "title": "Kodachi Run",
+      "points": "2 очка",
+      "conditionHtml": "Mazda, B 600; 74 100 очков. Награда: Wheelspin.",
+      "howHtml": "Наберите 74 100 очков в зоне Kodachi Run.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "activity_12_trial.png",
-        "sourceImage": "network-source-activity_12_trial.png",
-        "orientation": "vertical",
-        "typeIconKey": "trial",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c3d377d626d1085d164133884d7cb959a167f031-884x1419.png",
-        "sourceLabel": "ForzaLabs · Winter 22–29.10.2026: точная полная внутриигровая плитка; исходные CDN-байты сохранены, границы проверены визуально, без ретуши или наложений."
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/0cce2d23470e89aa0a3dd677b1120604c725fc5f-884x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "community",
-        "visual": "confirmed"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "vehicleTune",
+        "visual"
+      ]
     },
     {
-      "id": "activity_13_monthly_rivals",
+      "id": "activity_10_trial",
+      "number": "10",
+      "kind": "trial",
+      "title": "The Trial: Countryside Views",
+      "points": "10 очков",
+      "conditionHtml": "Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
+      "howHtml": "Победите в командном The Trial; помогайте своей команде.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "vertical",
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/91c53451d25c08a3c799d245c6a4a3902e7ac985-887x1418.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "vehicleTune",
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_11_horizon_play",
+      "number": "11",
+      "kind": "horizon_play",
+      "title": "Up to Spec?",
+      "points": "3 очка",
+      "conditionHtml": "Завершите Spec Racing Championship. Награда: Forza Link «Dude where’s my car?».",
+      "howHtml": "В Horizon Play завершите чемпионат Spec Racing.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/46b43bde7323f916db761b0111e257cd2a744390-886x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_12_hide_seek",
+      "number": "12",
+      "kind": "hide_seek",
+      "title": "5 VS 1",
+      "points": "3 очка",
+      "conditionHtml": "Завершите игру Hide & Seek. Награда: Super Wheelspin.",
+      "howHtml": "В Horizon Play завершите игру Hide & Seek.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4de05b19e4c38652d8fb445fab30bf4061083677-883x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_13_stunt_party",
       "number": "13",
+      "kind": "stunt_party",
+      "title": "Mini Games",
+      "points": "3 очка",
+      "conditionHtml": "Завершите любой Horizon Stunt Party. Награда: клаксон Noodle Slurp.",
+      "howHtml": "В Horizon Play завершите Horizon Stunt Party.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2399dc9bf4c7bfd06334964628e945858884d3d7-885x700.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual"
+      ]
+    },
+    {
+      "id": "activity_14_monthly_rivals",
+      "number": "14",
       "kind": "monthly_rivals",
       "title": "Monthly Rivals — Daikoku Circuit",
       "points": "4 очка за Series (1 за сезон)",
       "conditionHtml": "Поставьте чистый круг на Daikoku Circuit на <strong>2025 BMW M4 CS</strong>. Награда: Super Wheelspin.",
       "howHtml": "Один чистый круг засчитывается на всю Series: избегайте столкновений, пропущенных контрольных точек, перемотки и Anna Autopilot.",
       "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.net/news/forza-horizon-6-series-6\" target=\"_blank\" rel=\"noopener noreferrer\">Series News</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xcm2gy/fh6_winter_information_thread_series_6/\" target=\"_blank\" rel=\"noopener noreferrer\">Winter Information Thread</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a>",
       "visual": {
         "image": "activity_13_monthly_rivals.png",
         "sourceImage": "user-source-3.png",
@@ -360,94 +422,101 @@
   ],
   "locales": {
     "en": {
-      "reportTitle": "Forza Horizon 6: Series 6 “Horizon Meets” — Winter",
-      "seasonDisplay": "Winter",
+      "reportTitle": "Forza Horizon 6: Series 6 “Horizon Meets” — Spring",
+      "seasonDisplay": "Spring",
       "activities": {
         "activity_01_weekly": {
-          "title": "Weekly Challenge: Strictly for Fun",
+          "title": "Weekly Challenge: A Retro Adventure",
           "points": "5 points",
-          "conditionHtml": "In the 1991 Honda Beat, in order: own and drive; earn 3 stars at Danger Signs; park at any Car Meet; complete 2 laps at Hokubu Time Attack. Official Playlist reward: 25,000 CR.",
-          "howHtml": "Complete the chapters in order. The community recommends Rollercoaster Leap for the jumps; at Hokubu, simply finish 2 laps.",
-          "tuneHtml": "1991 Honda Beat — A road tune: 757 075 974"
+          "conditionHtml": "1980 Renault 5 Turbo; Dirt Race, Wreckage Skills and Trailblazers chapters. Official reward: 25,000 CR.",
+          "howHtml": "This week’s solution has not been confirmed by the available sources.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
           "points": "7 × 1 point",
-          "conditionHtml": "<ol><li><strong>Oct 22:</strong> park at the 7-Eleven Car Meet.</li><li><strong>Oct 23:</strong> earn at least 1 star from Trailblazers.</li><li><strong>Oct 24:</strong> complete a Dirt Race.</li><li><strong>Oct 25:</strong> earn 5 Air Skills.</li><li><strong>Oct 26:</strong> earn 5 Speed Skills.</li><li><strong>Oct 27:</strong> take a photo of any car.</li><li><strong>Oct 28:</strong> spend 20,000 CR on upgrades.</li></ol> Reward: 5,000 CR per challenge.",
-          "howHtml": "The 7-Eleven Car Meet is in Nangan near Nangan Day Trip.",
+          "conditionHtml": "<ol><li><strong>Oct 29:</strong> purchase an Aftermarket Car.</li><li><strong>Oct 30:</strong> earn 5 Clean Racing Skills.</li><li><strong>Oct 31:</strong> complete a Cross Country Race.</li><li><strong>Nov 1:</strong> earn at least 1 star from Speed Zones.</li><li><strong>Nov 2:</strong> complete a run at any Drag Meet.</li><li><strong>Nov 3:</strong> earn 5 Wreckage Skills.</li><li><strong>Nov 4:</strong> earn at least 1 star from Danger Signs.</li></ol> Reward: 5,000 CR per challenge.",
+          "howHtml": "Complete the listed objective on its scheduled day.",
           "tuneHtml": "No tune required."
         },
         "activity_03_photo": {
-          "title": "#PolarisPoint",
+          "title": "#TakingYourTime",
           "points": "2 points",
-          "conditionHtml": "Take a photo of any Polaris at the Irokawa Space Center. Reward: All-White Techwear Boots.",
-          "howHtml": "Use the 2021 Polaris RZR Pro XP Factory Racing Limited Edition rewarded by Touring the Sights; take the photo at the Irokawa Space Center.",
+          "conditionHtml": "Take a photo of the 1989 Nissan S-Cargo at Kinkaku-ji Temple. Reward: So Cute emote.",
+          "howHtml": "Drive the specified car to Kinkaku-ji Temple and take a photo.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
-          "title": "Sotoyama Region",
+          "title": "Hokubu Region",
           "points": "3 points",
-          "conditionHtml": "Find the photo-clue chest in Sotoyama. Reward: 100,000 CR.",
-          "howHtml": "Head to the mountain lake north of the Hakusan Mountain Lodge player house, in eastern Sotoyama. The chest is on the eastern shore; smash it with your car.",
+          "conditionHtml": "Find the photo-clue chest in Hokubu. Reward: 100,000 CR.",
+          "howHtml": "This week’s solution has not been confirmed by the available sources.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
-          "title": "Touring the Sights",
+          "title": "Dockside Drive",
           "points": "5 points",
-          "conditionHtml": "Road: Super GT, S1 800. Routes: Coastline Sprint, Irokawa Circuit, Shimanoyama Sprint. Reward: 2021 Polaris RZR Pro XP Factory Racing Limited Edition.",
-          "howHtml": "Win the championship by scoring the most points across all three races.",
-          "tuneHtml": "2017 Ferrari 812 Superfast — S1 800; 855 747 244"
+          "conditionHtml": "Street: Retro Supercars, S1 800. Officially listed routes: Minami Chase and Tokyo City Docks Charge. Reward: 1992 Lancia Delta HF Integrale EVO.",
+          "howHtml": "Win the championship on total points.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
         "activity_06_championship": {
-          "title": "Daily Exercise",
+          "title": "Good Old Days",
           "points": "5 points",
-          "conditionHtml": "Street: High Performance Dailies, A 700. Routes: Nachi Run, Cedar Run, Okishinaimura Run. Reward: 1991 Honda Beat.",
-          "howHtml": "Win the championship by scoring the most points across all three races.",
-          "tuneHtml": "2014 HSV Gen-F GTS — A 700; 250 331 392"
+          "conditionHtml": "Dirt: Retro Rally, C 500. Officially listed routes: Airfield Trail and Sekibe Scramble. Reward: 2005 Porsche Cayman GT3 WTAC.",
+          "howHtml": "Win the championship on total points.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
-        "activity_07_championship": {
-          "title": "Hitting Your A Game",
-          "points": "5 points",
-          "conditionHtml": "Cross Country: Heavy Hitters, A 700. Routes: Izu Cross Country, Stadium Cross Country Circuit, Yahikoyama Cross Country. Reward: 1987 Nissan Skyline GTS-R.",
-          "howHtml": "Win the championship by scoring the most points across all three races.",
-          "tuneHtml": "2018 Porsche Cayenne Turbo — A 700; 200 366 736"
-        },
-        "activity_08_time_attack": {
-          "title": "Hokubu Time Attack",
+        "activity_07_drift_attack": {
+          "title": "Shimanoyama Drift Attack",
           "points": "3 points",
-          "conditionHtml": "Toyota, C 500; target time 1:25.000. Reward: Wheelspin.",
-          "howHtml": "Set 1:25.000 or faster at Hokubu in a C 500 Toyota.",
-          "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267"
+          "conditionHtml": "Mazda, B 600; 80,000 points. Reward: Wheelspin.",
+          "howHtml": "Score 80,000 points at Shimanoyama Drift Attack.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
-        "activity_09_drag_meet": {
-          "title": "Irokawa Quarter Mile",
-          "points": "3 points",
-          "conditionHtml": "Toyota, C 500; target time 15.000 seconds. Reward: Konbini Door horn.",
-          "howHtml": "Find the Irokawa Quarter Mile drag-light icon in the open world, enter an open lane and ready up. Launch on green; finish in 15.000 seconds or faster.",
-          "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267"
-        },
-        "activity_10_danger_sign": {
-          "title": "Alpine Heights",
-          "points": "2 points",
-          "conditionHtml": "Toyota, C 500; target 721.8 ft (220.0 m). Reward: Wheelspin.",
-          "howHtml": "Start at the east dirt-trail T-junction, about 314 m from the jump.",
-          "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267"
-        },
-        "activity_11_speed_trap": {
+        "activity_08_speed_trap": {
           "title": "Konbini Dash",
           "points": "2 points",
-          "conditionHtml": "Toyota, C 500; target 85.0 mph (136.8 km/h). Reward: Wheelspin.",
-          "howHtml": "Start about 530 m from the trap at the north road T-junction.",
-          "tuneHtml": "1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267"
+          "conditionHtml": "Mazda, B 600; 92.0 mph (148.1 km/h). Reward: Wheelspin.",
+          "howHtml": "Pass the speed trap at the target speed in an eligible Mazda.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
-        "activity_12_trial": {
-          "title": "The Trial: Full Send",
+        "activity_09_drift_zone": {
+          "title": "Kodachi Run",
+          "points": "2 points",
+          "conditionHtml": "Mazda, B 600; 74,100 points. Reward: Wheelspin.",
+          "howHtml": "Score 74,100 points in the Kodachi Run drift zone.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+        },
+        "activity_10_trial": {
+          "title": "The Trial: Countryside Views",
           "points": "10 points",
-          "conditionHtml": "Dirt: Subaru, B 600. Routes: Hokubu Trail, Waterfall Trail, Nukabira Trail. Reward: 2023 Toyota Camry TRD.",
-          "howHtml": "Team races against Unbeatable AI; Horizon Legend is required. Help teammates by slowing the AI rather than racing your own team.",
-          "tuneHtml": "2004 Subaru Impreza WRX STI — B 600; 528 993 509"
+          "conditionHtml": "Road: Japan, B 600. Routes: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Reward: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
+          "howHtml": "Win the team Trial; help your teammates.",
+          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
         },
-        "activity_13_monthly_rivals": {
+        "activity_11_horizon_play": {
+          "title": "Up to Spec?",
+          "points": "3 points",
+          "conditionHtml": "Complete a Spec Racing Championship. Reward: “Dude where’s my car?” Forza Link.",
+          "howHtml": "Complete a Spec Racing championship in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_12_hide_seek": {
+          "title": "5 VS 1",
+          "points": "3 points",
+          "conditionHtml": "Complete a game of Hide & Seek. Reward: Super Wheelspin.",
+          "howHtml": "Complete a game of Hide & Seek in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_13_stunt_party": {
+          "title": "Mini Games",
+          "points": "3 points",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Noodle Slurp horn.",
+          "howHtml": "Complete a Horizon Stunt Party in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_14_monthly_rivals": {
           "title": "Monthly Rivals — Daikoku Circuit",
           "points": "4 points per Series (1 per season)",
           "conditionHtml": "Set a clean lap on Daikoku Circuit in the <strong>2025 BMW M4 CS</strong>. Reward: Super Wheelspin.",
@@ -457,5 +526,174 @@
       }
     }
   },
-  "openItems": []
+  "openItems": [
+    {
+      "activityId": "activity_01_weekly",
+      "field": "solution",
+      "reason": "Решение этой недели не подтверждено доступными источниками.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_01_weekly",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_01_weekly",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_01_weekly",
+      "field": "condition",
+      "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены.",
+      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_03_photo",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "solution",
+      "reason": "Решение этой недели не подтверждено доступными источниками.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_treasure_hunt",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "condition",
+      "reason": "Официальная таблица перечисляет только два маршрута. Полнота списка не подтверждена; третий маршрут не выдуман.",
+      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "condition",
+      "reason": "Официальная таблица перечисляет только два маршрута. Полнота списка не подтверждена; третий маршрут не выдуман.",
+      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_07_drift_attack",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_drift_attack",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_speed_trap",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_speed_trap",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_drift_zone",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_drift_zone",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_trial",
+      "field": "vehicleTune",
+      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_trial",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_horizon_play",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_12_hide_seek",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_13_stunt_party",
+      "field": "visual",
+      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
+      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
+      "status": "missing"
+    }
+  ]
 }

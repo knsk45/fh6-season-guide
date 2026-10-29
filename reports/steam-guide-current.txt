@@ -3,67 +3,64 @@
 
 [i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]
 
-[h1]Series 6 'Horizon Meets' — Зима[/h1]
-[b]До:[/b] 29.10.2026 21:30 (Красноярск) · [b]Активностей:[/b] 13
+[h1]Series 6 'Horizon Meets' — Весна[/h1]
+[b]До:[/b] 05.11.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Еженедельное испытание: Strictly for Fun · 5 очков[/h2]
-На 1991 Honda Beat по порядку: владеть и проехать; получить 3 звезды на Danger Signs; припарковаться на любом Car Meet; завершить 2 круга Hokubu Time Attack. Награда по официальной Playlist: 25 000 CR.
-[b]Авто:[/b] 1991 Honda Beat — A, дорожный тюнинг: 757 075 974
+[h2]01. Еженедельное испытание: A Retro Adventure · 5 очков[/h2]
+1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.
 
 [h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
-• 22.10: припаркуйтесь на 7-Eleven Car Meet.
-• 23.10: получите не менее 1 звезды на Trailblazers.
-• 24.10: завершите Dirt Race.
-• 25.10: выполните 5 Air Skills.
-• 26.10: выполните 5 Speed Skills.
-• 27.10: сфотографируйте любую машину.
-• 28.10: потратьте 20 000 CR на улучшения.
- Награда: 5 000 CR за каждое задание.
+• 29.10: купите Aftermarket Car.
+• 30.10: выполните 5 Clean Racing Skills.
+• 31.10: завершите Cross Country Race.
+• 01.11: получите не менее 1 звезды на Speed Zones.
+• 02.11: завершите заезд на любом Drag Meet.
+• 03.11: выполните 5 Wreckage Skills.
+• 04.11: получите не менее 1 звезды на Danger Signs.
+ Награда: 5 000 CR за задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. #PolarisPoint · 2 очка[/h2]
-Сфотографируйте любой Polaris в Irokawa Space Center. Награда: All-White Techwear Boots.
+[h2]03. #TakingYourTime · 2 очка[/h2]
+Сфотографируйте 1989 Nissan S-Cargo у Kinkaku-ji Temple. Награда: эмоция So Cute.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. Sotoyama Region · 3 очка[/h2]
-Найдите сундук по фото-подсказке в Sotoyama. Награда: 100 000 CR.
+[h2]04. Hokubu Region · 3 очка[/h2]
+Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. Touring the Sights · 5 очков[/h2]
-Road: Super GT, S1 800. Маршруты: Coastline Sprint, Irokawa Circuit, Shimanoyama Sprint. Награда: 2021 Polaris RZR Pro XP Factory Racing Limited Edition.
-[b]Авто:[/b] 2017 Ferrari 812 Superfast — S1 800; 855 747 244
+[h2]05. Dockside Drive · 5 очков[/h2]
+Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.
 
-[h2]06. Daily Exercise · 5 очков[/h2]
-Street: High Performance Dailies, A 700. Маршруты: Nachi Run, Cedar Run, Okishinaimura Run. Награда: 1991 Honda Beat.
-[b]Авто:[/b] 2014 HSV Gen-F GTS — A 700; 250 331 392
+[h2]06. Good Old Days · 5 очков[/h2]
+Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.
 
-[h2]07. Hitting Your A Game · 5 очков[/h2]
-Cross Country: Heavy Hitters, A 700. Маршруты: Izu Cross Country, Stadium Cross Country Circuit, Yahikoyama Cross Country. Награда: 1987 Nissan Skyline GTS-R.
-[b]Авто:[/b] 2018 Porsche Cayenne Turbo — A 700; 200 366 736
+[h2]07. Shimanoyama Drift Attack · 3 очка[/h2]
+Mazda, B 600; 80 000 очков. Награда: Wheelspin.
 
-[h2]08. Hokubu Time Attack · 3 очка[/h2]
-Toyota, C 500; целевое время 1:25.000. Награда: Wheelspin.
-[b]Авто:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
+[h2]08. Konbini Dash · 2 очка[/h2]
+Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.
 
-[h2]09. Irokawa Quarter Mile · 3 очка[/h2]
-Toyota, C 500; целевое время 15.000 секунд. Награда: клаксон Konbini Door.
-[b]Авто:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
+[h2]09. Kodachi Run · 2 очка[/h2]
+Mazda, B 600; 74 100 очков. Награда: Wheelspin.
 
-[h2]10. Alpine Heights · 2 очка[/h2]
-Toyota, C 500; цель 721,8 ft (220,0 м). Награда: Wheelspin.
-[b]Авто:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
+[h2]10. The Trial: Countryside Views · 10 очков[/h2]
+Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.
 
-[h2]11. Konbini Dash · 2 очка[/h2]
-Toyota, C 500; цель 85,0 mph (136,8 км/ч). Награда: Wheelspin.
-[b]Авто:[/b] 1992 Toyota Celica GT-Four RC ST185 — C 500; 121 971 267
+[h2]11. Up to Spec? · 3 очка[/h2]
+Завершите Spec Racing Championship. Награда: Forza Link «Dude where’s my car?».
+[b]Авто:[/b] Тюнинг не требуется.
 
-[h2]12. The Trial: Full Send · 10 очков[/h2]
-Dirt: Subaru, B 600. Маршруты: Hokubu Trail, Waterfall Trail, Nukabira Trail. Награда: 2023 Toyota Camry TRD.
-[b]Авто:[/b] 2004 Subaru Impreza WRX STI — B 600; 528 993 509
+[h2]12. 5 VS 1 · 3 очка[/h2]
+Завершите игру Hide & Seek. Награда: Super Wheelspin.
+[b]Авто:[/b] Тюнинг не требуется.
 
-[h2]13. Monthly Rivals — Daikoku Circuit · 4 очка за Series (1 за сезон)[/h2]
+[h2]13. Mini Games · 3 очка[/h2]
+Завершите любой Horizon Stunt Party. Награда: клаксон Noodle Slurp.
+[b]Авто:[/b] Тюнинг не требуется.
+
+[h2]14. Monthly Rivals — Daikoku Circuit · 4 очка за Series (1 за сезон)[/h2]
 Поставьте чистый круг на Daikoku Circuit на 2025 BMW M4 CS. Награда: Super Wheelspin.
 [b]Авто:[/b] 2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.
 
