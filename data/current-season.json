@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-30T06:07:23+07:00",
+  "lastContentUpdate": "2026-10-30T06:58:58+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,23 +30,22 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-network-original.png",
         "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c66e16736dc4e4f59a2ca85d8b4259d02753aeba-882x1415.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/72dff097be3c25f40a74a7965f8bdfe78b66c1ab-884x1416.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "missing",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
         "solution",
         "vehicleTune",
-        "visual",
         "condition"
       ]
     },
@@ -87,22 +86,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_03_photo-tile.png",
+        "sourceImage": "activity_03_photo-network-original.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5b90bcee214b52695fc042f4cf10e6d5e721c7ab-884x1417.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6cec6daa8db8fb19bf4af8e2c982f81752a98baf-887x1416.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure_hunt",
@@ -115,22 +112,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_04_treasure_hunt-tile.png",
+        "sourceImage": "activity_04_treasure_hunt-network-original.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/73e97fd4a72e2a781af6b21221b6f896a83a3eb8-884x1412.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "treasure-hunt",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/98849667ae4a6bb650420dee228e0a0aba550273-885x1412.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "solution",
-        "visual"
+        "solution"
       ]
     },
     {
@@ -144,22 +140,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-network-original.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/50da34d84c29e6ee416001a1818b4d501127d178-884x699.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "championship-street",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/bd3d24a47618a401967be6e0f8ebacdcfc196361-883x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
         "vehicleTune",
-        "visual",
         "condition"
       ]
     },
@@ -174,22 +169,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship-tile.png",
+        "sourceImage": "activity_06_championship-network-original.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6fd4e070ae47d8b65b5049227b0a04c4f6eecc2f-885x700.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5c50337c28446fa68d3f3d8b7637061b26954b11-883x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
         "vehicleTune",
-        "visual",
         "condition"
       ]
     },
@@ -204,22 +198,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_drift_attack-tile.png",
+        "sourceImage": "activity_07_drift_attack-network-original.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/94ced5016bbf7a9778ef824dcdcaf5846625b9d6-886x700.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/1eab3924fca492006752dfaace8992cafcc485c9-885x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -233,22 +226,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_speed_trap-tile.png",
+        "sourceImage": "activity_08_speed_trap-network-original.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2beb6065713c396119b4d184b7863b73e18b2d38-886x694.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/9719d48c8f467c30252a40399ef4bdfb3e5e3add-885x695.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -262,22 +254,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_drift_zone-tile.png",
+        "sourceImage": "activity_09_drift_zone-network-original.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/0cce2d23470e89aa0a3dd677b1120604c725fc5f-884x698.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "drift-zone",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3dcad58bd524bddcb6a3d0f5ec117ba831f0bcc5-885x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -291,22 +282,21 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_trial-tile.png",
+        "sourceImage": "activity_10_trial-network-original.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/91c53451d25c08a3c799d245c6a4a3902e7ac985-887x1418.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "typeIconKey": "trial",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/718331d645696a8c5ff983baecc82d03e1526681-883x1417.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "confirmed"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -320,22 +310,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_11_horizon_play-tile.png",
+        "sourceImage": "activity_11_horizon_play-network-original.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/46b43bde7323f916db761b0111e257cd2a744390-886x699.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/70032462affc522bbca253f349e527ac14a2b28f-883x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_hide_seek",
@@ -348,22 +336,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_hide_seek-tile.png",
+        "sourceImage": "activity_12_hide_seek-network-original.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4de05b19e4c38652d8fb445fab30bf4061083677-883x698.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/08bfed8e2f2441279594dea72cea765853dff2ce-885x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_stunt_party",
@@ -376,22 +362,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_13_stunt_party-tile.png",
+        "sourceImage": "activity_13_stunt_party-network-original.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2399dc9bf4c7bfd06334964628e945858884d3d7-885x700.png",
-        "sourceLabel": "ForzaLabs Spring 29.10–05.11: ссылка на плитку найдена; изображение недоступно, визуал не подтверждён."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/1118b9e64bd5fb8b3126f18a43d8035bf586ac8a-882x697.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "confirmed"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -543,24 +527,10 @@
     },
     {
       "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_01_weekly",
       "field": "condition",
       "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены.",
       "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
     },
     {
       "activityId": "activity_04_treasure_hunt",
@@ -570,23 +540,9 @@
       "status": "missing"
     },
     {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_05_championship",
       "field": "vehicleTune",
       "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
       "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
       "status": "missing"
     },
@@ -606,13 +562,6 @@
     },
     {
       "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
       "field": "condition",
       "reason": "Официальная таблица перечисляет только два маршрута. Полнота списка не подтверждена; третий маршрут не выдуман.",
       "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
@@ -626,23 +575,9 @@
       "status": "missing"
     },
     {
-      "activityId": "activity_07_drift_attack",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_08_speed_trap",
       "field": "vehicleTune",
       "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
       "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
       "status": "missing"
     },
@@ -654,44 +589,9 @@
       "status": "missing"
     },
     {
-      "activityId": "activity_09_drift_zone",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_10_trial",
       "field": "vehicleTune",
       "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_hide_seek",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_stunt_party",
-      "field": "visual",
-      "reason": "Точная плитка Spring найдена в индексе ForzaLabs, но её CDN-байты недоступны; локальных оригиналов этой активности нет.",
       "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
       "status": "missing"
     }
