@@ -62,23 +62,49 @@ def content_digest(state):
     data.pop('lastContentUpdate', None)
     return hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
+def season_started(state):
+    # Required by the season schema; tolerate old minimal diagnostic fixtures.
+    start = state['season'].get('startAt')
+    return start is None or datetime.fromisoformat(start) <= datetime.now(ZONE)
+
 @contextlib.contextmanager
-def exclusive(path):
+def exclusive(path, timeout=0):
     """OS-owned lock is released on process exit/crash; never a stale PID lock."""
+    if timeout < 0:
+        raise ValueError('Lock timeout must be nonnegative.')
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'a+b') as stream:
         stream.seek(0)
+        deadline = time.monotonic() + timeout
         if os.name == 'nt':
             import msvcrt
             if Path(path).stat().st_size == 0:
                 stream.write(b'0'); stream.flush(); stream.seek(0)
-            try:
+            def acquire():
+                stream.seek(0)
                 msvcrt.locking(stream.fileno(), msvcrt.LK_NBLCK, 1)
-            except OSError as exc:
-                raise RuntimeError('Another refresh_guard process is active; do not start a duplicate.') from exc
         else:
             import fcntl
-            fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            def acquire():
+                fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        announced = False
+        while True:
+            try:
+                acquire()
+                break
+            except OSError as exc:
+                import errno
+                if exc.errno not in {errno.EACCES, errno.EAGAIN, errno.EDEADLK}:
+                    raise
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    if os.name == 'nt':
+                        raise RuntimeError('Another refresh_guard process is active; lock wait expired.') from exc
+                    raise
+                if not announced:
+                    print('FH6_LOCK_STATUS=WAITING', flush=True)
+                    announced = True
+                time.sleep(min(0.25, remaining))
         try:
             yield
         finally:
@@ -164,6 +190,8 @@ class Guard:
                 raise RuntimeError('Audit evidence is stale or future-dated; repeat the live checks.')
         if audit.get('seasonConfirmed') is not True or audit.get('seasonEndAt') != state['season']['endAt']:
             raise RuntimeError('Live season confirmation must match state.')
+        if not season_started(state):
+            raise RuntimeError('Season has not started. A preview is not the active Playlist; preserve the current season until startAt.')
         if datetime.fromisoformat(state['season']['endAt']) <= datetime.now(ZONE):
             raise RuntimeError('Stored season has ended. Confirm rollover before refresh.')
         visuals = audit.get('visuals', [])
@@ -231,6 +259,7 @@ class Guard:
             if digest(asset).lower() != str(visuals[activity['id']].get('sha256', '')).lower():
                 return False
         return (digest(step['path']) == step['sha256']
+                and season_started(state)
                 and content_digest(read(self.state_path)) == audit['stateContentSha256']
                 and digest(self.project_path) == audit['projectSha256']
                 and digest(self.root / 'reports/SOURCE_NOTES.md').lower() == str(audit.get('sourceNotesSha256', '')).lower()

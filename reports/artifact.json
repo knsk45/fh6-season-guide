@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Series 6 «Horizon Meets» — Зима",
     "description": "Сезон действует до 2026-10-29T21:30:00+07:00",
-    "generatedAt": "2026-10-28T06:03:05.0000000+07:00",
+    "generatedAt": "2026-10-29T07:20:59.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -109,7 +109,7 @@
   "snapshot": {
     "version": 1,
     "status": "ready",
-    "generatedAt": "2026-10-28T06:03:05.0000000+07:00",
+    "generatedAt": "2026-10-29T07:20:59.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -119,20 +119,6 @@
         },
         "description": "График показывает последний успешный замер за каждый из последних семи календарных дней по времени Красноярска.",
         "rows": [
-          {
-            "runId": "fh6-20261020-060004-546351",
-            "collectedAt": "2026-10-20T06:04:14.4094185+07:00",
-            "steamViews": 1323,
-            "steamFavorites": 81,
-            "githubViews": 3637
-          },
-          {
-            "runId": "fh6-20261021-060004-543067",
-            "collectedAt": "2026-10-21T06:05:08.4751557+07:00",
-            "steamViews": 1325,
-            "steamFavorites": 81,
-            "githubViews": 3668
-          },
           {
             "runId": "fh6-20261022-142804-734179",
             "collectedAt": "2026-10-22T14:34:19.9237333+07:00",
@@ -167,6 +153,13 @@
             "steamViews": 1359,
             "steamFavorites": 83,
             "githubViews": 3825
+          },
+          {
+            "runId": "fh6-20261028-060001-250647",
+            "collectedAt": "2026-10-28T06:05:00.2669593+07:00",
+            "steamViews": 1369,
+            "steamFavorites": 83,
+            "githubViews": 3869
           }
         ]
       }
@@ -175,7 +168,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-10-28T06:03:05.0000000+07:00",
+    "generated_at": "2026-10-29T07:20:59.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }

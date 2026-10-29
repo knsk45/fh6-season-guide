@@ -81,6 +81,30 @@ class GuardTests(unittest.TestCase):
         self.audit['seasonConfirmed']=False
         with self.assertRaises(RuntimeError):self.accept()
 
+    def test_future_preview_cannot_be_registered_as_active(self):
+        state=g.read(self.guard.state_path)
+        state['season']['startAt']=(datetime.now(g.ZONE)+timedelta(hours=12)).isoformat()
+        g.atomic(self.guard.state_path,state)
+        with self.assertRaisesRegex(RuntimeError,'Season has not started'):
+            self.accept()
+
+    def test_current_season_start_is_accepted(self):
+        state=g.read(self.guard.state_path)
+        state['season']['startAt']=(datetime.now(g.ZONE)-timedelta(days=1)).isoformat()
+        g.atomic(self.guard.state_path,state)
+        self.accept()
+        self.assertTrue(self.guard.audit_valid(self.run))
+
+    def test_future_season_blocks_replay_even_with_matching_hashes(self):
+        self.accept()
+        state=g.read(self.guard.state_path)
+        state['season']['startAt']=(datetime.now(g.ZONE)+timedelta(hours=12)).isoformat()
+        g.atomic(self.guard.state_path,state)
+        step=self.run['steps']['audit'];audit=g.read(step['path'])
+        audit['stateContentSha256']=g.content_digest(state)
+        g.atomic(step['path'],audit);step['sha256']=g.digest(step['path'])
+        self.assertFalse(self.guard.audit_valid(self.run))
+
     def test_changed_visual_rejected(self):
         self.audit['visuals'][0]['sha256']='wrong'
         with self.assertRaises(RuntimeError):self.accept()
