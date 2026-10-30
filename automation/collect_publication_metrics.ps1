@@ -63,6 +63,8 @@ function Invoke-MetricsRead {
     for ($Attempt = 0; $Attempt -lt 3; $Attempt++) {
         try { return & $Operation }
         catch {
+            Write-Host "PUBLIC_METRICS_ATTEMPT_FAILED=$($Attempt+1)"
+            Write-Host "PUBLIC_METRICS_FAILURE_TYPE=$($_.Exception.GetType().Name)"
             if ($Attempt -eq 2) { throw }
             $Delay = @(5,15)[$Attempt]
             # Respect a bounded server backoff; a longer one is left to recovery.
@@ -72,7 +74,7 @@ function Invoke-MetricsRead {
                 $After = $Response.Headers.RetryAfter
                 if ($After.Delta) { $Delay = [Math]::Max($Delay,[Math]::Ceiling($After.Delta.TotalSeconds)) }
                 elseif ($After.Date) { $Delay = [Math]::Max($Delay,[Math]::Ceiling(($After.Date-[DateTimeOffset]::UtcNow).TotalSeconds)) }
-                if ($Delay -gt 60) { throw }
+                if ($Delay -gt 30) { throw }
             }
             Start-Sleep -Seconds $Delay
         }
@@ -85,7 +87,7 @@ function Get-SteamMetrics {
     $Parts = @($Target.Query.TrimStart('?') -split '&' | Where-Object { $_ -and $_ -notmatch '^l=' })
     $Target.Query = (($Parts + 'l=english') -join '&')
     return Invoke-MetricsRead -Operation {
-        $Response = Invoke-WebRequest -UseBasicParsing -Uri $Target.Uri.AbsoluteUri -TimeoutSec 30 -UserAgent 'FH6-PublicMetrics/1.0'
+        $Response = Invoke-WebRequest -UseBasicParsing -Uri $Target.Uri.AbsoluteUri -TimeoutSec 20 -UserAgent 'FH6-PublicMetrics/1.0'
         if ($Response.StatusCode -ne 200) { throw 'Steam public metrics endpoint unavailable.' }
         $Views = Get-SteamTableMetric -Html ([string]$Response.Content) -Label 'Unique Visitors'
         $Favorites = Get-SteamTableMetric -Html ([string]$Response.Content) -Label 'Current Favorites'
@@ -181,7 +183,7 @@ if ($SteamViews -lt 0) {
 
 try {
     $HitsResponse = Invoke-MetricsRead -Operation {
-        $Reply = Invoke-RestMethod -Method Get -Uri ([string]$Project.analytics.statsApiUrl) -TimeoutSec 30
+        $Reply = Invoke-RestMethod -Method Get -Uri ([string]$Project.analytics.statsApiUrl) -TimeoutSec 20
         if ($null -eq $Reply.total -or [string]$Reply.total -notmatch '^\d+$' -or $null -eq $Reply.items) {
             throw 'Invalid analytics response.'
         }

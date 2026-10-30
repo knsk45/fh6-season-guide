@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-30T17:53:04+07:00",
+  "lastContentUpdate": "2026-10-31T06:03:33+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -108,9 +108,9 @@
       "title": "Hokubu Region",
       "points": "3 очка",
       "conditionHtml": "Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.",
-      "howHtml": "",
+      "howHtml": "Сундук находится среди теплиц Shikisai-no-oka в центре Hokubu. Двигайтесь по дороге на северо-запад через цветочные поля; у поворота дороги на восток ищите теплицы слева и разбейте сундук между ними.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-hokubo-region-location/\" target=\"_blank\" rel=\"noopener noreferrer\">PC Gamer · 29.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
       "visual": {
         "image": "activity_04_treasure_hunt-tile.png",
         "sourceImage": "activity_04_treasure_hunt-network-original.png",
@@ -121,13 +121,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "confirmed",
         "vehicleTune": "not_applicable",
         "visual": "confirmed"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -434,7 +432,7 @@
           "title": "Hokubu Region",
           "points": "3 points",
           "conditionHtml": "Find the photo-clue chest in Hokubu. Reward: 100,000 CR.",
-          "howHtml": "This week’s solution has not been confirmed by the available sources.",
+          "howHtml": "The chest is among the Shikisai-no-oka greenhouses in central Hokubu. Follow the road northwest through the flower fields; where it turns east, look for greenhouses on the left and smash the chest between them.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
@@ -531,13 +529,6 @@
       "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены. Конфликт награды: сохранённая точная плитка показывает 150 000 CR, официальная таблица — 25 000 CR; официальный текст оставлен до проверки в игре.",
       "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
       "status": "conflict"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "solution",
-      "reason": "Решение этой недели не подтверждено доступными источниками.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
     },
     {
       "activityId": "activity_05_championship",

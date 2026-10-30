@@ -1,8 +1,8 @@
 # Forza Horizon 6: Series 6 «Horizon Meets» — Весна
 
-> Статус: предварительно; открытых полей: 12
+> Статус: предварительно; открытых полей: 11
 > Период: 29.10.2026 21:30 — 05.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 30.10.2026 17:53
+> Обновлено: 31.10.2026 06:03
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: A Retro Adventure · 5 очков
@@ -29,9 +29,9 @@
 ## 04. treasure_hunt — Hokubu Region · 3 очка
 
 - **Условие:** Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.
-- **Как выполнить:** 
+- **Как выполнить:** Сундук находится среди теплиц Shikisai-no-oka в центре Hokubu. Двигайтесь по дороге на северо-запад через цветочные поля; у поворота дороги на восток ищите теплицы слева и разбейте сундук между ними.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-hokubo-region-location/" target="_blank" rel="noopener noreferrer">PC Gamer · 29.10.2026</a> · <a href="https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/" target="_blank" rel="noopener noreferrer">Lights to Flag · Spring 29.10.2026</a>
 
 ## 05. championship — Dockside Drive · 5 очков
 
