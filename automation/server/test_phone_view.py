@@ -42,6 +42,11 @@ class Tests(unittest.TestCase):
     def test_signature_has_no_private_commands(self):
         data=fixture();data['active']['steps']['publish']['command']='secret command'
         self.assertNotIn('secret command',json.dumps(ui.panel_signature(data)))
+    def test_steam_complete_bound_to_current_pair(self):
+        data=fixture();data['steam_publication']={'status':'COMPLETE','sha256':'old'}
+        self.assertNotIn('Оба раздела опубликованы',view.render(**data))
+        data['steam_publication']['sha256']=data['sha']
+        self.assertIn('Сайт и Steam обновлены',view.render(**data))
     def test_ajax_actions_and_same_origin(self):
         with tempfile.TemporaryDirectory() as d,patch.object(ui,'STORE',Path(d)),patch.object(ui,'ROOT',Path(d)):
             root=Path(d);(root/'reports').mkdir()
@@ -72,7 +77,22 @@ class Tests(unittest.TestCase):
                 self.assertIn('Тексты изменились',json.load(err.exception)['message'])
                 with self.assertRaises(urllib.error.HTTPError) as err:post('/refresh',{},'https://evil.example')
                 self.assertEqual(err.exception.code,403)
+                self.assertIn('HTTP 403',json.load(err.exception)['message'])
+                self.assertFalse((root/'refresh-request').exists())
                 self.assertEqual(json.load(post('/refresh',{}))['anchor'],'overview')
+                (root/'refresh-request').unlink()
+                for receipt in (root/'refresh-history').glob('*.json'):receipt.unlink()
+                # Response-format fallback must work with a stripped AJAX
+                # header and must preserve the same-origin security gate.
+                response=urllib.request.urlopen(urllib.request.Request(base+'/refresh?_ui=1',data=b'',headers={'Origin':'https://'+host}))
+                self.assertIn('application/json',response.headers['Content-Type'])
+                self.assertEqual(json.load(response)['anchor'],'overview')
+                (root/'refresh-request').unlink()
+                for receipt in (root/'refresh-history').glob('*.json'):receipt.unlink()
+                with self.assertRaises(urllib.error.HTTPError) as err:
+                    urllib.request.urlopen(urllib.request.Request(base+'/refresh?_ui=1',data=b'',headers={'Origin':'https://evil.example'}))
+                self.assertEqual(err.exception.code,403)
+                self.assertFalse((root/'refresh-request').exists())
             finally:server.shutdown();server.server_close();worker.join()
 
 if __name__=='__main__':unittest.main()

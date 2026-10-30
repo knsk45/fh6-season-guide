@@ -20,11 +20,19 @@ $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $Validator = Join-Path $PSScriptRoot "validate_season.ps1"
 $StatePath = Join-Path $RepoRoot "data\current-season.json"
 $script:UsePagesFallback = $false
+$script:PublishPhase = 'repository'
+
+function Set-PublishPhase {
+    param([string]$Name)
+    $script:PublishPhase = $Name
+    Write-Host "FH6_PUBLISH_PHASE=$Name"
+}
 
 function Assert-NativeSuccess {
     param([string]$Operation)
 
     if ($LASTEXITCODE -ne 0) {
+        Write-Host "FH6_PUBLISH_NATIVE_EXIT=$LASTEXITCODE"
         throw "$Operation failed with exit code $LASTEXITCODE."
     }
 }
@@ -77,18 +85,21 @@ function Invoke-PagesRequest {
 
 Push-Location $RepoRoot
 try {
+    Set-PublishPhase 'repository'
     $ActualRoot = (git rev-parse --show-toplevel).Trim()
     Assert-NativeSuccess "Resolve Git repository"
     if ([IO.Path]::GetFullPath($ActualRoot) -ne [IO.Path]::GetFullPath($RepoRoot)) {
         throw "Refusing to publish from unexpected repository: $ActualRoot"
     }
 
+    Set-PublishPhase 'branch'
     $CurrentBranch = (git branch --show-current).Trim()
     Assert-NativeSuccess "Read current branch"
     if ($CurrentBranch -ne $ExpectedBranch) {
         throw "Expected branch '$ExpectedBranch', current branch is '$CurrentBranch'."
     }
 
+    Set-PublishPhase 'validation'
     $ValidationOutput = & $Validator -StatePath $StatePath
     $ValidationSucceeded = $?
     $ValidationOutput | Write-Host
@@ -96,6 +107,7 @@ try {
         throw "Validate FH6 season structure failed."
     }
 
+    Set-PublishPhase 'receipt'
     # A changed report requires a byte-bound receipt, not success words in a log.
     git diff --quiet HEAD -- data/current-season.json reports/artifact.json reports/current-week.html reports/assets data/project.json
     $ReportChanged = $LASTEXITCODE -eq 1
@@ -108,9 +120,11 @@ try {
         Assert-NativeSuccess 'Verify compatible portable package receipt'
     }
 
+    Set-PublishPhase 'fetch'
     git fetch origin $ExpectedBranch --quiet
     Assert-NativeSuccess "Fetch origin/$ExpectedBranch"
 
+    Set-PublishPhase 'ancestry'
     git merge-base --is-ancestor "origin/$ExpectedBranch" HEAD
     if ($LASTEXITCODE -ne 0) {
         throw "Local branch does not contain origin/$ExpectedBranch. Resolve the divergence before publishing."
@@ -161,12 +175,16 @@ try {
         "automation/validate_season.ps1"
     )
 
-    git add -- @PublishPaths
+    Set-PublishPhase 'stage'
+    # Verified rollover assets may be outside the publisher's sparse cone.
+    # Keep the explicit path allowlist; do not widen checkout or stage everything.
+    git add --sparse -- @PublishPaths
     Assert-NativeSuccess "Stage FH6 report files"
 
     git diff --cached --quiet
     $DiffExitCode = $LASTEXITCODE
     if ($DiffExitCode -eq 1) {
+        Set-PublishPhase 'commit'
         git commit -m $CommitMessage
         Assert-NativeSuccess "Commit FH6 report files"
     }
@@ -177,9 +195,11 @@ try {
         Write-Host "No report changes to commit. Verifying the existing publication."
     }
 
+    Set-PublishPhase 'push'
     git push origin "HEAD:$ExpectedBranch"
     Assert-NativeSuccess "Push origin/$ExpectedBranch"
 
+    Set-PublishPhase 'remote'
     $LocalSha = (git rev-parse HEAD).Trim()
     Assert-NativeSuccess "Read local commit"
     $RemoteLine = @(git ls-remote origin "refs/heads/$ExpectedBranch") | Select-Object -First 1
@@ -192,6 +212,7 @@ try {
         throw "Publication verification failed: local $LocalSha, remote $RemoteSha."
     }
 
+    Set-PublishPhase 'pages'
     $Deadline = (Get-Date).AddMinutes(3)
     $PagesRun = $null
     do {
@@ -213,6 +234,7 @@ try {
         throw "GitHub Pages did not confirm deployment of commit $LocalSha within three minutes."
     }
 
+    Set-PublishPhase 'public_html'
     $Response = Invoke-PagesRequest -Uri $PagesUrl
     if ($Response.StatusCode -ne 200 -or $Response.RawContentLength -le 0) {
         throw "Published report check failed for $PagesUrl."
@@ -227,6 +249,7 @@ try {
         throw "Published report contains $PublishedCards cards; expected $($State.season.expectedCardCount)."
     }
     $AssetPaths = @([regex]::Matches($PublishedHtml, 'src="(assets/[^"]+)"') | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique)
+    Set-PublishPhase 'public_assets'
     foreach ($AssetPath in $AssetPaths) {
         $AssetUrl = [Uri]::new([Uri]$PagesUrl, $AssetPath).AbsoluteUri
         $AssetResponse = Invoke-PagesRequest -Uri $AssetUrl -Method HEAD
@@ -237,6 +260,13 @@ try {
 
     Write-Host "PUBLISHED_SHA=$LocalSha"
     Write-Host "PAGES_URL=$PagesUrl"
+}
+catch {
+    # Only a static phase and a built-in type are projected to phone diagnostics.
+    # The original error remains private and is rethrown; no false publication.
+    Write-Host "FH6_PUBLISH_PHASE=$script:PublishPhase"
+    Write-Host ('FH6_PUBLISH_EXCEPTION=' + $_.Exception.GetType().Name)
+    throw
 }
 finally {
     Pop-Location

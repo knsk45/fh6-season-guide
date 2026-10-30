@@ -54,7 +54,8 @@ def sync(root,store):
             if file.is_symlink():continue
             value=read(file)
             if value.get('sha256')==sha and value.get('status')=='AWAITING_BROWSER_PUBLICATION':
-                if not value.get('automatic') or value.get('standingConsentAt')==policy['updatedAt']:return
+                age=time.time()-value.get('approvedAt',0)
+                if 0<=age<86400 and (not value.get('automatic') or value.get('standingConsentAt')==policy['updatedAt']):return
         save(Path(store)/('steam-approval-'+uuid.uuid4().hex+'.json'),
              dict(sha256=sha,approvedAt=time.time(),action='replace-current-ru-en',
                   status='AWAITING_BROWSER_PUBLICATION',automatic=True,standingConsentAt=policy['updatedAt']))

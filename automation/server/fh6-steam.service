@@ -1,0 +1,12 @@
+[Unit]
+Description=FH6 owner-approved Steam sections
+ConditionPathExists=/etc/fh6/steam-browser.json
+[Service]
+Type=oneshot
+User=fh6
+Group=fh6
+WorkingDirectory=/opt/fh6/repo
+ExecStart=/opt/fh6/venv/bin/python automation/server/steam_publish.py --root /opt/fh6/repo --store /var/lib/fh6 --config /etc/fh6/steam-browser.json
+TimeoutStartSec=300
+NoNewPrivileges=true
+UMask=0027

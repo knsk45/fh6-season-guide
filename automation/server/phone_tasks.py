@@ -61,15 +61,18 @@ def latest():
     rows=[read(f) for f in path.glob('*.json') if not f.is_symlink()]
     return sorted((r for r in rows if r.get('id')),key=lambda r:r.get('createdAt',0),reverse=True)[:10]
 
-def enqueue(text):
+def enqueue(text,diagnostic=None):
     text=text.strip()
     if not text or len(text)>MAX_TASK or '\0' in text:
         raise ValueError('Введите задачу длиной от 1 до 2000 символов.')
+    if diagnostic is not None and (not isinstance(diagnostic,str) or len(diagnostic)>12000 or not diagnostic.startswith('FH6_DIAGNOSTICS_V1\n')):
+        raise ValueError('Некорректный диагностический отчёт.')
     path=queue_dir()
     with lock(path/'queue.lock'):
         if any(read(f).get('status') in BUSY for f in path.glob('*.json')):
             raise ValueError('Предыдущая задача ещё в очереди или выполняется.')
         row=dict(id=uuid.uuid4().hex,task=text,status='QUEUED',createdAt=time.time(),result='')
+        if diagnostic is not None:row['diagnostic']=diagnostic
         save(path/(row['id']+'.json'),row)
     return row
 
@@ -87,6 +90,7 @@ def snapshot(work):
     # Read current server state even when a publication is newer than the checkout.
     for relative in ['data/current-season.json','reports/SOURCE_NOTES.md',
                      'automation/server/phone_tasks.py','automation/server/phone_view.py',
+                     'automation/server/incident_reports.py','automation/server/refresh_receipts.py',
                      'automation/server/steam_consent.py']:
         source=ROOT/relative
         if source.is_file() and not source.is_symlink():
@@ -102,6 +106,8 @@ def execute(row):
     subprocess.run(['setfacl','-m','u:fh6-editor:--x',str(STORE),str(base)],check=True,timeout=30)
     work=base/row['id'];work.mkdir(mode=0o700)
     snapshot(work)
+    if row.get('diagnostic'):
+        (work/'incident-report.txt').write_text(row['diagnostic'],encoding='utf-8')
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(work)],check=True,timeout=60)
     prompt=('Выполни задачу владельца проекта в этой отдельной копии. Читай AGENTS.md. '
             'Можно исследовать и подготовить изменения, но не публикуй, не запускай полный pipeline, '
