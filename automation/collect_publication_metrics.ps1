@@ -6,7 +6,8 @@ param(
     [string]$MetricsStatePath,
     [string]$HistoryPath,
     [long]$SteamViews = -1,
-    [long]$SteamFavorites = -1
+    [long]$SteamFavorites = -1,
+    [switch]$FunctionsOnly
 )
 
 Set-StrictMode -Version Latest
@@ -37,10 +38,59 @@ function Get-SteamTableMetric {
         [Parameter(Mandatory = $true)][string]$Label
     )
 
-    $Pattern = '<tr[^>]*>\s*<td[^>]*>\s*([^<]+?)\s*</td>\s*<td[^>]*>\s*' + [regex]::Escape($Label) + '\s*</td>\s*</tr>'
-    $Match = [regex]::Match($Html, $Pattern, [Text.RegularExpressions.RegexOptions]::IgnoreCase)
-    if (-not $Match.Success) { throw "Steam metric '$Label' was not found on the public guide page." }
-    return ConvertTo-MetricInteger -Value ([Net.WebUtility]::HtmlDecode($Match.Groups[1].Value)) -Name $Label
+    $Labels = switch ($Label) {
+        'Unique Visitors' { @('Unique Visitors','Уникальных посетителей') }
+        'Current Favorites' { @('Current Favorites','Добавили в избранное','В избранном') }
+        default { @($Label) }
+    }
+    $Values = @()
+    foreach ($Row in [regex]::Matches($Html, '(?is)<tr\b[^>]*>(.*?)</tr>')) {
+        $Cells = @([regex]::Matches($Row.Groups[1].Value, '(?is)<td\b[^>]*>(.*?)</td>') | ForEach-Object {
+            ([Net.WebUtility]::HtmlDecode(($_.Groups[1].Value -replace '<[^>]+>', ' ')) -replace '\s+', ' ').Trim()
+        })
+        if ($Cells.Count -eq 2 -and $Cells[1] -in $Labels) {
+            # A missing or malformed value must never silently become zero.
+            if ($Cells[0] -notmatch '^\d+(?:[ ,.]\d{3})*$') { throw "Invalid Steam metric value for $Label." }
+            $Values += ConvertTo-MetricInteger -Value $Cells[0] -Name $Label
+        }
+    }
+    if ($Values.Count -ne 1) { throw "Steam metric '$Label' is missing or ambiguous on the public guide page." }
+    return $Values[0]
+}
+
+function Invoke-MetricsRead {
+    param([Parameter(Mandatory=$true)][scriptblock]$Operation)
+    for ($Attempt = 0; $Attempt -lt 3; $Attempt++) {
+        try { return & $Operation }
+        catch {
+            if ($Attempt -eq 2) { throw }
+            $Delay = @(5,15)[$Attempt]
+            # Respect a bounded server backoff; a longer one is left to recovery.
+            $ResponseProperty = $_.Exception.PSObject.Properties['Response']
+            $Response = if ($ResponseProperty) { $ResponseProperty.Value } else { $null }
+            if ($Response -and $Response.Headers -and $Response.Headers.RetryAfter) {
+                $After = $Response.Headers.RetryAfter
+                if ($After.Delta) { $Delay = [Math]::Max($Delay,[Math]::Ceiling($After.Delta.TotalSeconds)) }
+                elseif ($After.Date) { $Delay = [Math]::Max($Delay,[Math]::Ceiling(($After.Date-[DateTimeOffset]::UtcNow).TotalSeconds)) }
+                if ($Delay -gt 60) { throw }
+            }
+            Start-Sleep -Seconds $Delay
+        }
+    }
+}
+
+function Get-SteamMetrics {
+    param([Parameter(Mandatory=$true)][string]$Url)
+    $Target = [UriBuilder]::new($Url)
+    $Parts = @($Target.Query.TrimStart('?') -split '&' | Where-Object { $_ -and $_ -notmatch '^l=' })
+    $Target.Query = (($Parts + 'l=english') -join '&')
+    return Invoke-MetricsRead -Operation {
+        $Response = Invoke-WebRequest -UseBasicParsing -Uri $Target.Uri.AbsoluteUri -TimeoutSec 30 -UserAgent 'FH6-PublicMetrics/1.0'
+        if ($Response.StatusCode -ne 200) { throw 'Steam public metrics endpoint unavailable.' }
+        $Views = Get-SteamTableMetric -Html ([string]$Response.Content) -Label 'Unique Visitors'
+        $Favorites = Get-SteamTableMetric -Html ([string]$Response.Content) -Label 'Current Favorites'
+        return @{views=$Views;favorites=$Favorites}
+    }
 }
 
 function Write-MetricOutput {
@@ -90,6 +140,8 @@ function Update-PublicHistory {
     Write-Host "PUBLIC_METRICS_HISTORY_POINTS=$(@($History.snapshots).Count)"
 }
 
+if ($FunctionsOnly) { return }
+
 if ([string]::IsNullOrWhiteSpace($RunId)) { throw 'RunId cannot be empty.' }
 $Project = Get-Content -LiteralPath $ProjectPath -Raw -Encoding UTF8 | ConvertFrom-Json
 if (-not $Project.steamGuide.enabled) { throw 'Steam guide metrics are disabled in data/project.json.' }
@@ -102,6 +154,7 @@ if (Test-Path -LiteralPath $MetricsStatePath) {
     catch { throw "Publication metrics state is unreadable: $($_.Exception.Message)" }
 
     if ([string]$Previous.runId -eq $RunId) {
+        Update-PublicHistory -Snapshot $Previous -Path $HistoryPath
         Write-MetricOutput -Snapshot $Previous
         exit 0
     }
@@ -113,15 +166,32 @@ if (($SteamViews -ge 0) -xor ($SteamFavorites -ge 0)) {
 
 $SteamMetricsSource = 'public-page'
 if ($SteamViews -lt 0) {
-    $SteamResponse = Invoke-WebRequest -UseBasicParsing -Uri ([string]$Project.steamGuide.url) -TimeoutSec 30
-    if ($SteamResponse.StatusCode -ne 200) { throw "Steam guide returned HTTP $($SteamResponse.StatusCode)." }
-    $SteamViews = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Unique Visitors'
-    $SteamFavorites = Get-SteamTableMetric -Html $SteamResponse.Content -Label 'Current Favorites'
+    try {
+        $SteamMetrics = Get-SteamMetrics -Url ([string]$Project.steamGuide.url)
+        $SteamViews = $SteamMetrics.views
+        $SteamFavorites = $SteamMetrics.favorites
+    } catch {
+        Write-Host 'PUBLIC_METRICS_STATUS=BLOCKED'
+        Write-Host 'PUBLIC_METRICS_ERROR=STEAM_SOURCE_UNAVAILABLE'
+        exit 2
+    }
 } else {
     $SteamMetricsSource = 'browser-verified-owner-view'
 }
 
-$HitsResponse = Invoke-RestMethod -Method Get -Uri ([string]$Project.analytics.statsApiUrl) -TimeoutSec 30
+try {
+    $HitsResponse = Invoke-MetricsRead -Operation {
+        $Reply = Invoke-RestMethod -Method Get -Uri ([string]$Project.analytics.statsApiUrl) -TimeoutSec 30
+        if ($null -eq $Reply.total -or [string]$Reply.total -notmatch '^\d+$' -or $null -eq $Reply.items) {
+            throw 'Invalid analytics response.'
+        }
+        return $Reply
+    }
+} catch {
+    Write-Host 'PUBLIC_METRICS_STATUS=BLOCKED'
+    Write-Host 'PUBLIC_METRICS_ERROR=ANALYTICS_SOURCE_UNAVAILABLE'
+    exit 2
+}
 $GitHubTotal = [long]$HitsResponse.total
 $TodayKey = [DateTimeOffset]::Now.ToOffset([TimeSpan]::FromHours(7)).ToString('yyyy-MM-dd')
 $GitHubToday = 0L

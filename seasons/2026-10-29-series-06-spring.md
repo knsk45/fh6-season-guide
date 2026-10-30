@@ -2,15 +2,15 @@
 
 > Статус: предварительно; открытых полей: 12
 > Период: 29.10.2026 21:30 — 05.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 30.10.2026 06:58
+> Обновлено: 30.10.2026 17:53
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: A Retro Adventure · 5 очков
 
 - **Условие:** 1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.
 - **Как выполнить:** 
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 × 1 очко
 
@@ -37,15 +37,15 @@
 
 - **Условие:** Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.
 - **Как выполнить:** Победите в чемпионате по сумме очков.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
 
 ## 06. championship — Good Old Days · 5 очков
 
 - **Условие:** Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.
 - **Как выполнить:** Победите в чемпионате по сумме очков.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
 
 ## 07. drift_attack — Shimanoyama Drift Attack · 3 очка
 
@@ -58,8 +58,8 @@
 
 - **Условие:** Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.
 - **Как выполнить:** Пройдите радар с указанной скоростью на подходящей Mazda.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
 
 ## 09. drift_zone — Kodachi Run · 2 очка
 
@@ -72,8 +72,8 @@
 
 - **Условие:** Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.
 - **Как выполнить:** Победите в командном The Trial; помогайте своей команде.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
 
 ## 11. horizon_play — Up to Spec? · 3 очка
 
@@ -82,7 +82,7 @@
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
 
-## 12. hide_seek — 5 VS 1 · 3 очка
+## 12. hide_seek — 5 VS 1 · 2 очка
 
 - **Условие:** Завершите игру Hide & Seek. Награда: Super Wheelspin.
 - **Как выполнить:** В Horizon Play завершите игру Hide & Seek.

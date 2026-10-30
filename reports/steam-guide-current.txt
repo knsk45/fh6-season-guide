@@ -10,6 +10,7 @@
 
 [h2]01. Еженедельное испытание: A Retro Adventure · 5 очков[/h2]
 1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
 
 [h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
 • 29.10: купите Aftermarket Car.
@@ -32,27 +33,31 @@
 
 [h2]05. Dockside Drive · 5 очков[/h2]
 Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405
 
 [h2]06. Good Old Days · 5 очков[/h2]
 Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
 
 [h2]07. Shimanoyama Drift Attack · 3 очка[/h2]
 Mazda, B 600; 80 000 очков. Награда: Wheelspin.
 
 [h2]08. Konbini Dash · 2 очка[/h2]
 Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300
 
 [h2]09. Kodachi Run · 2 очка[/h2]
 Mazda, B 600; 74 100 очков. Награда: Wheelspin.
 
 [h2]10. The Trial: Countryside Views · 10 очков[/h2]
 Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300
 
 [h2]11. Up to Spec? · 3 очка[/h2]
 Завершите Spec Racing Championship. Награда: Forza Link «Dude where’s my car?».
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]12. 5 VS 1 · 3 очка[/h2]
+[h2]12. 5 VS 1 · 2 очка[/h2]
 Завершите игру Hide & Seek. Награда: Super Wheelspin.
 [b]Авто:[/b] Тюнинг не требуется.
 

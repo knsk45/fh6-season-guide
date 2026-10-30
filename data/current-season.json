@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-10-30T06:58:58+07:00",
+  "lastContentUpdate": "2026-10-30T17:53:04+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -27,8 +27,8 @@
       "points": "5 очков",
       "conditionHtml": "1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.",
       "howHtml": "",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-network-original.png",
@@ -40,7 +40,7 @@
       "completeness": {
         "condition": "preliminary",
         "solution": "missing",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -137,8 +137,8 @@
       "points": "5 очков",
       "conditionHtml": "Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.",
       "howHtml": "Победите в чемпионате по сумме очков.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
       "visual": {
         "image": "activity_05_championship-tile.png",
         "sourceImage": "activity_05_championship-network-original.png",
@@ -150,7 +150,7 @@
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -166,8 +166,8 @@
       "points": "5 очков",
       "conditionHtml": "Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.",
       "howHtml": "Победите в чемпионате по сумме очков.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
       "visual": {
         "image": "activity_06_championship-tile.png",
         "sourceImage": "activity_06_championship-network-original.png",
@@ -179,7 +179,7 @@
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -223,8 +223,8 @@
       "points": "2 очка",
       "conditionHtml": "Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.",
       "howHtml": "Пройдите радар с указанной скоростью на подходящей Mazda.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
       "visual": {
         "image": "activity_08_speed_trap-tile.png",
         "sourceImage": "activity_08_speed_trap-network-original.png",
@@ -236,7 +236,7 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -279,8 +279,8 @@
       "points": "10 очков",
       "conditionHtml": "Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
       "howHtml": "Победите в командном The Trial; помогайте своей команде.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
       "visual": {
         "image": "activity_10_trial-tile.png",
         "sourceImage": "activity_10_trial-network-original.png",
@@ -292,7 +292,7 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -330,7 +330,7 @@
       "number": "12",
       "kind": "hide_seek",
       "title": "5 VS 1",
-      "points": "3 очка",
+      "points": "2 очка",
       "conditionHtml": "Завершите игру Hide & Seek. Награда: Super Wheelspin.",
       "howHtml": "В Horizon Play завершите игру Hide & Seek.",
       "tuneHtml": "Тюнинг не требуется.",
@@ -414,7 +414,7 @@
           "points": "5 points",
           "conditionHtml": "1980 Renault 5 Turbo; Dirt Race, Wreckage Skills and Trailblazers chapters. Official reward: 25,000 CR.",
           "howHtml": "This week’s solution has not been confirmed by the available sources.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
@@ -442,14 +442,14 @@
           "points": "5 points",
           "conditionHtml": "Street: Retro Supercars, S1 800. Officially listed routes: Minami Chase and Tokyo City Docks Charge. Reward: 1992 Lancia Delta HF Integrale EVO.",
           "howHtml": "Win the championship on total points.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 2004 Saleen S7 — S1 800, AWD; share code 726 708 405"
         },
         "activity_06_championship": {
           "title": "Good Old Days",
           "points": "5 points",
           "conditionHtml": "Dirt: Retro Rally, C 500. Officially listed routes: Airfield Trail and Sekibe Scramble. Reward: 2005 Porsche Cayman GT3 WTAC.",
           "howHtml": "Win the championship on total points.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
         },
         "activity_07_drift_attack": {
           "title": "Shimanoyama Drift Attack",
@@ -463,7 +463,7 @@
           "points": "2 points",
           "conditionHtml": "Mazda, B 600; 92.0 mph (148.1 km/h). Reward: Wheelspin.",
           "howHtml": "Pass the speed trap at the target speed in an eligible Mazda.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300"
         },
         "activity_09_drift_zone": {
           "title": "Kodachi Run",
@@ -477,7 +477,7 @@
           "points": "10 points",
           "conditionHtml": "Road: Japan, B 600. Routes: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Reward: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
           "howHtml": "Win the team Trial; help your teammates.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300"
         },
         "activity_11_horizon_play": {
           "title": "Up to Spec?",
@@ -488,7 +488,7 @@
         },
         "activity_12_hide_seek": {
           "title": "5 VS 1",
-          "points": "3 points",
+          "points": "2 points",
           "conditionHtml": "Complete a game of Hide & Seek. Reward: Super Wheelspin.",
           "howHtml": "Complete a game of Hide & Seek in Horizon Play.",
           "tuneHtml": "No tune required."
@@ -521,16 +521,16 @@
     {
       "activityId": "activity_01_weekly",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_01_weekly",
       "field": "condition",
-      "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены.",
+      "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены. Конфликт награды: сохранённая точная плитка показывает 150 000 CR, официальная таблица — 25 000 CR; официальный текст оставлен до проверки в игре.",
       "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
-      "status": "preliminary"
+      "status": "conflict"
     },
     {
       "activityId": "activity_04_treasure_hunt",
@@ -542,9 +542,9 @@
     {
       "activityId": "activity_05_championship",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_05_championship",
@@ -556,9 +556,9 @@
     {
       "activityId": "activity_06_championship",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_06_championship",
@@ -577,9 +577,9 @@
     {
       "activityId": "activity_08_speed_trap",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_09_drift_zone",
@@ -591,9 +591,9 @@
     {
       "activityId": "activity_10_trial",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
     }
   ]
 }
