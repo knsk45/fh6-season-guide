@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-02T06:03:04+07:00",
+  "lastContentUpdate": "2026-11-03T06:05:03+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -110,7 +110,7 @@
       "conditionHtml": "Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.",
       "howHtml": "Сундук находится среди теплиц Shikisai-no-oka в центре Hokubu. Двигайтесь по дороге на северо-запад через цветочные поля; у поворота дороги на восток ищите теплицы слева и разбейте сундук между ними.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-hokubo-region-location/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · 29.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-hokubu-region-horizon-meets-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · 29.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
       "visual": {
         "image": "activity_04_treasure_hunt-tile.png",
         "sourceImage": "activity_04_treasure_hunt-network-original.png",
@@ -134,9 +134,9 @@
       "title": "Dockside Drive",
       "points": "5 очков",
       "conditionHtml": "Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.",
-      "howHtml": "Победите в чемпионате по сумме очков.",
+      "howHtml": "Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.",
       "tuneHtml": "Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
       "visual": {
         "image": "activity_05_championship-tile.png",
         "sourceImage": "activity_05_championship-network-original.png",
@@ -163,9 +163,9 @@
       "title": "Good Old Days",
       "points": "5 очков",
       "conditionHtml": "Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.",
-      "howHtml": "Победите в чемпионате по сумме очков.",
+      "howHtml": "Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
       "visual": {
         "image": "activity_06_championship-tile.png",
         "sourceImage": "activity_06_championship-network-original.png",
@@ -439,14 +439,14 @@
           "title": "Dockside Drive",
           "points": "5 points",
           "conditionHtml": "Street: Retro Supercars, S1 800. Officially listed routes: Minami Chase and Tokyo City Docks Charge. Reward: 1992 Lancia Delta HF Integrale EVO.",
-          "howHtml": "Win the championship on total points.",
+          "howHtml": "Win the championship on total points. Since the November 2 update, solo seasonal championships use the player’s chosen difficulty; co-op championship difficulty has been increased.",
           "tuneHtml": "Preliminary community recommendation: 2004 Saleen S7 — S1 800, AWD; share code 726 708 405"
         },
         "activity_06_championship": {
           "title": "Good Old Days",
           "points": "5 points",
           "conditionHtml": "Dirt: Retro Rally, C 500. Officially listed routes: Airfield Trail and Sekibe Scramble. Reward: 2005 Porsche Cayman GT3 WTAC.",
-          "howHtml": "Win the championship on total points.",
+          "howHtml": "Win the championship on total points. Since the November 2 update, solo seasonal championships use the player’s chosen difficulty; co-op championship difficulty has been increased.",
           "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
         },
         "activity_07_drift_attack": {

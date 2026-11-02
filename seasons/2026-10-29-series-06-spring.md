@@ -2,7 +2,7 @@
 
 > Статус: предварительно; открытых полей: 11
 > Период: 29.10.2026 21:30 — 05.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 02.11.2026 06:03
+> Обновлено: 03.11.2026 06:05
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: A Retro Adventure · 5 очков
@@ -31,21 +31,21 @@
 - **Условие:** Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.
 - **Как выполнить:** Сундук находится среди теплиц Shikisai-no-oka в центре Hokubu. Двигайтесь по дороге на северо-запад через цветочные поля; у поворота дороги на восток ищите теплицы слева и разбейте сундук между ними.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.pcgamer.com/games/racing/forza-horizon-6-treasure-hunt-hokubo-region-location/" target="_blank" rel="noopener noreferrer">GamesHedge · 29.10.2026</a> · <a href="https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/" target="_blank" rel="noopener noreferrer">Lights to Flag · Spring 29.10.2026</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.gameshedge.com/forza-horizon-6-hokubu-region-horizon-meets-treasure-hunt-guide/" target="_blank" rel="noopener noreferrer">GamesHedge · 29.10.2026</a> · <a href="https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/" target="_blank" rel="noopener noreferrer">Lights to Flag · Spring 29.10.2026</a>
 
 ## 05. championship — Dockside Drive · 5 очков
 
 - **Условие:** Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.
-- **Как выполнить:** Победите в чемпионате по сумме очков.
+- **Как выполнить:** Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a> · <a href="https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026" target="_blank" rel="noopener noreferrer">Forza Release Notes · 02.11.2026</a>
 
 ## 06. championship — Good Old Days · 5 очков
 
 - **Условие:** Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.
-- **Как выполнить:** Победите в чемпионате по сумме очков.
+- **Как выполнить:** Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a> · <a href="https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026" target="_blank" rel="noopener noreferrer">Forza Release Notes · 02.11.2026</a>
 
 ## 07. drift_attack — Shimanoyama Drift Attack · 3 очка
 
