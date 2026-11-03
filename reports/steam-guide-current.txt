@@ -9,7 +9,7 @@
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
 [h2]01. Еженедельное испытание: A Retro Adventure · 5 очков[/h2]
-1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.
+1980 Renault 5 Turbo: владейте машиной и проедьте на ней; выиграйте Dirt Race; выполните 3 Awesome Wreckage Skills; заработайте 4 звезды на Trailblazers. Официальная награда: 25 000 CR.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
 
 [h2]02. 7 ежедневных заданий · 7 × 1 очко[/h2]
@@ -41,6 +41,7 @@ Dirt: Retro Rally, C 500. Официально перечислены Airfield T
 
 [h2]07. Shimanoyama Drift Attack · 3 очка[/h2]
 Mazda, B 600; 80 000 очков. Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144
 
 [h2]08. Konbini Dash · 2 очка[/h2]
 Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.
@@ -48,6 +49,7 @@ Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.
 
 [h2]09. Kodachi Run · 2 очка[/h2]
 Mazda, B 600; 74 100 очков. Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144
 
 [h2]10. The Trial: Countryside Views · 10 очков[/h2]
 Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.

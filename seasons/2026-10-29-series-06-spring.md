@@ -1,16 +1,16 @@
 # Forza Horizon 6: Series 6 «Horizon Meets» — Весна
 
-> Статус: предварительно; открытых полей: 11
+> Статус: предварительно; открытых полей: 10
 > Период: 29.10.2026 21:30 — 05.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 03.11.2026 06:05
+> Обновлено: 04.11.2026 06:06
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: A Retro Adventure · 5 очков
 
-- **Условие:** 1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.
-- **Как выполнить:** 
+- **Условие:** 1980 Renault 5 Turbo: владейте машиной и проедьте на ней; выиграйте Dirt Race; выполните 3 Awesome Wreckage Skills; заработайте 4 звезды на Trailblazers. Официальная награда: 25 000 CR.
+- **Как выполнить:** Выполните четыре главы по порядку на 1980 Renault 5 Turbo: поездка, победа в Dirt Race, 3 Awesome Wreckage Skills и 4 звезды на Trailblazers.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.fhgarage.site/en/seasonal" target="_blank" rel="noopener noreferrer">Spring community picks · 30.10.2026</a> · <a href="https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/" target="_blank" rel="noopener noreferrer">TheXboxHub · Spring 30.10.2026</a> · <a href="https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/" target="_blank" rel="noopener noreferrer">Lights to Flag · Spring 29.10.2026</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 × 1 очко
 
@@ -51,8 +51,8 @@
 
 - **Условие:** Mazda, B 600; 80 000 очков. Награда: Wheelspin.
 - **Как выполнить:** Наберите 80 000 очков на Shimanoyama Drift Attack.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/" target="_blank" rel="noopener noreferrer">TheXboxHub · Spring 30.10.2026</a>
 
 ## 08. speed_trap — Konbini Dash · 2 очка
 
@@ -65,8 +65,8 @@
 
 - **Условие:** Mazda, B 600; 74 100 очков. Награда: Wheelspin.
 - **Как выполнить:** Наберите 74 100 очков в зоне Kodachi Run.
-- **Автомобиль и тюнинг:** 
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a>
+- **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs Spring</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">Spring overview</a> · <a href="https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/" target="_blank" rel="noopener noreferrer">TheXboxHub · Spring 30.10.2026</a>
 
 ## 10. trial — The Trial: Countryside Views · 10 очков
 

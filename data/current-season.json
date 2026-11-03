@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-03T06:05:03+07:00",
+  "lastContentUpdate": "2026-11-04T06:06:07+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,10 +25,10 @@
       "kind": "weekly",
       "title": "Еженедельное испытание: A Retro Adventure",
       "points": "5 очков",
-      "conditionHtml": "1980 Renault 5 Turbo; главы Dirt Race, Wreckage Skills и Trailblazers. Официальная награда: 25 000 CR.",
-      "howHtml": "",
+      "conditionHtml": "1980 Renault 5 Turbo: владейте машиной и проедьте на ней; выиграйте Dirt Race; выполните 3 Awesome Wreckage Skills; заработайте 4 звезды на Trailblazers. Официальная награда: 25 000 CR.",
+      "howHtml": "Выполните четыре главы по порядку на 1980 Renault 5 Turbo: поездка, победа в Dirt Race, 3 Awesome Wreckage Skills и 4 звезды на Trailblazers.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-network-original.png",
@@ -39,12 +39,11 @@
       },
       "completeness": {
         "condition": "preliminary",
-        "solution": "missing",
+        "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
-        "solution",
         "vehicleTune",
         "condition"
       ]
@@ -193,8 +192,8 @@
       "points": "3 очка",
       "conditionHtml": "Mazda, B 600; 80 000 очков. Награда: Wheelspin.",
       "howHtml": "Наберите 80 000 очков на Shimanoyama Drift Attack.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a>",
       "visual": {
         "image": "activity_07_drift_attack-tile.png",
         "sourceImage": "activity_07_drift_attack-network-original.png",
@@ -206,7 +205,7 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -249,8 +248,8 @@
       "points": "2 очка",
       "conditionHtml": "Mazda, B 600; 74 100 очков. Награда: Wheelspin.",
       "howHtml": "Наберите 74 100 очков в зоне Kodachi Run.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a>",
       "visual": {
         "image": "activity_09_drift_zone-tile.png",
         "sourceImage": "activity_09_drift_zone-network-original.png",
@@ -262,7 +261,7 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "preliminary",
         "visual": "confirmed"
       },
       "missingFields": [
@@ -410,8 +409,8 @@
         "activity_01_weekly": {
           "title": "Weekly Challenge: A Retro Adventure",
           "points": "5 points",
-          "conditionHtml": "1980 Renault 5 Turbo; Dirt Race, Wreckage Skills and Trailblazers chapters. Official reward: 25,000 CR.",
-          "howHtml": "This week’s solution has not been confirmed by the available sources.",
+          "conditionHtml": "1980 Renault 5 Turbo: own and drive it; win a Dirt Race; earn 3 Awesome Wreckage Skills; earn 4 stars at Trailblazers. Official reward: 25,000 CR.",
+          "howHtml": "Complete the four chapters in order in the 1980 Renault 5 Turbo: drive, win a Dirt Race, earn 3 Awesome Wreckage Skills, then earn 4 stars at Trailblazers.",
           "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
         },
         "activity_02_daily": {
@@ -454,7 +453,7 @@
           "points": "3 points",
           "conditionHtml": "Mazda, B 600; 80,000 points. Reward: Wheelspin.",
           "howHtml": "Score 80,000 points at Shimanoyama Drift Attack.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144"
         },
         "activity_08_speed_trap": {
           "title": "Konbini Dash",
@@ -468,7 +467,7 @@
           "points": "2 points",
           "conditionHtml": "Mazda, B 600; 74,100 points. Reward: Wheelspin.",
           "howHtml": "Score 74,100 points in the Kodachi Run drift zone.",
-          "tuneHtml": "No verified vehicle and tune recommendation is available for this week."
+          "tuneHtml": "Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144"
         },
         "activity_10_trial": {
           "title": "The Trial: Countryside Views",
@@ -511,13 +510,6 @@
   "openItems": [
     {
       "activityId": "activity_01_weekly",
-      "field": "solution",
-      "reason": "Решение этой недели не подтверждено доступными источниками.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_01_weekly",
       "field": "vehicleTune",
       "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
       "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
@@ -526,8 +518,8 @@
     {
       "activityId": "activity_01_weekly",
       "field": "condition",
-      "reason": "Официальная таблица не раскрывает количества гонок, навыков и звёзд по главам; полный Spring thread не найден. Проверенные названия глав сохранены, неизвестные количества не добавлены. Конфликт награды: сохранённая точная плитка показывает 150 000 CR, официальная таблица — 25 000 CR; официальный текст оставлен до проверки в игре.",
-      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "reason": "Количество и порядок глав подтверждены двумя свежими независимыми Spring-гайдами. Конфликт награды остаётся: точная плитка показывает 150 000 CR, официальная Playlist — 25 000 CR; официальный текст сохранён до проверки в игре.",
+      "nextCheck": "Проверить актуальную награду Weekly в игре; исходную плитку не изменять.",
       "status": "conflict"
     },
     {
@@ -561,9 +553,9 @@
     {
       "activityId": "activity_07_drift_attack",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "TheXboxHub Spring от 30.10.2026 рекомендует 1994 Mazda Miata, B Class, код 113 404 144 для Shimanoyama и ту же машину для Kodachi; независимого подтверждения кода нет.",
+      "nextCheck": "Независимая текущенедельная публикация или проверка кода в игре; не считать проверенным проектом.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_08_speed_trap",
@@ -575,9 +567,9 @@
     {
       "activityId": "activity_09_drift_zone",
       "field": "vehicleTune",
-      "reason": "Нет проверенной рекомендации автомобиля и тюнинга для этой недели.",
-      "nextCheck": "Свежая официальная Playlist и Reddit Spring Information Thread; для плитки — неизменённый игровой скриншот полной плитки.",
-      "status": "missing"
+      "reason": "TheXboxHub Spring от 30.10.2026 рекомендует 1994 Mazda Miata, B Class, код 113 404 144 для Shimanoyama и ту же машину для Kodachi; независимого подтверждения кода нет.",
+      "nextCheck": "Независимая текущенедельная публикация или проверка кода в игре; не считать проверенным проектом.",
+      "status": "preliminary"
     },
     {
       "activityId": "activity_10_trial",
