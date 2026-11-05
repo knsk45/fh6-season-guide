@@ -67,6 +67,16 @@ def safe_candidate(path):
                 raise RuntimeError('Unexpected new asset type')
     return [f for f in files if f.is_file()]
 
+def grant_candidate_read_access(work):
+    """Let the publisher validate the handoff without sharing either account's secrets."""
+    if work != EDITOR/'work' or EDITOR.is_symlink() or work.is_symlink() or not work.is_dir():
+        raise RuntimeError('Unexpected editorial workspace')
+    # The editor parent remains private: the publisher can traverse but not list it.
+    subprocess.run(['setfacl','-m','u:fh6:--x',str(EDITOR)],check=True)
+    # Apply after every editor run, including files recreated with mode 0600.
+    # Physical traversal never grants access through a candidate symlink.
+    subprocess.run(['setfacl','-R','-P','-m','u:fh6:rX',str(work)],check=True)
+
 def editor():
     # Dedicated directory; rebuild source view without any ignored secrets/.git.
     work=EDITOR/'work'
@@ -120,6 +130,7 @@ def run(force=False):
         if work:
             try:
                 files=safe_candidate(work)
+                grant_candidate_read_access(work)
                 # Daily hybrid phase: new seasons require editorial review here.
                 if read(work/'data/current-season.json')['season'] != read(ROOT/'data/current-season.json')['season']:
                     raise RuntimeError('Season rollover candidate requires review before application')
