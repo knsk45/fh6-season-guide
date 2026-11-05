@@ -11,10 +11,12 @@ import json
 import os
 from pathlib import Path
 import shutil
+import signal
 import subprocess
 import sys
 import time
 import urllib.request
+import urllib.error
 
 os.environ.setdefault('FH6_BROWSER_QA','/opt/fh6/venv/bin/python')
 
@@ -22,7 +24,7 @@ ROOT = Path(os.environ.get('FH6_ROOT', '/opt/fh6/repo'))
 STORE = Path(os.environ.get('FH6_STORE', '/var/lib/fh6'))
 EDITOR = STORE / 'editor'
 sys.path.insert(0, str(ROOT / 'automation'))
-from refresh_guard import atomic, read, digest, now, exclusive
+from refresh_guard import Guard, atomic, read, digest, now, exclusive
 
 def publisher(*args, check=True):
     return subprocess.run(['runuser','-u','fh6','--',*map(str,args)],cwd=ROOT,check=check)
@@ -31,16 +33,22 @@ def guard(action, *args):
     return publisher('python3', ROOT/'automation/refresh_guard.py',action,*args)
 
 def fetch(row):
-    stamp = now()
     request = urllib.request.Request(row['url'],headers={'User-Agent':'FH6-server/1.0'})
-    try:
-        with urllib.request.urlopen(request,timeout=25) as response:
-            body=response.read(2_000_000)
-            return dict(id=row['id'],url=row['url'],checkedAt=stamp,httpStatus=response.status,
-                        sha256=hashlib.sha256(body).hexdigest(),body=body.decode('utf-8','replace'),
-                        editorialStatus='NOT_REVIEWED')
-    except Exception as exc:
-        return dict(id=row['id'],url=row['url'],checkedAt=stamp,httpStatus=0,error=type(exc).__name__,editorialStatus='NOT_REVIEWED')
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request,timeout=25) as response:
+                body=response.read(2_000_000)
+                return dict(id=row['id'],url=row['url'],checkedAt=now(),httpStatus=response.status,
+                            sha256=hashlib.sha256(body).hexdigest(),body=body.decode('utf-8','replace'),
+                            editorialStatus='NOT_REVIEWED')
+        except Exception as exc:
+            status=getattr(exc,'code',0)
+            temporary=(status in {429,500,502,503,504} or
+                       (not status and isinstance(exc,(urllib.error.URLError,TimeoutError))))
+            if temporary and attempt<2:
+                time.sleep((2,5)[attempt]);continue
+            return dict(id=row['id'],url=row['url'],checkedAt=now(),httpStatus=status,
+                        error=type(exc).__name__,editorialStatus='NOT_REVIEWED')
 
 def collect():
     rows=read(ROOT/'data/project.json')['requiredSources']
@@ -67,13 +75,35 @@ def safe_candidate(path):
                 raise RuntimeError('Unexpected new asset type')
     return [f for f in files if f.is_file()]
 
+def grant_candidate_read_access(work):
+    """Let the publisher validate the handoff without sharing either account's secrets."""
+    if work != EDITOR/'work' or EDITOR.is_symlink() or work.is_symlink() or not work.is_dir():
+        raise RuntimeError('Unexpected editorial workspace')
+    # The editor parent remains private: the publisher can traverse but not list it.
+    subprocess.run(['setfacl','-m','u:fh6:--x',str(EDITOR)],check=True)
+    # Apply after every editor run, including files recreated with mode 0600.
+    # Physical traversal never grants access through a candidate symlink.
+    subprocess.run(['setfacl','-R','-P','-m','u:fh6:rX',str(work)],check=True)
+
+def wait_editor(process,timeout=1200,grace=5):
+    try:
+        process.wait(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        # runuser and Codex descendants belong to the invocation's own group.
+        for sig in (signal.SIGTERM,signal.SIGKILL):
+            try:os.killpg(process.pid,sig)
+            except ProcessLookupError:pass
+            try:process.wait(timeout=grace)
+            except subprocess.TimeoutExpired:continue
+        raise
+
 def editor():
     # Dedicated directory; rebuild source view without any ignored secrets/.git.
     work=EDITOR/'work'
     if work.exists():
         archive=EDITOR/('previous-'+str(time.time_ns()))
         work.rename(archive)
-    shutil.copytree(ROOT,work,ignore=shutil.ignore_patterns('.git','runs','outputs','__pycache__','*.bak','*.tmp'))
+    shutil.copytree(ROOT,work,ignore=shutil.ignore_patterns('.git','runs','outputs','__pycache__','*.bak','*.tmp','editor-audit.json'))
     shutil.copyfile(STORE/'source-snapshots.json',work/'source-snapshots.json')
     shutil.copytree(STORE/'inbox',work/'phone-inbox',dirs_exist_ok=True)
     subprocess.run(['chown','-R','fh6-editor:fh6-editor',str(EDITOR)],check=True)
@@ -83,24 +113,43 @@ def editor():
     if status.returncode:
         atomic(STORE/'editor-status.json',{'status':'AUTH_REQUIRED','at':now()})
         return None
+    logs=STORE/'editor-logs';logs.mkdir(mode=0o700,exist_ok=True)
+    if (STORE/'editor.log').exists():
+        (STORE/'editor.log').rename(logs/('editor-'+str(time.time_ns())+'.log'))
+    if (STORE/'candidate-validation.log').exists():
+        (STORE/'candidate-validation.log').rename(logs/('validation-'+str(time.time_ns())+'.log'))
+    atomic(STORE/'editor-status.json',{'status':'RUNNING','at':now()})
     with (STORE/'editor.log').open('w') as log:
-        result=subprocess.run(['runuser','-u','fh6-editor','--','/usr/local/bin/codex','--search','exec',
+        process=subprocess.Popen(['runuser','-u','fh6-editor','--','/usr/local/bin/codex','--search','exec',
                   '--sandbox','workspace-write','--skip-git-repo-check','--ephemeral',prompt],
-                  cwd=work,stdout=log,stderr=log,timeout=1200)
-    atomic(STORE/'editor-status.json',{'status':'FINISHED' if result.returncode==0 else 'FAILED','at':now()})
+                  cwd=work,stdout=log,stderr=log,start_new_session=True)
+        wait_editor(process)
     audit=work/'automation/editor-audit.json'
-    return work if result.returncode==0 and audit.is_file() else None
+    status='FAILED' if process.returncode else ('FINISHED' if audit.is_file() else 'NO_AUDIT')
+    atomic(STORE/'editor-status.json',{'status':status,'at':now()})
+    return work if status=='FINISHED' else None
 
-def run(force=False):
+def run(force=False,recovery_run_id=None):
     STORE.mkdir(parents=True,exist_ok=True)
     with exclusive(STORE/'runner.lock'):
         checkpoint=ROOT/'automation/runs/refresh/active.json'
         if checkpoint.exists():
             previous=read(checkpoint)
-            if (not force and previous['status'] in {'COMPLETED','BLOCKED','PENDING_CONFIRMATION'}
+            if recovery_run_id:
+                if previous['runId']!=recovery_run_id or previous['status'] not in {'RUNNING','BLOCKED'}:
+                    return
+                # A recent, accepted audit can repeat guarded deterministic stages
+                # without another model invocation. Hash/freshness checks stay intact.
+                if Guard(ROOT).audit_valid(previous):
+                    audit=previous['steps']['audit']['path']
+                    guard('start');guard('audit','--input',audit);guard('execute')
+                    return
+            if (not force and not recovery_run_id and previous['status'] in {'COMPLETED','BLOCKED','PENDING_CONFIRMATION'}
                     and previous.get('runDate')==now()[:10]
                     and previous.get('finishedAt','')[11:16]>='06:00'):
                 return
+        elif recovery_run_id:
+            return
         guard('start')
         active=read(ROOT/'automation/runs/refresh/active.json')
         if active.get('resultPath') and active['status']=='AWAITING_DELIVERY':
@@ -120,14 +169,17 @@ def run(force=False):
         if work:
             try:
                 files=safe_candidate(work)
+                grant_candidate_read_access(work)
                 # Daily hybrid phase: new seasons require editorial review here.
                 if read(work/'data/current-season.json')['season'] != read(ROOT/'data/current-season.json')['season']:
                     raise RuntimeError('Season rollover candidate requires review before application')
-                publisher('pwsh','-NoProfile','-File',ROOT/'automation/validate_season.ps1',
-                          '-StatePath',work/'data/current-season.json','-SkipOutputs')
+                validation=subprocess.run(['runuser','-u','fh6','--','pwsh','-NoProfile','-File',
+                    str(ROOT/'automation/validate_season.ps1'),'-StatePath',str(work/'data/current-season.json'),
+                    '-SkipOutputs'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=120)
+                (STORE/'candidate-validation.log').write_text(validation.stdout,encoding='utf-8')
+                validation.check_returncode()
                 # Validate a prospective audit BEFORE changing canonical state.
                 # Guard is rooted in the credential-free candidate, so all paths match.
-                from refresh_guard import Guard
                 review=Guard(work)
                 candidate=review.start()
                 review.audit(candidate,work/'automation/editor-audit.json')
@@ -144,6 +196,7 @@ def run(force=False):
                     shutil.copyfile(file,target)
                     shutil.chown(target,user='fh6',group='fh6')
                 guard('audit','--input',ROOT/'automation/editor-audit.json')
+                (STORE/'review-required.json').unlink(missing_ok=True)
             except Exception as exc:
                 atomic(STORE/'review-required.json',{'at':now(),'reason':str(exc),'stateSha256':digest(ROOT/'data/current-season.json')})
         else:
