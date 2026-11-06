@@ -3,66 +3,71 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 6 'Horizon Meets' — Spring[/h1]
-[b]Ends:[/b] 05.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
+[h1]Series 7 'City Life' — Summer[/h1]
+[b]Ends:[/b] 12.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge: A Retro Adventure · 5 points[/h2]
-1980 Renault 5 Turbo: own and drive it; win a Dirt Race; earn 3 Awesome Wreckage Skills; earn 4 stars at Trailblazers. Official reward: 25,000 CR.
-[b]Car:[/b] Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769
+[h2]01. Weekly Challenge: Big City Little City · —[/h2]
+1984 Honda City E II. Chapters from the current community guide: 
+• Own and drive the car.
+• Buy and install an engine swap.
+• Within 3 minutes, earn at least 1 star at Rainbow Run Speed Trap, Ocean Highway Speed Zone and Underground Tunnel Speed Zone.
+• Photograph the car in front of Tokyo Central Railway Station.
+ Reward: 150,000 CR.
+[b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
 
-[h2]02. 7 Daily Challenges · 7 × 1 point[/h2]
-• Oct 29: purchase an Aftermarket Car.
-• Oct 30: earn 5 Clean Racing Skills.
-• Oct 31: complete a Cross Country Race.
-• Nov 1: earn at least 1 star from Speed Zones.
-• Nov 2: complete a run at any Drag Meet.
-• Nov 3: earn 5 Wreckage Skills.
-• Nov 4: earn at least 1 star from Danger Signs.
- Reward: 5,000 CR per challenge.
+[h2]02. 7 Daily Challenges · —[/h2]
+• Nov 5: earn a Crash Landing Skill.
+• Nov 6: complete a Road Race.
+• Nov 7: complete 1 lap at any Drift Attack.
+• Nov 8: earn 3 Trading Paint Skills.
+• Nov 9: complete a Horizon Rush.
+• Nov 10: beat a Rival’s Ghost.
+• Nov 11: take a photo of any car.
+ Reward: 20,000 CR per challenge.
 
-[h2]03. #TakingYourTime · 2 points[/h2]
-Take a photo of the 1989 Nissan S-Cargo at Kinkaku-ji Temple. Reward: So Cute emote.
+[h2]03. #CityLiving · —[/h2]
+Take a photo at the Tokyo House. Reward: Pop ’n’ Lock emote.
 
-[h2]04. Hokubu Region · 3 points[/h2]
-Find the photo-clue chest in Hokubu. Reward: 100,000 CR.
+[h2]04. Tokyo City Region · —[/h2]
+Follow the in-game photo clue to find the Tokyo City chest. Reward: 100,000 CR.
 
-[h2]05. Dockside Drive · 5 points[/h2]
-Street: Retro Supercars, S1 800. Officially listed routes: Minami Chase and Tokyo City Docks Charge. Reward: 1992 Lancia Delta HF Integrale EVO.
-[b]Car:[/b] Preliminary community recommendation: 2004 Saleen S7 — S1 800, AWD; share code 726 708 405
+[h2]05. Urban Legend · —[/h2]
+Road: Rarity: Legendary, S2 900. Routes: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Reward: 2009 Ferrari 458 Italia.
+[b]Car:[/b] Preliminary community recommendation: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; share code 311 828 305
 
-[h2]06. Good Old Days · 5 points[/h2]
-Dirt: Retro Rally, C 500. Officially listed routes: Airfield Trail and Sekibe Scramble. Reward: 2005 Porsche Cayman GT3 WTAC.
-[b]Car:[/b] Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769
+[h2]06. Rise to the Challenge · —[/h2]
+Street: Dodge Challenger, A 700. Routes: Daikoku Chase, Sunflower Charge, Norikura Descent. Reward: 2008 Dodge Viper SRT-10 ACR.
+[b]Car:[/b] Preliminary community recommendation: 1970 Dodge Challenger R/T — A 700, AWD; share code 170 349 474
 
-[h2]07. Shimanoyama Drift Attack · 3 points[/h2]
-Mazda, B 600; 80,000 points. Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144
+[h2]07. Paint the Town Red · —[/h2]
+Road: Ferrari, S1 800. Routes: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Reward: 2023 Chevrolet Corvette Z06.
+[b]Car:[/b] Preliminary community recommendation: 2009 Ferrari 458 Italia — S1 800, AWD; share code 118 399 557
 
-[h2]08. Konbini Dash · 2 points[/h2]
-Mazda, B 600; 92.0 mph (148.1 km/h). Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300
+[h2]08. Ito Half Mile · —[/h2]
+1991 Toyota Sera, B 600; target time 19.000 seconds. Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, FWD; share code 151 290 936
 
-[h2]09. Kodachi Run · 2 points[/h2]
-Mazda, B 600; 74,100 points. Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144
+[h2]09. Akihabara Straight · —[/h2]
+1991 Toyota Sera, B 600; 140.0 mph (225.3 km/h). Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 558 641 915
 
-[h2]10. The Trial: Countryside Views · 10 points[/h2]
-Road: Japan, B 600. Routes: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Reward: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.
-[b]Car:[/b] Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300
+[h2]10. Inner City Run · —[/h2]
+1991 Toyota Sera, B 600; 45,000 points. Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 276 412 354
 
-[h2]11. Up to Spec? · 3 points[/h2]
-Complete a Spec Racing Championship. Reward: “Dude where’s my car?” Forza Link.
+[h2]11. The Trial: Domestic Dash · —[/h2]
+Street: Eclectic Domestic, B 600. Routes: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Reward: 2013 McLaren P1.
+[b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
 
-[h2]12. 5 VS 1 · 2 points[/h2]
-Complete a game of Hide & Seek. Reward: Super Wheelspin.
+[h2]12. Even Stevens · —[/h2]
+Complete a Spec Racing Championship. Reward: Pedestrian Crossing Chirp horn.
 
-[h2]13. Mini Games · 3 points[/h2]
-Complete any Horizon Stunt Party. Reward: Noodle Slurp horn.
+[h2]13. Monthly Rivals — Shimanoyama Circuit · —[/h2]
+Shimanoyama Circuit: 2016 Honda S660 Alpha. Reward: Super Wheelspin.
 
-[h2]14. Monthly Rivals — Daikoku Circuit · 4 points per Series (1 per season)[/h2]
-Set a clean lap on Daikoku Circuit in the 2025 BMW M4 CS. Reward: Super Wheelspin.
-[b]Car:[/b] 2025 BMW M4 CS — S1 733, AWD; no tune required.
+[h2]14. Monthly Rivals — Edo Circuit · —[/h2]
+Edo Circuit: 2025 Ford Mustang GTD. Reward: Super Wheelspin.
 
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.

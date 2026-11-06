@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "season": {
+    "seriesNumber": 6,
+    "seriesSlug": "06",
+    "seriesName": "Horizon Meets",
+    "season": "spring",
+    "seasonDisplay": "Весна",
+    "startAt": "2026-10-29T21:30:00+07:00",
+    "endAt": "2026-11-05T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Series 6 «Horizon Meets» — Весна",
+    "archiveFile": "seasons/2026-10-29-series-06-spring.md",
+    "assetsDirectory": "reports/assets/series-06-spring",
+    "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
+    "officialPlaylistUrl": "https://forza.net/fh6playlists",
+    "expectedCardCount": 14,
+    "expectedDailyItems": 7,
+    "maxPublicHtmlBytes": 200000
+  },
+  "lastContentUpdate": "2026-11-05T06:04:51+07:00",
+  "activities": [
+    {
+      "id": "activity_01_weekly",
+      "number": "01",
+      "kind": "weekly",
+      "title": "Еженедельное испытание: A Retro Adventure",
+      "points": "5 очков",
+      "conditionHtml": "1980 Renault 5 Turbo: владейте машиной и проедьте на ней; выиграйте Dirt Race; выполните 3 Awesome Wreckage Skills; заработайте 4 звезды на Trailblazers. Официальная награда: 25 000 CR.",
+      "howHtml": "Выполните четыре главы по порядку на 1980 Renault 5 Turbo: поездка, победа в Dirt Race, 3 Awesome Wreckage Skills и 4 звезды на Trailblazers.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
+      "visual": {
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-network-original.png",
+        "orientation": "vertical",
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/72dff097be3c25f40a74a7965f8bdfe78b66c1ab-884x1416.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "preliminary",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune",
+        "condition"
+      ]
+    },
+    {
+      "id": "activity_02_daily",
+      "number": "02",
+      "kind": "daily",
+      "title": "7 ежедневных заданий",
+      "points": "7 × 1 очко",
+      "conditionHtml": "<ol><li><strong>29.10:</strong> купите Aftermarket Car.</li><li><strong>30.10:</strong> выполните 5 Clean Racing Skills.</li><li><strong>31.10:</strong> завершите Cross Country Race.</li><li><strong>01.11:</strong> получите не менее 1 звезды на Speed Zones.</li><li><strong>02.11:</strong> завершите заезд на любом Drag Meet.</li><li><strong>03.11:</strong> выполните 5 Wreckage Skills.</li><li><strong>04.11:</strong> получите не менее 1 звезды на Danger Signs.</li></ol> Награда: 5 000 CR за задание.",
+      "howHtml": "Выполните указанное условие в соответствующий день.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": "Daily: только текст."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "not_applicable"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_03_photo",
+      "number": "03",
+      "kind": "photo",
+      "title": "#TakingYourTime",
+      "points": "2 очка",
+      "conditionHtml": "Сфотографируйте 1989 Nissan S-Cargo у Kinkaku-ji Temple. Награда: эмоция So Cute.",
+      "howHtml": "Подъедьте к Kinkaku-ji Temple на указанной машине и сделайте фото.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "activity_03_photo-tile.png",
+        "sourceImage": "activity_03_photo-network-original.png",
+        "orientation": "vertical",
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6cec6daa8db8fb19bf4af8e2c982f81752a98baf-887x1416.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_04_treasure_hunt",
+      "number": "04",
+      "kind": "treasure_hunt",
+      "title": "Hokubu Region",
+      "points": "3 очка",
+      "conditionHtml": "Найдите сундук по фото-подсказке в Hokubu. Награда: 100 000 CR.",
+      "howHtml": "Сундук находится среди теплиц Shikisai-no-oka в центре Hokubu. Двигайтесь по дороге на северо-запад через цветочные поля; у поворота дороги на восток ищите теплицы слева и разбейте сундук между ними.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-hokubu-region-horizon-meets-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · 29.10.2026</a> · <a href=\"https://lights-to-flag.com/fh6-series-6-winter-playlist-20261029/\" target=\"_blank\" rel=\"noopener noreferrer\">Lights to Flag · Spring 29.10.2026</a>",
+      "visual": {
+        "image": "activity_04_treasure_hunt-tile.png",
+        "sourceImage": "activity_04_treasure_hunt-network-original.png",
+        "orientation": "vertical",
+        "typeIconKey": "treasure-hunt",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/98849667ae4a6bb650420dee228e0a0aba550273-885x1412.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_05_championship",
+      "number": "05",
+      "kind": "championship",
+      "title": "Dockside Drive",
+      "points": "5 очков",
+      "conditionHtml": "Street: Retro Supercars, S1 800. Официально перечислены Minami Chase и Tokyo City Docks Charge. Награда: 1992 Lancia Delta HF Integrale EVO.",
+      "howHtml": "Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 2004 Saleen S7 — S1 800, AWD; код 726 708 405",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
+      "visual": {
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "championship-street",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/bd3d24a47618a401967be6e0f8ebacdcfc196361-883x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "preliminary",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune",
+        "condition"
+      ]
+    },
+    {
+      "id": "activity_06_championship",
+      "number": "06",
+      "kind": "championship",
+      "title": "Good Old Days",
+      "points": "5 очков",
+      "conditionHtml": "Dirt: Retro Rally, C 500. Официально перечислены Airfield Trail и Sekibe Scramble. Награда: 2005 Porsche Cayman GT3 WTAC.",
+      "howHtml": "Победите в чемпионате по сумме очков. После обновления 2 ноября одиночные сезонные чемпионаты используют выбранную игроком сложность; сложность кооперативных чемпионатов повышена.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1980 Renault 5 Turbo — C 500, AWD; код 881 925 769",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
+      "visual": {
+        "image": "activity_06_championship-tile.png",
+        "sourceImage": "activity_06_championship-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5c50337c28446fa68d3f3d8b7637061b26954b11-883x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "preliminary",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune",
+        "condition"
+      ]
+    },
+    {
+      "id": "activity_07_drift_attack",
+      "number": "07",
+      "kind": "drift_attack",
+      "title": "Shimanoyama Drift Attack",
+      "points": "3 очка",
+      "conditionHtml": "Mazda, B 600; 80 000 очков. Награда: Wheelspin.",
+      "howHtml": "Наберите 80 000 очков на Shimanoyama Drift Attack.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a>",
+      "visual": {
+        "image": "activity_07_drift_attack-tile.png",
+        "sourceImage": "activity_07_drift_attack-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/1eab3924fca492006752dfaace8992cafcc485c9-885x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune"
+      ]
+    },
+    {
+      "id": "activity_08_speed_trap",
+      "number": "08",
+      "kind": "speed_trap",
+      "title": "Konbini Dash",
+      "points": "2 очка",
+      "conditionHtml": "Mazda, B 600; 92,0 mph (148,1 км/ч). Награда: Wheelspin.",
+      "howHtml": "Пройдите радар с указанной скоростью на подходящей Mazda.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
+      "visual": {
+        "image": "activity_08_speed_trap-tile.png",
+        "sourceImage": "activity_08_speed_trap-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/9719d48c8f467c30252a40399ef4bdfb3e5e3add-885x695.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune"
+      ]
+    },
+    {
+      "id": "activity_09_drift_zone",
+      "number": "09",
+      "kind": "drift_zone",
+      "title": "Kodachi Run",
+      "points": "2 очка",
+      "conditionHtml": "Mazda, B 600; 74 100 очков. Награда: Wheelspin.",
+      "howHtml": "Наберите 74 100 очков в зоне Kodachi Run.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1994 Mazda MX-5 Miata — B 600; код 113 404 144",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-6-spring/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · Spring 30.10.2026</a>",
+      "visual": {
+        "image": "activity_09_drift_zone-tile.png",
+        "sourceImage": "activity_09_drift_zone-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "drift-zone",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3dcad58bd524bddcb6a3d0f5ec117ba831f0bcc5-885x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune"
+      ]
+    },
+    {
+      "id": "activity_10_trial",
+      "number": "10",
+      "kind": "trial",
+      "title": "The Trial: Countryside Views",
+      "points": "10 очков",
+      "conditionHtml": "Road: Japan, B 600. Маршруты: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Награда: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
+      "howHtml": "Победите в командном The Trial; помогайте своей команде.",
+      "tuneHtml": "Предварительная рекомендация сообщества: 1992 Mazda RX-7 Type R — B 600, AWD; код 985 048 300",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a> · <a href=\"https://www.fhgarage.site/en/seasonal\" target=\"_blank\" rel=\"noopener noreferrer\">Spring community picks · 30.10.2026</a>",
+      "visual": {
+        "image": "activity_10_trial-tile.png",
+        "sourceImage": "activity_10_trial-network-original.png",
+        "orientation": "vertical",
+        "typeIconKey": "trial",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/718331d645696a8c5ff983baecc82d03e1526681-883x1417.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "preliminary",
+        "visual": "confirmed"
+      },
+      "missingFields": [
+        "vehicleTune"
+      ]
+    },
+    {
+      "id": "activity_11_horizon_play",
+      "number": "11",
+      "kind": "horizon_play",
+      "title": "Up to Spec?",
+      "points": "3 очка",
+      "conditionHtml": "Завершите Spec Racing Championship. Награда: Forza Link «Dude where’s my car?».",
+      "howHtml": "В Horizon Play завершите чемпионат Spec Racing.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "activity_11_horizon_play-tile.png",
+        "sourceImage": "activity_11_horizon_play-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/70032462affc522bbca253f349e527ac14a2b28f-883x699.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_12_hide_seek",
+      "number": "12",
+      "kind": "hide_seek",
+      "title": "5 VS 1",
+      "points": "2 очка",
+      "conditionHtml": "Завершите игру Hide & Seek. Награда: Super Wheelspin.",
+      "howHtml": "В Horizon Play завершите игру Hide & Seek.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "activity_12_hide_seek-tile.png",
+        "sourceImage": "activity_12_hide_seek-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/08bfed8e2f2441279594dea72cea765853dff2ce-885x698.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_13_stunt_party",
+      "number": "13",
+      "kind": "stunt_party",
+      "title": "Mini Games",
+      "points": "3 очка",
+      "conditionHtml": "Завершите любой Horizon Stunt Party. Награда: клаксон Noodle Slurp.",
+      "howHtml": "В Horizon Play завершите Horizon Stunt Party.",
+      "tuneHtml": "Тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">Spring overview</a>",
+      "visual": {
+        "image": "activity_13_stunt_party-tile.png",
+        "sourceImage": "activity_13_stunt_party-network-original.png",
+        "orientation": "horizontal",
+        "typeIconKey": "horizon-play",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/1118b9e64bd5fb8b3126f18a43d8035bf586ac8a-882x697.png",
+        "sourceLabel": "ForzaLabs Spring 29.10–05.11.2026: точная игровая плитка текущей недели; оригинал сохранён, полные границы проверены визуально."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    },
+    {
+      "id": "activity_14_monthly_rivals",
+      "number": "14",
+      "kind": "monthly_rivals",
+      "title": "Monthly Rivals — Daikoku Circuit",
+      "points": "4 очка за Series (1 за сезон)",
+      "conditionHtml": "Поставьте чистый круг на Daikoku Circuit на <strong>2025 BMW M4 CS</strong>. Награда: Super Wheelspin.",
+      "howHtml": "Один чистый круг засчитывается на всю Series: избегайте столкновений, пропущенных контрольных точек, перемотки и Anna Autopilot.",
+      "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; тюнинг не требуется.",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs Spring</a>",
+      "visual": {
+        "image": "activity_13_monthly_rivals.png",
+        "sourceImage": "user-source-3.png",
+        "orientation": "horizontal",
+        "typeIconKey": "monthly-rivals",
+        "sourceUrl": "",
+        "sourceLabel": "Пользовательский скриншот от 09.10.2026: сохранён полный исходный кадр; подготовлена точная игровая плитка без ретуши или наложений."
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "community",
+        "vehicleTune": "not_applicable",
+        "visual": "confirmed"
+      },
+      "missingFields": []
+    }
+  ],
+  "locales": {
+    "en": {
+      "reportTitle": "Forza Horizon 6: Series 6 “Horizon Meets” — Spring",
+      "seasonDisplay": "Spring",
+      "activities": {
+        "activity_01_weekly": {
+          "title": "Weekly Challenge: A Retro Adventure",
+          "points": "5 points",
+          "conditionHtml": "1980 Renault 5 Turbo: own and drive it; win a Dirt Race; earn 3 Awesome Wreckage Skills; earn 4 stars at Trailblazers. Official reward: 25,000 CR.",
+          "howHtml": "Complete the four chapters in order in the 1980 Renault 5 Turbo: drive, win a Dirt Race, earn 3 Awesome Wreckage Skills, then earn 4 stars at Trailblazers.",
+          "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
+        },
+        "activity_02_daily": {
+          "title": "7 Daily Challenges",
+          "points": "7 × 1 point",
+          "conditionHtml": "<ol><li><strong>Oct 29:</strong> purchase an Aftermarket Car.</li><li><strong>Oct 30:</strong> earn 5 Clean Racing Skills.</li><li><strong>Oct 31:</strong> complete a Cross Country Race.</li><li><strong>Nov 1:</strong> earn at least 1 star from Speed Zones.</li><li><strong>Nov 2:</strong> complete a run at any Drag Meet.</li><li><strong>Nov 3:</strong> earn 5 Wreckage Skills.</li><li><strong>Nov 4:</strong> earn at least 1 star from Danger Signs.</li></ol> Reward: 5,000 CR per challenge.",
+          "howHtml": "Complete the listed objective on its scheduled day.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_03_photo": {
+          "title": "#TakingYourTime",
+          "points": "2 points",
+          "conditionHtml": "Take a photo of the 1989 Nissan S-Cargo at Kinkaku-ji Temple. Reward: So Cute emote.",
+          "howHtml": "Drive the specified car to Kinkaku-ji Temple and take a photo.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_04_treasure_hunt": {
+          "title": "Hokubu Region",
+          "points": "3 points",
+          "conditionHtml": "Find the photo-clue chest in Hokubu. Reward: 100,000 CR.",
+          "howHtml": "The chest is among the Shikisai-no-oka greenhouses in central Hokubu. Follow the road northwest through the flower fields; where it turns east, look for greenhouses on the left and smash the chest between them.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_05_championship": {
+          "title": "Dockside Drive",
+          "points": "5 points",
+          "conditionHtml": "Street: Retro Supercars, S1 800. Officially listed routes: Minami Chase and Tokyo City Docks Charge. Reward: 1992 Lancia Delta HF Integrale EVO.",
+          "howHtml": "Win the championship on total points. Since the November 2 update, solo seasonal championships use the player’s chosen difficulty; co-op championship difficulty has been increased.",
+          "tuneHtml": "Preliminary community recommendation: 2004 Saleen S7 — S1 800, AWD; share code 726 708 405"
+        },
+        "activity_06_championship": {
+          "title": "Good Old Days",
+          "points": "5 points",
+          "conditionHtml": "Dirt: Retro Rally, C 500. Officially listed routes: Airfield Trail and Sekibe Scramble. Reward: 2005 Porsche Cayman GT3 WTAC.",
+          "howHtml": "Win the championship on total points. Since the November 2 update, solo seasonal championships use the player’s chosen difficulty; co-op championship difficulty has been increased.",
+          "tuneHtml": "Preliminary community recommendation: 1980 Renault 5 Turbo — C 500, AWD; share code 881 925 769"
+        },
+        "activity_07_drift_attack": {
+          "title": "Shimanoyama Drift Attack",
+          "points": "3 points",
+          "conditionHtml": "Mazda, B 600; 80,000 points. Reward: Wheelspin.",
+          "howHtml": "Score 80,000 points at Shimanoyama Drift Attack.",
+          "tuneHtml": "Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144"
+        },
+        "activity_08_speed_trap": {
+          "title": "Konbini Dash",
+          "points": "2 points",
+          "conditionHtml": "Mazda, B 600; 92.0 mph (148.1 km/h). Reward: Wheelspin.",
+          "howHtml": "Pass the speed trap at the target speed in an eligible Mazda.",
+          "tuneHtml": "Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300"
+        },
+        "activity_09_drift_zone": {
+          "title": "Kodachi Run",
+          "points": "2 points",
+          "conditionHtml": "Mazda, B 600; 74,100 points. Reward: Wheelspin.",
+          "howHtml": "Score 74,100 points in the Kodachi Run drift zone.",
+          "tuneHtml": "Preliminary community recommendation: 1994 Mazda MX-5 Miata — B 600; share code 113 404 144"
+        },
+        "activity_10_trial": {
+          "title": "The Trial: Countryside Views",
+          "points": "10 points",
+          "conditionHtml": "Road: Japan, B 600. Routes: Narai-Juku Circuit, Shirakawa Circuit, Hokubu Circuit. Reward: 2013 Audi R8 Coupé V10 plus 5.2 FSI quattro.",
+          "howHtml": "Win the team Trial; help your teammates.",
+          "tuneHtml": "Preliminary community recommendation: 1992 Mazda RX-7 Type R — B 600, AWD; share code 985 048 300"
+        },
+        "activity_11_horizon_play": {
+          "title": "Up to Spec?",
+          "points": "3 points",
+          "conditionHtml": "Complete a Spec Racing Championship. Reward: “Dude where’s my car?” Forza Link.",
+          "howHtml": "Complete a Spec Racing championship in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_12_hide_seek": {
+          "title": "5 VS 1",
+          "points": "2 points",
+          "conditionHtml": "Complete a game of Hide & Seek. Reward: Super Wheelspin.",
+          "howHtml": "Complete a game of Hide & Seek in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_13_stunt_party": {
+          "title": "Mini Games",
+          "points": "3 points",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Noodle Slurp horn.",
+          "howHtml": "Complete a Horizon Stunt Party in Horizon Play.",
+          "tuneHtml": "No tune required."
+        },
+        "activity_14_monthly_rivals": {
+          "title": "Monthly Rivals — Daikoku Circuit",
+          "points": "4 points per Series (1 per season)",
+          "conditionHtml": "Set a clean lap on Daikoku Circuit in the <strong>2025 BMW M4 CS</strong>. Reward: Super Wheelspin.",
+          "howHtml": "One clean lap counts for the whole Series: avoid collisions, missed checkpoints, rewind and Anna Autopilot.",
+          "tuneHtml": "2025 BMW M4 CS — S1 733, AWD; no tune required."
+        }
+      }
+    }
+  },
+  "openItems": [
+    {
+      "activityId": "activity_01_weekly",
+      "field": "vehicleTune",
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_01_weekly",
+      "field": "condition",
+      "reason": "Количество и порядок глав подтверждены двумя свежими независимыми Spring-гайдами. Конфликт награды остаётся: точная плитка показывает 150 000 CR, официальная Playlist — 25 000 CR; официальный текст сохранён до проверки в игре.",
+      "nextCheck": "Проверить актуальную награду Weekly в игре; исходную плитку не изменять.",
+      "status": "conflict"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "vehicleTune",
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "condition",
+      "reason": "Официальная таблица перечисляет только два маршрута. Полнота списка не подтверждена; третий маршрут не выдуман.",
+      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "vehicleTune",
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_06_championship",
+      "field": "condition",
+      "reason": "Официальная таблица перечисляет только два маршрута. Полнота списка не подтверждена; третий маршрут не выдуман.",
+      "nextCheck": "Свежий Spring Information Thread или полные игровые условия этой активности.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_07_drift_attack",
+      "field": "vehicleTune",
+      "reason": "TheXboxHub Spring от 30.10.2026 рекомендует 1994 Mazda Miata, B Class, код 113 404 144 для Shimanoyama и ту же машину для Kodachi; независимого подтверждения кода нет.",
+      "nextCheck": "Независимая текущенедельная публикация или проверка кода в игре; не считать проверенным проектом.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_08_speed_trap",
+      "field": "vehicleTune",
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_09_drift_zone",
+      "field": "vehicleTune",
+      "reason": "TheXboxHub Spring от 30.10.2026 рекомендует 1994 Mazda Miata, B Class, код 113 404 144 для Shimanoyama и ту же машину для Kodachi; независимого подтверждения кода нет.",
+      "nextCheck": "Независимая текущенедельная публикация или проверка кода в игре; не считать проверенным проектом.",
+      "status": "preliminary"
+    },
+    {
+      "activityId": "activity_10_trial",
+      "field": "vehicleTune",
+      "reason": "Свежая Spring-подборка FH6 Meta List от 30.10.2026 содержит машину, класс и код; первичная таблица автора и независимое подтверждение не проверены.",
+      "nextCheck": "Подтвердить рекомендацию в свежем Spring Information Thread или первичной текущенедельной публикации автора.",
+      "status": "preliminary"
+    }
+  ]
+}
