@@ -17,18 +17,18 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-06T07:57:19+07:00",
+  "lastContentUpdate": "2026-11-07T06:04:37+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
       "number": "01",
       "kind": "weekly",
       "title": "Еженедельное испытание: Big City Little City",
-      "points": "—",
+      "points": "5",
       "conditionHtml": "1984 Honda City E II. Главы по текущему гайду сообщества: <ol><li>Владейте машиной и сядьте за руль.</li><li>Купите и установите замену двигателя.</li><li>За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.</li><li>Сделайте фото машины перед Tokyo Central Railway Station.</li></ol> Награда: 150 000 CR.",
       "howHtml": "Выполняйте главы по порядку. Начните севернее Rainbow Run, на верхней части моста, затем направляйтесь к Ocean Highway и Underground Tunnel; следите за трафиком.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-source.png",
@@ -53,11 +53,11 @@
       "number": "02",
       "kind": "daily",
       "title": "7 ежедневных заданий",
-      "points": "—",
+      "points": "7 (1 в день)",
       "conditionHtml": "<ol><li><strong>05.11:</strong> выполните Crash Landing Skill.</li><li><strong>06.11:</strong> завершите Road Race.</li><li><strong>07.11:</strong> проедьте 1 круг на любом Drift Attack.</li><li><strong>08.11:</strong> выполните 3 Trading Paint Skills.</li><li><strong>09.11:</strong> завершите Horizon Rush.</li><li><strong>10.11:</strong> победите призрака соперника в Rivals.</li><li><strong>11.11:</strong> сфотографируйте любую машину.</li></ol> Награда: 20 000 CR за задание.",
       "howHtml": "Выполните указанное условие в соответствующий день.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer Daily</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
@@ -81,11 +81,11 @@
       "number": "03",
       "kind": "photo",
       "title": "#CityLiving",
-      "points": "—",
+      "points": "2",
       "conditionHtml": "Сделайте фото у Tokyo House. Награда: эмоция Pop ’n’ Lock.",
       "howHtml": "Tokyo House находится на юго-западной окраине Tokyo City. Подъедьте к дому и сделайте фото машины; специальная модель не требуется.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-cityliving-photo-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · CityLiving</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-cityliving-photo-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · CityLiving</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_03_photo-tile.png",
         "sourceImage": "activity_03_photo-source.png",
@@ -95,25 +95,23 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure_hunt",
       "number": "04",
       "kind": "treasure_hunt",
       "title": "Tokyo City Region",
-      "points": "—",
+      "points": "3",
       "conditionHtml": "Найдите сундук в Tokyo City по игровой фото-подсказке. Награда: 100 000 CR.",
       "howHtml": "Сундук находится под мостом в большом парке в центре Tokyo City, рядом с небольшими озёрами. Найдите мост внутри парка и разбейте сундук машиной.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-tokyo-city-region-city-life-update-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · Summer treasure</a> · <a href=\"https://day-2-day.info/pc-game/fh6/21926/\" target=\"_blank\" rel=\"noopener noreferrer\">日々綴 · 06.11.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-tokyo-city-region-city-life-update-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · Summer treasure</a> · <a href=\"https://day-2-day.info/pc-game/fh6/21926/\" target=\"_blank\" rel=\"noopener noreferrer\">日々綴 · 06.11.2026</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_04_treasure_hunt-tile.png",
         "sourceImage": "activity_04_treasure_hunt-source.png",
@@ -123,25 +121,23 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
       "number": "05",
       "kind": "championship",
       "title": "Urban Legend",
-      "points": "—",
+      "points": "5",
       "conditionHtml": "Road: Rarity: Legendary, S2 900. Маршруты: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Награда: 2009 Ferrari 458 Italia.",
       "howHtml": "Победите в чемпионате по сумме очков. Одиночные сезонные чемпионаты используют выбранную игроком сложность.",
       "tuneHtml": "Предварительная рекомендация сообщества: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; код 311 828 305",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_05_championship-tile.png",
         "sourceImage": "activity_05_championship-source.png",
@@ -151,13 +147,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -166,11 +161,11 @@
       "number": "06",
       "kind": "championship",
       "title": "Rise to the Challenge",
-      "points": "—",
+      "points": "5",
       "conditionHtml": "Street: Dodge Challenger, A 700. Маршруты: Daikoku Chase, Sunflower Charge, Norikura Descent. Награда: 2008 Dodge Viper SRT-10 ACR.",
       "howHtml": "Победите в чемпионате по сумме очков. Одиночные сезонные чемпионаты используют выбранную игроком сложность.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1970 Dodge Challenger R/T — A 700, AWD; код 170 349 474",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_06_championship-tile.png",
         "sourceImage": "activity_06_championship-source.png",
@@ -180,13 +175,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -195,11 +189,11 @@
       "number": "07",
       "kind": "championship",
       "title": "Paint the Town Red",
-      "points": "—",
+      "points": "5",
       "conditionHtml": "Road: Ferrari, S1 800. Маршруты: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Награда: 2023 Chevrolet Corvette Z06.",
       "howHtml": "Победите в чемпионате по сумме очков. Одиночные сезонные чемпионаты используют выбранную игроком сложность.",
       "tuneHtml": "Предварительная рекомендация сообщества: 2009 Ferrari 458 Italia — S1 800, AWD; код 118 399 557",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_07_championship-tile.png",
         "sourceImage": "activity_07_championship-source.png",
@@ -209,13 +203,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -224,11 +217,11 @@
       "number": "08",
       "kind": "drag_meet",
       "title": "Ito Half Mile",
-      "points": "—",
+      "points": "3",
       "conditionHtml": "1991 Toyota Sera, B 600; время 19,000 с. Награда: Wheelspin.",
       "howHtml": "Пройдите Ito Half Mile на указанной машине быстрее 19 секунд.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, FWD; код 151 290 936",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_08_drag_meet-tile.png",
         "sourceImage": "activity_08_drag_meet-source.png",
@@ -238,13 +231,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -253,11 +245,11 @@
       "number": "09",
       "kind": "speed_trap",
       "title": "Akihabara Straight",
-      "points": "—",
+      "points": "2",
       "conditionHtml": "1991 Toyota Sera, B 600; 140,0 mph (225,3 км/ч). Награда: Wheelspin.",
       "howHtml": "Наберите целевую скорость на радаре Akihabara Straight. Совет сообщества: заходите с юга и используйте спуск с моста для разгона.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 558 641 915",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_09_speed_trap-tile.png",
         "sourceImage": "activity_09_speed_trap-source.png",
@@ -267,13 +259,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -282,11 +273,11 @@
       "number": "10",
       "kind": "drift_zone",
       "title": "Inner City Run",
-      "points": "—",
+      "points": "2",
       "conditionHtml": "1991 Toyota Sera, B 600; 45 000 очков. Награда: Wheelspin.",
       "howHtml": "Наберите 45 000 очков в зоне Inner City Run. Обновление от 5 ноября исправляет снижение очков в некоторых поворотах и зависимость начисления от FPS (Bug 4624575).",
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 276 412 354",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/57179145129363-FH6-Release-Notes-November-5-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 05.11.2026</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/57179145129363-FH6-Release-Notes-November-5-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 05.11.2026</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_10_drift_zone-tile.png",
         "sourceImage": "activity_10_drift_zone-source.png",
@@ -296,13 +287,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -311,11 +301,11 @@
       "number": "11",
       "kind": "trial",
       "title": "The Trial: Domestic Dash",
-      "points": "—",
+      "points": "10",
       "conditionHtml": "Street: Eclectic Domestic, B 600. Маршруты: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Награда: 2013 McLaren P1.",
       "howHtml": "Победите командой в The Trial.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_11_trial-tile.png",
         "sourceImage": "activity_11_trial-source.png",
@@ -325,13 +315,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -340,11 +329,11 @@
       "number": "12",
       "kind": "horizon_play",
       "title": "Even Stevens",
-      "points": "—",
+      "points": "3",
       "conditionHtml": "Завершите Spec Racing Championship. Награда: гудок Pedestrian Crossing Chirp.",
       "howHtml": "Завершите чемпионат Spec Racing в Horizon Play.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_12_horizon_play-tile.png",
         "sourceImage": "activity_12_horizon_play-source.png",
@@ -354,25 +343,23 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_monthly_rivals",
       "number": "13",
       "kind": "monthly_rivals",
       "title": "Monthly Rivals — Shimanoyama Circuit",
-      "points": "—",
+      "points": "4 за серию",
       "conditionHtml": "Shimanoyama Circuit: 2016 Honda S660 Alpha. Награда: Super Wheelspin.",
       "howHtml": "В Monthly Rivals запишите чистый круг: без столкновений, пропущенных контрольных точек, перемотки и Anna Autopilot. Одного чистого круга за серию достаточно для зачёта во всех её сезонах.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_13_monthly_rivals-tile.png",
         "sourceImage": "activity_13_monthly_rivals-source.png",
@@ -382,25 +369,23 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
       "number": "14",
       "kind": "monthly_rivals",
       "title": "Monthly Rivals — Edo Circuit",
-      "points": "—",
+      "points": "4 за серию",
       "conditionHtml": "Edo Circuit: 2025 Ford Mustang GTD. Награда: Super Wheelspin.",
       "howHtml": "В Monthly Rivals запишите чистый круг: без столкновений, пропущенных контрольных точек, перемотки и Anna Autopilot. Одного чистого круга за серию достаточно для зачёта во всех её сезонах.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
       "visual": {
         "image": "activity_14_monthly_rivals-tile.png",
         "sourceImage": "activity_14_monthly_rivals-source.png",
@@ -410,14 +395,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     }
   ],
   "locales": {
@@ -427,98 +410,98 @@
       "activities": {
         "activity_01_weekly": {
           "title": "Weekly Challenge: Big City Little City",
-          "points": "—",
+          "points": "5",
           "conditionHtml": "1984 Honda City E II. Chapters from the current community guide: <ol><li>Own and drive the car.</li><li>Buy and install an engine swap.</li><li>Within 3 minutes, earn at least 1 star at Rainbow Run Speed Trap, Ocean Highway Speed Zone and Underground Tunnel Speed Zone.</li><li>Photograph the car in front of Tokyo Central Railway Station.</li></ol> Reward: 150,000 CR.",
           "howHtml": "Complete the chapters in order. Start north of Rainbow Run on the upper bridge, then head to Ocean Highway and Underground Tunnel; watch for traffic.",
           "tuneHtml": "Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762"
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
-          "points": "—",
+          "points": "7 (1 per day)",
           "conditionHtml": "<ol><li><strong>Nov 5:</strong> earn a Crash Landing Skill.</li><li><strong>Nov 6:</strong> complete a Road Race.</li><li><strong>Nov 7:</strong> complete 1 lap at any Drift Attack.</li><li><strong>Nov 8:</strong> earn 3 Trading Paint Skills.</li><li><strong>Nov 9:</strong> complete a Horizon Rush.</li><li><strong>Nov 10:</strong> beat a Rival’s Ghost.</li><li><strong>Nov 11:</strong> take a photo of any car.</li></ol> Reward: 20,000 CR per challenge.",
           "howHtml": "Complete the listed objective on its scheduled day.",
           "tuneHtml": "No tune required."
         },
         "activity_03_photo": {
           "title": "#CityLiving",
-          "points": "—",
+          "points": "2",
           "conditionHtml": "Take a photo at the Tokyo House. Reward: Pop ’n’ Lock emote.",
           "howHtml": "Tokyo House is on the southwestern edge of Tokyo City. Drive to the house and photograph your car; no specific model is required.",
           "tuneHtml": "No tune required."
         },
         "activity_04_treasure_hunt": {
           "title": "Tokyo City Region",
-          "points": "—",
+          "points": "3",
           "conditionHtml": "Follow the in-game photo clue to find the Tokyo City chest. Reward: 100,000 CR.",
           "howHtml": "Find the chest beneath a bridge in the large park in central Tokyo City, near the small lakes. Drive under the park bridge and smash the chest.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
           "title": "Urban Legend",
-          "points": "—",
+          "points": "5",
           "conditionHtml": "Road: Rarity: Legendary, S2 900. Routes: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Reward: 2009 Ferrari 458 Italia.",
           "howHtml": "Win the championship on total points. Solo seasonal championships use the player’s chosen difficulty.",
           "tuneHtml": "Preliminary community recommendation: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; share code 311 828 305"
         },
         "activity_06_championship": {
           "title": "Rise to the Challenge",
-          "points": "—",
+          "points": "5",
           "conditionHtml": "Street: Dodge Challenger, A 700. Routes: Daikoku Chase, Sunflower Charge, Norikura Descent. Reward: 2008 Dodge Viper SRT-10 ACR.",
           "howHtml": "Win the championship on total points. Solo seasonal championships use the player’s chosen difficulty.",
           "tuneHtml": "Preliminary community recommendation: 1970 Dodge Challenger R/T — A 700, AWD; share code 170 349 474"
         },
         "activity_07_championship": {
           "title": "Paint the Town Red",
-          "points": "—",
+          "points": "5",
           "conditionHtml": "Road: Ferrari, S1 800. Routes: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Reward: 2023 Chevrolet Corvette Z06.",
           "howHtml": "Win the championship on total points. Solo seasonal championships use the player’s chosen difficulty.",
           "tuneHtml": "Preliminary community recommendation: 2009 Ferrari 458 Italia — S1 800, AWD; share code 118 399 557"
         },
         "activity_08_drag_meet": {
           "title": "Ito Half Mile",
-          "points": "—",
+          "points": "3",
           "conditionHtml": "1991 Toyota Sera, B 600; target time 19.000 seconds. Reward: Wheelspin.",
           "howHtml": "Complete Ito Half Mile in the specified car in under 19 seconds.",
           "tuneHtml": "Preliminary community recommendation: 1991 Toyota Sera — B 600, FWD; share code 151 290 936"
         },
         "activity_09_speed_trap": {
           "title": "Akihabara Straight",
-          "points": "—",
+          "points": "2",
           "conditionHtml": "1991 Toyota Sera, B 600; 140.0 mph (225.3 km/h). Reward: Wheelspin.",
           "howHtml": "Reach the target at Akihabara Straight. Community tip: approach from the south and use the downhill bridge section to accelerate.",
           "tuneHtml": "Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 558 641 915"
         },
         "activity_10_drift_zone": {
           "title": "Inner City Run",
-          "points": "—",
+          "points": "2",
           "conditionHtml": "1991 Toyota Sera, B 600; 45,000 points. Reward: Wheelspin.",
           "howHtml": "Score 45,000 points at Inner City Run. The November 5 update fixes reduced scoring in some corners and scoring affected by player FPS (Bug 4624575).",
           "tuneHtml": "Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 276 412 354"
         },
         "activity_11_trial": {
           "title": "The Trial: Domestic Dash",
-          "points": "—",
+          "points": "10",
           "conditionHtml": "Street: Eclectic Domestic, B 600. Routes: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Reward: 2013 McLaren P1.",
           "howHtml": "Win The Trial as a team.",
           "tuneHtml": "Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762"
         },
         "activity_12_horizon_play": {
           "title": "Even Stevens",
-          "points": "—",
+          "points": "3",
           "conditionHtml": "Complete a Spec Racing Championship. Reward: Pedestrian Crossing Chirp horn.",
           "howHtml": "Complete a Spec Racing championship in Horizon Play.",
           "tuneHtml": "No tune required."
         },
         "activity_13_monthly_rivals": {
           "title": "Monthly Rivals — Shimanoyama Circuit",
-          "points": "—",
+          "points": "4 per Series",
           "conditionHtml": "Shimanoyama Circuit: 2016 Honda S660 Alpha. Reward: Super Wheelspin.",
           "howHtml": "Post a clean lap in Monthly Rivals: avoid collisions, missed checkpoints, rewind and Anna Autopilot. One clean lap per Series counts across all its seasons.",
           "tuneHtml": "No tune required."
         },
         "activity_14_monthly_rivals": {
           "title": "Monthly Rivals — Edo Circuit",
-          "points": "—",
+          "points": "4 per Series",
           "conditionHtml": "Edo Circuit: 2025 Ford Mustang GTD. Reward: Super Wheelspin.",
           "howHtml": "Post a clean lap in Monthly Rivals: avoid collisions, missed checkpoints, rewind and Anna Autopilot. One clean lap per Series counts across all its seasons.",
           "tuneHtml": "No tune required."
@@ -530,8 +513,8 @@
     {
       "activityId": "activity_01_weekly",
       "field": "condition",
-      "reason": "Машина и награда подтверждены Forza; четыре главы найдены в свежем гайде Reddit, но полного официального условия/точной плитки и очков нет.",
-      "nextCheck": "Проверить главы и очки по точной игровой плитке или второму независимому полному гайду.",
+      "reason": "Машина, награда и 5 очков подтверждены официальной таблицей и полной игровой плиткой; главы 2–4 найдены в свежем гайде сообщества, но полные игровые условия этих глав не проверены.",
+      "nextCheck": "Проверить главы 2–4 по игровым условиям или второму независимому полному гайду.",
       "status": "preliminary"
     },
     {
@@ -544,29 +527,8 @@
     {
       "activityId": "activity_02_daily",
       "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
+      "reason": "Все семь условий подтверждены официальной таблицей; 7 очков суммарно и 1 за день указаны в одном свежем текущенедельном Reddit-гайде.",
+      "nextCheck": "Перепроверить очки Daily по независимому текущенедельному источнику; блок остаётся текстовым.",
       "status": "preliminary"
     },
     {
@@ -578,23 +540,9 @@
     },
     {
       "activityId": "activity_06_championship",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_06_championship",
       "field": "vehicleTune",
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_07_championship",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
       "status": "preliminary"
     },
     {
@@ -606,23 +554,9 @@
     },
     {
       "activityId": "activity_08_drag_meet",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_08_drag_meet",
       "field": "vehicleTune",
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_09_speed_trap",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
       "status": "preliminary"
     },
     {
@@ -634,13 +568,6 @@
     },
     {
       "activityId": "activity_10_drift_zone",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_10_drift_zone",
       "field": "vehicleTune",
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
@@ -648,37 +575,9 @@
     },
     {
       "activityId": "activity_11_trial",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_11_trial",
       "field": "vehicleTune",
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_13_monthly_rivals",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "condition",
-      "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
-      "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
       "status": "preliminary"
     }
   ]

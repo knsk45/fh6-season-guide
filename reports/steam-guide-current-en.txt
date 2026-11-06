@@ -8,7 +8,7 @@
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge: Big City Little City · —[/h2]
+[h2]01. Weekly Challenge: Big City Little City · 5[/h2]
 1984 Honda City E II. Chapters from the current community guide: 
 • Own and drive the car.
 • Buy and install an engine swap.
@@ -17,7 +17,7 @@
  Reward: 150,000 CR.
 [b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
 
-[h2]02. 7 Daily Challenges · —[/h2]
+[h2]02. 7 Daily Challenges · 7 (1 per day)[/h2]
 • Nov 5: earn a Crash Landing Skill.
 • Nov 6: complete a Road Race.
 • Nov 7: complete 1 lap at any Drift Attack.
@@ -27,47 +27,47 @@
 • Nov 11: take a photo of any car.
  Reward: 20,000 CR per challenge.
 
-[h2]03. #CityLiving · —[/h2]
+[h2]03. #CityLiving · 2[/h2]
 Take a photo at the Tokyo House. Reward: Pop ’n’ Lock emote.
 
-[h2]04. Tokyo City Region · —[/h2]
+[h2]04. Tokyo City Region · 3[/h2]
 Follow the in-game photo clue to find the Tokyo City chest. Reward: 100,000 CR.
 
-[h2]05. Urban Legend · —[/h2]
+[h2]05. Urban Legend · 5[/h2]
 Road: Rarity: Legendary, S2 900. Routes: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Reward: 2009 Ferrari 458 Italia.
 [b]Car:[/b] Preliminary community recommendation: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; share code 311 828 305
 
-[h2]06. Rise to the Challenge · —[/h2]
+[h2]06. Rise to the Challenge · 5[/h2]
 Street: Dodge Challenger, A 700. Routes: Daikoku Chase, Sunflower Charge, Norikura Descent. Reward: 2008 Dodge Viper SRT-10 ACR.
 [b]Car:[/b] Preliminary community recommendation: 1970 Dodge Challenger R/T — A 700, AWD; share code 170 349 474
 
-[h2]07. Paint the Town Red · —[/h2]
+[h2]07. Paint the Town Red · 5[/h2]
 Road: Ferrari, S1 800. Routes: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Reward: 2023 Chevrolet Corvette Z06.
 [b]Car:[/b] Preliminary community recommendation: 2009 Ferrari 458 Italia — S1 800, AWD; share code 118 399 557
 
-[h2]08. Ito Half Mile · —[/h2]
+[h2]08. Ito Half Mile · 3[/h2]
 1991 Toyota Sera, B 600; target time 19.000 seconds. Reward: Wheelspin.
 [b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, FWD; share code 151 290 936
 
-[h2]09. Akihabara Straight · —[/h2]
+[h2]09. Akihabara Straight · 2[/h2]
 1991 Toyota Sera, B 600; 140.0 mph (225.3 km/h). Reward: Wheelspin.
 [b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 558 641 915
 
-[h2]10. Inner City Run · —[/h2]
+[h2]10. Inner City Run · 2[/h2]
 1991 Toyota Sera, B 600; 45,000 points. Reward: Wheelspin.
 [b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 276 412 354
 
-[h2]11. The Trial: Domestic Dash · —[/h2]
+[h2]11. The Trial: Domestic Dash · 10[/h2]
 Street: Eclectic Domestic, B 600. Routes: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Reward: 2013 McLaren P1.
 [b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
 
-[h2]12. Even Stevens · —[/h2]
+[h2]12. Even Stevens · 3[/h2]
 Complete a Spec Racing Championship. Reward: Pedestrian Crossing Chirp horn.
 
-[h2]13. Monthly Rivals — Shimanoyama Circuit · —[/h2]
+[h2]13. Monthly Rivals — Shimanoyama Circuit · 4 per Series[/h2]
 Shimanoyama Circuit: 2016 Honda S660 Alpha. Reward: Super Wheelspin.
 
-[h2]14. Monthly Rivals — Edo Circuit · —[/h2]
+[h2]14. Monthly Rivals — Edo Circuit · 4 per Series[/h2]
 Edo Circuit: 2025 Ford Mustang GTD. Reward: Super Wheelspin.
 
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.

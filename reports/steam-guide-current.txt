@@ -8,7 +8,7 @@
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Еженедельное испытание: Big City Little City · —[/h2]
+[h2]01. Еженедельное испытание: Big City Little City · 5[/h2]
 1984 Honda City E II. Главы по текущему гайду сообщества: 
 • Владейте машиной и сядьте за руль.
 • Купите и установите замену двигателя.
@@ -17,7 +17,7 @@
  Награда: 150 000 CR.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762
 
-[h2]02. 7 ежедневных заданий · —[/h2]
+[h2]02. 7 ежедневных заданий · 7 (1 в день)[/h2]
 • 05.11: выполните Crash Landing Skill.
 • 06.11: завершите Road Race.
 • 07.11: проедьте 1 круг на любом Drift Attack.
@@ -28,51 +28,51 @@
  Награда: 20 000 CR за задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. #CityLiving · —[/h2]
+[h2]03. #CityLiving · 2[/h2]
 Сделайте фото у Tokyo House. Награда: эмоция Pop ’n’ Lock.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. Tokyo City Region · —[/h2]
+[h2]04. Tokyo City Region · 3[/h2]
 Найдите сундук в Tokyo City по игровой фото-подсказке. Награда: 100 000 CR.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. Urban Legend · —[/h2]
+[h2]05. Urban Legend · 5[/h2]
 Road: Rarity: Legendary, S2 900. Маршруты: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Награда: 2009 Ferrari 458 Italia.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; код 311 828 305
 
-[h2]06. Rise to the Challenge · —[/h2]
+[h2]06. Rise to the Challenge · 5[/h2]
 Street: Dodge Challenger, A 700. Маршруты: Daikoku Chase, Sunflower Charge, Norikura Descent. Награда: 2008 Dodge Viper SRT-10 ACR.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1970 Dodge Challenger R/T — A 700, AWD; код 170 349 474
 
-[h2]07. Paint the Town Red · —[/h2]
+[h2]07. Paint the Town Red · 5[/h2]
 Road: Ferrari, S1 800. Маршруты: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Награда: 2023 Chevrolet Corvette Z06.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 2009 Ferrari 458 Italia — S1 800, AWD; код 118 399 557
 
-[h2]08. Ito Half Mile · —[/h2]
+[h2]08. Ito Half Mile · 3[/h2]
 1991 Toyota Sera, B 600; время 19,000 с. Награда: Wheelspin.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, FWD; код 151 290 936
 
-[h2]09. Akihabara Straight · —[/h2]
+[h2]09. Akihabara Straight · 2[/h2]
 1991 Toyota Sera, B 600; 140,0 mph (225,3 км/ч). Награда: Wheelspin.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 558 641 915
 
-[h2]10. Inner City Run · —[/h2]
+[h2]10. Inner City Run · 2[/h2]
 1991 Toyota Sera, B 600; 45 000 очков. Награда: Wheelspin.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 276 412 354
 
-[h2]11. The Trial: Domestic Dash · —[/h2]
+[h2]11. The Trial: Domestic Dash · 10[/h2]
 Street: Eclectic Domestic, B 600. Маршруты: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Награда: 2013 McLaren P1.
 [b]Авто:[/b] Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762
 
-[h2]12. Even Stevens · —[/h2]
+[h2]12. Even Stevens · 3[/h2]
 Завершите Spec Racing Championship. Награда: гудок Pedestrian Crossing Chirp.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]13. Monthly Rivals — Shimanoyama Circuit · —[/h2]
+[h2]13. Monthly Rivals — Shimanoyama Circuit · 4 за серию[/h2]
 Shimanoyama Circuit: 2016 Honda S660 Alpha. Награда: Super Wheelspin.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]14. Monthly Rivals — Edo Circuit · —[/h2]
+[h2]14. Monthly Rivals — Edo Circuit · 4 за серию[/h2]
 Edo Circuit: 2025 Ford Mustang GTD. Награда: Super Wheelspin.
 [b]Авто:[/b] Тюнинг не требуется.
 

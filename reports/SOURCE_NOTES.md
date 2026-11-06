@@ -5402,3 +5402,80 @@ Rejected replacement candidates after pixel inspection: index 0 is Summer reward
 Visual totals: 13 community whole tiles, one not_applicable text-only Daily; zero missing visual fields. Monthly Shimanoyama/Edo original/prepared bytes retained exactly, as are all historical monthly evidence and library icons. Canonical facts/texts/English/locales/order/dates/sourceActivityId/lastContentUpdate remain byte-for-byte unchanged. No new activity identifiers manufactured; no owner screenshot request.
 
 Editorial handoff validation — 2026-11-06T07:57:19+07:00: `EDITOR_SCHEMA_OK` from PowerShell Test-Json against data/season-state.schema.json; `EDITOR_INVARIANTS_OK` for 14 activities, 21 candidate SHA256/length checks and 147 unchanged baseline files (canonical state/project, historical seasons/states and assets). Existing audit_visual_evidence.ps1 on final state returned `VISUAL_QUEUE_STATUS=READY`, checkedCards=14, screenshotsRequired=0; queue automation/editor-visual-queue.json. Source IDs/activity IDs each covered exactly once. Git status unavailable because this isolated workspace has no .git; no repository operation performed. No guard, build, publication, metrics, HA or Steam operation run. No automation code changed. Canonical state unchanged because supplied tiles were already installed and verified; handoff contains fresh evidence only.
+
+
+## Isolated live editorial audit — 2026-11-07T06:01:13+07:00
+
+Supervisor owns guard/build/publication/metrics/HA; none invoked. Live official Playlist heading confirms City Life Summer, November 5–12. Current Krasnoyarsk time is inside canonical startAt 2026-11-05T21:30:00+07:00 / endAt 2026-11-12T21:30:00+07:00; preserve Summer, no rollover. Official City Life news confirms November 5 14:30 GMT start and November 12 Autumn boundary. lastContentUpdate remains untouched. This section records this run, not source-snapshots availability. Git status unavailable: isolated workspace has no .git.
+
+- `fandom_series_category` — **unavailable**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.fandom.com/wiki/Category:Series_(FH6) — Configured category inaccessible; targeted FH6 Series 7 City Life search returned older Series 1/update-history pages, no current category revision or tile.
+
+- `fandom_current` — **unavailable**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.fandom.com/ — Root fetch 402 Payment Required; targeted current-week domain search did not yield a verified Series 7 seasonal page.
+
+- `forza_playlist` — **checked**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.net/fh6playlists — Official heading City Life Summer November 5–12; S07 Summer activity rows and both S07 monthly rows agree canonical identities/restrictions/rewards. All seven Daily conditions checked; Autumn rows are future preview only.
+
+- `forza_news` — **checked**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.net/news — Fetched index and https://forza.net/en-GB/news/forza-horizon-6-series-7: November 5 14:30 GMT start, Summer Nov 5–12, Autumn Nov 12–19; solo championships use chosen difficulty. No whole activity tiles in article.
+
+- `forza_support_known_issues` — **checked**, checkedAt `2026-11-07T06:02:12+07:00`; https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues — Fetched article updated November 06 17:44; save/fast travel/loading/PC/audio issues and external feedback portal reference. No new weekly solution or whole tile; portal/account not accessed.
+
+- `forza_forums_official` — **no_current_item**, checkedAt `2026-11-07T06:02:12+07:00`; https://forums.forza.net/tag/official-info/1731 — Configured tag redirects to forza.net/forums retirement notice; official information moves to Forza.net and Support. No active current-week tag or tile.
+
+- `reddit_forzahorizon` — **no_current_item**, checkedAt `2026-11-07T06:02:12+07:00`; https://www.reddit.com/r/ForzaHorizon/ — Fetched root exposes Series 6 Autumn highlight; targeted City Life Summer November 2026 search found no verifiable current-week breakdown/full tile. Older results excluded.
+
+- `reddit_forza` — **no_current_item**, checkedAt `2026-11-07T06:02:12+07:00`; https://www.reddit.com/r/forza/ — Fetched root pins Series 6 Summer. Targeted Series 7 Summer Information Thread search returns Series 6/older threads, not this week; no old codes carried forward.
+
+- `reddit_forzatune` — **no_current_item**, checkedAt `2026-11-07T06:02:12+07:00`; https://www.reddit.com/r/ForzaTune/ — Fetched current root lists Purosangue/Ram and general tuning posts; targeted City Life November search found no verified relevant weekly tune/full tile.
+
+- `forza_horizon_hub` — **no_current_item**, checkedAt `2026-11-07T06:02:12+07:00`; https://forzahorizonhub.com/ — Fetched root still says Series 6 Horizon Meets; targeted City Life domain search supplied no verified current-week guide or tile.
+
+- `forza_labs_collector` — **checked**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.labsgg.com/collector-tool — Fetched checklist lists 651 cars; no dated weekly collectible. Supplemental series/details fetched for exact active-week tile inspection, separately from this checklist.
+
+- `forza_labs_map` — **checked**, checkedAt `2026-11-07T06:02:12+07:00`; https://forza.labsgg.com/interactive-map — Fetched map exposes race/PR/board/house/discovery filters. No dated current-week chest marker or complete activity tile verified from map controls.
+
+- `escorenews_fh6` — **unavailable**, checkedAt `2026-11-07T06:02:12+07:00`; https://escorenews.com/en/games/forza-horizon-6 — Configured FH6 page inaccessible; targeted City Life FH6 November 2026 domain search yielded no verifiable current-week article/tile.
+
+- `dungg_playlist` — **unavailable**, checkedAt `2026-11-07T06:02:12+07:00`; https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF — Playlist fetch Cache miss; targeted DungG FH6 City Life Summer November 5 search yielded no verified current episode/frame; no playback claimed.
+
+- `forza_support_release_notes` — **checked**, checkedAt `2026-11-07T06:03:14+07:00`; https://support.forza.net/hc/en-us/sections/360000121153-Release-Notes-and-Known-Issues — Configured section inaccessible; read linked Nov 2 CU (updated Nov 6 17:40) and Nov 5 HF1. Edo Circuit/Shuto Charge and chosen solo difficulty confirmed; HF1 fixes Drift Zone corners/FPS Bug 4624575. Existing advice remains correct. No full activity tile.
+
+- `reddit_forzahorizon6` — **checked**, checkedAt `2026-11-07T06:03:14+07:00`; https://www.reddit.com/r/ForzaHorizon6/ — Fetched root and current guide /comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/ plus competitive /comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/. Explicit Nov 5–12 Summer, all seven dated Daily agree official table; points and clean-lap instructions present. Alternative tunes differ, not evidence that existing tune is invalid.
+
+Supplemental live sources: https://fh6meta.com/weekly-tunes?lang=en explicitly S7W1 Summer; existing Honda 343 500 762, Lamborghini 311 828 305, Challenger 170 349 474, Ferrari 118 399 557 and Sera drag 151 290 936 / speed 558 641 915 rechecked with model/year/class. Primary sheet not independently read; retain preliminary tune status. ForzaLabs series/details now exposes City Life Summer Nov 5 and exact matching tile CDN URLs; its zero countdown/Now live marker beside Nov 12 preview does not override official dates. Direct shell CDN downloads fail DNS and web image endpoints return cache errors; no newly downloaded bytes claimed. Existing local originals inspected directly below.
+
+### Final-state visual and editorial corrections — 2026-11-07T06:04:03+07:00
+
+All 13 prepared PNGs opened individually with image viewer this run. Each title, whole border, scene, restriction and reward/point footer checked against official active Summer rows and live ForzaLabs Summer image links. Original/prepared equality below proves original pixels were also inspected; no new download, crop, resize or retouch. CDN fetch failures do not invalidate intact stored evidence. No phone-inbox originals needed.
+
+- `activity_01_weekly` — Big City Little City; blue 1984 Honda City E II; complete chapter-one and 150,000 CR footer; whole tile inspected; visible 5 points; source and prepared identical SHA256 d91ddb21445adaec93ff378cbedfddd9fd2b1b780fab1d79c086be92686a1900; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/4b0d9c2eb08e97915771d21c4d3c1a13568d14da-442x708.png. 
+
+- `activity_02_daily` — Daily text only; all seven Nov 5–11 conditions match official table and fresh Reddit guide; visual not_applicable, SHA256 null. Seven total/one each from current community guide; point confirmation remains preliminary, no public screenshot requested.
+
+- `activity_03_photo` — CityLiving; Tokyo House/lantern scene; Pop n Lock footer; whole tile inspected; visible 2 points; source and prepared identical SHA256 7382798c5502df9ad8e5c795a80c632f3a95dd35f7efaa1b97dd36b9ef0d867a; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/3ef76f7ceff23cc795cd57ccb2d62338333be5aa-444x708.png. 
+
+- `activity_04_treasure_hunt` — Tokyo City Region; bridge/chest scene; 100,000 CR footer; whole tile inspected; visible 3 points; source and prepared identical SHA256 9d1b3420e2325017feb4fc43799fdac2029bd08b329d2778641f482ec8dca085; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/5fabf7f85b95cb1c2e5b01d9159c8a128aeec4c4-442x707.png. 
+
+- `activity_05_championship` — Urban Legend; Porsche race cars; Legendary/S2 footer; whole tile inspected; visible 5 points; source and prepared identical SHA256 4d4b68d98b5d6202493b1a54510a83e655074036848cd596661f09a9b4872c0c; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/7a8b42fc438ee8ed2dec66ea428631d85118e734-442x349.png. Road championship icon visible on tile; no matching road icon exists in configured library, leave key null rather than use incorrect street/cross-country icon. 
+
+- `activity_06_championship` — Rise to the Challenge; Dodge Challenger; A footer; whole tile inspected; visible 5 points; source and prepared identical SHA256 a77d39b6dd1414a1d559d5ca8fd9a5ac469f4c644659c13a4d54ab329f9d9b24; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/bb821ac5a5ba14df11618b6ab4b5f8491cde694f-442x350.png. 
+
+- `activity_07_championship` — Paint the Town Red; red Ferrari; Ferrari/S1 footer; whole tile inspected; visible 5 points; source and prepared identical SHA256 40cfcbe0c30a8f8c747f4e96eac27efd4f1e5877428c02d6e7cae336f7511796; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/75cdd388d1732b4aa0688b6e21c17b1c4164f852-441x351.png. Road championship icon visible on tile; no matching road icon exists in configured library, leave key null rather than use incorrect street/cross-country icon. 
+
+- `activity_08_drag_meet` — Ito Half Mile; silver 1991 Toyota Sera; B footer; whole tile inspected; visible 3 points; source and prepared identical SHA256 e19a102859cfbc01a729739b17d4e55b5e8b687285b60faedf646e5893c4ff09; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/0f6457ca34dfce19a8c6adce960f4e033ec69448-443x349.png. 
+
+- `activity_09_speed_trap` — Akihabara Straight; maroon 1991 Toyota Sera; B footer; whole tile inspected; visible 2 points; source and prepared identical SHA256 0057713e56827097745c3f5c855ef3a3a25e401d2dba1d9fd7f3a757d2c6d7f8; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/310741fb418fb36cd737b3723c7a613100bf4c97-441x349.png. 
+
+- `activity_10_drift_zone` — Inner City Run; blue drifting 1991 Toyota Sera; B footer; whole tile inspected; visible 2 points; source and prepared identical SHA256 fca3351cdfdd68a1b1db26ef413b2e0a82420859ea2db2060cc08052d7453d9e; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/2a02405c30171193135d20cf03faccad373abc64-444x350.png. 
+
+- `activity_11_trial` — Domestic Dash; kei-car street scene; Eclectic Domestics/B footer; whole tile inspected; visible 10 points; source and prepared identical SHA256 5be3b5a28eaba7efd5194afba278dd89524d6bf91c1f814aa29c0ee77f188ee1; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/c057cfb27364f6377f81c889ef77fe2607902ccf-442x708.png. 
+
+- `activity_12_horizon_play` — Even Stevens; blue spec cars; Spec Racing Championship and horn footer; whole tile inspected; visible 3 points; source and prepared identical SHA256 b6fe2af8e147129f8efba0350b9146ff91b2ff53f694b01228c5c04b0b8b4484; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/093afb6b9a1af6dcd4c3f761f02de1911c8e5d3e-442x349.png. 
+
+- `activity_13_monthly_rivals` — Shimanoyama Circuit; yellow Honda S660; clean lap/Super Wheelspin footer; whole tile inspected; visible 4 за серию points; source and prepared identical SHA256 fbac22d57b3d912cb4f699e12d2d5fbd3c71f01b623f16e9687bae2dc97ef5b4; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/b96a16a58e1572e26d93de3d4a80fcc78af5c752-442x350.png. Same November monthly activity; original and prepared bytes retained exactly. 
+
+- `activity_14_monthly_rivals` — Edo Circuit; white Mustang GTD; clean lap/Super Wheelspin footer; whole tile inspected; visible 4 за серию points; source and prepared identical SHA256 a13089ebe7a313d864144186b744b3cb6a595005b415b9bc1168e113acce23ed; live Summer page image link matches stored sourceUrl https://cdn.sanity.io/images/jr6fd40q/production/34a7c8138d54eb16e936b21d40c2de27e5d8bbd1-443x350.png. Same November monthly activity; original and prepared bytes retained exactly. 
+
+Verified change: replace all unknown point labels with observed tile values (Daily 7/1 from current community guide remains preliminary; Monthly 4 per Series, not 4 per week). Conditions for cards 03–14 are now confirmed from official facts plus inspected exact tile footers; removed only their obsolete point-related missingFields/openItems. Weekly chapters and all existing tune recommendations retain preliminary status; fresh FH6 Meta reproduces all existing codes including drift 276 412 354. Known RU facts retain complete EN equivalents. No sourceActivityId manufactured. No assets/icons/project/history or lastContentUpdate changed.
+
+Completeness totals: {"condition": {"preliminary": 2, "confirmed": 12}, "solution": {"community": 5, "confirmed": 9}, "vehicleTune": {"preliminary": 8, "not_applicable": 6}, "visual": {"community": 13, "not_applicable": 1}}
+
+Editorial handoff validation — 2026-11-07T06:04:37+07:00: EDITOR_SCHEMA_OK (existing PowerShell Test-Json); EDITOR_INVARIANTS_OK: 14 final activities, all 16 required source IDs exactly once, all 14 visual IDs exactly once, all 13 original/prepared SHA pairs equal; 146 baseline project/history/archive/asset files unchanged. Existing audit_visual_evidence.ps1 returned VISUAL_QUEUE_STATUS=READY, checkedCards=14, screenshotsRequired=0 (automation/editor-visual-queue.json). PowerShell initially could not create default cache; retry with temporary XDG directories passed, no configuration/credentials copied. lastContentUpdate remains 2026-11-06T07:57:19+07:00; no editorial mutation assigned that field. No guard/build/publication/metrics/HA/Steam stages or automation-code edits. Operational validation and regenerated reports remain supervisor-owned.
