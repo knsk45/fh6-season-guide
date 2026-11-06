@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-06T07:34:02+07:00",
+  "lastContentUpdate": "2026-11-06T07:57:19+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,23 +30,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-source.png",
         "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4b0d9c2eb08e97915771d21c4d3c1a13568d14da-442x708.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -88,22 +87,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-cityliving-photo-challenge-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · CityLiving</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_03_photo-tile.png",
+        "sourceImage": "activity_03_photo-source.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3ef76f7ceff23cc795cd57ccb2d62338333be5aa-444x708.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ]
     },
     {
@@ -117,22 +115,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-tokyo-city-region-city-life-update-treasure-hunt-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · Summer treasure</a> · <a href=\"https://day-2-day.info/pc-game/fh6/21926/\" target=\"_blank\" rel=\"noopener noreferrer\">日々綴 · 06.11.2026</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_04_treasure_hunt-tile.png",
+        "sourceImage": "activity_04_treasure_hunt-source.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "treasure-hunt",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5fabf7f85b95cb1c2e5b01d9159c8a128aeec4c4-442x707.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ]
     },
     {
@@ -146,23 +143,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; код 311 828 305",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/7a8b42fc438ee8ed2dec66ea428631d85118e734-442x349.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -176,23 +172,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1970 Dodge Challenger R/T — A 700, AWD; код 170 349 474",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship-tile.png",
+        "sourceImage": "activity_06_championship-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "championship-street",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/bb821ac5a5ba14df11618b6ab4b5f8491cde694f-442x350.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -206,23 +201,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2009 Ferrari 458 Italia — S1 800, AWD; код 118 399 557",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 02.11.2026</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_championship-tile.png",
+        "sourceImage": "activity_07_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/75cdd388d1732b4aa0688b6e21c17b1c4164f852-441x351.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -236,23 +230,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, FWD; код 151 290 936",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_drag_meet-tile.png",
+        "sourceImage": "activity_08_drag_meet-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/0f6457ca34dfce19a8c6adce960f4e033ec69448-443x349.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -266,23 +259,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 558 641 915",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_speed_trap-tile.png",
+        "sourceImage": "activity_09_speed_trap-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/310741fb418fb36cd737b3723c7a613100bf4c97-441x349.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -296,23 +288,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 276 412 354",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://support.forza.net/hc/en-us/articles/57179145129363-FH6-Release-Notes-November-5-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Release Notes · 05.11.2026</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_drift_zone-tile.png",
+        "sourceImage": "activity_10_drift_zone-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "drift-zone",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2a02405c30171193135d20cf03faccad373abc64-444x350.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -326,23 +317,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_11_trial-tile.png",
+        "sourceImage": "activity_11_trial-source.png",
         "orientation": "vertical",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "trial",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c057cfb27364f6377f81c889ef77fe2607902ccf-442x708.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -356,22 +346,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_horizon_play-tile.png",
+        "sourceImage": "activity_12_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/093afb6b9a1af6dcd4c3f761f02de1911c8e5d3e-442x349.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ]
     },
     {
@@ -385,22 +374,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_13_monthly_rivals-tile.png",
+        "sourceImage": "activity_13_monthly_rivals-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "monthly-rivals",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/b96a16a58e1572e26d93de3d4a80fcc78af5c752-442x350.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ]
     },
     {
@@ -414,22 +402,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_14_monthly_rivals-tile.png",
+        "sourceImage": "activity_14_monthly_rivals-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "typeIconKey": "monthly-rivals",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/34a7c8138d54eb16e936b21d40c2de27e5d8bbd1-443x350.png",
+        "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "visual"
+        "condition"
       ]
     }
   ],
@@ -555,13 +542,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_02_daily",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -576,13 +556,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_04_treasure_hunt",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -590,13 +563,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_04_treasure_hunt",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_05_championship",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -609,13 +575,6 @@
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
     },
     {
       "activityId": "activity_06_championship",
@@ -632,13 +591,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_07_championship",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -651,13 +603,6 @@
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_07_championship",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
     },
     {
       "activityId": "activity_08_drag_meet",
@@ -674,13 +619,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_08_drag_meet",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_09_speed_trap",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -693,13 +631,6 @@
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_09_speed_trap",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
     },
     {
       "activityId": "activity_10_drift_zone",
@@ -716,13 +647,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_10_drift_zone",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_11_trial",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -735,13 +659,6 @@
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
     },
     {
       "activityId": "activity_12_horizon_play",
@@ -751,13 +668,6 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_13_monthly_rivals",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
@@ -765,25 +675,11 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_13_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_14_monthly_rivals",
       "field": "condition",
       "reason": "Числовые очки активности не подтверждены текущенедельной точной плиткой; официальная таблица подтверждает приведённые условия и награду.",
       "nextCheck": "Проверить очки по полной игровой плитке текущей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_14_monthly_rivals",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка City Life Summer не получена после живого поиска. Старые Spring и общие Series изображения отвергнуты.",
-      "nextCheck": "Нужен неизменённый оригинальный скриншот полной плитки этой активности City Life Summer.",
-      "status": "missing"
     }
   ]
 }
