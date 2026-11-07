@@ -5,7 +5,7 @@
     "surface": "dashboard",
     "title": "Forza Horizon 6: Series 7 «City Life» — Лето",
     "description": "Сезон действует до 2026-11-12T21:30:00+07:00",
-    "generatedAt": "2026-11-07T06:04:37.0000000+07:00",
+    "generatedAt": "2026-11-08T06:04:18.0000000+07:00",
     "blocks": [
       {
         "id": "activity_01_weekly",
@@ -115,7 +115,7 @@
   "snapshot": {
     "version": 1,
     "status": "partial",
-    "generatedAt": "2026-11-07T06:04:37.0000000+07:00",
+    "generatedAt": "2026-11-08T06:04:18.0000000+07:00",
     "datasets": {
       "publicationMetrics": {
         "title": "Динамика аудитории",
@@ -125,13 +125,6 @@
         },
         "description": "График показывает последний успешный замер за каждый из последних семи календарных дней по времени Красноярска.",
         "rows": [
-          {
-            "runId": "fh6-20261031-060000-999099",
-            "collectedAt": "2026-10-31T06:05:35.2465737+07:00",
-            "steamViews": 1371,
-            "steamFavorites": 83,
-            "githubViews": 3941
-          },
           {
             "runId": "fh6-20261101-060001-060431",
             "collectedAt": "2026-11-01T06:04:32.5996186+07:00",
@@ -173,6 +166,13 @@
             "steamViews": 1382,
             "steamFavorites": 84,
             "githubViews": 4034
+          },
+          {
+            "runId": "fh6-20261107-060005-852284",
+            "collectedAt": "2026-11-07T06:06:36.5905522+07:00",
+            "steamViews": 1391,
+            "steamFavorites": 85,
+            "githubViews": 4094
           }
         ]
       }
@@ -252,7 +252,7 @@
   },
   "sources": [],
   "package_info": {
-    "generated_at": "2026-11-07T06:04:37.0000000+07:00",
+    "generated_at": "2026-11-08T06:04:18.0000000+07:00",
     "workflow": "fh6-season-maintainer",
     "state_file": "data/current-season.json"
   }
