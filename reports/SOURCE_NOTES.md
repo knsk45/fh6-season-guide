@@ -5704,3 +5704,111 @@ ForzaLabs /series/details live Summer Nov 5 section was read and all thirteen na
 Completeness totals: {"condition": {"preliminary": 2, "confirmed": 12}, "solution": {"community": 5, "confirmed": 9}, "vehicleTune": {"preliminary": 8, "not_applicable": 6}, "visual": {"community": 13, "not_applicable": 1}}.
 
 Editorial checks passed: PowerShell Test-Json EDITOR_SCHEMA_OK; audit_visual_evidence.ps1 VISUAL_QUEUE_STATUS=READY, 14 cards and zero screenshot requests. PowerShell initially could not write its default read-only cache; rerun with XDG cache/config/data rooted in /tmp succeeded, without changing HOME or project code. Python invariants passed: required-source/activity coverage, seven Daily per locale, RU/EN known-field and tune-code parity, missingFields/openItems correspondence, allowed orientations/icons, all thirteen original/prepared SHA pairs equal. All 147 baseline state/project/history/archive/asset files remain byte-for-byte unchanged, including both monthly pairs and icons. lastContentUpdate remains 2026-11-09T06:04:15+07:00. No rollover: Summer endAt is still in the future. This isolated directory has no Git repository, so git status is unavailable. No guard, build, publication, metrics, HA, Steam or automation-code edit performed. Supervisor owns operational validation and delivery.
+
+
+## Isolated live editorial audit · 2026-11-10T06:00:29+07:00
+
+Supervisor owns guard/build/publication/metrics/HA. Canonical window read before research: 2026-11-05T21:30:00+07:00 — 2026-11-12T21:30:00+07:00; current Krasnoyarsk date November 10. Official Playlist fetched live: heading City Life Summer November 5–12 confirms canonical active season. No rollover and no lastContentUpdate change. Raw source-snapshots and source-diff are inspection aids only.
+
+- forza_playlist — checked live; https://forza.net/fh6playlists — active Summer heading and current-week rows inspected; subsequent-season rows treated as previews.
+- forza_news — checked live; https://forza.net/news and https://forza.net/en-GB/news/forza-horizon-6-series-7 — City Life start November 5 14:30 GMT, solo championship chosen difficulty; overview images are not distinct tiles.
+- forza_support_known_issues — checked live; https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues — public notice moves tracking to account-gated portal; no account access attempted or new correction inferred.
+- forza_forums_official — no_current_item; https://forums.forza.net/tag/official-info/1731 redirects to retirement notice https://forza.net/forums, no current-week thread/tile.
+- fandom_series_category — unavailable; configured category fetch failed; targeted City Life Summer search supplies no accessible revision/tile.
+- fandom_current — unavailable; https://forza.fandom.com/ returns 402 Payment Required; no Fandom content adopted.
+
+- forza_support_release_notes — checked; 2026-11-10T06:02:09+07:00; https://support.forza.net/hc/en-us/sections/51701872316947-Release-Notes-and-Known-Issues — Configured legacy section failed; current FH6 section fetched, lists Nov 5 HF1 and Nov 2 CU. CU confirms chosen solo difficulty; historical retroactive points do not replace current Daily.
+
+- reddit_forzahorizon — no_current_item; 2026-11-10T06:02:09+07:00; https://www.reddit.com/r/ForzaHorizon/ — Root fetched and targeted Series 7 Summer November search performed; results contain old series/announcement rather than verified current-week Information Thread or exact tile.
+
+- reddit_forzahorizon6 — checked; 2026-11-10T06:02:09+07:00; https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/ — Root plus current Summer guide and separate 1xolhci competitive post fetched. Guide Nov 5–12 supplies all seven dated Daily, 1 point each, and weekly chapters; independent post corroborates route advice but different tune codes.
+
+- reddit_forza — no_current_item; 2026-11-10T06:02:09+07:00; https://www.reddit.com/r/forza/ — Root fetched and targeted City Life Summer search checked: October speculation and Horizon Meets posts, no verified active-week Information Thread or tile.
+
+- reddit_forzatune — no_current_item; 2026-11-10T06:02:09+07:00; https://www.reddit.com/r/ForzaTune/ — Root fetched; targeted City Life Summer November search did not identify a current-week tune post or exact tile.
+
+- forza_horizon_hub — no_current_item; 2026-11-10T06:02:09+07:00; https://forzahorizonhub.com/ — Root fetched: still Series 6 Horizon Meets, 641 cars; targeted City Life Summer search found no active-week material. Generic car pictures not weekly tiles.
+
+- forza_labs_collector — checked; 2026-11-10T06:02:09+07:00; https://forza.labsgg.com/collector-tool — Live car ownership checklist displays 651 cars, no weekly collectible requirement or separate activity tiles. Linked series/details current Summer section inspected separately.
+
+- forza_labs_map — checked; 2026-11-10T06:02:09+07:00; https://forza.labsgg.com/interactive-map — Japan map fetched with event/house/treasure filters; map controls alone do not establish a dated current-week chest marker. Exact tiles sought on series/details.
+
+- escorenews_fh6 — unavailable; 2026-11-10T06:02:09+07:00; https://escorenews.com/en/games/forza-horizon-6 — Configured page fetch inaccessible; targeted FH6 November 5 search yielded no verifiable Escorenews active-week article or tile.
+
+- dungg_playlist — unavailable; 2026-11-10T06:02:09+07:00; https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF — Playlist fetch failed Cache miss; DungG FH6 City Life Summer November 5 search found no verified episode or exact tile; no video playback claimed.
+
+### Verified editorial changes and final visual evidence · 2026-11-10T06:03:34+07:00
+
+TheXboxHub November 6 current Summer guide https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-7-summer/ independently corroborates all four Weekly chapters and 1 point × 7 Daily. Weekly/Daily condition status changed preliminary → confirmed; corresponding missingFields/openItems removed, and known RU/EN chapter wording synchronized. Its Weekly reward 25,000 CR conflicts with official Playlist and complete tile 150,000 CR: rejected that reward and its erroneous December 1 series end. Canonical dates, rewards, tune codes and lastContentUpdate unchanged.
+
+FH6 Meta live S7W1 table matches all seven distinct stored tune codes and car years/classes/drivetrains. Its linked author Google Sheet opens a general alphabetic database, not verified current-week sheet rows; tune statuses remain preliminary, no primary corroboration claimed. GamesHedge November 5 photo/treasure guides corroborate house and park bridge guidance; Nov 5 HF1 confirms drift scoring fix Bug 4624575. No verified stable source activity identifier exposed, no sourceActivityId invented.
+
+ForzaLabs live /series/details Summer Nov 5 section links all thirteen named exact tiles with the same canonical CDN asset identifiers. Every link clicked live; requests failed Internal Error/Cache miss. Remote-byte equality unverified. Each local prepared tile and each used local icon was opened and visually inspected this run. Exact full bounds, no overlays or lost footers. Original/prepared byte equality checked below; all originals, monthly evidence and icons preserved. No phone-inbox originals needed. Daily remains text only; all seven conditions sought together in official Playlist and current Reddit guide.
+
+- `activity_01_weekly` — Vertical blue Honda City, chapter 1, 5 points and 150,000 CR; later chapters absent from tile. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_01_weekly-source.png and prepared reports/assets/series-07-summer/activity_01_weekly-tile.png have identical SHA256 d91ddb21445adaec93ff378cbedfddd9fd2b1b780fab1d79c086be92686a1900. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/4b0d9c2eb08e97915771d21c4d3c1a13568d14da-442x708.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_02_daily` — Text-only Daily, no public image or sourceImage; visual not_applicable, all seven conditions checked together in live official Playlist and current dated Reddit guide.
+
+- `activity_03_photo` — Vertical Tokyo House photo, camera icon, 2 points and Pop n Lock reward. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_03_photo-source.png and prepared reports/assets/series-07-summer/activity_03_photo-tile.png have identical SHA256 7382798c5502df9ad8e5c795a80c632f3a95dd35f7efaa1b97dd36b9ef0d867a. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/3ef76f7ceff23cc795cd57ccb2d62338333be5aa-444x708.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_04_treasure_hunt` — Vertical park bridge/chest clue, treasure icon, 3 points and 100,000 CR. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_04_treasure_hunt-source.png and prepared reports/assets/series-07-summer/activity_04_treasure_hunt-tile.png have identical SHA256 9d1b3420e2325017feb4fc43799fdac2029bd08b329d2778641f482ec8dca085. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/5fabf7f85b95cb1c2e5b01d9159c8a128aeec4c4-442x707.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_05_championship` — Horizontal Urban Legend, Legendary restriction, S2 and 5 points; matching road icon unavailable in library, null retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_05_championship-source.png and prepared reports/assets/series-07-summer/activity_05_championship-tile.png have identical SHA256 4d4b68d98b5d6202493b1a54510a83e655074036848cd596661f09a9b4872c0c. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/7a8b42fc438ee8ed2dec66ea428631d85118e734-442x349.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_06_championship` — Horizontal Challenger, A, street icon and 5 points. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_06_championship-source.png and prepared reports/assets/series-07-summer/activity_06_championship-tile.png have identical SHA256 a77d39b6dd1414a1d559d5ca8fd9a5ac469f4c644659c13a4d54ab329f9d9b24. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/bb821ac5a5ba14df11618b6ab4b5f8491cde694f-442x350.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_07_championship` — Horizontal Ferrari, S1 and 5 points; matching road icon unavailable in library, null retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_07_championship-source.png and prepared reports/assets/series-07-summer/activity_07_championship-tile.png have identical SHA256 40cfcbe0c30a8f8c747f4e96eac27efd4f1e5877428c02d6e7cae336f7511796. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/75cdd388d1732b4aa0688b6e21c17b1c4164f852-441x351.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_08_drag_meet` — Horizontal Toyota Sera, B and 3 points; matching drag icon unavailable in library, null retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_08_drag_meet-source.png and prepared reports/assets/series-07-summer/activity_08_drag_meet-tile.png have identical SHA256 e19a102859cfbc01a729739b17d4e55b5e8b687285b60faedf646e5893c4ff09. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/0f6457ca34dfce19a8c6adce960f4e033ec69448-443x349.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_09_speed_trap` — Horizontal Toyota Sera, B, speed-trap icon and 2 points. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_09_speed_trap-source.png and prepared reports/assets/series-07-summer/activity_09_speed_trap-tile.png have identical SHA256 0057713e56827097745c3f5c855ef3a3a25e401d2dba1d9fd7f3a757d2c6d7f8. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/310741fb418fb36cd737b3723c7a613100bf4c97-441x349.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_10_drift_zone` — Horizontal Toyota Sera, B, drift icon and 2 points. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_10_drift_zone-source.png and prepared reports/assets/series-07-summer/activity_10_drift_zone-tile.png have identical SHA256 fca3351cdfdd68a1b1db26ef413b2e0a82420859ea2db2060cc08052d7453d9e. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/2a02405c30171193135d20cf03faccad373abc64-444x350.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_11_trial` — Vertical Domestic Dash, Eclectic Domestics B, Trial icon and 10 points. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_11_trial-source.png and prepared reports/assets/series-07-summer/activity_11_trial-tile.png have identical SHA256 5be3b5a28eaba7efd5194afba278dd89524d6bf91c1f814aa29c0ee77f188ee1. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/c057cfb27364f6377f81c889ef77fe2607902ccf-442x708.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_12_horizon_play` — Horizontal Even Stevens, Spec Racing Championship, 3 points and horn; Horizon Play icon exception retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_12_horizon_play-source.png and prepared reports/assets/series-07-summer/activity_12_horizon_play-tile.png have identical SHA256 b6fe2af8e147129f8efba0350b9146ff91b2ff53f694b01228c5c04b0b8b4484. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/093afb6b9a1af6dcd4c3f761f02de1911c8e5d3e-442x349.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_13_monthly_rivals` — Horizontal yellow Honda S660 at Shimanoyama, clean lap, 4 points/Super Wheelspin; active November monthly bytes retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_13_monthly_rivals-source.png and prepared reports/assets/series-07-summer/activity_13_monthly_rivals-tile.png have identical SHA256 fbac22d57b3d912cb4f699e12d2d5fbd3c71f01b623f16e9687bae2dc97ef5b4. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/b96a16a58e1572e26d93de3d4a80fcc78af5c752-442x350.png; remote fetch failed, remote-byte equality unverified.
+
+- `activity_14_monthly_rivals` — Horizontal white Mustang GTD at Edo, clean lap, 4 points/Super Wheelspin; active November monthly bytes retained. Visually inspected prepared tile this run; original reports/assets/series-07-summer/activity_14_monthly_rivals-source.png and prepared reports/assets/series-07-summer/activity_14_monthly_rivals-tile.png have identical SHA256 a13089ebe7a313d864144186b744b3cb6a595005b415b9bc1168e113acce23ed. Live Summer tile link matches https://cdn.sanity.io/images/jr6fd40q/production/34a7c8138d54eb16e936b21d40c2de27e5d8bbd1-443x350.png; remote fetch failed, remote-byte equality unverified.
+
+### Editorial validation and handoff · 2026-11-10T06:04:13+07:00
+
+Content-only validation: `STRUCTURE_OK cards=14 open_items=8`; visual evidence queue: `VISUAL_QUEUE_STATUS=READY`, zero screenshot requests. RU/EN known-field/tune parity, seven Daily per locale, exact missingFields/openItems correspondence, orientations/icons, source/activity coverage and final SHA checks passed. Completeness: {"condition": {"confirmed": 14}, "solution": {"community": 5, "confirmed": 9}, "vehicleTune": {"preliminary": 8, "not_applicable": 6}, "visual": {"community": 13, "not_applicable": 1}}.
+
+All baseline project/history/archive/assets unchanged byte-for-byte; only canonical state changed for corroborated Weekly/Daily conditions and their source links. Both monthly original/prepared pairs and all icons unchanged. lastContentUpdate preserved at 2026-11-09T07:24:43+07:00. No rollover: canonical Summer remains active. Git metadata absent in isolated workspace. Validator warns that publisher Steam fingerprint is absent; left for supervisor, no Steam access. No guard/build/publication/metrics/HA or automation-code edit performed.
+
+Source checks were fetched during this run (06:00–06:03 Krasnoyarsk); reader cache crawl dates are not claimed as new publication times. Required-source evidence is recorded individually, including unavailable/checked absence statuses, not replaced by raw availability snapshots.
+
+- Audit source `fandom_series_category` · 2026-11-10T06:02:15+07:00 · unavailable · https://forza.fandom.com/wiki/Category:Series_(FH6) — Configured category fetch inaccessible; targeted FH6 City Life Summer/current-season searches blocked by robots or return older seasons. No current revision or tile verified.
+
+- Audit source `fandom_current` · 2026-11-10T06:02:15+07:00 · unavailable · https://forza.fandom.com/ — Root fetched: 402 Payment Required; targeted Series 7 Summer page search blocked by robots; no Fandom facts or visuals adopted.
+
+- Audit source `forza_playlist` · 2026-11-10T06:02:15+07:00 · checked · https://forza.net/fh6playlists — Fetched live active heading City Life Summer November 5–12, current table rows 541–564 match canonical activities, seven Daily, restrictions/routes/rewards. Autumn rows are previews; canonical endAt remains future.
+
+- Audit source `forza_news` · 2026-11-10T06:02:15+07:00 · checked · https://forza.net/news — Fetched news index and linked City Life Series 7 article: November 5 14:30 GMT playlist start, solo championship chosen difficulty. Overview graphics cannot replace individual tiles.
+
+- Audit source `forza_support_release_notes` · 2026-11-10T06:02:09+07:00 · checked · https://support.forza.net/hc/en-us/sections/51701872316947-Release-Notes-and-Known-Issues — Configured legacy section failed; current FH6 section fetched, lists Nov 5 HF1 and Nov 2 CU. CU confirms chosen solo difficulty; historical retroactive points do not replace current Daily.
+
+- Audit source `forza_support_known_issues` · 2026-11-10T06:02:15+07:00 · checked · https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues — Fetched public Known Issues notice: active tracking moved to account-gated Feedback Portal; no account service accessed, no new active-week correction or exact tile available.
+
+- Audit source `forza_forums_official` · 2026-11-10T06:02:15+07:00 · no_current_item · https://forums.forza.net/tag/official-info/1731 — Configured tag fetched and redirected to forza.net/forums retirement notice. No current-week official thread or tile available; targeted City Life November search adds no current forum evidence.
+
+- Audit source `reddit_forzahorizon` · 2026-11-10T06:02:09+07:00 · no_current_item · https://www.reddit.com/r/ForzaHorizon/ — Root fetched and targeted Series 7 Summer November search performed; results contain old series/announcement rather than verified current-week Information Thread or exact tile.
+
+- Audit source `reddit_forzahorizon6` · 2026-11-10T06:02:09+07:00 · checked · https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/ — Root plus current Summer guide and separate 1xolhci competitive post fetched. Guide Nov 5–12 supplies all seven dated Daily, 1 point each, and weekly chapters; independent post corroborates route advice but different tune codes.
+
+- Audit source `reddit_forza` · 2026-11-10T06:02:09+07:00 · no_current_item · https://www.reddit.com/r/forza/ — Root fetched and targeted City Life Summer search checked: October speculation and Horizon Meets posts, no verified active-week Information Thread or tile.
+
+- Audit source `reddit_forzatune` · 2026-11-10T06:02:09+07:00 · no_current_item · https://www.reddit.com/r/ForzaTune/ — Root fetched; targeted City Life Summer November search did not identify a current-week tune post or exact tile.
+
+- Audit source `forza_horizon_hub` · 2026-11-10T06:02:09+07:00 · no_current_item · https://forzahorizonhub.com/ — Root fetched: still Series 6 Horizon Meets, 641 cars; targeted City Life Summer search found no active-week material. Generic car pictures not weekly tiles.
+
+- Audit source `forza_labs_collector` · 2026-11-10T06:02:09+07:00 · checked · https://forza.labsgg.com/collector-tool — Live car ownership checklist displays 651 cars, no weekly collectible requirement or separate activity tiles. Linked series/details current Summer section inspected separately.
+
+- Audit source `forza_labs_map` · 2026-11-10T06:02:09+07:00 · checked · https://forza.labsgg.com/interactive-map — Japan map fetched with event/house/treasure filters; map controls alone do not establish a dated current-week chest marker. Exact tiles sought on series/details.
+
+- Audit source `escorenews_fh6` · 2026-11-10T06:02:09+07:00 · unavailable · https://escorenews.com/en/games/forza-horizon-6 — Configured page fetch inaccessible; targeted FH6 November 5 search yielded no verifiable Escorenews active-week article or tile.
+
+- Audit source `dungg_playlist` · 2026-11-10T06:02:09+07:00 · unavailable · https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF — Playlist fetch failed Cache miss; DungG FH6 City Life Summer November 5 search found no verified episode or exact tile; no video playback claimed.

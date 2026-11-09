@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-09T07:24:43+07:00",
+  "lastContentUpdate": "2026-11-10T06:04:13+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,10 +25,10 @@
       "kind": "weekly",
       "title": "Еженедельное испытание: Big City Little City",
       "points": "5",
-      "conditionHtml": "1984 Honda City E II. Главы по текущему гайду сообщества: <ol><li>Владейте машиной и сядьте за руль.</li><li>Купите и установите замену двигателя.</li><li>За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.</li><li>Сделайте фото машины перед Tokyo Central Railway Station.</li></ol> Награда: 150 000 CR.",
+      "conditionHtml": "1984 Honda City E II. Главы подтверждены двумя независимыми текущенедельными гайдами: <ol><li>Владейте машиной и сядьте за руль.</li><li>Купите и установите замену двигателя.</li><li>За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.</li><li>Сделайте фото машины перед Tokyo Central Railway Station.</li></ol> Награда: 150 000 CR.",
       "howHtml": "Выполняйте главы по порядку. Начните севернее Rainbow Run, на верхней части моста, затем направляйтесь к Ocean Highway и Underground Tunnel; следите за трафиком.",
       "tuneHtml": "Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W1 Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer guide</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer routes</a> · <a href=\"https://forza.labsgg.com/series/details\" target=\"_blank\" rel=\"noopener noreferrer\">ForzaLabs · точная игровая плитка Summer</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-7-summer/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · S7 Summer independent guide</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-source.png",
@@ -38,13 +38,12 @@
         "sourceLabel": "ForzaLabs · City Life Summer · exact whole in-game tile · verified 2026-11-06T07:45:44+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
         "vehicleTune"
       ]
     },
@@ -57,7 +56,7 @@
       "conditionHtml": "<ol><li><strong>05.11:</strong> выполните Crash Landing Skill.</li><li><strong>06.11:</strong> завершите Road Race.</li><li><strong>07.11:</strong> проедьте 1 круг на любом Drift Attack.</li><li><strong>08.11:</strong> выполните 3 Trading Paint Skills.</li><li><strong>09.11:</strong> завершите Horizon Rush.</li><li><strong>10.11:</strong> победите призрака соперника в Rivals.</li><li><strong>11.11:</strong> сфотографируйте любую машину.</li></ol> Награда: 20 000 CR за задание.",
       "howHtml": "Выполните указанное условие в соответствующий день.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer Daily</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Summer</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · S7 Summer Daily</a> · <a href=\"https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-7-summer/\" target=\"_blank\" rel=\"noopener noreferrer\">TheXboxHub · S7 Summer independent guide</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
@@ -67,14 +66,12 @@
         "sourceLabel": "Daily: только текст."
       },
       "completeness": {
-        "condition": "preliminary",
+        "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
         "visual": "not_applicable"
       },
-      "missingFields": [
-        "condition"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_03_photo",
@@ -411,7 +408,7 @@
         "activity_01_weekly": {
           "title": "Weekly Challenge: Big City Little City",
           "points": "5",
-          "conditionHtml": "1984 Honda City E II. Chapters from the current community guide: <ol><li>Own and drive the car.</li><li>Buy and install an engine swap.</li><li>Within 3 minutes, earn at least 1 star at Rainbow Run Speed Trap, Ocean Highway Speed Zone and Underground Tunnel Speed Zone.</li><li>Photograph the car in front of Tokyo Central Railway Station.</li></ol> Reward: 150,000 CR.",
+          "conditionHtml": "1984 Honda City E II. Chapters corroborated by two independent current-week guides: <ol><li>Own and drive the car.</li><li>Buy and install an engine swap.</li><li>Within 3 minutes, earn at least 1 star at Rainbow Run Speed Trap, Ocean Highway Speed Zone and Underground Tunnel Speed Zone.</li><li>Photograph the car in front of Tokyo Central Railway Station.</li></ol> Reward: 150,000 CR.",
           "howHtml": "Complete the chapters in order. Start north of Rainbow Run on the upper bridge, then head to Ocean Highway and Underground Tunnel; watch for traffic.",
           "tuneHtml": "Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762"
         },
@@ -512,23 +509,9 @@
   "openItems": [
     {
       "activityId": "activity_01_weekly",
-      "field": "condition",
-      "reason": "Машина, награда и 5 очков подтверждены официальной таблицей и полной игровой плиткой; главы 2–4 найдены в свежем гайде сообщества, но полные игровые условия этих глав не проверены.",
-      "nextCheck": "Проверить главы 2–4 по игровым условиям или второму независимому полному гайду.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_01_weekly",
       "field": "vehicleTune",
       "reason": "Свежая S7W1-подборка FH6 Meta содержит машину, класс и код; первичный лист автора и независимое подтверждение не проверены.",
       "nextCheck": "Проверить свежий Summer Information Thread или первичную публикацию автора.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_02_daily",
-      "field": "condition",
-      "reason": "Все семь условий подтверждены официальной таблицей; 7 очков суммарно и 1 за день указаны в одном свежем текущенедельном Reddit-гайде.",
-      "nextCheck": "Перепроверить очки Daily по независимому текущенедельному источнику; блок остаётся текстовым.",
       "status": "preliminary"
     },
     {

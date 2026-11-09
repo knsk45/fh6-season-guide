@@ -1,23 +1,23 @@
 # Forza Horizon 6: Series 7 «City Life» — Лето
 
-> Статус: предварительно; открытых полей: 10
+> Статус: предварительно; открытых полей: 8
 > Период: 05.11.2026 21:30 — 12.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 09.11.2026 07:24
+> Обновлено: 10.11.2026 06:04
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Еженедельное испытание: Big City Little City · 5
 
-- **Условие:** 1984 Honda City E II. Главы по текущему гайду сообщества: <ol><li>Владейте машиной и сядьте за руль.</li><li>Купите и установите замену двигателя.</li><li>За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.</li><li>Сделайте фото машины перед Tokyo Central Railway Station.</li></ol> Награда: 150 000 CR.
+- **Условие:** 1984 Honda City E II. Главы подтверждены двумя независимыми текущенедельными гайдами: <ol><li>Владейте машиной и сядьте за руль.</li><li>Купите и установите замену двигателя.</li><li>За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.</li><li>Сделайте фото машины перед Tokyo Central Railway Station.</li></ol> Награда: 150 000 CR.
 - **Как выполнить:** Выполняйте главы по порядку. Начните севернее Rainbow Run, на верхней части моста, затем направляйтесь к Ocean Highway и Underground Tunnel; следите за трафиком.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Summer</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W1 Summer</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer guide</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer routes</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs · точная игровая плитка Summer</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Summer</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W1 Summer</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer guide</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xolhci/series_7_city_life_playlist_1_summer_competitive/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer routes</a> · <a href="https://forza.labsgg.com/series/details" target="_blank" rel="noopener noreferrer">ForzaLabs · точная игровая плитка Summer</a> · <a href="https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-7-summer/" target="_blank" rel="noopener noreferrer">TheXboxHub · S7 Summer independent guide</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 (1 в день)
 
 - **Условие:** <ol><li><strong>05.11:</strong> выполните Crash Landing Skill.</li><li><strong>06.11:</strong> завершите Road Race.</li><li><strong>07.11:</strong> проедьте 1 круг на любом Drift Attack.</li><li><strong>08.11:</strong> выполните 3 Trading Paint Skills.</li><li><strong>09.11:</strong> завершите Horizon Rush.</li><li><strong>10.11:</strong> победите призрака соперника в Rivals.</li><li><strong>11.11:</strong> сфотографируйте любую машину.</li></ol> Награда: 20 000 CR за задание.
 - **Как выполнить:** Выполните указанное условие в соответствующий день.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Summer</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer Daily</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Summer</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1xojkwf/fh6_series_7_summer_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · S7 Summer Daily</a> · <a href="https://www.thexboxhub.com/forza-horizon-6-festival-playlist-challenges-guide-series-7-summer/" target="_blank" rel="noopener noreferrer">TheXboxHub · S7 Summer independent guide</a>
 
 ## 03. photo — #CityLiving · 2
 
