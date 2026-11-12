@@ -3,76 +3,75 @@
 
 [i]Ссылка на сводку GitHub размещена в описании руководства выше; там есть карты и скриншоты.[/i]
 
-[h1]Series 7 'City Life' — Лето[/h1]
-[b]До:[/b] 12.11.2026 21:30 (Красноярск) · [b]Активностей:[/b] 14
+[h1]Series 7 'City Life' — Осень[/h1]
+[b]До:[/b] 19.11.2026 21:30 (Красноярск) · [b]Активностей:[/b] 15
 [b]Основная сводка проверяется ежедневно; точное время последней проверки указано в полной версии.[/b]
 [i]Коды тюнингов собраны по свежим материалам сообщества и не проверены автором руководства в игре.[/i]
 
-[h2]01. Еженедельное испытание: Big City Little City · 5[/h2]
-1984 Honda City E II. Главы подтверждены двумя независимыми текущенедельными гайдами: 
-• Владейте машиной и сядьте за руль.
-• Купите и установите замену двигателя.
-• За 3 минуты получите минимум 1 звезду на Rainbow Run Speed Trap, Ocean Highway Speed Zone и Underground Tunnel Speed Zone.
-• Сделайте фото машины перед Tokyo Central Railway Station.
- Награда: 150 000 CR.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762
+[h2]01. Thriller of Autumn · 5[/h2]
+2554 AMG Transport Dynamics M12S Warthog CST; Trailblazers, Cross Country Racing, фото. Награда: 150 000 CR.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975
 
 [h2]02. 7 ежедневных заданий · 7 (1 в день)[/h2]
-• 05.11: выполните Crash Landing Skill.
-• 06.11: завершите Road Race.
-• 07.11: проедьте 1 круг на любом Drift Attack.
-• 08.11: выполните 3 Trading Paint Skills.
-• 09.11: завершите Horizon Rush.
-• 10.11: победите призрака соперника в Rivals.
-• 11.11: сфотографируйте любую машину.
- Награда: 20 000 CR за задание.
+• 12.11: выполните Barrel Roll Skill.
+• 13.11: завершите Dirt Race.
+• 14.11: получите минимум 1 звезду в Drift Zones.
+• 15.11: выполните Showoff Skill.
+• 16.11: используйте Wheelspin или Super Wheelspin.
+• 17.11: проедьте 10 миль (16,1 км).
+• 18.11: получите минимум 1 звезду в Trailblazers.
+Награда: 20 000 CR за задание.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]03. #CityLiving · 2[/h2]
-Сделайте фото у Tokyo House. Награда: эмоция Pop ’n’ Lock.
+[h2]03. #PigInTheCity · 2[/h2]
+Сфотографируйте 2554 AMG Transport Dynamics M12S Warthog CST на Shibuya Crossing. Награда: костюм Master Chief (Halo Outfit).
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]04. Tokyo City Region · 3[/h2]
-Найдите сундук в Tokyo City по игровой фото-подсказке. Награда: 100 000 CR.
+[h2]04. Smashapon · 3[/h2]
+Разбейте 15 Gashapon Machines в Daikoku. Награда: гудок Halo Shield Recharge.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]05. Urban Legend · 5[/h2]
-Road: Rarity: Legendary, S2 900. Маршруты: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Награда: 2009 Ferrari 458 Italia.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; код 311 828 305
+[h2]05. Blood Gulch & Gears · 5[/h2]
+Dirt: 2554 AMG Transport Dynamics M12S Warthog CST, A 700. Маршруты: Oyashirazu Trail, Kinkaku-ji Trail, Cherry Field Trail. Награда: 117 000 CR.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975
 
-[h2]06. Rise to the Challenge · 5[/h2]
-Street: Dodge Challenger, A 700. Маршруты: Daikoku Chase, Sunflower Charge, Norikura Descent. Награда: 2008 Dodge Viper SRT-10 ACR.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1970 Dodge Challenger R/T — A 700, AWD; код 170 349 474
+[h2]06. Ford Runner · 5[/h2]
+Street: Ford, B 600. Маршруты: River Descent, Festival Chase, Matsumi Climb. Награда: 1994 Ford Supervan 3.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2000 Ford Mustang SVT Cobra R — B 600, AWD; код 589 057 826
 
-[h2]07. Paint the Town Red · 5[/h2]
-Road: Ferrari, S1 800. Маршруты: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Награда: 2023 Chevrolet Corvette Z06.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 2009 Ferrari 458 Italia — S1 800, AWD; код 118 399 557
+[h2]07. Sekibe Time Attack · 3[/h2]
+2019 Lamborghini Urus, A 700; 1:17,000. Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137
 
-[h2]08. Ito Half Mile · 3[/h2]
-1991 Toyota Sera, B 600; время 19,000 с. Награда: Wheelspin.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, FWD; код 151 290 936
+[h2]08. Rainbow Run · 2[/h2]
+2019 Lamborghini Urus, A 700; 128,0 mph (206,0 км/ч). Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137
 
-[h2]09. Akihabara Straight · 2[/h2]
-1991 Toyota Sera, B 600; 140,0 mph (225,3 км/ч). Награда: Wheelspin.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 558 641 915
+[h2]09. Underground Tunnel · 2[/h2]
+2019 Lamborghini Urus, A 700; 112,0 mph (180,2 км/ч). Награда: Wheelspin.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137
 
-[h2]10. Inner City Run · 2[/h2]
-1991 Toyota Sera, B 600; 45 000 очков. Награда: Wheelspin.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1991 Toyota Sera — B 600, AWD; код 276 412 354
+[h2]10. Red vs. Blue · 10[/h2]
+Road: Evo vs Impreza, B 600. Маршруты: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Награда: 2554 AMG Transport Dynamics M12S Warthog CST.
+[b]Авто:[/b] Предварительная рекомендация сообщества: 2004 Subaru Impreza WRX STI — B 600, AWD; код 165 643 704
 
-[h2]11. The Trial: Domestic Dash · 10[/h2]
-Street: Eclectic Domestic, B 600. Маршруты: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Награда: 2013 McLaren P1.
-[b]Авто:[/b] Предварительная рекомендация сообщества: 1984 Honda City E II — B 600, AWD; код 343 500 762
-
-[h2]12. Even Stevens · 3[/h2]
-Завершите Spec Racing Championship. Награда: гудок Pedestrian Crossing Chirp.
+[h2]11. Keyes to Success · 3[/h2]
+Получите 2 Great Speed Skills в Horizon Racing. Награда: гудок Halo Warthog.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]13. Monthly Rivals — Shimanoyama Circuit · 4 за серию[/h2]
+[h2]12. Hide & Seek · 2[/h2]
+Завершите игру Hide & Seek. Награда: гудок Halo Theme Part 2.
+[b]Авто:[/b] Тюнинг не требуется.
+
+[h2]13. Mini Games · 2[/h2]
+Завершите любое Horizon Stunt Party. Награда: гудок Halo Theme Part 1.
+[b]Авто:[/b] Тюнинг не требуется.
+
+[h2]14. Monthly Rivals — Shimanoyama Circuit · 4 за серию[/h2]
 Shimanoyama Circuit: 2016 Honda S660 Alpha. Награда: Super Wheelspin.
 [b]Авто:[/b] Тюнинг не требуется.
 
-[h2]14. Monthly Rivals — Edo Circuit · 4 за серию[/h2]
+[h2]15. Monthly Rivals — Edo Circuit · 4 за серию[/h2]
 Edo Circuit: 2025 Ford Mustang GTD. Награда: Super Wheelspin.
 [b]Авто:[/b] Тюнинг не требуется.
 

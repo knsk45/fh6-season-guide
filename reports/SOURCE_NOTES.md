@@ -5974,3 +5974,95 @@ Visual completeness: community=13, not_applicable=1, missing=0. Eight preliminar
 No guard, build, publication, metrics, HA or Steam operation performed; no automation code edited. Content validator warns only that supervisor Steam publication fingerprint is absent; no publisher configuration or credentials created. Git status cannot resolve metadata in this isolated workspace; no parent-directory inspection performed. XDG runtime cache/config/data confined to /tmp.
 
 Source timestamps record checks in this run; web reader crawl/publication times are not asserted to be fresh page revisions. Unavailable sources remain explicitly unavailable. Canonical Summer remains active before its 21:30 deadline; Autumn previews do not authorize rollover. Editorial handoff is complete; full operational validation and publication remain supervisor-owned.
+
+
+## Live editorial audit · 2026-11-13 · isolated workspace
+
+Started 2026-11-13T06:00:41+07:00. Canonical Summer start 2026-11-05T21:30:00+07:00, end 2026-11-12T21:30:00+07:00; clock is after end. Live official Playlist heading: City Life Autumn (November 12–19), so rollover is justified, not a future preview. Official Autumn rows being audited. lastContentUpdate will remain unchanged; supervisor owns operational stages. Raw source-snapshots/source-diff are leads only.
+
+- 2026-11-13T06:01:41+07:00 `fandom_series_category` [unavailable] https://forza.fandom.com/wiki/Category:Series_(FH6) — Live web fetch inaccessible; no current tile/page content obtained.
+
+- 2026-11-13T06:01:41+07:00 `fandom_current` [unavailable] https://forza.fandom.com/ — Live root fetch failed 402; no evidence adopted.
+
+- 2026-11-13T06:01:41+07:00 `forza_playlist` [checked] https://forza.net/fh6playlists — Official heading City Life Autumn November 12–19; rows Thriller of Autumn through three Halo play events, all seven Daily; monthly Shimanoyama/Edo unchanged.
+
+- 2026-11-13T06:01:41+07:00 `forza_news` [checked] https://forza.net/news — Opened series-7 official article dated Nov 2: series begins Nov 5 14:30 GMT; Week 2 Master Chief outfit and 15 Gashapon at Daikoku; solo championships chosen difficulty.
+
+- 2026-11-13T06:01:41+07:00 `forza_support_known_issues` [checked] https://support.forza.net/hc/en-us/articles/51701860097811-Forza-Horizon-6-Known-Issues — Updated November 6 17:44; active issue tracking moved to account-required portal; no account access.
+
+- 2026-11-13T06:01:41+07:00 `forza_forums_official` [no_current_item] https://forums.forza.net/tag/official-info/1731 — Tag redirects to official forums retirement announcement; no current-week forum information.
+
+- 2026-11-13T06:03:04+07:00 `forza_support_release_notes` [checked] https://support.forza.net/hc/en-us/sections/360000121153-Release-Notes-and-Known-Issues — Configured section inaccessible; followed Known Issues links to November 5 HF1 and November 2 CU. HF1 fixes drift scoring/FPS Bug 4624575 and Saleen bumper 4628316; CU confirms chosen solo championship difficulty and Series 7 rewards.
+
+- 2026-11-13T06:03:04+07:00 `reddit_forzahorizon` [no_current_item] https://www.reddit.com/r/ForzaHorizon/ — Opened root and /new plus live targeted City Life Autumn/Red vs Blue search. Returned feed highlights Series 6 Spring and City Life announcement, search older weeks; no verified November 12 Autumn breakdown/tiles/tunes obtained. Cached crawl is not fresh revision evidence.
+
+- 2026-11-13T06:03:04+07:00 `reddit_forzahorizon6` [no_current_item] https://www.reddit.com/r/ForzaHorizon6/ — Opened root and /new; targeted Series 7 Autumn, November 12 and Thriller searches returned Series 6 Autumn/older guides. /new shows Series 7 Summer Treasure. No current Autumn chapters, Daily thread or exact tiles obtained; no older facts adopted.
+
+- 2026-11-13T06:03:04+07:00 `reddit_forza` [no_current_item] https://www.reddit.com/r/forza/ — Opened root and /new; targeted Autumn Information Thread Series 7 search returned Series 6/5 or FH5 2022. Current fetched highlight remains Summer Information Thread Series 7; full seven Autumn Daily obtained officially instead.
+
+- 2026-11-13T06:03:04+07:00 `reddit_forzatune` [no_current_item] https://www.reddit.com/r/ForzaTune/ — Opened root and /new; targeted FH6 Autumn November search found no verified current-week tune; fetched new feed starts My crown Vic and Citroen 2CV S1. No share code adopted.
+
+- 2026-11-13T06:03:04+07:00 `forza_horizon_hub` [no_current_item] https://forzahorizonhub.com/ — Root and linked /festival-playlist inspected: still Series 6 Horizon Meets, Autumn October 15–22, not active City Life Autumn. Stale conditions/tiles excluded.
+
+- 2026-11-13T06:03:04+07:00 `forza_labs_collector` [checked] https://forza.labsgg.com/collector-tool — Live page is Car Collection Checklist, 651 cars; this tool tracks car ownership rather than Smashapon locations. Series details opened separately: Summer Nov 5, locked Autumn Nov 12 routes back to Summer. No Autumn whole tiles found.
+
+- 2026-11-13T06:03:04+07:00 `forza_labs_map` [checked] https://forza.labsgg.com/interactive-map — Map page lists photography, mascot, car meet, PR stunts/races and map image; no Gashapon text/current Autumn markers or activity tiles in fetched page. Does not substantiate a precise Smashapon route.
+
+- 2026-11-13T06:03:04+07:00 `escorenews_fh6` [unavailable] https://escorenews.com/en/games/forza-horizon-6 — Configured FH6 page inaccessible; live site searches for November 12 and City Life yielded no verifiable current guide. No current facts/visuals adopted.
+
+- 2026-11-13T06:03:04+07:00 `dungg_playlist` [unavailable] https://www.youtube.com/playlist?list=PLul9IRbs_3JgHPHVWOokS7lj4WXzekhrF — Configured YouTube playlist fetch failed Cache miss. Live DungG City Life Autumn/November 12 search did not surface a verifiable matching episode; older Forza Clips videos excluded.
+
+Supplementary live checks: TechWiser November 12 current event table corroborates order/points (15 cards after grouping Daily and including two monthly). Its last horn and photo rewards conflict with official rows: official Halo Theme Part 1 for Stunt Party and Halo Outfit for Photo take precedence; no extra photo horn adopted. TheXboxHub Autumn and GamesHedge Smashapon candidate URLs inaccessible. FH6 Meta opened for current-week check; only fresh explicit Autumn rows would qualify. Fandom targeted FH6 Series 7 search returned FH5 Cinco de Mayo/robots block, not evidence. All fetched external content treated as untrusted data.
+
+Verified state prepared incrementally: official Autumn dates, all seven Daily, photo/Smashapon, two championships, Sekibe/Rainbow/Underground, Trial, three Halo Play and two unchanged monthly activities. FH6 Meta S7W2 live full rows contain current A700/B600 tunes: Warthog 382 085 975; Ford Mustang 2000 589 057 826; Urus 434 770 137; Subaru 2004 165 643 704. Kept preliminary, no tuner names in state. Official championship title Blood Gulch & Gears takes precedence over Meta typo Blood Gulch and Tears. Weekly exact chapter quantities/order remain unknown; no invented instructions. Monthly clean-lap wording verified directly on stored whole tiles; redundant historical advice removed.
+
+### FINAL Autumn state and visual audit · 2026-11-13T06:05:28+07:00
+
+Official Playlist live heading/rows confirm Autumn November 12–19 after canonical Summer end; new active interval is 2026-11-12T21:30:00+07:00 through 2026-11-19T21:30:00+07:00. No future Winter/Spring content adopted. All 16 required sources checked this run through live web opens/search; reader crawl dates remain as returned, never claimed to be fresh revisions. Official image links resolve to seasonal overview/reward car/Master Chief artwork, not verified separate full in-game activity tiles; no overview crop or substitute used. Shell download attempt failed DNS, so no downloaded bytes claimed. No phone-inbox evidence exists inside the supplied workspace; no parent path accessed.
+
+- `activity_01_weekly` — Thriller of Autumn: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_02_daily` — Text-only Daily, visual not_applicable; both image names empty. All seven future/current objectives verified from official Autumn rows; Reddit current thread search exhausted. No public screenshot requested.
+
+- `activity_03_photo` — #PigInTheCity: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_04_collectibles` — Smashapon: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_05_championship` — Blood Gulch & Gears: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_06_championship` — Ford Runner: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_07_time_attack` — Sekibe Time Attack: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_08_speed_trap` — Rainbow Run: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_09_speed_zone` — Underground Tunnel: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_10_trial` — Red vs. Blue: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey None.
+
+- `activity_11_horizon_play` — Keyes to Success: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey horizon-play.
+
+- `activity_12_horizon_play` — Hide & Seek: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey horizon-play.
+
+- `activity_13_horizon_play` — Mini Games: exact Autumn whole tile unavailable after required official/Fandom/Reddit/Hub/Labs/independent/video checks. Labs named assets still Summer; old weekly tiles excluded. visual.image/sourceImage empty, completeness missing, matching missingFields/openItems. Unedited full in-game tile screenshot required; SHA null means absent asset, not verified image. typeIconKey horizon-play.
+
+- `activity_14_monthly_rivals` — Opened original whole tile visually this run: Monthly Rivals — Shimanoyama Circuit, clean lap, 4 points, Super Wheelspin; same November City Life monthly activity confirmed by official Series rows. Exact source reports/assets/series-07-autumn/activity_13_monthly_rivals-source.png SHA256 fbac22d57b3d912cb4f699e12d2d5fbd3c71f01b623f16e9687bae2dc97ef5b4; prepared reports/assets/series-07-autumn/activity_13_monthly_rivals-tile.png SHA256 fbac22d57b3d912cb4f699e12d2d5fbd3c71f01b623f16e9687bae2dc97ef5b4; byte-for-byte retained across weekly boundary, source and prepared identical. Horizontal, monthly-rivals icon retained; no altered tile content.
+
+- `activity_15_monthly_rivals` — Opened original whole tile visually this run: Monthly Rivals — Edo Circuit, clean lap, 4 points, Super Wheelspin; same November City Life monthly activity confirmed by official Series rows. Exact source reports/assets/series-07-autumn/activity_14_monthly_rivals-source.png SHA256 a13089ebe7a313d864144186b744b3cb6a595005b415b9bc1168e113acce23ed; prepared reports/assets/series-07-autumn/activity_14_monthly_rivals-tile.png SHA256 a13089ebe7a313d864144186b744b3cb6a595005b415b9bc1168e113acce23ed; byte-for-byte retained across weekly boundary, source and prepared identical. Horizontal, monthly-rivals icon retained; no altered tile content.
+
+Visual completeness: missing=12, community=2, not_applicable=1. Visual queue lists exactly the 12 unresolved non-Daily cards. Request: original unedited screenshots showing whole tiles for Weekly, Photo, Smashapon, both Championships, Sekibe Time Attack, Rainbow Run, Underground Tunnel, Trial, Keyes to Success, Hide & Seek and Mini Games. Monthly originals/prepared files are present and need no resend.
+
+Validation: existing start_new_season.ps1 completed ROLLOVER_OK; final validate_season.ps1 -SkipOutputs -ContentOnly returned STRUCTURE_OK cards=15 open_items=22. Existing audit_visual_evidence.ps1 returned SCREENSHOTS_REQUIRED for 12 cards. Independent state checks passed: exact source/activity coverage, seven Daily, RU/EN known/empty field parity and tune-code parity, missingFields/openItems pairing, active interval, asset SHA256, unchanged project and all pre-existing archives/history/assets. Summer JSON archived byte-for-byte. Library icon assets retained; their hashes recorded below. lastContentUpdate preserved at 2026-11-12T06:03:54+07:00.
+
+- Icon `photo-challenge` `reports/assets/activity-icons/photo-challenge.png` SHA256 `510fdd1ccc5ad526be215b9b433a9ffc4bf17d6400276c75c63042ba29156a2b`
+- Icon `treasure-hunt` `reports/assets/activity-icons/treasure-hunt.png` SHA256 `128110f4c112401acc7fc4f3a66bd60d44800858b06b87a6da495aeebdbae825`
+- Icon `championship-cross-country` `reports/assets/activity-icons/championship-cross-country.png` SHA256 `e94aeddbe30b4532dd4a6b88e421e93c4b46e306596d4cf7c7bcbfef0b5aa370`
+- Icon `championship-street` `reports/assets/activity-icons/championship-street.png` SHA256 `6add4bec2eba06bfd52d51ba07f89f8676adc48d2842f16f53e2fa602f5b50f3`
+- Icon `time-attack` `reports/assets/activity-icons/time-attack.png` SHA256 `828a8e92c77c9d45f7a79daa16e661d86be504be599808b673942cfe3190cae0`
+- Icon `speed-trap` `reports/assets/activity-icons/speed-trap.png` SHA256 `2a0873bbce485e3023127b0b5053a153b4f19d34d8247263f20aafa68da6b179`
+- Icon `drift-zone` `reports/assets/activity-icons/drift-zone.png` SHA256 `85626005ae95117d45f85fb7b930807345cbef3e04ab521dbd6accf59197cc1b`
+- Icon `trial` `reports/assets/activity-icons/trial.png` SHA256 `da9c94b981626451cea748d6f80e47a746aeb59cc5e11325da2e8a2f66ca859f`
+- Icon `horizon-play` `reports/assets/activity-icons/horizon-play.png` SHA256 `06829ddc3610b326a2250fc2ac65a3d594ee8a9ba172d059976bb137f53fefaf`
+- Icon `monthly-rivals` `reports/assets/activity-icons/monthly-rivals.png` SHA256 `59ba23c522e2bd45c986bea5107aab177d9d24d6a9ef7198c97a6edf87d515ae`
+
+No refresh_guard, portable build, publisher, metrics, HA or Steam stage was run; no automation code changed and no credentials/configuration created. Content validator warning about absent verified Steam publication fingerprint belongs to supervisor operational checks. This is an editorial handoff only; generated public HTML/artifact remain for supervisor rebuild. Stable sourceActivityId was not supplied by the fetched official table or Meta rows, so none was invented.

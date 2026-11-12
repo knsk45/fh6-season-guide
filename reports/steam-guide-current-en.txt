@@ -3,71 +3,68 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 7 'City Life' — Summer[/h1]
-[b]Ends:[/b] 12.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 14
+[h1]Series 7 'City Life' — Autumn[/h1]
+[b]Ends:[/b] 19.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 15
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Weekly Challenge: Big City Little City · 5[/h2]
-1984 Honda City E II. Chapters corroborated by two independent current-week guides: 
-• Own and drive the car.
-• Buy and install an engine swap.
-• Within 3 minutes, earn at least 1 star at Rainbow Run Speed Trap, Ocean Highway Speed Zone and Underground Tunnel Speed Zone.
-• Photograph the car in front of Tokyo Central Railway Station.
- Reward: 150,000 CR.
-[b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
+[h2]01. Thriller of Autumn · 5[/h2]
+2554 AMG Transport Dynamics M12S Warthog CST; Trailblazers, Cross Country Racing, photo. Reward: 150,000 CR.
+[b]Car:[/b] Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975
 
 [h2]02. 7 Daily Challenges · 7 (1 per day)[/h2]
-• Nov 5: earn a Crash Landing Skill.
-• Nov 6: complete a Road Race.
-• Nov 7: complete 1 lap at any Drift Attack.
-• Nov 8: earn 3 Trading Paint Skills.
-• Nov 9: complete a Horizon Rush.
-• Nov 10: beat a Rival’s Ghost.
-• Nov 11: take a photo of any car.
- Reward: 20,000 CR per challenge.
+• Nov 12: earn a Barrel Roll Skill.
+• Nov 13: complete a Dirt Race.
+• Nov 14: earn at least 1 star from Drift Zones.
+• Nov 15: earn a Showoff Skill.
+• Nov 16: redeem a Wheelspin or Super Wheelspin.
+• Nov 17: drive 10 miles (16.1 km).
+• Nov 18: earn at least 1 star from Trailblazers.
+Reward: 20,000 CR per challenge.
 
-[h2]03. #CityLiving · 2[/h2]
-Take a photo at the Tokyo House. Reward: Pop ’n’ Lock emote.
+[h2]03. #PigInTheCity · 2[/h2]
+Photograph the 2554 AMG Transport Dynamics M12S Warthog CST at Shibuya Crossing. Reward: Master Chief outfit (Halo Outfit).
 
-[h2]04. Tokyo City Region · 3[/h2]
-Follow the in-game photo clue to find the Tokyo City chest. Reward: 100,000 CR.
+[h2]04. Smashapon · 3[/h2]
+Smash 15 Gashapon Machines at Daikoku. Reward: Halo Shield Recharge horn.
 
-[h2]05. Urban Legend · 5[/h2]
-Road: Rarity: Legendary, S2 900. Routes: Tokyo Railway Sprint, Festival Sprint, Shimanoyama Sprint. Reward: 2009 Ferrari 458 Italia.
-[b]Car:[/b] Preliminary community recommendation: 2020 Lamborghini Essenza SCV12 — S2 900, AWD; share code 311 828 305
+[h2]05. Blood Gulch & Gears · 5[/h2]
+Dirt: 2554 AMG Transport Dynamics M12S Warthog CST, A 700. Routes: Oyashirazu Trail, Kinkaku-ji Trail, Cherry Field Trail. Reward: 117,000 CR.
+[b]Car:[/b] Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975
 
-[h2]06. Rise to the Challenge · 5[/h2]
-Street: Dodge Challenger, A 700. Routes: Daikoku Chase, Sunflower Charge, Norikura Descent. Reward: 2008 Dodge Viper SRT-10 ACR.
-[b]Car:[/b] Preliminary community recommendation: 1970 Dodge Challenger R/T — A 700, AWD; share code 170 349 474
+[h2]06. Ford Runner · 5[/h2]
+Street: Ford, B 600. Routes: River Descent, Festival Chase, Matsumi Climb. Reward: 1994 Ford Supervan 3.
+[b]Car:[/b] Preliminary community recommendation: 2000 Ford Mustang SVT Cobra R — B 600, AWD; share code 589 057 826
 
-[h2]07. Paint the Town Red · 5[/h2]
-Road: Ferrari, S1 800. Routes: Edo Circuit, Electric Town Circuit, Daikoku Circuit. Reward: 2023 Chevrolet Corvette Z06.
-[b]Car:[/b] Preliminary community recommendation: 2009 Ferrari 458 Italia — S1 800, AWD; share code 118 399 557
+[h2]07. Sekibe Time Attack · 3[/h2]
+2019 Lamborghini Urus, A 700; 1:17.000. Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
 
-[h2]08. Ito Half Mile · 3[/h2]
-1991 Toyota Sera, B 600; target time 19.000 seconds. Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, FWD; share code 151 290 936
+[h2]08. Rainbow Run · 2[/h2]
+2019 Lamborghini Urus, A 700; 128.0 mph (206.0 km/h). Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
 
-[h2]09. Akihabara Straight · 2[/h2]
-1991 Toyota Sera, B 600; 140.0 mph (225.3 km/h). Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 558 641 915
+[h2]09. Underground Tunnel · 2[/h2]
+2019 Lamborghini Urus, A 700; 112.0 mph (180.2 km/h). Reward: Wheelspin.
+[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
 
-[h2]10. Inner City Run · 2[/h2]
-1991 Toyota Sera, B 600; 45,000 points. Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 1991 Toyota Sera — B 600, AWD; share code 276 412 354
+[h2]10. Red vs. Blue · 10[/h2]
+Road: Evo vs Impreza, B 600. Routes: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2554 AMG Transport Dynamics M12S Warthog CST.
+[b]Car:[/b] Preliminary community recommendation: 2004 Subaru Impreza WRX STI — B 600, AWD; share code 165 643 704
 
-[h2]11. The Trial: Domestic Dash · 10[/h2]
-Street: Eclectic Domestic, B 600. Routes: Rainbow Bridge Descent, Shuto Charge, Tokyo City Docks Charge. Reward: 2013 McLaren P1.
-[b]Car:[/b] Preliminary community recommendation: 1984 Honda City E II — B 600, AWD; share code 343 500 762
+[h2]11. Keyes to Success · 3[/h2]
+Earn 2 Great Speed Skills in Horizon Racing. Reward: Halo Warthog horn.
 
-[h2]12. Even Stevens · 3[/h2]
-Complete a Spec Racing Championship. Reward: Pedestrian Crossing Chirp horn.
+[h2]12. Hide & Seek · 2[/h2]
+Complete a game of Hide & Seek. Reward: Halo Theme Part 2 horn.
 
-[h2]13. Monthly Rivals — Shimanoyama Circuit · 4 per Series[/h2]
+[h2]13. Mini Games · 2[/h2]
+Complete any Horizon Stunt Party. Reward: Halo Theme Part 1 horn.
+
+[h2]14. Monthly Rivals — Shimanoyama Circuit · 4 per Series[/h2]
 Shimanoyama Circuit: 2016 Honda S660 Alpha. Reward: Super Wheelspin.
 
-[h2]14. Monthly Rivals — Edo Circuit · 4 per Series[/h2]
+[h2]15. Monthly Rivals — Edo Circuit · 4 per Series[/h2]
 Edo Circuit: 2025 Ford Mustang GTD. Reward: Super Wheelspin.
 
 [b]Add this Steam guide to favourites:[/b] it is updated together with the Festival Playlist. Maps and location details are in the linked GitHub report above.
