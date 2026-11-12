@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-13T06:05:28+07:00",
+  "lastContentUpdate": "2026-11-13T06:59:10+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,24 +30,23 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/e21d14cdadd784d3bfb85fb87a0bdd768fc976ba-883x1417.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "preliminary",
         "solution": "missing",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
         "solution",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -87,22 +86,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "image": "activity_03_photo-tile.png",
+        "sourceImage": "activity_03_photo-source.png",
+        "orientation": "vertical",
+        "typeIconKey": "photo-challenge",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5e22cdc9c3085d11a10595900e491da06db90e36-886x1418.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_collectibles",
@@ -115,22 +112,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_04_collectibles-tile.png",
+        "sourceImage": "activity_04_collectibles-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/dcc9d788728fc2bb682bc0b8c51726dad54b4ab5-881x699.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -143,22 +138,21 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Support · solo difficulty</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3dc61d433b47cbafcb5cfab706aff63ca06fd03b-887x698.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -172,22 +166,21 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2000 Ford Mustang SVT Cobra R — B 600, AWD; код 589 057 826",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Support · solo difficulty</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship-tile.png",
+        "sourceImage": "activity_06_championship-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "typeIconKey": "championship-street",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6243be6e3fece59bf154b806af0dcbd933fb9ca5-884x698.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -201,22 +194,21 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_time_attack-tile.png",
+        "sourceImage": "activity_07_time_attack-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "typeIconKey": "time-attack",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/bb355b45d41fb5baa570a2c1d241ce75de570d67-885x697.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -230,22 +222,21 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_speed_trap-tile.png",
+        "sourceImage": "activity_08_speed_trap-source.png",
         "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "typeIconKey": "speed-trap",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/834b799cf4bed4e7353555c77cb640216e066312-883x698.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -259,22 +250,21 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_speed_zone-tile.png",
+        "sourceImage": "activity_09_speed_zone-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/12d54a2f8863e220e973c689b7ee364d87d1f947-881x697.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -288,23 +278,22 @@
       "tuneHtml": "Предварительная рекомендация сообщества: 2004 Subaru Impreza WRX STI — B 600, AWD; код 165 643 704",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
-        "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "image": "activity_10_trial-tile.png",
+        "sourceImage": "activity_10_trial-source.png",
+        "orientation": "vertical",
+        "typeIconKey": "trial",
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2e8ed820d2afa9e966caa8683ff79ae2a3d8c57d-883x1416.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "missing",
         "vehicleTune": "preliminary",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "solution",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -318,22 +307,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_11_horizon_play-tile.png",
+        "sourceImage": "activity_11_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/412e246b82b2950d7b9107934dc1474e5fc8161e-888x698.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -346,22 +333,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_horizon_play-tile.png",
+        "sourceImage": "activity_12_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3b8231f9a2026d94bc5143bf473a3eccd7e8831c-886x699.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_horizon_play",
@@ -374,22 +359,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_13_horizon_play-tile.png",
+        "sourceImage": "activity_13_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": "Точная игровая плитка Autumn не найдена; нужен полный неизменённый скриншот."
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4adb83e695934ecc203d339704a099bfab3f1226-883x698.png",
+        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "community",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -580,39 +563,11 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_collectibles",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_05_championship",
       "field": "vehicleTune",
       "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
       "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
     },
     {
       "activityId": "activity_06_championship",
@@ -622,25 +577,11 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_07_time_attack",
       "field": "vehicleTune",
       "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
       "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_07_time_attack",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
     },
     {
       "activityId": "activity_08_speed_trap",
@@ -650,25 +591,11 @@
       "status": "preliminary"
     },
     {
-      "activityId": "activity_08_speed_trap",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_09_speed_zone",
       "field": "vehicleTune",
       "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
       "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_09_speed_zone",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
     },
     {
       "activityId": "activity_10_trial",
@@ -683,34 +610,6 @@
       "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
       "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_horizon_play",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная полная игровая плитка Autumn не найдена в проверенных источниках.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
     }
   ]
 }
