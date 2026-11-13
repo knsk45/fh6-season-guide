@@ -1,23 +1,23 @@
 # Forza Horizon 6: Series 7 «City Life» — Осень
 
-> Статус: предварительно; открытых полей: 10
+> Статус: предварительно; открытых полей: 7
 > Период: 12.11.2026 21:30 — 19.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 13.11.2026 06:59
+> Обновлено: 14.11.2026 06:05
 > В отчёте: 15 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Thriller of Autumn · 5
 
-- **Условие:** 2554 AMG Transport Dynamics M12S Warthog CST; Trailblazers, Cross Country Racing, фото. Награда: 150 000 CR.
-- **Как выполнить:** 
+- **Условие:** 2554 AMG Transport Dynamics M12S Warthog CST: владейте и управляйте машиной; получите 6 звёзд в Trailblazers; выиграйте Cross Country Race; сфотографируйте машину в воздухе. Главы выполняются по порядку. Награда: 150 000 CR.
+- **Как выполнить:** На Warthog повторяйте Trailblazers до суммарных 6 звёзд, затем выиграйте Cross Country Race. Для последней главы подпрыгните с трамплина и откройте фоторежим, пока машина в воздухе.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W2 Autumn</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W2 Autumn</a> · <a href="https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Autumn Information Thread</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Reddit · Autumn Breakdown</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 (1 в день)
 
 - **Условие:** <ol><li><strong>12.11:</strong> выполните Barrel Roll Skill.</li><li><strong>13.11:</strong> завершите Dirt Race.</li><li><strong>14.11:</strong> получите минимум 1 звезду в Drift Zones.</li><li><strong>15.11:</strong> выполните Showoff Skill.</li><li><strong>16.11:</strong> используйте Wheelspin или Super Wheelspin.</li><li><strong>17.11:</strong> проедьте 10 миль (16,1 км).</li><li><strong>18.11:</strong> получите минимум 1 звезду в Trailblazers.</li></ol>Награда: 20 000 CR за задание.
-- **Как выполнить:** Выполните условие в соответствующий день.
+- **Как выполнить:** Каждое задание открывается в указанный день в 21:30 Asia/Krasnoyarsk и доступно 7 дней с момента открытия.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Autumn Information Thread</a>
 
 ## 03. photo — #PigInTheCity · 2
 
@@ -71,9 +71,9 @@
 ## 10. trial — Red vs. Blue · 10
 
 - **Условие:** Road: Evo vs Impreza, B 600. Маршруты: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Награда: 2554 AMG Transport Dynamics M12S Warthog CST.
-- **Как выполнить:** 
+- **Как выполнить:** В командном Trial помогайте товарищам: обгоняйте и сдерживайте ИИ, чтобы команда набрала больше очков.
 - **Автомобиль и тюнинг:** Предварительная рекомендация сообщества: 2004 Subaru Impreza WRX STI — B 600, AWD; код 165 643 704
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W2 Autumn</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://fh6meta.com/weekly-tunes?lang=en" target="_blank" rel="noopener noreferrer">FH6 Meta · S7W2 Autumn</a> · <a href="https://www.reddit.com/r/forza/comments/1xue05e/series_07_week_2_autumn_seasonal_tunes_city_life/" target="_blank" rel="noopener noreferrer">Reddit · current Autumn team advice</a>
 
 ## 11. horizon_play — Keyes to Success · 3
 
@@ -89,12 +89,12 @@
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a>
 
-## 13. horizon_play — Mini Games · 2
+## 13. horizon_play — Mini Games · 3
 
 - **Условие:** Завершите любое Horizon Stunt Party. Награда: гудок Halo Theme Part 1.
 - **Как выполнить:** Завершите любое Horizon Stunt Party.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Autumn</a> · <a href="https://techwiser.com/forza-horizon-6-festival-playlist/" target="_blank" rel="noopener noreferrer">TechWiser · 12 November · points</a> · <a href="https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Autumn Information Thread</a> · <a href="https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/" target="_blank" rel="noopener noreferrer">Reddit · Autumn Breakdown</a>
 
 ## 14. monthly_rivals — Monthly Rivals — Shimanoyama Circuit · 4 за серию
 

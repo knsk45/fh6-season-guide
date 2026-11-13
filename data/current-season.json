@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-13T06:59:10+07:00",
+  "lastContentUpdate": "2026-11-14T06:05:13+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,10 +25,10 @@
       "kind": "weekly",
       "title": "Thriller of Autumn",
       "points": "5",
-      "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST; Trailblazers, Cross Country Racing, фото. Награда: 150 000 CR.",
-      "howHtml": "",
+      "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST: владейте и управляйте машиной; получите 6 звёзд в Trailblazers; выиграйте Cross Country Race; сфотографируйте машину в воздухе. Главы выполняются по порядку. Награда: 150 000 CR.",
+      "howHtml": "На Warthog повторяйте Trailblazers до суммарных 6 звёзд, затем выиграйте Cross Country Race. Для последней главы подпрыгните с трамплина и откройте фоторежим, пока машина в воздухе.",
       "tuneHtml": "Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Breakdown</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-source.png",
@@ -38,14 +38,12 @@
         "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
       },
       "completeness": {
-        "condition": "preliminary",
-        "solution": "missing",
+        "condition": "confirmed",
+        "solution": "community",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "condition",
-        "solution",
         "vehicleTune"
       ]
     },
@@ -56,9 +54,9 @@
       "title": "7 ежедневных заданий",
       "points": "7 (1 в день)",
       "conditionHtml": "<ol><li><strong>12.11:</strong> выполните Barrel Roll Skill.</li><li><strong>13.11:</strong> завершите Dirt Race.</li><li><strong>14.11:</strong> получите минимум 1 звезду в Drift Zones.</li><li><strong>15.11:</strong> выполните Showoff Skill.</li><li><strong>16.11:</strong> используйте Wheelspin или Super Wheelspin.</li><li><strong>17.11:</strong> проедьте 10 миль (16,1 км).</li><li><strong>18.11:</strong> получите минимум 1 звезду в Trailblazers.</li></ol>Награда: 20 000 CR за задание.",
-      "howHtml": "Выполните условие в соответствующий день.",
+      "howHtml": "Каждое задание открывается в указанный день в 21:30 Asia/Krasnoyarsk и доступно 7 дней с момента открытия.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
@@ -274,9 +272,9 @@
       "title": "Red vs. Blue",
       "points": "10",
       "conditionHtml": "Road: Evo vs Impreza, B 600. Маршруты: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Награда: 2554 AMG Transport Dynamics M12S Warthog CST.",
-      "howHtml": "",
+      "howHtml": "В командном Trial помогайте товарищам: обгоняйте и сдерживайте ИИ, чтобы команда набрала больше очков.",
       "tuneHtml": "Предварительная рекомендация сообщества: 2004 Subaru Impreza WRX STI — B 600, AWD; код 165 643 704",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xue05e/series_07_week_2_autumn_seasonal_tunes_city_life/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · current Autumn team advice</a>",
       "visual": {
         "image": "activity_10_trial-tile.png",
         "sourceImage": "activity_10_trial-source.png",
@@ -287,12 +285,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "preliminary",
         "visual": "community"
       },
       "missingFields": [
-        "solution",
         "vehicleTune"
       ]
     },
@@ -353,11 +350,11 @@
       "number": "13",
       "kind": "horizon_play",
       "title": "Mini Games",
-      "points": "2",
+      "points": "3",
       "conditionHtml": "Завершите любое Horizon Stunt Party. Награда: гудок Halo Theme Part 1.",
       "howHtml": "Завершите любое Horizon Stunt Party.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Breakdown</a>",
       "visual": {
         "image": "activity_13_horizon_play-tile.png",
         "sourceImage": "activity_13_horizon_play-source.png",
@@ -435,15 +432,15 @@
         "activity_01_weekly": {
           "title": "Thriller of Autumn",
           "points": "5",
-          "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST; Trailblazers, Cross Country Racing, photo. Reward: 150,000 CR.",
-          "howHtml": "",
+          "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST: own and drive it; earn 6 Trailblazer stars; win a Cross Country Race; photograph the car airborne. Complete chapters in order. Reward: 150,000 CR.",
+          "howHtml": "Repeat Trailblazers in the Warthog to earn 6 stars in total, then win a Cross Country Race. For the final chapter, jump from a ramp and enter Photo Mode while airborne.",
           "tuneHtml": "Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975"
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
           "points": "7 (1 per day)",
           "conditionHtml": "<ol><li><strong>Nov 12:</strong> earn a Barrel Roll Skill.</li><li><strong>Nov 13:</strong> complete a Dirt Race.</li><li><strong>Nov 14:</strong> earn at least 1 star from Drift Zones.</li><li><strong>Nov 15:</strong> earn a Showoff Skill.</li><li><strong>Nov 16:</strong> redeem a Wheelspin or Super Wheelspin.</li><li><strong>Nov 17:</strong> drive 10 miles (16.1 km).</li><li><strong>Nov 18:</strong> earn at least 1 star from Trailblazers.</li></ol>Reward: 20,000 CR per challenge.",
-          "howHtml": "Complete the objective on its scheduled day.",
+          "howHtml": "Each challenge opens on its listed day at 14:30 UTC and remains available for 7 days.",
           "tuneHtml": "No tune required."
         },
         "activity_03_photo": {
@@ -499,7 +496,7 @@
           "title": "Red vs. Blue",
           "points": "10",
           "conditionHtml": "Road: Evo vs Impreza, B 600. Routes: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2554 AMG Transport Dynamics M12S Warthog CST.",
-          "howHtml": "",
+          "howHtml": "In the team Trial, help your teammates by passing and slowing the AI so your team can score more points.",
           "tuneHtml": "Preliminary community recommendation: 2004 Subaru Impreza WRX STI — B 600, AWD; share code 165 643 704"
         },
         "activity_11_horizon_play": {
@@ -518,7 +515,7 @@
         },
         "activity_13_horizon_play": {
           "title": "Mini Games",
-          "points": "2",
+          "points": "3",
           "conditionHtml": "Complete any Horizon Stunt Party. Reward: Halo Theme Part 1 horn.",
           "howHtml": "Complete any Horizon Stunt Party.",
           "tuneHtml": "No tune required."
@@ -541,20 +538,6 @@
     }
   },
   "openItems": [
-    {
-      "activityId": "activity_01_weekly",
-      "field": "condition",
-      "reason": "Не подтверждены точные количества и последовательность глав Weekly.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
-    },
-    {
-      "activityId": "activity_01_weekly",
-      "field": "solution",
-      "reason": "Точный способ выполнения текущей недели не подтверждён.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
-    },
     {
       "activityId": "activity_01_weekly",
       "field": "vehicleTune",
@@ -596,13 +579,6 @@
       "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
       "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
       "status": "preliminary"
-    },
-    {
-      "activityId": "activity_10_trial",
-      "field": "solution",
-      "reason": "Точный способ выполнения текущей недели не подтверждён.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "missing"
     },
     {
       "activityId": "activity_10_trial",
