@@ -4,46 +4,47 @@
     "seriesNumber": 7,
     "seriesSlug": "07",
     "seriesName": "City Life",
-    "season": "autumn",
-    "seasonDisplay": "Осень",
-    "startAt": "2026-11-12T21:30:00+07:00",
-    "endAt": "2026-11-19T21:30:00+07:00",
-    "reportTitle": "Forza Horizon 6: Series 7 «City Life» — Осень",
-    "archiveFile": "seasons/2026-11-12-series-07-autumn.md",
-    "assetsDirectory": "reports/assets/series-07-autumn",
+    "season": "winter",
+    "seasonDisplay": "Зима",
+    "startAt": "2026-11-19T21:30:00+07:00",
+    "endAt": "2026-11-26T21:30:00+07:00",
+    "reportTitle": "Forza Horizon 6: Series 7 «City Life» — Зима",
+    "archiveFile": "seasons/2026-11-19-series-07-winter.md",
+    "assetsDirectory": "reports/assets/series-07-winter",
     "fandomUrl": "https://forza.fandom.com/wiki/Category:Series_(FH6)",
     "officialPlaylistUrl": "https://forza.net/fh6playlists",
     "expectedCardCount": 15,
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-19T06:02:16+07:00",
+  "lastContentUpdate": "2026-11-20T06:04:27+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
       "number": "01",
       "kind": "weekly",
-      "title": "Thriller of Autumn",
+      "title": "Car Go Brrr",
       "points": "5",
-      "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST: владейте и управляйте машиной; получите 6 звёзд в Trailblazers; выиграйте Cross Country Race; сфотографируйте машину в воздухе. Главы выполняются по порядку. Награда: 150 000 CR.",
-      "howHtml": "На Warthog повторяйте Trailblazers до суммарных 6 звёзд, затем выиграйте Cross Country Race. Для последней главы подпрыгните с трамплина и откройте фоторежим, пока машина в воздухе.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Breakdown</a>",
+      "conditionHtml": "1989 Nissan S-Cargo: владейте и управляйте машиной; выиграйте Shuto Charge; завершите 2 круга Hokubu Time Attack; сфотографируйте машину ночью между опорами Rainbow Bridge. Награда: 150 000 CR.",
+      "howHtml": "Выполняйте главы по порядку.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_01_weekly-tile.png",
-        "sourceImage": "activity_01_weekly-source.png",
-        "orientation": "vertical",
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/e21d14cdadd784d3bfb85fb87a0bdd768fc976ba-883x1417.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
@@ -53,10 +54,10 @@
       "kind": "daily",
       "title": "7 ежедневных заданий",
       "points": "7 (1 в день)",
-      "conditionHtml": "<ol><li><strong>12.11:</strong> выполните Barrel Roll Skill.</li><li><strong>13.11:</strong> завершите Dirt Race.</li><li><strong>14.11:</strong> получите минимум 1 звезду в Drift Zones.</li><li><strong>15.11:</strong> выполните Showoff Skill.</li><li><strong>16.11:</strong> используйте Wheelspin или Super Wheelspin.</li><li><strong>17.11:</strong> проедьте 10 миль (16,1 км).</li><li><strong>18.11:</strong> получите минимум 1 звезду в Trailblazers.</li></ol>Награда: 20 000 CR за задание.",
-      "howHtml": "Каждое задание открывается в указанный день в 21:30 Asia/Krasnoyarsk и доступно 7 дней с момента открытия.",
+      "conditionHtml": "<ol><li><strong>19.11:</strong> получите 3 Threading the Needle Skills.</li><li><strong>20.11:</strong> завершите Touge Race.</li><li><strong>21.11:</strong> завершите заезд в Drag Meet.</li><li><strong>22.11:</strong> выполните Stuntman Skill.</li><li><strong>23.11:</strong> завершите Showcase.</li><li><strong>24.11:</strong> припаркуйтесь на любом Car Meet.</li><li><strong>25.11:</strong> сфотографируйте любой автомобиль.</li></ol>Награда: 20 000 CR за задание.",
+      "howHtml": "Каждое задание открывается в указанный день в 21:30 Asia/Krasnoyarsk и доступно 7 дней.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
         "image": "",
         "sourceImage": "",
@@ -74,138 +75,147 @@
       "missingFields": []
     },
     {
-      "id": "activity_03_photo",
+      "id": "activity_03_treasure",
       "number": "03",
-      "kind": "photo",
-      "title": "#PigInTheCity",
-      "points": "2",
-      "conditionHtml": "Сфотографируйте 2554 AMG Transport Dynamics M12S Warthog CST на Shibuya Crossing. Награда: костюм Master Chief (Halo Outfit).",
-      "howHtml": "Приезжайте на Shibuya Crossing в Tokyo City на указанной машине и сделайте фото.",
-      "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
-      "visual": {
-        "image": "activity_03_photo-tile.png",
-        "sourceImage": "activity_03_photo-source.png",
-        "orientation": "vertical",
-        "typeIconKey": "photo-challenge",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5e22cdc9c3085d11a10595900e491da06db90e36-886x1418.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
-      },
-      "completeness": {
-        "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
-      },
-      "missingFields": []
-    },
-    {
-      "id": "activity_04_collectibles",
-      "number": "04",
-      "kind": "collectibles",
-      "title": "Smashapon",
+      "kind": "treasure",
+      "title": "Tokyo City Region",
       "points": "3",
-      "conditionHtml": "Разбейте 15 Gashapon Machines в Daikoku. Награда: гудок Halo Shield Recharge.",
-      "howHtml": "Ищите автоматы Gashapon в Daikoku и разбивайте их машиной.",
+      "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в Tokyo City Region. Награда: 100 000 CR.",
+      "howHtml": "",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_04_collectibles-tile.png",
-        "sourceImage": "activity_04_collectibles-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/dcc9d788728fc2bb682bc0b8c51726dad54b4ab5-881x699.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
+        "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual",
+        "solution"
+      ]
+    },
+    {
+      "id": "activity_04_championship",
+      "number": "04",
+      "kind": "championship",
+      "title": "City Skyline",
+      "points": "5",
+      "conditionHtml": "Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Награда: 1965 Alfa Romeo Giulia Sprint GTA Stradale.",
+      "howHtml": "Победите в чемпионате по сумме очков.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "visual": {
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
+      },
+      "completeness": {
+        "condition": "confirmed",
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
+      },
+      "missingFields": [
+        "visual",
+        "vehicleTune"
+      ]
     },
     {
       "id": "activity_05_championship",
       "number": "05",
       "kind": "championship",
-      "title": "Blood Gulch & Gears",
+      "title": "Raring to Go",
       "points": "5",
-      "conditionHtml": "Dirt: 2554 AMG Transport Dynamics M12S Warthog CST, A 700. Маршруты: Oyashirazu Trail, Kinkaku-ji Trail, Cherry Field Trail. Награда: 117 000 CR.",
-      "howHtml": "Победите в чемпионате по сумме очков. В одиночной игре используется выбранная игроком сложность.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; код 382 085 975",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Support · solo difficulty</a>",
+      "conditionHtml": "Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Награда: 2021 Bentley Continental GT Convertible.",
+      "howHtml": "Победите в чемпионате по сумме очков.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_05_championship-tile.png",
-        "sourceImage": "activity_05_championship-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3dc61d433b47cbafcb5cfab706aff63ca06fd03b-887x698.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
     {
-      "id": "activity_06_championship",
+      "id": "activity_06_drag_meet",
       "number": "06",
-      "kind": "championship",
-      "title": "Ford Runner",
-      "points": "5",
-      "conditionHtml": "Street: Ford, B 600. Маршруты: River Descent, Festival Chase, Matsumi Climb. Награда: 1994 Ford Supervan 3.",
-      "howHtml": "Победите в чемпионате по сумме очков. В одиночной игре используется выбранная игроком сложность.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2000 Ford Mustang SVT Cobra R — B 600, AWD; код 589 057 826",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://support.forza.net/hc/en-us/articles/56954433524627-FH6-Release-Notes-November-2-2026\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Support · solo difficulty</a>",
+      "kind": "drag_meet",
+      "title": "Festival Kilometer",
+      "points": "3",
+      "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 17,000 с или быстрее. Награда: Wheelspin.",
+      "howHtml": "Пройдите Drag Meet быстрее целевого времени.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_06_championship-tile.png",
-        "sourceImage": "activity_06_championship-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "championship-street",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/6243be6e3fece59bf154b806af0dcbd933fb9ca5-884x698.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
     {
-      "id": "activity_07_time_attack",
+      "id": "activity_07_danger_sign",
       "number": "07",
-      "kind": "time_attack",
-      "title": "Sekibe Time Attack",
-      "points": "3",
-      "conditionHtml": "2019 Lamborghini Urus, A 700; 1:17,000. Награда: Wheelspin.",
-      "howHtml": "Пройдите Sekibe Time Attack быстрее целевого времени.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
+      "kind": "danger_sign",
+      "title": "Tokyo City Dockside",
+      "points": "2",
+      "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 400 м. Награда: Wheelspin.",
+      "howHtml": "Прыгните на целевое расстояние.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_07_time_attack-tile.png",
-        "sourceImage": "activity_07_time_attack-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "time-attack",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/bb355b45d41fb5baa570a2c1d241ce75de570d67-885x697.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
@@ -213,27 +223,28 @@
       "id": "activity_08_speed_trap",
       "number": "08",
       "kind": "speed_trap",
-      "title": "Rainbow Run",
+      "title": "Daikoku Parking Area",
       "points": "2",
-      "conditionHtml": "2019 Lamborghini Urus, A 700; 128,0 mph (206,0 км/ч). Награда: Wheelspin.",
-      "howHtml": "Радар находится на верхнем уровне моста; разгоняйтесь с любой стороны.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
+      "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.",
+      "howHtml": "Проедьте радар на целевой скорости.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_08_speed_trap-tile.png",
-        "sourceImage": "activity_08_speed_trap-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "speed-trap",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/834b799cf4bed4e7353555c77cb640216e066312-883x698.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
@@ -241,109 +252,116 @@
       "id": "activity_09_speed_zone",
       "number": "09",
       "kind": "speed_zone",
-      "title": "Underground Tunnel",
+      "title": "City Sights",
       "points": "2",
-      "conditionHtml": "2019 Lamborghini Urus, A 700; 112,0 mph (180,2 км/ч). Награда: Wheelspin.",
-      "howHtml": "Поддерживайте целевую среднюю скорость; совет сообщества допускает въезд с любой стороны.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2019 Lamborghini Urus — A 700, AWD; код 434 770 137",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a>",
+      "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.",
+      "howHtml": "Поддерживайте целевую среднюю скорость.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_09_speed_zone-tile.png",
-        "sourceImage": "activity_09_speed_zone-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/12d54a2f8863e220e973c689b7ee364d87d1f947-881x697.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
     {
-      "id": "activity_10_trial",
+      "id": "activity_10_drift_zone",
       "number": "10",
-      "kind": "trial",
-      "title": "Red vs. Blue",
-      "points": "10",
-      "conditionHtml": "Road: Evo vs Impreza, B 600. Маршруты: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Награда: 2554 AMG Transport Dynamics M12S Warthog CST.",
-      "howHtml": "В командном Trial помогайте товарищам: обгоняйте и сдерживайте ИИ, чтобы команда набрала больше очков.",
-      "tuneHtml": "Предварительная рекомендация сообщества: 2004 Subaru Impreza WRX STI — B 600, AWD; код 165 643 704",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://fh6meta.com/weekly-tunes?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">FH6 Meta · S7W2 Autumn</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xue05e/series_07_week_2_autumn_seasonal_tunes_city_life/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · current Autumn team advice</a>",
+      "kind": "drift_zone",
+      "title": "Tokyo City Docks",
+      "points": "2",
+      "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 110 000 очков. Награда: Wheelspin.",
+      "howHtml": "Наберите целевые очки дрифта.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_10_trial-tile.png",
-        "sourceImage": "activity_10_trial-source.png",
-        "orientation": "vertical",
-        "typeIconKey": "trial",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2e8ed820d2afa9e966caa8683ff79ae2a3d8c57d-883x1416.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "image": "",
+        "sourceImage": "",
+        "orientation": "horizontal",
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "preliminary",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
       "missingFields": [
+        "visual",
         "vehicleTune"
       ]
     },
     {
-      "id": "activity_11_horizon_play",
+      "id": "activity_11_trial",
       "number": "11",
-      "kind": "horizon_play",
-      "title": "Keyes to Success",
-      "points": "3",
-      "conditionHtml": "Получите 2 Great Speed Skills в Horizon Racing. Награда: гудок Halo Warthog.",
-      "howHtml": "Получите 2 Great Speed Skills в Horizon Racing.",
-      "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
+      "kind": "trial",
+      "title": "Mayhem in Metro-polis",
+      "points": "10",
+      "conditionHtml": "Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Награда: 1986 MG Metro 6R4.",
+      "howHtml": "Помогайте команде набрать больше очков, чем ИИ.",
+      "tuneHtml": "",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_11_horizon_play-tile.png",
-        "sourceImage": "activity_11_horizon_play-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
-        "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/412e246b82b2950d7b9107934dc1474e5fc8161e-888x698.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "typeIconKey": null,
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
-        "vehicleTune": "not_applicable",
-        "visual": "community"
+        "solution": "confirmed",
+        "vehicleTune": "missing",
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual",
+        "vehicleTune"
+      ]
     },
     {
       "id": "activity_12_horizon_play",
       "number": "12",
       "kind": "horizon_play",
-      "title": "Hide & Seek",
-      "points": "2",
-      "conditionHtml": "Завершите игру Hide & Seek. Награда: гудок Halo Theme Part 2.",
-      "howHtml": "Завершите игру Hide & Seek.",
+      "title": "Catch my Drift",
+      "points": "3",
+      "conditionHtml": "Завершите Horizon Drift Championship. Награда: гудок Keyboard Typing.",
+      "howHtml": "Завершите чемпионат Horizon Drift.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_12_horizon_play-tile.png",
-        "sourceImage": "activity_12_horizon_play-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/3b8231f9a2026d94bc5143bf473a3eccd7e8831c-886x699.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
+        "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_13_horizon_play",
@@ -351,25 +369,27 @@
       "kind": "horizon_play",
       "title": "Mini Games",
       "points": "3",
-      "conditionHtml": "Завершите любое Horizon Stunt Party. Награда: гудок Halo Theme Part 1.",
-      "howHtml": "Завершите любое Horizon Stunt Party.",
+      "conditionHtml": "Завершите любой Horizon Stunt Party. Награда: Black and Red Utility Pants.",
+      "howHtml": "Завершите любой Horizon Stunt Party.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a> · <a href=\"https://techwiser.com/forza-horizon-6-festival-playlist/\" target=\"_blank\" rel=\"noopener noreferrer\">TechWiser · 12 November · points</a> · <a href=\"https://www.reddit.com/r/forza/comments/1xugrps/fh6_autumn_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon/comments/1xucsn6/fh6_series_7_autumn_breakdown_and_rewards/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Autumn Breakdown</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "activity_13_horizon_play-tile.png",
-        "sourceImage": "activity_13_horizon_play-source.png",
+        "image": "",
+        "sourceImage": "",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/4adb83e695934ecc203d339704a099bfab3f1226-883x698.png",
-        "sourceLabel": "ForzaLabs · City Life Autumn · exact whole in-game tile · pixel verified 2026-11-13T06:57:36+07:00"
+        "sourceUrl": "",
+        "sourceLabel": ""
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "community",
+        "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "community"
+        "visual": "missing"
       },
-      "missingFields": []
+      "missingFields": [
+        "visual"
+      ]
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -380,7 +400,7 @@
       "conditionHtml": "Shimanoyama Circuit: 2016 Honda S660 Alpha. Награда: Super Wheelspin.",
       "howHtml": "Запишите чистый круг на указанной трассе.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
         "image": "activity_13_monthly_rivals-tile.png",
         "sourceImage": "activity_13_monthly_rivals-source.png",
@@ -406,7 +426,7 @@
       "conditionHtml": "Edo Circuit: 2025 Ford Mustang GTD. Награда: Super Wheelspin.",
       "howHtml": "Запишите чистый круг на указанной трассе.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Autumn</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
         "image": "activity_14_monthly_rivals-tile.png",
         "sourceImage": "activity_14_monthly_rivals-source.png",
@@ -426,97 +446,97 @@
   ],
   "locales": {
     "en": {
-      "reportTitle": "Forza Horizon 6: Series 7 “City Life” — Autumn",
-      "seasonDisplay": "Autumn",
+      "reportTitle": "Forza Horizon 6: Series 7 “City Life” — Winter",
+      "seasonDisplay": "Winter",
       "activities": {
         "activity_01_weekly": {
-          "title": "Thriller of Autumn",
+          "title": "Car Go Brrr",
           "points": "5",
-          "conditionHtml": "2554 AMG Transport Dynamics M12S Warthog CST: own and drive it; earn 6 Trailblazer stars; win a Cross Country Race; photograph the car airborne. Complete chapters in order. Reward: 150,000 CR.",
-          "howHtml": "Repeat Trailblazers in the Warthog to earn 6 stars in total, then win a Cross Country Race. For the final chapter, jump from a ramp and enter Photo Mode while airborne.",
-          "tuneHtml": "Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975"
+          "conditionHtml": "1989 Nissan S-Cargo: own and drive it; win Shuto Charge; complete 2 laps of Hokubu Time Attack; photograph it at night between the Rainbow Bridge support towers. Reward: 150,000 CR.",
+          "howHtml": "Complete the chapters in order.",
+          "tuneHtml": ""
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
           "points": "7 (1 per day)",
-          "conditionHtml": "<ol><li><strong>Nov 12:</strong> earn a Barrel Roll Skill.</li><li><strong>Nov 13:</strong> complete a Dirt Race.</li><li><strong>Nov 14:</strong> earn at least 1 star from Drift Zones.</li><li><strong>Nov 15:</strong> earn a Showoff Skill.</li><li><strong>Nov 16:</strong> redeem a Wheelspin or Super Wheelspin.</li><li><strong>Nov 17:</strong> drive 10 miles (16.1 km).</li><li><strong>Nov 18:</strong> earn at least 1 star from Trailblazers.</li></ol>Reward: 20,000 CR per challenge.",
-          "howHtml": "Each challenge opens on its listed day at 14:30 UTC and remains available for 7 days.",
+          "conditionHtml": "<ol><li><strong>Nov 19:</strong> earn 3 Threading the Needle Skills.</li><li><strong>Nov 20:</strong> complete a Touge Race.</li><li><strong>Nov 21:</strong> complete a Drag Meet run.</li><li><strong>Nov 22:</strong> earn a Stuntman Skill.</li><li><strong>Nov 23:</strong> complete a Showcase.</li><li><strong>Nov 24:</strong> park at any Car Meet.</li><li><strong>Nov 25:</strong> photograph any car.</li></ol>Reward: 20,000 CR per challenge.",
+          "howHtml": "Each challenge opens at 14:30 UTC on its listed day and remains available for 7 days.",
           "tuneHtml": "No tune required."
         },
-        "activity_03_photo": {
-          "title": "#PigInTheCity",
-          "points": "2",
-          "conditionHtml": "Photograph the 2554 AMG Transport Dynamics M12S Warthog CST at Shibuya Crossing. Reward: Master Chief outfit (Halo Outfit).",
-          "howHtml": "Drive the required car to Shibuya Crossing in Tokyo City and take a photo.",
-          "tuneHtml": "No tune required."
-        },
-        "activity_04_collectibles": {
-          "title": "Smashapon",
+        "activity_03_treasure": {
+          "title": "Tokyo City Region",
           "points": "3",
-          "conditionHtml": "Smash 15 Gashapon Machines at Daikoku. Reward: Halo Shield Recharge horn.",
-          "howHtml": "Find Gashapon machines at Daikoku and smash them with your car.",
+          "conditionHtml": "Follow the photo clue to find the treasure in Tokyo City Region. Reward: 100,000 CR.",
+          "howHtml": "",
           "tuneHtml": "No tune required."
+        },
+        "activity_04_championship": {
+          "title": "City Skyline",
+          "points": "5",
+          "conditionHtml": "Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Reward: 1965 Alfa Romeo Giulia Sprint GTA Stradale.",
+          "howHtml": "Win the championship on total points.",
+          "tuneHtml": ""
         },
         "activity_05_championship": {
-          "title": "Blood Gulch & Gears",
+          "title": "Raring to Go",
           "points": "5",
-          "conditionHtml": "Dirt: 2554 AMG Transport Dynamics M12S Warthog CST, A 700. Routes: Oyashirazu Trail, Kinkaku-ji Trail, Cherry Field Trail. Reward: 117,000 CR.",
-          "howHtml": "Win the championship on total points. Solo seasonal championships use your chosen difficulty.",
-          "tuneHtml": "Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975"
+          "conditionHtml": "Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Reward: 2021 Bentley Continental GT Convertible.",
+          "howHtml": "Win the championship on total points.",
+          "tuneHtml": ""
         },
-        "activity_06_championship": {
-          "title": "Ford Runner",
-          "points": "5",
-          "conditionHtml": "Street: Ford, B 600. Routes: River Descent, Festival Chase, Matsumi Climb. Reward: 1994 Ford Supervan 3.",
-          "howHtml": "Win the championship on total points. Solo seasonal championships use your chosen difficulty.",
-          "tuneHtml": "Preliminary community recommendation: 2000 Ford Mustang SVT Cobra R — B 600, AWD; share code 589 057 826"
-        },
-        "activity_07_time_attack": {
-          "title": "Sekibe Time Attack",
+        "activity_06_drag_meet": {
+          "title": "Festival Kilometer",
           "points": "3",
-          "conditionHtml": "2019 Lamborghini Urus, A 700; 1:17.000. Reward: Wheelspin.",
-          "howHtml": "Complete Sekibe Time Attack faster than the target time.",
-          "tuneHtml": "Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137"
+          "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 17.000 seconds or faster. Reward: Wheelspin.",
+          "howHtml": "Complete the Drag Meet within the target time.",
+          "tuneHtml": ""
+        },
+        "activity_07_danger_sign": {
+          "title": "Tokyo City Dockside",
+          "points": "2",
+          "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 400 m. Reward: Wheelspin.",
+          "howHtml": "Jump the target distance.",
+          "tuneHtml": ""
         },
         "activity_08_speed_trap": {
-          "title": "Rainbow Run",
+          "title": "Daikoku Parking Area",
           "points": "2",
-          "conditionHtml": "2019 Lamborghini Urus, A 700; 128.0 mph (206.0 km/h). Reward: Wheelspin.",
-          "howHtml": "The trap is on the upper deck of the bridge; approach from either direction.",
-          "tuneHtml": "Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137"
+          "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.",
+          "howHtml": "Pass the speed trap at the target speed.",
+          "tuneHtml": ""
         },
         "activity_09_speed_zone": {
-          "title": "Underground Tunnel",
+          "title": "City Sights",
           "points": "2",
-          "conditionHtml": "2019 Lamborghini Urus, A 700; 112.0 mph (180.2 km/h). Reward: Wheelspin.",
-          "howHtml": "Maintain the target average speed; the community guide says either direction works.",
-          "tuneHtml": "Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137"
+          "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.",
+          "howHtml": "Maintain the target average speed.",
+          "tuneHtml": ""
         },
-        "activity_10_trial": {
-          "title": "Red vs. Blue",
+        "activity_10_drift_zone": {
+          "title": "Tokyo City Docks",
+          "points": "2",
+          "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 110,000 points. Reward: Wheelspin.",
+          "howHtml": "Earn the target drift points.",
+          "tuneHtml": ""
+        },
+        "activity_11_trial": {
+          "title": "Mayhem in Metro-polis",
           "points": "10",
-          "conditionHtml": "Road: Evo vs Impreza, B 600. Routes: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2554 AMG Transport Dynamics M12S Warthog CST.",
-          "howHtml": "In the team Trial, help your teammates by passing and slowing the AI so your team can score more points.",
-          "tuneHtml": "Preliminary community recommendation: 2004 Subaru Impreza WRX STI — B 600, AWD; share code 165 643 704"
-        },
-        "activity_11_horizon_play": {
-          "title": "Keyes to Success",
-          "points": "3",
-          "conditionHtml": "Earn 2 Great Speed Skills in Horizon Racing. Reward: Halo Warthog horn.",
-          "howHtml": "Earn 2 Great Speed Skills in Horizon Racing.",
-          "tuneHtml": "No tune required."
+          "conditionHtml": "Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Reward: 1986 MG Metro 6R4.",
+          "howHtml": "Help your team score more points than the AI.",
+          "tuneHtml": ""
         },
         "activity_12_horizon_play": {
-          "title": "Hide & Seek",
-          "points": "2",
-          "conditionHtml": "Complete a game of Hide & Seek. Reward: Halo Theme Part 2 horn.",
-          "howHtml": "Complete a game of Hide & Seek.",
+          "title": "Catch my Drift",
+          "points": "3",
+          "conditionHtml": "Complete a Horizon Drift Championship. Reward: Keyboard Typing horn.",
+          "howHtml": "Complete a Horizon Drift Championship.",
           "tuneHtml": "No tune required."
         },
         "activity_13_horizon_play": {
           "title": "Mini Games",
           "points": "3",
-          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Halo Theme Part 1 horn.",
+          "conditionHtml": "Complete any Horizon Stunt Party. Reward: Black and Red Utility Pants.",
           "howHtml": "Complete any Horizon Stunt Party.",
           "tuneHtml": "No tune required."
         },
@@ -540,52 +560,157 @@
   "openItems": [
     {
       "activityId": "activity_01_weekly",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_01_weekly",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_03_treasure",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_03_treasure",
+      "field": "solution",
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_championship",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_04_championship",
+      "field": "vehicleTune",
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_05_championship",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
       "activityId": "activity_05_championship",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
-      "activityId": "activity_06_championship",
-      "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "activityId": "activity_06_drag_meet",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
-      "activityId": "activity_07_time_attack",
+      "activityId": "activity_06_drag_meet",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_danger_sign",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_07_danger_sign",
+      "field": "vehicleTune",
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_08_speed_trap",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
       "activityId": "activity_08_speed_trap",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_09_speed_zone",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
       "activityId": "activity_09_speed_zone",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     },
     {
-      "activityId": "activity_10_trial",
+      "activityId": "activity_10_drift_zone",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_10_drift_zone",
       "field": "vehicleTune",
-      "reason": "Один свежий источник сообщества; рекомендация не проверена в игре проектом.",
-      "nextCheck": "Официальная Playlist и свежий Reddit Information Thread; для плитки — оригинальный неизменённый скриншот всей активности.",
-      "status": "preliminary"
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_trial",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_11_trial",
+      "field": "vehicleTune",
+      "reason": "Нет подтверждённого решения или рекомендации.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_12_horizon_play",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
+    },
+    {
+      "activityId": "activity_13_horizon_play",
+      "field": "visual",
+      "reason": "Точная текущая игровая плитка не найдена.",
+      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
+      "status": "missing"
     }
   ]
 }

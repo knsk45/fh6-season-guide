@@ -3,63 +3,56 @@
 
 [i]The GitHub report link is in the guide overview above; it includes maps and screenshots.[/i]
 
-[h1]Series 7 'City Life' — Autumn[/h1]
-[b]Ends:[/b] 19.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 15
+[h1]Series 7 'City Life' — Winter[/h1]
+[b]Ends:[/b] 26.11.2026 21:30 (Krasnoyarsk) · [b]Activities:[/b] 15
 [b]The full report is checked daily; see the link above for the exact verification time.[/b]
 [i]Tune codes come from current community material and have not been tested in-game by this guide author.[/i]
 
-[h2]01. Thriller of Autumn · 5[/h2]
-2554 AMG Transport Dynamics M12S Warthog CST: own and drive it; earn 6 Trailblazer stars; win a Cross Country Race; photograph the car airborne. Complete chapters in order. Reward: 150,000 CR.
-[b]Car:[/b] Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975
+[h2]01. Car Go Brrr · 5[/h2]
+1989 Nissan S-Cargo: own and drive it; win Shuto Charge; complete 2 laps of Hokubu Time Attack; photograph it at night between the Rainbow Bridge support towers. Reward: 150,000 CR.
 
 [h2]02. 7 Daily Challenges · 7 (1 per day)[/h2]
-• Nov 12: earn a Barrel Roll Skill.
-• Nov 13: complete a Dirt Race.
-• Nov 14: earn at least 1 star from Drift Zones.
-• Nov 15: earn a Showoff Skill.
-• Nov 16: redeem a Wheelspin or Super Wheelspin.
-• Nov 17: drive 10 miles (16.1 km).
-• Nov 18: earn at least 1 star from Trailblazers.
+• Nov 19: earn 3 Threading the Needle Skills.
+• Nov 20: complete a Touge Race.
+• Nov 21: complete a Drag Meet run.
+• Nov 22: earn a Stuntman Skill.
+• Nov 23: complete a Showcase.
+• Nov 24: park at any Car Meet.
+• Nov 25: photograph any car.
 Reward: 20,000 CR per challenge.
 
-[h2]03. #PigInTheCity · 2[/h2]
-Photograph the 2554 AMG Transport Dynamics M12S Warthog CST at Shibuya Crossing. Reward: Master Chief outfit (Halo Outfit).
+[h2]03. Tokyo City Region · 3[/h2]
+Follow the photo clue to find the treasure in Tokyo City Region. Reward: 100,000 CR.
 
-[h2]04. Smashapon · 3[/h2]
-Smash 15 Gashapon Machines at Daikoku. Reward: Halo Shield Recharge horn.
+[h2]04. City Skyline · 5[/h2]
+Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Reward: 1965 Alfa Romeo Giulia Sprint GTA Stradale.
 
-[h2]05. Blood Gulch & Gears · 5[/h2]
-Dirt: 2554 AMG Transport Dynamics M12S Warthog CST, A 700. Routes: Oyashirazu Trail, Kinkaku-ji Trail, Cherry Field Trail. Reward: 117,000 CR.
-[b]Car:[/b] Preliminary community recommendation: 2554 AMG Transport Dynamics M12S Warthog CST — A 700, AWD; share code 382 085 975
+[h2]05. Raring to Go · 5[/h2]
+Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Reward: 2021 Bentley Continental GT Convertible.
 
-[h2]06. Ford Runner · 5[/h2]
-Street: Ford, B 600. Routes: River Descent, Festival Chase, Matsumi Climb. Reward: 1994 Ford Supervan 3.
-[b]Car:[/b] Preliminary community recommendation: 2000 Ford Mustang SVT Cobra R — B 600, AWD; share code 589 057 826
+[h2]06. Festival Kilometer · 3[/h2]
+2013 Cadillac XTS Limousine, S1 800; 17.000 seconds or faster. Reward: Wheelspin.
 
-[h2]07. Sekibe Time Attack · 3[/h2]
-2019 Lamborghini Urus, A 700; 1:17.000. Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
+[h2]07. Tokyo City Dockside · 2[/h2]
+2013 Cadillac XTS Limousine, S1 800; 400 m. Reward: Wheelspin.
 
-[h2]08. Rainbow Run · 2[/h2]
-2019 Lamborghini Urus, A 700; 128.0 mph (206.0 km/h). Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
+[h2]08. Daikoku Parking Area · 2[/h2]
+2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.
 
-[h2]09. Underground Tunnel · 2[/h2]
-2019 Lamborghini Urus, A 700; 112.0 mph (180.2 km/h). Reward: Wheelspin.
-[b]Car:[/b] Preliminary community recommendation: 2019 Lamborghini Urus — A 700, AWD; share code 434 770 137
+[h2]09. City Sights · 2[/h2]
+2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.
 
-[h2]10. Red vs. Blue · 10[/h2]
-Road: Evo vs Impreza, B 600. Routes: Shirakawa Circuit, Hokubu Circuit, Shikisai Sprint. Reward: 2554 AMG Transport Dynamics M12S Warthog CST.
-[b]Car:[/b] Preliminary community recommendation: 2004 Subaru Impreza WRX STI — B 600, AWD; share code 165 643 704
+[h2]10. Tokyo City Docks · 2[/h2]
+2013 Cadillac XTS Limousine, S1 800; 110,000 points. Reward: Wheelspin.
 
-[h2]11. Keyes to Success · 3[/h2]
-Earn 2 Great Speed Skills in Horizon Racing. Reward: Halo Warthog horn.
+[h2]11. Mayhem in Metro-polis · 10[/h2]
+Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Reward: 1986 MG Metro 6R4.
 
-[h2]12. Hide & Seek · 2[/h2]
-Complete a game of Hide & Seek. Reward: Halo Theme Part 2 horn.
+[h2]12. Catch my Drift · 3[/h2]
+Complete a Horizon Drift Championship. Reward: Keyboard Typing horn.
 
 [h2]13. Mini Games · 3[/h2]
-Complete any Horizon Stunt Party. Reward: Halo Theme Part 1 horn.
+Complete any Horizon Stunt Party. Reward: Black and Red Utility Pants.
 
 [h2]14. Monthly Rivals — Shimanoyama Circuit · 4 per Series[/h2]
 Shimanoyama Circuit: 2016 Honda S660 Alpha. Reward: Super Wheelspin.
