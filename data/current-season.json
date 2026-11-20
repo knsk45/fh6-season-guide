@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-20T07:30:08+07:00",
+  "lastContentUpdate": "2026-11-21T06:02:44+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -27,8 +27,8 @@
       "points": "5",
       "conditionHtml": "1989 Nissan S-Cargo: владейте и управляйте машиной; выиграйте Shuto Charge; завершите 2 круга Hokubu Time Attack; сфотографируйте машину ночью между опорами Rainbow Bridge. Награда: 150 000 CR.",
       "howHtml": "Выполняйте главы по порядку.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "1989 Nissan S-Cargo: 131 043 016",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
         "sourceImage": "activity_01_weekly-source.png",
@@ -40,12 +40,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -109,8 +107,8 @@
       "points": "5",
       "conditionHtml": "Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Награда: 1965 Alfa Romeo Giulia Sprint GTA Stradale.",
       "howHtml": "Победите в чемпионате по сумме очков.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "1987 Nissan Skyline GTS-R: 533 747 384",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_04_championship-tile.png",
         "sourceImage": "activity_04_championship-source.png",
@@ -122,12 +120,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -137,8 +133,8 @@
       "points": "5",
       "conditionHtml": "Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Награда: 2021 Bentley Continental GT Convertible.",
       "howHtml": "Победите в чемпионате по сумме очков.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "1965 Alfa Romeo Giulia Sprint GTA Stradale: 128 939 938",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_05_championship-tile.png",
         "sourceImage": "activity_05_championship-source.png",
@@ -150,12 +146,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_06_drag_meet",
@@ -165,8 +159,8 @@
       "points": "3",
       "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 17,000 с или быстрее. Награда: Wheelspin.",
       "howHtml": "Пройдите Drag Meet быстрее целевого времени.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_06_drag_meet-tile.png",
         "sourceImage": "activity_06_drag_meet-source.png",
@@ -178,12 +172,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_07_danger_sign",
@@ -193,8 +185,8 @@
       "points": "2",
       "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 400 м. Награда: Wheelspin.",
       "howHtml": "Прыгните на целевое расстояние.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_07_danger_sign-tile.png",
         "sourceImage": "activity_07_danger_sign-source.png",
@@ -206,12 +198,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_08_speed_trap",
@@ -221,8 +211,8 @@
       "points": "2",
       "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.",
       "howHtml": "Проедьте радар на целевой скорости.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_08_speed_trap-tile.png",
         "sourceImage": "activity_08_speed_trap-source.png",
@@ -234,12 +224,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_speed_zone",
@@ -249,8 +237,8 @@
       "points": "2",
       "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.",
       "howHtml": "Поддерживайте целевую среднюю скорость.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_09_speed_zone-tile.png",
         "sourceImage": "activity_09_speed_zone-source.png",
@@ -262,12 +250,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_drift_zone",
@@ -277,8 +263,8 @@
       "points": "2",
       "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 110 000 очков. Награда: Wheelspin.",
       "howHtml": "Наберите целевые очки дрифта.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "2013 Cadillac XTS Limousine: 118 525 071",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y0aehx/series_07_week_3_winter_seasonal_tunes_city_life/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter drift tune</a>",
       "visual": {
         "image": "activity_10_drift_zone-tile.png",
         "sourceImage": "activity_10_drift_zone-source.png",
@@ -290,12 +276,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_trial",
@@ -305,8 +289,8 @@
       "points": "10",
       "conditionHtml": "Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Награда: 1986 MG Metro 6R4.",
       "howHtml": "Помогайте команде набрать больше очков, чем ИИ.",
-      "tuneHtml": "",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "tuneHtml": "1965 Mini Cooper S: 168 699 298",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y09wri/fh6_series_7_winter_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter tunes</a>",
       "visual": {
         "image": "activity_11_trial-tile.png",
         "sourceImage": "activity_11_trial-source.png",
@@ -318,12 +302,10 @@
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -440,7 +422,7 @@
           "points": "5",
           "conditionHtml": "1989 Nissan S-Cargo: own and drive it; win Shuto Charge; complete 2 laps of Hokubu Time Attack; photograph it at night between the Rainbow Bridge support towers. Reward: 150,000 CR.",
           "howHtml": "Complete the chapters in order.",
-          "tuneHtml": ""
+          "tuneHtml": "1989 Nissan S-Cargo: 131 043 016"
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
@@ -461,56 +443,56 @@
           "points": "5",
           "conditionHtml": "Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Reward: 1965 Alfa Romeo Giulia Sprint GTA Stradale.",
           "howHtml": "Win the championship on total points.",
-          "tuneHtml": ""
+          "tuneHtml": "1987 Nissan Skyline GTS-R: 533 747 384"
         },
         "activity_05_championship": {
           "title": "Raring to Go",
           "points": "5",
           "conditionHtml": "Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Reward: 2021 Bentley Continental GT Convertible.",
           "howHtml": "Win the championship on total points.",
-          "tuneHtml": ""
+          "tuneHtml": "1965 Alfa Romeo Giulia Sprint GTA Stradale: 128 939 938"
         },
         "activity_06_drag_meet": {
           "title": "Festival Kilometer",
           "points": "3",
           "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 17.000 seconds or faster. Reward: Wheelspin.",
           "howHtml": "Complete the Drag Meet within the target time.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153"
         },
         "activity_07_danger_sign": {
           "title": "Tokyo City Dockside",
           "points": "2",
           "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 400 m. Reward: Wheelspin.",
           "howHtml": "Jump the target distance.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153"
         },
         "activity_08_speed_trap": {
           "title": "Daikoku Parking Area",
           "points": "2",
           "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.",
           "howHtml": "Pass the speed trap at the target speed.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153"
         },
         "activity_09_speed_zone": {
           "title": "City Sights",
           "points": "2",
           "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 150 mph (241.4 km/h). Reward: Wheelspin.",
           "howHtml": "Maintain the target average speed.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Cadillac XTS Limousine: 115 555 153"
         },
         "activity_10_drift_zone": {
           "title": "Tokyo City Docks",
           "points": "2",
           "conditionHtml": "2013 Cadillac XTS Limousine, S1 800; 110,000 points. Reward: Wheelspin.",
           "howHtml": "Earn the target drift points.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Cadillac XTS Limousine: 118 525 071"
         },
         "activity_11_trial": {
           "title": "Mayhem in Metro-polis",
           "points": "10",
           "conditionHtml": "Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Reward: 1986 MG Metro 6R4.",
           "howHtml": "Help your team score more points than the AI.",
-          "tuneHtml": ""
+          "tuneHtml": "1965 Mini Cooper S: 168 699 298"
         },
         "activity_12_horizon_play": {
           "title": "Catch my Drift",
@@ -545,71 +527,8 @@
   },
   "openItems": [
     {
-      "activityId": "activity_01_weekly",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_03_treasure",
       "field": "solution",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_championship",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_drag_meet",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_danger_sign",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_speed_zone",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_drift_zone",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"

@@ -10,6 +10,7 @@
 
 [h2]01. Car Go Brrr · 5[/h2]
 1989 Nissan S-Cargo: владейте и управляйте машиной; выиграйте Shuto Charge; завершите 2 круга Hokubu Time Attack; сфотографируйте машину ночью между опорами Rainbow Bridge. Награда: 150 000 CR.
+[b]Авто:[/b] 1989 Nissan S-Cargo: 131 043 016
 
 [h2]02. 7 ежедневных заданий · 7 (1 в день)[/h2]
 • 19.11: получите 3 Threading the Needle Skills.
@@ -28,27 +29,35 @@
 
 [h2]04. City Skyline · 5[/h2]
 Road: Nissan Skyline, B 600. Daikoku Circuit, Tokyo Railway Sprint, Edo Circuit. Награда: 1965 Alfa Romeo Giulia Sprint GTA Stradale.
+[b]Авто:[/b] 1987 Nissan Skyline GTS-R: 533 747 384
 
 [h2]05. Raring to Go · 5[/h2]
 Street: Rare Classics, B 600. Cedar Run, Tokyo City Docks Charge, Kita Ine. Награда: 2021 Bentley Continental GT Convertible.
+[b]Авто:[/b] 1965 Alfa Romeo Giulia Sprint GTA Stradale: 128 939 938
 
 [h2]06. Festival Kilometer · 3[/h2]
 2013 Cadillac XTS Limousine, S1 800; 17,000 с или быстрее. Награда: Wheelspin.
+[b]Авто:[/b] 2013 Cadillac XTS Limousine: 115 555 153
 
 [h2]07. Tokyo City Dockside · 2[/h2]
 2013 Cadillac XTS Limousine, S1 800; 400 м. Награда: Wheelspin.
+[b]Авто:[/b] 2013 Cadillac XTS Limousine: 115 555 153
 
 [h2]08. Daikoku Parking Area · 2[/h2]
 2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.
+[b]Авто:[/b] 2013 Cadillac XTS Limousine: 115 555 153
 
 [h2]09. City Sights · 2[/h2]
 2013 Cadillac XTS Limousine, S1 800; 150 mph (241,4 км/ч). Награда: Wheelspin.
+[b]Авто:[/b] 2013 Cadillac XTS Limousine: 115 555 153
 
 [h2]10. Tokyo City Docks · 2[/h2]
 2013 Cadillac XTS Limousine, S1 800; 110 000 очков. Награда: Wheelspin.
+[b]Авто:[/b] 2013 Cadillac XTS Limousine: 118 525 071
 
 [h2]11. Mayhem in Metro-polis · 10[/h2]
 Cross Country: 1965 MINI Cooper S, B 600. Shinjuku Gyoen Cross Country, City Docks Cross Country Circuit, Edogawa Cross Country Circuit. Награда: 1986 MG Metro 6R4.
+[b]Авто:[/b] 1965 Mini Cooper S: 168 699 298
 
 [h2]12. Catch my Drift · 3[/h2]
 Завершите Horizon Drift Championship. Награда: гудок Keyboard Typing.
