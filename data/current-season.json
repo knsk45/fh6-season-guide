@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-20T06:04:27+07:00",
+  "lastContentUpdate": "2026-11-20T07:30:08+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,21 +30,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/5652d86c4f8feeaa87836584b03bd702faded5be-884x1415.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -85,21 +84,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_03_treasure-tile.png",
+        "sourceImage": "activity_03_treasure-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/90623f381dcc65807aba44a7900b60cc1e6e5b0a-883x1411.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "solution"
       ]
     },
@@ -114,21 +112,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_04_championship-tile.png",
+        "sourceImage": "activity_04_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/dd656f225835a9d17bad45862bd27f626ee101a0-884x700.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -143,21 +140,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/484b887c669dfaeb56296e721cf0e9cb3da382d1-886x699.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -172,21 +168,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_drag_meet-tile.png",
+        "sourceImage": "activity_06_drag_meet-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/acadac9407d5e1d20cc9d2bf542463a494d17237-884x697.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -201,21 +196,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_danger_sign-tile.png",
+        "sourceImage": "activity_07_danger_sign-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/b1a99bd514e78a5f12542c3a4db5a9f6da863846-889x698.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -230,21 +224,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_speed_trap-tile.png",
+        "sourceImage": "activity_08_speed_trap-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/70a5eada400f0e615acce80d696e59af0b6935c1-884x696.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -259,21 +252,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_speed_zone-tile.png",
+        "sourceImage": "activity_09_speed_zone-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/7252943a7718d02cf20842157f1bff57d9aa0c6e-887x702.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -288,21 +280,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_drift_zone-tile.png",
+        "sourceImage": "activity_10_drift_zone-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/91f4b350b95cc0124635dc9c7cb2389b2c457324-886x704.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -317,21 +308,20 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_11_trial-tile.png",
+        "sourceImage": "activity_11_trial-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/2610202516ad11f31cd8a2de398344ee5b353964-886x1415.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "visual",
         "vehicleTune"
       ]
     },
@@ -346,22 +336,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_horizon_play-tile.png",
+        "sourceImage": "activity_12_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/38b0cad00813e565b2f19f54b1dd516fce717f05-887x698.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_horizon_play",
@@ -374,22 +362,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_13_horizon_play-tile.png",
+        "sourceImage": "activity_13_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/d80f8440c1c2ef231d654b9b8d846f6e2198fa66-884x697.png",
+        "sourceLabel": "ForzaLabs · City Life Winter · точная полная игровая плитка"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_14_monthly_rivals",
@@ -560,22 +546,8 @@
   "openItems": [
     {
       "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_01_weekly",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_treasure",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"
     },
@@ -588,22 +560,8 @@
     },
     {
       "activityId": "activity_04_championship",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_championship",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"
     },
@@ -616,22 +574,8 @@
     },
     {
       "activityId": "activity_06_drag_meet",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_drag_meet",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_danger_sign",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"
     },
@@ -644,22 +588,8 @@
     },
     {
       "activityId": "activity_08_speed_trap",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_speed_trap",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_speed_zone",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"
     },
@@ -672,13 +602,6 @@
     },
     {
       "activityId": "activity_10_drift_zone",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_drift_zone",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
@@ -686,29 +609,8 @@
     },
     {
       "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
       "field": "vehicleTune",
       "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_13_horizon_play",
-      "field": "visual",
-      "reason": "Точная текущая игровая плитка не найдена.",
       "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
       "status": "missing"
     }
