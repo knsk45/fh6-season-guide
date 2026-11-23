@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-23T06:02:57+07:00",
+  "lastContentUpdate": "2026-11-24T06:03:00+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -78,9 +78,9 @@
       "title": "Tokyo City Region",
       "points": "3",
       "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в Tokyo City Region. Награда: 100 000 CR.",
-      "howHtml": "",
+      "howHtml": "На юго-западе Tokyo City найдите северную сторону большого парка: сундук находится за оградой рядом с припаркованными мотоциклами. Разбейте его.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Winter</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Winter Information Thread</a> · <a href=\"https://www.gameshedge.com/forza-horizon-6-tokyo-city-region-treasure-hunt-guide-city-life-winter/\" target=\"_blank\" rel=\"noopener noreferrer\">GamesHedge · Winter treasure</a> · <a href=\"https://redfreshet.com/fh6-city-life-winter-tokyo-city-treasure/\" target=\"_blank\" rel=\"noopener noreferrer\">redfreshet · Winter treasure</a>",
       "visual": {
         "image": "activity_03_treasure-tile.png",
         "sourceImage": "activity_03_treasure-source.png",
@@ -91,13 +91,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_championship",
@@ -435,7 +433,7 @@
           "title": "Tokyo City Region",
           "points": "3",
           "conditionHtml": "Follow the photo clue to find the treasure in Tokyo City Region. Reward: 100,000 CR.",
-          "howHtml": "",
+          "howHtml": "In southwest Tokyo City, find the north side of the large park: the chest is inside a fence beside parked motorcycles. Smash it.",
           "tuneHtml": "No tune required."
         },
         "activity_04_championship": {
@@ -525,13 +523,5 @@
       }
     }
   },
-  "openItems": [
-    {
-      "activityId": "activity_03_treasure",
-      "field": "solution",
-      "reason": "Нет подтверждённого решения или рекомендации.",
-      "nextCheck": "Свежие источники; для плитки — оригинальный полный скриншот игры.",
-      "status": "missing"
-    }
-  ]
+  "openItems": []
 }

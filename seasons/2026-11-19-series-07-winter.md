@@ -1,8 +1,8 @@
 # Forza Horizon 6: Series 7 «City Life» — Зима
 
-> Статус: предварительно; открытых полей: 1
+> Статус: подтверждено
 > Период: 19.11.2026 21:30 — 26.11.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 23.11.2026 06:02
+> Обновлено: 24.11.2026 06:03
 > В отчёте: 15 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Car Go Brrr · 5
@@ -22,9 +22,9 @@
 ## 03. treasure — Tokyo City Region · 3
 
 - **Условие:** Следуйте фото-подсказке и найдите сокровище в Tokyo City Region. Награда: 100 000 CR.
-- **Как выполнить:** 
+- **Как выполнить:** На юго-западе Tokyo City найдите северную сторону большого парка: сундук находится за оградой рядом с припаркованными мотоциклами. Разбейте его.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Winter</a> · <a href="https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Winter Information Thread</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Winter</a> · <a href="https://www.reddit.com/r/forza/comments/1y0dt7w/fh6_winter_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Winter Information Thread</a> · <a href="https://www.gameshedge.com/forza-horizon-6-tokyo-city-region-treasure-hunt-guide-city-life-winter/" target="_blank" rel="noopener noreferrer">GamesHedge · Winter treasure</a> · <a href="https://redfreshet.com/fh6-city-life-winter-tokyo-city-treasure/" target="_blank" rel="noopener noreferrer">redfreshet · Winter treasure</a>
 
 ## 04. championship — City Skyline · 5
 
