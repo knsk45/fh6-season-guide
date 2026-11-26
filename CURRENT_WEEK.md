@@ -1,7 +1,7 @@
 # Текущая неделя
 
-Актуальная сводка: [Forza Horizon 6: Series 7 «City Life» — Зима](seasons/2026-11-19-series-07-winter.md).
+Актуальная сводка: [Forza Horizon 6: Series 7 «City Life» — Весна](seasons/2026-11-26-series-07-spring.md).
 
 Интерактивная автономная версия: [reports/current-week.html](reports/current-week.html).
 
-Дедлайн: **26 ноября 2026, 21:30 Asia/Krasnoyarsk**.
+Дедлайн: **03 декабря 2026, 21:30 Asia/Krasnoyarsk**.
