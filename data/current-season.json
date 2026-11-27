@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-27T06:03:47+07:00",
+  "lastContentUpdate": "2026-11-27T07:58:55+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -30,23 +30,22 @@
       "tuneHtml": "",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_01_weekly-tile.png",
+        "sourceImage": "activity_01_weekly-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/e9cbc7e7d54f185d4a37abcb18862116ea2b4eb9-883x1417.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "missing",
         "solution": "confirmed",
         "vehicleTune": "missing",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
         "condition",
-        "vehicleTune",
-        "visual"
+        "vehicleTune"
       ]
     },
     {
@@ -86,22 +85,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_03_photo-tile.png",
+        "sourceImage": "activity_03_photo-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/8156d232b5d1017e66e0ca31985927f747592b8c-884x1415.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_04_treasure",
@@ -114,22 +111,21 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_04_treasure-tile.png",
+        "sourceImage": "activity_04_treasure-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/21c6c16b81cbb224e9a23d569597142132eb8691-885x1412.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "missing",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
       "missingFields": [
-        "solution",
-        "visual"
+        "solution"
       ]
     },
     {
@@ -143,22 +139,20 @@
       "tuneHtml": "2014 BMW M4 Coupé: 783 340 423",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_05_championship-tile.png",
+        "sourceImage": "activity_05_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/f947aec777a3e438ccb84c11ecd1e34aafb096a8-882x697.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_06_championship",
@@ -171,22 +165,20 @@
       "tuneHtml": "2020 Audi R8 V10 performance: 742 947 364",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_06_championship-tile.png",
+        "sourceImage": "activity_06_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/0b3cec0ead97504c98a61e29a8d7bf841678e18a-884x696.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_07_championship",
@@ -199,22 +191,20 @@
       "tuneHtml": "1991 Honda Beat: 168 979 056",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_07_championship-tile.png",
+        "sourceImage": "activity_07_championship-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/a85a68ead7a92379471a48d9f848bb8b38a7ef65-884x698.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_08_time_attack",
@@ -227,22 +217,20 @@
       "tuneHtml": "1994 Subaru Vivio RX-R: 164 232 906",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_08_time_attack-tile.png",
+        "sourceImage": "activity_08_time_attack-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/8478c5a99e9584db4dc25bafbdc289f8ac3740fa-881x697.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_09_speed_trap",
@@ -255,22 +243,20 @@
       "tuneHtml": "1994 Subaru Vivio RX-R: 164 232 906",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_09_speed_trap-tile.png",
+        "sourceImage": "activity_09_speed_trap-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/9693fdd9c9817f5c07ac6ac75528c9e1eadd0d57-887x698.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_10_speed_zone",
@@ -283,22 +269,20 @@
       "tuneHtml": "1994 Subaru Vivio RX-R: 164 232 906",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_10_speed_zone-tile.png",
+        "sourceImage": "activity_10_speed_zone-source.png",
         "orientation": "horizontal",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/c87209afe46cd817d745efab082725317d678f52-884x697.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_11_trial",
@@ -311,22 +295,20 @@
       "tuneHtml": "2024 Chevrolet Camaro ZL1: 100 986 561",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
-        "orientation": "horizontal",
+        "image": "activity_11_trial-tile.png",
+        "sourceImage": "activity_11_trial-source.png",
+        "orientation": "vertical",
         "typeIconKey": null,
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/28f59e7facbb5c9ac386e0cbbaa852dcaadf648b-884x1413.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "community",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_12_horizon_play",
@@ -339,22 +321,20 @@
       "tuneHtml": "Тюнинг не требуется.",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
-        "image": "",
-        "sourceImage": "",
+        "image": "activity_12_horizon_play-tile.png",
+        "sourceImage": "activity_12_horizon_play-source.png",
         "orientation": "horizontal",
         "typeIconKey": "horizon-play",
-        "sourceUrl": "",
-        "sourceLabel": ""
+        "sourceUrl": "https://cdn.sanity.io/images/jr6fd40q/production/042f50cb382e1643b83baab4fe619c7004295f31-883x698.png",
+        "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
         "condition": "confirmed",
         "solution": "confirmed",
         "vehicleTune": "not_applicable",
-        "visual": "missing"
+        "visual": "community"
       },
-      "missingFields": [
-        "visual"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_13_monthly_rivals",
@@ -531,86 +511,9 @@
       "status": "missing"
     },
     {
-      "activityId": "activity_01_weekly",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_03_photo",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
       "activityId": "activity_04_treasure",
       "field": "solution",
       "reason": "Нет проверенного решения.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_05_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_06_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_07_championship",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_08_time_attack",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_09_speed_trap",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_10_speed_zone",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_11_trial",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_12_horizon_play",
-      "field": "visual",
-      "reason": "Точная игровая плитка недоступна для проверки.",
       "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
       "status": "missing"
     }
