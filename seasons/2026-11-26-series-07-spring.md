@@ -1,15 +1,15 @@
 # Forza Horizon 6: Series 7 «City Life» — Весна
 
-> Статус: предварительно; открытых полей: 3
+> Статус: подтверждено
 > Период: 26.11.2026 21:30 — 03.12.2026 21:30 (Asia/Krasnoyarsk)
-> Обновлено: 27.11.2026 07:58
+> Обновлено: 28.11.2026 06:02
 > В отчёте: 14 карточек; Daily объединены в одну карточку.
 
 ## 01. weekly — Ray of Sunshine · 5
 
-- **Условие:** 
+- **Условие:** На 2013 Wuling Sunshine S: владейте автомобилем и проедьте на нём; установите обвес; победите на Edo Circuit; сфотографируйте автомобиль у дома Soko 78. Награда: 150 000 CR.
 - **Как выполнить:** Выполняйте главы по порядку.
-- **Автомобиль и тюнинг:** 
+- **Автомобиль и тюнинг:** 2013 Wuling Sunshine S: 100 060 745
 - **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Spring</a> · <a href="https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Spring Information Thread</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · Spring guide</a>
 
 ## 02. daily — 7 ежедневных заданий · 7 (1 в день)
@@ -29,9 +29,9 @@
 ## 04. treasure — Tokyo City Region · 3
 
 - **Условие:** Следуйте фото-подсказке и найдите сокровище в Tokyo City Region. Награда: 100 000 CR.
-- **Как выполнить:** 
+- **Как выполнить:** В центре Токио направляйтесь к побережью, не доезжая до главной автомагистрали. Найдите крытый проход между зданиями возле Dango Mascot: сундук стоит посередине прохода. Разбейте его.
 - **Автомобиль и тюнинг:** Тюнинг не требуется.
-- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Spring</a> · <a href="https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Spring Information Thread</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · Spring guide</a>
+- **Источники:** <a href="https://forza.net/fh6playlists" target="_blank" rel="noopener noreferrer">Forza Playlist · City Life Spring</a> · <a href="https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/" target="_blank" rel="noopener noreferrer">Reddit · Spring Information Thread</a> · <a href="https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/" target="_blank" rel="noopener noreferrer">Reddit · Spring guide</a> · <a href="https://traxion.gg/how-to-complete-the-series-7-week-4-tokyo-city-region-treasure-hunt-in-forza-horizon-6/" target="_blank" rel="noopener noreferrer">Traxion · Treasure Hunt</a>
 
 ## 05. championship — Beam Me Up · 5
 

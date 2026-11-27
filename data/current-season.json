@@ -17,7 +17,7 @@
     "expectedDailyItems": 7,
     "maxPublicHtmlBytes": 200000
   },
-  "lastContentUpdate": "2026-11-27T07:58:55+07:00",
+  "lastContentUpdate": "2026-11-28T06:02:41+07:00",
   "activities": [
     {
       "id": "activity_01_weekly",
@@ -25,9 +25,9 @@
       "kind": "weekly",
       "title": "Ray of Sunshine",
       "points": "5",
-      "conditionHtml": "",
+      "conditionHtml": "На 2013 Wuling Sunshine S: владейте автомобилем и проедьте на нём; установите обвес; победите на Edo Circuit; сфотографируйте автомобиль у дома Soko 78. Награда: 150 000 CR.",
       "howHtml": "Выполняйте главы по порядку.",
-      "tuneHtml": "",
+      "tuneHtml": "2013 Wuling Sunshine S: 100 060 745",
       "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
       "visual": {
         "image": "activity_01_weekly-tile.png",
@@ -38,15 +38,12 @@
         "sourceLabel": "ForzaLabs · City Life Spring · whole tile visually verified 2026-11-27"
       },
       "completeness": {
-        "condition": "missing",
+        "condition": "community",
         "solution": "confirmed",
-        "vehicleTune": "missing",
+        "vehicleTune": "community",
         "visual": "community"
       },
-      "missingFields": [
-        "condition",
-        "vehicleTune"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_02_daily",
@@ -107,9 +104,9 @@
       "title": "Tokyo City Region",
       "points": "3",
       "conditionHtml": "Следуйте фото-подсказке и найдите сокровище в Tokyo City Region. Награда: 100 000 CR.",
-      "howHtml": "",
+      "howHtml": "В центре Токио направляйтесь к побережью, не доезжая до главной автомагистрали. Найдите крытый проход между зданиями возле Dango Mascot: сундук стоит посередине прохода. Разбейте его.",
       "tuneHtml": "Тюнинг не требуется.",
-      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a>",
+      "sourceHtml": "<a href=\"https://forza.net/fh6playlists\" target=\"_blank\" rel=\"noopener noreferrer\">Forza Playlist · City Life Spring</a> · <a href=\"https://www.reddit.com/r/forza/comments/1y651qt/fh6_spring_information_thread_series_7/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring Information Thread</a> · <a href=\"https://www.reddit.com/r/ForzaHorizon6/comments/1y61r6n/fh6_series_7_spring_festival_playlist_guide/\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit · Spring guide</a> · <a href=\"https://traxion.gg/how-to-complete-the-series-7-week-4-tokyo-city-region-treasure-hunt-in-forza-horizon-6/\" target=\"_blank\" rel=\"noopener noreferrer\">Traxion · Treasure Hunt</a>",
       "visual": {
         "image": "activity_04_treasure-tile.png",
         "sourceImage": "activity_04_treasure-source.png",
@@ -120,13 +117,11 @@
       },
       "completeness": {
         "condition": "confirmed",
-        "solution": "missing",
+        "solution": "community",
         "vehicleTune": "not_applicable",
         "visual": "community"
       },
-      "missingFields": [
-        "solution"
-      ]
+      "missingFields": []
     },
     {
       "id": "activity_05_championship",
@@ -397,9 +392,9 @@
         "activity_01_weekly": {
           "title": "Ray of Sunshine",
           "points": "5",
-          "conditionHtml": "",
+          "conditionHtml": "In the 2013 Wuling Sunshine S: own and drive it, install a body kit, win Edo Circuit, and photograph it at the Soko 78 Player House. Reward: 150,000 CR.",
           "howHtml": "Complete the chapters in order.",
-          "tuneHtml": ""
+          "tuneHtml": "2013 Wuling Sunshine S: 100 060 745"
         },
         "activity_02_daily": {
           "title": "7 Daily Challenges",
@@ -419,7 +414,7 @@
           "title": "Tokyo City Region",
           "points": "3",
           "conditionHtml": "Follow the photo clue to find the treasure in Tokyo City Region. Reward: 100,000 CR.",
-          "howHtml": "",
+          "howHtml": "In central Tokyo, head toward the waterfront but stop before the main highway. Find the covered walkway between buildings near the Dango Mascot; smash the chest in the middle of the walkway.",
           "tuneHtml": "No tune required."
         },
         "activity_05_championship": {
@@ -495,27 +490,5 @@
       }
     }
   },
-  "openItems": [
-    {
-      "activityId": "activity_01_weekly",
-      "field": "condition",
-      "reason": "Официальная таблица и текущие источники расходятся в автомобиле.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "conflict"
-    },
-    {
-      "activityId": "activity_01_weekly",
-      "field": "vehicleTune",
-      "reason": "Нет подтверждённой рекомендации.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    },
-    {
-      "activityId": "activity_04_treasure",
-      "field": "solution",
-      "reason": "Нет проверенного решения.",
-      "nextCheck": "Проверить текущую игровую плитку и источники Spring.",
-      "status": "missing"
-    }
-  ]
+  "openItems": []
 }
